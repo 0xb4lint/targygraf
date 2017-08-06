@@ -24,9 +24,6 @@ class CreateProgramsTable extends Migration
 
             $table->string('description')->nullable();
             $table->date('curriculum_updated_at')->nullable();
-
-            $table->timestamps();
-            $table->softDeletes();
         });
     }
 

@@ -2,13 +2,10 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\SoftDeletes;
-
 class CourseBlock extends Model
 {
-    use SoftDeletes;
-
-    protected $table = 'course_blocks';
+    public $timestamps  = false;
+    protected $table    = 'course_blocks';
 
 
 

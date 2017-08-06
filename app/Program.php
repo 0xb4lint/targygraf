@@ -2,13 +2,10 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\SoftDeletes;
-
 class Program extends Model
 {
-    use SoftDeletes;
-
-    protected $table = 'programs';
+    public $timestamps  = false;
+    protected $table    = 'programs';
 
 
 

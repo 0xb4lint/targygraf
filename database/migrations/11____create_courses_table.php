@@ -24,9 +24,6 @@ class CreateCoursesTable extends Migration
             $table->tinyInteger('ordering')->unsigned()->default(0);
 
             $table->tinyInteger('credits')->unsigned()->default(0);
-
-            $table->timestamps();
-            $table->softDeletes();
         });
     }
 

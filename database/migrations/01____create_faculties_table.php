@@ -22,9 +22,6 @@ class CreateFacultiesTable extends Migration
             $table->string('name');
             $table->string('slug', 10)->collation('ascii_bin')->index();
             $table->tinyInteger('ordering')->unsigned()->default(0);
-
-            $table->timestamps();
-            $table->softDeletes();
         });
     }
 

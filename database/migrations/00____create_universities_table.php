@@ -22,9 +22,6 @@ class CreateUniversitiesTable extends Migration
             $table->tinyInteger('ordering')->unsigned()->default(0);
 
             $table->boolean('has_logo')->default(false);
-
-            $table->timestamps();
-            $table->softDeletes();
         });
     }
 

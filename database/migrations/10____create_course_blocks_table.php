@@ -23,9 +23,6 @@ class CreateCourseBlocksTable extends Migration
             $table->boolean('is_semester')->default(true);
             $table->tinyInteger('ordering')->unsigned()->default(0);
             $table->boolean('is_counted')->default(true);
-
-            $table->timestamps();
-            $table->softDeletes();
         });
     }
 
