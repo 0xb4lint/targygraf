@@ -20,7 +20,7 @@ class CreateProgramsTable extends Migration
             $table->foreign('faculty_id')->references('id')->on('faculties');
 
             $table->string('name');
-            $table->string('slug')->collation('ascii_bin')->index();
+            $table->string('slug', 50)->collation('ascii_bin')->index();
             $table->tinyInteger('ordering')->unsigned()->default(0);
 
             $table->string('desciption')->nullable();

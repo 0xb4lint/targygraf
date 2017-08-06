@@ -20,7 +20,8 @@ class CreateFacultiesTable extends Migration
             $table->foreign('university_id')->references('id')->on('universities');
 
             $table->string('name');
-            $table->tinyInteger('row')->unsigned()->default(0);
+            $table->string('slug', 10)->collation('ascii_bin')->index();
+            $table->tinyInteger('ordering')->unsigned()->default(0);
 
             $table->timestamps();
             $table->softDeletes();

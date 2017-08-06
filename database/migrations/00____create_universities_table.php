@@ -17,7 +17,7 @@ class CreateUniversitiesTable extends Migration
             $table->increments('id');
 
             $table->string('name');
-            $table->string('slug')->collation('ascii_bin')->unique();
+            $table->string('slug', 10)->collation('ascii_bin')->unique();
             $table->tinyInteger('row')->unsigned()->default(0);
             $table->tinyInteger('ordering')->unsigned()->default(0);
 
