@@ -13,4 +13,11 @@ class University extends Model
     {
         return $this->hasMany(Faculty::class);
     }
+
+
+
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
 }

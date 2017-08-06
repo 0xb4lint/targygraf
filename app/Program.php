@@ -13,4 +13,11 @@ class Program extends Model
     {
         return $this->hasMany(CourseBlock::class);
     }
+
+
+
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
 }
