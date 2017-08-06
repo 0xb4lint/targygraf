@@ -1,5 +1,946 @@
 {
     "name": "Fizika",
     "description": "Fizika BSc mintatanterve",
-    "curriculum_updated_at": "2014-09-01"
+    "curriculum_updated_at": "2014-09-01",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMETE13AF02",
+                    "name": "Kísérleti fizika 1",
+                    "credits": 4,
+                    "prerequisites": [
+                        "(BMETE11AF26)"
+                    ]
+                },
+                {
+                    "code": "BMETE11AF26",
+                    "name": "Kísérleti fizika gyakorlat 1",
+                    "credits": 4
+                },
+                {
+                    "code": "BMETE92AF35",
+                    "name": "Számítási módszerek a fizikában 1 ",
+                    "credits": 6
+                },
+                {
+                    "code": "Analízis fizikusoknak",
+                    "name": "Analízis fizikusoknak",
+                    "credits": 6,
+                    "prerequisites": [
+                        "(BMETE15AF19)"
+                    ]
+                },
+                {
+                    "code": "Kémia",
+                    "name": "Kémia",
+                    "credits": 4
+                },
+                {
+                    "code": "BMETE11AF27",
+                    "name": "Bevezető laboratórium ",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEVIEEA024",
+                    "name": "Programozás ",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMETE13AF03",
+                    "name": "Kísérleti fizika 2",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMETE92AF35",
+                        "(BMETE13AF03)"
+                    ]
+                },
+                {
+                    "code": "BMETE13AF03",
+                    "name": "Kísérleti fizika gyakorlat 2",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMETE92AF35"
+                    ]
+                },
+                {
+                    "code": "BMETE92AF36",
+                    "name": "Számítási módszerek a fizikában 2",
+                    "credits": 6,
+                    "prerequisites": [
+                        "BMETE92AF35"
+                    ]
+                },
+                {
+                    "code": "BMETE93AF01",
+                    "name": "Többváltozós analízis fizikusoknak",
+                    "credits": 6,
+                    "prerequisites": [
+                        "Analízis fizikusoknak"
+                    ]
+                },
+                {
+                    "code": "BMETE92AF01",
+                    "name": "Numerikus számítások fizikusoknak",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE92AF35"
+                    ]
+                },
+                {
+                    "code": "BMETE11AF28",
+                    "name": "Fizika laboratórium 1 ",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMETE13AF02",
+                        "BMETE11AF27"
+                    ]
+                },
+                {
+                    "code": "VIK",
+                    "name": "Programozás 2",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEVIEEA024"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMETE15AF21",
+                    "name": "Kísérleti fizika 3 ",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMETE13AF02",
+                        "BMETE92AF36",
+                        "(BMETE15AF22)"
+                    ]
+                },
+                {
+                    "code": "BMETE15AF22",
+                    "name": "Kísérleti fizika gyakorlat 3 ",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE13AF02",
+                        "BMETE92AF36"
+                    ]
+                },
+                {
+                    "code": "BMETE95AF00",
+                    "name": "Valószínűségszámítás fizikusoknak ",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMETE92AF35",
+                        "BMETE93AF01"
+                    ]
+                },
+                {
+                    "code": "BMETE11AF30",
+                    "name": "Méréstechnika",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE92AF35"
+                    ]
+                },
+                {
+                    "code": "BMETE15AF23",
+                    "name": "Mechanika 1",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE92AF35",
+                        "BMETE13AF02",
+                        "(BMETE15AF24)"
+                    ]
+                },
+                {
+                    "code": "BMETE15AF24",
+                    "name": "Mechanika gyakorlat 1",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMETE92AF35",
+                        "BMETE13AF02"
+                    ]
+                },
+                {
+                    "code": "BMETE12AF27",
+                    "name": "Elektronika ",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE13AF03"
+                    ]
+                },
+                {
+                    "code": "BMETE11AF29",
+                    "name": "Fizika laboratórium 2",
+                    "credits": 5,
+                    "prerequisites": [
+                        "BMETE11AF28"
+                    ]
+                },
+                {
+                    "code": "BMETE80AF24",
+                    "name": "Sugárvédelem és jogi szabályozása",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEGT20A003",
+                    "name": "Menedzsment és vállalkozásgazdaságtan ",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEGT30A002",
+                    "name": "Közgazdaságtan ",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMETE80AF18",
+                    "name": "Kísérleti magfizika ",
+                    "credits": 3
+                },
+                {
+                    "code": "BMETE80AF03",
+                    "name": "Elektronika laboratórium",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE12AF27"
+                    ]
+                },
+                {
+                    "code": "BMETE15AF27",
+                    "name": "Kvantummechanika 1",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE92AF36",
+                        "BMETE15AF23",
+                        "(BMETE15AF28)"
+                    ]
+                },
+                {
+                    "code": "BMETE15AF28",
+                    "name": " Kvantummechanika gyakorlat 1",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMETE92AF36",
+                        "BMETE15AF23"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "BMETE13AF11",
+                    "name": "Kísérleti fizika szigorlat ",
+                    "credits": 0,
+                    "prerequisites": [
+                        "BMETE13AF03",
+                        "BMETE15AF21",
+                        "BMETE80AF18"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "5. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMETE15AF26",
+                    "name": "Elektrodinamika gyakorlat 1 ",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMETE92AF36",
+                        "BMETE13AF03"
+                    ]
+                },
+                {
+                    "code": "BMETE15AF25",
+                    "name": "Elektrodinamika 1",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE92AF36",
+                        "BMETE13AF03",
+                        "(BMETE15AF26)"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "6. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMETE15AF29",
+                    "name": "Statisztikus fizika 1",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE15AF21",
+                        "BMETE95AF00",
+                        "BMETE15AF27"
+                    ]
+                },
+                {
+                    "code": "BMETE15AF30",
+                    "name": "Statisztikus fizika gyakorlat 1",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMETE15AF21",
+                        "BMETE95AF00",
+                        "BMETE15AF27"
+                    ]
+                },
+                {
+                    "code": "BMETE15AF11",
+                    "name": " Szakdolgozat-készítés",
+                    "credits": 10,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Kritérium",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "bármi",
+                    "name": "Szabadon választható tárgyak",
+                    "credits": 9
+                },
+                {
+                    "code": "tesi",
+                    "name": "tesi 1",
+                    "credits": 0
+                },
+                {
+                    "code": "tesi",
+                    "name": "tesi 2",
+                    "credits": 0
+                },
+                {
+                    "code": "BMETE15AF19",
+                    "name": "Bevezető kalkulus ",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "nyelvi tárgyak",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "4. félév - AlkFiz",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "BMETE11AF32",
+                    "name": "Haladó fizika laboratórium 1",
+                    "credits": 5,
+                    "prerequisites": [
+                        "BMETE15AF21",
+                        "BMETE11AF29"
+                    ]
+                },
+                {
+                    "code": "BMETE80AF05",
+                    "name": "Nukleáris méréstechnika",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE80AF18"
+                    ]
+                },
+                {
+                    "code": "BMETE80AF25",
+                    "name": "A méréskiértékelés matematikai módszerei ",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE95AF00"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "BMETE11AF37",
+                    "name": "Számítógépes mérésvezérlés (KV)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMEVIEEA024"
+                    ]
+                },
+                {
+                    "code": "BMETE14AF06",
+                    "name": " Kémiai és orvosbiológiai méréstechnika (KV)",
+                    "credits": 4
+                },
+                {
+                    "code": "BMEGEÁTAMF4",
+                    "name": "Áramlástan (KV)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE15AF23"
+                    ]
+                },
+                {
+                    "code": "BMETE92AF02",
+                    "name": "Funkcionálanalízis (KV)",
+                    "credits": 6,
+                    "prerequisites": [
+                        "BMETE92AF36",
+                        "BMETE93AF01"
+                    ]
+                },
+                {
+                    "code": "BMETE12AF10",
+                    "name": "Biofizika alapjai (KV)",
+                    "credits": 2
+                },
+                {
+                    "code": "BMETE12AF24",
+                    "name": "Végeselem modellezés alapjai (KV)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE92AF35"
+                    ]
+                },
+                {
+                    "code": "BMETE80AF06",
+                    "name": "Fenntartható fejlődés és energetika (KV)",
+                    "credits": 2
+                },
+                {
+                    "code": "BMETE80AF04",
+                    "name": "Környezetvédelem (KV)",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "4. félév - Fizikus",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "BMETE11AF32",
+                    "name": "Haladó fizika laboratórium 1 ",
+                    "credits": 5,
+                    "prerequisites": [
+                        "BMETE15AF21",
+                        "BMETE11AF29"
+                    ]
+                },
+                {
+                    "code": "BMETE15AF31",
+                    "name": "Modern matematikai módszerek a fizikában",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMETE92AF36"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "BMETE15AF32",
+                    "name": "Mechanika 2 (KV)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE15AF23",
+                        "(BMETE15AF33)"
+                    ]
+                },
+                {
+                    "code": "BMETE15AF33",
+                    "name": "Mechanika gyakorlat 2 (KV)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE15AF23"
+                    ]
+                },
+                {
+                    "code": "BMETE92AF02",
+                    "name": "Funkcionálanalízis (KV)",
+                    "credits": 6,
+                    "prerequisites": [
+                        "BMETE92AF36",
+                        "BMETE93AF01"
+                    ]
+                },
+                {
+                    "code": "BMEGEÁTAMF4",
+                    "name": "Áramlástan (KV)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE15AF23"
+                    ]
+                },
+                {
+                    "code": "BMETE80AF25",
+                    "name": "A méréskiértékelés matematikai módszerei (KV)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE95AF00"
+                    ]
+                },
+                {
+                    "code": "BMETE11AF37",
+                    "name": "Számítógépes mérésvezérlés (KV)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMEVIEEA024"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "5. félév - AlkFiz",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "BMETE11AF33",
+                    "name": "Haladó fizika laboratórium 2",
+                    "credits": 5,
+                    "prerequisites": [
+                        "BMETE15AF21",
+                        "BMETE11AF29",
+                        "BMETE80AF18"
+                    ]
+                },
+                {
+                    "code": "BMETE11AF05",
+                    "name": "Szilárdtestfizika alapjai ",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE15AF21",
+                        "BMETE15AF23",
+                        "(BMETE11AF06)"
+                    ]
+                },
+                {
+                    "code": "BMETE11AF06",
+                    "name": "Szilárdtestfizika gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE15AF21",
+                        "BMETE15AF23"
+                    ]
+                },
+                {
+                    "code": "BMETE12AF01",
+                    "name": "Optika",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMETE13AF03"
+                    ]
+                },
+                {
+                    "code": "BMETE12AF28",
+                    "name": "Spektroszkópia ",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE13AF03"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "BMETE15AF34",
+                    "name": "Elektrodinamika 2 (KV)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE15AF25",
+                        "(BMETE15AF35)"
+                    ]
+                },
+                {
+                    "code": "BMETE15AF35",
+                    "name": "Elektrodinamika gyakorlat 2 (KV)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE15AF25"
+                    ]
+                },
+                {
+                    "code": "BMETE12AF07",
+                    "name": "Lézertechnika (KV)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE13AF03",
+                        "BMETE15AF21"
+                    ]
+                },
+                {
+                    "code": "BMETE12AF06",
+                    "name": "Programozás 3 (KV)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VIK"
+                    ]
+                },
+                {
+                    "code": "BMETE12AF29",
+                    "name": "Vákuumfizika (KV)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE15AF21"
+                    ]
+                },
+                {
+                    "code": "BMETE12AF25",
+                    "name": " Az anyagtudomány alapjai és alkalmazásai (KV)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE13AF03"
+                    ]
+                },
+                {
+                    "code": "BMETE12AF26",
+                    "name": "Felületfizika alapjai (KV)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE15AF21"
+                    ]
+                },
+                {
+                    "code": "BMETE80AF12",
+                    "name": "Atomerőművek termohidraulikája (KV)",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMETE15AF21",
+                        "BMETE15AF23"
+                    ]
+                },
+                {
+                    "code": "BMETE80AF15",
+                    "name": "Reaktorfizika (KV)",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMETE92AF35",
+                        "BMETE80AF18"
+                    ]
+                },
+                {
+                    "code": "BMETE80AF21",
+                    "name": "Bevezetés a fúziós plazmafizikába (KV)",
+                    "credits": 2
+                },
+                {
+                    "code": "BMETE80AF26",
+                    "name": "Monte Carlo módszerek (KV)",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEVIEEA024",
+                        "BMETE95AF00"
+                    ]
+                },
+                {
+                    "code": "BMETE80AF09",
+                    "name": "Nukleáris biztonság (KV)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE80AF15"
+                    ]
+                },
+                {
+                    "code": "BMETE80AF16",
+                    "name": "Geofizika alapjai (KV)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE80AF18"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "5.  félév - Fizikus",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "BMETE11AF33",
+                    "name": "Haladó fizika laboratórium 2 ",
+                    "credits": 5,
+                    "prerequisites": [
+                        "BMETE15AF21",
+                        "BMETE11AF29",
+                        "BMETE80AF18"
+                    ]
+                },
+                {
+                    "code": "BMETE11AF05",
+                    "name": "Szilárdtestfizika alapjai",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE15AF21",
+                        "BMETE15AF23",
+                        "(BMETE11AF06)"
+                    ]
+                },
+                {
+                    "code": "BMETE11AF06",
+                    "name": "Szilárdtestfizika gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE15AF21",
+                        "BMETE15AF23"
+                    ]
+                },
+                {
+                    "code": "BMETE12AF01",
+                    "name": "Optika ",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMETE13AF03"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "BMETE15AF34",
+                    "name": "Elektrodinamika 2 (KV)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE15AF25",
+                        "(BMETE15AF35)"
+                    ]
+                },
+                {
+                    "code": "BMETE15AF35",
+                    "name": "Elektrodinamika gyakorlat 2 (KV)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE15AF25"
+                    ]
+                },
+                {
+                    "code": "BMETE11AF35",
+                    "name": "Csoportelmélet fizikusoknak (KV)",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMETE92AF36"
+                    ]
+                },
+                {
+                    "code": "BMETE11AF36",
+                    "name": "Műszaki és fizikai problémák számítógépes  megoldása (KV)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE92AF36",
+                        "BMETE92AF01"
+                    ]
+                },
+                {
+                    "code": "BMETE15AF38",
+                    "name": "Relativitáselmélet (KV)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE15AF23",
+                        "BMETE15AF25"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "6. félév - AlkFiz",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "BMETE12AF21",
+                    "name": "Haladó fizika laboratórium 3",
+                    "credits": 5,
+                    "prerequisites": [
+                        "BMETE11AF29",
+                        "BMETE80AF18",
+                        "BMETE12AF01"
+                    ]
+                },
+                {
+                    "code": "BMETE11AF11",
+                    "name": "Alkalmazott szilárdtestfizika",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE15AF27",
+                        "BMETE11AF05"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "BMETE15AF36",
+                    "name": "Kvantummechanika 2 (KV)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE15AF27",
+                        "(BMETE15AF37)"
+                    ]
+                },
+                {
+                    "code": "BMETE15AF37",
+                    "name": "Kvantummechanika gyakorlat 2 (KV)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE15AF27"
+                    ]
+                },
+                {
+                    "code": "BMETE12AF08",
+                    "name": "Mikro és nanotechnológiák (KV)",
+                    "credits": 2
+                },
+                {
+                    "code": "BMETE12AF09",
+                    "name": "Mikroszkópia (KV)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE12AF01"
+                    ]
+                },
+                {
+                    "code": "BMETE12AF11",
+                    "name": "Alkalmazott plazmafizika (KV)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE15AF21"
+                    ]
+                },
+                {
+                    "code": "BMETE12AF22",
+                    "name": "Bevezetés az ultragyors impulzusok fizikájába (KV)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE12AF01"
+                    ]
+                },
+                {
+                    "code": "BMETE12AF23",
+                    "name": "Fizikai kísérletek tervezése és építése (KV)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE13AF03"
+                    ]
+                },
+                {
+                    "code": "BMETE80AF17",
+                    "name": "Orvosi képalkotó rendszerek (KV)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE80AF05"
+                    ]
+                },
+                {
+                    "code": "BMETE80AF14",
+                    "name": "Radiokémia és nukleáris kémia (KV)",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMETE80AF24",
+                        "BMETE80AF18"
+                    ]
+                },
+                {
+                    "code": "BMETE80AF22",
+                    "name": "Bevezetés a CFD módszerekbe (KV)",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMETE80AF12"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "6. félév - Fizikus",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "BMETE12AF21",
+                    "name": "Haladó fizika laboratórium 3",
+                    "credits": 5,
+                    "prerequisites": [
+                        "BMETE11AF29",
+                        "BMETE80AF18",
+                        "BMETE12AF01"
+                    ]
+                },
+                {
+                    "code": "BMETE11AF34",
+                    "name": "Elméleti szilárdtestfizika",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE15AF27",
+                        "BMETE11AF05"
+                    ]
+                },
+                {
+                    "code": "BMETE15AF40",
+                    "name": "Szeminárium ",
+                    "credits": 2,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "BMETE15AF36",
+                    "name": "Kvantummechanika 2 (KV)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE15AF27",
+                        "(BMETE15AF37)"
+                    ]
+                },
+                {
+                    "code": "BMETE15AF37",
+                    "name": "Kvantummechanika gyakorlat 2 (KV)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE15AF27"
+                    ]
+                },
+                {
+                    "code": "BMETE15AF39",
+                    "name": "Klasszikus és kvantum-káosz (KV)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE15AF23",
+                        "BMETE15AF27"
+                    ]
+                }
+            ]
+        }
+    ]
 }

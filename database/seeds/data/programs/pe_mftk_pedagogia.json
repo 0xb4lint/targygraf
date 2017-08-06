@@ -1,5 +1,473 @@
 {
     "name": "Pedagógia",
     "description": "Pedagógia alapszak - nappali tagozat tanterve",
-    "curriculum_updated_at": "2011-06-24"
+    "curriculum_updated_at": "2011-06-24",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "PATKPPB111O",
+                    "name": "Bevezetés az oktatási rendszerek világába",
+                    "credits": 1
+                },
+                {
+                    "code": "PATKPPB122V",
+                    "name": "Az iskola szervezete és belső világa",
+                    "credits": 2
+                },
+                {
+                    "code": "PATKPPB112P",
+                    "name": "Bevezetés a pedagógiába",
+                    "credits": 2
+                },
+                {
+                    "code": "PATKPPB122A",
+                    "name": "Hospitálás közoktatási intézményekben",
+                    "credits": 2
+                },
+                {
+                    "code": "PATKPPB111I",
+                    "name": "Az iskolán kívüli nevelés intézményrendszere és története",
+                    "credits": 2
+                },
+                {
+                    "code": "PATKPPB121C",
+                    "name": "A családi nevelés pedagógiája",
+                    "credits": 1
+                },
+                {
+                    "code": "PATKPP1312A",
+                    "name": "Bevezetés a pszichológiába",
+                    "credits": 2
+                },
+                {
+                    "code": "PATKPPB122B",
+                    "name": "Hospitálás iskolán kívüli nevelési intézményekben",
+                    "credits": 2
+                },
+                {
+                    "code": "PATKPPB11M",
+                    "name": "A művelődés intézményrendszere és története",
+                    "credits": 2
+                },
+                {
+                    "code": "PATKPPB111T",
+                    "name": "A tudomány és a kutatás intézményrendszere",
+                    "credits": 2
+                },
+                {
+                    "code": "PATKPPB122C",
+                    "name": "Hospitálás művelődési intézményben és kutatóhelyen",
+                    "credits": 2
+                },
+                {
+                    "code": "PATKPPB112F",
+                    "name": "Filozófiatörténet",
+                    "credits": 2
+                },
+                {
+                    "code": "PATKPPB112T",
+                    "name": "Tudományrendszertan és könyvtárismeret",
+                    "credits": 2
+                },
+                {
+                    "code": "PATKKU6311A",
+                    "name": "Kulturális ökológia",
+                    "credits": 2
+                },
+                {
+                    "code": "PATKPPB112I",
+                    "name": "Társadalmi ismeretek",
+                    "credits": 2
+                },
+                {
+                    "code": "PATKAEB111M",
+                    "name": "Művelődéstörténet",
+                    "credits": 2
+                },
+                {
+                    "code": "PATKPPB131A",
+                    "name": "Testnevelés",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "PATKPPB114N",
+                    "name": "Neveléstörténet I.",
+                    "credits": 4
+                },
+                {
+                    "code": "PATKPPB112G",
+                    "name": "Nevelésfilozófia",
+                    "credits": 2
+                },
+                {
+                    "code": "PATKPPB113E",
+                    "name": "Neveléselmélet I.",
+                    "credits": 3
+                },
+                {
+                    "code": "PATKPPB143G",
+                    "name": "A nevelés gyakorlata",
+                    "credits": 2
+                },
+                {
+                    "code": "PATKPPB145O",
+                    "name": "Oktatáselmélet",
+                    "credits": 5
+                },
+                {
+                    "code": "PATKPPB112I",
+                    "name": "Pszichológia az iskolában",
+                    "credits": 2
+                },
+                {
+                    "code": "PATKPPB112F",
+                    "name": "Fejlődés- és személyiséglélektan I.",
+                    "credits": 2
+                },
+                {
+                    "code": "PATKPPB122F",
+                    "name": "Fejlődés- és személyiséglélektan II.",
+                    "credits": 2
+                },
+                {
+                    "code": "PATKPPB122K",
+                    "name": "Pedagógiai kommunikáció I.",
+                    "credits": 2
+                },
+                {
+                    "code": "PATKPPB143S",
+                    "name": "Nevelésszociológia",
+                    "credits": 3
+                },
+                {
+                    "code": "PATKPPB143O",
+                    "name": "Oktatáspolitika",
+                    "credits": 3
+                },
+                {
+                    "code": "PATKPPB132A",
+                    "name": "Testnevelés",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "PATLPPB143T",
+                    "name": "Neveléstörténet II.",
+                    "credits": 3
+                },
+                {
+                    "code": "PATLPPB112E",
+                    "name": "Neveléselmélet II.",
+                    "credits": 2
+                },
+                {
+                    "code": "PATLPPB114T",
+                    "name": "Tanuláselmélet",
+                    "credits": 4
+                },
+                {
+                    "code": "PATLPPB122T",
+                    "name": "Tanulásmódszertan",
+                    "credits": 2
+                },
+                {
+                    "code": "PATLPPB122S",
+                    "name": "Pedagógiai szociálpszichológia",
+                    "credits": 2
+                },
+                {
+                    "code": "PATLPPB114G",
+                    "name": "Oktatás-gazdaságtan",
+                    "credits": 3
+                },
+                {
+                    "code": "PATLPPB144M",
+                    "name": "Kutatásmódszertan I.",
+                    "credits": 4
+                },
+                {
+                    "code": "PATLPPB121K",
+                    "name": "Pedagógiai kommunikáció II.",
+                    "credits": 1
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 4
+                },
+                {
+                    "code": null,
+                    "name": "Specializáció",
+                    "credits": 8,
+                    "course_block_references": [
+                        "Nevelési asszisztens specializáció 3. félév"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "PATLPPB223T",
+                    "name": "Neveléstörténet III.",
+                    "credits": 3
+                },
+                {
+                    "code": "PATLPPB144H",
+                    "name": "Összehasonlító neveléstudomány I.",
+                    "credits": 4
+                },
+                {
+                    "code": "PATLPPB123K",
+                    "name": "Kutatásmódszertan II.",
+                    "credits": 4
+                },
+                {
+                    "code": "PATLPPB245E",
+                    "name": "Erkölcsi és jogi szocializáció",
+                    "credits": 5
+                },
+                {
+                    "code": null,
+                    "name": "Specializáció",
+                    "credits": 14,
+                    "course_block_references": [
+                        "Nevelési asszisztens specializáció 4. félév"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "5. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "PATLPPB122E",
+                    "name": "Az összehasonlító neveléstudomány európai dimenziói II.",
+                    "credits": 2
+                },
+                {
+                    "code": "PATLPPB122M",
+                    "name": "Kutatásmódszertan III.",
+                    "credits": 2
+                },
+                {
+                    "code": "PATLPPB112J",
+                    "name": "Életkor-pedagógia I.",
+                    "credits": 2
+                },
+                {
+                    "code": "PATLPPB121J",
+                    "name": "Életkor-pedagógia II.",
+                    "credits": 1
+                },
+                {
+                    "code": null,
+                    "name": "Választandó az alábbi kettő tárgyból",
+                    "credits": 5,
+                    "course_block_references": [
+                        "Választandó az alábbi kettő tárgyból"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Specializáció",
+                    "credits": 14,
+                    "course_block_references": [
+                        "Nevelési asszisztens specializáció 5. félév"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "6. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "PATLAEB113E",
+                    "name": "Összehasonlító kultúrakutatás",
+                    "credits": 3
+                },
+                {
+                    "code": "PATLPPB122I",
+                    "name": "Gyakorlat I. Az iskolán kívüli tevékenységszervezés pedagógiája",
+                    "credits": 2
+                },
+                {
+                    "code": "PATLPPB122R",
+                    "name": "Gyakorlat II. A rendezvényszervezés pedagógiája",
+                    "credits": 2
+                },
+                {
+                    "code": "PATLPPB220A",
+                    "name": "Szakdolgozati szeminárium",
+                    "credits": 0
+                },
+                {
+                    "code": "PATLPPB214A",
+                    "name": "Szakdolgozat",
+                    "credits": 4
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 4
+                },
+                {
+                    "code": null,
+                    "name": "Specializáció",
+                    "credits": 14,
+                    "course_block_references": [
+                        "Nevelési asszisztens specializáció 6. félév"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Választandó az alábbi kettő tárgyból",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "PATLPPB245R",
+                    "name": "Alternatív pedagógiák",
+                    "credits": 5
+                },
+                {
+                    "code": "PATLPPB245G",
+                    "name": "Gyógypedagógiai alapismeretek",
+                    "credits": 5
+                }
+            ]
+        },
+        {
+            "name": "Nevelési asszisztens specializáció 3. félév",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "PATLPPB314P",
+                    "name": "Professzionális nevelői kompetenciák",
+                    "credits": 4
+                },
+                {
+                    "code": "PATLPPB322C",
+                    "name": "Kollégiumpedagógia",
+                    "credits": 2
+                },
+                {
+                    "code": "PATLPPB312M",
+                    "name": "Pedagógiai menedzsment",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Nevelési asszisztens specializáció 4. félév",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "PATLPPB324J",
+                    "name": "Kommunikációs játékok az iskolában",
+                    "credits": 4
+                },
+                {
+                    "code": "PATLPPB314S",
+                    "name": "Szabadidőprogramok tartalma,szervezése",
+                    "credits": 4
+                },
+                {
+                    "code": "PATLPPB322S",
+                    "name": "Multimédia az oktatásban",
+                    "credits": 2
+                },
+                {
+                    "code": "PATLPPB312P",
+                    "name": "Megelőző gyermekvédelem",
+                    "credits": 2
+                },
+                {
+                    "code": "PATLPPB322N",
+                    "name": "A napköziotthon pedagógiája",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Nevelési asszisztens specializáció 5. félév",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "PATLPPB314E",
+                    "name": "Prevenciós munka az iskolában",
+                    "credits": 4
+                },
+                {
+                    "code": "PATLPPB322O",
+                    "name": "Pedagógiai pályaismereti és önismereti foglalkozás",
+                    "credits": 2
+                },
+                {
+                    "code": "PATLPPB312O",
+                    "name": "Oktatásügyi törvénykezés",
+                    "credits": 2
+                },
+                {
+                    "code": "PATLPPB312K",
+                    "name": "Oktatási költségtan",
+                    "credits": 2
+                },
+                {
+                    "code": "PATLPPB314M",
+                    "name": "Multikulturális nevelés",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "Nevelési asszisztens specializáció 6. félév",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "PATLPPB312I",
+                    "name": "Integrált nevelés, adaptív oktatás",
+                    "credits": 2
+                },
+                {
+                    "code": "PATLPPB326S",
+                    "name": "Szakmai gyakorlat",
+                    "credits": 6
+                },
+                {
+                    "code": "PATLPPB323B",
+                    "name": "Segítő beszélgetés",
+                    "credits": 3
+                },
+                {
+                    "code": "PATLPPB323C",
+                    "name": "A családi élet pedagógiája",
+                    "credits": 3
+                }
+            ]
+        }
+    ]
 }

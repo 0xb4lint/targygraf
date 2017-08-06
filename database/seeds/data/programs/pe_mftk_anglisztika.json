@@ -1,5 +1,660 @@
 {
     "name": "Anglisztika",
     "description": "Anglisztika alapszak - Angol szakirány - nappali tagozat tanterve",
-    "curriculum_updated_at": "2011-06-24"
+    "curriculum_updated_at": "2011-06-24",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "AYB111B",
+                    "name": "Bevezetés a nyelvtudományba",
+                    "credits": 2
+                },
+                {
+                    "code": "TTB112F",
+                    "name": "Filozófiatörténet",
+                    "credits": 2
+                },
+                {
+                    "code": "ASB123A",
+                    "name": "Angol nyelv- és stílusgyakorlat 1\/A",
+                    "credits": 3
+                },
+                {
+                    "code": "ASB123B",
+                    "name": "Angol nyelv- és stílusgyakorlat 1\/B",
+                    "credits": 3
+                },
+                {
+                    "code": "ANB113A",
+                    "name": "Bevezetés a nyelvészetbe előadás",
+                    "credits": 3
+                },
+                {
+                    "code": "ANB123A",
+                    "name": "Bevezetés a nyelvészetbe szeminárium",
+                    "credits": 3
+                },
+                {
+                    "code": "ACB112B",
+                    "name": "Brit országismeret",
+                    "credits": 2
+                },
+                {
+                    "code": "ACB112A",
+                    "name": "Amerikai országismeret",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Szabadon választható tárgyak vagy specializáció vagy pedagógia",
+                    "credits": 10,
+                    "course_block_references": [
+                        "Specializáció: angol idegenforgalmi referens",
+                        "Specializáció: szaknyelvi közvetítés",
+                        "Pedagógiai modul"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "MIB111A",
+                    "name": "Bevezetés az irodalomtudományba",
+                    "credits": 2
+                },
+                {
+                    "code": "ASB223A",
+                    "name": "Angol nyelv- és stílusgyakorlat 2\/A",
+                    "credits": 3,
+                    "prerequisites": [
+                        "ASB123A",
+                        "ASB123B"
+                    ]
+                },
+                {
+                    "code": "ASB223B",
+                    "name": "Angol nyelv- és stílusgyakorlat 2\/B",
+                    "credits": 3,
+                    "prerequisites": [
+                        "ASB123A",
+                        "ASB123B"
+                    ]
+                },
+                {
+                    "code": "AIB113A",
+                    "name": "Bevezetés az irodalomba előadás",
+                    "credits": 3
+                },
+                {
+                    "code": "AIB123A",
+                    "name": "Bevezetés az irodalomba szeminárium",
+                    "credits": 3
+                },
+                {
+                    "code": "ASB1X3A",
+                    "name": "Nyelvi alapvizsga",
+                    "credits": 3,
+                    "prerequisites": [
+                        "ASB123A",
+                        "ASB123B",
+                        "ASB223A",
+                        "ASB223B"
+                    ]
+                },
+                {
+                    "code": "ANB112F",
+                    "name": "Angol nyelvészet 1. Fonetika előadás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "ANB113A",
+                        "ANB123A"
+                    ]
+                },
+                {
+                    "code": "ANB123F",
+                    "name": "Angol nyelvészet 1. Fonetika szeminárium",
+                    "credits": 3,
+                    "prerequisites": [
+                        "ANB113A",
+                        "ANB123A"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Szabadon választható tárgyak vagy specializáció vagy pedagógia",
+                    "credits": 8,
+                    "course_block_references": [
+                        "Specializáció: angol idegenforgalmi referens",
+                        "Specializáció: szaknyelvi közvetítés",
+                        "Pedagógiai modul"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "FRB112T",
+                    "name": "Tudományrendszertan és könyvtárismeret",
+                    "credits": 2
+                },
+                {
+                    "code": "ASB123I",
+                    "name": "Szövegfeldolgozás 1.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "ASB123A",
+                        "ASB123B",
+                        "ASB223A",
+                        "ASB223B"
+                    ]
+                },
+                {
+                    "code": "ANB113F",
+                    "name": "Angol nyelvészet 2. Fonológia, morfológia előadás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "ANB113A",
+                        "ANB123A"
+                    ]
+                },
+                {
+                    "code": "ANB122F",
+                    "name": "Angol nyelvészet 2. Fonológia, morfológia szeminárium",
+                    "credits": 2,
+                    "prerequisites": [
+                        "ANB113A",
+                        "ANB123A"
+                    ]
+                },
+                {
+                    "code": "AIB113B",
+                    "name": "Angol irodalomtörténet 1. előadás",
+                    "credits": 3,
+                    "prerequisites": [
+                        "AIB113A",
+                        "AIB123A"
+                    ]
+                },
+                {
+                    "code": "AIB123B",
+                    "name": "Angol irodalomtörténet 1. szeminárium",
+                    "credits": 3,
+                    "prerequisites": [
+                        "AIB113A",
+                        "AIB123A"
+                    ]
+                },
+                {
+                    "code": "ACB113H",
+                    "name": "Brit történelem előadás",
+                    "credits": 3,
+                    "prerequisites": [
+                        "ASB123A",
+                        "ASB123B",
+                        "ASB223A",
+                        "ASB223B"
+                    ]
+                },
+                {
+                    "code": "ACB123H",
+                    "name": "Brit történelem szeminárium",
+                    "credits": 3,
+                    "prerequisites": [
+                        "ASB123A",
+                        "ASB123B",
+                        "ASB223A",
+                        "ASB223B"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Szabadon választható tárgyak vagy specializáció vagy pedagógia",
+                    "credits": 9,
+                    "course_block_references": [
+                        "Specializáció: angol idegenforgalmi referens",
+                        "Specializáció: szaknyelvi közvetítés",
+                        "Pedagógiai modul"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "AYB111K",
+                    "name": "A kommunikáció alapjai",
+                    "credits": 2
+                },
+                {
+                    "code": "ASB223I",
+                    "name": "Szövegfeldolgozás 2.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "ASB123I"
+                    ]
+                },
+                {
+                    "code": "ASB123E",
+                    "name": "Brit országismeret nyelvgyakorlat",
+                    "credits": 3
+                },
+                {
+                    "code": "ANB112S",
+                    "name": "Angol nyelvészet 3. Szintaxis előadás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "ANB113A",
+                        "ANB123A"
+                    ]
+                },
+                {
+                    "code": "ANB123S",
+                    "name": "Angol nyelvészet 3. Szintaxis szeminárium",
+                    "credits": 3,
+                    "prerequisites": [
+                        "ANB113A",
+                        "ANB123A"
+                    ]
+                },
+                {
+                    "code": "AIB113C",
+                    "name": "Angol irodalomtörténet 2. előadás",
+                    "credits": 3,
+                    "prerequisites": [
+                        "AIB113A",
+                        "AIB123A"
+                    ]
+                },
+                {
+                    "code": "AIB123C",
+                    "name": "Angol irodalomtörténet 2. szeminárium",
+                    "credits": 3,
+                    "prerequisites": [
+                        "AIB113A",
+                        "AIB123A"
+                    ]
+                },
+                {
+                    "code": "ACB113G",
+                    "name": "Amerikai történelem előadás",
+                    "credits": 3,
+                    "prerequisites": [
+                        "ACB112A"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Szabadon választható tárgyak vagy specializáció vagy pedagógia",
+                    "credits": 8,
+                    "course_block_references": [
+                        "Specializáció: angol idegenforgalmi referens",
+                        "Specializáció: szaknyelvi közvetítés",
+                        "Pedagógiai modul"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "5. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "ANB213A",
+                    "name": "Alkalmazott nyelvészet 1. Bevezetés",
+                    "credits": 3,
+                    "prerequisites": [
+                        "ANB113A",
+                        "ANB123A"
+                    ]
+                },
+                {
+                    "code": "ANB213T",
+                    "name": "Bevezetés a nyelvtörténetbe",
+                    "credits": 2,
+                    "prerequisites": [
+                        "ANB113A",
+                        "ANB123A"
+                    ]
+                },
+                {
+                    "code": "AIB113D",
+                    "name": "Angol irodalomtörténet 3. előadás",
+                    "credits": 3,
+                    "prerequisites": [
+                        "AIB113A",
+                        "AIB123A"
+                    ]
+                },
+                {
+                    "code": "AIB123D",
+                    "name": "Angol irodalomtörténet 3. szeminárium",
+                    "credits": 3,
+                    "prerequisites": [
+                        "AIB113A",
+                        "AIB123A"
+                    ]
+                },
+                {
+                    "code": "AIB113E",
+                    "name": "Amerikai irodalomtörténet 1. előadás",
+                    "credits": 3,
+                    "prerequisites": [
+                        "AIB113A",
+                        "AIB123A"
+                    ]
+                },
+                {
+                    "code": "AIB212R",
+                    "name": "Brit romantikus komédia",
+                    "credits": 2,
+                    "prerequisites": [
+                        "AIB113A",
+                        "AIB123A"
+                    ]
+                },
+                {
+                    "code": "ASB422A",
+                    "name": "Az írásbeli kifejezőkészség fejlesztése 1\/A",
+                    "credits": 0,
+                    "prerequisites": [
+                        "ASB1X3A"
+                    ]
+                },
+                {
+                    "code": "ASB422B",
+                    "name": "Az írásbeli kifejezőkészség fejlesztése 1\/B",
+                    "credits": 0,
+                    "prerequisites": [
+                        "ASB1X3A"
+                    ]
+                },
+                {
+                    "code": "VETKSZ3120A",
+                    "name": "Szakdolgozat szeminárium I.",
+                    "credits": 0,
+                    "prerequisites": [
+                        "ASB1X3A"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Szabadon választható tárgyak vagy specializáció vagy pedagógia",
+                    "credits": 14,
+                    "course_block_references": [
+                        "Specializáció: angol idegenforgalmi referens",
+                        "Specializáció: szaknyelvi közvetítés",
+                        "Pedagógiai modul"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "6. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "ANB213B",
+                    "name": "Alkalmazott nyelvészet 2. Szövegnyelvészet",
+                    "credits": 3,
+                    "prerequisites": [
+                        "ANB113A",
+                        "ANB123A"
+                    ]
+                },
+                {
+                    "code": "AIB113G",
+                    "name": "Amerikai irodalom 3. Amerikai posztmodernizmus",
+                    "credits": 3,
+                    "prerequisites": [
+                        "AIB113A",
+                        "AIB123A"
+                    ]
+                },
+                {
+                    "code": "ACB113M",
+                    "name": "Angol nyelvű kultúrák: Modern brit tanulmányok",
+                    "credits": 3,
+                    "prerequisites": [
+                        "ACB113H",
+                        "ACB123H"
+                    ]
+                },
+                {
+                    "code": "ACB113J",
+                    "name": "Amerikai kultúra 3. Amerika jelene",
+                    "credits": 3,
+                    "prerequisites": [
+                        "ACB112A",
+                        "ACB113G"
+                    ]
+                },
+                {
+                    "code": "ASB422C",
+                    "name": "Az írásbeli kifejezőkészség fejlesztése 2\/A",
+                    "credits": 0,
+                    "prerequisites": [
+                        "ASB422A"
+                    ]
+                },
+                {
+                    "code": "ASB422D",
+                    "name": "A szóbeli kifejezőkészség fejlesztése 2\/B",
+                    "credits": 0,
+                    "prerequisites": [
+                        "ASB422B"
+                    ]
+                },
+                {
+                    "code": "ASB123S",
+                    "name": "Brit sajtó és tömegkommunikáció",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKSZ3220A",
+                    "name": "Szakdolgozat szeminárium II.",
+                    "credits": 0,
+                    "prerequisites": [
+                        "VETKSZ3120A"
+                    ]
+                },
+                {
+                    "code": "unknown",
+                    "name": "Szakdolgozat",
+                    "credits": 4
+                },
+                {
+                    "code": null,
+                    "name": "Szabadon választható tárgyak vagy specializáció vagy pedagógia",
+                    "credits": 11,
+                    "course_block_references": [
+                        "Specializáció: angol idegenforgalmi referens",
+                        "Specializáció: szaknyelvi közvetítés",
+                        "Pedagógiai modul"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Specializáció: angol idegenforgalmi referens",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "ASB323F",
+                    "name": "Az EU idegenforgalmi földrajza",
+                    "credits": 3,
+                    "prerequisites": [
+                        "ASB123A",
+                        "ASB123B",
+                        "ASB223A",
+                        "ASB223B"
+                    ]
+                },
+                {
+                    "code": "ASB323I",
+                    "name": "Szaknyelv 1: Idegenforgalmi szaknyelv",
+                    "credits": 3
+                },
+                {
+                    "code": "ASB323G",
+                    "name": "Szaknyelv 3: Gazdasági, üzleti szaknyelv",
+                    "credits": 3,
+                    "prerequisites": [
+                        "ASB1X3A"
+                    ]
+                },
+                {
+                    "code": "ASB313P",
+                    "name": "Viselkedéskultúra",
+                    "credits": 3,
+                    "prerequisites": [
+                        "ASB123A",
+                        "ASB123B",
+                        "ASB223A",
+                        "ASB223B"
+                    ]
+                },
+                {
+                    "code": "ASB323S",
+                    "name": "Személyközi kommunikáció",
+                    "credits": 3,
+                    "prerequisites": [
+                        "ASB123A",
+                        "ASB123B"
+                    ]
+                },
+                {
+                    "code": "ASB313M",
+                    "name": "Művészettörténet",
+                    "credits": 3,
+                    "prerequisites": [
+                        "ASB123A",
+                        "ASB123B"
+                    ]
+                },
+                {
+                    "code": "ASB323D",
+                    "name": "Fordítás és tolmácsolás",
+                    "credits": 3,
+                    "prerequisites": [
+                        "ASB123A",
+                        "ASB123B",
+                        "ASB223A",
+                        "ASB223B",
+                        "ASB1X3A"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Specializáció: szaknyelvi közvetítés",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "ASB323S",
+                    "name": "Személyközi kommunikáció",
+                    "credits": 3,
+                    "prerequisites": [
+                        "ASB123A",
+                        "ASB123B"
+                    ]
+                },
+                {
+                    "code": "ASB313P",
+                    "name": "Viselkedéskultúra",
+                    "credits": 3,
+                    "prerequisites": [
+                        "ASB123A",
+                        "ASB123B",
+                        "ASB223A",
+                        "ASB223B"
+                    ]
+                },
+                {
+                    "code": "ASB323J",
+                    "name": "Szaknyelv 2: Jogi, közigazgatási szaknyelv",
+                    "credits": 3,
+                    "prerequisites": [
+                        "ASB1X3A"
+                    ]
+                },
+                {
+                    "code": "ASB323G",
+                    "name": "Szaknyelv 3: Gazdasági, üzleti szaknyelv",
+                    "credits": 3,
+                    "prerequisites": [
+                        "ASB1X3A"
+                    ]
+                },
+                {
+                    "code": "ASB323P",
+                    "name": "Szaknyelv 4: Politikai és diplomáciai szaknyelv",
+                    "credits": 3,
+                    "prerequisites": [
+                        "ASB1X3A"
+                    ]
+                },
+                {
+                    "code": "ASB323E",
+                    "name": "Az íráskészség fejlesztése",
+                    "credits": 3,
+                    "prerequisites": [
+                        "ASB123A",
+                        "ASB123B",
+                        "ASB223A",
+                        "ASB223B"
+                    ]
+                },
+                {
+                    "code": "ASB323D",
+                    "name": "Fordítás és tolmácsolás",
+                    "credits": 3,
+                    "prerequisites": [
+                        "ASB1X3A"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Pedagógiai modul",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "PPB312B",
+                    "name": "A pszichológia alapkérdései",
+                    "credits": 2
+                },
+                {
+                    "code": "PPB322K",
+                    "name": "Személyes pedagógiai nézetek elemzése",
+                    "credits": 2
+                },
+                {
+                    "code": "PPB312T",
+                    "name": "Tanulási kultúra",
+                    "credits": 2
+                },
+                {
+                    "code": "PPB312A",
+                    "name": "Pedagógiai antropológia",
+                    "credits": 2
+                },
+                {
+                    "code": "PPB322P",
+                    "name": "Kommunikációs képességek fejlesztése",
+                    "credits": 2
+                }
+            ]
+        }
+    ]
 }

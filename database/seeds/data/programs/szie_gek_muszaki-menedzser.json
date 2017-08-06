@@ -1,5 +1,793 @@
 {
     "name": "Műszaki menedzser",
     "description": "Műszaki menedzser Bsc szak - nappali tagozat tanterve",
-    "curriculum_updated_at": "2012-05-04"
+    "curriculum_updated_at": "2012-05-04",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Matematikai alapok",
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Fizikai alapok",
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Alkalmazott biológia",
+                    "credits": 5
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "EU ismeretek",
+                    "credits": 2
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Fizika I.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Informatika I.",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Matematika I.",
+                    "credits": 6,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Mérnöki alapismeretek",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN_H",
+                    "name": "Műszaki ábrázolás",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Műszaki kémia",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Speciális kollégium I.",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Elektrotechnika",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Fizika II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Informatika II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Közgazdaságtan I.",
+                    "credits": 5
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Matematika II.",
+                    "credits": 6,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Menedzsment ismeretek",
+                    "credits": 2
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Menedzsment módszerek",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Műszaki mechanika",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Anyag, gép és üzemismereti gyakorlat",
+                    "credits": 0,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Testnevelés I.",
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Speciális kollégium II.",
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Angol nyelv I.",
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Német nyelv I.",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Anyagismeret",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Gépelemek",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXN",
+                        "SGMxxXxxXN_H"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Kereskedelmi ismeretek",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Közgazdaságtan II.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Marketing",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Minőségmenedzsment",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Szociológia",
+                    "credits": 2
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Testnevelés II.",
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Angol nyelv II.",
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Német nyelv II.",
+                    "credits": 0
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható tárgy",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Matematikai statisztika",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Motorok és gépjárművek",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Projektmenedzsment",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Számvitel alapjai",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Termelés és szolgáltatásmenedzsment",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Vállalatgazdaságtan",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Vállalkozásvezetési gyakorlat",
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Angol nyelv III.",
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Német nyelv III.",
+                    "credits": 0
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható tárgy",
+                    "credits": 5
+                }
+            ]
+        },
+        {
+            "name": "5. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Gépek és rendszerek üzemeltetése",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Logisztika",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Megmunkálási eljárások",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Műszaki gazdaságtan",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Pénzügytan",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Angol nyelv IV.",
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Német nyelv IV.",
+                    "credits": 0
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választott (szakirányos) tárgy",
+                    "credits": 8,
+                    "course_block_references": [
+                        "Energiagazdálkodás szakirány 2011\/2012-től",
+                        "Menedzser üzletkötő szakirány 2011\/2012-től",
+                        "Termelés- és minőségmenedzsment szakirány 2011\/2012-től",
+                        "Termelés- és minőségmenedzsment szakirány 2013\/2014-től"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható tárgy",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "6. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Gazdasági jog",
+                    "credits": 2
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Gazdaságpszichológia",
+                    "credits": 2
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Vállalkozásmenedzsment",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választott (szakirányos) tárgy",
+                    "credits": 20,
+                    "course_block_references": [
+                        "Energiagazdálkodás szakirány 2011\/2012-től",
+                        "Menedzser üzletkötő szakirány 2011\/2012-től",
+                        "Termelés- és minőségmenedzsment szakirány 2011\/2012-től",
+                        "Termelés- és minőségmenedzsment szakirány 2013\/2014-től"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható tárgy",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "7. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Projektfeladat",
+                    "credits": 10
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Szakdolgozatkészítési gyakorlat",
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Szakdolgozat",
+                    "credits": 15
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választott (szakirányos) tárgy",
+                    "credits": 5,
+                    "course_block_references": [
+                        "Energiagazdálkodás szakirány 2011\/2012-től",
+                        "Menedzser üzletkötő szakirány 2011\/2012-től",
+                        "Termelés- és minőségmenedzsment szakirány 2011\/2012-től",
+                        "Termelés- és minőségmenedzsment szakirány 2013\/2014-től"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Szakirányok 2011\/2012-től",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "Energiagazdálkodás szakirány",
+                    "credits": 33
+                },
+                {
+                    "code": null,
+                    "name": "Menedzser üzletkötő",
+                    "credits": 33
+                },
+                {
+                    "code": null,
+                    "name": "Termelés- és minőségmenedzsment",
+                    "credits": 33
+                }
+            ]
+        },
+        {
+            "name": "Szakirányok 2013\/2014-től",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "Termelés- és minőségmenedzsment",
+                    "credits": 33
+                }
+            ]
+        },
+        {
+            "name": "Energiagazdálkodás szakirány 2011\/2012-től",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Energetikai alapok",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Geotermális energiagazdálkodás",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Biomassza gazdálkodás",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Környezetbarát energiagazdálkodás",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Mobil energetika",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Szélenergia gazdálkodás",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Napenergia hasznosítás",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Térinformatikai rendszerek",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Menedzser üzletkötő szakirány 2011\/2012-től",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Ellátásilánc menedzsment",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Marketing és piackutatás",
+                    "credits": 2
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Termelőeszköz-kereskedelem",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Adózási ismeretek",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Gépüzemfenntartás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Környezetgazdálkodás",
+                    "credits": 2
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Minőségügyi rendszerszabványok",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Statisztikai programok alkalmazása",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Vevőkapcsolat menedzsment",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Üzletkötési ismeretek",
+                    "credits": 5
+                }
+            ]
+        },
+        {
+            "name": "Termelés- és minőségmenedzsment szakirány 2011\/2012-től",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Ellátásilánc menedzsment",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Integrált vállalatirányítási rendszerek",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Operációkutatás",
+                    "credits": 2
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Gépüzemfenntartás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Jog és minőség",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Környezetgazdálkodás",
+                    "credits": 2
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Mérés és minőség",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Minőségügyi rendszerszabványok",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Műszaki fejlesztés ökonőmiája",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Statisztikai programok alkalmazása",
+                    "credits": 4
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Minőségirányítási rendszerfejlesztési gyakorlat",
+                    "credits": 5
+                }
+            ]
+        },
+        {
+            "name": "Termelés- és minőségmenedzsment szakirány 2013\/2014-től",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Raktározás és csomagolástechnika",
+                    "credits": 5
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Integrált vállalatirányítási rendszerek",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Gépüzemfenntartás",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Környezetgazdálkodás",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Gépipari mérés és minőségbiztosítás",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Minőségügyi rendszerfejlesztés",
+                    "credits": 6,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Statisztikai programok alkalmazása",
+                    "credits": 2
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Műszaki fejlesztés ökonómiája",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                }
+            ]
+        }
+    ]
 }

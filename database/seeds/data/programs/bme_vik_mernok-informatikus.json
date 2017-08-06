@@ -1,5 +1,1234 @@
 {
     "name": "Mérnök informatikus",
     "description": "Mérnök informatikus BSc szak - nappali tagozat tanterve",
-    "curriculum_updated_at": "2013-06-19"
+    "curriculum_updated_at": "2013-06-19",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "TE90AX04",
+                    "name": "Analízis 1",
+                    "credits": 7
+                },
+                {
+                    "code": "VISZA103",
+                    "name": "Bevezetés a számításelméletbe 1",
+                    "credits": 5
+                },
+                {
+                    "code": "GT30A001",
+                    "name": "Mikro- és makroökonómia",
+                    "credits": 4
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható gazdasági-humán tárgyak 2",
+                    "credits": 2,
+                    "course_block_references": [
+                        "Kötelezően választható gazdasági-humán tárgyak"
+                    ]
+                },
+                {
+                    "code": "VIMIA102",
+                    "name": "Digitális technika 1",
+                    "credits": 5
+                },
+                {
+                    "code": "VIEEA100",
+                    "name": "A programozás alapjai 1",
+                    "credits": 5
+                },
+                {
+                    "code": "VIEEA101",
+                    "name": "Szoftver laboratórium",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(VIEEA100)"
+                    ]
+                },
+                {
+                    "code": "tesi1",
+                    "name": "Testnevelés",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "TE90AX05",
+                    "name": "Analízis 2",
+                    "credits": 7,
+                    "prerequisites": [
+                        "TE90AX04"
+                    ]
+                },
+                {
+                    "code": "VISZA110",
+                    "name": "Bevezetés a számításelméletbe 2",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VISZA103"
+                    ]
+                },
+                {
+                    "code": "TE11AX03",
+                    "name": "Fizika 1",
+                    "credits": 4,
+                    "prerequisites": [
+                        "TE90AX04"
+                    ]
+                },
+                {
+                    "code": "GT20A001",
+                    "name": "Menedzsment és vállalkozásgazdtan",
+                    "credits": 4
+                },
+                {
+                    "code": "VIMIA111",
+                    "name": "Digitális technika 2",
+                    "credits": 5,
+                    "prerequisites": [
+                        "VIMIA102"
+                    ]
+                },
+                {
+                    "code": "VIIIA114",
+                    "name": "A programozás alapjai 2",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VIEEA100"
+                    ]
+                },
+                {
+                    "code": "VIIIA115",
+                    "name": "Szoftver laboratórium",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(VIIIA114)"
+                    ]
+                },
+                {
+                    "code": "tesi2",
+                    "name": "Testnevelés",
+                    "credits": 0,
+                    "prerequisites": [
+                        "tesi1"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VISZA208",
+                    "name": "Valószínűségszámítás",
+                    "credits": 4,
+                    "prerequisites": [
+                        "(TE90AX05)"
+                    ]
+                },
+                {
+                    "code": "VIHIA209",
+                    "name": "Kódolástechnika",
+                    "credits": 5,
+                    "prerequisites": [
+                        "VISZA110"
+                    ]
+                },
+                {
+                    "code": "TE11AX04",
+                    "name": "Fizika 2",
+                    "credits": 4,
+                    "prerequisites": [
+                        "TE11AX03"
+                    ]
+                },
+                {
+                    "code": "GT55A001",
+                    "name": "Üzleti jog",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható gazdasági-humán tárgyak 2",
+                    "credits": 2,
+                    "course_block_references": [
+                        "Kötelezően választható gazdasági-humán tárgyak"
+                    ]
+                },
+                {
+                    "code": "VIHIA210",
+                    "name": "Számítógép-architektúrák",
+                    "credits": 5,
+                    "prerequisites": [
+                        "VIMIA111"
+                    ]
+                },
+                {
+                    "code": "VIMIA211",
+                    "name": "Mérés laboratórium",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(VIMIA111)"
+                    ]
+                },
+                {
+                    "code": "VIIIA217",
+                    "name": "Szoftvertechnológia",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VIIIA114"
+                    ]
+                },
+                {
+                    "code": "VIIIA212",
+                    "name": "Szoftver laboratórium",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VIIIA114"
+                    ]
+                },
+                {
+                    "code": "tesi3",
+                    "name": "Testnevelés",
+                    "credits": 0,
+                    "prerequisites": [
+                        "tesi2"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VISZA213",
+                    "name": "Algoritmuselmélet",
+                    "credits": 5,
+                    "prerequisites": [
+                        "VISZA110"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható gazdasági-humán tárgyak 1",
+                    "credits": 2,
+                    "course_block_references": [
+                        "Kötelezően választható gazdasági-humán tárgyak"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható gazdasági-humán tárgyak 2",
+                    "credits": 2,
+                    "course_block_references": [
+                        "Kötelezően választható gazdasági-humán tárgyak"
+                    ]
+                },
+                {
+                    "code": "VIHVA214",
+                    "name": "Jelek és rendszerek",
+                    "credits": 5,
+                    "prerequisites": [
+                        "TE90AX05"
+                    ]
+                },
+                {
+                    "code": "VIHIA215",
+                    "name": "Számítógép hálózatok",
+                    "credits": 4,
+                    "prerequisites": [
+                        "(VIHIA210)"
+                    ]
+                },
+                {
+                    "code": "VIMIA216",
+                    "name": "Mérés laboratórium",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VIMIA111"
+                    ]
+                },
+                {
+                    "code": "VIAUA218",
+                    "name": "Szoftvertechnikák",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VISZA103",
+                        "VIIIA114"
+                    ]
+                },
+                {
+                    "code": "VIMIA219",
+                    "name": "Operációs rendszerek",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VIHIA210"
+                    ]
+                },
+                {
+                    "code": "VIIIA220",
+                    "name": "Szoftver laboratórium",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VIIIA217"
+                    ]
+                },
+                {
+                    "code": "tesi4",
+                    "name": "Testnevelés",
+                    "credits": 0,
+                    "prerequisites": [
+                        "tesi3"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "5. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "Kötelezően választható gazdasági-humán tárgyak 1",
+                    "credits": 2,
+                    "course_block_references": [
+                        "Kötelezően választható gazdasági-humán tárgyak"
+                    ]
+                },
+                {
+                    "code": "VIEEA307",
+                    "name": "Elektronika",
+                    "credits": 4,
+                    "prerequisites": [
+                        "(TE11AX04)"
+                    ]
+                },
+                {
+                    "code": "VIAUA309",
+                    "name": "Szabályozástechnika",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VIHVA214"
+                    ]
+                },
+                {
+                    "code": "VITMA310",
+                    "name": "Távközlő hálózatok és szolgáltatások",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VIHIA215"
+                    ]
+                },
+                {
+                    "code": "VIMIA312",
+                    "name": "Mérés laboratórium",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VIMIA216",
+                        "VIMIA219"
+                    ]
+                },
+                {
+                    "code": "VITMA311",
+                    "name": "Adatbázisok",
+                    "credits": 5,
+                    "prerequisites": [
+                        "VISZA213"
+                    ]
+                },
+                {
+                    "code": "VIMIA313",
+                    "name": "Mesterséges intelligencia ",
+                    "credits": 5,
+                    "prerequisites": [
+                        "VISZA213"
+                    ]
+                },
+                {
+                    "code": "VIIIA316",
+                    "name": "Számítógépes grafika és képfeldolgozás",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VISZA103",
+                        "(VIIIA212)"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "6. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VIMIA315",
+                    "name": "Mérés laboratórium",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VIHIA215",
+                        "VITMA310",
+                        "VIMIA219"
+                    ]
+                },
+                {
+                    "code": "VITMA314",
+                    "name": "Információs rendszerek üzemeltetése",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VITMA310"
+                    ]
+                },
+                {
+                    "code": "VITMA308",
+                    "name": "Szoftver laboratórium",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VITMA311"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható tantárgy 1",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Szakirány 6. - 7. félév",
+                    "credits": 37,
+                    "course_block_references": [
+                        "Autonóm intelligens rendszerek szakirány - Autonóm rendszerek ágazat",
+                        "Infokommunikációs hálózatok szakirány - Infokommunikációs hálózatok és szolgáltatások ágazat",
+                        "Informatikai technológiák szakirány - Szoftverfejlesztési ágazat",
+                        "Médiainformatika és -biztonság szakirány - Médiainformatika ágazat",
+                        "Vállalati információs rendszerek szakirány",
+                        "Autonóm intelligens rendszerek szakirány - Intelligens rendszerek ágazat",
+                        "Infokommunikációs hálózatok szakirány - Mobil infokommunikáció ágazat",
+                        "Informatikai technológiák szakirány - Rendszerfejlesztési ágazat",
+                        "Informatikai technológiák szakirány - Rendszertervezési ágazat",
+                        "Médiainformatika és -biztonság szakirány - Médiatechnológiák ágazat"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "7. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "Elágazó",
+                    "credits": 5,
+                    "course_block_references": [
+                        "Elágazó"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható tantárgy 1",
+                    "credits": 4
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható tantárgy 2",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választható gazdasági-humán tárgyak",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "GT35A001",
+                    "name": "Pénzügyek",
+                    "credits": 2
+                },
+                {
+                    "code": "GT20V100",
+                    "name": "Innovatív vállalkozások indítása és működtetése",
+                    "credits": 2
+                },
+                {
+                    "code": "GT35A003",
+                    "name": "Gazdaságpolitika",
+                    "credits": 2
+                },
+                {
+                    "code": "GT42A001",
+                    "name": "Környezetgazdaságtan",
+                    "credits": 2
+                },
+                {
+                    "code": "GT52A013",
+                    "name": "Szociális készségfejlesztés",
+                    "credits": 2
+                },
+                {
+                    "code": "GT35A002",
+                    "name": "Számvitel",
+                    "credits": 2
+                },
+                {
+                    "code": "VITMAK47",
+                    "name": "Mérnöki menedzsment módszerek",
+                    "credits": 2
+                },
+                {
+                    "code": "GT20A002",
+                    "name": "Marketing",
+                    "credits": 2
+                },
+                {
+                    "code": "GT52A002",
+                    "name": "Pszichológia",
+                    "credits": 2
+                },
+                {
+                    "code": "GT52A001",
+                    "name": "Ergonómia",
+                    "credits": 2
+                },
+                {
+                    "code": "GT43A002",
+                    "name": "Szociológia",
+                    "credits": 2
+                },
+                {
+                    "code": "VIETAK49",
+                    "name": "Adatvédelem és információszabadság",
+                    "credits": 2
+                },
+                {
+                    "code": "VIVEAK48",
+                    "name": "Mérnöki problémamegoldás",
+                    "credits": 2
+                },
+                {
+                    "code": "VITMAK48",
+                    "name": "Érzelmek logikája",
+                    "credits": 2
+                },
+                {
+                    "code": "VITMAK49",
+                    "name": "Digitális életmód",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Autonóm intelligens rendszerek szakirány - Autonóm rendszerek ágazat",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VIIIA356",
+                    "name": "Ipari képfeldolgozás és képmegjelenítés",
+                    "credits": 4,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VIMIA357",
+                    "name": "Kooperatív és tanuló rendszerek",
+                    "credits": 4,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VIIIA358",
+                    "name": "Autonóm robotok és járművek",
+                    "credits": 4,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VIIIA361",
+                    "name": "Autonóm robotok és járművek laboratórium 1",
+                    "credits": 2,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VIIIA363",
+                    "name": "Önálló laboratórium",
+                    "credits": 6,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "VIIIA424",
+                    "name": "Autonóm robotok és járművek laboratórium 2",
+                    "credits": 2,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VIIIA404",
+                    "name": "Szakdolgozat",
+                    "credits": 15,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Autonóm intelligens rendszerek szakirány - Intelligens rendszerek ágazat",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VIIIA356",
+                    "name": "Ipari képfeldolgozás és képmegjelenítés",
+                    "credits": 4,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VIMIA357",
+                    "name": "Kooperatív és tanuló rendszerek",
+                    "credits": 4,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VIMIA359",
+                    "name": "Beágyazott információs rendszerek",
+                    "credits": 4,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VIMIA360",
+                    "name": "Intelligens rendszerek laboratórium 1",
+                    "credits": 2,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VIMIA362",
+                    "name": "Önálló laboratórium",
+                    "credits": 6,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "VIMIA430",
+                    "name": "Intelligens rendszerek laboratórium 2",
+                    "credits": 2,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VIMIA410",
+                    "name": "Szakdolgozat",
+                    "credits": 15,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Infokommunikációs hálózatok szakirány - Infokommunikációs hálózatok és szolgáltatások ágazat",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VITMA364",
+                    "name": "Protokoll-technológia",
+                    "credits": 4,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VIHIA317",
+                    "name": "Mobil infokommunikációs rendszerek",
+                    "credits": 4,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VITMA365",
+                    "name": "IP alapú hálózatok menedzsmentje",
+                    "credits": 4,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VITMA366",
+                    "name": "Infokommunikációs hálózatok és szolgáltatások laboratórium 1",
+                    "credits": 2,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VITMA367",
+                    "name": "Önálló laboratórium",
+                    "credits": 6,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "VITMA427",
+                    "name": "Infokommunikációs hálózatok és szolgáltatások laboratórium 2",
+                    "credits": 2,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VITMA415",
+                    "name": "Szakdolgozat",
+                    "credits": 15,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Infokommunikációs hálózatok szakirány - Mobil infokommunikáció ágazat",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VITMA364",
+                    "name": "Protokoll-technológia",
+                    "credits": 4,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VIHIA317",
+                    "name": "Mobil infokommunikációs rendszerek",
+                    "credits": 4,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VIHIA318",
+                    "name": "Infokommunikációs hálózatok tervezése és üzemeltetése",
+                    "credits": 4,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VIHIA319",
+                    "name": "Mobil infokommunikáció laboratórium 1",
+                    "credits": 2,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VIHIA320",
+                    "name": "Önálló laboratórium",
+                    "credits": 6,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "VIHIA426",
+                    "name": "Mobil infokommunikáció laboratórium 2",
+                    "credits": 2,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VIHIA422",
+                    "name": "Szakdolgozat",
+                    "credits": 15,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Informatikai technológiák szakirány - Szoftverfejlesztési ágazat",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VIAUA369",
+                    "name": "Adatvezérelt alkalmazások fejlesztése",
+                    "credits": 4,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VIIIA371",
+                    "name": "Objektumorientált szoftvertervezés",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VIIIA217",
+                        "VIIIA212",
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VIMIA370",
+                    "name": "Intelligens rendszerfelügyelet",
+                    "credits": 4,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VIAU372",
+                    "name": "Informatikai technológiák laboratórium 1",
+                    "credits": 2,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VIAUA375",
+                    "name": "Önálló laboratórium",
+                    "credits": 6,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "VIAUA425",
+                    "name": "Informatikai technológiák laboratórium 2",
+                    "credits": 2,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VIAUA406",
+                    "name": "Szakdolgozat",
+                    "credits": 15,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Informatikai technológiák szakirány - Rendszerfejlesztési ágazat",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VIAUA369",
+                    "name": "Adatvezérelt alkalmazások fejlesztése",
+                    "credits": 4,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VIIIA371",
+                    "name": "Objektumorientált szoftvertervezés",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VIIIA217",
+                        "VIIIA212",
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VIMIA370",
+                    "name": "Intelligens rendszerfelügyelet",
+                    "credits": 4,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VIIIA374",
+                    "name": "Informatikai technológiák laboratórium 1",
+                    "credits": 2,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VIIIA377",
+                    "name": "Önálló laboratórium",
+                    "credits": 6,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "VIIIA428",
+                    "name": "Informatikai technológiák laboratórium 2",
+                    "credits": 2,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VIIIA412",
+                    "name": "Szakdolgozat",
+                    "credits": 15,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Informatikai technológiák szakirány - Rendszertervezési ágazat",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VIAUA369",
+                    "name": "Adatvezérelt alkalmazások fejlesztése",
+                    "credits": 4,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VIIIA371",
+                    "name": "Objektumorientált szoftvertervezés",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VIIIA217",
+                        "VIIIA212",
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VIMIA370",
+                    "name": "Intelligens rendszerfelügyelet",
+                    "credits": 4,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VIMIA373",
+                    "name": "Informatikai technológiák laboratórium 1",
+                    "credits": 2,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VIMIA376",
+                    "name": "Önálló laboratórium",
+                    "credits": 6,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "VIMIA429",
+                    "name": "Informatikai technológiák laboratórium 2",
+                    "credits": 2,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VIMIA411",
+                    "name": "Szakdolgozat",
+                    "credits": 15,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Médiainformatika és -biztonság szakirány - Médiainformatika ágazat",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VITMA368",
+                    "name": "Tartalomkezelési technológiák",
+                    "credits": 4,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VIHIA321",
+                    "name": "Médiatechnológiák",
+                    "credits": 4,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VITMA378",
+                    "name": "Médiabiztonság",
+                    "credits": 4,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VITMA379",
+                    "name": "Médiainformatika laboratórium 1",
+                    "credits": 2,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VITMA380",
+                    "name": "Önálló laboratórium",
+                    "credits": 6,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "VITMA432",
+                    "name": "Médiainformatika laboratórium 2",
+                    "credits": 2,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VITMA416",
+                    "name": "Szakdolgozat",
+                    "credits": 15,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Médiainformatika és -biztonság szakirány - Médiatechnológiák ágazat",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VITMA368",
+                    "name": "Tartalomkezelési technológiák",
+                    "credits": 4,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VIHIA321",
+                    "name": "Médiatechnológiák",
+                    "credits": 4,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VIHIA322",
+                    "name": "Adatbiztonság és tartalom alapú információkezelés",
+                    "credits": 4,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VIHIA323",
+                    "name": "Médiatechnológiák laboratórium 1",
+                    "credits": 2,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VIHIA324",
+                    "name": "Önálló laboratórium",
+                    "credits": 6,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "VIHIA431",
+                    "name": "Médiatechnológiák laboratórium 2",
+                    "credits": 2,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VIHIA413",
+                    "name": "Szakdolgozat",
+                    "credits": 15,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Vállalati információs rendszerek szakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VIETA382",
+                    "name": "Vállalatirányítási rendszerek",
+                    "credits": 4,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VIETA383",
+                    "name": "Termelésinformatika",
+                    "credits": 4,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VITMA381",
+                    "name": "Gazdálkodási információmenedzsment",
+                    "credits": 4,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VISZA384",
+                    "name": "Adatbányászat laboratórium",
+                    "credits": 2,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VIETA386",
+                    "name": "Önálló laboratórium",
+                    "credits": 6,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "VIETA433",
+                    "name": "Vállalati rendszerek programozása laboratórium",
+                    "credits": 2,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                },
+                {
+                    "code": "VIETA420",
+                    "name": "Szakdolgozat",
+                    "credits": 15,
+                    "prerequisites": [
+                        "___120___"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Elágazó",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VITMA404",
+                    "name": "Beszédinformációs rendszerek",
+                    "credits": 5,
+                    "prerequisites": [
+                        "VISZA208"
+                    ]
+                },
+                {
+                    "code": "VIMIA405",
+                    "name": "Rendszermodellezés",
+                    "credits": 5,
+                    "prerequisites": [
+                        "VISZA208",
+                        "VIIIA217"
+                    ]
+                },
+                {
+                    "code": "VISZA403",
+                    "name": "Deklaratív programozás",
+                    "credits": 5,
+                    "prerequisites": [
+                        "VIIIA217"
+                    ]
+                }
+            ]
+        }
+    ]
 }

@@ -1,5 +1,739 @@
 {
     "name": "Biológia",
     "description": "Biológia BSc szak - nappali tagozat tanterve",
-    "curriculum_updated_at": "2010-06-18"
+    "curriculum_updated_at": "2010-06-18",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "MAT02",
+                    "name": "Matematika I. gyakorlat",
+                    "credits": 1,
+                    "prerequisites": [
+                        "(MAT01)"
+                    ]
+                },
+                {
+                    "code": "MAT01",
+                    "name": "Matematika I. előadás",
+                    "credits": 2
+                },
+                {
+                    "code": "MAT05",
+                    "name": "Informatika előadás",
+                    "credits": 2
+                },
+                {
+                    "code": "FIZ01",
+                    "name": "Fizikai alapismeretek",
+                    "credits": 2
+                },
+                {
+                    "code": "kemiaalap",
+                    "name": "Kémia alapozó",
+                    "credits": 0
+                },
+                {
+                    "code": "KEM0901",
+                    "name": "Kémiai alapismeretek I. előadás",
+                    "credits": 2
+                },
+                {
+                    "code": "BIO3002",
+                    "name": "Biológiai laboratóriumi alapgyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "BIO1103",
+                    "name": "Állatszervezettan I. előadás",
+                    "credits": 2
+                },
+                {
+                    "code": "BIO2103",
+                    "name": "Növényszervezettan előadás",
+                    "credits": 4
+                },
+                {
+                    "code": "BIO2104",
+                    "name": "Növényszervezettan gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "BIO1302",
+                    "name": "Sejtbiológia",
+                    "credits": 2
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 9
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "MAT03",
+                    "name": "Matematika II. előadás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "MAT01"
+                    ]
+                },
+                {
+                    "code": "MAT04",
+                    "name": "Matematika II. gyakorlat",
+                    "credits": 1,
+                    "prerequisites": [
+                        "MAT02"
+                    ]
+                },
+                {
+                    "code": "KEM0902",
+                    "name": "Kémiai alapismeretek I. gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "kemiaalap",
+                        "KEM0901"
+                    ]
+                },
+                {
+                    "code": "KEM0903",
+                    "name": "Kémiai alapismeretek II. előadás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "KEM0901"
+                    ]
+                },
+                {
+                    "code": "KEM03",
+                    "name": "Szerves kémia előadás",
+                    "credits": 2
+                },
+                {
+                    "code": "KOR02",
+                    "name": "Földtudományi alapismeretek",
+                    "credits": 2
+                },
+                {
+                    "code": "BIO1104",
+                    "name": "Állatszervezettan I. gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(BIO1103)"
+                    ]
+                },
+                {
+                    "code": "BIO1105",
+                    "name": "Állatszervezettan II. előadás",
+                    "credits": 3,
+                    "prerequisites": [
+                        "(BIO1103)"
+                    ]
+                },
+                {
+                    "code": "BIO1203",
+                    "name": "Állatrendszertan előadás",
+                    "credits": 4
+                },
+                {
+                    "code": "BIO1204",
+                    "name": "Állatrendszertan gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(BIO1203)"
+                    ]
+                },
+                {
+                    "code": "BIO2203",
+                    "name": "Növényrendszertan előadás",
+                    "credits": 4
+                },
+                {
+                    "code": "BIO2204",
+                    "name": "Növényrendszertan gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(BIO2203)"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "KEM0904",
+                    "name": "Kémiai alapismeretek II. gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "KEM0901",
+                        "KEM0902"
+                    ]
+                },
+                {
+                    "code": "BIO3104",
+                    "name": "Biokémia I. előadás",
+                    "credits": 4
+                },
+                {
+                    "code": "BIO1403",
+                    "name": "Állatélettan I. előadás",
+                    "credits": 2
+                },
+                {
+                    "code": "BIO4203",
+                    "name": "Ökológia",
+                    "credits": 4
+                },
+                {
+                    "code": null,
+                    "name": "Specializáció - közös",
+                    "credits": 18,
+                    "course_block_references": [
+                        "Biológia közös specializációs alap 3. félév"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BIO3105",
+                    "name": "Biokémia I. gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "BIO1001",
+                    "name": "Növény- és állatrendszertan terepgyakorlat",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BIO1203",
+                        "BIO1204",
+                        "BIO2203",
+                        "BIO2204"
+                    ]
+                },
+                {
+                    "code": "BIO1404",
+                    "name": "Állatélettan I. gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(BIO1403)"
+                    ]
+                },
+                {
+                    "code": "BIO1405",
+                    "name": "Állatélettan II. előadás",
+                    "credits": 3,
+                    "prerequisites": [
+                        "(BIO1403)"
+                    ]
+                },
+                {
+                    "code": "BIO2404",
+                    "name": "Növényélettan I. előadás",
+                    "credits": 4
+                },
+                {
+                    "code": "BIO3301",
+                    "name": "Mikrobiológia I. előadás",
+                    "credits": 2
+                },
+                {
+                    "code": "BIO3302",
+                    "name": "Mikrobiológia I. gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(BIO3301)"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Specializáció - közös",
+                    "credits": 8,
+                    "course_block_references": [
+                        "Biológia közös specializációs alap 4. félév"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "5. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BIO4101",
+                    "name": "Humánbiológia",
+                    "credits": 2
+                },
+                {
+                    "code": "BIO2405",
+                    "name": "Növényélettan I. gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(BIO2404)"
+                    ]
+                },
+                {
+                    "code": "BIO4301",
+                    "name": "Biogeográfia",
+                    "credits": 2
+                },
+                {
+                    "code": "BIO3204",
+                    "name": "Genetika előadás",
+                    "credits": 4
+                },
+                {
+                    "code": "BIO3404",
+                    "name": "Molekuláris biológia I. előadás",
+                    "credits": 4
+                },
+                {
+                    "code": "BIO3405",
+                    "name": "Molekuláris biológia I. gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(BIO3404)"
+                    ]
+                },
+                {
+                    "code": "szakdolikonzult",
+                    "name": "Szakdolgozati konzultáció",
+                    "credits": 5
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 9
+                }
+            ]
+        },
+        {
+            "name": "6. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BIO4801",
+                    "name": "Természet és környezetvédelem",
+                    "credits": 2
+                },
+                {
+                    "code": "BIO4601",
+                    "name": "Evolúció",
+                    "credits": 2
+                },
+                {
+                    "code": "BIO4701",
+                    "name": "Etológia",
+                    "credits": 2
+                },
+                {
+                    "code": "szakdolikonzultved",
+                    "name": "Szakdolgozati konzultáció II. és védés",
+                    "credits": 5
+                },
+                {
+                    "code": null,
+                    "name": "Specializáció - közös",
+                    "credits": 8,
+                    "course_block_references": [
+                        "Biológia közös specializációs alap 6. félév"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 11
+                }
+            ]
+        },
+        {
+            "name": "Ajánlott szabadon választható",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "FOL01",
+                    "name": "Európai Uniós alapismeretek",
+                    "credits": 2
+                },
+                {
+                    "code": "FOL02",
+                    "name": "Közgazdaságtan",
+                    "credits": 2
+                },
+                {
+                    "code": "KOR01",
+                    "name": "Környezeti auditálás, minıségbiztosítás",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Biológia közös specializációs alap 3. félév",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "BIO5101",
+                    "name": "Biosztatisztika előadás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(MAT03)"
+                    ]
+                },
+                {
+                    "code": "BIO5102",
+                    "name": "Biosztatisztika gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(BIO5101)"
+                    ]
+                },
+                {
+                    "code": "BIO5201",
+                    "name": "Informatika gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(MAT05)"
+                    ]
+                },
+                {
+                    "code": "BIO5301",
+                    "name": "Fizikai mérések a biológiában előadás",
+                    "credits": 2
+                },
+                {
+                    "code": "muszanalea",
+                    "name": "Műszaki analitika előadás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "KEM0903"
+                    ]
+                },
+                {
+                    "code": "muszanalgy",
+                    "name": "Műszaki analitika gyakorlat",
+                    "credits": 3,
+                    "prerequisites": [
+                        "KEM0902",
+                        "(muszanalea)"
+                    ]
+                },
+                {
+                    "code": "KEM0302",
+                    "name": "Szerves kémia gyakorlat",
+                    "credits": 1,
+                    "prerequisites": [
+                        "(KEM03)"
+                    ]
+                },
+                {
+                    "code": "BIO5801",
+                    "name": "Sejt- és szövettan",
+                    "credits": 2
+                },
+                {
+                    "code": "BIO1106",
+                    "name": "Állatszervezettan II. gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BIO1104"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Biológia közös specializációs alap 4. félév",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "BIO5302",
+                    "name": "Fizikai mérések a biológiában gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(BIO5301)"
+                    ]
+                },
+                {
+                    "code": "BIO5701",
+                    "name": "Szakirodalmazási ismeretek",
+                    "credits": 2
+                },
+                {
+                    "code": "BIO4204",
+                    "name": "Általános ökológia gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(BIO4203)"
+                    ]
+                },
+                {
+                    "code": "BIO1406",
+                    "name": "Állatélettan II. gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(BIO1404)"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Biológia közös specializációs alap 6. félév",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "bioinfoea",
+                    "name": "Bioinformatika előadás",
+                    "credits": 2
+                },
+                {
+                    "code": "BIO3205",
+                    "name": "Genetika gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(BIO3204)"
+                    ]
+                },
+                {
+                    "code": "biotori",
+                    "name": "Biológia története",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "Kísérletes biológia szakirány 4. félév",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "BIO3106",
+                    "name": "Biokémia II. gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(BIO3105)"
+                    ]
+                },
+                {
+                    "code": "BIO3303",
+                    "name": "Mikrobiológia II. gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(BIO3302)"
+                    ]
+                },
+                {
+                    "code": "BIO6301",
+                    "name": "Mikrotechnika előadás",
+                    "credits": 2
+                },
+                {
+                    "code": "BIO6302",
+                    "name": "Mikrotechnika gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(BIO6301)"
+                    ]
+                },
+                {
+                    "code": "BIO6401",
+                    "name": "Toxikológia előadás",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Kísérletes biológia szakirány 5. félév",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "BIO2406",
+                    "name": "Növényélettan II. gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(BIO2405)"
+                    ]
+                },
+                {
+                    "code": "BIO3406",
+                    "name": "Molekuláris biológia II. gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(BIO3405)"
+                    ]
+                },
+                {
+                    "code": "alkmikrobi",
+                    "name": "Alkalmazott mikrobiális technológiák",
+                    "credits": 2
+                },
+                {
+                    "code": "allatbi",
+                    "name": "Állat-biotechnológia",
+                    "credits": 2
+                },
+                {
+                    "code": "BIO6402",
+                    "name": "Toxikológia gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "BIO6701",
+                    "name": "Funkcionális szövettan",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Kísérletes biológia szakirány 6. félév",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "bioinfogy",
+                    "name": "Bioinformatika gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(bioinfoea)"
+                    ]
+                },
+                {
+                    "code": "neurobio",
+                    "name": "Neurobiológiai modellek",
+                    "credits": 4
+                },
+                {
+                    "code": "BIO6801",
+                    "name": "Mikrobiális kölcsönhatások molekuláris alapjai",
+                    "credits": 4
+                },
+                {
+                    "code": "popgen",
+                    "name": "Populációgenetika",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Szupraindividuális biológia szakirány 4. félév",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "BIO7101",
+                    "name": "Hidrobiológia alapjai",
+                    "credits": 2
+                },
+                {
+                    "code": "talajtan",
+                    "name": "Talajtan",
+                    "credits": 2
+                },
+                {
+                    "code": "novenyism",
+                    "name": "Növényismeret",
+                    "credits": 3,
+                    "prerequisites": [
+                        "(BIO2203)"
+                    ]
+                },
+                {
+                    "code": "allatism",
+                    "name": "Állatismeret",
+                    "credits": 3,
+                    "prerequisites": [
+                        "(BIO1203)"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Szupraindividuális biológia szakirány 5. félév",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "BIO2502",
+                    "name": "Növényökológia",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(BIO4203)"
+                    ]
+                },
+                {
+                    "code": "BIO1502",
+                    "name": "Állatökológia",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(BIO4203)"
+                    ]
+                },
+                {
+                    "code": "botanika",
+                    "name": "Botanika monitoring",
+                    "credits": 2
+                },
+                {
+                    "code": "BIO7301",
+                    "name": "Zoológiai monitoring",
+                    "credits": 2
+                },
+                {
+                    "code": "alknoveny",
+                    "name": "Alkalmazott növénytan",
+                    "credits": 2
+                },
+                {
+                    "code": "alkallat",
+                    "name": "Alkalmazott állattan",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Szupraindividuális biológia szakirány 6. félév",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "BIO7401",
+                    "name": "Növénytársulástan alapjai",
+                    "credits": 2
+                },
+                {
+                    "code": "BIO7601",
+                    "name": "A növényvilág védelme",
+                    "credits": 2
+                },
+                {
+                    "code": "BIO7701",
+                    "name": "Az állatvilág védelme",
+                    "credits": 2
+                },
+                {
+                    "code": "terepbio",
+                    "name": "Terepbiológiai és preparálási gyakorlat",
+                    "credits": 3
+                },
+                {
+                    "code": "popgen2",
+                    "name": "Populációgenetika",
+                    "credits": 2
+                }
+            ]
+        }
+    ]
 }

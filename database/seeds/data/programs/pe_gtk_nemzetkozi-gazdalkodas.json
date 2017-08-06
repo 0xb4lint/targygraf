@@ -1,5 +1,340 @@
 {
     "name": "Nemzetközi gazdálkodás",
     "description": "Nemzetközi gazdálkodási alapképzési szak tanterve",
-    "curriculum_updated_at": "2011-11-23"
+    "curriculum_updated_at": "2011-11-23",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "MIMAB144M",
+                    "name": "Közgazdaságtan matematikai alapjai",
+                    "credits": 6
+                },
+                {
+                    "code": "GTKGB114Ö",
+                    "name": "Makroökonómia",
+                    "credits": 6
+                },
+                {
+                    "code": "GTNGB112E",
+                    "name": "Európai Uniós ismeretek",
+                    "credits": 3
+                },
+                {
+                    "code": "GTMEB112P",
+                    "name": "Pszichológia",
+                    "credits": 3
+                },
+                {
+                    "code": "GTGAB112J",
+                    "name": "Gazdasági jog",
+                    "credits": 3
+                },
+                {
+                    "code": "GTMEB122K",
+                    "name": "Üzleti kommunikáció",
+                    "credits": 3
+                },
+                {
+                    "code": "GTTUB144Ü",
+                    "name": "Üzleti élet társadalmi összeffüggései",
+                    "credits": 6
+                },
+                {
+                    "code": "GTLEB122A",
+                    "name": "Gazdasági és üzleti szaknyelv I.",
+                    "credits": 0
+                },
+                {
+                    "code": null,
+                    "name": "Testnevelés I.",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "GTGAB144A",
+                    "name": "Vállalati gazdaságtan",
+                    "credits": 6
+                },
+                {
+                    "code": "GTSCB144S",
+                    "name": "Számvitel alapjai",
+                    "credits": 6
+                },
+                {
+                    "code": "GTKGB144K",
+                    "name": "Mikroökonómia",
+                    "credits": 6,
+                    "prerequisites": [
+                        "MIMAB144M"
+                    ]
+                },
+                {
+                    "code": "GTMIB244M",
+                    "name": "Bevezetés a marketingbe",
+                    "credits": 6
+                },
+                {
+                    "code": "GTNGB244K",
+                    "name": "Nemzetközi gazdaságtan (Külgazdaságtan)",
+                    "credits": 6
+                },
+                {
+                    "code": "GTLEB222A",
+                    "name": "Gazdasági és üzleti szaknyelv II.",
+                    "credits": 0,
+                    "prerequisites": [
+                        "GTLEB122A"
+                    ]
+                },
+                {
+                    "code": "GTLEB1X0A",
+                    "name": "Gazdasági és üzleti szaknyelvi záróvizsga",
+                    "credits": 0,
+                    "prerequisites": [
+                        "GTLEB222A"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Testnevelés II.",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "GTGAB144S",
+                    "name": "Statisztika",
+                    "credits": 6,
+                    "prerequisites": [
+                        "MIMAB144M"
+                    ]
+                },
+                {
+                    "code": "GTMEB144M",
+                    "name": "Általános menedzsment",
+                    "credits": 6
+                },
+                {
+                    "code": "GTPTB112P",
+                    "name": "Pénzügytan (Makrogazdasági pénzügyek)",
+                    "credits": 3,
+                    "prerequisites": [
+                        "GTKGB114Ö"
+                    ]
+                },
+                {
+                    "code": "GTNGB244Ü",
+                    "name": "Nemzetközi ügyletszervezés",
+                    "credits": 6
+                },
+                {
+                    "code": "GTNGB212B",
+                    "name": "Globalizáció, világgazdasági kihívások",
+                    "credits": 3
+                },
+                {
+                    "code": "GTGAB312R",
+                    "name": "Regionális gazdaságtan",
+                    "credits": 3
+                },
+                {
+                    "code": "GTGAB312G",
+                    "name": "Ágazati gazdaságtan ",
+                    "credits": 3,
+                    "prerequisites": [
+                        "GTKGB144K"
+                    ]
+                },
+                {
+                    "code": "GTMEB144A",
+                    "name": "A gazdaságtan alapjai I.",
+                    "credits": 0,
+                    "prerequisites": [
+                        "GTLEB1X0A"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Testnevelés III.",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "GTPTB212P",
+                    "name": "Vállalati pénzügyek I.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "GTKGB144K"
+                    ]
+                },
+                {
+                    "code": "GTVEB244I",
+                    "name": "Üzleti folyamatok támogatása",
+                    "credits": 6
+                },
+                {
+                    "code": "GTNGB344P",
+                    "name": "Nemzetközi pénzügyi ismeretek",
+                    "credits": 6,
+                    "prerequisites": [
+                        "GTNGB244K"
+                    ]
+                },
+                {
+                    "code": "GTGAB512V",
+                    "name": "Vám- és szállítmányozástan",
+                    "credits": 3
+                },
+                {
+                    "code": "GTNGB412M",
+                    "name": "Európai uniós pénzügyek",
+                    "credits": 3
+                },
+                {
+                    "code": "GTVEB244L",
+                    "name": "Logisztika I.",
+                    "credits": 6,
+                    "prerequisites": [
+                        "GTGAB144A"
+                    ]
+                },
+                {
+                    "code": "GTMIB222G",
+                    "name": "A problémamegoldás gyakorlata",
+                    "credits": 3
+                },
+                {
+                    "code": "GTMEB224A",
+                    "name": "A gazdaságtan alapjai II.",
+                    "credits": 0,
+                    "prerequisites": [
+                        "GTMEB144A"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Testnevelés IV.",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "5. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "GTNGB312K",
+                    "name": "Nemzetközi kereskedelem",
+                    "credits": 3
+                },
+                {
+                    "code": "GTMIB342O",
+                    "name": "Online marketing",
+                    "credits": 3
+                },
+                {
+                    "code": "GTNGB144J",
+                    "name": "Bevezetés az Európai Unió jogrendszerébe",
+                    "credits": 6
+                },
+                {
+                    "code": "GTNGB444E",
+                    "name": "Az európai gazdasági integráció alapjai ",
+                    "credits": 6
+                },
+                {
+                    "code": "GTTUB244T",
+                    "name": "Európai Uniós támogatások és pályázati rendszer",
+                    "credits": 6
+                },
+                {
+                    "code": "GTVEB242P",
+                    "name": "Protokoll és etikett",
+                    "credits": 3
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "6. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "GTVEB222F",
+                    "name": "Felelősségvállalás üzleti aspektusai",
+                    "credits": 3
+                },
+                {
+                    "code": "GTNGB512I",
+                    "name": "Interkulturális kommunikáció",
+                    "credits": 3
+                },
+                {
+                    "code": "GTKMB544K",
+                    "name": "Nemzetközi gazdasági kapcsolatok kvantitatív elemzése",
+                    "credits": 6,
+                    "prerequisites": [
+                        "GTGAB144S"
+                    ]
+                },
+                {
+                    "code": "GTGAB422K",
+                    "name": "Marketingkommunikáció",
+                    "credits": 3
+                },
+                {
+                    "code": "GTNGB414A",
+                    "name": "EU közös agrárpolitika",
+                    "credits": 6
+                },
+                {
+                    "code": "GTNGB312M",
+                    "name": "Nemzetközi marketing",
+                    "credits": 3
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 3
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható ",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "7. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "GTNGB30XG",
+                    "name": "Szakmai gyakorlat",
+                    "credits": 30
+                }
+            ]
+        }
+    ]
 }

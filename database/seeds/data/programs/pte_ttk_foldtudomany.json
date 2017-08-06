@@ -1,5 +1,466 @@
 {
     "name": "Földtudomány",
     "description": "Földtudományi BSc szak - nappali tagozat tanterve",
-    "curriculum_updated_at": "2011-01-01"
+    "curriculum_updated_at": "2011-01-01",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "FIZ06",
+                    "name": "Méréstan",
+                    "credits": 2
+                },
+                {
+                    "code": "matalap",
+                    "name": "Matematikai alapok",
+                    "credits": 2
+                },
+                {
+                    "code": "kalkea",
+                    "name": "Kalkulus előadás",
+                    "credits": 2
+                },
+                {
+                    "code": "MAT05",
+                    "name": "Informatika előadás",
+                    "credits": 2
+                },
+                {
+                    "code": "AKORN06",
+                    "name": "Kémiai alapismeretek előadás",
+                    "credits": 4
+                },
+                {
+                    "code": "AKORN07",
+                    "name": "Kémiai alapismeretek gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "FIZ02",
+                    "name": "Fizikai alapismeretek I. előadás",
+                    "credits": 2
+                },
+                {
+                    "code": "BIO01",
+                    "name": "Biológia alapismeretek I.",
+                    "credits": 2
+                },
+                {
+                    "code": "AKORN03",
+                    "name": "Meteorológia",
+                    "credits": 2
+                },
+                {
+                    "code": "matmodfold",
+                    "name": "Matematikai módszerek a földtudományokban",
+                    "credits": 3
+                },
+                {
+                    "code": "csillagalap",
+                    "name": "Csillagászat alapjai",
+                    "credits": 2
+                },
+                {
+                    "code": "asvanyea",
+                    "name": "Ásvány- és kőzettan előadás",
+                    "credits": 2
+                },
+                {
+                    "code": "asvanygy",
+                    "name": "Ásvány- és kőzettan gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "FOL4201",
+                    "name": "Magyarország természeti földrajza előadás",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "FOL01",
+                    "name": "Európai Uniós alapismeretek",
+                    "credits": 2
+                },
+                {
+                    "code": "kalkgy",
+                    "name": "Kalkulus gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "kalkea"
+                    ]
+                },
+                {
+                    "code": "MAT06",
+                    "name": "Informatika gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "MAT05"
+                    ]
+                },
+                {
+                    "code": "KOR02",
+                    "name": "Földtudományi alapismeretek",
+                    "credits": 2
+                },
+                {
+                    "code": "FIZ04",
+                    "name": "Fizikai alapismeretek II. előadás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "FIZ02"
+                    ]
+                },
+                {
+                    "code": "FIZ05",
+                    "name": "Fizikai alapismeretek gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "FIZ02"
+                    ]
+                },
+                {
+                    "code": "eghajlat",
+                    "name": "Éghajlattan",
+                    "credits": 2
+                },
+                {
+                    "code": "hidroea",
+                    "name": "Hidrológia és hidrogeológia előadás",
+                    "credits": 2
+                },
+                {
+                    "code": "hidrogy",
+                    "name": "Hidrológia és hidrogeológia gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "terkep",
+                    "name": "Térképtan",
+                    "credits": 2
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 8
+                },
+                {
+                    "code": "FOL4202",
+                    "name": "Magyarország természeti földrajza szeminárium",
+                    "credits": 2,
+                    "prerequisites": [
+                        "FOL4201"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "KOR01",
+                    "name": "Környezeti auditálás, minőségbiztosítás előadás",
+                    "credits": 2
+                },
+                {
+                    "code": "foldtan",
+                    "name": "Földtan",
+                    "credits": 2
+                },
+                {
+                    "code": "paleo",
+                    "name": "Paleoklimatológia",
+                    "credits": 2
+                },
+                {
+                    "code": "geomorf",
+                    "name": "Geomorfológia",
+                    "credits": 4
+                },
+                {
+                    "code": "foldtoriosleny",
+                    "name": "Földtörténet és őslénytan előadás",
+                    "credits": 3
+                },
+                {
+                    "code": "bevreteg",
+                    "name": "Bevezetés a rétegtanba és teleptanba",
+                    "credits": 2
+                },
+                {
+                    "code": "talajfiz",
+                    "name": "Talajfizika",
+                    "credits": 2
+                },
+                {
+                    "code": "kartografia",
+                    "name": "Digitális kartográfia",
+                    "credits": 2
+                },
+                {
+                    "code": "taverzek",
+                    "name": "Távérzékelés",
+                    "credits": 2
+                },
+                {
+                    "code": "geostatea",
+                    "name": "Geostatisztika előadás",
+                    "credits": 2
+                },
+                {
+                    "code": "geostatgy",
+                    "name": "Geostatisztika gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "terinfo",
+                    "name": "Térinformatika",
+                    "credits": 2
+                },
+                {
+                    "code": "terepgyak1",
+                    "name": "Terepgyakorlat I.",
+                    "credits": 3
+                },
+                {
+                    "code": "rendasvany",
+                    "name": "Rendszeres ásványtan",
+                    "credits": 3
+                },
+                {
+                    "code": "geofizalap",
+                    "name": "Geofizikai alapismeretek",
+                    "credits": 2,
+                    "prerequisites": [
+                        "FIZ04"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "anyagvizsg",
+                    "name": "Földtani anyagvizsgálati módszerek",
+                    "credits": 2
+                },
+                {
+                    "code": "hidrometea",
+                    "name": "Hidrometeorológia előadás",
+                    "credits": 2
+                },
+                {
+                    "code": "hidrometgy",
+                    "name": "Hidrometeorológia gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "foldero",
+                    "name": "Földi erőforrások",
+                    "credits": 2
+                },
+                {
+                    "code": "kozetmikro",
+                    "name": "Kőzetmikroszkópia",
+                    "credits": 3,
+                    "prerequisites": [
+                        "asvanyea",
+                        "asvanygy",
+                        "rendasvany"
+                    ]
+                },
+                {
+                    "code": "magmas",
+                    "name": "Magmás és metamorf kőzettan",
+                    "credits": 2
+                },
+                {
+                    "code": "szerkfoldea",
+                    "name": "Szerkezetföldtan előadás",
+                    "credits": 3,
+                    "prerequisites": [
+                        "foldtan"
+                    ]
+                },
+                {
+                    "code": "szerkfoldgy",
+                    "name": "Szerkezetföldtan gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "foldtan"
+                    ]
+                },
+                {
+                    "code": "foldtort",
+                    "name": "Földtörténet",
+                    "credits": 2
+                },
+                {
+                    "code": "osleny",
+                    "name": "Általános őslénytan",
+                    "credits": 2,
+                    "prerequisites": [
+                        "foldtan",
+                        "foldtoriosleny"
+                    ]
+                },
+                {
+                    "code": "terepgyak",
+                    "name": "Terepgyakorlat II-III.",
+                    "credits": 6
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "5. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "kutfuras",
+                    "name": "Kutatófúrások tervezése, értékelése",
+                    "credits": 2
+                },
+                {
+                    "code": "kornyezetfoldea",
+                    "name": "Környezetföldtan előadás",
+                    "credits": 2
+                },
+                {
+                    "code": "kornyezetfoldgy",
+                    "name": "Környezetföldtan gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "globalis",
+                    "name": "Globális környezeti problémák",
+                    "credits": 2
+                },
+                {
+                    "code": "energiahord",
+                    "name": "Energiahordozók földtana",
+                    "credits": 4
+                },
+                {
+                    "code": "geokemia",
+                    "name": "Geokémia",
+                    "credits": 3,
+                    "prerequisites": [
+                        "AKORN06",
+                        "AKORN07"
+                    ]
+                },
+                {
+                    "code": "foldtanszerk",
+                    "name": "Földtani szerkesztési feladatok",
+                    "credits": 2,
+                    "prerequisites": [
+                        "terkep",
+                        "foldtan"
+                    ]
+                },
+                {
+                    "code": "szedimentologia",
+                    "name": "Szedimentológia",
+                    "credits": 3
+                },
+                {
+                    "code": "rendoslenyea",
+                    "name": "Rendszeres őslénytan előadás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BIO01",
+                        "foldtoriosleny"
+                    ]
+                },
+                {
+                    "code": "rendoslenygy",
+                    "name": "Rendszeres őslénytan gyakorlat",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BIO01",
+                        "foldtoriosleny"
+                    ]
+                },
+                {
+                    "code": "retegtanea",
+                    "name": "Rétegtan előadás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "foldtan",
+                        "foldtoriosleny",
+                        "bevreteg"
+                    ]
+                },
+                {
+                    "code": "retegtangy",
+                    "name": "Rétegtan gyakorlat",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "6. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "mofoldea",
+                    "name": "Magyarország földtana előadás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "foldtoriosleny"
+                    ]
+                },
+                {
+                    "code": "mofoldgy",
+                    "name": "Magyarország földtana gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "muszfold",
+                    "name": "Műszaki földtan",
+                    "credits": 2,
+                    "prerequisites": [
+                        "foldtan"
+                    ]
+                },
+                {
+                    "code": "geopark",
+                    "name": "Geoparkok, geoturizmus",
+                    "credits": 2
+                },
+                {
+                    "code": "telep",
+                    "name": "Teleptan",
+                    "credits": 4,
+                    "prerequisites": [
+                        "foldtan"
+                    ]
+                },
+                {
+                    "code": "esettan",
+                    "name": "Környezetföldtani esettanulmányok",
+                    "credits": 2
+                },
+                {
+                    "code": "szakdoli",
+                    "name": "Szakdolgozat konzultáció és védés",
+                    "credits": 10
+                }
+            ]
+        }
+    ]
 }

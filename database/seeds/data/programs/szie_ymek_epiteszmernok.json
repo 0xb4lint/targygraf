@@ -1,5 +1,1269 @@
 {
     "name": "Építészmérnök",
     "description": "Építészmérnök BSc szak - nappali tagozat tanterve",
-    "curriculum_updated_at": "2012-02-28"
+    "curriculum_updated_at": "2012-02-28",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "SGYMASZ214XXX",
+                    "name": "Ábrázoló geometria I.",
+                    "credits": 4
+                },
+                {
+                    "code": "SGYMMAT201XXX",
+                    "name": "Matematika I.",
+                    "credits": 6
+                },
+                {
+                    "code": "SGYMMET201XXX",
+                    "name": "Mechanika I. (Statika)",
+                    "credits": 5
+                },
+                {
+                    "code": "SGYMMAG203XXX",
+                    "name": "Építészeti ábrázolás",
+                    "credits": 2
+                },
+                {
+                    "code": "SGYMMAG204XXX",
+                    "name": "Épületszerkezetek I.",
+                    "credits": 6
+                },
+                {
+                    "code": "SGYMASZ213XXX",
+                    "name": "Építészeti rajz I.",
+                    "credits": 2
+                },
+                {
+                    "code": "SGYMTET2011XA",
+                    "name": "Épülettervezés I.",
+                    "credits": 5
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "SGYMMAG212XXX",
+                    "name": "Építészettörténet I.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGYMMAG203XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMASZ205XXX",
+                    "name": "Ábrázoló geometria II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGYMASZ214XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMMET202XXX",
+                    "name": "Mechanika II. (Szilárdságtan)",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGYMMET201XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMASZ202XXX",
+                    "name": "Műszaki informatika II. (CAD I.)",
+                    "credits": 4
+                },
+                {
+                    "code": "SGYMALT2032XA",
+                    "name": "Építőanyagok I.",
+                    "credits": 3
+                },
+                {
+                    "code": "SGYMASZ207XXX",
+                    "name": "Építészeti rajz II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGYMASZ213XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMMAG205XXX",
+                    "name": "Épületszerkezetek II.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGYMMAG204XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMTET203XXX",
+                    "name": "Épülettervezés II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGYMTET2011XA"
+                    ]
+                },
+                {
+                    "code": "SGYMTES201XXX",
+                    "name": "Testnevelés I.",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "SGYMMAG213XXX",
+                    "name": "Építészettörténet II.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGYMMAG212XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMASZ203XXX",
+                    "name": "Műszaki informatika III. (CAD II.)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGYMASZ202XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMMET203XXX",
+                    "name": "Mechanika III. (Tartók statikája)",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGYMMET202XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMASZ211XXX",
+                    "name": "Építészeti ábrázoló",
+                    "credits": 1,
+                    "prerequisites": [
+                        "SGYMASZ205XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMASZ208XXX",
+                    "name": "Építészeti rajz III.",
+                    "credits": 1,
+                    "prerequisites": [
+                        "SGYMASZ207XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMALT231XXX",
+                    "name": "Építőanyagok II.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGYMALT2032XA"
+                    ]
+                },
+                {
+                    "code": "SGYMMAG209XXX",
+                    "name": "Épületfizika I.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGYMMAG205XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMMAG2013XA",
+                    "name": "Épületszerkezetek III.",
+                    "credits": 6,
+                    "prerequisites": [
+                        "SGYMMAG205XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMTET2033XA",
+                    "name": "Épülettervezés III.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGYMTET203XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMTES202XXX",
+                    "name": "Testnevelés II.",
+                    "credits": 0,
+                    "prerequisites": [
+                        "SGYMTES201XXX"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "SGYMMAG2024XA",
+                    "name": "Építészettörténet III.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGYMMAG213XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMMEN201XXX",
+                    "name": "Közgazdaságtan I.",
+                    "credits": 3
+                },
+                {
+                    "code": "SGYMMAG211XXX",
+                    "name": "Épületgépészet",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGYMMAG209XXX",
+                        "SGYMMAG2013XA"
+                    ]
+                },
+                {
+                    "code": "SGYMMET205XXX",
+                    "name": "Vasbeton szerkezetek I.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGYMMET203XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMMAG207XXX",
+                    "name": "Épületszerkezetek IV.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGYMMAG2013XA"
+                    ]
+                },
+                {
+                    "code": "SGYMMAG210XXX",
+                    "name": "Épületfizika II.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGYMMAG205XXX",
+                        "SGYMMAG209XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMASZ209XXX",
+                    "name": "Építészeti rajz IV.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGYMASZ208XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMTET2044XA",
+                    "name": "Épülettervezés IV.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGYMTET2033XA"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 2
+                },
+                {
+                    "code": "SGYMTES203XXX",
+                    "name": "Testnevelés III.",
+                    "credits": 0,
+                    "prerequisites": [
+                        "SGYMTES202XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMMAG229XXX",
+                    "name": "Szakmai gyakorlat I.",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "5. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "SGYMMAG215XXX",
+                    "name": "Építészettörténet IV. (Magyarörökség-védelem)",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGYMMAG213XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMMEN203XXX",
+                    "name": "Jogi ismeretek I.",
+                    "credits": 2
+                },
+                {
+                    "code": "SGYMMEN207XXX",
+                    "name": "Építésszervezés I.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGYMMAG204XXX",
+                        "SGYMALT2032XA"
+                    ]
+                },
+                {
+                    "code": "SGYMMET206XXX",
+                    "name": "Fa- és acélszerkezetek I.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGYMMET203XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMTET201XXX",
+                    "name": "Település- és városépítés",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGYMMAG213XXX",
+                        "SGYMTET2033XA"
+                    ]
+                },
+                {
+                    "code": "SGYMTET2435XA",
+                    "name": "Épülettervezés V. (előadás)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGYMTET2044XA"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "6. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "SGYMMEN2056XA",
+                    "name": "Szociológia",
+                    "credits": 2
+                },
+                {
+                    "code": "SGYMMEN208XXX",
+                    "name": "Építésszervezés II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGYMMEN207XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMMEN209XXX",
+                    "name": "Építési technológia I.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGYMMEN207XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMALT217XXX",
+                    "name": "Építészeti geodézia",
+                    "credits": 3
+                },
+                {
+                    "code": "SGYMALT928XXX",
+                    "name": "Geodézia mérőgyakorlat",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "7. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "SGYMMEN211XXX",
+                    "name": "Filozófia",
+                    "credits": 2
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 2
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "8. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 2
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Szakirány",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "Építész",
+                    "credits": 77,
+                    "course_block_references": [
+                        "Építész szakirány"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Épületszerkezeti konstruktőr",
+                    "credits": 77,
+                    "course_block_references": [
+                        "Épületszerkezeti konstruktőr szakirány"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Építéskivitelezés-szervezés",
+                    "credits": 77,
+                    "course_block_references": [
+                        "Építéskivitelezés-szervezés szakirány"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Településtervezés",
+                    "credits": 77,
+                    "course_block_references": [
+                        "Településtervezés szakirány"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Tűz- és katasztrófavédelmi",
+                    "credits": 77,
+                    "course_block_references": [
+                        "Tűz- és katasztrófavédelmi szakirány"
+                    ]
+                }
+            ],
+            "is_counted": false
+        },
+        {
+            "name": "Építész szakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "SGYMTET2445XA",
+                    "name": "Épülettervezés V. (gyakorlat)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGYMTET2044XA"
+                    ]
+                },
+                {
+                    "code": "SGYMASZ210XXX",
+                    "name": "Színtan",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGYMASZ208XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMMAG208XXX",
+                    "name": "Épületszerkezetek V. (Történeti szerkezetek)",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGYMMAG2013XA"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 2
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGYMTET2366XA",
+                    "name": "Építészetelmélet",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGYMTET2435XA"
+                    ]
+                },
+                {
+                    "code": "SGYMKOM255XXX",
+                    "name": "Geotechnika 0.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGYMMET201XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMMAG2316XA",
+                    "name": "Épületszerkezetek VI.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGYMMAG207XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMTET242XXX",
+                    "name": "Épülettervezés VI.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGYMTET2435XA",
+                        "SGYMTET2445XA"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGYMMAG233XXX",
+                    "name": "Vizuális kommunikáció",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGYMTET242XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMMEN232XXX",
+                    "name": "Építési technológia II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGYMMEN209XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMTET244XXX",
+                    "name": "Környezetpszichológia",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGYMTET201XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMTET237XXX",
+                    "name": "Terület- és regionális tervezés, -fejlesztés",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGYMTET201XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMTET245XXX",
+                    "name": "Komplex tervezés",
+                    "credits": 6,
+                    "prerequisites": [
+                        "SGYMTET2435XA",
+                        "SGYMTET2445XA"
+                    ]
+                },
+                {
+                    "code": "SGYMTET2377XA",
+                    "name": "Épülettervezés VII.",
+                    "credits": 7,
+                    "prerequisites": [
+                        "SGYMTET2435XA",
+                        "SGYMTET2445XA"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGYMALT202XXX",
+                    "name": "Minőségirányítás",
+                    "credits": 3
+                },
+                {
+                    "code": "SGYMTET2388XA",
+                    "name": "Tervezésmódszertan",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGYMTET2435XA",
+                        "SGYMTET2445XA"
+                    ]
+                },
+                {
+                    "code": "SGYMTET2398XA",
+                    "name": "Építészeti pályázati gyakorlat (alkotóhét)",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGYMTET2044XA"
+                    ]
+                },
+                {
+                    "code": "SGYMTET2408XA",
+                    "name": "Szakirányú diplomamunka (építész szakirány)",
+                    "credits": 15
+                }
+            ]
+        },
+        {
+            "name": "Épületszerkezeti konstruktőr szakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "SGYMTET2445XA",
+                    "name": "Épülettervezés V. (gyakorlat)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGYMTET2044XA"
+                    ]
+                },
+                {
+                    "code": "SGYMASZ210XXX",
+                    "name": "Színtan",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGYMASZ208XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMMAG208XXX",
+                    "name": "Épületszerkezetek V. (Történeti szerkezetek)",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGYMMAG2013XA"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 2
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGYMMAG2326XA",
+                    "name": "Energia- és környezettudatos építés",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGYMMAG209XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMKOM255XXX",
+                    "name": "Geotechnika 0.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGYMMET201XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMMAG2316XA",
+                    "name": "Épületszerkezetek VI.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGYMMAG207XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMTET248XXX",
+                    "name": "Épületrehabilitáció I.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGYMMAG2024XA",
+                        "SGYMMAG207XXX",
+                        "SGYMMAG210XXX"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGYMMEN232XXX",
+                    "name": "Építési technológia II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGYMMEN209XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMMAG237XXX",
+                    "name": "Épületdiagnosztika",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGYMMAG208XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMMAG236XXX",
+                    "name": "Épületrehabilitáció II.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGYMTET248XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMTET245XXX",
+                    "name": "Komplex tervezés",
+                    "credits": 6,
+                    "prerequisites": [
+                        "SGYMTET2435XA",
+                        "SGYMTET2445XA"
+                    ]
+                },
+                {
+                    "code": "SGYMMAG2337XA",
+                    "name": "Építésiparosítás",
+                    "credits": 7,
+                    "prerequisites": [
+                        "SGYMMAG2316XA"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGYMALT202XXX",
+                    "name": "Minőségirányítás",
+                    "credits": 3
+                },
+                {
+                    "code": "SGYMTET2388XA",
+                    "name": "Tervezésmódszertan",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGYMTET2435XA",
+                        "SGYMTET2445XA"
+                    ]
+                },
+                {
+                    "code": "SGYMTET2398XA",
+                    "name": "Építészeti pályázati gyakorlat (alkotóhét)",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGYMTET2044XA"
+                    ]
+                },
+                {
+                    "code": "SGYMMAG2418XA",
+                    "name": "Szakirányú diplomamunka (épületszerkezeti konstruktőr)",
+                    "credits": 15
+                }
+            ]
+        },
+        {
+            "name": "Építéskivitelezés-szervezés szakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "SGYMTET2445XA",
+                    "name": "Épülettervezés V. (gyakorlat)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGYMTET2044XA"
+                    ]
+                },
+                {
+                    "code": "SGYMASZ210XXX",
+                    "name": "Színtan",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGYMASZ208XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMMAG208XXX",
+                    "name": "Épületszerkezetek V. (Történeti szerkezetek)",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGYMMAG2013XA"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 2
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGYMMAG2326XA",
+                    "name": "Energia- és környezettudatos építés",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGYMMAG209XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMKOM255XXX",
+                    "name": "Geotechnika 0.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGYMMET201XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMMAG2316XA",
+                    "name": "Épületszerkezetek VI.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGYMMAG207XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMMEN204XXX",
+                    "name": "Jogi ismeretek II.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGYMMEN203XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMMEN233XXX",
+                    "name": "Munkavédelem",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGYMMEN234XXX",
+                    "name": "Építésszervezés III.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGYMMEN208XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMMEN232XXX",
+                    "name": "Építési technológia II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGYMMEN209XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMMEN2327XA",
+                    "name": "Jogi ismeretek III.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGYMMEN204XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMMAG237XXX",
+                    "name": "Épületdiagnosztika",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGYMMAG208XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMTET2427XA",
+                    "name": "Komplex projekttervezés",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGYMTET2435XA",
+                        "SGYMTET2445XA"
+                    ]
+                },
+                {
+                    "code": "SGYMMAG2337XA",
+                    "name": "Építésiparosítás",
+                    "credits": 7,
+                    "prerequisites": [
+                        "SGYMMAG2316XA"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGYMALT202XXX",
+                    "name": "Minőségirányítás",
+                    "credits": 3
+                },
+                {
+                    "code": "SGYMTET2388XA",
+                    "name": "Tervezésmódszertan",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGYMTET2435XA",
+                        "SGYMTET2445XA"
+                    ]
+                },
+                {
+                    "code": "SGYMTET2398XA",
+                    "name": "Építészeti pályázati gyakorlat (alkotóhét)",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGYMTET2044XA"
+                    ]
+                },
+                {
+                    "code": "SGYMMEN2438XA",
+                    "name": "Szakirányú diplomamunka (építéskivitelezés-szerevezés)",
+                    "credits": 15
+                }
+            ]
+        },
+        {
+            "name": "Településtervezés szakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "SGYMTET2445XA",
+                    "name": "Épülettervezés V. (gyakorlat)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGYMTET2044XA"
+                    ]
+                },
+                {
+                    "code": "SGYMASZ210XXX",
+                    "name": "Színtan",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGYMASZ208XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMMAG208XXX",
+                    "name": "Épületszerkezetek V. (Történeti szerkezetek)",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGYMMAG2013XA"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 2
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGYMKOM2516XA",
+                    "name": "Települési közművek I.",
+                    "credits": 4
+                },
+                {
+                    "code": "SGYMKOM255XXX",
+                    "name": "Geotechnika 0.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGYMMET201XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMALT212XXX",
+                    "name": "A térinformatika alapjai",
+                    "credits": 3
+                },
+                {
+                    "code": "SGYMTET231XXX",
+                    "name": "Táj- és településföldrajz (ökológia)",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGYMTET201XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMTET232XXX",
+                    "name": "Településtervezés I.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGYMTET201XXX"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGYMMEN2317XA",
+                    "name": "Ingatlan- és épületmenedzsment",
+                    "credits": 3
+                },
+                {
+                    "code": "SGYMTET234XXX",
+                    "name": "Lakásépítés, lakásgazdálkodás",
+                    "credits": 2
+                },
+                {
+                    "code": "SGYMTET235XXX",
+                    "name": "Zöldterület-fenntartás és -gazdálkodás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGYMTET231XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMTET2317XA",
+                    "name": "Komplex projekt (településrendezés)",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGYMTET232XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMKOM2527XA",
+                    "name": "Települési közművek II.",
+                    "credits": 3
+                },
+                {
+                    "code": "SGYMKOM253XXX",
+                    "name": "Közlekedésépítés III. (Városi közlekedés)",
+                    "credits": 2
+                },
+                {
+                    "code": "SGYMTET237XXX",
+                    "name": "Terület- és regionális tervezés, -fejlesztés",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGYMTET201XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMTET233XXX",
+                    "name": "Településtervezés II.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGYMTET232XXX"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGYMALT202XXX",
+                    "name": "Minőségirányítás",
+                    "credits": 3
+                },
+                {
+                    "code": "SGYMTET2338XA",
+                    "name": "Településműködtetés",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGYMTET234XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMTET2348XA",
+                    "name": "Településigazgatás",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGYMMEN203XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMTET2358XA",
+                    "name": "Szakirányú diplomamunka (településtervezés)",
+                    "credits": 15
+                }
+            ]
+        },
+        {
+            "name": "Tűz- és katasztrófavédelmi szakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "SGYMTUB2325XA",
+                    "name": "Tűzvédelmi kémia (ÉP)",
+                    "credits": 3
+                },
+                {
+                    "code": "SGYMTUB238XXX",
+                    "name": "Égés- és oltáselmélet I.",
+                    "credits": 3
+                },
+                {
+                    "code": "SGYMTUB2335XA",
+                    "name": "Veszélyes anyagok és ipari katasztrófák I. (ÉP)",
+                    "credits": 4
+                },
+                {
+                    "code": "SGYMTUB2345XA",
+                    "name": "Tűzvédelmi fizika",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGYMTUB2576XA",
+                    "name": "Égés- és oltáselmélet II. (ÉSZ)",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGYMTUB238XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMTUB2366XA",
+                    "name": "A létesítés és használat tűzvédelme I. (ÉP)",
+                    "credits": 7,
+                    "prerequisites": [
+                        "SGYMTUB2325XA"
+                    ]
+                },
+                {
+                    "code": "SGYMTUB2376XA",
+                    "name": "Tartószerkezetek tűzvédelme",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGYMMET201XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMTUB2386XA",
+                    "name": "Veszélyes anyagok és kárelhárításuk II.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGYMTUB2335XA"
+                    ]
+                },
+                {
+                    "code": "SGYMTUB2536XA",
+                    "name": "Szakirányú mérőgyakorlat I.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "(SGYMTUB238XXX)"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGYMTUB2587XA",
+                    "name": "Égés- és oltáselmélet III. (ÉSZ)",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGYMTUB2576XA"
+                    ]
+                },
+                {
+                    "code": "SGYMTUB2407XA",
+                    "name": "Tűzvédelmi berendezések tervezése I.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGYMTUB238XXX"
+                    ]
+                },
+                {
+                    "code": "SGYMTUB2417XA",
+                    "name": "Tűzvizsgálattan",
+                    "credits": 2
+                },
+                {
+                    "code": "SGYMTUB2427XA",
+                    "name": "Tűzkockázat-elemzés",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGYMTUB2576XA"
+                    ]
+                },
+                {
+                    "code": "SGYMTUB2437XA",
+                    "name": "Tűzoltás, kárelhárítás",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGYMTUB2325XA"
+                    ]
+                },
+                {
+                    "code": "SGYMTUB2447XA",
+                    "name": "A létesítés és használat tűzvédelme III.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGYMTUB2376XA"
+                    ]
+                },
+                {
+                    "code": "SGYMTUB2547XA",
+                    "name": "Veszélyes anyagok és ipari katasztrófák III. (ÉSZ)",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGYMTUB2386XA"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 2
+                },
+                {
+                    "code": "SGYMTUB2468XA",
+                    "name": "Tűzvédelmi berendezések tervezése II. (ÉP)",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGYMTUB2407XA"
+                    ]
+                },
+                {
+                    "code": "SGYMTUB2478XA",
+                    "name": "Tűzvédelmi igazgatás",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGYMTUB2366XA"
+                    ]
+                },
+                {
+                    "code": "SGYMTUB2488XA",
+                    "name": "Mentésegészségügy",
+                    "credits": 1,
+                    "prerequisites": [
+                        "SGYMTUB2325XA"
+                    ]
+                },
+                {
+                    "code": "SGYMTUB2568XA",
+                    "name": "Szakirányú diplomamunka (ÉSZ tűz- és katasztrófavédelem)",
+                    "credits": 15
+                }
+            ]
+        }
+    ]
 }

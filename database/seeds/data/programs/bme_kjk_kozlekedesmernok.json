@@ -1,5 +1,1002 @@
 {
     "name": "Közlekedésmérnök",
     "description": "Közlekedésmérnök BSc",
-    "curriculum_updated_at": "2012-09-01"
+    "curriculum_updated_at": "2012-09-01",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "TE90AX00",
+                    "name": "Matematika A1a",
+                    "credits": 6
+                },
+                {
+                    "code": "TE15AX09",
+                    "name": "Fizika",
+                    "credits": 3
+                },
+                {
+                    "code": "KOJKA101",
+                    "name": "Mechanika I. - Statika",
+                    "credits": 4
+                },
+                {
+                    "code": "VEKTAKO1",
+                    "name": "Műszaki kémia",
+                    "credits": 3
+                },
+                {
+                    "code": "KOVJA112",
+                    "name": "Általános járműgéptan",
+                    "credits": 3
+                },
+                {
+                    "code": "KOGJA113",
+                    "name": "Minőségügy a közlekedésben",
+                    "credits": 2
+                },
+                {
+                    "code": "KOKUA114",
+                    "name": "Közlekedési rendszerek",
+                    "credits": 2
+                },
+                {
+                    "code": "KOKAA119",
+                    "name": "Számítástechnika I.",
+                    "credits": 3
+                },
+                {
+                    "code": "KOJHA171",
+                    "name": "Műszaki ábrázolás alapjai",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "TE90AX02",
+                    "name": "Matematika A2a",
+                    "credits": 6,
+                    "prerequisites": [
+                        "TE90AX00"
+                    ]
+                },
+                {
+                    "code": "KOJKA102",
+                    "name": "Mechanika II. - Szilárdságtan",
+                    "credits": 4,
+                    "prerequisites": [
+                        "KOJKA101"
+                    ]
+                },
+                {
+                    "code": "KOJJA106",
+                    "name": "Anyagismeret",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VEKTAKO1"
+                    ]
+                },
+                {
+                    "code": "GT30A001",
+                    "name": "Mikro- és makro ökonómia",
+                    "credits": 4
+                },
+                {
+                    "code": "KOGJA115",
+                    "name": "Járműrendszerek",
+                    "credits": 2
+                },
+                {
+                    "code": "KOKUA116",
+                    "name": "Logisztikai rendszerek",
+                    "credits": 2
+                },
+                {
+                    "code": "KOKAA153",
+                    "name": "Számítástechnika II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "KOKAA119"
+                    ]
+                },
+                {
+                    "code": "KOJHA172",
+                    "name": "Járműelemek I.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "KOJKA101",
+                        "KOJHA171"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Kötelezően választott gazdasági és humán ismeretek",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "TE90AX11",
+                    "name": "Matematika A3 közl.mérn.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "TE90AX02"
+                    ]
+                },
+                {
+                    "code": "KOJKA103",
+                    "name": "Mechanika III.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "KOJKA101",
+                        "TE90AX02"
+                    ]
+                },
+                {
+                    "code": "KORHA104",
+                    "name": "Hő- és áramlástan I.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "TE90AX02"
+                    ]
+                },
+                {
+                    "code": "KOKAA107",
+                    "name": "Elektrotechnika - elektronika I.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "TE90AX00",
+                        "TE15AX09"
+                    ]
+                },
+                {
+                    "code": "KOKGA109",
+                    "name": "Menedzsment és vállalkozás gazdaságtan",
+                    "credits": 4
+                },
+                {
+                    "code": "KOEAA117",
+                    "name": "Üzemi szállítási rendszerek",
+                    "credits": 2
+                },
+                {
+                    "code": "KOEAA118",
+                    "name": "Közlekedési pályák",
+                    "credits": 2,
+                    "prerequisites": [
+                        "KOKUA114"
+                    ]
+                },
+                {
+                    "code": "KOJHA173",
+                    "name": "Járműelemek II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "KOJHA172"
+                    ]
+                },
+                {
+                    "code": "KOJJA174",
+                    "name": "Jármű-anyagtechnológia I.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "KOJJA106"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Kötelezően választott gazdasági és humán ismeretek",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "KORHA105",
+                    "name": "Hő- és áramlástan II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "KOVJA112",
+                        "TE90AX11"
+                    ]
+                },
+                {
+                    "code": "KOKAA108",
+                    "name": "Elektrotechnika - elektronika II.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "KOKAA107"
+                    ]
+                },
+                {
+                    "code": "KOJJA175",
+                    "name": "Jármű-anyagtechnológia II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "KOJJA174"
+                    ]
+                },
+                {
+                    "code": "KOKUA176",
+                    "name": "Közlekedési technológia A",
+                    "credits": 6
+                },
+                {
+                    "code": "KOVJA177",
+                    "name": "Járműdinamika",
+                    "credits": 2,
+                    "prerequisites": [
+                        "KOVJA112",
+                        "KOGJA115"
+                    ]
+                },
+                {
+                    "code": "KOKGA178",
+                    "name": "Közlekedésstatisztika A",
+                    "credits": 3
+                },
+                {
+                    "code": "KOKAA127",
+                    "name": "Irányítástechnika I.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "KOKAA107"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Szakirány modul",
+                    "credits": 8,
+                    "course_block_references": [
+                        "Közúti közlekedési folyamatok",
+                        "Vasúti közlekedési folyamatok",
+                        "Légiközlekedési folyamatok",
+                        "Vizi közlekedési folyamatok",
+                        "Szállítási folyamatok",
+                        "Szállítmányozási menedzsment"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "5. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "KOKAA128",
+                    "name": "Irányítástechnika II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "KOKAA119",
+                        "TE90AX11",
+                        "KOKAA127"
+                    ]
+                },
+                {
+                    "code": "KOKAA179",
+                    "name": "Közlekedési automatika A",
+                    "credits": 4,
+                    "prerequisites": [
+                        "KOKAA107"
+                    ]
+                },
+                {
+                    "code": "KOKUA180",
+                    "name": "Üzemszervezés A",
+                    "credits": 6
+                },
+                {
+                    "code": "KOJJA181",
+                    "name": "Jármű fenntartás",
+                    "credits": 3,
+                    "prerequisites": [
+                        "KOJJA175"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Kötelezően választott gazdasági és humán ismeretek",
+                    "credits": 2
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható tantárgyak",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Szakirány modul",
+                    "credits": 10,
+                    "course_block_references": [
+                        "Közúti közlekedési folyamatok",
+                        "Vasúti közlekedési folyamatok",
+                        "Légiközlekedési folyamatok",
+                        "Vizi közlekedési folyamatok",
+                        "Szállítási folyamatok",
+                        "Szállítmányozási menedzsment"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "6. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "KOKGA110",
+                    "name": "Üzleti jog",
+                    "credits": 2
+                },
+                {
+                    "code": "KOKGA182",
+                    "name": "Közlekedés-gazdaságtan A",
+                    "credits": 4,
+                    "prerequisites": [
+                        "KOKGA109"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható tantárgyak",
+                    "credits": 4
+                },
+                {
+                    "code": null,
+                    "name": "Szakirány modul",
+                    "credits": 20,
+                    "course_block_references": [
+                        "Közúti közlekedési folyamatok",
+                        "Vasúti közlekedési folyamatok",
+                        "Légiközlekedési folyamatok",
+                        "Vizi közlekedési folyamatok",
+                        "Szállítási folyamatok",
+                        "Szállítmányozási menedzsment"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "7. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "KOEAA111",
+                    "name": "Munkavédelem",
+                    "credits": 2
+                },
+                {
+                    "code": "KO......",
+                    "name": "Szakdolgozat készítés",
+                    "credits": 15
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Kötelezően választott gazdasági és humán ismeretek",
+                    "credits": 2
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható tantárgyak",
+                    "credits": 4
+                },
+                {
+                    "code": null,
+                    "name": "Szakirány modul",
+                    "credits": 7,
+                    "course_block_references": [
+                        "Közúti közlekedési folyamatok",
+                        "Vasúti közlekedési folyamatok",
+                        "Légiközlekedési folyamatok",
+                        "Vizi közlekedési folyamatok",
+                        "Szállítási folyamatok",
+                        "Szállítmányozási menedzsment"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Közúti közlekedési folyamatok",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "KOKUA201",
+                    "name": "Közlekedési információs rendszerek I.",
+                    "credits": 5
+                },
+                {
+                    "code": "KOKUA203",
+                    "name": "Szállítástechnika",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "KOKUA202",
+                    "name": "Közlekedési inform. rendszerek II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "KOKUA201"
+                    ]
+                },
+                {
+                    "code": "KOKUA204",
+                    "name": "Közlekedési hálózattervezés",
+                    "credits": 4,
+                    "prerequisites": [
+                        "KOKUA114"
+                    ]
+                },
+                {
+                    "code": "KOKAA205",
+                    "name": "Közúti irányító és komm. rendszerek I.",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "KOKAA206",
+                    "name": "Közúti irányító és komm. rendsz. II.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "KOKAA205"
+                    ]
+                },
+                {
+                    "code": "KOKUA208",
+                    "name": "Gépjármű üzemtan",
+                    "credits": 3,
+                    "prerequisites": [
+                        "KOKUA176"
+                    ]
+                },
+                {
+                    "code": "KOKUA209",
+                    "name": "Forgalomtechnika",
+                    "credits": 4,
+                    "prerequisites": [
+                        "KOKUA114"
+                    ]
+                },
+                {
+                    "code": "KOKGA210",
+                    "name": "Közúti menedzsment I.",
+                    "credits": 2
+                },
+                {
+                    "code": "KOKUA212",
+                    "name": "Közúti informatika",
+                    "credits": 3,
+                    "prerequisites": [
+                        "KOKUA202"
+                    ]
+                },
+                {
+                    "code": "KOEAA213",
+                    "name": "Közúti pályák",
+                    "credits": 3,
+                    "prerequisites": [
+                        "KOEAA118"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "KOKAA207",
+                    "name": "Közúti irányító és komm. rendsz. III.",
+                    "credits": 4
+                },
+                {
+                    "code": "KOKGA211",
+                    "name": "Közúti menedzsment II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "KOKGA210"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Vasúti közlekedési folyamatok",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "KOKUA201",
+                    "name": "Közlekedési információs rendszerek I.",
+                    "credits": 5
+                },
+                {
+                    "code": "KOKUA203",
+                    "name": "Szállítástechnika",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "KOKUA202",
+                    "name": "Közlekedési inform. rendszerek II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "KOKUA201"
+                    ]
+                },
+                {
+                    "code": "KOKUA204",
+                    "name": "Közlekedési hálózattervezés",
+                    "credits": 4,
+                    "prerequisites": [
+                        "KOKUA114"
+                    ]
+                },
+                {
+                    "code": "KOKAA214",
+                    "name": "Vasúti irányító és komm. rendszerek I.",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "KOKAA215",
+                    "name": "Vasúti irányító és komm. rendsz. II.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "KOKAA214"
+                    ]
+                },
+                {
+                    "code": "KOKUA217",
+                    "name": "Vasúti üzemtan",
+                    "credits": 7,
+                    "prerequisites": [
+                        "KOKUA176"
+                    ]
+                },
+                {
+                    "code": "KOKGA218",
+                    "name": "Vasúti menedzsment I.",
+                    "credits": 2
+                },
+                {
+                    "code": "KOKUA220",
+                    "name": "Vasúti informatika",
+                    "credits": 3
+                },
+                {
+                    "code": "KOEAA221",
+                    "name": "Vasúti pályák",
+                    "credits": 3,
+                    "prerequisites": [
+                        "KOEAA118"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "KOKAA216",
+                    "name": "Vasúti irányító és komm. rendsz. III.",
+                    "credits": 4
+                },
+                {
+                    "code": "KOKGA219",
+                    "name": "Vasúti menedzsment II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "KOKGA218"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Légiközlekedési folyamatok",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "KOKUA201",
+                    "name": "Közlekedési információs rendszerek I.",
+                    "credits": 5
+                },
+                {
+                    "code": "KOKUA203",
+                    "name": "Szállítástechnika",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "KOKUA202",
+                    "name": "Közlekedési inform. rendszerek II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "KOKUA201"
+                    ]
+                },
+                {
+                    "code": "KOKUA204",
+                    "name": "Közlekedési hálózattervezés",
+                    "credits": 4,
+                    "prerequisites": [
+                        "KOKUA114"
+                    ]
+                },
+                {
+                    "code": "KOKAA222",
+                    "name": "Légiközl. irányító és komm. rendszerek I.",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "KOKAA223",
+                    "name": "Légiközl. irányító és komm. rendsz. II.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "KOKAA222"
+                    ]
+                },
+                {
+                    "code": "KORHA225",
+                    "name": "Repülésüzemeltetés",
+                    "credits": 7
+                },
+                {
+                    "code": "KOKGA226",
+                    "name": "Légiközlekedési menedzsment I.",
+                    "credits": 2
+                },
+                {
+                    "code": "KOKUA228",
+                    "name": "Légi informatika",
+                    "credits": 3
+                },
+                {
+                    "code": "KOKUA229",
+                    "name": "Légterek, repterek",
+                    "credits": 3,
+                    "prerequisites": [
+                        "KOKUA114"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "KOKAA224",
+                    "name": "Légiközl. irányító és komm. r. III.",
+                    "credits": 4
+                },
+                {
+                    "code": "KOKGA227",
+                    "name": "Légiközlekedési menedzsment II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "KOKGA226"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Vizi közlekedési folyamatok",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "KOKUA201",
+                    "name": "Közlekedési információs rendszerek I.",
+                    "credits": 5
+                },
+                {
+                    "code": "KOKUA203",
+                    "name": "Szállítástechnika",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "KOKUA202",
+                    "name": "Közlekedési inform. rendszerek II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "KOKUA201"
+                    ]
+                },
+                {
+                    "code": "KOKUA204",
+                    "name": "Közlekedési hálózattervezés",
+                    "credits": 4,
+                    "prerequisites": [
+                        "KOKUA114"
+                    ]
+                },
+                {
+                    "code": "KOKAA230",
+                    "name": "Viziközlekedési irányító és komm. rendszerek I.",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "KOKAA231",
+                    "name": "Viziközlekedési irányító és komm. rendszerek II.",
+                    "credits": 5
+                },
+                {
+                    "code": "KORHA233",
+                    "name": "Hajózási üzemtan",
+                    "credits": 7
+                },
+                {
+                    "code": "KOKGA234",
+                    "name": "Hajózási menedzsment I.",
+                    "credits": 2
+                },
+                {
+                    "code": "KOKUA236",
+                    "name": "Hajózási informatika",
+                    "credits": 3
+                },
+                {
+                    "code": "KORHA237",
+                    "name": "Vizi utak és műtárgyak",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "KOKAA232",
+                    "name": "Viziközlekedési irányító és komm. rendszerek III.",
+                    "credits": 4
+                },
+                {
+                    "code": "KOKGA235",
+                    "name": "Hajózási menedzsment II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "KOKGA234"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Szállítási folyamatok",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "KOKUA241",
+                    "name": "Szállítási információs rendszerek I.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "KOKUA116"
+                    ]
+                },
+                {
+                    "code": "KOKGA243",
+                    "name": "Szállítási menedzsment",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "KOKUA242",
+                    "name": "Szállítási inform. rendszerek II.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "KOKUA241"
+                    ]
+                },
+                {
+                    "code": "KOKUA244",
+                    "name": "Áruszállítási rendszerek",
+                    "credits": 5,
+                    "prerequisites": [
+                        "KOKUA241"
+                    ]
+                },
+                {
+                    "code": "KOKAA245",
+                    "name": "Szállítási folyamatok megbízhatósága és biztonsága",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "KOEAA246",
+                    "name": "Átrakóberendezések",
+                    "credits": 5
+                },
+                {
+                    "code": "KOKUA247",
+                    "name": "Anyagmozgatás, raktározás",
+                    "credits": 6,
+                    "prerequisites": [
+                        "KOKUA116",
+                        "KOKUA244"
+                    ]
+                },
+                {
+                    "code": "KOKUA248",
+                    "name": "Ellátási, elosztási rendszerek",
+                    "credits": 6,
+                    "prerequisites": [
+                        "KOKUA242"
+                    ]
+                },
+                {
+                    "code": "KOKUA250",
+                    "name": "Áruvédelem",
+                    "credits": 3,
+                    "prerequisites": [
+                        "KOKUA244"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "KOKUA249",
+                    "name": "Projekt feladat",
+                    "credits": 3
+                },
+                {
+                    "code": "KOKGA251",
+                    "name": "Szállítmányozás alapjai",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "Szállítmányozási menedzsment",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "KOKUA241",
+                    "name": "Szállítási információs rendszerek I.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "KOKUA116"
+                    ]
+                },
+                {
+                    "code": "KOKGA243",
+                    "name": "Szállítási menedzsment",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "KOKUA242",
+                    "name": "Szállítási inform. rendszerek II.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "KOKUA241"
+                    ]
+                },
+                {
+                    "code": "KOKUA244",
+                    "name": "Áruszállítási rendszerek",
+                    "credits": 5,
+                    "prerequisites": [
+                        "KOKUA241"
+                    ]
+                },
+                {
+                    "code": "KOKGA312",
+                    "name": "Szállítmányozási menedzsment I.",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "KOKGA313",
+                    "name": "Szállítmányozási menedzsment II.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "KOKGA312"
+                    ]
+                },
+                {
+                    "code": "KOKGA314",
+                    "name": "Menedzser tréning",
+                    "credits": 5
+                },
+                {
+                    "code": "KOKGA255",
+                    "name": "Szállítmányozási marketing",
+                    "credits": 3
+                },
+                {
+                    "code": "KOKGA256",
+                    "name": "Döntéselőkészítő módszerek a szállítmányozásban",
+                    "credits": 5
+                },
+                {
+                    "code": "KOKUA258",
+                    "name": "Ellátási - elosztási folyamatok",
+                    "credits": 2,
+                    "prerequisites": [
+                        "KOKUA116",
+                        "KOKUA242"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "KOKGA317",
+                    "name": "Keresk., pénzügyi és számv. technikák",
+                    "credits": 3
+                },
+                {
+                    "code": "KOKUA259",
+                    "name": "Anyagmozgatási és raktározási folyamatok",
+                    "credits": 4,
+                    "prerequisites": [
+                        "KOKUA244",
+                        "KOKUA258"
+                    ]
+                }
+            ]
+        }
+    ]
 }

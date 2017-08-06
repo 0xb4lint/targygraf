@@ -1,5 +1,502 @@
 {
     "name": "Gépészmérnök MSc",
     "description": "Gépészmérnöki MSc szak - nappali tagozat tanterve",
-    "curriculum_updated_at": "2013-12-03"
+    "curriculum_updated_at": "2013-12-03",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Matematika",
+                    "credits": 6
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Rugalmasságtan",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Mérnöki fizika",
+                    "credits": 2
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Mérnöki anyagok",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Ergonómia",
+                    "credits": 2
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Mérnöki gazdaságtan",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Méréselmélet",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Részlet-szerkesztés és tervezés",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Elektrotechnika II.",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Lengéstan",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Áramlástan",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Műszaki hőtan",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Számítógépes szimuláció",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Gyártási folyamatok és rendszerek",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Ökotechnológia",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választott (szakirányos) tárgy",
+                    "credits": 8,
+                    "course_block_references": [
+                        "Gépipari technológiák szakirány",
+                        "Gépészeti mechatronika szakirány",
+                        "Környezetipari szakirány",
+                        "Mobilgépek és járműrendszerek szakirány",
+                        "Műszaki fejlesztő szakirány"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon válaszható tárgy",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Mérnöki etika",
+                    "credits": 2
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Vállalkozási ismeretek",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Számítógépes modellalkotás I.",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választott (szakirányos) tárgy",
+                    "credits": 20,
+                    "course_block_references": [
+                        "Gépipari technológiák szakirány",
+                        "Gépészeti mechatronika szakirány",
+                        "Környezetipari szakirány",
+                        "Mobilgépek és járműrendszerek szakirány",
+                        "Műszaki fejlesztő szakirány"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható tárgy",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Diplomamunka",
+                    "credits": 30
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Szakmai gyakorlat",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "Szakirányok",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "Gépipari technológiák szakirány",
+                    "credits": 28,
+                    "course_block_references": [
+                        "Gépipari technológiák szakirány"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Gépészeti mechatronika szakirány",
+                    "credits": 28,
+                    "course_block_references": [
+                        "Gépészeti mechatronika szakirány"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Környezetipari szakirány",
+                    "credits": 28,
+                    "course_block_references": [
+                        "Környezetipari szakirány"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Mobilgépek és járműrendszerek szakirány",
+                    "credits": 28,
+                    "course_block_references": [
+                        "Mobilgépek és járműrendszerek szakirány"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Műszaki fejlesztő szakirány",
+                    "credits": 28,
+                    "course_block_references": [
+                        "Műszaki fejlesztő szakirány"
+                    ]
+                }
+            ],
+            "is_counted": false
+        },
+        {
+            "name": "Gépipari technológiák szakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Integrált gyártórendszerek",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Szereléstechnológia II.",
+                    "credits": 2
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Szerszámgépek és állapotfelügyeletük",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Számítógépes technológia és szerszámtervezés",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Projekt feladat",
+                    "credits": 2
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Mechatronikai rendszerek",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Hidraulikus és pneumatikus rendszerek tervezése",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Polimertechnológiák II.",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Számítógépes modellalkotás II.",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Gépészeti mechatronika szakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Arányos hidraulikus és pneumatikus irányítás",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Folyamatirányítás",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Projekt feladat I. (tervezés, rekonstrukció)",
+                    "credits": 2
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Számítógéppel integrált gyártás",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Beágyazott rendszerek",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "CNC gépek és ipari robotok programozása",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Projekt feladat II. (fejlesztés)",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Alkalmazott informatika",
+                    "credits": 4
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "Környezetipari szakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Komplex mérnöki tevékenység",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Veszélyes áruk tárolása-szállítása",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Környezeti folyamatok modellezése",
+                    "credits": 2
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Projekt feladat (Környezetipari folyamatok tervezése)",
+                    "credits": 5
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Levegőtisztaság-védelmi berendezések",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Víz- és szennyvízkezelők tervezése",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Zaj és rezgésvédelem",
+                    "credits": 2
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Természeti erőforrások védelme és hasznosítása",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Hulladékkezelés",
+                    "credits": 4
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "Mobilgépek és járműrendszerek szakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Belsőégésű motorok",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Folyamat informatika",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Projekt feladat I. (tervezés, rekonstrukció)",
+                    "credits": 2
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Mobilgépek elmélete",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Projekt feladat II. (fejlesztés)",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Mobilgépek mechatronikai rendszerei",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Mobilgépek hajtó és kenőanyagai",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Terméktervezés",
+                    "credits": 4
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "Műszaki fejlesztő szakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Komplex mérnöki tevékenység",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Projekt feladat I. (tervezés, rekonstrukció)",
+                    "credits": 2
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Műszaki fejlesztés elmélete",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Projekt feladat II. (fejlesztés)",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Gépészeti automatizálás (Mechatronikai rendszerek)",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Rendszertechnika",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Terméktervezés",
+                    "credits": 4
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Számítógépes modellalkotás II.",
+                    "credits": 3
+                }
+            ]
+        }
+    ]
 }

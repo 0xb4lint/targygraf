@@ -1,5 +1,827 @@
 {
     "name": "Vegyészmérnök",
     "description": "Vegyészmérnök BSc - nappali tagozat tanterve",
-    "curriculum_updated_at": "2010-12-07"
+    "curriculum_updated_at": "2010-12-07",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMEVESZA101",
+                    "name": "Biztonságtechnika és munkavédelem",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEGT30A001",
+                    "name": "Mikro- és makroökonómia",
+                    "credits": 4
+                },
+                {
+                    "code": "BMEVESAA101",
+                    "name": "Általános kémia",
+                    "credits": 5
+                },
+                {
+                    "code": "BMEVESAA104",
+                    "name": "Általános kémia gyakorlat",
+                    "credits": 4
+                },
+                {
+                    "code": "BMETE90AX00",
+                    "name": "Matematika A1a - Analízis",
+                    "credits": 6
+                },
+                {
+                    "code": "BMEVESAA103",
+                    "name": "Számítástechnika",
+                    "credits": 2
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 6
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMETE14AX15",
+                    "name": "Fizika I. Mechanika",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMETE90AX00"
+                    ]
+                },
+                {
+                    "code": "BMETE90AX17",
+                    "name": "Matematika A2c",
+                    "credits": 6,
+                    "prerequisites": [
+                        "BMETE90AX00"
+                    ]
+                },
+                {
+                    "code": "BMEVESAA208",
+                    "name": "Szervetlen kémia",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEVESAA101",
+                        "BMEVESAA104"
+                    ]
+                },
+                {
+                    "code": "BMEVESAA209",
+                    "name": "Általános kémia labor",
+                    "credits": 5,
+                    "prerequisites": [
+                        "BMEVESZA101",
+                        "BMEVESAA101",
+                        "BMEVESAA104"
+                    ]
+                },
+                {
+                    "code": "BMEVEFKA304",
+                    "name": "Fizikai kémia I.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "BMEVESAA101",
+                        "BMETE90AX00"
+                    ]
+                },
+                {
+                    "code": "BMEVEKFA203",
+                    "name": "Kémiai technológia",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEVESAA101"
+                    ]
+                },
+                {
+                    "code": "BMEGEVGAV03",
+                    "name": "Vegyipari géptan",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEGEVGAV04",
+                    "name": "Vegyipari géptan gyakorlat",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMETE14AX04",
+                    "name": "Fizika I. Elektrodinamika",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE14AX15",
+                        "BMETE90AX17"
+                    ]
+                },
+                {
+                    "code": "BMETE14AX05",
+                    "name": "Fizika laboratóriumi gyakorlatok",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE14AX15",
+                        "BMETE90AX17"
+                    ]
+                },
+                {
+                    "code": "BMETE90AX18",
+                    "name": "Matematika A3c",
+                    "credits": 4
+                },
+                {
+                    "code": "BMEVESZA301",
+                    "name": "Szerves kémia I.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "BMEVESAA101"
+                    ]
+                },
+                {
+                    "code": "BMEVESAA302",
+                    "name": "Analitikai kémia I.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "BMEVESAA101",
+                        "BMEVESAA104"
+                    ]
+                },
+                {
+                    "code": "BMEVEFAA405",
+                    "name": "Fizikai kémia II.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEVEFKA304"
+                    ]
+                },
+                {
+                    "code": "BMEVEFAA306",
+                    "name": "Műanyagok vegyészmérnököknek",
+                    "credits": 5,
+                    "prerequisites": [
+                        "BMEVESAA101"
+                    ]
+                },
+                {
+                    "code": "BMEVESAA301",
+                    "name": "Szervetlen kémia labor",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEVESAA101",
+                        "BMEVESAA104",
+                        "BMEVESAA209"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMEVESZA401",
+                    "name": "Szerves kémia II.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEVESZA301"
+                    ]
+                },
+                {
+                    "code": "BMEVEFAA409",
+                    "name": "A nanotechnológia kolloidkém. alapjai",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEVEFKA304"
+                    ]
+                },
+                {
+                    "code": "BMEVESAA403",
+                    "name": "Analitikai kémia labor",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEVESAA209",
+                        "BMEVESAA302"
+                    ]
+                },
+                {
+                    "code": "BMEVESTA403",
+                    "name": "Gyógyszerek",
+                    "credits": 3
+                },
+                {
+                    "code": "BMEVESZA402",
+                    "name": "Szerves szintetikus labor",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEVESAA104",
+                        "BMEVESAA209",
+                        "BMEVESZA301"
+                    ]
+                },
+                {
+                    "code": "BMEVESTA411",
+                    "name": "Szerves vegyipari technológiák",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEVESZA301"
+                    ]
+                },
+                {
+                    "code": "BMEVESZA412",
+                    "name": "Szerves vegyipari technológiák labor",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEGEVGAV03",
+                        "BMEVESZA301"
+                    ]
+                },
+                {
+                    "code": "BMEVEKFA410",
+                    "name": "Vegyipari műveletek I.",
+                    "credits": 6,
+                    "prerequisites": [
+                        "BMETE90AX17",
+                        "BMEGEVGAV03"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "5. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMEGT55A001",
+                    "name": "Üzleti jog",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEVEVMA606",
+                    "name": "Kisérletek tervezése és értékelése",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMETE90AX18"
+                    ]
+                },
+                {
+                    "code": "BMEVEBEA301",
+                    "name": "Biokémia",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEVESZA401"
+                    ]
+                },
+                {
+                    "code": "BMEVEFAA506",
+                    "name": "Fizikai kémia labor",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMETE14AX05",
+                        "BMEVEFAA405"
+                    ]
+                },
+                {
+                    "code": "BMEVEKFA506",
+                    "name": "Szénhidrogénipari technológia",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEVEFKA304",
+                        "BMEVEKFA203",
+                        "BMEVESZA401"
+                    ]
+                },
+                {
+                    "code": "BMEVEKFA512",
+                    "name": "Vegyipari műveletek II.",
+                    "credits": 6,
+                    "prerequisites": [
+                        "BMEVEKFA410"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Szakirány",
+                    "credits": 0,
+                    "course_block_references": [
+                        "Általános vegyipari és folyamatmérnöki szakirány",
+                        "Analitikai és szerkezet- vizsgálati szakirány",
+                        "Gyógyszeripari szakirány",
+                        "Műanyag, textil és anyagtudományi szakirány műanyag alszakirány"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "6. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMEGT20A001",
+                    "name": "Menedzsment és vállalkozásgazdaságtan",
+                    "credits": 4
+                },
+                {
+                    "code": "BMEVEVMA504",
+                    "name": "Folyamatirányítás",
+                    "credits": 5,
+                    "prerequisites": [
+                        "BMEVEKFA410"
+                    ]
+                },
+                {
+                    "code": "BMEVEKFA403",
+                    "name": "Környezetkémia és technológia",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEVESAA208",
+                        "BMEVEKFA203",
+                        "BMEVESZA401"
+                    ]
+                },
+                {
+                    "code": "BMEVEKFA613",
+                    "name": "Vegyipari műveletek labor",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEVEKFA512"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 4
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 4
+                },
+                {
+                    "code": null,
+                    "name": "Szakirány",
+                    "credits": 0,
+                    "course_block_references": [
+                        "Általános vegyipari és folyamatmérnöki szakirány",
+                        "Analitikai és szerkezet- vizsgálati szakirány",
+                        "Gyógyszeripari szakirány",
+                        "Műanyag, textil és anyagtudományi szakirány műanyag alszakirány"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "7. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMEVEKFA615",
+                    "name": "Minőségmenedzsment",
+                    "credits": 4
+                },
+                {
+                    "code": "tervezes",
+                    "name": "Tervezés",
+                    "credits": 3
+                },
+                {
+                    "code": null,
+                    "name": "Szakirány",
+                    "credits": 0,
+                    "course_block_references": [
+                        "Általános vegyipari és folyamatmérnöki szakirány",
+                        "Analitikai és szerkezet- vizsgálati szakirány",
+                        "Gyógyszeripari szakirány",
+                        "Műanyag, textil és anyagtudományi szakirány műanyag alszakirány"
+                    ]
+                },
+                {
+                    "code": "szakdolgozat",
+                    "name": "Szakdolgozat",
+                    "credits": 15
+                }
+            ]
+        },
+        {
+            "name": "Szakirány",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "Általános vegyipari és folyamatmérnöki szakirány",
+                    "credits": 23,
+                    "course_block_references": [
+                        "Általános vegyipari és folyamatmérnöki szakirány"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Analitikai és szerkezet- vizsgálati szakirány",
+                    "credits": 23,
+                    "course_block_references": [
+                        "Analitikai és szerkezet- vizsgálati szakirány"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Gyógyszeripari szakirány",
+                    "credits": 23,
+                    "course_block_references": [
+                        "Gyógyszeripari szakirány"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Műanyag, textil és anyagtudományi szakirány műanyag alszakirány",
+                    "credits": 23,
+                    "course_block_references": [
+                        "Műanyag, textil és anyagtudományi szakirány műanyag alszakirány"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Műanyag, textil és anyagtudományi szakirány anyagtudományi alszakirány",
+                    "credits": 23,
+                    "course_block_references": [
+                        "Műanyag, textil és anyagtudományi szakirány anyagtudományi alszakirány"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Műanyag, textil és anyagtudományi szakirány textil alszakirány",
+                    "credits": 23,
+                    "course_block_references": [
+                        "Műanyag, textil és anyagtudományi szakirány textil alszakirány"
+                    ]
+                }
+            ],
+            "is_counted": false
+        },
+        {
+            "name": "Általános vegyipari és folyamatmérnöki szakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "BMEVEKFA502",
+                    "name": "Radiokémia és nukleárisenergetika",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEVESAA101"
+                    ]
+                },
+                {
+                    "code": "BMEVEKFA503",
+                    "name": "Szénhidrogénipari technológia és katalízis",
+                    "credits": 5,
+                    "prerequisites": [
+                        "BMEVEKFA203",
+                        "BMEVESZA401",
+                        "BMEVEKFA410"
+                    ]
+                },
+                {
+                    "code": "BMEVEVMA605",
+                    "name": "Folyamattan",
+                    "credits": 5,
+                    "prerequisites": [
+                        "BMEVEKFA512"
+                    ]
+                },
+                {
+                    "code": "BMEVEVMA607",
+                    "name": "Környezetbarát eljárások",
+                    "credits": 4
+                },
+                {
+                    "code": "BMEVEKFA709",
+                    "name": "Számítógépes folyamatirányítás",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEVEVMA504"
+                    ]
+                },
+                {
+                    "code": "BMEVEKTA707",
+                    "name": "Vegyipari termelésirányítás",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEVEKFA203",
+                        "BMEVEKFA512"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Analitikai és szerkezet- vizsgálati szakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "BMEVEAAA708",
+                    "name": "Kémiai és bioszenzorok",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEVESAA403",
+                        "BMEVEBEA301",
+                        "BMEVEFAA506"
+                    ]
+                },
+                {
+                    "code": "BMEVEAAA611",
+                    "name": "Kromatográfia",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEVESAA403"
+                    ]
+                },
+                {
+                    "code": "BMEVESAA512",
+                    "name": "Szerves szerkezetfelderítés",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEVESZA401"
+                    ]
+                },
+                {
+                    "code": "BMEVESAA604",
+                    "name": "Analitikai és szerkezetvizsgálati labor",
+                    "credits": 5,
+                    "prerequisites": [
+                        "BMEVESAA403",
+                        "BMEVESAA512"
+                    ]
+                },
+                {
+                    "code": "BMEVESKA504",
+                    "name": "Szerves kémia III.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMEVESZA401"
+                    ]
+                },
+                {
+                    "code": "BMEVEFAA708",
+                    "name": "Anyagtudományi vizsgálati módszerek",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMETE14AX15",
+                        "BMETE90AX17",
+                        "BMEVESZA301"
+                    ]
+                },
+                {
+                    "code": "BMEVESAA701",
+                    "name": "Elemanalízis",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEVESAA403"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Gyógyszeripari szakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "BMEVESKA605",
+                    "name": "Szerves kémia labor II.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "BMEVESZA401",
+                        "BMEVESZA402"
+                    ]
+                },
+                {
+                    "code": "BMEVESAA512",
+                    "name": "Szerves szerkezetfelderítés",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEVESZA401"
+                    ]
+                },
+                {
+                    "code": "BMEVESTA508",
+                    "name": "Szerves vegyipari alapfolyamatok",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMEVESTA411"
+                    ]
+                },
+                {
+                    "code": "BMEVESTA606",
+                    "name": "Gyógyszerkémiai alapfolyamatok",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEVESTA607",
+                    "name": "Gyógyszerkészítmények formálása",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEVESTA411"
+                    ]
+                },
+                {
+                    "code": "BMEVESKA504",
+                    "name": "Szerves kémia III.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMEVESZA401"
+                    ]
+                },
+                {
+                    "code": "BMEVESTA704",
+                    "name": "Gyógyszeripari technológia",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMEVESTA606"
+                    ]
+                },
+                {
+                    "code": "BMEVESTA705",
+                    "name": "Gyógyszerkémiai alapfolyamatok labor",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "Műanyag, textil és anyagtudományi szakirány műanyag alszakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "BMEVEMGA511",
+                    "name": "Polimerek fizikája",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEVEFAA306"
+                    ]
+                },
+                {
+                    "code": "BMEVEFAA708",
+                    "name": "Anyagtudományi vizsgálati módszerek",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEVESAA208"
+                    ]
+                },
+                {
+                    "code": "BMEVEMGA509",
+                    "name": "Műanyagok fizikája labor",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEVEFAA306"
+                    ]
+                },
+                {
+                    "code": "BMEVEMGA608",
+                    "name": "Műanyagok feldolgozása",
+                    "credits": 7,
+                    "prerequisites": [
+                        "BMEVEMGA511"
+                    ]
+                },
+                {
+                    "code": "BMEVEMGA610",
+                    "name": "Polimerek adalékanyagai",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMEVEFAA306"
+                    ]
+                },
+                {
+                    "code": "BMEVEFAA705",
+                    "name": "Műanyagfeldolgozó gépek és szerszámok",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEVEMGA608"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Műanyag, textil és anyagtudományi szakirány anyagtudományi alszakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "BMEVEMGA511",
+                    "name": "Polimerek fizikája",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEVEFAA306"
+                    ]
+                },
+                {
+                    "code": "BMEVEFAA708",
+                    "name": "Anyagtudományi vizsgálati módszerek",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEVESAA208"
+                    ]
+                },
+                {
+                    "code": "BMEVEMGA502",
+                    "name": "Anyagtudományi vizsgálati módszerek labor",
+                    "credits": 3
+                },
+                {
+                    "code": "BMEVEFKA603",
+                    "name": "Felületek fizikai kémiája",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEVEFAA409"
+                    ]
+                },
+                {
+                    "code": "BMEVEMGA603",
+                    "name": "Anyagtudományi labor",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEVEFAA708"
+                    ]
+                },
+                {
+                    "code": "BMEVEFAA601",
+                    "name": "Korszerű műszaki kerámiák",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEVEFAA602",
+                    "name": "Fémek és fémmátrixú kompozitok",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEVEFAA707",
+                    "name": "Nem konvencionális anyagok",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEVEFAA405"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Műanyag, textil és anyagtudományi szakirány textil alszakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "BMEVEFAA708",
+                    "name": "Anyagtudományi vizsgálati módszerek",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEVESAA208"
+                    ]
+                },
+                {
+                    "code": "BMEVEMGA512",
+                    "name": "Szálképző polimerek",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMEVESZA401"
+                    ]
+                },
+                {
+                    "code": "BMEVESTA510",
+                    "name": "Színezék és tenzidkémia",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMEVESZA401"
+                    ]
+                },
+                {
+                    "code": "BMEVEMGA515",
+                    "name": "Színmérés és kolorisztika",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEVEMGA617",
+                    "name": "Textilkémiai technológia I.",
+                    "credits": 7,
+                    "prerequisites": [
+                        "BMEVEMGA512"
+                    ]
+                },
+                {
+                    "code": "BMEGEPTAKV1",
+                    "name": "Textilmechanikai technológia",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEVEFAA718",
+                    "name": "Textilkémiai technológia II.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEVEMGA617"
+                    ]
+                }
+            ]
+        }
+    ]
 }

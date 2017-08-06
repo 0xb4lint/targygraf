@@ -1,5 +1,607 @@
 {
     "name": "Matematika",
     "description": "Matematika BSc mintatanterve",
-    "curriculum_updated_at": "2013-09-01"
+    "curriculum_updated_at": "2013-09-01",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMETE92AM05",
+                    "name": "Analízis 1",
+                    "credits": 4,
+                    "prerequisites": [
+                        "(BMETE92AM32)"
+                    ]
+                },
+                {
+                    "code": "BMETE92AM32",
+                    "name": "Analízis 1 gyakorlat",
+                    "credits": 6
+                },
+                {
+                    "code": "BMETE91AK00",
+                    "name": "Lineáris algebra",
+                    "credits": 4,
+                    "prerequisites": [
+                        "(BMETE91AM32)"
+                    ]
+                },
+                {
+                    "code": "BMETE91AM32",
+                    "name": "Lineáris algebra gyakorlat",
+                    "credits": 6
+                },
+                {
+                    "code": "BMETE91AM24",
+                    "name": "Informatika 1",
+                    "credits": 4
+                },
+                {
+                    "code": "BMETE95AM02",
+                    "name": "Feladatmegoldó szeminárium 1",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEVISZA070",
+                    "name": "Kombinatorika és gráfelmélet 1",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMETE92AM07",
+                    "name": "Analízis 2",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMETE92AM05",
+                        "BMETE91AK00",
+                        "(BMETE92AM08)"
+                    ]
+                },
+                {
+                    "code": "BMETE92AM08",
+                    "name": "Analízis 2 gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE92AM05",
+                        "BMETE91AK00"
+                    ]
+                },
+                {
+                    "code": "BMETE91AM15",
+                    "name": "Számelmélet",
+                    "credits": 3,
+                    "prerequisites": [
+                        "(BMETE91AM16)"
+                    ]
+                },
+                {
+                    "code": "BMETE91AM16",
+                    "name": "Számelmélet gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "BMETE94AM03",
+                    "name": "Geometria",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMETE91AM32",
+                        "(BMETE94AM04)"
+                    ]
+                },
+                {
+                    "code": "BMETE94AM04",
+                    "name": "Geometria gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE91AM32"
+                    ]
+                },
+                {
+                    "code": "BMETE95AM03",
+                    "name": "Feladatmegoldó szeminárium 2",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE92AM32",
+                        "BMETE91AM32",
+                        "BMETE95AM02"
+                    ]
+                },
+                {
+                    "code": "BMETE91AM25",
+                    "name": "Informatika 2",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMETE91AM24"
+                    ]
+                },
+                {
+                    "code": "BMEVISZA071",
+                    "name": "Kombinatorika és gráfelmélet 2",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMETE91AK00",
+                        "BMEVISZA070"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Gazdasági és humán ismeretek 1 (KV)",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMETE91AM02",
+                    "name": "Algebra 1",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE91AK00",
+                        "BMETE91AM15",
+                        "(BMETE91AM03)"
+                    ]
+                },
+                {
+                    "code": "BMETE91AM03",
+                    "name": "Algebra 1 gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE91AK00",
+                        "BMETE91AM15"
+                    ]
+                },
+                {
+                    "code": "BMEVISZA213",
+                    "name": "Algoritmuselmélet",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEVISZA071"
+                    ]
+                },
+                {
+                    "code": "BMETE92AM22",
+                    "name": "Analízis 3",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMETE92AM07",
+                        "(BMETE92AM23)"
+                    ]
+                },
+                {
+                    "code": "BMETE92AM23",
+                    "name": "Analízis 3 gyakorlat",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMETE92AM07"
+                    ]
+                },
+                {
+                    "code": "BMETE94AM05",
+                    "name": "Differenciálgeometria 1",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMETE92AM07",
+                        "BMETE94AM03"
+                    ]
+                },
+                {
+                    "code": "BMETE91AM10",
+                    "name": "Informatika 3",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE92AM07",
+                        "BMETE91AM25"
+                    ]
+                },
+                {
+                    "code": "BMETE95AM24",
+                    "name": "Valószínűségszámítás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMEVISZA070",
+                        "BMETE92AM07",
+                        "(BMETE95AM25)"
+                    ]
+                },
+                {
+                    "code": "BMETE95AM25",
+                    "name": "Valószínűségszámítás gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMEVISZA070",
+                        "BMETE92AM07"
+                    ]
+                },
+                {
+                    "code": "BMETE93AM05",
+                    "name": "Operációkutatás",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMETE91AK00"
+                    ]
+                },
+                {
+                    "code": "BMETE93AM03",
+                    "name": "Differenciálegyenletek",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMETE92AM07",
+                        "(BMETE93AM04)"
+                    ]
+                },
+                {
+                    "code": "BMETE93AM04",
+                    "name": "Differenciálegyenletek gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE92AM07"
+                    ]
+                },
+                {
+                    "code": "BMETE91AM26",
+                    "name": "Programozási feladat 1 (KV)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE91AM25"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Gazdasági és humán ismeretek 2 (KV)",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMETE13AM16",
+                    "name": "Fizika 1 matematikusoknak",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE92AM07"
+                    ]
+                },
+                {
+                    "code": "BMETE93AM03",
+                    "name": "Differenciálegyenletek",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMETE92AM07",
+                        "(BMETE93AM04)"
+                    ]
+                },
+                {
+                    "code": "BMETE93AM04",
+                    "name": "Differenciálegyenletek gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE92AM07"
+                    ]
+                },
+                {
+                    "code": "BMETE95AM26",
+                    "name": "Sztochasztikus folyamatok",
+                    "credits": 6,
+                    "prerequisites": [
+                        "BMETE92AM22",
+                        "BMETE95AM24"
+                    ]
+                },
+                {
+                    "code": "BMETE91AM27",
+                    "name": "Programozási feladat 2 (KV)",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMETE91AM10"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "5. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMETE13AM17",
+                    "name": "Fizika 2 matematikusoknak",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE13AM16"
+                    ]
+                },
+                {
+                    "code": "BMEGT30A015",
+                    "name": "Makroökonómia",
+                    "credits": 2
+                },
+                {
+                    "code": "BMETE92AM00",
+                    "name": "Numerikus módszerek",
+                    "credits": 6,
+                    "prerequisites": [
+                        "BMETE92AM07",
+                        "BMETE93AM03"
+                    ]
+                },
+                {
+                    "code": "BMETE91AM11",
+                    "name": "Informatika 4",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMETE91AM25",
+                        "BMETE91AM10"
+                    ]
+                },
+                {
+                    "code": "BMETE91AM06",
+                    "name": "Matematikai logika",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE91AM02"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "6. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMEGT30A014",
+                    "name": "Mikroökonómia",
+                    "credits": 2
+                },
+                {
+                    "code": "BMETE95AM27",
+                    "name": "Matematikai statisztika",
+                    "credits": 6,
+                    "prerequisites": [
+                        "BMETE95AM24"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Gazdasági és humán ismeretek 3 (KV)",
+                    "credits": 0
+                },
+                {
+                    "code": "BMETE95AM13",
+                    "name": "Szakdolgozat-készítés (KV)",
+                    "credits": 10,
+                    "prerequisites": [
+                        "___130___"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Gazdasági és humán ismeretek",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMEGT46A001",
+                    "name": "Információmenedzsment (KV)",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEGT44A001",
+                    "name": "Innovációmenedzsment (KV)",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEGT41A002",
+                    "name": "Kutatásmódszertan (KV)",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEGT42A001",
+                    "name": "Környezetgazdaságtan (KV)",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEGT35A001",
+                    "name": "Pénzügyek (KV)",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEGT35A002",
+                    "name": "Számvitel (KV)",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "4. félév - AlkMat",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "BMETE94AX12",
+                    "name": "Test- és felületmodellezés",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE91AM24",
+                        "BMETE94AM05"
+                    ]
+                },
+                {
+                    "code": "BMETE91AM33",
+                    "name": "Matematikai kriptográfia és kódelmélet",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE91AM02"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "4. félév - ElmMat",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "BMETE92AM12",
+                    "name": "Funkcionálanalízis",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMETE92AM22",
+                        "(BMETE92AM13)"
+                    ]
+                },
+                {
+                    "code": "BMETE92AM13",
+                    "name": "Funkcionálanalízis gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE92AM22"
+                    ]
+                },
+                {
+                    "code": "BMETE91AM04",
+                    "name": "Algebra 2",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE91AM02",
+                        "(BMETE91AM05)"
+                    ]
+                },
+                {
+                    "code": "BMETE91AM05",
+                    "name": "Algebra 2 gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE91AM02"
+                    ]
+                },
+                {
+                    "code": "BMETE90AM45",
+                    "name": "Önálló kutatási feladat",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "5. félév - AlkMat",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "BMETE95AM1",
+                    "name": "Biztosításmatematika",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMETE95AM24"
+                    ]
+                },
+                {
+                    "code": "BMETE95AM12",
+                    "name": "Matematikai modellalkotás szeminárium",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE92AM07",
+                        "BMETE91AM02"
+                    ]
+                },
+                {
+                    "code": "BMETE93AM07",
+                    "name": "Optimalizálási modellek",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE91AM24",
+                        "BMETE92AM07"
+                    ]
+                },
+                {
+                    "code": "BMETE91AM28",
+                    "name": "Hálózatok és a WWW matematikája",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMETE91AM24",
+                        "BMEVISZA213",
+                        "BMETE95AM24"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "5. félév - ElmMat",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "BMETE94AM15",
+                    "name": "Differenciálgeometria 2",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMETE94AM05"
+                    ]
+                },
+                {
+                    "code": "BMETE93AM13",
+                    "name": "Parciális differenciálegyenletek",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMETE93AM03",
+                        "BMETE92AM12"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "6. félév - AlkMat",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "BMETE91AM19",
+                    "name": "Mesterséges intelligencia logikai módszerei",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE91AM24",
+                        "BMEVISZA213",
+                        "BMETE91AM06"
+                    ]
+                },
+                {
+                    "code": "BMETE93AM09",
+                    "name": "Közgazdasági és pénzügyi matematika",
+                    "credits": 6,
+                    "prerequisites": [
+                        "BMETE95AM24"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "6. félév - ElmMat",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "BMETE95AM22",
+                    "name": "Ergodelmélet és dinamikai rendszerek",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE91AM02",
+                        "BMETE95AM26"
+                    ]
+                },
+                {
+                    "code": "BMETE91AM07",
+                    "name": "Halmazelmélet",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE91AM06"
+                    ]
+                }
+            ]
+        }
+    ]
 }

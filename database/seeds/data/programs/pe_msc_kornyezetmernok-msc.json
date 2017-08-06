@@ -1,5 +1,403 @@
 {
     "name": "Környezetmérnök MSc",
     "description": "Környezetmérnök MSc szak - nappali tagozat tanterve",
-    "curriculum_updated_at": "2013-10-18"
+    "curriculum_updated_at": "2013-10-18",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VEMKFIM112F",
+                    "name": "Fizika III.",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKAKM112N",
+                    "name": "Környezeti kémia",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKKAM112M",
+                    "name": "Környezeti méréstechnika",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKOKM112K",
+                    "name": "Környezeti szerves kémia",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKKVM112R",
+                    "name": "Környezetmenedzsment rendszerek I.",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKKVM112A",
+                    "name": "Környezetmodellezés",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKKVM116T",
+                    "name": "Környezettechnológia",
+                    "credits": 6
+                },
+                {
+                    "code": "VEMKKVM222B",
+                    "name": "Biztonságtechnika és kockázatelemzés I.",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKKAM231M",
+                    "name": "Környezeti méréstechnika laborgyakorlat",
+                    "credits": 1
+                },
+                {
+                    "code": "VEMKTTM252Ö",
+                    "name": "Ökotoxikológia",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMIMAM143V",
+                    "name": "Valószínűségszámítás és matematikai statisztika",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMKKVM134T_0",
+                    "name": "Tervezési feladat 1. (Ősszel kezdőknek)",
+                    "credits": 4
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható tárgy",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VEMKKVM122F",
+                    "name": "Földtudományi ismeretek",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKKVM112J",
+                    "name": "Jogi ismeretek és környezetjog",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMKKVM122K",
+                    "name": "Kommunikációs ismeretek",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKKVM144K",
+                    "name": "Környezetállapot-értékelés",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMKKVM112G",
+                    "name": "Környezetgazdaságtan",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKKVM112E",
+                    "name": "Környezeti erőforrás gazdálkodás",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKKVM112M",
+                    "name": "Környezetmenedzsment",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKLIM112B",
+                    "name": "Környezetvédelmi biológia",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMIMAM143A",
+                    "name": "Matematikai analízis mérnököknek",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMKKVM122I",
+                    "name": "Mérnökinformatika",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKKVM112Ö",
+                    "name": "Ökológia",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKKVM122T",
+                    "name": "Természetvédelem",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKKVM134T",
+                    "name": "Tervezési feladat 1. (Tavasszal kezdőknek)",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "Speciális szakirányú ismeretek",
+                    "credits": 19,
+                    "course_block_references": [
+                        "Környezetállapot-értékelés, menedzsment szakirány 3. félév",
+                        "Környezettechnológia szakirány 3. félév",
+                        "Radioökológia szakirány 3. félév"
+                    ]
+                },
+                {
+                    "code": "VEMKKVM265T",
+                    "name": "Környezettechnológia gyakorlat",
+                    "credits": 5,
+                    "prerequisites": [
+                        "VEMKKVM116T"
+                    ]
+                },
+                {
+                    "code": "VEMLKVM236T",
+                    "name": "Tervezési feladat 2.",
+                    "credits": 6,
+                    "prerequisites": [
+                        "VEMKKVM134T",
+                        "VEMKKVM134T_0"
+                    ]
+                },
+                {
+                    "code": "VEMKKMX00K",
+                    "name": "Környezetvédelmi szakmai gyakorlat",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VEMKKVM23XD",
+                    "name": "Diplomadolgozat",
+                    "credits": 25,
+                    "prerequisites": [
+                        "VEMKKVM134T",
+                        "VEMKKVM134T_0"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható tárgy (Ősszel kezdőknek)",
+                    "credits": 6
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható tárgy (Tavasszal kezdőknek)",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Környezettechnológia szakirány 3. félév",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VEMKKVM423L",
+                    "name": "Levegőtisztaság-védelem",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEMKKVM116T"
+                    ]
+                },
+                {
+                    "code": "VEMKKVM423V",
+                    "name": "Vízgazdálkodás, szennyvíztisztítás",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEMKKVM116T"
+                    ]
+                },
+                {
+                    "code": "VEMKKVM422B",
+                    "name": "Biztonságtechnika és kockázatelemzés II.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKLIM112B"
+                    ]
+                },
+                {
+                    "code": "VEMKKVM422E",
+                    "name": "Életciklus-elemzés",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKKVM112E"
+                    ]
+                },
+                {
+                    "code": "VEMKKVM412H",
+                    "name": "Hulladékgazdálkodás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKKVM116T"
+                    ]
+                },
+                {
+                    "code": "VEMKKVM432L",
+                    "name": "Levegőtisztaság-védelem laborgyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKKVM116T"
+                    ]
+                },
+                {
+                    "code": "VEMKKVM412T",
+                    "name": "Talaj- és talajvízvédelem",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKKVM116T"
+                    ]
+                },
+                {
+                    "code": "VEMKKVM411T",
+                    "name": "Tisztább technológiák",
+                    "credits": 1,
+                    "prerequisites": [
+                        "VEMKKVM112E"
+                    ]
+                },
+                {
+                    "code": "VEMKKVM432V",
+                    "name": "Vízgazdálkodás, szenny-víztisztítás laborgyakorlat",
+                    "credits": 0,
+                    "prerequisites": [
+                        "VEMKKVM116T"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Környezetállapot-értékelés, menedzsment szakirány 3. félév",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VEMKKVM424A",
+                    "name": "Környezetállapot-értékelés, auditálás",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VEMKKVM144K"
+                    ]
+                },
+                {
+                    "code": "VEMKKVM412M",
+                    "name": "Minőségbiztosítás ",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKKVM422E",
+                    "name": "Életciklus-elemzés",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKKVM112E"
+                    ]
+                },
+                {
+                    "code": "VEMKKVM453K",
+                    "name": "Korszerű környezetinformatikai alkalmazások",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEMKKVM122I"
+                    ]
+                },
+                {
+                    "code": "VEMKKVM412R",
+                    "name": "Környezetmenedzsment rendszerek II.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKKVM112R"
+                    ]
+                },
+                {
+                    "code": "VEMKKVM443R",
+                    "name": "Környezetvédelmi igazgatás rendszere",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEMKKVM112J"
+                    ]
+                },
+                {
+                    "code": "VEMKKVM453T",
+                    "name": "Térinformatika és modellezés",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEMKKVM112A"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Radioökológia szakirány 3. félév",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VEMKRKM412K",
+                    "name": "Környezeti sugárzások, sugárvédelem",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKRKM412M",
+                    "name": "Magkémia és izotóptechnika",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKRKM412R",
+                    "name": "Radioizotópos technológiák ",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKRKM412A",
+                    "name": "Kontamináció, dekontamináció",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKKVM422E",
+                    "name": "Életciklus-elemzés",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKKVM112E"
+                    ]
+                },
+                {
+                    "code": "VEMKRKM412H",
+                    "name": "Radioaktív hulladékkezelés",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKRKM412S",
+                    "name": "Sugárbalesetek levezetése",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKRKM412T",
+                    "name": "Sugárzások kémiája és egészségügyi hatásai",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKRKM433S",
+                    "name": "Sugárzások mérése laborgyakorlat",
+                    "credits": 3
+                }
+            ]
+        }
+    ]
 }

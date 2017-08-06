@@ -1,5 +1,420 @@
 {
     "name": "Környezettan",
     "description": "Környezettan BSc szak - Kutató szakirány - nappali tagozat tanterve",
-    "curriculum_updated_at": "2012-03-13"
+    "curriculum_updated_at": "2012-03-13",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "MAT01",
+                    "name": "Matematika I. előadás",
+                    "credits": 2
+                },
+                {
+                    "code": "bioalapea",
+                    "name": "Biológiai alapismeretek (Botanika, Zoológia, Biogeográfia) előadás",
+                    "credits": 6
+                },
+                {
+                    "code": "KEM012",
+                    "name": "Kémiai alapismeretek előadás",
+                    "credits": 4
+                },
+                {
+                    "code": "KEM02",
+                    "name": "Kémiai alapismeretek gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(KEM012)"
+                    ]
+                },
+                {
+                    "code": "FIZ022",
+                    "name": "Fizikai alapismeretek I.",
+                    "credits": 2
+                },
+                {
+                    "code": "KOR02",
+                    "name": "Földtani alapismeretek előadás",
+                    "credits": 5
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 9
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "mat01gyak",
+                    "name": "Matematika I. gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "MAT062",
+                    "name": "Informatika I.",
+                    "credits": 3
+                },
+                {
+                    "code": "bioalapgy",
+                    "name": "Biológiai alapismeretek (Botanika, Zoológia, Biogeográfia) gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "FIZ04",
+                    "name": "Fizikai alapismeretek II.",
+                    "credits": 2
+                },
+                {
+                    "code": "kor02gyak",
+                    "name": "Földtani alapismeretek gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "KOR2301",
+                    "name": "Talajtan gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "AKORN08",
+                    "name": "Természetföldrajz és tájökológia előadás",
+                    "credits": 2
+                },
+                {
+                    "code": "bevfizkemmeres",
+                    "name": "Bevezetés a fizikai kémia mérésekbe és a kolloidkémiába előadás",
+                    "credits": 5,
+                    "prerequisites": [
+                        "KEM012",
+                        "KEM02"
+                    ]
+                },
+                {
+                    "code": "KEM0502",
+                    "name": "Bevezetés a fizikai kémia mérésekbe gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "szervesbiokemia",
+                    "name": "Szerves és biokémia",
+                    "credits": 4,
+                    "prerequisites": [
+                        "KEM012",
+                        "KEM02"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható tárgyak",
+                    "credits": 3,
+                    "course_block_references": [
+                        "Kötelezően választható tárgyak"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "FIZ06",
+                    "name": "Méréstan",
+                    "credits": 2
+                },
+                {
+                    "code": "KOR65",
+                    "name": "Statisztika",
+                    "credits": 3,
+                    "prerequisites": [
+                        "MAT01",
+                        "mat01gyak"
+                    ]
+                },
+                {
+                    "code": "KOR2501",
+                    "name": "Általános és alkalmazott ökológia előadás",
+                    "credits": 2
+                },
+                {
+                    "code": "KOR2401",
+                    "name": "Meteorológia",
+                    "credits": 2
+                },
+                {
+                    "code": "KEM0701",
+                    "name": "Környezeti analitika előadás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "KEM012",
+                        "KEM02"
+                    ]
+                },
+                {
+                    "code": "KEM0702",
+                    "name": "Környezeti analitika gyakorlat",
+                    "credits": 4
+                },
+                {
+                    "code": "FIZ0801",
+                    "name": "Környezeti fizika előadás",
+                    "credits": 4
+                },
+                {
+                    "code": "FIZ0802",
+                    "name": "Környezeti fizika gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "KOR2502",
+                    "name": "Általános és alkalmazott ökológia gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "KOR5201",
+                    "name": "Térinformatika",
+                    "credits": 3
+                },
+                {
+                    "code": "KOR5101",
+                    "name": "Geomorfológia - Térképtan",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható tárgyak",
+                    "credits": 2,
+                    "course_block_references": [
+                        "Kötelezően választható tárgyak"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "KEM0601",
+                    "name": "Környezeti kémia előadás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "szervesbiokemia",
+                        "KEM0701",
+                        "KEM0702"
+                    ]
+                },
+                {
+                    "code": "KEM0602",
+                    "name": "Környezeti kémia gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(KEM0601)"
+                    ]
+                },
+                {
+                    "code": "KOR2703",
+                    "name": "Környezetvédelem II. (környezettechnológia) előadás",
+                    "credits": 3
+                },
+                {
+                    "code": "KOR2705",
+                    "name": "Környezetvédelem III.",
+                    "credits": 4
+                },
+                {
+                    "code": "KEM081",
+                    "name": "Környezetminősítés (kémiai) előadás",
+                    "credits": 2
+                },
+                {
+                    "code": "KOR2801",
+                    "name": "Biológiai környezetminősítés és monitoring előadás",
+                    "credits": 2
+                },
+                {
+                    "code": "KOR53",
+                    "name": "Környezeti fizika laboratórium gyakorlat",
+                    "credits": 3
+                },
+                {
+                    "code": "KOR57",
+                    "name": "Üzemgyakorlat",
+                    "credits": 6
+                },
+                {
+                    "code": "AKORN24",
+                    "name": "Radiológia, radiometria előadás",
+                    "credits": 2
+                },
+                {
+                    "code": "BIO05",
+                    "name": "Toxikológia előadás",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "5. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "FOL01",
+                    "name": "Európai Uniós alapismeretek",
+                    "credits": 2
+                },
+                {
+                    "code": "KOR01",
+                    "name": "Környezeti auditálás, minőségbiztosítás",
+                    "credits": 2
+                },
+                {
+                    "code": "KOR30",
+                    "name": "Környezetegészségtan, környezeti ártalmak",
+                    "credits": 2
+                },
+                {
+                    "code": "KOR2701",
+                    "name": "Környezetvédelem I. (biotechnológia) előadás",
+                    "credits": 2
+                },
+                {
+                    "code": "KOR2702",
+                    "name": "Környezetvédelem I. (biotechnológia) gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "KOR2704",
+                    "name": "Környezetvédelem II. (környezettechnológia) gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "KEM082",
+                    "name": "Környezetminősítés (kémiai) gyakorlat",
+                    "credits": 4
+                },
+                {
+                    "code": "KOR2802",
+                    "name": "Biológiai környezetminősítés és monitoring gyakorlat",
+                    "credits": 6
+                },
+                {
+                    "code": "AKORN25",
+                    "name": "Radiológia, radiometria gyakorlat",
+                    "credits": 3
+                },
+                {
+                    "code": "BIO0502",
+                    "name": "Toxikológia gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "KOR59",
+                    "name": "Geológia - Geofizika",
+                    "credits": 2
+                },
+                {
+                    "code": "kornyfoldtanalap",
+                    "name": "Környezetföldtani alapismeretek",
+                    "credits": 2
+                },
+                {
+                    "code": "KOR61",
+                    "name": "Környezetföldtani esettanulmányok",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "6. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "kornygazdvedjog",
+                    "name": "Környezetgazdálkodás, környezetvédelmi jog",
+                    "credits": 2
+                },
+                {
+                    "code": "KOR26",
+                    "name": "Környezeti mikrobiológia",
+                    "credits": 2
+                },
+                {
+                    "code": "KOR2706",
+                    "name": "Környezetvédelem IV. (kármentesítési eljárások)",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható tárgyak",
+                    "credits": 14,
+                    "course_block_references": [
+                        "Kötelezően választható tárgyak"
+                    ]
+                },
+                {
+                    "code": "ptekornyezettanszakdolgozat",
+                    "name": "Szakdolgozat",
+                    "credits": 10
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választható tárgyak",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "KORV01",
+                    "name": "Településkörnyezet",
+                    "credits": 2
+                },
+                {
+                    "code": "KOR54",
+                    "name": "Hidrológia alapjai",
+                    "credits": 4
+                },
+                {
+                    "code": "FOL-KV-0128",
+                    "name": "Glaciológia",
+                    "credits": 2
+                },
+                {
+                    "code": "TTKORV01",
+                    "name": "Élelmiszer-mikrobiológia",
+                    "credits": 2
+                },
+                {
+                    "code": "FOL-KV-0134",
+                    "name": "Éghajlatváltozás természetföldrajzi következményei",
+                    "credits": 2
+                },
+                {
+                    "code": "TTKORV12",
+                    "name": "Mikrobiális ökológia alapjai",
+                    "credits": 2
+                },
+                {
+                    "code": "KOR66",
+                    "name": "Sugárzásterhelések",
+                    "credits": 2
+                },
+                {
+                    "code": "TTKORV10",
+                    "name": "Talajbiotechnológia",
+                    "credits": 2
+                },
+                {
+                    "code": "TTKORV13",
+                    "name": "Környezeti hatásvizsgálatok",
+                    "credits": 2
+                }
+            ]
+        }
+    ]
 }

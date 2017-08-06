@@ -8,7 +8,7 @@ class UniversitySeeder extends AbstractJsonFileSeeder
 
 
 
-    protected function processData($path, $data)
+    protected function processData($path, stdClass $data)
     {
         $university = new University;
         $university->slug       = pathinfo($path, PATHINFO_FILENAME);

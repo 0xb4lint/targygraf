@@ -1,5 +1,429 @@
 {
     "name": "Társadalmi tanulmányok",
     "description": "Társadalmi tanulmányok alapszak - nappali tagozat tanterve",
-    "curriculum_updated_at": "2011-06-24"
+    "curriculum_updated_at": "2011-06-24",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VETKTT1312F",
+                    "name": "Filozófiatörténet",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTTB113E",
+                    "name": "A társadalomelmélet alapjai I.",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTTB212T",
+                    "name": "Társadalomtörténet I.",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTTB114E",
+                    "name": "Közgazdaságtan I.",
+                    "credits": 5
+                },
+                {
+                    "code": "VETKTT1112K",
+                    "name": "Kommunikációelmélet",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTT1112J",
+                    "name": "Jogi alapismeretek",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKAEB142L",
+                    "name": "Logika",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKPPB312B",
+                    "name": "A pszichológia alapkérdései",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKAEB113M",
+                    "name": "Művelődéstörténet (alapjai)",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMICOB1221",
+                    "name": "Informatikai ismeretek",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKASB122A",
+                    "name": "Idegen nyelv I.",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VETKTTB312T",
+                    "name": "Társadalom- és történetfilozófia",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTTB122A",
+                    "name": "A társadalomelmélet alapjai II.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKTTB113E"
+                    ]
+                },
+                {
+                    "code": "VETKTTB122B",
+                    "name": "Társadalomtörténet II.",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTB113C",
+                    "name": "Összehasonlító civilizációs tanulmányok",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTTB112V",
+                    "name": "Kultúra- és vallástörténet",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTTB113F",
+                    "name": "Általános gazdaság és társadalomföldrajz",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTTB113A",
+                    "name": "Alkotmányjog",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTTB222K",
+                    "name": "A társadalomtudományi kutatások módszertana I.",
+                    "credits": 2
+                },
+                {
+                    "code": "VEGTGAB113T",
+                    "name": "Társadalomstatisztika",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTT1222K",
+                    "name": "Kommunikáció gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKASB122B",
+                    "name": "Idegen nyelv I.",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTB222F",
+                    "name": "Forráselemzés",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VETKPPB122P",
+                    "name": "Szociálpszichológia",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMIMAB113V",
+                    "name": "Valószinűségszámítás és matematikai statisztika előadás",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMIMAB122V",
+                    "name": "Valószinűségszámítás és matematikai statisztika szeminárium",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTB112G",
+                    "name": "A társadalmi alrendszerek szociológiája I. (Gazdaságszociológia)",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTT1213P",
+                    "name": "Politikatudomány I.",
+                    "credits": 4
+                },
+                {
+                    "code": "VETKTT2112K",
+                    "name": "Közigazgatástan",
+                    "credits": 3
+                },
+                {
+                    "code": "VEGTTUB222K",
+                    "name": "A társadalomtudományi kutatások módszertana II.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKTTB222K"
+                    ]
+                },
+                {
+                    "code": "VETKAE4212S",
+                    "name": "Vallásszociológia",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTB222A",
+                    "name": "Bevezetés az SPSS alkalmazásába I.",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTB222G",
+                    "name": "Idegen nyelvű forráselemzés",
+                    "credits": 2
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VETKTTB114P",
+                    "name": "Összehasonlító politikatudomány",
+                    "credits": 4
+                },
+                {
+                    "code": "VETKTTB212G",
+                    "name": "A társadalmi alrendszerek szociológiája II. (Politikai és választásszociológia)",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTT5322K",
+                    "name": "Kisebbségszociológia szeminárium",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTB512K",
+                    "name": "Kisebbségszociológia előadás",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTTB512B",
+                    "name": "Bevezetés a közpolitikába",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKEUB213R",
+                    "name": "Európai regionális politika előadás",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKEUB222R",
+                    "name": "Európai regionális politika szeminárium",
+                    "credits": 2
+                },
+                {
+                    "code": "VEGTTUB222E",
+                    "name": "Az empirikus kutatás gyakorlata I.",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTB222B",
+                    "name": "Bevezetés az SPSS alkalmazásába II.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKTTB222A"
+                    ]
+                },
+                {
+                    "code": "VETKTTB222C",
+                    "name": "Társadalomszerkezet és társadalmi változás",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható tárgyak",
+                    "credits": 2,
+                    "course_block_references": [
+                        "Társadalom és kultúra modul",
+                        "Európai integrációs modul"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "5. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VETKTTB212D",
+                    "name": "Demográfia",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTT4322D",
+                    "name": "Etika",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTB222M",
+                    "name": "A magyar társadalom statisztikai leírása",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTB212C",
+                    "name": "Életmód - életciklus",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTB112L",
+                    "name": "Területi kohézió és többszintű kormányzás",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTB222E",
+                    "name": "Az empirikus kutatás gyakorlata II.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEGTTUB222E"
+                    ]
+                },
+                {
+                    "code": "VETKTTB222I",
+                    "name": "Család- és iskolaszociológia",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható tárgyak",
+                    "credits": 2,
+                    "course_block_references": [
+                        "Társadalom és kultúra modul",
+                        "Európai integrációs modul"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTB322A",
+                    "name": "Szakdolgozati szeminárium I.",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTBGY10",
+                    "name": "Terepgyakorlat",
+                    "credits": 10
+                }
+            ]
+        },
+        {
+            "name": "6. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VEGTTUB213P",
+                    "name": "Társadalompolitika",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKEU4112I",
+                    "name": "Európai közigazgatási rendszerek",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTTB522S",
+                    "name": "Településszociológia",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTB122R",
+                    "name": "Retorika és érveléstechnika",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható tárgyak",
+                    "credits": 2,
+                    "course_block_references": [
+                        "Társadalom és kultúra modul",
+                        "Európai integrációs modul"
+                    ]
+                },
+                {
+                    "code": "VETKTTB322B",
+                    "name": "Szakdolgozati szeminárium II.",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Szakdolgozat",
+                    "credits": 15
+                }
+            ]
+        },
+        {
+            "name": "Társadalom és kultúra modul",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VEGTTUB212S",
+                    "name": "Szervezet- és munkaszociológia",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTTB522F",
+                    "name": "Politikai filozófia",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTB122E",
+                    "name": "Eszmék, ideológiák, kulturális sztereotípiák Kelet-Közép-Európában",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Európai integrációs modul",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VETKEU5312F",
+                    "name": "Az Európai integráció története",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTTB113B",
+                    "name": "Bevezetés a nemzetközi viszonyok elméletébe",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKEU5312M",
+                    "name": "Az EU intézményrendszere és működése",
+                    "credits": 3
+                }
+            ]
+        }
+    ]
 }

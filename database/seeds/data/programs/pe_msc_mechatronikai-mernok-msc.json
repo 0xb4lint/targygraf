@@ -1,5 +1,271 @@
 {
     "name": "Mechatronikai mérnök MSc",
     "description": "Mechatronikai mérnöki mesterszak - nappali tagozat tanterve",
-    "curriculum_updated_at": "2012-03-14"
+    "curriculum_updated_at": "2012-03-14",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VEMKSIM114A",
+                    "name": "Anyagtudomány",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMIVIM444D",
+                    "name": "Digitális jelfeldolgozás",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMKFIM144E",
+                    "name": "Elektromosságtan",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMIMAM143A",
+                    "name": "Matematikai analízis mérnököknek I.",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMKFIM112M",
+                    "name": "Mérnöki fizika",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKGEM143H",
+                    "name": "Műszaki áramlás- és hőtan",
+                    "credits": 3
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható tárgy",
+                    "credits": 4,
+                    "course_block_references": [
+                        "Kötelezően választható tárgy Continental járműrendszertechnikai szakirány",
+                        "Kötelezően választható tárgy Folyamatmérnöki szakirány"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VEMKFOM144I",
+                    "name": "Irányítástechnika I.",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMIMAM244A",
+                    "name": "Matematikai modellek mérnököknek",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMKFIM244M",
+                    "name": "Mechatronikai rendszerek tervezése és modellezése",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMKVVB232K",
+                    "name": "Mérnöki kommunikáció informatikai eszközei",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKOLM242M",
+                    "name": "Minőségbiztosítás az iparban",
+                    "credits": 2
+                },
+                {
+                    "code": "VEGTVEB344P",
+                    "name": "Projektmenedzsment",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMKGEM144T",
+                    "name": "Teljesítményelektronika és mikroprocesszoros hajtások",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMIMAM143V",
+                    "name": "Valószínűségszámítás és matematikai statisztika",
+                    "credits": 3
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható tárgy",
+                    "credits": 4,
+                    "course_block_references": [
+                        "Kötelezően választható tárgy Continental járműrendszertechnikai szakirány",
+                        "Kötelezően választható tárgy Folyamatmérnöki szakirány"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VEMKFOM264I",
+                    "name": "Irányítástechnika II. – Biztonságkritikus rendszerek",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMKDM10XM",
+                    "name": "Diplomamunka I.",
+                    "credits": 15
+                },
+                {
+                    "code": null,
+                    "name": "Differenciált szakmai ismeretek modul",
+                    "credits": 13,
+                    "course_block_references": [
+                        "Continental járműrendszertechnikai szakirány - 3. félév",
+                        "Folyamatmérnöki szakirány 3. félév"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VEMKFIM312S",
+                    "name": "Szoftverfejlesztési folyamatok és szoftver-minőségbiztosítás",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKDM20XM",
+                    "name": "Diplomamunka II.",
+                    "credits": 15,
+                    "prerequisites": [
+                        "VEMKDM10XM"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Differenciált szakmai ismeretek modul",
+                    "credits": 10,
+                    "course_block_references": [
+                        "Continental járműrendszertechnikai szakirány - 4. félév",
+                        "Folyamatmérnöki szakirány 4. félév"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választható tárgy Continental járműrendszertechnikai szakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VEMKGEM444M",
+                    "name": "Alkalmazott mechanika - Járműmechanika",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMKGEM444J",
+                    "name": "Járműdinamika, szerekezetek dinamikája",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választható tárgy Folyamatmérnöki szakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VEMKGEM244M",
+                    "name": "Rendszertesztelés és -jóváhagyás",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMKGEM444D",
+                    "name": "Szerekezetek dinamikája",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "Continental járműrendszertechnikai szakirány - 3. félév",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VEMKGEM444A",
+                    "name": "Autóipari kommunikációs rendszerek",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMIVI2146D",
+                    "name": "Digitális áramkörök",
+                    "credits": 6
+                },
+                {
+                    "code": "VEMKFOM433S",
+                    "name": "Mechatronikai rendszerek szimulációja",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Continental járműrendszertechnikai szakirány - 4. félév",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VEMKGEM444B",
+                    "name": "Beágyazott rendszerek járműipari alkalmazásai",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMKGEM456J",
+                    "name": "Járműelektronikai tervezés",
+                    "credits": 6
+                }
+            ]
+        },
+        {
+            "name": "Folyamatmérnöki szakirány 3. félév",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VEMKFOM358T",
+                    "name": "Folyamatmérnöki eszközök",
+                    "credits": 8
+                },
+                {
+                    "code": "VEMKFOM455A",
+                    "name": "Rendszerdiagnosztikai és technológiai adatok elemzése",
+                    "credits": 5
+                }
+            ]
+        },
+        {
+            "name": "Folyamatmérnöki szakirány 4. félév",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VEMKFOM154F",
+                    "name": "Korszerű folyamatirányítási technikák",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMKFOM356T",
+                    "name": "Tervezés",
+                    "credits": 6
+                }
+            ]
+        }
+    ]
 }

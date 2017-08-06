@@ -1,5 +1,294 @@
 {
     "name": "Mezőgazdasági és élelmiszeripari gépészmérnök MSc",
     "description": "Mezőgazdasági és élelmiszeripari gépészmérnök MSc szak - nappali tagozat tanterve",
-    "curriculum_updated_at": "2013-09-04"
+    "curriculum_updated_at": "2013-09-04",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Matematika",
+                    "credits": 6
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Rugalmasságtan",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Mérnöki fizika",
+                    "credits": 2
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Mérnöki anyagok",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Ergonómia",
+                    "credits": 2
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Mérnöki gazdaságtan",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Méréselmélet",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Részlet-szerkesztés és tervezés",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Elektrotechnika",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Lengéstan",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Áramlástan",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Műszaki hőtan",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Számítógépes szimuláció",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Komplex mérnöki tevékenység",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Ökotechnológia",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választott (szakirányos) tárgy",
+                    "credits": 8,
+                    "course_block_references": [
+                        "Élelmiszeripari gép- és rendszer-tervező szakirány",
+                        "Mezőgazdasági gép- és rendszer-tervező szakirány"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható tárgyak",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Mérnöki etika",
+                    "credits": 2
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Vállalkozási ismeretek",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Modellalkotás",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választott (szakirányos) tárgy",
+                    "credits": 20,
+                    "course_block_references": [
+                        "Élelmiszeripari gép- és rendszer-tervező szakirány",
+                        "Mezőgazdasági gép- és rendszer-tervező szakirány"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható tárgy",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Diplomamunka",
+                    "credits": 30
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Szakmai gyakorlat",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "Szakirányok",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "Élelmiszeripari gép- és rendszer-tervező szakirány",
+                    "credits": 28,
+                    "course_block_references": [
+                        "Élelmiszeripari gép- és rendszer-tervező szakirány"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Mezőgazdasági gép- és rendszer-tervező szakirány",
+                    "credits": 28,
+                    "course_block_references": [
+                        "Mezőgazdasági gép- és rendszer-tervező szakirány"
+                    ]
+                }
+            ],
+            "is_counted": false
+        },
+        {
+            "name": "Élelmiszeripari gép- és rendszer-tervező szakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Unknow_01",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Unknow_02",
+                    "credits": 4
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Malom- és takarmányipari gépek és géprendszerek tervezése",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Ágazati technológiák tervezése",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Anyag- és energiatranszport folyamatok",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Minőségirányítás az élelmiszeriparban",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Élelmiszeripari készülékek tervezése",
+                    "credits": 2
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Környezetvédelem az élelmiszeriparban",
+                    "credits": 2
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható tárgy",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Mezőgazdasági gép- és rendszer-tervező szakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Unknow_01",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Unknow_02",
+                    "credits": 4
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Anyag- és energiatranszport folyamatok",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Növénytermesztési gépek és géprendszerek tervezése",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Állattartási gépek és géprendszerek tervezése",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Mezőgazdasági iparok",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Szántóföldi mérések ",
+                    "credits": 2
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Diagnosztika",
+                    "credits": 2
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható tárgy",
+                    "credits": 2
+                }
+            ]
+        }
+    ]
 }

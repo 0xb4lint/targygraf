@@ -1,5 +1,496 @@
 {
     "name": "Nemzetközi gazdálkodás",
     "description": "Nemzetközi gazdálkodás BA - nappali tagozat tanterve",
-    "curriculum_updated_at": "2010-12-13"
+    "curriculum_updated_at": "2010-12-13",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMETE90AX00",
+                    "name": "Matematika A 1.",
+                    "credits": 6
+                },
+                {
+                    "code": "BMEGT30A003",
+                    "name": "Közgazdaságtan I.",
+                    "credits": 5
+                },
+                {
+                    "code": "BMEGT20A004",
+                    "name": "Marketing alapjai",
+                    "credits": 5
+                },
+                {
+                    "code": "BMEGT20A005",
+                    "name": "Menedzsment alapjai",
+                    "credits": 5
+                },
+                {
+                    "code": "BMEGT20A006",
+                    "name": "Vállalatgazdaságtan I.",
+                    "credits": 5
+                },
+                {
+                    "code": "BMEGT43A020",
+                    "name": "Bevezetés az informatikába",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEGT52A004",
+                    "name": "Pszichológia",
+                    "credits": 3
+                },
+                {
+                    "code": "idegen_11",
+                    "name": "Idegen nyelv I.",
+                    "credits": 0
+                },
+                {
+                    "code": "BMEGT70BS1A",
+                    "name": "Testnevelés 1\/A",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMETE90AX02",
+                    "name": "Matematika A 2.",
+                    "credits": 6,
+                    "prerequisites": [
+                        "BMETE90AX00"
+                    ]
+                },
+                {
+                    "code": "BMEGT30A004",
+                    "name": "Közgazdaságtan II.",
+                    "credits": 5
+                },
+                {
+                    "code": "BMEGT43A053",
+                    "name": "Szociológia",
+                    "credits": 3
+                },
+                {
+                    "code": "BMEGT20A011",
+                    "name": "Vállalatgazdaságtan II.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "BMEGT20A006"
+                    ]
+                },
+                {
+                    "code": "BMEGT20A010",
+                    "name": "Nemzetközi marketing",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEGT20A004"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 2
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 2
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 2
+                },
+                {
+                    "code": "idegen_12",
+                    "name": "Idegen nyelv I.",
+                    "credits": 0
+                },
+                {
+                    "code": "idegen_22",
+                    "name": "Idegen nyelv II.",
+                    "credits": 0
+                },
+                {
+                    "code": "BMEGT70BS2A",
+                    "name": "Testnevelés 2\/A",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMEGT41A003",
+                    "name": "Filozófia",
+                    "credits": 3
+                },
+                {
+                    "code": "BMEGT20A013",
+                    "name": "Gazdaságstatisztika",
+                    "credits": 5,
+                    "prerequisites": [
+                        "BMETE90AX02"
+                    ]
+                },
+                {
+                    "code": "BMEGT42A011",
+                    "name": "Környezetgazdaságtan",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEGT30A003",
+                        "BMEGT30A004"
+                    ]
+                },
+                {
+                    "code": "BMEGT35A022",
+                    "name": "Nemzetközi pénzügyek",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEGT30A003",
+                        "BMEGT30A004"
+                    ]
+                },
+                {
+                    "code": "BMEGT35A013",
+                    "name": "Számvitel alapjai",
+                    "credits": 5
+                },
+                {
+                    "code": "BMEGT35A012",
+                    "name": "Vállalati pénzügyek alapjai",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEGT30A003"
+                    ]
+                },
+                {
+                    "code": "BMEGT35A023",
+                    "name": "Külgazdasági politika",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEGT30A003",
+                        "BMEGT30A004"
+                    ]
+                },
+                {
+                    "code": "BMEGT20A015",
+                    "name": "Minőségmenedzsment alapjai",
+                    "credits": 5,
+                    "prerequisites": [
+                        "BMEGT20A011"
+                    ]
+                },
+                {
+                    "code": "idegen_13",
+                    "name": "Idegen nyelv I.",
+                    "credits": 0
+                },
+                {
+                    "code": "idegen_23",
+                    "name": "Idegen nyelv II.",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMEGT35A016",
+                    "name": "Ökonometria",
+                    "credits": 5,
+                    "prerequisites": [
+                        "BMEGT20A013"
+                    ]
+                },
+                {
+                    "code": "BMEGT35A015",
+                    "name": "Vállalati pénzügyek II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEGT35A012"
+                    ]
+                },
+                {
+                    "code": "BMEGT20A019",
+                    "name": "Változásmenedzsment",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEGT20A005"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 2
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 2
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEGT35A025",
+                    "name": "Projektfeladat I.",
+                    "credits": 10
+                },
+                {
+                    "code": null,
+                    "name": "Kommunikáció I.",
+                    "credits": 3,
+                    "course_block_references": [
+                        "Kommunikáció I."
+                    ]
+                },
+                {
+                    "code": "idegen_14",
+                    "name": "Idegen nyelv I.",
+                    "credits": 0
+                },
+                {
+                    "code": "idegen_24",
+                    "name": "Idegen nyelv II.",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "5. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMEGT55A005",
+                    "name": "Üzleti jog I.",
+                    "credits": 5
+                },
+                {
+                    "code": "BMEGT35A019",
+                    "name": "Gazdaságtörténet",
+                    "credits": 3
+                },
+                {
+                    "code": "BMEGT35A028",
+                    "name": "Nemzetközi politikaelmélet",
+                    "credits": 5
+                },
+                {
+                    "code": "BMEGT30A007",
+                    "name": "Piaci szerkezetek",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEGT30A003"
+                    ]
+                },
+                {
+                    "code": "BMEGT35A026",
+                    "name": "Projektfeladat II.",
+                    "credits": 10,
+                    "prerequisites": [
+                        "BMEGT35A025"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Társadalomtudomány",
+                    "credits": 3,
+                    "course_block_references": [
+                        "Társadalomtudomány"
+                    ]
+                },
+                {
+                    "code": "idegen_15",
+                    "name": "Idegen nyelv I.",
+                    "credits": 0
+                },
+                {
+                    "code": "idegen_25",
+                    "name": "Idegen nyelv II.",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "6. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMEGT55A006",
+                    "name": "Üzleti jog II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEGT55A005"
+                    ]
+                },
+                {
+                    "code": "BMEGT30A008",
+                    "name": "Nemzetközi gazdaságtan",
+                    "credits": 5,
+                    "prerequisites": [
+                        "BMEGT30A003",
+                        "BMEGT30A004"
+                    ]
+                },
+                {
+                    "code": "BMEGT42A012",
+                    "name": "Regionális gazdaságtan",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEGT30A003",
+                        "BMEGT30A004"
+                    ]
+                },
+                {
+                    "code": "BMEGT20A021",
+                    "name": "Projektmenedzsment",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEGT20A005",
+                        "BMEGT20A011"
+                    ]
+                },
+                {
+                    "code": "BMEGT51A024",
+                    "name": "Nemzetközi protokoll és etikett",
+                    "credits": 5
+                },
+                {
+                    "code": null,
+                    "name": "Kommunikáció II. (Kultúraközi kommunikáció)",
+                    "credits": 3,
+                    "course_block_references": [
+                        "Kommunikáció II. (Kultúraközi kommunikáció)"
+                    ]
+                },
+                {
+                    "code": "BMEGT35A027",
+                    "name": "Projektfeladat III.",
+                    "credits": 10,
+                    "prerequisites": [
+                        "BMEGT35A026"
+                    ]
+                },
+                {
+                    "code": "BMEGT35A034",
+                    "name": "Szakdolgozat",
+                    "credits": 0,
+                    "prerequisites": [
+                        "BMEGT35A026"
+                    ]
+                },
+                {
+                    "code": "BMEGT35A035",
+                    "name": "Szakmai gyakorlat",
+                    "credits": 30
+                },
+                {
+                    "code": "idegen_26",
+                    "name": "Idegen nyelv II.",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "Kommunikáció I.",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "BMEGT51A004",
+                    "name": "Prezentáció",
+                    "credits": 3
+                },
+                {
+                    "code": "BMEGT51A003",
+                    "name": "Szakmai nyelvművelés",
+                    "credits": 3
+                },
+                {
+                    "code": "BMEGT43A011",
+                    "name": "Társadalmi kommunikáció",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Társadalomtudomány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "BMEGT41A004",
+                    "name": "Kutatásmódszertan",
+                    "credits": 3
+                },
+                {
+                    "code": "BMETE47A005",
+                    "name": "Látás, nyelv, emlékezet",
+                    "credits": 3
+                },
+                {
+                    "code": "BMEGT51A014",
+                    "name": "Pedagógia",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Kommunikáció II. (Kultúraközi kommunikáció)",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "BMEGT63A093",
+                    "name": "angol - GTK",
+                    "credits": 3
+                },
+                {
+                    "code": "BMEGT62AF93",
+                    "name": "francia - GTK",
+                    "credits": 3
+                },
+                {
+                    "code": "BMEGT61AH93",
+                    "name": "holland - GTK",
+                    "credits": 3
+                },
+                {
+                    "code": "BMEGT65A093",
+                    "name": "magyar - GTK",
+                    "credits": 3
+                },
+                {
+                    "code": "BMEGT61A093",
+                    "name": "német - GTK",
+                    "credits": 3
+                },
+                {
+                    "code": "BMEGT62AO93",
+                    "name": "olasz - GTK",
+                    "credits": 3
+                },
+                {
+                    "code": "BMEGT64A093",
+                    "name": "orosz - GTK",
+                    "credits": 3
+                },
+                {
+                    "code": "BMEGT62AS93",
+                    "name": "spanyol - GTK",
+                    "credits": 3
+                }
+            ]
+        }
+    ]
 }

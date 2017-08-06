@@ -1,5 +1,467 @@
 {
     "name": "Anyagmérnök MSc",
     "description": "Anyagmérnök MSc szak - nappali tagozat",
-    "curriculum_updated_at": "2014-03-12"
+    "curriculum_updated_at": "2014-03-12",
+    "course_blocks": [
+        {
+            "name": "1. félév (tavaszi)",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VEMKSIM112A",
+                    "name": "Anyagtudomány II.",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKFIM112F",
+                    "name": "Fizika III.",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKFIM122F",
+                    "name": "Fizika III. gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKFKM112A",
+                    "name": "Fizikai kémia III.",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKFKM122A",
+                    "name": "Fizikai kémia III. gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKGEB234S",
+                    "name": "Gépszerkezettan III. laborgyakorlat",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMIMAM143V",
+                    "name": "Valószínűségszámítás és matematikai statisztika",
+                    "credits": 3
+                },
+                {
+                    "code": null,
+                    "name": "Kémia modul",
+                    "credits": 4,
+                    "course_block_references": [
+                        "Kémia modul"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható gazdasági és humán ismeretek tárgy",
+                    "credits": 6,
+                    "course_block_references": [
+                        "Kötelezően választható gazdasági és humán ismeretek tárgy"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "2. félév (őszi)",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VEMKAMM2X0A",
+                    "name": "Anyagmérnöki alaptudományok szakmai szigorlat",
+                    "credits": 0
+                },
+                {
+                    "code": "VEMIMAM143A",
+                    "name": "Matematikai analízis mérnököknek",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMKGEB112A",
+                    "name": "Szerkezeti anyagok és technológiájuk III.",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKSIM510S",
+                    "name": "Szerkezeti anyagok vizsgálati módszerei",
+                    "credits": 10
+                },
+                {
+                    "code": "VEMKAMM0XN",
+                    "name": "Anyagmérnöki mesterszak nyári szakmai gyakorlat",
+                    "credits": 0
+                },
+                {
+                    "code": null,
+                    "name": "Kémia modul",
+                    "credits": 6,
+                    "course_block_references": [
+                        "Kémia modul"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható gazdasági és humán ismeretek tárgy",
+                    "credits": 4,
+                    "course_block_references": [
+                        "Kötelezően választható gazdasági és humán ismeretek tárgy"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 4
+                },
+                {
+                    "code": null,
+                    "name": "Differenciált szakmai ismeretek modul",
+                    "credits": 2,
+                    "course_block_references": [
+                        "Differenciált szakmai ismeretek modul"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "3. félév (tavaszi)",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VEMKAMM310D",
+                    "name": "Diplomamunka I.",
+                    "credits": 10,
+                    "prerequisites": [
+                        "VEMKSIM112A"
+                    ]
+                },
+                {
+                    "code": "VEMKFOB213F",
+                    "name": "Folyamatirányítás",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEMIMAM143A"
+                    ]
+                },
+                {
+                    "code": "VEMKSIM314K",
+                    "name": "Kerámiák, polimerek és kompozitok",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VEMKSIM112A"
+                    ]
+                },
+                {
+                    "code": "VEMKSIM255K",
+                    "name": "Korszerű felületvizsgálati módszerek",
+                    "credits": 5
+                },
+                {
+                    "code": "VEMKSIM368",
+                    "name": "Speciális kollégium",
+                    "credits": 8,
+                    "prerequisites": [
+                        "VEMKSIM112A"
+                    ]
+                },
+                {
+                    "code": "VEMKSI4112Ü",
+                    "name": "Műszaki üvegek",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "4. félév (őszi)",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VEMKAMM410D",
+                    "name": "Diplomamunka II.",
+                    "credits": 10,
+                    "prerequisites": [
+                        "VEMKAMM310D"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Differenciált szakmai ismeretek modul",
+                    "credits": 18,
+                    "course_block_references": [
+                        "Differenciált szakmai ismeretek modul"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Kémia modul",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VEMKOKB112V",
+                    "name": "Szerves kémia IV.",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKOKM112N",
+                    "name": "Szerves kémia III.",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKAKSA12F",
+                    "name": "Környezeti fotokémia",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKKKB212K",
+                    "name": "Környezeti kémia",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKOKM112K",
+                    "name": "Környezeti szerves kémia",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKOKB112Z",
+                    "name": "Zöld kémia",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKOKB112B",
+                    "name": "Biokémia",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKIK5154K",
+                    "name": "Szervetlen fotokémia",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMKAKB412B",
+                    "name": "Bevezetés a koordinációs kémiába",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKAKB434B",
+                    "name": "Bevezetés a koordinációs kémiába lab. gyak.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VEMKAKB412B"
+                    ]
+                },
+                {
+                    "code": "VEMKOKB212T",
+                    "name": "Szerves kémiai technológia",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKOKB253P",
+                    "name": "Biopolimerek kémiája",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEMKOKB112B"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választható gazdasági és humán ismeretek tárgy",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VEGTVEB214G",
+                    "name": "Emberi erőforrás gazdálkodás",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMKSIM414I",
+                    "name": "Ipari kapcsolatok",
+                    "credits": 4
+                },
+                {
+                    "code": "VEGTGAM112M",
+                    "name": "Marketing",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKVVB212K",
+                    "name": "Mérnöki kommunikáció",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKVVB222K",
+                    "name": "Mérnöki kommunikáció gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKVVB232K",
+                    "name": "Mérnöki kommunikáció informatikai eszközei",
+                    "credits": 2
+                },
+                {
+                    "code": "VEGTVEB344P",
+                    "name": "Projekt menedzsment",
+                    "credits": 4
+                },
+                {
+                    "code": "VEGTVEB244S",
+                    "name": "Stratégiai menedzsment",
+                    "credits": 4
+                },
+                {
+                    "code": "VEGTMEB122K",
+                    "name": "Üzleti kommunikáció",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Differenciált szakmai ismeretek modul",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VEMKKAM412E",
+                    "name": "Analitikai elválasztási módszerek",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKSIM423A",
+                    "name": "Anyagmérnöki tervezés",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEMKGEB234S"
+                    ]
+                },
+                {
+                    "code": "VEMKKAM412B",
+                    "name": "Biokromatográfia",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKAM443K",
+                    "name": "Kemometria és jelfeldolgozás",
+                    "credits": 3,
+                    "prerequisites": [
+                        "(VEMKFOB213F)"
+                    ]
+                },
+                {
+                    "code": "VEMKKAM422V",
+                    "name": "Mérések validálása",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKSI4312F",
+                    "name": "NMR vizsgálatok szilárd fázisban",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKSIM112A"
+                    ]
+                },
+                {
+                    "code": "VEMKRK3212N",
+                    "name": "Nukleáris méréstechnika",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKFI4212O",
+                    "name": "Optika és lézertechnika",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKFIB122O",
+                    "name": "Optika és lézertechnika gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKFK4212M",
+                    "name": "Különleges megmunkálások I.",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKKAM432A",
+                    "name": "Választható analitikai laboratóriumi gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKGEM244A",
+                    "name": "Fizikai anyagkezelés",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMKSIB112N",
+                    "name": "Nanotechnológia alapjai",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKGEB133A",
+                    "name": "Szerkezeti anyagok és technológiájuk III. laboratóriumi gyakorlat",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMKGEB243H",
+                    "name": "Áramlás és hőtechnikai gépek ",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMKRKM412K",
+                    "name": "Környezeti sugárzások, sugárvédelem",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKMUB113T",
+                    "name": "Transzportfolyamatok",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMKRKSV12A",
+                    "name": "Atomenergetika",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKRKM412H",
+                    "name": "Radioaktív hulladékkezelés",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKRK4212R",
+                    "name": "Radioizotóp alkalmazások",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKRKM412R",
+                    "name": "Radioizotópos technológiák",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKRKR222S",
+                    "name": "Sugaras és nukleáris balesetek, tapasztalatok",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKRK4212D",
+                    "name": "Dozimetria és sugárvédelem",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKRKR212N",
+                    "name": "Nukleáris balesetelhárítás",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKRKM412M",
+                    "name": "Magkémia és izotóptechnika",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKRKR136R",
+                    "name": "Radioökológia és méréstechn. lab. gyak.",
+                    "credits": 6
+                }
+            ]
+        }
+    ]
 }

@@ -1,5 +1,658 @@
 {
     "name": "Germanisztika",
     "description": "Germanisztika alapszak - nappali tagozat tanterve",
-    "curriculum_updated_at": "2013-04-24"
+    "curriculum_updated_at": "2013-04-24",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VETKNSB123A",
+                    "name": "Nyelvi kompetenciák: hallás utáni értés",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKNSB123B",
+                    "name": "Nyelvi kompetenciák: olvasás utáni értés",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKNSB122F",
+                    "name": "Nyelvi kompetenciák: Szótani gyakorlatok",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKNSB122A",
+                    "name": "Kultúra és nyelv: Németország",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKNSB122B",
+                    "name": "Kultúra és nyelv: Ausztria és Svájc",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKNLB114F",
+                    "name": "Szinkrón rendszernyelvészet: Fonetika, fonológia, grafematika",
+                    "credits": 4
+                },
+                {
+                    "code": "VETKNIB122L",
+                    "name": "Irodalomtudományi alapismeretek: Irodalomtudományi alapfogalmak",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKNLB122A",
+                    "name": "Nyelvtudományi alapismeretek: Nyelvtudományi alapfogalmak",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKNIB122B",
+                    "name": "Irodalomtörténet: a német nyelvű irodalom a felvilágosodástól a romantikáig",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKNSB222C",
+                    "name": "Konverzáció I.",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKNIB122C",
+                    "name": "Kiemelkedő szerzők művei a felvilágosodástól a romantikáig",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKAYB111B",
+                    "name": "Bevezetés a nyelvtudományba",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTB1312F",
+                    "name": "Bevezetés a filozófiába",
+                    "credits": 2
+                },
+                {
+                    "code": "VEPETO1122A",
+                    "name": "Testnevelés I. ",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VETKNSB122D",
+                    "name": "Nyelvi kompetenciák: beszéd",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKNSB123A"
+                    ]
+                },
+                {
+                    "code": "VETKNSB122E",
+                    "name": "Nyelvi kompetenciák: írás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKNSB123B"
+                    ]
+                },
+                {
+                    "code": "VETKNSB122G",
+                    "name": "Nyelvi kompetenciák: Mondattani gyakorlatok",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKNSB122F",
+                        "VETKNSB122E"
+                    ]
+                },
+                {
+                    "code": "VETKNSB122C",
+                    "name": "Kultúra és nyelv: Kultúrtörténet",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKNSB122A",
+                        "VETKNSB122B"
+                    ]
+                },
+                {
+                    "code": "VETKNSB11XA",
+                    "name": "Nyelvi szűrővizsga",
+                    "credits": 0,
+                    "prerequisites": [
+                        "VETKNSB122D",
+                        "VETKNSB122G",
+                        "VETKNSB122C"
+                    ]
+                },
+                {
+                    "code": "VETKNLB113M",
+                    "name": "Szinkrón rendszernyelvészet: Morfológia,szóképzés",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKNLB122M",
+                    "name": "Szinkrón rendszernyelvészet: Morfológia, szóképzés (szem.)",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKNIB113R",
+                    "name": "Irodalomtörténet: a német nyelvű irodalom a romantikától a realizmusig",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKNIB122K",
+                    "name": "Kiemelkedő szerzők művei a romantikától a realizmusig",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKNMB114A",
+                    "name": "A kultúratudomány alapjai",
+                    "credits": 4
+                },
+                {
+                    "code": "VETKNIB122O",
+                    "name": "Irodalomtudományi alapismeretek: Irodalmi szövegelemzés, szövegértelmezés",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Nyelvészeti alapismeretek: Nyelvtudományi módszerek",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKNSB222A",
+                    "name": "Fordítás I.",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKAYB111K",
+                    "name": "A kommunikáció alapjai",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKMIB111A",
+                    "name": "Bevezetés az irodalomtudományba",
+                    "credits": 2
+                },
+                {
+                    "code": "VEPETO2222A",
+                    "name": "Testnevelés II. ",
+                    "credits": 0,
+                    "prerequisites": [
+                        "VEPETO1122A"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VETKNSB222D",
+                    "name": "Konverzáció II. ",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKNSB11XA"
+                    ]
+                },
+                {
+                    "code": "VETKNLB114S",
+                    "name": "Szinkrón rendszernyelvészet: Szintaxis",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VETKNSB11XA"
+                    ]
+                },
+                {
+                    "code": "VETKNLB122S",
+                    "name": "Szinkrón rendszernyelvészet: Szintaxis (szem.)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKNSB11XA"
+                    ]
+                },
+                {
+                    "code": "VETKNIB113B",
+                    "name": "Irodalomtörténet: a német nyelvű irodalom az irodalmi moderntől 1945-ig",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VETKNSB11XA"
+                    ]
+                },
+                {
+                    "code": "VETKNIB122D",
+                    "name": "Kiemelkedő szerzők művei az irodalmi moderntől 1945-ig",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKNSB11XA"
+                    ]
+                },
+                {
+                    "code": "VETKFRB112T",
+                    "name": "Tudományrendszertan és könyvtárismeret",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Szabadon választható tárgyak",
+                    "credits": 4
+                },
+                {
+                    "code": null,
+                    "name": "Specializáció vagy minor",
+                    "credits": 10,
+                    "course_block_references": [
+                        "Specializáció I.: Interkulturális germanisztika"
+                    ]
+                },
+                {
+                    "code": "VEPETO3122A",
+                    "name": "Testnevelés III. ",
+                    "credits": 0,
+                    "prerequisites": [
+                        "VEPETO2222A"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VETKNSB222B",
+                    "name": "Fordítás II.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKNSB11XA"
+                    ]
+                },
+                {
+                    "code": "VETKNMB122K",
+                    "name": "Kutatásmódszertani alapismeretek ",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKNSB11XA"
+                    ]
+                },
+                {
+                    "code": "VETKNIB113C",
+                    "name": "Irodalomtörténet: az 1945 utáni német nyelvű irodalom",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VETKNSB11XA"
+                    ]
+                },
+                {
+                    "code": "VETKNIB122E",
+                    "name": "Kiemelkedő szerzők művei 1945 után",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKNSB11XA"
+                    ]
+                },
+                {
+                    "code": "VETKNSB121A",
+                    "name": "Projektszeminárium A",
+                    "credits": 1,
+                    "prerequisites": [
+                        "VETKNSB11XA"
+                    ]
+                },
+                {
+                    "code": "VETKNTB420A",
+                    "name": "Szakdolgozati szeminárium A",
+                    "credits": 0,
+                    "prerequisites": [
+                        "VETKNSB11XA"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható tárgyak",
+                    "credits": 4
+                },
+                {
+                    "code": null,
+                    "name": "Szabadon választható tárgyak",
+                    "credits": 4
+                },
+                {
+                    "code": null,
+                    "name": "Specializáció vagy minor",
+                    "credits": 14,
+                    "course_block_references": [
+                        "Specializáció I.: Interkulturális germanisztika"
+                    ]
+                },
+                {
+                    "code": "VEPETO4222A",
+                    "name": "Testnevelés IV. ",
+                    "credits": 0,
+                    "prerequisites": [
+                        "VEPETO3122A"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "5. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VETKNMB114G",
+                    "name": "Germán nyelvek és kultúrák",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VETKNSB11XA"
+                    ]
+                },
+                {
+                    "code": "VETKNSB222S",
+                    "name": "Szinkrón rendszernyelvészet: Szövegelemzés",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKNSB11XA"
+                    ]
+                },
+                {
+                    "code": "VETKNLB112L",
+                    "name": "Szinkrón rendszernyelvészet: Lexikológia, szemantika",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKNSB11XA"
+                    ]
+                },
+                {
+                    "code": "VETKNLB122L",
+                    "name": "Szinkrón rendszernyelvészet: Lexikológia, szemantika (szem.)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKNSB11XA"
+                    ]
+                },
+                {
+                    "code": "VETKNMB122M",
+                    "name": "A médiatudomány alapjai",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKNSB11XA"
+                    ]
+                },
+                {
+                    "code": "VETKNTB420B",
+                    "name": "Szakdolgozati szeminárium B",
+                    "credits": 0,
+                    "prerequisites": [
+                        "VETKNSB11XA"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Szabadon választható tárgyak",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Specializáció vagy minor",
+                    "credits": 16,
+                    "course_block_references": [
+                        "Specializáció I.: Interkulturális germanisztika"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "6. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VETKNIB113A",
+                    "name": "Irodalom és kultúra",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VETKNSB11XA"
+                    ]
+                },
+                {
+                    "code": "VETKNSB121B",
+                    "name": "Projektszeminárium B",
+                    "credits": 1,
+                    "prerequisites": [
+                        "VETKNSB11XA"
+                    ]
+                },
+                {
+                    "code": "VETKNTB420C",
+                    "name": "Szakdolgozati szeminárium C",
+                    "credits": 0,
+                    "prerequisites": [
+                        "VETKNTB420A",
+                        "VETKNTB420B"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Szakdolgozat",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VETKNTB420C"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható tárgyak",
+                    "credits": 9
+                },
+                {
+                    "code": null,
+                    "name": "Specializáció vagy minor",
+                    "credits": 10,
+                    "course_block_references": [
+                        "Specializáció I.: Interkulturális germanisztika"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Specializáció I.: Interkulturális germanisztika",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VETKNLB314I",
+                    "name": "Kommunikáció: Interkulturális kommunikáció 3. félév",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VETKNSB11XA"
+                    ]
+                },
+                {
+                    "code": "VETKNLB322I",
+                    "name": "Kommunikáció: Interkulturális kommunikáció (szem.) 3. félév",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKNSB11XA"
+                    ]
+                },
+                {
+                    "code": "VETKNMB324M",
+                    "name": "Média, intermedialitás 3. félév",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VETKNSB11XA"
+                    ]
+                },
+                {
+                    "code": "VETKNLB114K",
+                    "name": "Két- és többnyelvűség  4. félév",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VETKNSB11XA"
+                    ]
+                },
+                {
+                    "code": "VETKNIB322N",
+                    "name": "Interkulturalitás irodalmi szövegekben 4. félév",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKNSB11XA"
+                    ]
+                },
+                {
+                    "code": "VETKNLB314K",
+                    "name": "Kontrasztív nyelvészet: szövegfajták a médiában 5. félév",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKNSB11XA"
+                    ]
+                },
+                {
+                    "code": "VETKNIB122S",
+                    "name": "Szövegalkotás a nemzetközi kommunikációban",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKNSB11XA"
+                    ]
+                },
+                {
+                    "code": "VETKNKB322E",
+                    "name": "Európai Uniós ismeretek 5. félév",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKNSB11XA"
+                    ]
+                },
+                {
+                    "code": "VETKNLB422A",
+                    "name": "Interkulturális szaknyelvi kommunikáció I. 5. félév",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKNSB11XA"
+                    ]
+                },
+                {
+                    "code": "VETKNLB422F",
+                    "name": "A szakfordítás alapjai 5. félév",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKNSB11XA"
+                    ]
+                },
+                {
+                    "code": "VETKNLB422B",
+                    "name": "Interkulturális szaknyelvi kommunikáció II.  6. félév",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKNSB11XA"
+                    ]
+                },
+                {
+                    "code": "VETKNLB422T",
+                    "name": "A tolmácsolás alapjai 6. félév",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKNSB11XA"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választható tárgyak",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VETKNMB113I",
+                    "name": "Irodalom és medialitás",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VETKNSB11XA"
+                    ]
+                },
+                {
+                    "code": "VETKNMB122I",
+                    "name": "Irodalom és medialitás (szem.)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKNSB11XA"
+                    ]
+                },
+                {
+                    "code": "VETKNIB113N",
+                    "name": "Narratív szövegek elemzése",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VETKNSB11XA"
+                    ]
+                },
+                {
+                    "code": "VETKNIB122N",
+                    "name": "Narratív szövegek elemzése (szem.)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKNSB11XA"
+                    ]
+                },
+                {
+                    "code": "VETKNIB122H",
+                    "name": "Irodalmi műfajok és határműfajok",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKNSB11XA"
+                    ]
+                },
+                {
+                    "code": "VETKNIB122F",
+                    "name": "Irodalmi fordítások",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKNSB11XA"
+                    ]
+                },
+                {
+                    "code": "VETKNLB314T",
+                    "name": "Interkulturális tanulmányok",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VETKNSB11XA"
+                    ]
+                },
+                {
+                    "code": "VETKNKB314T",
+                    "name": "Kisebbségtudomány: A magyarországi németek története",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VETKNSB11XA"
+                    ]
+                },
+                {
+                    "code": "VETKNLB314D",
+                    "name": "Kisebbségtudomány: Dialektológia",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VETKNSB11XA"
+                    ]
+                },
+                {
+                    "code": "VETKNIB314T",
+                    "name": "Kisebbségtudomány: A magyarországi német irodalom története",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VETKNSB11XA"
+                    ]
+                },
+                {
+                    "code": "VETKNKB314E",
+                    "name": "Kisebbségtudomány: A német mint kisebbségi nyelv Európában",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VETKNSB11XA"
+                    ]
+                }
+            ]
+        }
+    ]
 }

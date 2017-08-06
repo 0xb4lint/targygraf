@@ -1,5 +1,515 @@
 {
     "name": "Létesítménymérnök MSc",
     "description": "Létesítménymérnök MSc szak - nappali tagozat tanterve",
-    "curriculum_updated_at": "2013-09-04"
+    "curriculum_updated_at": "2013-09-04",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Matematika",
+                    "credits": 6
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Mérnöki fizika",
+                    "credits": 2
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Belső környezet minősége",
+                    "credits": 4
+                },
+                {
+                    "code": null,
+                    "name": "Bsc végzettségtől függően választandó két modul",
+                    "credits": 18,
+                    "course_block_references": [
+                        "Gépész modul",
+                        "Építő\/Építész modul",
+                        "Villamos modul"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Környezettechnika",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Menedzsment ismeretek",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Létesítményinformatika",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Rendszertechnika",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Épületgépész hálózatok",
+                    "credits": 5
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Tűzvédelem",
+                    "credits": 3
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választott (szakirányos) tárgy",
+                    "credits": 9,
+                    "course_block_references": [
+                        "Üzemeltetési szakirány",
+                        "Épületgépész szakirány",
+                        "Épületenergetikai szakirány",
+                        "Tűzvédelmi szakirány"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Gazdálkodási ismeretek",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Épületenergetika",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Épületfelügyeleti és biztonsági rendszerek",
+                    "credits": 4
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választott (szakirányos) tárgy",
+                    "credits": 18,
+                    "course_block_references": [
+                        "Üzemeltetési szakirány",
+                        "Épületgépész szakirány",
+                        "Épületenergetikai szakirány",
+                        "Tűzvédelmi szakirány"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Diplomamunka",
+                    "credits": 25
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Szakmai gyakorlat",
+                    "credits": 0
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választott (szakirányos) tárgy",
+                    "credits": 6,
+                    "course_block_references": [
+                        "Üzemeltetési szakirány",
+                        "Épületgépész szakirány",
+                        "Épületenergetikai szakirány",
+                        "Tűzvédelmi szakirány"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Szakirányok",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "Üzemeltetési szakirány",
+                    "credits": 33,
+                    "course_block_references": [
+                        "Üzemeltetési szakirány"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Épületgépész szakirány",
+                    "credits": 33,
+                    "course_block_references": [
+                        "Épületgépész szakirány"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Épületenergetikai szakirány",
+                    "credits": 33,
+                    "course_block_references": [
+                        "Épületenergetikai szakirány"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Tűzvédelmi szakirány",
+                    "credits": 33,
+                    "course_block_references": [
+                        "Tűzvédelmi szakirány"
+                    ]
+                }
+            ],
+            "is_counted": false
+        },
+        {
+            "name": "Bsc végzettségtől függően választandó két modul",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "Gépész modul",
+                    "credits": 9,
+                    "course_block_references": [
+                        "Gépész modul"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Építő\/Építész modul",
+                    "credits": 9,
+                    "course_block_references": [
+                        "Építő\/Építész modul"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Villamos modul",
+                    "credits": 9,
+                    "course_block_references": [
+                        "Villamos modul"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Gépész modul",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Gépészeti ismeretek",
+                    "credits": 2
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Áramlástan",
+                    "credits": 2
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Műszaki hőtan",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Gépészeti anyagismeret",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Építő\/Építész modul",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Építészeti ismeretek",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Építési és tartószerkezetek",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Építőanyagok",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Villamos modul",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Elektrotechnika",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Villamosságtan",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Folyamatirányítás-automatizálás",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Üzemeltetési szakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Építmények üzemeltetés és diagnosztikája I.",
+                    "credits": 5
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Szolgáltatástechnika (Háztartástechnika)",
+                    "credits": 4
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Világítástechnika",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Építmények üzemeltetés és diagnosztikája II.",
+                    "credits": 5
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Építési folyamat tervezése",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Projektfeladat",
+                    "credits": 6
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható tárgy",
+                    "credits": 6
+                }
+            ]
+        },
+        {
+            "name": "Épületgépész szakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Szolgáltatástechnika (Háztartástechnika)",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Épületek hűtéstechnikája",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Építmények üzemeltetése és diagnosztikája II.",
+                    "credits": 5
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Klímatechnikai rendszerek",
+                    "credits": 5
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Fűtéstechnikai rendszerek",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Projektfeladat (Épületgépész rendszerek komplex tervezése)",
+                    "credits": 6
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon válaszható tárgy",
+                    "credits": 6
+                }
+            ]
+        },
+        {
+            "name": "Épületenergetikai szakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Építmények üzemeltetése és diagnosztikája I.",
+                    "credits": 5
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Energetika",
+                    "credits": 5
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Világítástechnika",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Építmények üzemeltetése és diagnosztikája II.",
+                    "credits": 5
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Geotermikus energiahasznosítás",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Napenergia hasznosítás",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Biomassza hasznosítás",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható tárgy",
+                    "credits": 5
+                }
+            ]
+        },
+        {
+            "name": "Tűzvédelmi szakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Égés- és oltáselmélet",
+                    "credits": 5
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Tűzvizsgálattan I.",
+                    "credits": 2
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Mentéspszichológia és mentés egészségügy",
+                    "credits": 2
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Égés- és oltáselmélet laboratóriumi gyakorlatok",
+                    "credits": 2
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Veszélyes anyagok és ipari katasztrófák",
+                    "credits": 2
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Tartó- és épületszerkezetek tűzvédelme",
+                    "credits": 2
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Tűzoltás technikai ismeretek",
+                    "credits": 2
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Létesítés és használat tűzvédelme",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Mentő tűzvédelem",
+                    "credits": 2
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Tűzkockázat-elemzés I.",
+                    "credits": 2
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Tűzvédelmi igazgatás",
+                    "credits": 2
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható tárgy",
+                    "credits": 7
+                }
+            ]
+        }
+    ]
 }

@@ -1,5 +1,402 @@
 {
     "name": "Vegyész MSc",
     "description": "Vegyész Msc szak - nappali tagozat tanterve",
-    "curriculum_updated_at": "2014-02-07"
+    "curriculum_updated_at": "2014-02-07",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VEMKOKM112M",
+                    "name": "Modern szerves kémiai szintézismódszerek",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKOKM134K",
+                    "name": "Korszerű szintetikus és elválasztási módszerek",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMKBMB344B",
+                    "name": "Biomérnöki műveletek",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMKAV4143K",
+                    "name": "Kemometria",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMKFTM143G",
+                    "name": "Geokémia",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMKMA1144C",
+                    "name": "Numerikus matematika",
+                    "credits": 4
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható tárgy",
+                    "credits": 6
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható tárgyak",
+                    "credits": 2,
+                    "course_block_references": [
+                        "Kötelezően választható tárgyak őszi félév"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VEMKFIM112F",
+                    "name": "Fizika III.",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKFIM122F",
+                    "name": "Fizika III. szeminárium",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKFKM112A",
+                    "name": "Fizikai kémia III.",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKFKM122A",
+                    "name": "Fizikai kémia III. gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKOKM112N",
+                    "name": "Szerves kémia IV.",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKAKM212V",
+                    "name": "Koordinációs kémia",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKAKM112E",
+                    "name": "Elméleti szervetlen kémia",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKKAM112F",
+                    "name": "Felületanalitikai módszerek",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKLIB312M",
+                    "name": "Molekuláris biológia",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKOK23XL",
+                    "name": "Integrált kémiai laboratóriumi gyakorlatok vegyészeknek",
+                    "credits": 10
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható tárgyak",
+                    "credits": 4,
+                    "course_block_references": [
+                        "Kötelezően választható tárgyak tavaszi félév"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható szigorlat",
+                    "credits": 0,
+                    "course_block_references": [
+                        "Kötelezően választható szigorlat"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VEMKKAM155K",
+                    "name": "Korszerű környezetanalitikai módszerek",
+                    "credits": 5
+                },
+                {
+                    "code": "VEMKAKM132V",
+                    "name": "Koordinációs kémia laboratóriumi gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKOKB213B",
+                    "name": "Biokoordinációs kémia",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKAKM212V"
+                    ]
+                },
+                {
+                    "code": "VEMKAKM144K",
+                    "name": "Kvantumkémia I.",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMKVEX5V",
+                    "name": "Vegyész szakmai gyakorlat",
+                    "credits": 0
+                },
+                {
+                    "code": "VEMKOKM13XD",
+                    "name": "Diplomamunka I.",
+                    "credits": 10
+                },
+                {
+                    "code": "VEMKFKM2X0F",
+                    "name": "Fizikai kémia szigorlat",
+                    "credits": 0
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható tárgyak",
+                    "credits": 8,
+                    "course_block_references": [
+                        "Kötelezően választható tárgyak őszi félév"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VEMKOKM23XD",
+                    "name": "Diplomamunka II.",
+                    "credits": 20,
+                    "prerequisites": [
+                        "VEMKOKM13XD"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható tárgyak",
+                    "credits": 10,
+                    "course_block_references": [
+                        "Kötelezően választható tárgyak tavaszi félév"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választható szigorlat",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VEMKAKM1X0K",
+                    "name": "Általános és szervetlen kémia szigorlat",
+                    "credits": 0
+                },
+                {
+                    "code": "VEMKOKM1X0S",
+                    "name": "Szerves kémia szigorlat",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választható tárgyak őszi félév",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VEMKFT113G",
+                    "name": "A globális éghajlatváltozás okai és következményei",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMKAKM512M",
+                    "name": "Analitikai minőségbiztosítás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKAV4143K"
+                    ]
+                },
+                {
+                    "code": "VEMKKAM422V",
+                    "name": "Mérések validálása",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKKAM412S",
+                    "name": "Spektroszkópia",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKKAM432A",
+                    "name": "Választható analitikai laboratóriumi gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKKAM412T",
+                    "name": "Termoanalitika",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKSIB113A",
+                    "name": "Anyagtudomány",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMKSIB112N",
+                    "name": "Nanotechnológia alapjai",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKFI2212A",
+                    "name": "Szilárdtest fizika",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKSIB152R",
+                    "name": "Röntgendiffrakciós vizsgálatok",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKSI4312S",
+                    "name": "NMR spektroszkópia",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKOKM522V",
+                    "name": "Szerves vegyületek szerkezetmeghatározása",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMINAM112B",
+                    "name": "Bionanotechnológia",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMIMUKI153D",
+                    "name": "Rekombináns DNS technológia",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMKKAM112G",
+                    "name": "Gyógyszeranalitika",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKAKM112F",
+                    "name": "Fotokémiai szintézisek",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKAKM112O",
+                    "name": "Oldatkinetika",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választható tárgyak tavaszi félév",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VEMKAKM512S",
+                    "name": "A színek eredete",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKKAB143B",
+                    "name": "Bioanalízis",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMKAKV212F",
+                    "name": "Fémorganikus kémia I.",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKFISV12D",
+                    "name": "Folyadékkristályok elméleti alapjai és alkalmazásai",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKOT4244A",
+                    "name": "Gyógyszerkémia és szintézistervezés",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMKSI4312H",
+                    "name": "Heteromagok NMR spektroszkópiája",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKSI4312S"
+                    ]
+                },
+                {
+                    "code": "VEMKFKB211K",
+                    "name": "Korróziós alapismeretek",
+                    "credits": 1
+                },
+                {
+                    "code": "VEMKAKSA12F",
+                    "name": "Környezeti fotokémia",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKAKM244K",
+                    "name": "Kvantumkémia II.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VEMKAKM144K"
+                    ]
+                },
+                {
+                    "code": "VEMKRKM412M",
+                    "name": "Magkémia és izotóptechnika",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKSIB153M",
+                    "name": "Mikroszkópia",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMKSI4312F",
+                    "name": "NMR vizsgálatok szilárd fázisban",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKSI4312S"
+                    ]
+                },
+                {
+                    "code": "VEMKRK3312O",
+                    "name": "Radioökológia",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKAKM212E",
+                    "name": "Bevezetés az elemi reakciók kinetikájába",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKRKR222S",
+                    "name": "Sugaras és nukleáris balesetek, tapasztalatok",
+                    "credits": 2
+                }
+            ]
+        }
+    ]
 }

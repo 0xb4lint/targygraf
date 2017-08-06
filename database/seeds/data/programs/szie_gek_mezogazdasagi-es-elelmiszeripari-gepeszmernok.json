@@ -1,5 +1,1320 @@
 {
     "name": "Mezőgazdasági és élelmiszeripari gépészmérnök",
     "description": "Mezőgazdasági és élelmiszeripari gépészmérnök Bsc szak - nappali tagozat tanterve",
-    "curriculum_updated_at": "2011-04-26"
+    "curriculum_updated_at": "2011-04-26",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Matematikai alapok",
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXN_E",
+                    "name": "Fizikai alapok",
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Ábrázoló geometria",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Fizika I.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMxxXxxXN_E"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN_4",
+                    "name": "Informatika I.",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Közgazdaságtan",
+                    "credits": 2
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Matematika I.",
+                    "credits": 6,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Mezőgazdasági alapismeretek",
+                    "credits": 2
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Mérnöki alapismeretek",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Műszaki kémia",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN_B",
+                    "name": "Statika",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Speciális kollégium",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Áramlástan",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXN",
+                        "SGMxxXxxXN_E"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Elektrotechnika",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Élelmiszeripari alapismeretek",
+                    "credits": 2
+                },
+                {
+                    "code": "SGMxxXxxXN_d",
+                    "name": "Fizika II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Gépszerkesztés alapjai",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Informatika II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXN",
+                        "SGMxxXxxXN_4"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Matematika II.",
+                    "credits": 6,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Matematika szigorlat",
+                    "credits": 0,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN_3",
+                    "name": "Matematikai statisztika",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Munkavédelem",
+                    "credits": 2
+                },
+                {
+                    "code": "SGMxxXxxXN_x",
+                    "name": "Szilárdságtan",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMxxXxxXN",
+                        "SGMxxXxxXN_B"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Anyag-, gép és üzemismereti gyakorlat",
+                    "credits": 0,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Speciális kollégium II.",
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Testnevelés I.",
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Angol nyelv I.",
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Német nyelv I.",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Anyagismeret",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMxxXxxXN_d"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Áramlástani gépek",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Élelmiszeripari műveletek",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Gazdaságtan",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN_w",
+                    "name": "Gépelemek I.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXN",
+                        "SGMxxXxxXN_x"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Mozgástan",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGMxxXxxXN",
+                        "SGMxxXxxXN_x"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN_9",
+                    "name": "Mechanika szigorlat",
+                    "credits": 0,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN_u",
+                    "name": "Műszaki hőtan",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMxxXxxXN_d"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Növénytermesztés gépei",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Testnevelés II.",
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Angol nyelv II.",
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Német nyelv II.",
+                    "credits": 0
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható tárgy",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Állattartás gépei",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMxxXxxXN",
+                        "SGMxxXxxXN_d"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Anyagmozgatás gépei",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXN_w",
+                        "SGMxxXxxXN_9"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Energetika alapjai",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMxxXxxXN",
+                        "SGMxxXxxXN_u"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Élelmiszeripari technológiák és gépek",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Folyamatirányítás",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Gépelemek II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXN_w"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Menedzsment ismeretek",
+                    "credits": 2
+                },
+                {
+                    "code": "SGMxxXxxXN_S",
+                    "name": "Mechanikai technológia",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXN_x",
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Méréstechnika",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXN",
+                        "SGMxxXxxXN_3"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN_P",
+                    "name": "Motorok és gépjárművek",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Tanműhelyi gyakorlat I.",
+                    "credits": 1,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Üzemi gyakorlat",
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Angol nyelv III.",
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Német nyelv III.",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "5. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN_K",
+                    "name": "Elektronika",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMxxXxxXN",
+                        "SGMxxXxxXN_d"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Gépek és rendszerek üzemeltetése",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Gépgyártástechnológia",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGMxxXxxXN",
+                        "SGMxxXxxXN_S"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Logisztika",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Minőségmenedzsment",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Pneumatikus energiaátvitel",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMxxXxxXN",
+                        "SGMxxXxxXN_u"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN_c",
+                    "name": "Tanműhelyi gyakorlatok II.",
+                    "credits": 1,
+                    "prerequisites": [
+                        "SGMxxXxxXN_S",
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Angol nyelv IV.",
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Német nyelv IV.",
+                    "credits": 0
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választott (szakirányos) tárgy",
+                    "credits": 10,
+                    "course_block_references": [
+                        "Agrárenergetika szakirány 2011\/2012-től",
+                        "Erőgéptechnika szakirány 2011\/2012-től",
+                        "Mezőgazdasági és élelmiszeripari terméktervező szakirány 2011\/2012-től",
+                        "Mezőgazdasági termékek feldolgozása szakirány 2011\/2012-től",
+                        "Termeléstechnológia és műszaki szolgáltató szakirány 2011\/2012-től",
+                        "Erőgéptechnika szakirány 2013\/2014-től",
+                        "Termeléstechnológia és műszaki szolgáltató szakirány 2013\/2014-től"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható tárgy",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "6. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Energiagazdálkodás a mezőgazdaságban",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Épületgépészet",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMxxXxxXN",
+                        "SGMxxXxxXN_u"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Gazdasági jog",
+                    "credits": 2
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Gépüzemfenntartás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMxxXxxXN",
+                        "SGMxxXxxXN_c"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Hidraulikus energiaátvitel",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Környezetgazdálkodás",
+                    "credits": 2
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Tanműhelyi gyakorlat III.",
+                    "credits": 1,
+                    "prerequisites": [
+                        "SGMxxXxxXN",
+                        "SGMxxXxxXN_c"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választott (szakirányos) tárgy",
+                    "credits": 10,
+                    "course_block_references": [
+                        "Agrárenergetika szakirány 2011\/2012-től",
+                        "Erőgéptechnika szakirány 2011\/2012-től",
+                        "Mezőgazdasági és élelmiszeripari terméktervező szakirány 2011\/2012-től",
+                        "Mezőgazdasági termékek feldolgozása szakirány 2011\/2012-től",
+                        "Termeléstechnológia és műszaki szolgáltató szakirány 2011\/2012-től",
+                        "Erőgéptechnika szakirány 2013\/2014-től",
+                        "Termeléstechnológia és műszaki szolgáltató szakirány 2013\/2014-től"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabdon választható tárgy",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "7. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Üzemi gyakorlat",
+                    "credits": 6
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Szakdolgozat",
+                    "credits": 15
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választott (szakirányos) tárgy",
+                    "credits": 8,
+                    "course_block_references": [
+                        "Agrárenergetika szakirány 2011\/2012-től",
+                        "Erőgéptechnika szakirány 2011\/2012-től",
+                        "Mezőgazdasági és élelmiszeripari terméktervező szakirány 2011\/2012-től",
+                        "Mezőgazdasági termékek feldolgozása szakirány 2011\/2012-től",
+                        "Termeléstechnológia és műszaki szolgáltató szakirány 2011\/2012-től",
+                        "Erőgéptechnika szakirány 2013\/2014-től",
+                        "Termeléstechnológia és műszaki szolgáltató szakirány 2013\/2014-től"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Szakirányok 2011\/2012-től",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "Agrárenergetika szakirány",
+                    "credits": 28,
+                    "course_block_references": [
+                        "Agrárenergetika szakirány 2011\/2012-től"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Erőgéptechnika szakirány",
+                    "credits": 28,
+                    "course_block_references": [
+                        "Erőgéptechnika szakirány 2011\/2012-től"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Mezőgazdasági és élelmiszeripari terméktervező szakirány",
+                    "credits": 28,
+                    "course_block_references": [
+                        "Mezőgazdasági és élelmiszeripari terméktervező szakirány 2011\/2012-től"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Mezőgazdasági termékek feldolgozása szakirány",
+                    "credits": 28,
+                    "course_block_references": [
+                        "Mezőgazdasági termékek feldolgozása szakirány 2011\/2012-től"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Termeléstechnológia és műszaki szolgáltató szakirány",
+                    "credits": 28,
+                    "course_block_references": [
+                        "Termeléstechnológia és műszaki szolgáltató szakirány 2011\/2012-től"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Szakirányok 2013\/2014-től",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "Erőgéptechnika szakirány",
+                    "credits": 28,
+                    "course_block_references": [
+                        "Erőgéptechnika szakirány 2013\/2014-től"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Termeléstechnológia és műszaki szolgáltató",
+                    "credits": 28,
+                    "course_block_references": [
+                        "Termeléstechnológia és műszaki szolgáltató szakirány 2013\/2014-től"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Agrárenergetika szakirány 2011\/2012-től",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Energiatárolás és ellátás",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Környezetbarát energetika",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXN_u"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Villamos gépek",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Gépjárműhajtóanyag-gazdálkodás",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXN_P"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Szélenergia hasznosítás",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Villamos energetika",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Geotermális energiahasznosítás (exergia)",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXN_u"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Napenergia hasznosítás",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Fűtés- és klímatechnika",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Erőgéptechnika szakirány 2011\/2012-től",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Belsőégésű motorok vizsgálata",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMxxXxxXN_P"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Diagnosztikai eljárások",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMxxXxxXN_P"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Közlekedésbiztonság",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMxxXxxXN_P"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Közúti gépjárművek vizsgálata",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMxxXxxXN_P"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Technikatörténet",
+                    "credits": 1,
+                    "prerequisites": [
+                        "SGMxxXxxXN_P"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Tribológia",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMxxXxxXN_P"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Gépjárműtechnika",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMxxXxxXN_P"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Járműelektronika",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXN_P",
+                        "SGMxxXxxXN_K"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Járműinformatika",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMxxXxxXN_P"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Szerelés és szerviztechnológiák",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Terepjáráselmélet",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMxxXxxXN_P"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Járműdinamika",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMxxXxxXN_P"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Vállalkozási ismeretek",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Mezőgazdasági és élelmiszeripari terméktervező szakirány 2011\/2012-től",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Innováció menedzsment",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Marketing",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Terméktervezés módszertana és gyakorlata",
+                    "credits": 5
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Arculattervezés",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGMxxXxxXXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Intuitív tervezési technikák",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMxxXxxXN",
+                        "SGMxxXxxXN_w"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Logisztika II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Csomagolás tervezés",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Látványtervezés",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Termék ergonómia",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Mezőgazdasági termékek feldolgozása szakirány 2011\/2012-től",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Mezőgazdasági iparok",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Termékfeldolgozás gépei I.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Termékfeldolgozási technológia I.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Kertészeti gépek",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Termékfeldolgozás gépei II.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMxxXxxXXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Termékfeldolgozási technológia II.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMxxXxxXXN"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Termékek hűtött és fagyasztott tárolása",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Termékek természetes tárolása",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Termékfeldolgozás minőségirányítása",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Termeléstechnológia és műszaki szolgáltató szakirány 2011\/2012-től",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Gépüzemeltetés gyakorlat I.",
+                    "credits": 1
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Információ és precíziós technológiák",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Öntözési rendszerek",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Vízellátás, szennyvízkezelés",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Diagnosztikai eljárások",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXN_P"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Gépek és rendszerek üzemeltetése II.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Gépüzemeltetés gyakorlat II.",
+                    "credits": 1,
+                    "prerequisites": [
+                        "SGMxxXxxXXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Karbantartás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMxxXxxXN",
+                        "SGMxxXxxXN_P"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Kertészeti gépek",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Kommunális gépek",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Technológia tervezés biológiai alapjai",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Erőgéptechnika szakirány 2013\/2014-től",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Motortechnika",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXN_P"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Traktortechnika",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXN_P"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Tribológia",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMxxXxxXN_P"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Járműdinamika és terepjáráselmélet mezőgépészeknek",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMxxXxxXN_P"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Járműelektronika",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMxxXxxXN_P",
+                        "SGMxxXxxXN_K"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Szerelés és szerviztechnológiák",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Járműinformatika",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMxxXxxXN_P"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Diagnosztikai eljárások",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXN_P"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Közlekedésbiztonság és járművizsgálat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMxxXxxXN_P"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Termeléstechnológia és műszaki szolgáltató szakirány 2013\/2014-től",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Gépüzemeltetés gyakorlat I.",
+                    "credits": 2
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Információ és precíziós technológiák",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Öntözési rendszerek",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Vízellátás, szennyvízkezelés",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Gépek és rendszerek üzemeltetése II.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Gépüzemeltetés gyakorlat II.",
+                    "credits": 0,
+                    "prerequisites": [
+                        "SGMxxXxxXXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Karbantartás",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXN_P"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Kertészeti gépek",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Kommunális gépek",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Technológia tervezés biológiai alapjai",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXN"
+                    ]
+                }
+            ]
+        }
+    ]
 }

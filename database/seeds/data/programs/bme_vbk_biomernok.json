@@ -1,5 +1,701 @@
 {
     "name": "Biomérnök",
     "description": "Biomérnök BSc - nappali tagozat tanterve",
-    "curriculum_updated_at": "2010-11-13"
+    "curriculum_updated_at": "2010-11-13",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMEVESZA101",
+                    "name": "Biztonságtechnika és munkavédelem",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEVESAA101",
+                    "name": "Általános kémia",
+                    "credits": 5
+                },
+                {
+                    "code": "BMEVESAA105",
+                    "name": "Általános kémia gyakorlat biomérnököknek",
+                    "credits": 4
+                },
+                {
+                    "code": "BMETE90AX00",
+                    "name": "Matematika A1a Analízis",
+                    "credits": 6
+                },
+                {
+                    "code": "BMEVEMBA102",
+                    "name": "Sejtbiológia",
+                    "credits": 4
+                },
+                {
+                    "code": "BMEVEMBA215",
+                    "name": "A környezetvédelem alapjai",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEVESAA103",
+                    "name": "Számítástechnika",
+                    "credits": 2
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 6
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMETE14AX15",
+                    "name": "Fizika I. - Mechanika",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMETE90AX00"
+                    ]
+                },
+                {
+                    "code": "BMETE90AX17",
+                    "name": "Matematika A2c",
+                    "credits": 6,
+                    "prerequisites": [
+                        "BMETE90AX00"
+                    ]
+                },
+                {
+                    "code": "BMEVEMKAKM3",
+                    "name": "Mikrobiológia",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEVEMBA102"
+                    ]
+                },
+                {
+                    "code": "BMEVESZA204",
+                    "name": "Szerves kémia biomérnököknek",
+                    "credits": 6,
+                    "prerequisites": [
+                        "BMEVESAA101",
+                        "BMEVESAA105"
+                    ]
+                },
+                {
+                    "code": "BMEVESAA210",
+                    "name": "Ált. és szervetlen kémia labor",
+                    "credits": 5,
+                    "prerequisites": [
+                        "BMEVESZA101",
+                        "BMEVESAA101",
+                        "BMEVESAA105"
+                    ]
+                },
+                {
+                    "code": "BMEVESAA208",
+                    "name": "Szervetlen kémia",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEVESAA101",
+                        "BMEVESAA105"
+                    ]
+                },
+                {
+                    "code": "BMEGEVGAV03",
+                    "name": "Vegyipari géptan",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMEVEBEA301",
+                    "name": "Biokémia",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEVEMBA102",
+                        "BMEVESZA204"
+                    ]
+                },
+                {
+                    "code": "BMETE14AX04",
+                    "name": "Fizika I. - Elektrodinamika",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE14AX15",
+                        "BMETE90AX17"
+                    ]
+                },
+                {
+                    "code": "BMETE14AX05",
+                    "name": "Fizika laboratóriumi gyakorlatok",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE14AX15",
+                        "BMETE90AX17"
+                    ]
+                },
+                {
+                    "code": "BMETE90AX18",
+                    "name": "Matematika A3c",
+                    "credits": 4
+                },
+                {
+                    "code": "BMEVESZA302",
+                    "name": "Biomolekulák kémiája",
+                    "credits": 7,
+                    "prerequisites": [
+                        "BMEVESAA105",
+                        "BMEVESZA204",
+                        "BMEVESAA210"
+                    ]
+                },
+                {
+                    "code": "BMEVEFKA304",
+                    "name": "Fizikai kémia I.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "BMEVESAA101",
+                        "BMETE90AX00"
+                    ]
+                },
+                {
+                    "code": "BMEVEMBA312",
+                    "name": "Mikrobiológia labor",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEVEMKAKM3"
+                    ]
+                },
+                {
+                    "code": "BMEGEVGAV04",
+                    "name": "Vegyipari géptan gyakorlat",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMEVEMBA403",
+                    "name": "Biokémia labor",
+                    "credits": 5,
+                    "prerequisites": [
+                        "BMEVESAA105",
+                        "BMEVEBEA301"
+                    ]
+                },
+                {
+                    "code": "BMEVEKFA410",
+                    "name": "Vegyipari műveletek I.",
+                    "credits": 6,
+                    "prerequisites": [
+                        "BMETE90AX17",
+                        "BMEGEVGAV03"
+                    ]
+                },
+                {
+                    "code": "BMEVEMBA402",
+                    "name": "Általános genetika",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEVEMBA102",
+                        "BMEVEBEA301"
+                    ]
+                },
+                {
+                    "code": "BMEVESAA302",
+                    "name": "Analitikai kémia I.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "BMEVESAA101",
+                        "BMEVESAA105"
+                    ]
+                },
+                {
+                    "code": "BMEVEFAA401",
+                    "name": "Biológiai rendszerek fizikai kémiája",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEVEFKA304"
+                    ]
+                },
+                {
+                    "code": "BMEVEMKA404",
+                    "name": "Biomérnöki műveletek és folyamatok",
+                    "credits": 5,
+                    "prerequisites": [
+                        "BMEVEMBA102",
+                        "BMEVEMKAKM3"
+                    ]
+                },
+                {
+                    "code": "BMEVEMBA401",
+                    "name": "Mikrobiológia II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEVEMKAKM3"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "5. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMEGT30A001",
+                    "name": "Mikro- és makroökonómia",
+                    "credits": 4
+                },
+                {
+                    "code": "BMEVESAA403",
+                    "name": "Analitikai kémia labor",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEVESAA210",
+                        "BMEVESAA302"
+                    ]
+                },
+                {
+                    "code": "BMEVEMKA505",
+                    "name": "Biomérnöki műveletek labor",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEVEMKA404"
+                    ]
+                },
+                {
+                    "code": "BMEVEKFA512",
+                    "name": "Vegyipari műveletek II.",
+                    "credits": 6,
+                    "prerequisites": [
+                        "BMEVEKFA410"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 2
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Szakirány",
+                    "credits": 0,
+                    "course_block_references": [
+                        "Alkalmazott biotechnológia szakirány",
+                        "Egészségvédelmi szakirány",
+                        "Élelmiszerminősítő szakirány",
+                        "Környezetvédelmi szakirány"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "6. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMEGT20A001",
+                    "name": "Menedzsment és vállalkozásgazdaságtan",
+                    "credits": 4
+                },
+                {
+                    "code": "BMEVEFAA409",
+                    "name": "A nanotechnológia kolloidkém. alapjai",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEVEFKA304"
+                    ]
+                },
+                {
+                    "code": "BMEVEVMA606",
+                    "name": "Kisérletek tervezése és értékelése",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMETE90AX18"
+                    ]
+                },
+                {
+                    "code": "BMEVEVMA504",
+                    "name": "Folyamatirányítás",
+                    "credits": 5,
+                    "prerequisites": [
+                        "BMEVEKFA410"
+                    ]
+                },
+                {
+                    "code": "BMEVEFAA607",
+                    "name": "Műanyagok biomérnököknek",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMEVESAA101"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Szakirány",
+                    "credits": 0,
+                    "course_block_references": [
+                        "Alkalmazott biotechnológia szakirány",
+                        "Egészségvédelmi szakirány",
+                        "Élelmiszerminősítő szakirány",
+                        "Környezetvédelmi szakirány"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "7. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMEGT55A001",
+                    "name": "Üzleti jog",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEVEKFA615",
+                    "name": "Minőségmenedzsment",
+                    "credits": 4
+                },
+                {
+                    "code": "tervezes",
+                    "name": "Tervezés",
+                    "credits": 3
+                },
+                {
+                    "code": "szakdolgozat",
+                    "name": "Szakdolgozat",
+                    "credits": 15
+                },
+                {
+                    "code": null,
+                    "name": "Szakirány",
+                    "credits": 0,
+                    "course_block_references": [
+                        "Alkalmazott biotechnológia szakirány",
+                        "Egészségvédelmi szakirány",
+                        "Élelmiszerminősítő szakirány",
+                        "Környezetvédelmi szakirány"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Szakirány",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "Alkalmazott biotechnológia szakirány",
+                    "credits": 22,
+                    "course_block_references": [
+                        "Alkalmazott biotechnológia szakirány"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Egészségvédelmi szakirány",
+                    "credits": 22,
+                    "course_block_references": [
+                        "Egészségvédelmi szakirány"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Élelmiszerminősítő szakirány",
+                    "credits": 22,
+                    "course_block_references": [
+                        "Élelmiszerminősítő szakirány"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Környezetvédelmi szakirány",
+                    "credits": 22,
+                    "course_block_references": [
+                        "Környezetvédelmi szakirány"
+                    ]
+                }
+            ],
+            "is_counted": false
+        },
+        {
+            "name": "Alkalmazott biotechnológia szakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "BMEVEMBA504",
+                    "name": "Biotermékek izolálása",
+                    "credits": 5,
+                    "prerequisites": [
+                        "BMEVEMKA404"
+                    ]
+                },
+                {
+                    "code": "BMEVEMKA513",
+                    "name": "Mikrobiális genetika",
+                    "credits": 5,
+                    "prerequisites": [
+                        "BMEVEMKAKM3",
+                        "BMEVEBEA301",
+                        "BMEVEMBA402"
+                    ]
+                },
+                {
+                    "code": "BMEVEMBA601",
+                    "name": "Biotermék és gyógyszeripari biotechnológia",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEVEMKA404"
+                    ]
+                },
+                {
+                    "code": "BMEVEBEA606",
+                    "name": "Élelmiszeripari technológia",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMEVEKFA410"
+                    ]
+                },
+                {
+                    "code": "BMEVEMKA610",
+                    "name": "Mezőgazdasági iparok technológiája",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMEVEKFA410",
+                        "BMEVEMKA404"
+                    ]
+                },
+                {
+                    "code": "BMEVEFAA702",
+                    "name": "Elektronika és méréstechnika",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE14AX04",
+                        "BMETE14AX05"
+                    ]
+                },
+                {
+                    "code": "BMEVEMBA707",
+                    "name": "Enzimológia",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMEVEMKA404"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Egészségvédelmi szakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "BMEVEBEA508",
+                    "name": "Élelmiszerkémia és táplálkozástan",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEVEBEA301"
+                    ]
+                },
+                {
+                    "code": "BMEVESOA501",
+                    "name": "Humán anatómia",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEVESOA503",
+                    "name": "Humán élettan",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEVEMBA102",
+                        "BMEVEBEA301"
+                    ]
+                },
+                {
+                    "code": "BMEVEBEA611",
+                    "name": "Klinikai kémia",
+                    "credits": 5,
+                    "prerequisites": [
+                        "BMEVESOA501",
+                        "BMEVESOA503"
+                    ]
+                },
+                {
+                    "code": "BMEVESOA605",
+                    "name": "Kórélettan I.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMEVESOA501",
+                        "BMEVESOA503"
+                    ]
+                },
+                {
+                    "code": "BMEVESOA701",
+                    "name": "Kórélettan II.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMEVESOA605"
+                    ]
+                },
+                {
+                    "code": "BMEVEMBA501",
+                    "name": "Egészségügyi mikrobiológia",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEVEMBA401"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Élelmiszerminősítő szakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "BMEVEMBA511",
+                    "name": "Élelmiszeranalitika",
+                    "credits": 5,
+                    "prerequisites": [
+                        "BMEVEBEA301",
+                        "BMEVESAA302"
+                    ]
+                },
+                {
+                    "code": "BMEVEBEA508",
+                    "name": "Élelmiszerkémia és táplálkozástan",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEVEBEA301"
+                    ]
+                },
+                {
+                    "code": "BMEVEMBA606",
+                    "name": "Élelmiszeripari technológia",
+                    "credits": 5,
+                    "prerequisites": [
+                        "BMEVEKFA410"
+                    ]
+                },
+                {
+                    "code": "BMEVEMKA610",
+                    "name": "Mezőgazdasági iparok technológiája",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMEVEKFA410",
+                        "BMEVEMKA404"
+                    ]
+                },
+                {
+                    "code": "BMEVEMBA712",
+                    "name": "Élelmiszeranalitika labor",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEVEMBA511"
+                    ]
+                },
+                {
+                    "code": "BMEVEBEA704",
+                    "name": "Élelmiszerbiztonság",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMEVEMBA511",
+                        "BMEVEMBA606"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Környezetvédelmi szakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "BMEVEMBA507",
+                    "name": "Biológiai iparok elválasztási műveletei",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMEVEMKA404"
+                    ]
+                },
+                {
+                    "code": "BMEVEAAA509",
+                    "name": "Környezetvédelmi analitika",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMEVESAA403"
+                    ]
+                },
+                {
+                    "code": "BMEVESAA510",
+                    "name": "Környezetvédelmi analitika labor",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEVESAA403"
+                    ]
+                },
+                {
+                    "code": "BMEVEKFA602",
+                    "name": "Biológiai víz és szennyvíztechnológia",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEVEMKAKM3",
+                        "BMEVEMKA404",
+                        "BMEVEKFA512"
+                    ]
+                },
+                {
+                    "code": "BMEVEKTA604",
+                    "name": "Levegő és vízvédelem",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEVEMKA505"
+                    ]
+                },
+                {
+                    "code": "BMEVEFAA702",
+                    "name": "Elektronika és méréstechnika",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE14AX04",
+                        "BMETE14AX05"
+                    ]
+                },
+                {
+                    "code": "BMEVEMKA709",
+                    "name": "Környezeti mikrobiológia és remediáció",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEVEMKA404",
+                        "BMEVEMBA401"
+                    ]
+                },
+                {
+                    "code": "BMEVEELAKM1",
+                    "name": "Ökológia",
+                    "credits": 2
+                }
+            ]
+        }
+    ]
 }

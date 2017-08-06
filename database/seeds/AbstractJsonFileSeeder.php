@@ -41,5 +41,5 @@ abstract class AbstractJsonFileSeeder extends Seeder
 
 
 
-    abstract protected function processData($path, $data);
+    abstract protected function processData($path, stdClass $data);
 }

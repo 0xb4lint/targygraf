@@ -1,5 +1,631 @@
 {
     "name": "Kémia",
     "description": "Kémia BSc szak - vegyész szakirány - nappali tagozat tanterve",
-    "curriculum_updated_at": "2010-01-01"
+    "curriculum_updated_at": "2010-01-01",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "FOL01",
+                    "name": "Európai Uniós alapismeretek",
+                    "credits": 2
+                },
+                {
+                    "code": "FOL02",
+                    "name": "Közgazdaságtan",
+                    "credits": 2
+                },
+                {
+                    "code": "matek1ea",
+                    "name": "Matematika I. előadás",
+                    "credits": 3
+                },
+                {
+                    "code": "matek1gy",
+                    "name": "Matematika I. gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "FIZ022",
+                    "name": "Fizikai alapismeretek I. előadás",
+                    "credits": 2
+                },
+                {
+                    "code": "MAT05",
+                    "name": "Informatika előadás",
+                    "credits": 2
+                },
+                {
+                    "code": "altszervetlenea",
+                    "name": "Általános és szervetlen kémia I. előadás",
+                    "credits": 4
+                },
+                {
+                    "code": "altszervetlensz",
+                    "name": "Általános és szervetlen kémia I. szeminárium",
+                    "credits": 2
+                },
+                {
+                    "code": "altszervetlenl",
+                    "name": "Általános és szervetlen kémia I. labor",
+                    "credits": 4
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 7
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "matek2ea",
+                    "name": "Matematika II. előadás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "matek1ea"
+                    ]
+                },
+                {
+                    "code": "matek2gy",
+                    "name": "Matematika II. gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "FIZ04",
+                    "name": "Fizikai alapismeretek II. előadás",
+                    "credits": 2
+                },
+                {
+                    "code": "fiz2gy",
+                    "name": "Fizikai alapismeretek II. gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "FIZ05",
+                    "name": "Fizikai alapismeretek II. szeminárium",
+                    "credits": 2
+                },
+                {
+                    "code": "altszervetlen2ea",
+                    "name": "Általános és szervetlen kémia II. előadás",
+                    "credits": 4,
+                    "prerequisites": [
+                        "altszervetlenea",
+                        "altszervetlensz",
+                        "altszervetlenl"
+                    ]
+                },
+                {
+                    "code": "altszervetlen2sz",
+                    "name": "Általános és szervetlen kémia II. szeminárium",
+                    "credits": 2,
+                    "prerequisites": [
+                        "altszervetlenea",
+                        "altszervetlensz",
+                        "altszervetlenl"
+                    ]
+                },
+                {
+                    "code": "altszervetlen2l",
+                    "name": "Általános és szervetlen kémia II. labor",
+                    "credits": 6,
+                    "prerequisites": [
+                        "altszervetlenea",
+                        "altszervetlensz",
+                        "altszervetlenl"
+                    ]
+                },
+                {
+                    "code": "KEM1201",
+                    "name": "Fizikai kémia I. előadás",
+                    "credits": 4,
+                    "prerequisites": [
+                        "altszervetlenea"
+                    ]
+                },
+                {
+                    "code": "KEM1202",
+                    "name": "Fizikai kémia I. szeminárium",
+                    "credits": 2,
+                    "prerequisites": [
+                        "altszervetlenea"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "KEM1203",
+                    "name": "Fizikai kémia II. előadás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "KEM1201"
+                    ]
+                },
+                {
+                    "code": "KEM1204",
+                    "name": "Fizikai kémia II. szeminárium",
+                    "credits": 1,
+                    "prerequisites": [
+                        "KEM1201"
+                    ]
+                },
+                {
+                    "code": "KEM1205",
+                    "name": "Fizikai kémia II. labor",
+                    "credits": 2,
+                    "prerequisites": [
+                        "KEM1201"
+                    ]
+                },
+                {
+                    "code": "KEM1501",
+                    "name": "Szerves kémia I. előadás",
+                    "credits": 4,
+                    "prerequisites": [
+                        "altszervetlenea"
+                    ]
+                },
+                {
+                    "code": "KEM1502",
+                    "name": "Szerves kémia I. labor",
+                    "credits": 4,
+                    "prerequisites": [
+                        "altszervetlenl"
+                    ]
+                },
+                {
+                    "code": "KEM1701",
+                    "name": "Analitikai kémia előadás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "altszervetlen2ea"
+                    ]
+                },
+                {
+                    "code": "KEM1702",
+                    "name": "Analitikai kémia szeminárium",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(KEM1701)"
+                    ]
+                },
+                {
+                    "code": "KEM1703",
+                    "name": "Analitikai kémia labor",
+                    "credits": 4,
+                    "prerequisites": [
+                        "(KEM1701)"
+                    ]
+                },
+                {
+                    "code": "KEM3401",
+                    "name": "Általános és szervetlen kémia III. szeminárium",
+                    "credits": 3,
+                    "prerequisites": [
+                        "altszervetlen2ea",
+                        "altszervetlen2l"
+                    ]
+                },
+                {
+                    "code": "KEM3402",
+                    "name": "Általános és szervetlen kémia III. gyakorlat",
+                    "credits": 4,
+                    "prerequisites": [
+                        "(KEM3401)"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható tantárgyak",
+                    "credits": 2,
+                    "course_block_references": [
+                        "Kötelezően választható tantárgyak part I.",
+                        "Kötelezően választható tantárgyak part II."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "fizkem3sz",
+                    "name": "Fizikai kémia III. szeminárium",
+                    "credits": 1,
+                    "prerequisites": [
+                        "KEM1204"
+                    ]
+                },
+                {
+                    "code": "fizkem3l",
+                    "name": "Fizikai kémia III. labor",
+                    "credits": 3,
+                    "prerequisites": [
+                        "KEM1205"
+                    ]
+                },
+                {
+                    "code": "KEM1503",
+                    "name": "Szerves kémia II. előadás",
+                    "credits": 4,
+                    "prerequisites": [
+                        "KEM1501"
+                    ]
+                },
+                {
+                    "code": "KEM1504",
+                    "name": "Szerves kémia II. labor",
+                    "credits": 4,
+                    "prerequisites": [
+                        "KEM1502"
+                    ]
+                },
+                {
+                    "code": "muszanal1ea",
+                    "name": "Műszeres analitika I. előadás",
+                    "credits": 3,
+                    "prerequisites": [
+                        "altszervetlenea"
+                    ]
+                },
+                {
+                    "code": "muszanal1l",
+                    "name": "Műszeres analitika I. labor",
+                    "credits": 4,
+                    "prerequisites": [
+                        "(muszanal1ea)"
+                    ]
+                },
+                {
+                    "code": "KEM3101",
+                    "name": "Kemometria",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(muszanal1ea)"
+                    ]
+                },
+                {
+                    "code": "KEM3102",
+                    "name": "Kemometria",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(KEM3101)"
+                    ]
+                },
+                {
+                    "code": "KEM62",
+                    "name": "Szerkezetmeghatározás a szerves kémiában",
+                    "credits": 3,
+                    "prerequisites": [
+                        "KEM1501"
+                    ]
+                },
+                {
+                    "code": "BIO04",
+                    "name": "Biokémia előadás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "KEM1501"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható tantárgyak",
+                    "credits": 2,
+                    "course_block_references": [
+                        "Kötelezően választható tantárgyak part I.",
+                        "Kötelezően választható tantárgyak part II."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "5. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "alkkemia1ea",
+                    "name": "Alkalmazott kémia I. előadás",
+                    "credits": 3,
+                    "prerequisites": [
+                        "fizkem3sz",
+                        "fizkem3l",
+                        "muszanal1ea"
+                    ]
+                },
+                {
+                    "code": "alkkemia1l",
+                    "name": "Alkalmazott kémia I. labor",
+                    "credits": 4,
+                    "prerequisites": [
+                        "(alkkemia1ea)"
+                    ]
+                },
+                {
+                    "code": "uzemlat",
+                    "name": "Üzemlátogatás",
+                    "credits": 0
+                },
+                {
+                    "code": "elmkem",
+                    "name": "Elméleti kémia",
+                    "credits": 2,
+                    "prerequisites": [
+                        "matek2ea"
+                    ]
+                },
+                {
+                    "code": "muszanal2ea",
+                    "name": "Műszeres analitika II. előadás",
+                    "credits": 4,
+                    "prerequisites": [
+                        "muszanal1ea"
+                    ]
+                },
+                {
+                    "code": "kvantum",
+                    "name": "Kvantumelmélet a kémiai szerkezetvizsgálatban",
+                    "credits": 2,
+                    "prerequisites": [
+                        "matek2ea"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható tantárgyak",
+                    "credits": 15,
+                    "course_block_references": [
+                        "Kötelezően választható tantárgyak part I.",
+                        "Kötelezően választható tantárgyak part II."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "6. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "kornykemea",
+                    "name": "Környezeti kémia előadás",
+                    "credits": 3,
+                    "prerequisites": [
+                        "KEM1203",
+                        "KEM1503",
+                        "muszanal1ea"
+                    ]
+                },
+                {
+                    "code": "muszanal2gy",
+                    "name": "Műszeres analitika II. gyakorlat",
+                    "credits": 4,
+                    "prerequisites": [
+                        "(muszanal2ea)"
+                    ]
+                },
+                {
+                    "code": "kolloidea",
+                    "name": "Kolloidkémia előadás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "KEM1203"
+                    ]
+                },
+                {
+                    "code": "kolloidgy",
+                    "name": "Kolloidkémia gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(kolloidea)"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható tantárgyak",
+                    "credits": 9,
+                    "course_block_references": [
+                        "Kötelezően választható tantárgyak part I.",
+                        "Kötelezően választható tantárgyak part II."
+                    ]
+                },
+                {
+                    "code": "szakdoli",
+                    "name": "Szakdolgozat",
+                    "credits": 10
+                },
+                {
+                    "code": "szakmaigyak",
+                    "name": "Szakmai gyakorlat",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választható tantárgyak part I.",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "kozettan",
+                    "name": "Kőzettan",
+                    "credits": 2,
+                    "prerequisites": [
+                        "altszervetlen2ea"
+                    ]
+                },
+                {
+                    "code": "KEM3301",
+                    "name": "Kristálytan",
+                    "credits": 2,
+                    "prerequisites": [
+                        "altszervetlen2ea"
+                    ]
+                },
+                {
+                    "code": "FIZ06",
+                    "name": "Méréstan előadás",
+                    "credits": 2
+                },
+                {
+                    "code": "merestangy",
+                    "name": "Méréstan gyakorlat",
+                    "credits": 1
+                },
+                {
+                    "code": "KEM3201",
+                    "name": "Kémiai informatika",
+                    "credits": 2,
+                    "prerequisites": [
+                        "matek2ea"
+                    ]
+                },
+                {
+                    "code": "lezerspek",
+                    "name": "Lézerspektroszkópia",
+                    "credits": 2
+                },
+                {
+                    "code": "anyagszerkea",
+                    "name": "Anyagszerkezeti vizsgálatok előadás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "KEM1201"
+                    ]
+                },
+                {
+                    "code": "anyagszerkgy",
+                    "name": "Anyagszerkezeti vizsgálatok gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(anyagszerkea)"
+                    ]
+                },
+                {
+                    "code": "KEM35",
+                    "name": "Kémiai szenzorok előadás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "FIZ04"
+                    ]
+                },
+                {
+                    "code": "KEM63",
+                    "name": "Kémiai szenzorok gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(KEM35)"
+                    ]
+                },
+                {
+                    "code": "hetero",
+                    "name": "Heterociklusos kémia",
+                    "credits": 2,
+                    "prerequisites": [
+                        "KEM1503"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választható tantárgyak part II.",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "gyogykem",
+                    "name": "Bevezetés a gyógyszerészi kémiába",
+                    "credits": 2,
+                    "prerequisites": [
+                        "KEM1501"
+                    ]
+                },
+                {
+                    "code": "bioaktiv",
+                    "name": "Bioaktív vegyületek analitikája",
+                    "credits": 2,
+                    "prerequisites": [
+                        "KEM1701"
+                    ]
+                },
+                {
+                    "code": "mindennap",
+                    "name": "Mindennapok kémiája",
+                    "credits": 2,
+                    "prerequisites": [
+                        "alkkemia1ea"
+                    ]
+                },
+                {
+                    "code": "KEM66",
+                    "name": "Általános és szervetlen kémia IV. előadás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "KEM3401",
+                        "KEM3402"
+                    ]
+                },
+                {
+                    "code": "szervetlen4gy",
+                    "name": "Általános és szervetlen kémia IV. gyakorlat",
+                    "credits": 4,
+                    "prerequisites": [
+                        "anyagszerkea",
+                        "anyagszerkgy",
+                        "(KEM66)"
+                    ]
+                },
+                {
+                    "code": "KEM36",
+                    "name": "Természetes anyagok kémiája I.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "KEM1501"
+                    ]
+                },
+                {
+                    "code": "szervetlen5ea",
+                    "name": "Általános és szervetlen kémia V. előadás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "KEM1501"
+                    ]
+                },
+                {
+                    "code": "prob",
+                    "name": "Szerves kémiai problémamegoldás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "KEM1501"
+                    ]
+                },
+                {
+                    "code": "term2",
+                    "name": "Természetes anyagok kémiája II.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "KEM36"
+                    ]
+                },
+                {
+                    "code": "radio",
+                    "name": "Radiokémia",
+                    "credits": 2
+                }
+            ]
+        }
+    ]
 }

@@ -9,7 +9,7 @@ class FacultySeeder extends AbstractJsonFileSeeder
 
 
 
-    protected function processData($path, $data)
+    protected function processData($path, stdClass $data)
     {
         $fileNameParts  = explode('_', pathinfo($path, PATHINFO_FILENAME));
         $university     = University::where('slug', $fileNameParts[0])->firstOrFail();

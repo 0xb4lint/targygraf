@@ -1,5 +1,350 @@
 {
     "name": "Nemzetközi gazdaság és gazdálkodás MA",
     "description": "Nemzetközi gazdaság és gazdálkodás mesterképzési szak tanterve",
-    "curriculum_updated_at": "2013-01-01"
+    "curriculum_updated_at": "2013-01-01",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "GTKGM144M",
+                    "name": "Haladó mikroökonómia",
+                    "credits": 6
+                },
+                {
+                    "code": "GTVEM144K",
+                    "name": "Kvantitatív módszerek",
+                    "credits": 6
+                },
+                {
+                    "code": "GTNGM144H",
+                    "name": "Haladó nemzetközi  gazdaságtan  (világgazdaságtan)",
+                    "credits": 6
+                },
+                {
+                    "code": "GTNGM144V",
+                    "name": "Világgazdasági elemzés és  előrejelzés",
+                    "credits": 6
+                },
+                {
+                    "code": "GTPTM144H",
+                    "name": "Haladó vállalati pénzügyek",
+                    "credits": 6
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "GTKGM244M",
+                    "name": "Haladó makroökonómia ",
+                    "credits": 6
+                },
+                {
+                    "code": "GTKGM244H",
+                    "name": "Haladó verseny- és  piacelméletek I.",
+                    "credits": 6
+                },
+                {
+                    "code": "GTNGM144N",
+                    "name": "Nemzetközi marketing",
+                    "credits": 6
+                },
+                {
+                    "code": "GTNGM244E",
+                    "name": "Európai integráció  gazdaságtana ",
+                    "credits": 6
+                },
+                {
+                    "code": "GTNGM212N",
+                    "name": "Nemzetközi pénzügyek ",
+                    "credits": 3
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "Szakirány",
+                    "credits": 27,
+                    "course_block_references": [
+                        "Nemzetközi gazdaságelemzés szakirány",
+                        "Összehasonlító európai gazdasági és üzleti tanulmányok szakirány",
+                        "Nemzetközi üzleti menedzsment szakirány"
+                    ]
+                },
+                {
+                    "code": "GTKMAD",
+                    "name": "Diplomaszeminárium",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "Szakirány",
+                    "credits": 12,
+                    "course_block_references": [
+                        "Nemzetközi gazdaságelemzés szakirány",
+                        "Összehasonlító európai gazdasági és üzleti tanulmányok szakirány",
+                        "Nemzetközi üzleti menedzsment szakirány"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható tárgy",
+                    "credits": 6
+                },
+                {
+                    "code": "GTNGG226D",
+                    "name": "Diplomadolgozat",
+                    "credits": 9,
+                    "prerequisites": [
+                        "GTVEM144K",
+                        "GTKMAD"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Nemzetközi gazdaságelemzés szakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "Szakmai kötelezően választható tárgy",
+                    "credits": 15,
+                    "course_block_references": [
+                        "Nemzetközi gazdaságelemzés szakirány - kötelezően választható tárgyak"
+                    ]
+                },
+                {
+                    "code": "asd",
+                    "name": "Európai uniós összehasonlító gazdaságpolitika (3. félév)",
+                    "credits": 6
+                },
+                {
+                    "code": "GTKGM212N",
+                    "name": "Nemzetközi iparági  versenystratégia (3. félév)",
+                    "credits": 3
+                },
+                {
+                    "code": "GTKMM512S",
+                    "name": "Nemzetközi statisztika (4. félév)",
+                    "credits": 3
+                },
+                {
+                    "code": "GTNGM444F",
+                    "name": "Fenntarthatóság gazdaságtana  (európai alkalmazások) (4. félév)",
+                    "credits": 6
+                },
+                {
+                    "code": "GTKMM422O",
+                    "name": "Ökonometria",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Nemzetközi gazdaságelemzés szakirány - kötelezően választható tárgyak",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "GTNGM412E",
+                    "name": "Európai uniós pénzügyek",
+                    "credits": 3
+                },
+                {
+                    "code": "GTTUM444N",
+                    "name": "Nemzetközi üzleti kommunikáció",
+                    "credits": 6
+                },
+                {
+                    "code": "GTKGM112G",
+                    "name": "Gazdaságpolitika ",
+                    "credits": 3
+                },
+                {
+                    "code": "GTNGM414E",
+                    "name": "EU’s economic policies ",
+                    "credits": 6
+                },
+                {
+                    "code": "GTVEM322K",
+                    "name": "Kutatásmódszertan ",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Összehasonlító európai gazdasági és üzleti tanulmányok szakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "Szakmai kötelezően választható tárgy",
+                    "credits": 15,
+                    "course_block_references": [
+                        "Összehasonlító európai gazdasági és üzleti tanulmányok szakirány - kötelezően választható tárgyak"
+                    ]
+                },
+                {
+                    "code": "GTNGM444E",
+                    "name": "Európai uniós összehasonlító  gazdaságpolitika (3. félév)",
+                    "credits": 6
+                },
+                {
+                    "code": "GTNGM444R",
+                    "name": "Az Európai Unió regionális  politikája (3. félév)",
+                    "credits": 6
+                },
+                {
+                    "code": "GTNGM412E",
+                    "name": "Európai uniós pénzügyek (4. félév)",
+                    "credits": 3
+                },
+                {
+                    "code": "GTNGM444F",
+                    "name": "Fenntarthatóság gazdaságtana  (európai alkalmazások) (4. félév)",
+                    "credits": 6
+                }
+            ]
+        },
+        {
+            "name": "Összehasonlító európai gazdasági és üzleti tanulmányok szakirány - kötelezően választható tárgyak",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "GTNGM414P",
+                    "name": "EU’s programs, projects módszerek",
+                    "credits": 6
+                },
+                {
+                    "code": "GTNGM414E",
+                    "name": "EU’s economic policies ",
+                    "credits": 6
+                },
+                {
+                    "code": "GTNGM444G",
+                    "name": "Nemzetközi üzleti gyakorlat",
+                    "credits": 6
+                },
+                {
+                    "code": "GTNGM412E",
+                    "name": "Európai uniós pénzügyek ",
+                    "credits": 3
+                },
+                {
+                    "code": "GTKMM512S",
+                    "name": "Nemzetközi statisztika",
+                    "credits": 3
+                },
+                {
+                    "code": "GTNGM412N",
+                    "name": "Nemzetközi magánjog",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Nemzetközi üzleti menedzsment szakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "Szakmai kötelezően választható tárgy",
+                    "credits": 15,
+                    "course_block_references": [
+                        "Nemzetközi üzleti menedzsment szakirány - kötelezően választható tárgyak"
+                    ]
+                },
+                {
+                    "code": "GTNGM444G",
+                    "name": "Nemzetközi üzleti gyakorlat (3. félév)",
+                    "credits": 6
+                },
+                {
+                    "code": "GTVET444L",
+                    "name": "Logisztika II. (3. félév)",
+                    "credits": 6
+                },
+                {
+                    "code": "GTGAM344M",
+                    "name": "Marketing menedzsment (3. félév)",
+                    "credits": 6
+                },
+                {
+                    "code": "GTTUM444N",
+                    "name": "Nemzetközi üzleti kommunikáció (4. félév)",
+                    "credits": 6
+                }
+            ]
+        },
+        {
+            "name": "Nemzetközi üzleti menedzsment szakirány - kötelezően választható tárgyak",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "GTNGM444M",
+                    "name": "Nemzetközi pénzügyi menedzsment",
+                    "credits": 6
+                },
+                {
+                    "code": "GTSCM414S",
+                    "name": "Nemzetközi számvitel",
+                    "credits": 6
+                },
+                {
+                    "code": "GTVEM244D",
+                    "name": "Vezetői döntések",
+                    "credits": 6
+                },
+                {
+                    "code": "GTKGM212N",
+                    "name": "Nemzetközi iparági versenystratégiák",
+                    "credits": 3
+                },
+                {
+                    "code": "GTVET444E",
+                    "name": "Ellátási lánc menedzsment",
+                    "credits": 6
+                },
+                {
+                    "code": "GTVEM522U",
+                    "name": "Üzleti etika",
+                    "credits": 3
+                },
+                {
+                    "code": "GTVEM122I",
+                    "name": "Integrált információs rendszerek",
+                    "credits": 3
+                },
+                {
+                    "code": "GTVEM244P",
+                    "name": "Projektek tervezése és irányítása",
+                    "credits": 6
+                },
+                {
+                    "code": "GTNGM412N",
+                    "name": "Nemzetközi magánjog",
+                    "credits": 3
+                }
+            ]
+        }
+    ]
 }

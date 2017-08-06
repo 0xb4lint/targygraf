@@ -1,5 +1,1003 @@
 {
     "name": "Építész osztatlan",
     "description": "Építész szak (osztatlan) - nappali tagozat tanterve",
-    "curriculum_updated_at": "2014-03-18"
+    "curriculum_updated_at": "2014-03-18",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMETE90AX33",
+                    "name": "Építész Matematika 1",
+                    "credits": 4
+                },
+                {
+                    "code": "BMEEPAGA101\/BMEE PAGA102",
+                    "name": "Ábrázoló geometria 1 ",
+                    "credits": 5
+                },
+                {
+                    "code": "BMEGT411099",
+                    "name": "Filozófia",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEEPESA101",
+                    "name": "Bevezetés az  épületszerkezettanba",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEEPSTA101",
+                    "name": "Bevezetés a tartószerkezet-tervezésbe - Aláírás",
+                    "credits": 0
+                },
+                {
+                    "code": "BMEEPSTA101",
+                    "name": "Bevezetés a tartószerkezet-tervezésbe - Vizsga",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(BMEEPSTA101)"
+                    ]
+                },
+                {
+                    "code": "BMEEPETA101",
+                    "name": "Építészettörténet 1",
+                    "credits": 3
+                },
+                {
+                    "code": "BMEEPRAA101",
+                    "name": "Rajz 1 ",
+                    "credits": 5
+                },
+                {
+                    "code": "BMEEPUIA101",
+                    "name": "Bevezetés az építészetbe",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEEPKOA101",
+                    "name": "Térkompozíció",
+                    "credits": 5
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMETE90AX34",
+                    "name": "Építész Matematika 2",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE90AX33"
+                    ]
+                },
+                {
+                    "code": "BMEEPAGA201\/BMEE PAGA202",
+                    "name": "Ábrázoló geometria 2 ",
+                    "credits": 5,
+                    "prerequisites": [
+                        "BMEEPAGA101\/BMEE PAGA102"
+                    ]
+                },
+                {
+                    "code": "BMEEPESA201",
+                    "name": "Épületszerkezettan 1 ",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEEPESA101",
+                        "BMEEPSTA101"
+                    ]
+                },
+                {
+                    "code": "BMEEPSTA201",
+                    "name": "Statika",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEEPSTA101"
+                    ]
+                },
+                {
+                    "code": "BMEEPETA201",
+                    "name": "Építészettörténet 2",
+                    "credits": 3
+                },
+                {
+                    "code": "BMEEPRAA201",
+                    "name": "Rajz 2",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEEPRAA101"
+                    ]
+                },
+                {
+                    "code": "BMEEPLAA201",
+                    "name": "Lakóépülettervezés 1",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMEEPUIA101"
+                    ]
+                },
+                {
+                    "code": "BMEEPLAA202",
+                    "name": "Építészet alapjai",
+                    "credits": 6,
+                    "prerequisites": [
+                        "BMEEPRAA101",
+                        "BMEEPUIA101",
+                        "BMEEPKOA101"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMEEOEMA301",
+                    "name": "Építőanyagok 1 ",
+                    "credits": 3
+                },
+                {
+                    "code": "BMEEPAGA301",
+                    "name": "Építész-informatika 1",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEEPEGA301",
+                    "name": "Épületfizika",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMEEPESA101"
+                    ]
+                },
+                {
+                    "code": "BMEEPESA301",
+                    "name": "Épületszerkezettan 2 ",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEEPAGA101\/BMEE PAGA102",
+                        "BMEEPESA101",
+                        "BMEEPSTA101"
+                    ]
+                },
+                {
+                    "code": "BMEEPSTA301",
+                    "name": "Szilárdságtan 1",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMETE90AX33",
+                        "BMEEPSTA201"
+                    ]
+                },
+                {
+                    "code": "BMEEPETA301",
+                    "name": "Építészettörténet 3",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEEPETA201"
+                    ]
+                },
+                {
+                    "code": "BMEEPRAA301",
+                    "name": "Rajz 3",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEEPRAA201"
+                    ]
+                },
+                {
+                    "code": "BMEEPKOA301",
+                    "name": "Középülettervezés 1",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMEEPLAA201",
+                        "BMEEPLAA202"
+                    ]
+                },
+                {
+                    "code": "BMEEPLAA301",
+                    "name": "Lakóépülettervezés 2",
+                    "credits": 6,
+                    "prerequisites": [
+                        "BMEEPAGA101\/BMEE PAGA102",
+                        "BMEEPLAA201",
+                        "BMEEPLAA202"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMEGT43A044",
+                    "name": "Szociológia építészeknek",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEEPAGA401",
+                    "name": "Építész-informatika 2",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEEPAGA201\/BMEE PAGA202",
+                        "BMEEPAGA301"
+                    ]
+                },
+                {
+                    "code": "BMEEPESA401",
+                    "name": "Épületszerkezettan 3 ",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEEPESA201"
+                    ]
+                },
+                {
+                    "code": "BMEEPSTA401",
+                    "name": "Szilárdságtan 2 ",
+                    "credits": 6,
+                    "prerequisites": [
+                        "BMETE90AX34",
+                        "BMEEPSTA301"
+                    ]
+                },
+                {
+                    "code": "BMEEPSTA499",
+                    "name": "Szilárdságtan alapszigorlat",
+                    "credits": 0,
+                    "prerequisites": [
+                        "(BMEEPSTA401)"
+                    ]
+                },
+                {
+                    "code": "BMEEPETA401",
+                    "name": "Építészettörténet 4 ",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEEPETA301"
+                    ]
+                },
+                {
+                    "code": "BMEEPRAA401",
+                    "name": "Rajz 4",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMEEPRAA301"
+                    ]
+                },
+                {
+                    "code": "BMEEPKOA402",
+                    "name": "Tervezésmódszertan",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMEEPKOA301",
+                        "BMEEPLAA301"
+                    ]
+                },
+                {
+                    "code": "BMEEPIPA401",
+                    "name": "Munkahelyek építészete 1 ",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMEEPKOA301",
+                        "BMEEPLAA301"
+                    ]
+                },
+                {
+                    "code": "BMEEPKOA401",
+                    "name": "Középülettervezés 2",
+                    "credits": 6,
+                    "prerequisites": [
+                        "BMEEPKOA301",
+                        "BMEEPLAA301"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "5. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMEEPEKA501",
+                    "name": "Építéskivitelezés-szervezés 1 ",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMEEPESA301"
+                    ]
+                },
+                {
+                    "code": "BMEEPAGA501",
+                    "name": "Építész-informatika 3 ",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEEPESA301",
+                        "BMEEPLAA301",
+                        "BMEEPAGA401"
+                    ]
+                },
+                {
+                    "code": "BMEEPEGA501",
+                    "name": "Épületgépészet 1 ",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMEEPESA201"
+                    ]
+                },
+                {
+                    "code": "BMEEPESA501",
+                    "name": "Épületszerkezettan 4",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEEPESA301"
+                    ]
+                },
+                {
+                    "code": "BMEEPESA599",
+                    "name": "Épületszerkezettan alapszigorlat",
+                    "credits": 0,
+                    "prerequisites": [
+                        "(BMEEPESA401)",
+                        "(BMEEPESA501)"
+                    ]
+                },
+                {
+                    "code": "BMEEPSTA501",
+                    "name": "Tartószerkezetek modellezése - Aláírás",
+                    "credits": 0,
+                    "prerequisites": [
+                        "BMEEPAGA201\/BMEE PAGA202",
+                        "BMEEPSTA401"
+                    ]
+                },
+                {
+                    "code": "BMEEPSTA501",
+                    "name": "Tartószerkezetek modellezése - Vizsga",
+                    "credits": 6,
+                    "prerequisites": [
+                        "BMEEPSTA499",
+                        "(BMEEPSTA501)"
+                    ]
+                },
+                {
+                    "code": "BMEEPETA501",
+                    "name": "Építészettörténet 5",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEEPETA101",
+                        "BMEEPETA401"
+                    ]
+                },
+                {
+                    "code": "BMEEPRAA501",
+                    "name": "Rajz 5",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMEEPRAA401"
+                    ]
+                },
+                {
+                    "code": "BMEEPUIA501",
+                    "name": "Városépítészet 1 ",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMEEPKOA401"
+                    ]
+                },
+                {
+                    "code": "BMEEPIPA501",
+                    "name": "Munkahelyek építészete 2",
+                    "credits": 6,
+                    "prerequisites": [
+                        "BMEEPESA301",
+                        "BMEEPIPA401",
+                        "BMEEPKOA401"
+                    ]
+                },
+                {
+                    "code": "BMEEPKOA599",
+                    "name": "Tervezési alapszigorlat ",
+                    "credits": 0,
+                    "prerequisites": [
+                        "(BMEEPRAA401)",
+                        "(BMEEPKOA402)",
+                        "(BMEEPIPA501)"
+                    ]
+                },
+                {
+                    "code": "oYyvplW6",
+                    "name": "Szakirányválasztás",
+                    "credits": 0,
+                    "prerequisites": [
+                        "___130___"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "6. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMEGT301004",
+                    "name": "Közgazdaságtan 1.",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Szakirány 6. félév",
+                    "credits": 10,
+                    "course_block_references": [
+                        "6. félév Tervezői szakirány",
+                        "6. félév Szekezeti szakirány"
+                    ]
+                },
+                {
+                    "code": "BMEEPEGA601",
+                    "name": "Épületgépészet 2.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMEEPEGA301"
+                    ]
+                },
+                {
+                    "code": "BMEEPESA601\/BMEEPESA602",
+                    "name": "Épületszerkezettan 5.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEEPESA301",
+                        "BMEEPESA401"
+                    ]
+                },
+                {
+                    "code": "BMEEPETO601",
+                    "name": "Építészettörténet 6.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEEPETA401"
+                    ]
+                },
+                {
+                    "code": "BMEEPETO699",
+                    "name": "Építészettörténet alapszigorlat",
+                    "credits": 0,
+                    "prerequisites": [
+                        "BMEEPETA401"
+                    ]
+                },
+                {
+                    "code": "BMEEPRAA601",
+                    "name": "Rajz 6",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMEEPRAA501"
+                    ]
+                },
+                {
+                    "code": "BMEEPUIA601",
+                    "name": "Városépítészet 2",
+                    "credits": 6,
+                    "prerequisites": [
+                        "BMEEPUIA501",
+                        "BMEEPIPA501"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "7. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMEGT301924",
+                    "name": "Közgazdaságtan 2",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEEPEKA701",
+                    "name": "Építéskivitelezés-szervezés 3.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEEPEKA501"
+                    ]
+                },
+                {
+                    "code": "BMEEPRAO702",
+                    "name": "Rajz 7.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMEEPRAA501",
+                        "oYyvplW6"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Szakirány 7. félév",
+                    "credits": 14,
+                    "course_block_references": [
+                        "7. félév Tervezői szakirány",
+                        "7. félév Szerkezeti szakirány"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "8. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMEEPEKA801",
+                    "name": "Építés és tervezésgazdaságtan",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMEEPLAA301"
+                    ]
+                },
+                {
+                    "code": "BMEEPRAO801",
+                    "name": "Rajz 8",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEEPETO801",
+                    "name": "Magyar építészettörténet 1",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMEEPETA501",
+                        "oYyvplW6"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Szakirány 8. félév",
+                    "credits": 18,
+                    "course_block_references": [
+                        "8. félév Tervezői szakirány",
+                        "8. félév Szerkezeti szakirány"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "9. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMEEPEKO901",
+                    "name": "Építési jog ",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEEPETO901",
+                    "name": "Magyar építészettörténet 2 ",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMEEPETA501",
+                        "BMEEPETO601"
+                    ]
+                },
+                {
+                    "code": "BMEEPETO921",
+                    "name": "Tervezés elmélet",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMEEPKOA599"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Szakirány 9. félév",
+                    "credits": 17,
+                    "course_block_references": [
+                        "9. félév Tervezői szakirány",
+                        "9. félév Szerkezeti szakirány"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "10. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMEEP??TD01",
+                    "name": "Diplomatervezés",
+                    "credits": 30
+                }
+            ]
+        },
+        {
+            "name": "6. félév Tervezői szakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "BMEEPxxT601",
+                    "name": "Tanszéki terv 1.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "oYyvplW6"
+                    ]
+                },
+                {
+                    "code": "BMEEPEKT601",
+                    "name": "Épületkivitelezés-szervezés 2.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMEEPEKA501"
+                    ]
+                },
+                {
+                    "code": "BMEEPSTT601",
+                    "name": "Különleges tartószerkezetek",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEEPSTA501"
+                    ]
+                },
+                {
+                    "code": "BMEEPETT611",
+                    "name": "Műemlékvédelem ",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMEEPETA501",
+                        "oYyvplW6"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "6. félév Szekezeti szakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "BMEEPEKK601",
+                    "name": "Épületkivitelezés-szervezés 2",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEEPEKA501"
+                    ]
+                },
+                {
+                    "code": "BMEEPSTK601",
+                    "name": "Vasbeton tartók ",
+                    "credits": 6,
+                    "prerequisites": [
+                        "BMEEPSTA501"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "7. félév Tervezői szakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "BMEEPEST701 \/  BMEEPEST702",
+                    "name": "Épületszerkezettan 6T",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEEPESA599"
+                    ]
+                },
+                {
+                    "code": "BMEEOSTT799",
+                    "name": "Tartószerkezetek szigorlat",
+                    "credits": 0,
+                    "prerequisites": [
+                        "(BMEEPSTT601)"
+                    ]
+                },
+                {
+                    "code": "BMEEPETT721",
+                    "name": "Művészettörténet",
+                    "credits": 2,
+                    "prerequisites": [
+                        "oYyvplW6"
+                    ]
+                },
+                {
+                    "code": "BMEEPxxT701",
+                    "name": "Tanszéki terv 2",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEEPxxT601"
+                    ]
+                },
+                {
+                    "code": "BMEEPxxT711",
+                    "name": "Tanszéki terv 3",
+                    "credits": 8,
+                    "prerequisites": [
+                        "BMEEPxxT601",
+                        "BMEEPETO699",
+                        "BMEEPUIA601"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "7. félév Szerkezeti szakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "BMEEPESK701 \/  BMEEPESK702",
+                    "name": "Épületszerkezettan 6SB",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEEPESA599"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható szerkezeti tárgyak",
+                    "credits": 6,
+                    "course_block_references": [
+                        "7.-8. félév Szerkezeti szakirány Kötvál"
+                    ]
+                },
+                {
+                    "code": "BMEEOAFS701",
+                    "name": "Geodézia",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEEPS711",
+                    "name": "Kiskomplex",
+                    "credits": 6,
+                    "prerequisites": [
+                        "BMEEPKOA599",
+                        "oYyvplW6",
+                        "BMEEPUIA601"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "7.-8. félév Szerkezeti szakirány Kötvál",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "BMEEPSTK702",
+                    "name": "Acél tartószerkezetek  méretezés",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEEPSTA501"
+                    ]
+                },
+                {
+                    "code": "BMEEPST0645",
+                    "name": "Fa tartószerkezetek konstruálása ",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMEEPSTA501"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "BMEEPSTK703",
+                    "name": "Fa tartószerkezetek méretezése",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEEPSTA501"
+                    ]
+                },
+                {
+                    "code": "BMEEPST0650",
+                    "name": "Acél tartószerkezetek  konstruálása",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMEEPSTA501"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "8. félév Tervezői szakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "BMEEPEST899",
+                    "name": "Épületszerkezettan szigorlat",
+                    "credits": 0,
+                    "prerequisites": [
+                        "BMEEPESA601\/BMEEPESA602",
+                        "BMEEPEST701 \/  BMEEPEST702"
+                    ]
+                },
+                {
+                    "code": "BMEEPxxT811",
+                    "name": "Komplex tervezés 1",
+                    "credits": 10,
+                    "prerequisites": [
+                        "BMEEPSTA499",
+                        "BMEEPESA599",
+                        "BMEEPxxT711"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható tárgyak T 1 -M",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható tárgyak T 2 -K,É,É",
+                    "credits": 6
+                }
+            ]
+        },
+        {
+            "name": "8. félév Szerkezeti szakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "BMEEPESK801",
+                    "name": "Épületszerkezettan 7",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEEPESA601\/BMEEPESA602"
+                    ]
+                },
+                {
+                    "code": "BMEEPxxS811",
+                    "name": "Komplex tervezés 1",
+                    "credits": 6,
+                    "prerequisites": [
+                        "BMEEPSTA501",
+                        "BMEEPETO699",
+                        "BMEEPS711"
+                    ]
+                },
+                {
+                    "code": "BMEEPSTS899",
+                    "name": "Tartószerkezetek szigorlat",
+                    "credits": 0,
+                    "prerequisites": [
+                        "BMEEPSTK601",
+                        "(BMEEPSTS801)"
+                    ]
+                },
+                {
+                    "code": "BMEEPSTS801",
+                    "name": "Különleges tartószerkezetek",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEEPSTA501"
+                    ]
+                },
+                {
+                    "code": "BMEEPEKK801",
+                    "name": "Építéskivitelezés-szervezés 4",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEEPESA501",
+                        "BMEEPEKA701"
+                    ]
+                },
+                {
+                    "code": "BMEEOEMK601",
+                    "name": "Építőanyagok 2",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEEOEMA301"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "9. félév Tervezői szakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "BMEEPETT999",
+                    "name": "Építészettörténet szigorlat ",
+                    "credits": 0,
+                    "prerequisites": [
+                        "BMEEPETO601",
+                        "BMEEPETO801",
+                        "(BMEEPETO901)"
+                    ]
+                },
+                {
+                    "code": "BMEEPRAT901",
+                    "name": "Rajz 9",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMEEPRAA501"
+                    ]
+                },
+                {
+                    "code": "BMEEPxxT911",
+                    "name": "Komplex tervezés 2",
+                    "credits": 10,
+                    "prerequisites": [
+                        "BMEEPEGA601",
+                        "BMEEPEKA701",
+                        "BMEEPxxT811"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható tárgyak T 3 -M",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható tárgyak T 3 -K,É,É",
+                    "credits": 6
+                }
+            ]
+        },
+        {
+            "name": "9. félév Szerkezeti szakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "BMEEPESS999",
+                    "name": "Épületszerkezettan szigorlat",
+                    "credits": 0,
+                    "prerequisites": [
+                        "BMEEPESK801",
+                        "(BMEEPESS901)"
+                    ]
+                },
+                {
+                    "code": "BMEEPESS901",
+                    "name": "Épületszerkezettan 8",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEEPESK701 \/  BMEEPESK702"
+                    ]
+                },
+                {
+                    "code": "BMEEOEMS601",
+                    "name": "Építőanyagok 3",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMEEOEMK601"
+                    ]
+                },
+                {
+                    "code": "BMEEPxxS911",
+                    "name": "Komplex tervezés 2",
+                    "credits": 6,
+                    "prerequisites": [
+                        "BMEEPxxS811"
+                    ]
+                },
+                {
+                    "code": "BMEEPEKS901",
+                    "name": "Építéskivitelezés-szervezés 5",
+                    "credits": 2,
+                    "prerequisites": [
+                        "oYyvplW6"
+                    ]
+                },
+                {
+                    "code": "BMEEPEKS999",
+                    "name": "Építéskivitelezés-szervezés  szigorlat",
+                    "credits": 0,
+                    "prerequisites": [
+                        "(BMEEPEKS901)"
+                    ]
+                },
+                {
+                    "code": "BMEEOGTK701",
+                    "name": "Talajmechanika-alapozás ",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEEPESA301"
+                    ]
+                }
+            ]
+        }
+    ]
 }

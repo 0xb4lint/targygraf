@@ -1,5 +1,1264 @@
 {
     "name": "Járműmérnök",
     "description": "Járműmérnök BSc",
-    "curriculum_updated_at": "2013-09-01"
+    "curriculum_updated_at": "2013-09-01",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMETE90AX00",
+                    "name": "Matematika A1a - Analízis",
+                    "credits": 6
+                },
+                {
+                    "code": "BMEKOJKA101",
+                    "name": "Mechanika I. - Statika",
+                    "credits": 4
+                },
+                {
+                    "code": "BMEKOJHA121",
+                    "name": "Műszaki Ábrázolás I.",
+                    "credits": 4
+                },
+                {
+                    "code": "BMEKOKAA152",
+                    "name": "Számítástechnika I. J",
+                    "credits": 4
+                },
+                {
+                    "code": "BMEVEKTAKO1",
+                    "name": "Műszaki Kémia",
+                    "credits": 3
+                },
+                {
+                    "code": "BMETE15AX16",
+                    "name": "Fizika A2J",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEKOKUA168",
+                    "name": "Közlekedés és Társadalom",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEKOGJA154",
+                    "name": "Minőségügy a Járműtechnikában",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEKOVJA112",
+                    "name": "Általános Járműgéptan",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMETE90AX02",
+                    "name": "Matematika A2a - Vektorfüggvények",
+                    "credits": 6,
+                    "prerequisites": [
+                        "BMETE90AX00"
+                    ]
+                },
+                {
+                    "code": "BMEKOJKA102",
+                    "name": "Mechanika II. - Szilárdságtan",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEKOJKA101"
+                    ]
+                },
+                {
+                    "code": "BMEKOJHA155",
+                    "name": "Műszaki Ábrázolás II.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEKOJHA121"
+                    ]
+                },
+                {
+                    "code": "BMEKOKAA153",
+                    "name": "Számítástechnika II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEKOKAA152"
+                    ]
+                },
+                {
+                    "code": "BMEKOJJA106",
+                    "name": "Anyagismeret",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEVEKTAKO1"
+                    ]
+                },
+                {
+                    "code": "BMEKOVJA150",
+                    "name": "Járművek és mobil gépek I.",
+                    "credits": 3
+                },
+                {
+                    "code": "BMEGT30A001",
+                    "name": "Mikro- és makroökonómia",
+                    "credits": 4
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Kötelezően választott gazdasági és humán ismeretek",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMETE90AX11",
+                    "name": "Matematika A3 közlekedésmérnököknek",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMETE90AX02"
+                    ]
+                },
+                {
+                    "code": "BMEKOJKA170",
+                    "name": "Mechanika III. - Mozgástan",
+                    "credits": 5,
+                    "prerequisites": [
+                        "BMETE90AX02",
+                        "BMEKOJKA102"
+                    ]
+                },
+                {
+                    "code": "BMEKOJJA160",
+                    "name": "Járműszerkezeti anyagok és technológiák I.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEKOJJA106"
+                    ]
+                },
+                {
+                    "code": "BMEKOJHA156",
+                    "name": "Jármű- és hajtáselemek I.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEKOJKA102",
+                        "BMEKOJHA155"
+                    ]
+                },
+                {
+                    "code": "BMEKORHA104",
+                    "name": "Hő- és áramlástan I.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMETE90AX02"
+                    ]
+                },
+                {
+                    "code": "BMEKOKAA107",
+                    "name": "Elektrotechnika - elektronika I.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMETE90AX00",
+                        "BMETE15AX16"
+                    ]
+                },
+                {
+                    "code": "BMEKOEAA151",
+                    "name": "Járművek és mobil gépek II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEKOVJA150"
+                    ]
+                },
+                {
+                    "code": "BMEKOKGA109",
+                    "name": "Menedzsment és vállalkozás gazdaságtan",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMEKOJJA161",
+                    "name": "Járműszerkezeti anyagok és technológiák II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEKOJJA160"
+                    ]
+                },
+                {
+                    "code": "BMEKOJHA157",
+                    "name": "Jármű- és hajtáselemek II.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEKOJHA156"
+                    ]
+                },
+                {
+                    "code": "BMEKORHA105",
+                    "name": "Hő- és áramlástan II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEKOVJA112",
+                        "BMETE90AX11"
+                    ]
+                },
+                {
+                    "code": "BMEKOKAA108",
+                    "name": "Elektrotechnika - elektronika II.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMEKOKAA107"
+                    ]
+                },
+                {
+                    "code": "BMEKOVJA130",
+                    "name": "Járműdinamika és hajtástechnika",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEKOVJA112",
+                        "BMEKOVJA150"
+                    ]
+                },
+                {
+                    "code": "BMEKOKAA127",
+                    "name": "Irányítástechnika I.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEKOKAA107"
+                    ]
+                },
+                {
+                    "code": "BMEKORHA163",
+                    "name": "Járművek hő- és áramlástechnikai berendezései I.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEKORHA104"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Szakirány modul",
+                    "credits": 8,
+                    "course_block_references": [
+                        "Vasúti járművek",
+                        "Gépjárművek",
+                        "Légijárművek",
+                        "Vízijárművek",
+                        "Építőgépek",
+                        "Automatizált anyagmozgató berendezések és robotok",
+                        "Járműgyártás",
+                        "Járműmechatronika",
+                        "Járműfelépítmények"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "5. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMEKOJJA162",
+                    "name": "Járműgyártás és javítás",
+                    "credits": 5,
+                    "prerequisites": [
+                        "BMEKOJJA161"
+                    ]
+                },
+                {
+                    "code": "BMEKOJHA158",
+                    "name": "Jármű- és hajtáselemek III.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEKOJHA157"
+                    ]
+                },
+                {
+                    "code": "BMEKORHA164",
+                    "name": "Járművek hő- és áramlástechnikai berendezései II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEKORHA105",
+                        "BMEKORHA163"
+                    ]
+                },
+                {
+                    "code": "BMEKOKAA128",
+                    "name": "Irányítástechnika II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEKOKAA152",
+                        "BMETE90AX11",
+                        "BMEKOKAA127"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható tantárgyak",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Szakirány modul",
+                    "credits": 13,
+                    "course_block_references": [
+                        "Vasúti járművek",
+                        "Gépjárművek",
+                        "Légijárművek",
+                        "Vízijárművek",
+                        "Építőgépek",
+                        "Automatizált anyagmozgató berendezések és robotok",
+                        "Járműgyártás",
+                        "Járműmechatronika",
+                        "Járműfelépítmények"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "6. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMEKOJHA159",
+                    "name": "Járműtervezés és vizsgálat alapjai",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEKOJHA158"
+                    ]
+                },
+                {
+                    "code": "BMEKOJKA165",
+                    "name": "Jármű vázszerkezetek",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEKOJKA170"
+                    ]
+                },
+                {
+                    "code": "BMEKOKGA110",
+                    "name": "Üzleti jog",
+                    "credits": 2
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható tantárgyak",
+                    "credits": 4
+                },
+                {
+                    "code": null,
+                    "name": "Szakirány modul",
+                    "credits": 17,
+                    "course_block_references": [
+                        "Vasúti járművek",
+                        "Gépjárművek",
+                        "Légijárművek",
+                        "Vízijárművek",
+                        "Építőgépek",
+                        "Automatizált anyagmozgató berendezések és robotok",
+                        "Járműgyártás",
+                        "Járműmechatronika",
+                        "Járműfelépítmények"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "7. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMEKOKUA169",
+                    "name": "Üzemszervezés",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEKOEAA111",
+                    "name": "Munkavédelem\t",
+                    "credits": 2
+                },
+                {
+                    "code": "KO......",
+                    "name": "Szakdolgozat készítés",
+                    "credits": 15
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható tantárgyak",
+                    "credits": 4
+                },
+                {
+                    "code": null,
+                    "name": "Szakirány modul",
+                    "credits": 7,
+                    "course_block_references": [
+                        "Vasúti járművek",
+                        "Gépjárművek",
+                        "Légijárművek",
+                        "Vízijárművek",
+                        "Építőgépek",
+                        "Automatizált anyagmozgató berendezések és robotok",
+                        "Járműgyártás",
+                        "Járműmechatronika",
+                        "Járműfelépítmények"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Vasúti járművek",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "KOVJA530",
+                    "name": "Vasúti jármű mechatronika",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEKOKAA107"
+                    ]
+                },
+                {
+                    "code": "BMEKOVJA502",
+                    "name": "Vasúti járműszerkezetek I.",
+                    "credits": 5
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "BMEKOVJA503",
+                    "name": "Vasúti járműszerkezetek II.",
+                    "credits": 3
+                },
+                {
+                    "code": "BMEKOVJA504",
+                    "name": "Dízel vontatójárművek I.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEKORHA163"
+                    ]
+                },
+                {
+                    "code": "BMEKOVJA506",
+                    "name": "Villamos vasutak I.",
+                    "credits": 6,
+                    "prerequisites": [
+                        "BMEKOKAA108"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "BMEKOVJA505",
+                    "name": "Dízel vontatójárművek II.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "BMEKOVJA130"
+                    ]
+                },
+                {
+                    "code": "BMEKOVJA592",
+                    "name": "Vasúti járművek karbantartása és javítása",
+                    "credits": 3
+                },
+                {
+                    "code": "BMEKOVJA507",
+                    "name": "Villamos vasutak II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEKOKAA108"
+                    ]
+                },
+                {
+                    "code": "BMEKOVJA508",
+                    "name": "Vasúti járművek üzeme és diagnosztikája",
+                    "credits": 4
+                },
+                {
+                    "code": "BMEKOVJA509",
+                    "name": "Vasúti fékberendezések",
+                    "credits": 2
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "BMEKOVJA510",
+                    "name": "Vasúti jármű méréstechnika és labor",
+                    "credits": 4
+                },
+                {
+                    "code": "BMEKOKAA582",
+                    "name": "Megbízhatóság és biztonság",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Gépjárművek",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "BMEKOGJA511",
+                    "name": "Gépjárművek erőátvitele I.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEKOEAA151"
+                    ]
+                },
+                {
+                    "code": "BMEKOGJA513",
+                    "name": "Gépjármű futóművek I.",
+                    "credits": 5
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "BMEKOGJA512",
+                    "name": "Gépjárművek erőátvitele II.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEKOGJA511"
+                    ]
+                },
+                {
+                    "code": "BMEKOGJA514",
+                    "name": "Gépjármű futóművek II.",
+                    "credits": 5
+                },
+                {
+                    "code": "BMEKOGJA515",
+                    "name": "Gépjármű motorok I.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEKORHA163"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "BMEKOGJA516",
+                    "name": "Gépjármű motorok II.",
+                    "credits": 8,
+                    "prerequisites": [
+                        "BMEKOGJA515"
+                    ]
+                },
+                {
+                    "code": "BMEKOGJA517",
+                    "name": "Gépjárművek üzeme I.",
+                    "credits": 4
+                },
+                {
+                    "code": "BMEKOGJA519",
+                    "name": "Gépjármű elektronika I.",
+                    "credits": 5
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "BMEKOGJA518",
+                    "name": "Gépjárművek üzeme II.",
+                    "credits": 3
+                },
+                {
+                    "code": "BMEKOGJA520",
+                    "name": "Gépjármű elektronika II.",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "Légijárművek",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "BMEKORHA521",
+                    "name": "Repülőgép hajtóművek elmélete I.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEKORHA104"
+                    ]
+                },
+                {
+                    "code": "BMEKORHA524",
+                    "name": "Aerodinamika",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEKORHA104"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "BMEKORHA522",
+                    "name": "Repülőgép hajtóművek elmélete II.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEKORHA521"
+                    ]
+                },
+                {
+                    "code": "BMEKORHA525",
+                    "name": "Repülésmechanika",
+                    "credits": 4
+                },
+                {
+                    "code": "BMEKORHA526",
+                    "name": "Reülőgépek szerkezete",
+                    "credits": 5,
+                    "prerequisites": [
+                        "BMEKOJJA160",
+                        "BMEKOJHA157",
+                        "BMEKORHA524"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "BMEKORHA523",
+                    "name": "Repülőgép hajtóművek szerkezete",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEKORHA522"
+                    ]
+                },
+                {
+                    "code": "BMEKORHA527",
+                    "name": "Repülőgépek rendszerei és avionika",
+                    "credits": 5,
+                    "prerequisites": [
+                        "BMEKORHA525",
+                        "BMEKORHA526"
+                    ]
+                },
+                {
+                    "code": "BMEKORHA528",
+                    "name": "Repülési üzemtan",
+                    "credits": 5
+                },
+                {
+                    "code": "BMEKORHA529",
+                    "name": "Repülőgépek üzemeltetése",
+                    "credits": 4
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "BMEKORHA531",
+                    "name": "Légi eszközök",
+                    "credits": 5,
+                    "prerequisites": [
+                        "BMEKORHA522",
+                        "BMEKORHA525"
+                    ]
+                },
+                {
+                    "code": "BMEKORHA532",
+                    "name": "Repülésbiztonság és légialkalmasság",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMEKORHA522",
+                        "BMEKORHA525"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Vízijárművek",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "KORHA533",
+                    "name": "Hajók elmélete I.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEKOJKA101"
+                    ]
+                },
+                {
+                    "code": "KORHA535",
+                    "name": "Hajók hajtása I.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEKOJKA101"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "KORHA534",
+                    "name": "Hajók elmélete II.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "KORHA533"
+                    ]
+                },
+                {
+                    "code": "KORHA536",
+                    "name": "Hajók hajtása II.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "KORHA535"
+                    ]
+                },
+                {
+                    "code": "KORHA537",
+                    "name": "Hajóépítés I. (Hajószerkezettan)",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEKOJKA102"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "KORHA538",
+                    "name": "Hajóépítés II. (Hajóépítés technológiája)",
+                    "credits": 3,
+                    "prerequisites": [
+                        "KORHA537"
+                    ]
+                },
+                {
+                    "code": "KORHA539",
+                    "name": "Hajógépek",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEKORHA164"
+                    ]
+                },
+                {
+                    "code": "KORHA540",
+                    "name": "Hajók villamos berendezései",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEKOKAA108"
+                    ]
+                },
+                {
+                    "code": "KORHA541",
+                    "name": "Hajók gépi berendezései",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEKORHA164"
+                    ]
+                },
+                {
+                    "code": "KORHA543",
+                    "name": "Hajózás I. (Hajózási üzemtan)",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "KORHA542",
+                    "name": "Kishajók",
+                    "credits": 4
+                },
+                {
+                    "code": "KORHA544",
+                    "name": "Hajózás II. (Hajózási gazdaságtan)",
+                    "credits": 3,
+                    "prerequisites": [
+                        "KORHA543"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Építőgépek",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "KOEAA545",
+                    "name": "Jármű hidraulika és pneumatika",
+                    "credits": 4
+                },
+                {
+                    "code": "KOEAA546",
+                    "name": "Építőipari anyagmozgatógépek I.",
+                    "credits": 4
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "KOEAA547",
+                    "name": "Építőipari anyagmozgatógépek II.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "KOEAA546"
+                    ]
+                },
+                {
+                    "code": "KOEAA548",
+                    "name": "Földmunkagépek",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEKOEAA151"
+                    ]
+                },
+                {
+                    "code": "KOKUA549",
+                    "name": "Építőipari technológiák I.",
+                    "credits": 4
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "KOKUA550",
+                    "name": "Építőipari technológiák II.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "KOKUA549"
+                    ]
+                },
+                {
+                    "code": "KOEAA566",
+                    "name": "Mélyépítőipari gépek",
+                    "credits": 4
+                },
+                {
+                    "code": "KOEAA552",
+                    "name": "Építőgépek irányító rendszerei",
+                    "credits": 3
+                },
+                {
+                    "code": "KOEAA533",
+                    "name": "Építőipari logisztika",
+                    "credits": 2
+                },
+                {
+                    "code": "KOEAA554",
+                    "name": "Betontechnológiai gépek I.",
+                    "credits": 4
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "KOEAA555",
+                    "name": "Betontechnológiai gépek II.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "KOEAA554"
+                    ]
+                },
+                {
+                    "code": "BMEKOKAA582",
+                    "name": "Megbízhatóság és biztonság",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Automatizált anyagmozgató berendezések és robotok",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "KOEAA545",
+                    "name": "Jármű hidraulika és pneumatika",
+                    "credits": 4
+                },
+                {
+                    "code": "KOKUA562",
+                    "name": "Anyagmozgatási folyamatok",
+                    "credits": 4
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "KOEAA556",
+                    "name": "Anyagmozgatóberendezések I.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEKOJKA101"
+                    ]
+                },
+                {
+                    "code": "KOEAA558",
+                    "name": "Anyagmozgatás irányítás és automatizálás",
+                    "credits": 5
+                },
+                {
+                    "code": "KOEAA560",
+                    "name": "Robottechnika I.",
+                    "credits": 4
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "KOEAA557",
+                    "name": "Anyagmozgatóberendezések II.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "BMEKOJKA101"
+                    ]
+                },
+                {
+                    "code": "KOEAA559",
+                    "name": "Identifikációs rendszerek",
+                    "credits": 4
+                },
+                {
+                    "code": "KOEAA561",
+                    "name": "Robottechnika II.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "KOEAA560"
+                    ]
+                },
+                {
+                    "code": "KOEAA564",
+                    "name": "Felvonók és mozgólépcsők",
+                    "credits": 3,
+                    "prerequisites": [
+                        "KOEAA556"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "KOEAA563",
+                    "name": "Járműipari festő rendszerek",
+                    "credits": 4,
+                    "prerequisites": [
+                        "KOEAA556"
+                    ]
+                },
+                {
+                    "code": "BMEKOKAA582",
+                    "name": "Megbízhatóság és biztonság",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Járműgyártás",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "KOJJA565",
+                    "name": "Járműanyagok",
+                    "credits": 8,
+                    "prerequisites": [
+                        "BMEKOJJA106"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "KOJJA441",
+                    "name": "Szenzorika és anyagai",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE15AX16",
+                        "BMEKOJJA106"
+                    ]
+                },
+                {
+                    "code": "KOJJA567",
+                    "name": "Gyártásautomatizálás",
+                    "credits": 7,
+                    "prerequisites": [
+                        "BMEKOJJA161"
+                    ]
+                },
+                {
+                    "code": "KOJJA568",
+                    "name": "Járműgyártás folyamatai I.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEKOJJA106"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "KOJJA569",
+                    "name": "Járműgyártás folyamatai II.",
+                    "credits": 13,
+                    "prerequisites": [
+                        "KOJJA568"
+                    ]
+                },
+                {
+                    "code": "KOJJA570",
+                    "name": "Minőségügyi rendszerek",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEKOGJA154"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "KOJJA571",
+                    "name": "Szerelés, minőségbiztosítás",
+                    "credits": 4,
+                    "prerequisites": [
+                        "KOJJA569"
+                    ]
+                },
+                {
+                    "code": "KOJJA572",
+                    "name": "Járműdiagnosztika",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Járműmechatronika",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "KOEAA545",
+                    "name": "Jármű hidraulika és pneumatika",
+                    "credits": 4
+                },
+                {
+                    "code": "KOKAA573",
+                    "name": "Járműfedélzeti rendszerek I.",
+                    "credits": 4
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "KOKAA574",
+                    "name": "Járműfedélzeti rendszerek II.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "KOKAA573"
+                    ]
+                },
+                {
+                    "code": "KOKAA576",
+                    "name": "Érzékelők és beavatkozók I.",
+                    "credits": 4
+                },
+                {
+                    "code": "KOKAA578",
+                    "name": "Járműirányítás I.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEKOKAA127"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "KOKAA575",
+                    "name": "Járműfedélzeti rendszerek III.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "KOKAA574"
+                    ]
+                },
+                {
+                    "code": "KOKAA577",
+                    "name": "Érzékelők és beavatkozók II.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "KOKAA576"
+                    ]
+                },
+                {
+                    "code": "KOKAA579",
+                    "name": "Járműirányítás II.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEKOKAA128",
+                        "KOKAA578",
+                        "KOKAA577"
+                    ]
+                },
+                {
+                    "code": "KOKAA580",
+                    "name": "Járműfedélzeti kommunikáció",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEKOKAA108"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "KOEAA581",
+                    "name": "Mobil gépek mechatronikája",
+                    "credits": 4
+                },
+                {
+                    "code": "BMEKOKAA582",
+                    "name": "Megbízhatóság és biztonság",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Járműfelépítmények",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "KOEAA545",
+                    "name": "Jármű hidraulika és pneumatika",
+                    "credits": 4
+                },
+                {
+                    "code": "KOJKA583",
+                    "name": "Felépítmény típusismeret",
+                    "credits": 4
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "KOJKA584",
+                    "name": "Járműfelépítmény mechanizmusok",
+                    "credits": 5,
+                    "prerequisites": [
+                        "BMEKOJKA170"
+                    ]
+                },
+                {
+                    "code": "KOJJA568",
+                    "name": "Járműgyártás folyamatai I.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEKOJJA106"
+                    ]
+                },
+                {
+                    "code": "KOJKA586",
+                    "name": "Felépítmények fejlesztési folyamatai",
+                    "credits": 4
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "KOJKA587",
+                    "name": "Felépítményezői ismeretek",
+                    "credits": 9
+                },
+                {
+                    "code": "KOKAA588",
+                    "name": "Felépítmények vezérléstechnikája",
+                    "credits": 2
+                },
+                {
+                    "code": "KOJKA589",
+                    "name": "VEM alkalmazása",
+                    "credits": 4
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható tárgy",
+                    "credits": 2
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "KOJKA590",
+                    "name": "Felépítmények vizsgálata",
+                    "credits": 5
+                },
+                {
+                    "code": "KOJJA591",
+                    "name": "Felépítmény anyagok és felületkezelésük",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMEKOJJA106"
+                    ]
+                }
+            ]
+        }
+    ]
 }

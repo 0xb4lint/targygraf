@@ -1,5 +1,1891 @@
 {
     "name": "Gépészmérnök",
     "description": "Általános gépészmérnöki Bsc szak - nappali tagozat tanterve",
-    "curriculum_updated_at": "2013-05-14"
+    "curriculum_updated_at": "2013-05-14",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "SGMMAX17XXN",
+                    "name": "Matematikai alapok",
+                    "credits": 0
+                },
+                {
+                    "code": "SGMFFX14XXN",
+                    "name": "Fizikai alapok",
+                    "credits": 0
+                },
+                {
+                    "code": "SGMMCX16XXN",
+                    "name": "Ábrázoló geometria",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMFFX11XXN",
+                    "name": "Fizika I.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMFFX14XXN"
+                    ]
+                },
+                {
+                    "code": "SGMIFX30XXN",
+                    "name": "Informatika I.",
+                    "credits": 3
+                },
+                {
+                    "code": "SG2KG002N",
+                    "name": "Közgazdaságtan",
+                    "credits": 2
+                },
+                {
+                    "code": "SGMMAX01XXN",
+                    "name": "Matematika I.",
+                    "credits": 6,
+                    "prerequisites": [
+                        "SGMMAX17XXN"
+                    ]
+                },
+                {
+                    "code": "SGMJHX15XXN",
+                    "name": "Mérnöki alapismeretek",
+                    "credits": 3
+                },
+                {
+                    "code": "SMKKB2011XN",
+                    "name": "Műszaki kémia",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMMCX01XXN",
+                    "name": "Statika",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMGMX01XXN",
+                    "name": "Speciális kollégium I.",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "SGMAVX01XXN",
+                    "name": "Áramlástan",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMMAX17XXN",
+                        "SGMFFX14XXN"
+                    ]
+                },
+                {
+                    "code": "SGMAGX01XXN",
+                    "name": "Elektrotechnika",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMMAX01XXN"
+                    ]
+                },
+                {
+                    "code": "SGMFFFX07XXN",
+                    "name": "Fizika II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMFFX11XXN"
+                    ]
+                },
+                {
+                    "code": "SGMMCX24XXN",
+                    "name": "Gépszerkesztés alapjai",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMMCX16XXN"
+                    ]
+                },
+                {
+                    "code": "SGMIFX28XXN",
+                    "name": "Informatika II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMIFX30XXN",
+                        "SGMMAX01XXN"
+                    ]
+                },
+                {
+                    "code": "SGMMAX12XXN",
+                    "name": "Matematika II.",
+                    "credits": 6,
+                    "prerequisites": [
+                        "SGMMAX01XXN"
+                    ]
+                },
+                {
+                    "code": "SGMMAX13XXN",
+                    "name": "Matematika szigorlat",
+                    "credits": 0,
+                    "prerequisites": [
+                        "SGMMAX12XXN"
+                    ]
+                },
+                {
+                    "code": "SGMMAX14XXN",
+                    "name": "Matematikai statisztika",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMMAX01XXN"
+                    ]
+                },
+                {
+                    "code": "SGMGCX09XXN",
+                    "name": "Munkavédelem",
+                    "credits": 2
+                },
+                {
+                    "code": "SGMGMX02XXN",
+                    "name": "Szilárdságtan",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMMAX01XXN",
+                        "SGMMCX01XXN"
+                    ]
+                },
+                {
+                    "code": "SGMJHX11XXN",
+                    "name": "Anyag-, gép és üzemismereti gyakorlat",
+                    "credits": 0,
+                    "prerequisites": [
+                        "SGMJHX15XXN"
+                    ]
+                },
+                {
+                    "code": "SGMGMx02XXN",
+                    "name": "Speciális kollégium II.",
+                    "credits": 0
+                },
+                {
+                    "code": "SG2SR001N",
+                    "name": "Testnevelés I.",
+                    "credits": 0
+                },
+                {
+                    "code": "SG2NA092N",
+                    "name": "Angol nyelv I.",
+                    "credits": 0
+                },
+                {
+                    "code": "SG2NA093N",
+                    "name": "Német nyelv I.",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "SGMGTX03XXN",
+                    "name": "Anyagismeret",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMFFFX07XXN"
+                    ]
+                },
+                {
+                    "code": "SGMKLX08XXN",
+                    "name": "Áramlástani gépek",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMAVX01XXN"
+                    ]
+                },
+                {
+                    "code": "SGMMGxxXXN",
+                    "name": "EU ismeretek",
+                    "credits": 2
+                },
+                {
+                    "code": "SGMMGX26XXN",
+                    "name": "Gazdaságtan",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SG2KG002N"
+                    ]
+                },
+                {
+                    "code": "SGMGSX15XXN",
+                    "name": "Gépelemek I.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMMCX24XXN",
+                        "SGMGMX02XXN"
+                    ]
+                },
+                {
+                    "code": "SGMMCX27XXN",
+                    "name": "Mozgástan",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGMMAX12XXN",
+                        "SGMGMX02XXN"
+                    ]
+                },
+                {
+                    "code": "SGMMCX12XXN",
+                    "name": "Mechanika szigorlat",
+                    "credits": 0,
+                    "prerequisites": [
+                        "SGMMCX27XXN"
+                    ]
+                },
+                {
+                    "code": "SGMETX25XXN",
+                    "name": "Műszaki hőtan",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMFFFX07XXN"
+                    ]
+                },
+                {
+                    "code": "SGMGSX14XXN",
+                    "name": "Számítógépes mérnöki tevékenység",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMMCX24XXN"
+                    ]
+                },
+                {
+                    "code": "SG2SR2363BN",
+                    "name": "Testnevelés II.",
+                    "credits": 0
+                },
+                {
+                    "code": "SG2NA002N",
+                    "name": "Angol nyelv II.",
+                    "credits": 0
+                },
+                {
+                    "code": "SG2NA005N",
+                    "name": "Német nyelv II.",
+                    "credits": 0
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon válaszható tárgy",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "SGMLGX02XXN",
+                    "name": "Anyagmozgatás gépei",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMMCX12XXN",
+                        "SGMGSX15XXN"
+                    ]
+                },
+                {
+                    "code": "SGMETX02XXN",
+                    "name": "Energetika alapjai",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMAGX01XXN",
+                        "SGMETX25XXN"
+                    ]
+                },
+                {
+                    "code": "SGMKLX13XXN",
+                    "name": "Épületgépészet",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMAVX01XXN",
+                        "SGMETX25XXN"
+                    ]
+                },
+                {
+                    "code": "SGMFFX15XXN",
+                    "name": "Folyamatirányítás",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMMAX12XXN"
+                    ]
+                },
+                {
+                    "code": "SGMGSX16XXN",
+                    "name": "Gépelemek II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMGSX15XXN"
+                    ]
+                },
+                {
+                    "code": "SGMGTX04XXN",
+                    "name": "Mechanikai technológia",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMGMX02XXN",
+                        "SGMGTX03XXN"
+                    ]
+                },
+                {
+                    "code": "SGMMGX002XXN",
+                    "name": "Menedzsment ismeretek",
+                    "credits": 2
+                },
+                {
+                    "code": "SGMMTX31XXN",
+                    "name": "Méréstechnika",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMAGX01XXN",
+                        "SGMMAX14XXN"
+                    ]
+                },
+                {
+                    "code": "SGMJHX38XXN",
+                    "name": "Motorok és gépjárművek",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMJHX15XXN"
+                    ]
+                },
+                {
+                    "code": "SGMJTX05XXN",
+                    "name": "Tanműhelyi gyakorlatok I.",
+                    "credits": 1,
+                    "prerequisites": [
+                        "SGMGTX03XXN"
+                    ]
+                },
+                {
+                    "code": "SG2NA003N",
+                    "name": "Angol nyelv III.",
+                    "credits": 0
+                },
+                {
+                    "code": "SG2NA007N",
+                    "name": "Német nyelv III.",
+                    "credits": 0
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható tárgy",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "5. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "SGMMTX09XXN",
+                    "name": "Elektronika",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMAGX01XXN",
+                        "SGMFFFX07XXN"
+                    ]
+                },
+                {
+                    "code": "SGMGRX26XXN",
+                    "name": "Gépek és rendszerek üzemeltetése",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMGTX13XXN",
+                    "name": "Gépgyártástechnológia",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGMGTX03XXN",
+                        "SGMGTX04XXN"
+                    ]
+                },
+                {
+                    "code": "SGMLGX04XXN",
+                    "name": "Logisztika",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMLGX02XXN"
+                    ]
+                },
+                {
+                    "code": "SGMMGX32XXN",
+                    "name": "Minőségmenedzsment",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMMGX002XXN"
+                    ]
+                },
+                {
+                    "code": "SGMMHX24XXN",
+                    "name": "Pneumatikus energiaátvitel",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMAVX01XXN",
+                        "SGMETX25XXN"
+                    ]
+                },
+                {
+                    "code": "SGMJTX06XXN",
+                    "name": "Tanműhelyi gyakorlatok II.",
+                    "credits": 1,
+                    "prerequisites": [
+                        "SGMGTX04XXN",
+                        "SGMJTX05XXN"
+                    ]
+                },
+                {
+                    "code": "SG2NA004N",
+                    "name": "Angol nyelv IV.",
+                    "credits": 0
+                },
+                {
+                    "code": "SG2NA006N",
+                    "name": "Német nyelv IV.",
+                    "credits": 0
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választott (szakirányos) tárgy",
+                    "credits": 12,
+                    "course_block_references": [
+                        "Mérnök-informatika (CAD\/CAM) szakirány 2011\/2012-től",
+                        "Mérnök-informatika (CAD\/CAM) szakirány 2013\/2014-től",
+                        "Energetika szakirány 2011\/2012-től",
+                        "Gépgyártó szakirány 2011\/2012-től",
+                        "Gépjárműtechnika szakirány 2011\/2012-től",
+                        "Járműelektronika szakirány 2011\/2012-től",
+                        "Gépgyártó szakirány 2013\/2014-től",
+                        "Épületgépészet szakirány 2013\/2014-től",
+                        "Gépjárműtechnika szakirány 2013\/2014-től",
+                        "Járműelektronika szakirány 2013\/2014-től",
+                        "Energetika szakirány 2013\/2014-től"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "6. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "SGMKLX20XXN",
+                    "name": "Energiagazdálkodás az iparban",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMETX02XXN",
+                        "SGMKLX13XXN"
+                    ]
+                },
+                {
+                    "code": "SG2JI001N",
+                    "name": "Gazdasági jog",
+                    "credits": 2
+                },
+                {
+                    "code": "SGMJTX03XXN",
+                    "name": "Gépüzemfenntartás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMGTX13XXN",
+                        "SGMJTX06XXN"
+                    ]
+                },
+                {
+                    "code": "SGMMHX23XXN",
+                    "name": "Hidraulikus energiaátvitel",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMMHX24XXN"
+                    ]
+                },
+                {
+                    "code": "SGMKLX20XXN",
+                    "name": "Környezetgazdálkodás",
+                    "credits": 2
+                },
+                {
+                    "code": "SGMJTX11XXN",
+                    "name": "Tanműhelyi gyakorlatok III.",
+                    "credits": 1,
+                    "prerequisites": [
+                        "SGMGTX13XXN",
+                        "SGMJTX06XXN"
+                    ]
+                },
+                {
+                    "code": "SGMKLX22XXN",
+                    "name": "Üzemi gyakorlat",
+                    "credits": 0
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választott (szakirányos) tárgy",
+                    "credits": 14,
+                    "course_block_references": [
+                        "Mérnök-informatika (CAD\/CAM) szakirány 2011\/2012-től",
+                        "Mérnök-informatika (CAD\/CAM) szakirány 2013\/2014-től",
+                        "Energetika szakirány 2011\/2012-től",
+                        "Gépgyártó szakirány 2011\/2012-től",
+                        "Gépjárműtechnika szakirány 2011\/2012-től",
+                        "Járműelektronika szakirány 2011\/2012-től",
+                        "Gépgyártó szakirány 2013\/2014-től",
+                        "Épületgépészet szakirány 2013\/2014-től",
+                        "Gépjárműtechnika szakirány 2013\/2014-től",
+                        "Járműelektronika szakirány 2013\/2014-től",
+                        "Energetika szakirány 2013\/2014-től"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható tárgy",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "7. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "SGMKLX24XXN",
+                    "name": "Környezettechnika",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMKLX20XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Szakdolgozat",
+                    "credits": 15
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választott (szakirányos) tárgy",
+                    "credits": 14,
+                    "course_block_references": [
+                        "Mérnök-informatika (CAD\/CAM) szakirány 2011\/2012-től",
+                        "Mérnök-informatika (CAD\/CAM) szakirány 2013\/2014-től",
+                        "Energetika szakirány 2011\/2012-től",
+                        "Gépgyártó szakirány 2011\/2012-től",
+                        "Gépjárműtechnika szakirány 2011\/2012-től",
+                        "Járműelektronika szakirány 2011\/2012-től",
+                        "Gépgyártó szakirány 2013\/2014-től",
+                        "Épületgépészet szakirány 2013\/2014-től",
+                        "Gépjárműtechnika szakirány 2013\/2014-től",
+                        "Járműelektronika szakirány 2013\/2014-től",
+                        "Energetika szakirány 2013\/2014-től"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Szakirányok 2011\/2012-től",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "Energetika szakirány",
+                    "credits": 40,
+                    "course_block_references": [
+                        "Energetika szakirány 2011\/2012-től"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Gépgyártó szakirány",
+                    "credits": 40,
+                    "course_block_references": [
+                        "Gépgyártó szakirány 2011\/2012-től"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Mérnök-informatika (CAD\/CAM) szakirány",
+                    "credits": 40,
+                    "course_block_references": [
+                        "Mérnök-informatika (CAD\/CAM) szakirány 2011\/2012-től"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Gépjárműtechnika szakirány",
+                    "credits": 40,
+                    "course_block_references": [
+                        "Gépjárműtechnika szakirány 2011\/2012-től"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Járműelektronika szakirány",
+                    "credits": 40,
+                    "course_block_references": [
+                        "Járműelektronika szakirány 2011\/2012-től"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Szakirányok 2013\/2014-től",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "Energetika szakirány",
+                    "credits": 40,
+                    "course_block_references": [
+                        "Energetika szakirány 2013\/2014-től"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Gépgyártó szakirány",
+                    "credits": 40,
+                    "course_block_references": [
+                        "Gépgyártó szakirány 2013\/2014-től"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Mérnök-informatika (CAD\/CAM) szakirány",
+                    "credits": 40,
+                    "course_block_references": [
+                        "Mérnök-informatika (CAD\/CAM) szakirány 2013\/2014-től"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Gépjárműtechnika szakirány",
+                    "credits": 40,
+                    "course_block_references": [
+                        "Gépjárműtechnika szakirány 2013\/2014-től"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Járműelektronika szakirány",
+                    "credits": 40,
+                    "course_block_references": [
+                        "Járműelektronika szakirány 2013\/2014-től"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Épületgépészet szakirány",
+                    "credits": 40,
+                    "course_block_references": [
+                        "Épületgépészet szakirány 2013\/2014-től"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Energetika szakirány 2011\/2012-től",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Energiatárolás és -ellátás",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMETX02XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Hőtechnikai berendezések",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMETX25XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Villamos gépek",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMAGX01XXN"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Energetikai rendszerek méréstechnikája",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGMAGX01XXN",
+                        "SGMMTX31XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Szélenergetika hasznosítás",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGMETX02XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Villamos energetika",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMAGX01XXN"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Biomassza energetikai hasznosítása",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMETX02XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Geotermális energiahasznosítás (exergia)",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Műszaki fejlesztés",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMMGX26XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Napenergia hasznosítás",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMFFFX07XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Fűtés és klímatechnika",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMKLX13XXN"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Gépgyártó szakirány 2011\/2012-től",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Fémes és nem fémes szerkezeti anyagok",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMGTX03XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Gépipari mérés és minőségbiztosítás",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMGTX04XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Polimertechnológiák",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMGTX03XXN"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Szerszámok és készülékek",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGMGTX13XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Újrahasznosítási anyagismeret",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMGTX03XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Végeselem-módszer alkalmazása I-II.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGMGMX02XXN"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Gépipari szerelés",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMGSX16XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Gyártástervezés és programozás",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMGSX14XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Különleges gyártástechnológiák",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMGTX13XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Rugalmas gyártórendszerek",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMGTX13XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Tribológia",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMGTX04XXN"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Mérnök-informatika (CAD\/CAM) szakirány 2011\/2012-től",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "SGMGSX28XXN",
+                    "name": "CAE gyakorlatok I.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGMGSX14XXN"
+                    ]
+                },
+                {
+                    "code": "SGMGSX20XXN",
+                    "name": "Gép-konsrukcióanalízis",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMGSX16XXN"
+                    ]
+                },
+                {
+                    "code": "SGMMCX30XXN",
+                    "name": "VEM technológiák",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGMGMX02XXN"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMGSX29XXN",
+                    "name": "CAE gyakorlatok II.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGMGSX28XXN"
+                    ]
+                },
+                {
+                    "code": "SGMMCX28XXN",
+                    "name": "Hőtechnikai és áramlástechnikai elemzések",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMMCX30XXN"
+                    ]
+                },
+                {
+                    "code": "SGMGSX30XXN",
+                    "name": "Mechanizmusok modellezése",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGMMCX27XXN"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMGTX24XXN",
+                    "name": "CAE gyakorlatok III.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMGSX29XXN"
+                    ]
+                },
+                {
+                    "code": "SGMMGX22XXN",
+                    "name": "Integrált vállalatirányítási rendszerek",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMMGX26XXN"
+                    ]
+                },
+                {
+                    "code": "SGMMZX41XXN",
+                    "name": "PLC technológiák",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMMTX09XXN"
+                    ]
+                },
+                {
+                    "code": "SGMMHX29XXN",
+                    "name": "Rugalmas gyártórendszerek",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMGTX13XXN"
+                    ]
+                },
+                {
+                    "code": "SGMFFX17XXN",
+                    "name": "Számítógépes szimuláció",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMFFX15XXN"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Gépjárműtechnika szakirány 2011\/2012-től",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "CAE gyakorlatok I.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMGSX14XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Diagnosztikai eljárások",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMJHX38XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Közlekedésbiztonság",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMJHX38XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Technikatörténet",
+                    "credits": 1,
+                    "prerequisites": [
+                        "SGMJHX38XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Tribológia",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMJHX38XXN"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Gépjárműtechnika",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMJHX38XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Járműelektronika",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMJHX38XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Járműinformatika",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMJHX38XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Logisztika II.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMLGX04XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Szerelés és szervíztechnológiák",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMGSX16XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Terepjáráselmélet",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMJHX38XXN"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Belsőégésű motorok vizsgálata",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMJHX38XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "CAE gyakorlatok III.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Járműdinamika",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMJHX38XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Közúti járművek vizsgálata",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMJHX38XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Szállítmányozás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMMGX26XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Vállalkozási ismeretek",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMMGX26XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Villamos gépek",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMAGX01XXN"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Járműelektronika szakirány 2011\/2012-től",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "CAE gyakorlatok I.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMGSX14XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Járművizsgálat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMJHX38XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Elektronikai technológia",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMAGX01XXN"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Elektronikai technológia laboratórium (BME)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMMTX09XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Elektronikai gyártás és tervezés",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGMMTX09XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Járműelektronika",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMJHX38XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN_l",
+                    "name": "Járműinformatika",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMJHX38XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Gépjárműtechnika",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMJHX38XXN"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Technológiai folyamatok és minőségellenőrzés",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMMTX09XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Termelésirányítás és minőségbiztosítás",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMMTX09XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "CAE gyakorlatok III.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Villamos gépek",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMAGX01XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Gépjárműmechatronika",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMxxXxxXXN",
+                        "SGMxxXxxXXN_l"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Energetika szakirány 2013\/2014-től",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Energiatárolás és -ellátás",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMETX02XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Hőtechnikai berendezések",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMETX25XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Villamos gépek",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMAGX01XXN"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Energetikai rendszerek méréstechnikája",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGMAGX01XXN",
+                        "SGMMTX31XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Szélenergia hasznosítás",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGMETX02XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Villamos energetika",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMAGX01XXN"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Biomassza energetikai hasznosítása",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMETX02XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Geotermális energiahasznosítás",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Műszaki fejlesztés",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMETX02XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Napenergia hasznosítás",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMFFFX07XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Fűtés és klímatechnika",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMKLX13XXN"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Gépgyártó szakirány 2013\/2014-től",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "CAM gyakorlatok",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGMGTX04XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Polimertechnológiák",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGMGTX03XXN"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Gépipari mérés és minőségbiztosítás",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGMGTX04XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Szerelés és szervíztechnológiák",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMGSX16XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "VEM technológiák",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGMGMX02XXN"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "CAE gyakorlatok III.",
+                    "credits": 7,
+                    "prerequisites": [
+                        "SGMJTX06XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Technológiai projekt feladat",
+                    "credits": 6,
+                    "prerequisites": [
+                        "SGMGTX13XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Tribológia",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMGTX04XXN"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Mérnök-informatika (CAD\/CAM) szakirány 2013\/2014-től",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "CAE gyakorlatok I.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGMGSX14XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Gép-konstrukcióanalízis",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMGSX16XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Mechanizmusok modellezése",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGMMCX27XXN"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "CAE gyakorlatok II.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGMxxXxxXXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "VEM technológiák",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGMGMX02XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Mérnökinformatikai alapok",
+                    "credits": 4
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "CAE gyakorlatok III.",
+                    "credits": 7,
+                    "prerequisites": [
+                        "SGMxxXxxXXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Hőtechnikai és áramlástani elemzések",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "PLC technológiák",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMMTX09XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Vállalatirányítási rendszerek",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMMGX26XXN"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Gépjárműtechnika szakirány 2013\/2014-től",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "CAE gyakorlatok I.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGMGSX14XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Motortechnika",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGMJHX38XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Gépjárműtechnika",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMJHX38XXN"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Járműelektronika",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMJHX38XXN",
+                        "SGMMTX09XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Szerelés és szervíztechnológiák",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMGSX16XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Járműdinamika és terepjáráselmélet",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMJHX38XXN"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Járműinformatika",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMJHX38XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Közlekedésbiztonság és járművizsgálat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMJHX38XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Diagnosztikai eljárások",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMJHX38XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Tribológia",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMJHX38XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Szakdolgozat projekt munka",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Járműelektronika szakirány 2013\/2014-től",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "CAE gyakorlatok I.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGMGSX14XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Gépjárműtechnika",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGMJHX38XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Elektronikai technológia",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMAGX01XXN"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Elektronikai technológia laboratórium (BME)",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMAGX01XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Elektronikai gyártás és tervezés",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGMMTX09XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Járműelektronika",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMJHX38XXN",
+                        "SGMMTX09XXN"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Járműinformatika",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMJHX38XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Közlekedésbiztonság és járművizsgálat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMJHX38XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Technológiai folyamatok és minőségellenőrzés",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMMTX09XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Termelésirányítás és minőségbiztosítás",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMMTX09XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Gépjárműmechatronika",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXXN"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Épületgépészet szakirány 2013\/2014-től",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Épületek hőtechnikája",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMETX25XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Vízellátás, csatornázás, gázellátás",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMAVX01XXN",
+                        "SGMETX25XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Légtechnika alapjai",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMAVX01XXN",
+                        "SGMETX25XXN"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXXN_W",
+                    "name": "Hűtéstechnika",
+                    "credits": 4,
+                    "prerequisites": [
+                        "SGMETX25XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN_K",
+                    "name": "Klímatechnika alapjai",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGMxxXxxXXN",
+                        "(SGMxxXxxXXN_W)"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN_5",
+                    "name": "Fűtéstechnika alapjai",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SGMAVX01XXN",
+                        "SGMxxXxxXXN"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Hőszállítás",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMAVX01XXN",
+                        "SGMETX25XXN"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Épületgépészeti kivitelezési ismeretek",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXXN",
+                        "SGMxxXxxXXN_K",
+                        "SGMxxXxxXXN_5"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Épületgépészeti mérések",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SGMxxXxxXXN",
+                        "SGMxxXxxXXN_K",
+                        "SGMxxXxxXXN_5"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Épületgépészeti tervezés",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXXN",
+                        "SGMxxXxxXXN_K",
+                        "SGMxxXxxXXN_5"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXXN",
+                    "name": "Épületgépészeti rendszerek üzemeltetése",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SGMxxXxxXXN",
+                        "SGMxxXxxXXN_K",
+                        "SGMxxXxxXXN_5"
+                    ]
+                }
+            ]
+        }
+    ]
 }

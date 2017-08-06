@@ -1,5 +1,437 @@
 {
     "name": "Politológia",
     "description": "Politológia alapszak - nappali tagozat tanterve",
-    "curriculum_updated_at": "2011-06-24"
+    "curriculum_updated_at": "2011-06-24",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VETKTTB113I",
+                    "name": "Magyar politika I. (1867-1945)",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTT1312F",
+                    "name": "Filozófiatörténet",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTTB113E",
+                    "name": "A társadalomelmélet alapjai I.",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTTB114E",
+                    "name": "Közgazdaságtan",
+                    "credits": 5
+                },
+                {
+                    "code": "VETKTT1112K",
+                    "name": "Kommunikáció elmélet",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTT1222K",
+                    "name": "Kommunikáció gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTB111P",
+                    "name": "Politikatudomány I. előadás",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTTB121P",
+                    "name": "Politikatudomány I. szeminárium",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTT1112J",
+                    "name": "Jogi alapismeretek",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMICOB122I",
+                    "name": "Informatikai ismeretek",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VETKTT1212U",
+                    "name": "Új- és legújabb kori egyetemes történelem II. előadás",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTT1222U",
+                    "name": "Új- és legújabb kori egyetemes történelem II. szeminárium",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTB122A",
+                    "name": "A társadalomelmélet alapjai II.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKTTB113E"
+                    ]
+                },
+                {
+                    "code": "VETKTTB111R",
+                    "name": "Politikatudomány II. előadás",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VETKTTB111P",
+                        "VETKTTB121P"
+                    ]
+                },
+                {
+                    "code": "VETKTTB121R",
+                    "name": "Politikatudomány II. szeminárium",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKTTB111P",
+                        "VETKTTB121P"
+                    ]
+                },
+                {
+                    "code": "VETKTTB111F",
+                    "name": "Politikai filozófia",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTTB122K",
+                    "name": "Bevezetés Kelet-Közép-Európa történetébe",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTTB113L",
+                    "name": "Magyar politika II. (1945 után)",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VETKTTB113I"
+                    ]
+                },
+                {
+                    "code": "VETKTTB113A",
+                    "name": "Alkotmányjog",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTTB222K",
+                    "name": "A társadalomtudományi kutatások módszertana I.",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTB222F",
+                    "name": "Forráselemzés",
+                    "credits": 2
+                },
+                {
+                    "code": "VEGTGAB113T",
+                    "name": "Társadalomstatisztika",
+                    "credits": 2
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VETKTTB111G",
+                    "name": "Egyetemes politikai gondolkodás története I.",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTTB113B",
+                    "name": "Bevezetés a nemzetközi viszonyok elméletébe",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTTB212T",
+                    "name": "Társadalomtörténet I.",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTTB211M",
+                    "name": "A magyar politikai rendszer I.",
+                    "credits": 3
+                },
+                {
+                    "code": "VEGTTUB222K",
+                    "name": "A társadalomtudományi kutatás módszertana II.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKTTB222K"
+                    ]
+                },
+                {
+                    "code": "VETKTT2112K",
+                    "name": "Közigazgatástan",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKEU5312F",
+                    "name": "Az európai integráció története",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKEU5312N",
+                    "name": "Az európai közösségi jog alapjai",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTTB211P",
+                    "name": "Pártok és pártrendszerek",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTTB222L",
+                    "name": "A politikai elemzések gyakorlata",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKASB423A",
+                    "name": "Szaknyelv I. (Angol politikai I.)",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKASB122A",
+                    "name": "Idegen nyelv I.",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VETKTTB211G",
+                    "name": "Egyetemes politikai gondolkodás története II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VETKTTB111G"
+                    ]
+                },
+                {
+                    "code": "VETKTTB221M",
+                    "name": "A magyar politikai rendszer II.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKTTB211M"
+                    ]
+                },
+                {
+                    "code": "VETKEU5312M",
+                    "name": "Az EU intézményrendszere és működése",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKEU5312F"
+                    ]
+                },
+                {
+                    "code": "VETKEU4112I",
+                    "name": "Európai közigazgatási rendszerek",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTB114P",
+                    "name": "Összehasonlító politikatudomány",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VETKTTB111R",
+                        "VETKTTB121R"
+                    ]
+                },
+                {
+                    "code": "VETKTTB113D",
+                    "name": "Nemzetközi kapcsolatok története és diplomáciatörténet",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTB211V",
+                    "name": "Választási rendszerek",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKEUB213R",
+                    "name": "Európai regionális politika előadás",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKEUB222R",
+                    "name": "Európai regionális politika szeminárium",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTB512B",
+                    "name": "Bevezetés a közpolitikába",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKASB423C",
+                    "name": "Szaknyelv II. (Angol politikai II.)",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKASB122B",
+                    "name": "Idegen nyelv II.",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTB220P",
+                    "name": "Szakmai gyakorlat",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "5. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VETKTTB211A",
+                    "name": "A magyar politikai gondolkodás története I.",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTTB211T",
+                    "name": "Társadalmi mozgalmak",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTB112L",
+                    "name": "Lobbizás és érdekérvényesítés az Európai Unióban",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTB121K",
+                    "name": "Közvélemény kutatás",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTM412P",
+                    "name": "A politikai és gazdasági szupremáciák természetrajza a XX. században",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTB112T",
+                    "name": "Területi kohézió és többszintű kormányzás",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTB212G",
+                    "name": "A társadalmi alrendszerek szociológiája II. (Politikai és választásszociológia)",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTB112A",
+                    "name": "Összehasonlító közpolitika előadás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKTTB512B"
+                    ]
+                },
+                {
+                    "code": "VETKTTB222O",
+                    "name": "Összehasonlító közpolitika szeminárium",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKTTB512B"
+                    ]
+                },
+                {
+                    "code": "VETKTTB121E",
+                    "name": "Érdekegyeztetés és érdekszervezetek",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTB212M",
+                    "name": "Média és politikai napirend",
+                    "credits": 2
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 4
+                },
+                {
+                    "code": "VETKTTB322R",
+                    "name": "Szakdolgozati szeminárium I. (politológia)",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "6. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VETKTTB211B",
+                    "name": "A magyar politikai gondolkodás története II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VETKTTB211A"
+                    ]
+                },
+                {
+                    "code": "VETKTTB122E",
+                    "name": "Eszmék, ideológiák, kulturális sztereotípiák Közép-Kelet-Európában",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTB222P",
+                    "name": "Politikai kommunikáció",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTB222G",
+                    "name": "Idegen nyelvű forráselemzés",
+                    "credits": 2
+                },
+                {
+                    "code": "VEGTTUB213P",
+                    "name": "Társadalompolitika",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTB121H",
+                    "name": "Helyi politika",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTB322G",
+                    "name": "Gazdaságetika",
+                    "credits": 2
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 4
+                },
+                {
+                    "code": "VETKTTB322P",
+                    "name": "Szakdolgozati szeminárium II. (politológia)",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Szakdolgozat",
+                    "credits": 10
+                }
+            ]
+        }
+    ]
 }

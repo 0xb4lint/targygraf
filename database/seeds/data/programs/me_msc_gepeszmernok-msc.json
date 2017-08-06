@@ -1,5 +1,911 @@
 {
     "name": "Gépészmérnök MSc",
     "description": "Gépészmérnök MSc tanterve",
-    "curriculum_updated_at": "2014-09-01"
+    "curriculum_updated_at": "2014-09-01",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "GESGT001M",
+                    "name": "Automatizált gyártóeszközök",
+                    "credits": 3
+                },
+                {
+                    "code": "GEGTT302M",
+                    "name": "Ipari minőségbiztosítás",
+                    "credits": 4
+                },
+                {
+                    "code": "GEMTT002M",
+                    "name": "Korszerű anyagtechnológiák",
+                    "credits": 3
+                },
+                {
+                    "code": "GEMET320M",
+                    "name": "Mechanikai rezgések",
+                    "credits": 3
+                },
+                {
+                    "code": "GEFIT005M",
+                    "name": "Modern fizika",
+                    "credits": 3
+                },
+                {
+                    "code": "GEMAK629M",
+                    "name": "Valószínűség-számítás és matematikai statisztika",
+                    "credits": 3
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választott szakirányos tantárgy",
+                    "credits": 8,
+                    "course_block_references": [
+                        "Alkalmazott mechanika szakirány",
+                        "Általános géptervező szakirány",
+                        "CAD\/CAM szakirány",
+                        "Gépgyártástechnológia és gyártási rendszerek szakirány",
+                        "Hegesztéstechnológia szakirány",
+                        "Korszerű anyagok és technológiák szakirány",
+                        "Minőségbiztosítás szakirány",
+                        "Szerszámgépészeti szakirány",
+                        "Terméktervező szakirány",
+                        "Vegyipari gépészeti szakirány"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható tantárgy",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "GEMTT0001M",
+                    "name": "Anyagtudomány",
+                    "credits": 3
+                },
+                {
+                    "code": "GEMAN500M",
+                    "name": "Differenciálegyenletek",
+                    "credits": 4
+                },
+                {
+                    "code": "GEGET501M",
+                    "name": "Gépszerkezettan, Tervezés",
+                    "credits": 3
+                },
+                {
+                    "code": "GEGTT100M",
+                    "name": "Gyártási folyamatok és rendszerek",
+                    "credits": 3
+                },
+                {
+                    "code": "GEVEE201MN",
+                    "name": "Mérés, jelfeldolgozás, elektronika",
+                    "credits": 3
+                },
+                {
+                    "code": "GEVGT3011M",
+                    "name": "Környezetmenedzsment",
+                    "credits": 2
+                },
+                {
+                    "code": "GEAHT001M",
+                    "name": "Műszaki Hő- és áramlástan",
+                    "credits": 3
+                },
+                {
+                    "code": "GEMET310M",
+                    "name": "Rugalmasságtan",
+                    "credits": 3
+                },
+                {
+                    "code": "GEXXXxxxM",
+                    "name": "Projekt feladat A",
+                    "credits": 3
+                },
+                {
+                    "code": null,
+                    "name": "Kötelező választott szakirányos tantárgy",
+                    "credits": 3,
+                    "course_block_references": [
+                        "Alkalmazott mechanika szakirány",
+                        "Általános géptervező szakirány",
+                        "CAD\/CAM szakirány",
+                        "Gépgyártástechnológia és gyártási rendszerek szakirány",
+                        "Hegesztéstechnológia szakirány",
+                        "Korszerű anyagok és technológiák szakirány",
+                        "Minőségbiztosítás szakirány",
+                        "Szerszámgépészeti szakirány",
+                        "Terméktervező szakirány",
+                        "Vegyipari gépészeti szakirány"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "GEGED005M",
+                    "name": "Szakmai gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "GEXXXxxxM",
+                    "name": "Projekt feladat B",
+                    "credits": 3
+                },
+                {
+                    "code": "GEXXXxxxM",
+                    "name": "Diplomatervezés A",
+                    "credits": 15
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választott szakirányos tantárgy",
+                    "credits": 10,
+                    "course_block_references": [
+                        "Alkalmazott mechanika szakirány",
+                        "Általános géptervező szakirány",
+                        "CAD\/CAM szakirány",
+                        "Gépgyártástechnológia és gyártási rendszerek szakirány",
+                        "Hegesztéstechnológia szakirány",
+                        "Korszerű anyagok és technológiák szakirány",
+                        "Minőségbiztosítás szakirány",
+                        "Szerszámgépészeti szakirány",
+                        "Terméktervező szakirány",
+                        "Vegyipari gépészeti szakirány"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "GEALT143M",
+                    "name": "Anyagmozgató gépek és rendszerek",
+                    "credits": 3
+                },
+                {
+                    "code": "GTVSM7000M",
+                    "name": "Projektmenedzsment",
+                    "credits": 3
+                },
+                {
+                    "code": "GEXXXxxxM",
+                    "name": "Diplomatervezés B",
+                    "credits": 15
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választott szakirányos tantárgy",
+                    "credits": 6,
+                    "course_block_references": [
+                        "Alkalmazott mechanika szakirány",
+                        "Általános géptervező szakirány",
+                        "CAD\/CAM szakirány",
+                        "Gépgyártástechnológia és gyártási rendszerek szakirány",
+                        "Hegesztéstechnológia szakirány",
+                        "Korszerű anyagok és technológiák szakirány",
+                        "Minőségbiztosítás szakirány",
+                        "Szerszámgépészeti szakirány",
+                        "Terméktervező szakirány",
+                        "Vegyipari gépészeti szakirány"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható tantárgy",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Szakirányok",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "Alkalmazott mechanika szakirány",
+                    "credits": 27,
+                    "course_block_references": [
+                        "Alkalmazott mechanika szakirány"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Általános géptervező szakirány",
+                    "credits": 27,
+                    "course_block_references": [
+                        "Általános géptervező szakirány"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "CAD\/CAM szakirány",
+                    "credits": 27,
+                    "course_block_references": [
+                        "CAD\/CAM szakirány"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Gépgyártástechnológia és gyártási rendszerek szakirány",
+                    "credits": 27,
+                    "course_block_references": [
+                        "Gépgyártástechnológia és gyártási rendszerek szakirány"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Hegesztéstechnológia szakirány",
+                    "credits": 27,
+                    "course_block_references": [
+                        "Hegesztéstechnológia szakirány"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Korszerű anyagok és technológiák szakirány",
+                    "credits": 27,
+                    "course_block_references": [
+                        "Korszerű anyagok és technológiák szakirány"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Minőségbiztosítás szakirány",
+                    "credits": 27,
+                    "course_block_references": [
+                        "Minőségbiztosítás szakirány"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Szerszámgépészeti szakirány",
+                    "credits": 27,
+                    "course_block_references": [
+                        "Szerszámgépészeti szakirány"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Terméktervező szakirány",
+                    "credits": 27,
+                    "course_block_references": [
+                        "Terméktervező szakirány"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Vegyipari gépészeti szakirány",
+                    "credits": 27,
+                    "course_block_references": [
+                        "Vegyipari gépészeti szakirány"
+                    ]
+                }
+            ],
+            "is_counted": false
+        },
+        {
+            "name": "Alkalmazott mechanika szakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "GEMET336M",
+                    "name": "Nem-lineáris rezgéstan",
+                    "credits": 4
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "GEMET312M",
+                    "name": "Kontinuummechanika I.",
+                    "credits": 3
+                },
+                {
+                    "code": "GEMET335M",
+                    "name": "Szerkezetek dinamikája",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "GEMET322M",
+                    "name": "Kontinuummechanika II.",
+                    "credits": 4
+                },
+                {
+                    "code": "GEMET326M",
+                    "name": "Végeselemes modellezés I.",
+                    "credits": 3
+                },
+                {
+                    "code": "GEXXXxxxM",
+                    "name": "Kötelezően választható 1.",
+                    "credits": 3
+                },
+                {
+                    "code": "GEXXXxxxM",
+                    "name": "Kötelezően választható 2.",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "GEMET332M",
+                    "name": "Végeselemes modellezés II.",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "Általános géptervező szakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "GEGET503M",
+                    "name": "Gépszerkezetek méretezése",
+                    "credits": 4
+                },
+                {
+                    "code": "GEGET504M",
+                    "name": "Objektumsemleges tervezésmódszertan",
+                    "credits": 4
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "GEGET502M",
+                    "name": "Tribológia",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "GEGET505M",
+                    "name": "Gépszerkezetek optimalizása",
+                    "credits": 4
+                },
+                {
+                    "code": "GEGET514M",
+                    "name": "Gépszerkezetek analízise",
+                    "credits": 3
+                },
+                {
+                    "code": "GEXXXxxxM",
+                    "name": "Kötelezően választható 1.",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "GEGET505M",
+                    "name": "Különleges hajtások",
+                    "credits": 3
+                },
+                {
+                    "code": "GEXXXxxxM",
+                    "name": "Kötelezően választható 2.",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "CAD\/CAM szakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "GESGT049M",
+                    "name": "Integrált tervezőrendszerek I.",
+                    "credits": 4
+                },
+                {
+                    "code": "GEMTT080M",
+                    "name": "Műanyagalakítás",
+                    "credits": 4
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "GESGT0480M",
+                    "name": "Módszeres géptervezés",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "GESGT050M",
+                    "name": "Integrált tervező rendszerek II.",
+                    "credits": 4
+                },
+                {
+                    "code": "GESGT050M",
+                    "name": "Számítógépes NC programozás",
+                    "credits": 3
+                },
+                {
+                    "code": "GEXXXxxxM",
+                    "name": "Kötelezően választható 1.",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "GEMTT114M",
+                    "name": "Számítógépes technológiai tervezés",
+                    "credits": 3
+                },
+                {
+                    "code": "GEXXXxxxM",
+                    "name": "Kötelezően választható 2.",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Gépgyártástechnológia és gyártási rendszerek szakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "GEGTT306M",
+                    "name": "Forgácsoló megmunkálások",
+                    "credits": 4
+                },
+                {
+                    "code": "GEGTT308M",
+                    "name": "Minőségellenőrzés",
+                    "credits": 4
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "GEGTT304M",
+                    "name": "Gépgyártástechnológia",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "GEGTT312M",
+                    "name": "NC technológia",
+                    "credits": 4
+                },
+                {
+                    "code": "GEGTT313M",
+                    "name": "Szereléstervezés",
+                    "credits": 3
+                },
+                {
+                    "code": "GEXXXxxxM",
+                    "name": "Kötelezően választható 1.",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "GEGTT310M",
+                    "name": "Gyártóeszközök tervezése",
+                    "credits": 3
+                },
+                {
+                    "code": "GEXXXxxxM",
+                    "name": "Kötelezően választható 2.",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Hegesztéstechnológia szakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "GEMTT011M",
+                    "name": "Ömlesztő hegesztés I.",
+                    "credits": 3
+                },
+                {
+                    "code": "GEMTT013M",
+                    "name": "Sajtoló hegesztés",
+                    "credits": 4
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "GEMTT012M",
+                    "name": "Ömlesztő hegesztés II.",
+                    "credits": 4
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "GEMTT015M",
+                    "name": "Hegesztett szerkezetek gyártása",
+                    "credits": 4
+                },
+                {
+                    "code": "GEMTT016M",
+                    "name": "Hegesztés minőségbiztosítása",
+                    "credits": 3
+                },
+                {
+                    "code": "GEXXXxxxM",
+                    "name": "Kötelezően választható 1.",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "GEMTT014M",
+                    "name": "Anyagok és viselkedésük hegesztéskor",
+                    "credits": 3
+                },
+                {
+                    "code": "GEXXXxxxM",
+                    "name": "Kötelezően választható 2.",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Korszerű anyagok és technológiák szakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "GEMTT111M",
+                    "name": "Korszerű anyagok",
+                    "credits": 4
+                },
+                {
+                    "code": "GEMTT112M",
+                    "name": "Alakítástechnológia",
+                    "credits": 4
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "GEMTT074M",
+                    "name": "Anyagválasztás",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "GEMTT115M",
+                    "name": "Hegesztés és rokon technológiái",
+                    "credits": 3
+                },
+                {
+                    "code": "GEMTT116M",
+                    "name": "Szerkezetek integritása",
+                    "credits": 4
+                },
+                {
+                    "code": "GEMTT075M",
+                    "name": "Technológiai folyamatok modellezése",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "GEMTT113M",
+                    "name": "Hő- és felületkezelés",
+                    "credits": 3
+                },
+                {
+                    "code": "GEMTT114M",
+                    "name": "Számítógépes technológiai tervezés",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Minőségbiztosítás szakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "GEGTT306M",
+                    "name": "Forgácsoló megmunkálások",
+                    "credits": 4
+                },
+                {
+                    "code": "GEGTT332M",
+                    "name": "Gépipari minőségellenőrzés",
+                    "credits": 4
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "GEGTT330M",
+                    "name": "Minőségszabályozás",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "GEGTT336M",
+                    "name": "Minőségirányítás",
+                    "credits": 4
+                },
+                {
+                    "code": "GEGTT338M",
+                    "name": "Gépipari szerelés",
+                    "credits": 3
+                },
+                {
+                    "code": "GEXXXxxxM",
+                    "name": "Kötelezően választható 1.",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "GEGTT334M",
+                    "name": "Megbízhatóság",
+                    "credits": 3
+                },
+                {
+                    "code": "GEXXXxxxM",
+                    "name": "Kötelezően választható 2.",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Szerszámgépészeti szakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "GESGT051M",
+                    "name": "Szerszámgépek I.",
+                    "credits": 4
+                },
+                {
+                    "code": "GESGT052M",
+                    "name": "Tervezésinformatika",
+                    "credits": 4
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "GESGT054M",
+                    "name": "Módszeres géptervezés",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "GESGT026M",
+                    "name": "Szerszámgépek II.",
+                    "credits": 4
+                },
+                {
+                    "code": "GESGT009M",
+                    "name": "Hidraulikus elemek és rendszerek",
+                    "credits": 3
+                },
+                {
+                    "code": "GEXXXxxxM",
+                    "name": "Kötelezően választható 1.",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "GESGT053M",
+                    "name": "Gépek mérése",
+                    "credits": 3
+                },
+                {
+                    "code": "GEXXXxxxM",
+                    "name": "Kötelezően választható 2.",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Terméktervező szakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "GEGET503M",
+                    "name": "Gépszerkezetek méretezése",
+                    "credits": 4
+                },
+                {
+                    "code": "GEGET504M",
+                    "name": "Objektumsemleges tervezésmódszertan",
+                    "credits": 4
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "GEGET521M",
+                    "name": "Készségfejlesztő technikák",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "GEGET522M",
+                    "name": "Virtuális termékfejlesztés",
+                    "credits": 4
+                },
+                {
+                    "code": "GEAGT231M",
+                    "name": "Számítógépi grafika és geometriai modellezés",
+                    "credits": 3
+                },
+                {
+                    "code": "GEXXXxxxM",
+                    "name": "Kötelezően választható 1.",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "GEGET315M",
+                    "name": "Környezetszempontó tervezés",
+                    "credits": 3
+                },
+                {
+                    "code": "GEXXXxxxM",
+                    "name": "Kötelezően választható 2.",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Vegyipari gépészeti szakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "GEVGT302M",
+                    "name": "Vegyipari műveletek 1.",
+                    "credits": 3
+                },
+                {
+                    "code": "GEVGT305M",
+                    "name": "Nyomástartó rendszerek tervezése 1.",
+                    "credits": 4
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "GEVGT303M",
+                    "name": "Vegyipari műveletek 2. ",
+                    "credits": 4
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "GEVGT307M",
+                    "name": "Vegyipari folyamatok modellezése",
+                    "credits": 4
+                },
+                {
+                    "code": "GEVGT304M",
+                    "name": "Vegyipari műveletek 3.",
+                    "credits": 3
+                },
+                {
+                    "code": "GEXXXxxxM",
+                    "name": "Kötelezően választható 1.",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "GEVGT306M",
+                    "name": "Nyomástartó rendszerek tervezése 2.",
+                    "credits": 3
+                },
+                {
+                    "code": "GEXXXxxxM",
+                    "name": "Kötelezően választható 2.",
+                    "credits": 3
+                }
+            ]
+        }
+    ]
 }

@@ -1,5 +1,1028 @@
 {
     "name": "Környezetmérnök",
     "description": "Környezetmérnöki alapszak - nappali tagozat tanterve",
-    "curriculum_updated_at": "2014-03-12"
+    "curriculum_updated_at": "2014-03-12",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VEMKMAB112M",
+                    "name": "Matematikai analízis I.",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKMAB122M",
+                    "name": "Matematikai analízis I. gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKFI1312A",
+                    "name": "Fizika I.",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKFI1322A",
+                    "name": "Fizika gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKAKB112B",
+                    "name": "Általános és szervetlen kémia B",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKAKB122B",
+                    "name": "Általános és szervetlen kémia gyakorlat I. B",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKKVB143A",
+                    "name": "A környezetvédelem biológiai alapjai",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMKKVB122F",
+                    "name": "Földtudományi alapismeretek",
+                    "credits": 2
+                },
+                {
+                    "code": "VEGTGAB114M",
+                    "name": "Közgazdaságtan és vállalkozásgazdaságtan",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMKGEB121R",
+                    "name": "Műszaki rajz és ábrázoló geometria",
+                    "credits": 1
+                },
+                {
+                    "code": "VEMKFOB333S",
+                    "name": "Számítástechnika I.",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMKKV1112F",
+                    "name": "Földünk állapota",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKFTB112A",
+                    "name": "Bevezetés a környezettanba",
+                    "credits": 2
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VEMKMAB212M",
+                    "name": "Matematikai analízis II.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKMAB112M",
+                        "VEMKMAB122M"
+                    ]
+                },
+                {
+                    "code": "VEMKMAB222M",
+                    "name": "Matematikai analízis II. gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKMAB112M",
+                        "VEMKMAB122M"
+                    ]
+                },
+                {
+                    "code": "VEMKMA1144C",
+                    "name": "Numerikus matematika",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VEMKMAB112M",
+                        "VEMKMAB122M"
+                    ]
+                },
+                {
+                    "code": "VEMKMAB212S",
+                    "name": "Matematikai statisztika ",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKMAB112M",
+                        "VEMKMAB122M"
+                    ]
+                },
+                {
+                    "code": "VEMKFI1312B",
+                    "name": "Fizika II.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFI1312A",
+                        "VEMKFI1322A"
+                    ]
+                },
+                {
+                    "code": "VEMKIKB222B",
+                    "name": "Általános és szervetlen kémia gyakorlat II. B",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKAKB112B",
+                        "VEMKAKB122B"
+                    ]
+                },
+                {
+                    "code": "VEMKAKB233B",
+                    "name": "Általános és szervetlen kémia laborgyakorlat I. B",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEMKAKB112B",
+                        "VEMKAKB122B"
+                    ]
+                },
+                {
+                    "code": "VEMKOK1212B",
+                    "name": "Szerves kémia I. B",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKGEB211K",
+                    "name": "Gépészeti alapismeretek",
+                    "credits": 1,
+                    "prerequisites": [
+                        "VEMKGEB121R"
+                    ]
+                },
+                {
+                    "code": "VEMKGEB212H",
+                    "name": "Műszaki áramlástan és hőtan",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKMAB112M",
+                        "VEMKFI1312A"
+                    ]
+                },
+                {
+                    "code": "VEMKFKB212A",
+                    "name": "Fizikai kémia I.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKMAB122M",
+                        "VEMKFI1312A",
+                        "VEMKAKB112B"
+                    ]
+                },
+                {
+                    "code": "VEMKKVB212T",
+                    "name": "Talajtan, talajkémia",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKAKB112B",
+                        "VEMKKVB122F"
+                    ]
+                },
+                {
+                    "code": "VEMKKVB254G",
+                    "name": "Geoinformációs rendszerek",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VEMKFOB333S"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "3. féléves szűrő: 40 kredit",
+                    "credits": 0,
+                    "prerequisites": [
+                        "VEMKMAB112M",
+                        "VEMKMAB122M",
+                        "VEMKFI1312A",
+                        "VEMKFI1322A",
+                        "VEMKAKB112B",
+                        "VEMKAKB122B",
+                        "VEMKKVB143A",
+                        "VEMKKVB122F",
+                        "VEGTGAB114M",
+                        "VEMKGEB121R",
+                        "VEMKFOB333S",
+                        "VEMKKV1112F",
+                        "VEMKFTB112A"
+                    ]
+                },
+                {
+                    "code": "VEMKOK1112B",
+                    "name": "Szerves kémia II. B",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKOK1212B"
+                    ]
+                },
+                {
+                    "code": "VEMKKVB112O",
+                    "name": "Ökológia",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKKVB143A"
+                    ]
+                },
+                {
+                    "code": "VEMKLIK112L",
+                    "name": "Limnológia és hidrobiológia I.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKAKB112B",
+                        "VEMKKVB122F"
+                    ]
+                },
+                {
+                    "code": "VEMKKVB112K",
+                    "name": "Környezetgazdaságtan",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEGTGAB114M"
+                    ]
+                },
+                {
+                    "code": "VEMKKVB122K",
+                    "name": "Mérnöki kommunikáció és magatartás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKKV1112F"
+                    ]
+                },
+                {
+                    "code": "VEMKFKB312A",
+                    "name": "Fizikai kémia II.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(VEMKAKB122B)",
+                        "VEMKFKB212A"
+                    ]
+                },
+                {
+                    "code": "VEMKFKB322A",
+                    "name": "Fizikai kémia számítási gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFKB212A",
+                        "(VEMKFKB312A)"
+                    ]
+                },
+                {
+                    "code": "VEMKKAB114A",
+                    "name": "Kémiai analízis",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VEMKAKB112B"
+                    ]
+                },
+                {
+                    "code": "VEMKKVB114I",
+                    "name": "Ipari technológiák és szennyezéseik",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VEMKOK1212B",
+                        "VEMKFKB212A"
+                    ]
+                },
+                {
+                    "code": "VEMKKVB112Z",
+                    "name": "Zaj- és rezgésvédelem",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEMKFI1312A"
+                    ]
+                },
+                {
+                    "code": "VEMKRK3321S",
+                    "name": "Sugárzástani alapismeretek",
+                    "credits": 1
+                },
+                {
+                    "code": "VEMKKVB132I",
+                    "name": "Környezetinformatika I.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFOB333S"
+                    ]
+                },
+                {
+                    "code": "VEMKOKB112B",
+                    "name": "Biokémia",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKOK1212B"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "Szabadon választható Menedzsment szervezés modul",
+                    "credits": 2,
+                    "course_block_references": [
+                        "Menedzsment szervezés modul"
+                    ]
+                },
+                {
+                    "code": "VEMKOK1232K",
+                    "name": "Szerves kémia laborgyakorlat B",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKOK1112B"
+                    ]
+                },
+                {
+                    "code": "VEMKKVB212M",
+                    "name": "Minőségbiztosítás",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKGEB131A",
+                    "name": "Áramlás- és hőtechnikai gépek laborgyakorlat",
+                    "credits": 1,
+                    "prerequisites": [
+                        "VEMKGEB212H"
+                    ]
+                },
+                {
+                    "code": "VEMKKVB222B",
+                    "name": "Biztonságtechnika, munkavédelem és kockázatelemzés",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKKVB143A"
+                    ]
+                },
+                {
+                    "code": "VEMKKAB232A",
+                    "name": "Kémiai analízis laborgyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKKAB114A"
+                    ]
+                },
+                {
+                    "code": "VEMKMUB244A",
+                    "name": "Művelettan",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VEMKFKB312A"
+                    ]
+                },
+                {
+                    "code": "VEMKFTB212L",
+                    "name": "Légkörtan",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKAKB112B"
+                    ]
+                },
+                {
+                    "code": "VEMKKKB212K",
+                    "name": "Környezeti kémia",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKAKB112B"
+                    ]
+                },
+                {
+                    "code": "VEMKKVB212G",
+                    "name": "Vízgazdálkodás, vízelőkészítés",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKAKB112B",
+                        "VEMKGEB211K"
+                    ]
+                },
+                {
+                    "code": "VEMKKVB212H",
+                    "name": "Hulladékgazdálkodás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKKVB212T",
+                        "VEMKOK1112B"
+                    ]
+                },
+                {
+                    "code": "VEMKRK3312O",
+                    "name": "Radioökológia",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKRK3321S"
+                    ]
+                },
+                {
+                    "code": "VEMKKVB222T",
+                    "name": "Természet- és tájvédelem",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKKVB112O"
+                    ]
+                },
+                {
+                    "code": "VEMKKVB232I",
+                    "name": "Környezetinformatika II.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKKVB132I"
+                    ]
+                },
+                {
+                    "code": "VEMKOKB231K",
+                    "name": "Biokémia laborgyakorlat",
+                    "credits": 1,
+                    "prerequisites": [
+                        "VEMKOKB112B"
+                    ]
+                },
+                {
+                    "code": "VEMKKVX00T",
+                    "name": "Nyári természetvédelmi szakmai gyakorlat",
+                    "credits": 0,
+                    "prerequisites": [
+                        "(VEMKKVB222T)"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "5. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "5. féléves szűrő: 75 kredit",
+                    "credits": 0,
+                    "prerequisites": [
+                        "VEMKMAB112M",
+                        "VEMKMAB122M",
+                        "VEMKFI1312A",
+                        "VEMKFI1322A",
+                        "VEMKAKB112B",
+                        "VEMKAKB122B",
+                        "VEMKKVB143A",
+                        "VEMKKVB122F",
+                        "VEMKMA1144C",
+                        "VEMKFI1312B",
+                        "VEMKIKB222B",
+                        "VEMKAKB233B",
+                        "VEMKOK1212B",
+                        "VEMKOK1112B",
+                        "VEMKKVB112O",
+                        "VEMKLIK112L"
+                    ]
+                },
+                {
+                    "code": "VEMKLIB112E",
+                    "name": "Környezetegészségtan",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKOK1212B"
+                    ]
+                },
+                {
+                    "code": "VEMKKAB111K",
+                    "name": "Korszerű környezetanalitikai módszerek",
+                    "credits": 1,
+                    "prerequisites": [
+                        "VEMKKAB114A"
+                    ]
+                },
+                {
+                    "code": "VEMKKAB131K",
+                    "name": "Korszerű környezetanalitikai módszerek laboratóriumi gyakorlat",
+                    "credits": 1,
+                    "prerequisites": [
+                        "VEMKKAB232A"
+                    ]
+                },
+                {
+                    "code": "VEMKMUB132A",
+                    "name": "Művelettan laborgyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKMUB244A"
+                    ]
+                },
+                {
+                    "code": "VEMKFOB114M",
+                    "name": "Technológiai rendszerek modellezése",
+                    "credits": 4,
+                    "prerequisites": [
+                        "(VEMKFKB312A)"
+                    ]
+                },
+                {
+                    "code": "VEMKKVB112S",
+                    "name": "Szennyvíztisztítás alapjai",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKAKB112B",
+                        "VEMKGEB211K"
+                    ]
+                },
+                {
+                    "code": "VEMKKVB132V",
+                    "name": "Szennyvíztisztítás alapjai laboratóriumi gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKKVB212G"
+                    ]
+                },
+                {
+                    "code": "VEMKKVB112L",
+                    "name": "A levegőtisztaság-védelem alapjai",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKGEB211K",
+                        "VEMKGEB212H"
+                    ]
+                },
+                {
+                    "code": "VEMKKVB132L",
+                    "name": "A levegőtisztaság-védelem alapjai laboratóriumi gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKGEB211K",
+                        "VEMKGEB212H"
+                    ]
+                },
+                {
+                    "code": "VEMKKVB112T",
+                    "name": "Talaj- és talajvízvédelem",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKKVB212T",
+                        "VEMKOK1112B",
+                        "VEMKLIK112L"
+                    ]
+                },
+                {
+                    "code": "VEMKLIB112M",
+                    "name": "Mikrobiológia alapjai",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKKVB143A"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMKKVB114K",
+                    "name": "Környezetállapot-értékelés, auditálás",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VEMKKVB232I"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "6. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VEMKKVB212P",
+                    "name": "Környezetpolitika, környezet-szociológia",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKKVB222K",
+                    "name": "Környezeti monitorozás I.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKKAB114A",
+                        "(VEMKKVB232I)"
+                    ]
+                },
+                {
+                    "code": "VEMKKVB222M",
+                    "name": "Magyarország környezeti állapota",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKKV1112F"
+                    ]
+                },
+                {
+                    "code": "VEMKOKB112Z",
+                    "name": "Zöld kémia",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKOK1112B"
+                    ]
+                },
+                {
+                    "code": "VEMKZOB212T",
+                    "name": "Toxikológia, ökotoxikológia",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(VEMKOKB112B)",
+                        "VEMKLIB112E"
+                    ]
+                },
+                {
+                    "code": "VEMKZOB231T",
+                    "name": "Toxikológia, ökotoxikológia laboratóriumi gyakorlat",
+                    "credits": 1,
+                    "prerequisites": [
+                        "(VEMKOKB112B)",
+                        "VEMKLIB112E"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Speciális szakirányú ismeretek",
+                    "credits": 12,
+                    "course_block_references": [
+                        "Környezettechnológia szakirány 6. félév",
+                        "Környezetállapot-értékelés szakirány 6. félév",
+                        "Radioökológia szakirány 6. félév"
+                    ]
+                },
+                {
+                    "code": "VEMKKVB232T",
+                    "name": "Tervezési feladat I.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKKVB212H",
+                        "VEMKKVB112S",
+                        "VEMKKVB112L"
+                    ]
+                },
+                {
+                    "code": "VEMKKVX00K",
+                    "name": "Környezettechnológiai szakmai gyakorlat",
+                    "credits": 0,
+                    "prerequisites": [
+                        "VEMKKVB212H",
+                        "VEMKKVB112S",
+                        "VEMKKVB112L"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "7. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VEMKKVB112J",
+                    "name": "Környezetjogi ismeretek",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKKVB112R",
+                    "name": "Környezeti menedzsment rendszerek",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(VEMKKVB114K)"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Speciális szakirányú ismeretek",
+                    "credits": 9,
+                    "course_block_references": [
+                        "Környezettechnológia szakirány 7. félév",
+                        "Környezetállapot-értékelés szakirány 7. félév",
+                        "Radioökológia szakirány 7. félév"
+                    ]
+                },
+                {
+                    "code": "VEMKKVB132T",
+                    "name": "Tervezési feladat II.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKKVB232T"
+                    ]
+                },
+                {
+                    "code": "VEMKKMB1XXS",
+                    "name": "Szakdolgozat",
+                    "credits": 15,
+                    "prerequisites": [
+                        "VEMKKVB232T"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Menedzsment szervezés modul",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VEGTMEB144M",
+                    "name": "Általános menedzsment",
+                    "credits": 4
+                },
+                {
+                    "code": "VEGTVEB314T",
+                    "name": "Termelés és szolgáltatás menedzsment",
+                    "credits": 4
+                },
+                {
+                    "code": "VEGTVEB214G",
+                    "name": "Emberi erőforrás gazdálkodás",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMKME2312K",
+                    "name": "Kockázatmenedzsment",
+                    "credits": 2
+                },
+                {
+                    "code": "VEGTVEB344P",
+                    "name": "Projekt menedzsment",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMKOLB114O",
+                    "name": "Optimalizálás az olajiparban",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "Környezettechnológia szakirány 6. félév",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VEMKKVT212K",
+                    "name": "Közlekedés és mezőgazdaság környezeti hatásai",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKGEB211K",
+                        "VEMKKVB212T",
+                        "(VEMKOKB112B)"
+                    ]
+                },
+                {
+                    "code": "VEMKKVT232V",
+                    "name": "Víztisztítási technológiák laborgyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKKVB212G"
+                    ]
+                },
+                {
+                    "code": "VEMKKVT222H",
+                    "name": "Hulladékgazdálkodás gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(VEMKKVB212H)"
+                    ]
+                },
+                {
+                    "code": "VEMKKVT232H",
+                    "name": "Hulladékgazdálkodás laborgyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(VEMKKVB212H)"
+                    ]
+                },
+                {
+                    "code": "VEMKKVT222L",
+                    "name": "Levegőtisztaság-védelem gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKKVB112L",
+                        "VEMKKVB132L"
+                    ]
+                },
+                {
+                    "code": "VEMKKVT232L",
+                    "name": "Levegőtisztaság-védelem laborgyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKKVB112L",
+                        "VEMKKVB132L"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Környezettechnológia szakirány 7. félév",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VEMKKVT112E",
+                    "name": "Energiagazdálkodás és környezetvédelem",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKGEB211K",
+                        "VEMKKVB212P"
+                    ]
+                },
+                {
+                    "code": "VEMKKVT133S",
+                    "name": "Szennyvíztisztítási technológiák laborgyakorlat",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEMKKVB112S",
+                        "VEMKKVB132V"
+                    ]
+                },
+                {
+                    "code": "VEMKKVT122T",
+                    "name": "Talaj- és talajvízvédelem gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(VEMKKVB112T)"
+                    ]
+                },
+                {
+                    "code": "VEMKKVT122H",
+                    "name": "Hulladékszegény technológiák gyakorlat",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Környezetállapot-értékelés szakirány 6. félév",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VEMKKVA212K",
+                    "name": "Környezetmodellezés",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKKVB232I"
+                    ]
+                },
+                {
+                    "code": "VEMKKVA232G",
+                    "name": "Geoinformációs rendszerek alkalmazásai",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKKVB232I"
+                    ]
+                },
+                {
+                    "code": "VEMKKVA222T",
+                    "name": "Tájértékelés, tájtervezés",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKKVB143A",
+                        "VEMKKVB254G"
+                    ]
+                },
+                {
+                    "code": "VEMKKVA222K",
+                    "name": "Környezetterhelhetőség",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKLIK112L",
+                        "VEMKKVB222T"
+                    ]
+                },
+                {
+                    "code": "VEMKKVA232K",
+                    "name": "Környezetvédelem az interneten",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKKVB232I"
+                    ]
+                },
+                {
+                    "code": "VEMKKVA222A",
+                    "name": "Környezetállapot-értékelés, auditálás I. gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKKVB114K"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Környezetállapot-értékelés szakirány 7. félév",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VEMKKVA133K",
+                    "name": "Környezetmodellezés laborgyakorlat",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEMKKVA212K"
+                    ]
+                },
+                {
+                    "code": "VEMKKVA163M",
+                    "name": "Környezeti monitorozás II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEMKKVB222K"
+                    ]
+                },
+                {
+                    "code": "VEMKKVA123A",
+                    "name": "Környezetállapot-értékelés, auditálás II. gyakorlat",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEMKKVA222A"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Radioökológia szakirány 6. félév",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VEMKRK3212N",
+                    "name": "Nukleáris méréstechnika",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKRK3321S"
+                    ]
+                },
+                {
+                    "code": "VEMKRK4212D",
+                    "name": "Dozimetria és sugárvédelem",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKRK3321S"
+                    ]
+                },
+                {
+                    "code": "VEMKRKSV12A",
+                    "name": "Atomenergetika",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKRK3321S"
+                    ]
+                },
+                {
+                    "code": "VEMKRKR212N",
+                    "name": "Nukleáris balesetelhárítás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKRK3321S"
+                    ]
+                },
+                {
+                    "code": "VEMKRK4212R",
+                    "name": "Radioizotóp alkalmazások",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKRK3321S"
+                    ]
+                },
+                {
+                    "code": "VEMKRKR222S",
+                    "name": "Sugaras és nukleáris balesetek, tapasztalatok",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKRK3321S"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Radioökológia szakirány 7. félév",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VEMKRKR113S",
+                    "name": "Sugárzások és izotópok a természetben",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEMKRK3321S"
+                    ]
+                },
+                {
+                    "code": "VEMKRKR136R",
+                    "name": "Radioökológia és méréstechnika laborgyakorlat",
+                    "credits": 6,
+                    "prerequisites": [
+                        "VEMKRK3312O",
+                        "VEMKRK3212N"
+                    ]
+                }
+            ]
+        }
+    ]
 }

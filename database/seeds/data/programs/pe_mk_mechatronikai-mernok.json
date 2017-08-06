@@ -1,5 +1,873 @@
 {
     "name": "Mechatronikai mérnök",
     "description": "Mechatronikai mérnöki alapszak - nappali tagozat tanterve",
-    "curriculum_updated_at": "2014-10-15"
+    "curriculum_updated_at": "2014-10-15",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VEMKMAB112M",
+                    "name": "Matematikai analízis I.",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKMAB122M",
+                    "name": "Matematikai analízis I. gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKMA1143G",
+                    "name": "Lineáris algebra",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMKFI1312A",
+                    "name": "Fizika I.",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKFI1322A",
+                    "name": "Fizika I. gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKGEB113V",
+                    "name": "Gépelelemek és ábrázolás",
+                    "credits": 3
+                },
+                {
+                    "code": "VEGTGAB114M",
+                    "name": "Közgazdaságtan és vállalkozásgazdaságtan",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMKGEB112M",
+                    "name": "Műszaki mechanika I.",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKGEB122M",
+                    "name": "Műszaki mechanika I. gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKGEB114A",
+                    "name": "Szerkezeti anyagok és technológiájuk (Fémes) I.",
+                    "credits": 4
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható társadalomtudományi tárgy (2 kredit)",
+                    "credits": 2,
+                    "course_block_references": [
+                        "Kötelezően választható társadalomtudományi tárgyak (összesen 4 kredit)"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VEMKFI1312B",
+                    "name": "Fizika II.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFI1312A",
+                        "VEMKFI1322A"
+                    ]
+                },
+                {
+                    "code": "VEMKFI1332A",
+                    "name": "Fizika laboratóriumi gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFI1312A",
+                        "VEMKFI1322A"
+                    ]
+                },
+                {
+                    "code": "VEMKMAB212S",
+                    "name": "Matematikai statisztika",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKMAB112M",
+                        "VEMKMAB122M"
+                    ]
+                },
+                {
+                    "code": "VEMKMA1144C",
+                    "name": "Numerikus módszerek",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VEMKMAB112M",
+                        "VEMKMAB122M"
+                    ]
+                },
+                {
+                    "code": "VEMKMAB222M",
+                    "name": "Matematikai analízis II. gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKMAB112M",
+                        "VEMKMAB122M"
+                    ]
+                },
+                {
+                    "code": "VEMKMAB212M",
+                    "name": "Matematikai analízis II.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKMAB112M"
+                    ]
+                },
+                {
+                    "code": "VEMKGEB212M",
+                    "name": "Műszaki mechanika II.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKGEB112M",
+                        "VEMKGEB122M"
+                    ]
+                },
+                {
+                    "code": "VEMKGEB222M",
+                    "name": "Műszaki mechanika II. gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKGEB112M",
+                        "VEMKGEB122M"
+                    ]
+                },
+                {
+                    "code": "VEMKGEB212H",
+                    "name": "Műszaki áramlás- és hőtan",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKMAB112M",
+                        "VEMKFI1312A"
+                    ]
+                },
+                {
+                    "code": "VEMKFIB212E",
+                    "name": "Elektronika",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFI1312A"
+                    ]
+                },
+                {
+                    "code": "VEMKFIB243V",
+                    "name": "Villamosságtan",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEMKMAB112M"
+                    ]
+                },
+                {
+                    "code": "VEMKFOB333S",
+                    "name": "Számítástechnika I.",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "3. féléves szűrő: 40 kredit",
+                    "credits": 0,
+                    "prerequisites": [
+                        "VEMKMAB112M",
+                        "VEMKMAB122M",
+                        "VEMKMA1143G",
+                        "VEMKFI1312A",
+                        "VEMKFI1322A",
+                        "VEMKGEB113V",
+                        "VEGTGAB114M",
+                        "VEMKGEB112M",
+                        "VEMKGEB122M",
+                        "VEMKGEB114A"
+                    ]
+                },
+                {
+                    "code": "VEMKGEB143M",
+                    "name": "Műszaki mechanika III.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEMKGEB212M",
+                        "VEMKGEB222M"
+                    ]
+                },
+                {
+                    "code": "VEMKFIB155M",
+                    "name": "Mechatronika I.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "VEMKFIB212E"
+                    ]
+                },
+                {
+                    "code": "VEMKFIB134E",
+                    "name": "Logikai áramkörök",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VEMKFI1312B"
+                    ]
+                },
+                {
+                    "code": "VEMKFIB232E",
+                    "name": "Elektronika laboratóriumi gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFIB212E"
+                    ]
+                },
+                {
+                    "code": "VEMIVIB313E",
+                    "name": "Elektronikus elemek és áramkörök",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEMKFIB212E"
+                    ]
+                },
+                {
+                    "code": "VEMIVIB132E",
+                    "name": "Elektronikus elemek és áramkörök laboratóriumi gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFIB212E"
+                    ]
+                },
+                {
+                    "code": "VEMKFOB254R",
+                    "name": "Rendszertechnika",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VEMKFOB333S"
+                    ]
+                },
+                {
+                    "code": "VEMKFOB133S",
+                    "name": "Számítástechnika II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEMKFOB333S"
+                    ]
+                },
+                {
+                    "code": "VEMKFIB354M",
+                    "name": "Mechatronikai szoftverek",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMKRK3321S",
+                    "name": "Sugárzástani alapismeretek",
+                    "credits": 1
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható társadalomtudományi tárgy (2 kredit)",
+                    "credits": 2,
+                    "course_block_references": [
+                        "Kötelezően választható társadalomtudományi tárgyak (összesen 4 kredit)"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VEMKFIB212M",
+                    "name": "Mechatronika II.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFIB155M"
+                    ]
+                },
+                {
+                    "code": "VEMKFIB433M",
+                    "name": "Mechatronikai rendszerek laboratóriumi gyakorlat",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEMKFIB155M"
+                    ]
+                },
+                {
+                    "code": "VEMKGEB243M",
+                    "name": "Műszaki mechanika IV.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEMKGEB143M"
+                    ]
+                },
+                {
+                    "code": "VEMKFOB213F",
+                    "name": "Folyamatirányítás",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEMKFOB333S"
+                    ]
+                },
+                {
+                    "code": "VEMKFOB212I",
+                    "name": "Irányításelmélet és technika",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFOB333S"
+                    ]
+                },
+                {
+                    "code": "VEMKFOB232I",
+                    "name": "Irányításelmélet és technika laboratóriumi gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFOB133S",
+                        "(VEMKFOB212I)"
+                    ]
+                },
+                {
+                    "code": "VEMKFIB255V",
+                    "name": "Mikrovezérlők",
+                    "credits": 5,
+                    "prerequisites": [
+                        "VEMKFIB134E"
+                    ]
+                },
+                {
+                    "code": "VEMKGEB354S",
+                    "name": "Szervohajtások",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VEMKFIB155M"
+                    ]
+                },
+                {
+                    "code": "VEMKGEB112F",
+                    "name": "Finommechanika",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKGEB222M"
+                    ]
+                },
+                {
+                    "code": "VEMKGEB234S",
+                    "name": "Gépszerkezettan III. (CAD) laboratóriumi gyakorlat",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VEMKGEB113V"
+                    ]
+                },
+                {
+                    "code": "VEMKAKB212B",
+                    "name": "Általános kémia",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "5. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "5. féléves szűrő: 75 kredit",
+                    "credits": 0,
+                    "prerequisites": [
+                        "VEMKMAB112M",
+                        "VEMKMAB122M",
+                        "VEMKMA1143G",
+                        "VEMKFI1312A",
+                        "VEMKFI1322A",
+                        "VEMKGEB113V",
+                        "VEGTGAB114M",
+                        "VEMKGEB112M",
+                        "VEMKGEB122M",
+                        "VEMKGEB114A",
+                        "VEMKFI1312B",
+                        "VEMKFI1332A",
+                        "VEMKMA1144C",
+                        "VEMKFIB212E",
+                        "VEMKFIB243V",
+                        "VEMKFOB333S",
+                        "VEMKFIB155M",
+                        "VEMKFIB134E",
+                        "VEMKFIB232E",
+                        "VEMKFOB133S"
+                    ]
+                },
+                {
+                    "code": "VEMKFK4212M",
+                    "name": "Különleges megmunkálások I.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFI1312B"
+                    ]
+                },
+                {
+                    "code": "VEMKFKB121M",
+                    "name": "Különleges megmunkálások I. gyakorlat",
+                    "credits": 1,
+                    "prerequisites": [
+                        "VEMKFI1312B"
+                    ]
+                },
+                {
+                    "code": "VEMKFOB133F",
+                    "name": "Folyamatirányítás laboratóriumi gyakorlat",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEMKFOB213F"
+                    ]
+                },
+                {
+                    "code": "VEMKFI4212O",
+                    "name": "Optika és lézertechnika",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFI1312B",
+                        "VEMKFIB212E"
+                    ]
+                },
+                {
+                    "code": "VEMKFIB122O",
+                    "name": "Optika és lézertechnika gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFI1312B",
+                        "VEMKFIB212E",
+                        "(VEMKFI4212O)"
+                    ]
+                },
+                {
+                    "code": "VEMKFOB212A",
+                    "name": "Adatfeldolgozás és programozás",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VEMKFOB133S"
+                    ]
+                },
+                {
+                    "code": "VEMKGEB153H",
+                    "name": "Hidraulika és pneumatika",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEMKFI1312B"
+                    ]
+                },
+                {
+                    "code": "VEGTMEB312L",
+                    "name": "Logisztika",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKMAB212S"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható tárgy (2 kredit)",
+                    "credits": 2,
+                    "course_block_references": [
+                        "Kötelezően választható tárgyak (összesen 8 kredit)"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "6. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VEMKFOB266M",
+                    "name": "Mechatronika projekt",
+                    "credits": 6,
+                    "prerequisites": [
+                        "VEMKFIB155M"
+                    ]
+                },
+                {
+                    "code": "VEMKKVB212M",
+                    "name": "Minőségbiztosítás",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKVVB212J",
+                    "name": "Jogi alapismeretek",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható menedzsment tárgy (2 kredit)",
+                    "credits": 2,
+                    "course_block_references": [
+                        "Kötelezően választható menedzsment tárgyak (összesen 2 kredit)"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható tárgy (4 kredit)",
+                    "credits": 4,
+                    "course_block_references": [
+                        "Kötelezően választható tárgyak (összesen 8 kredit)"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható tárgy (3 kredit)",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "7. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VEMKKVB112M",
+                    "name": "Környezetvédelem, biztonságtechnika",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKAKB212B"
+                    ]
+                },
+                {
+                    "code": "VEMKMEB1XXS",
+                    "name": "Szakdolgozat",
+                    "credits": 15
+                },
+                {
+                    "code": "VEMKFIB3X2G",
+                    "name": "Szakmai gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható tárgy (2 kredit)",
+                    "credits": 2,
+                    "course_block_references": [
+                        "Kötelezően választható tárgyak (összesen 8 kredit)"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható tárgy (7 kredit)",
+                    "credits": 7
+                }
+            ]
+        },
+        {
+            "name": "Szakirány",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "Folyamatipari rendszerek mechatronikája szakirány",
+                    "credits": 21,
+                    "course_block_references": [
+                        "Folyamatipari rendszerek mechatronikája szakirány (5. félév)",
+                        "Folyamatipari rendszerek mechatronikája szakirány (6. félév)"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Optika és labortechnika szakirány",
+                    "credits": 21,
+                    "course_block_references": [
+                        "Optika és labortechnika szakirány (5. félév)",
+                        "Optika és labortechnika szakirány (6. félév)"
+                    ]
+                }
+            ],
+            "is_counted": false
+        },
+        {
+            "name": "Kötelezően választható társadalomtudományi tárgyak (összesen 4 kredit)",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VEMKTT1312F",
+                    "name": "Filozófia",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKTT1312P",
+                    "name": "Politológia",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKTT1312S",
+                    "name": "Szociológia",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKEU1312E",
+                    "name": "EU ismeretek",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKGES523E",
+                    "name": "Etika, protokoll, művelődés (nem csak műszakiaknak)",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMKGES522E",
+                    "name": "Etika, protokoll, művelődés (nem csak műszakiaknak) II.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKGES523E"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választható menedzsment tárgyak (összesen 2 kredit)",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VEGTMEB144M",
+                    "name": "Általános menedzsment (4 kredit)",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VEGTGAB114M"
+                    ]
+                },
+                {
+                    "code": "VEGTMEB312A",
+                    "name": "Általános menedzsment (2 kredit)",
+                    "credits": 2
+                },
+                {
+                    "code": "VEGTVEB344P",
+                    "name": "Projekt menedzsment (4 kredit)",
+                    "credits": 4
+                },
+                {
+                    "code": "VEGTVEB112P",
+                    "name": "Projekt menedzsment (2 kredit)",
+                    "credits": 2
+                },
+                {
+                    "code": "VEGTVEB214G",
+                    "name": "Emberi erőforrás gazdálkodás",
+                    "credits": 4
+                },
+                {
+                    "code": "VEGTVEB314T",
+                    "name": "Termelés és szolgáltatás menedzsment",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VEGTGAB114M"
+                    ]
+                },
+                {
+                    "code": "VEGTMEB312T",
+                    "name": "Termelés menedzsment",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKME2312K",
+                    "name": "Kockázatmenedzsment",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKTE3242M",
+                    "name": "Minőségirányítás az iparban",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választható tárgyak (összesen 8 kredit)",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VEMKFIB522V",
+                    "name": "Virtuális méréstechnika és LabVIEW",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKKVB112Z",
+                    "name": "Zaj- és rezgésvédelem",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFI1312A"
+                    ]
+                },
+                {
+                    "code": "VEMKRKSV12A",
+                    "name": "Atomenergetika",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKRK3321S"
+                    ]
+                },
+                {
+                    "code": "VEMKSIB312K",
+                    "name": "Korszerű szerkezeti anyagok",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKGEB114A"
+                    ]
+                },
+                {
+                    "code": "VEMKVVB232K",
+                    "name": "Mérnöki kommunikáció informatikai eszközei",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKFIF320A",
+                    "name": "Szakmai angol nyelv",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKFIB533M",
+                    "name": "Mikrovezérlők mechatronikai alkalmazásai",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEMKFIB255V"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Folyamatipari rendszerek mechatronikája szakirány (5. félév)",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VEMKFOB154B",
+                    "name": "Bevezetés a folyamatipari technológiákba",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMIVI3313R",
+                    "name": "Robottechnika",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEMKGEB354S"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Folyamatipari rendszerek mechatronikája szakirány (6. félév)",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VEMKFOB255F",
+                    "name": "Mechatronikai folyamat-rendszerek ",
+                    "credits": 5,
+                    "prerequisites": [
+                        "VEMKFOB154B"
+                    ]
+                },
+                {
+                    "code": "VEMKVI3244I",
+                    "name": "Integrált gyártórendszerek",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMKGEB243B",
+                    "name": "Anyagmozgató gépek és fémszerkezetek I.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEMKGEB222M"
+                    ]
+                },
+                {
+                    "code": "VEMKFOB132S",
+                    "name": "Mechatronikai rendszerek szimulációja",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFOB133S"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Optika és labortechnika szakirány (5. félév)",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VEMKFIB412M",
+                    "name": "Mechatronikai méréstechnika",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFI1312B"
+                    ]
+                },
+                {
+                    "code": "VEMKAVB252A",
+                    "name": "Anyagvizsgálati módszerek",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFI1312B"
+                    ]
+                },
+                {
+                    "code": "VEMKRK3212N",
+                    "name": "Nukleáris méréstechnika",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKFIB255M",
+                    "name": "Mérő és adatgyűjtő rendszerek",
+                    "credits": 5,
+                    "prerequisites": [
+                        "VEMKFIB134E",
+                        "VEMKFIB354M"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Optika és labortechnika szakirány (6. félév)",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VEMKFIB432P",
+                    "name": "PLC programozás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFIB134E"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Vákuumtechnika",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFI1312B"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Optikai labortechnika",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFI4212O"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Metrológia",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Bevezetés a LabVIEW FPGA használatába",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFIB255M"
+                    ]
+                }
+            ]
+        }
+    ]
 }

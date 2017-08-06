@@ -19,8 +19,8 @@ class CreateCoursesTable extends Migration
             $table->integer('course_block_id')->unsigned()->nullable();
             $table->foreign('course_block_id')->references('id')->on('course_blocks');
 
-            $table->string('code', 20);
-            $table->string('name');
+            $table->string('code', 50)->nullable();
+            $table->string('name')->nullable();
             $table->tinyInteger('ordering')->unsigned()->default(0);
 
             $table->tinyInteger('credits')->unsigned()->default(0);

@@ -1,5 +1,537 @@
 {
     "name": "Szabadbölcsész",
     "description": "Szabadbölcsész alapszak - Etika szakirány - nappali tagozat tanterve",
-    "curriculum_updated_at": "2011-06-24"
+    "curriculum_updated_at": "2011-06-24",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VETKTTB143F",
+                    "name": "Filozófiatörténet I.",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKAEB143A",
+                    "name": "Bevezetés a filozófiába",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKAEB121T",
+                    "name": "Tudományrendszertan és könyvtárismeret",
+                    "credits": 1
+                },
+                {
+                    "code": "VETKAEB142T",
+                    "name": "Tudományos gondolkodás története és tudományfilozófia",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKAEB121M",
+                    "name": "Kutatásmódszertan és tudományos írás",
+                    "credits": 1
+                },
+                {
+                    "code": "VETKAEB142L",
+                    "name": "Logika",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKAEB143E",
+                    "name": "Etikatörténet",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKAEB111B",
+                    "name": "Biológiai embertan I. előadás",
+                    "credits": 1
+                },
+                {
+                    "code": "VETKAEB121B",
+                    "name": "Biológiai embertan I. szeminárium",
+                    "credits": 1
+                },
+                {
+                    "code": "VETKAEB142A",
+                    "name": "Művelődéstörténet (alapjai)",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKPP1312A",
+                    "name": "Bevezetés a pszichológiába",
+                    "credits": 2
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 10
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VETKAEB142B",
+                    "name": "Művelődéstörténet",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKAYB121K",
+                    "name": "A kommunikáció alapjai",
+                    "credits": 1
+                },
+                {
+                    "code": "VETKTTB143G",
+                    "name": "Filozófiatörténet II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VETKTTB143F"
+                    ]
+                },
+                {
+                    "code": "VETKAEB142O",
+                    "name": "Összehasonlító kultúratörténet I.",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKPPB113L",
+                    "name": "Lélektan I. (Fejlődés- és személyiséglélektan) előadás",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKPPB121L",
+                    "name": "Lélektan I. (Fejlődés- és személyiséglélektan) szeminárium",
+                    "credits": 1
+                },
+                {
+                    "code": "VETKAEB112C",
+                    "name": "Kulturális antropológia előadás",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKAEB121C",
+                    "name": "Kulturális antropológia szeminárium",
+                    "credits": 1
+                },
+                {
+                    "code": "VETKAEB144O",
+                    "name": "Ökológia",
+                    "credits": 4
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható tárgy",
+                    "credits": 2,
+                    "course_block_references": [
+                        "Kötelezően választható tárgy part I.",
+                        "Kötelezően választható tárgy part II."
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 10
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VETKAEB242O",
+                    "name": "Összehasonlító kultúratörténet II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VETKAEB142O"
+                    ]
+                },
+                {
+                    "code": "VETKAEB112M",
+                    "name": "Metafizika",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKAEB212L",
+                    "name": "Lélektan II. előadás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKPPB113L",
+                        "VETKPPB121L"
+                    ]
+                },
+                {
+                    "code": "VETKAEB221L",
+                    "name": "Lélektan II. szeminárium",
+                    "credits": 1,
+                    "prerequisites": [
+                        "VETKPPB113L",
+                        "VETKPPB121L"
+                    ]
+                },
+                {
+                    "code": "VETKAEB112D",
+                    "name": "Kulturális antropológia II. előadás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKAEB112C",
+                        "VETKAEB121C"
+                    ]
+                },
+                {
+                    "code": "VETKAEB121D",
+                    "name": "Kulturális antropológia II. szeminárium",
+                    "credits": 1,
+                    "prerequisites": [
+                        "VETKAEB112C",
+                        "VETKAEB121C"
+                    ]
+                },
+                {
+                    "code": "VETKAE1212S",
+                    "name": "Szociológia I. előadás",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKAEB122S",
+                    "name": "Szociológia I. szeminárium",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKAEB143N",
+                    "name": "Nyelvfilozófia",
+                    "credits": 3
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható tárgy",
+                    "credits": 2,
+                    "course_block_references": [
+                        "Kötelezően választható tárgy part I.",
+                        "Kötelezően választható tárgy part II."
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 10
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VETKAEB212P",
+                    "name": "Lélektan III. előadás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKAEB212L",
+                        "VETKAEB221L"
+                    ]
+                },
+                {
+                    "code": "VETKAEB221P",
+                    "name": "Lélektan III. szeminárium",
+                    "credits": 1,
+                    "prerequisites": [
+                        "VETKAEB212L",
+                        "VETKAEB221L"
+                    ]
+                },
+                {
+                    "code": "VETKAE2112S",
+                    "name": "Szociológia II. előadás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKAE1212S",
+                        "VETKAEB122S"
+                    ]
+                },
+                {
+                    "code": "VETKAEB222S",
+                    "name": "Szociológia II. szeminárium",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKAE1212S",
+                        "VETKAEB122S"
+                    ]
+                },
+                {
+                    "code": "VETKAE1212E",
+                    "name": "Etika I. előadás",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKAE1221E",
+                    "name": "Etika I. szeminárium",
+                    "credits": 1
+                },
+                {
+                    "code": "VETKAEB211B",
+                    "name": "Biológiai embertan II. előadás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKAEB111B",
+                        "VETKAEB121B"
+                    ]
+                },
+                {
+                    "code": "VETKAEB221B",
+                    "name": "Biológiai embertan II. szeminárium",
+                    "credits": 1,
+                    "prerequisites": [
+                        "VETKAEB111B",
+                        "VETKAEB121B"
+                    ]
+                },
+                {
+                    "code": "VETKAEB143H",
+                    "name": "Hermeneutika",
+                    "credits": 3
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható tárgy",
+                    "credits": 2,
+                    "course_block_references": [
+                        "Kötelezően választható tárgy part I.",
+                        "Kötelezően választható tárgy part II."
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 10
+                }
+            ]
+        },
+        {
+            "name": "5. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VETKPPB122S",
+                    "name": "Pedagógiai szociálpszichológia szeminárium",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKPPB111S",
+                    "name": "Pedagógiai szociálpszichológia előadás",
+                    "credits": 1,
+                    "prerequisites": [
+                        "VETKPPB113L",
+                        "VETKPPB121L"
+                    ]
+                },
+                {
+                    "code": "VETKAEB145V",
+                    "name": "Vallástudomány I.",
+                    "credits": 4
+                },
+                {
+                    "code": "VETKAE2112E",
+                    "name": "Etika II. előadás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKAE1212E",
+                        "VETKAE1221E"
+                    ]
+                },
+                {
+                    "code": "VETKAE2121E",
+                    "name": "Etika II. szeminárium",
+                    "credits": 1,
+                    "prerequisites": [
+                        "VETKAE1212E",
+                        "VETKAE1221E"
+                    ]
+                },
+                {
+                    "code": "VETKAEB142E",
+                    "name": "Embertudomány I.",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKAEB113A",
+                    "name": "Filozófiai antropológia I. előadás",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKAEB121A",
+                    "name": "Filozófiai antropológia I. szeminárium",
+                    "credits": 1
+                },
+                {
+                    "code": "VETKAEB222D",
+                    "name": "Szakdolgozati szeminárium I.",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható tárgy",
+                    "credits": 2,
+                    "course_block_references": [
+                        "Kötelezően választható tárgy part I.",
+                        "Kötelezően választható tárgy part II."
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 10
+                }
+            ]
+        },
+        {
+            "name": "6. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VETKAE2212B",
+                    "name": "Etika III. előadás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKAE2112E",
+                        "VETKAE2121E"
+                    ]
+                },
+                {
+                    "code": "VETKAE2221B",
+                    "name": "Etika III. szeminárium",
+                    "credits": 1,
+                    "prerequisites": [
+                        "VETKAE2112E",
+                        "VETKAE2121E"
+                    ]
+                },
+                {
+                    "code": "VETKAEB243E",
+                    "name": "Élethelyzetek etikája I.",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKAEB245V",
+                    "name": "Vallástudomány II.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VETKAEB145V"
+                    ]
+                },
+                {
+                    "code": "VETKAEB242E",
+                    "name": "Embertudomány II.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKAEB142E"
+                    ]
+                },
+                {
+                    "code": "VETKAEB322D",
+                    "name": "Szakdolgozati szeminárium II.",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható tárgy",
+                    "credits": 2,
+                    "course_block_references": [
+                        "Kötelezően választható tárgy part I.",
+                        "Kötelezően választható tárgy part II."
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 10
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választható tárgy part I.",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VETKAY1213K",
+                    "name": "Két- és többnyelvűség",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKNMM113C",
+                    "name": "Nyelv és kultúra",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKNMM113A",
+                    "name": "A német-magyar kulturális kapcsolatok története",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKNMM413K",
+                    "name": "Kultúraközvetítés: az irodalmi recepció kérdései a német-magyar irodalmi kapcsolatokban",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTTB113F",
+                    "name": "Általános gazdaság- és társadalomföldrajz",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKMIB622A",
+                    "name": "Irodalom- és művelődéstörténeti alapfogalmak",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választható tárgy part II.",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VETKTT1112J",
+                    "name": "Jogi alapismeretek",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKAYB312M",
+                    "name": "Kisebbségtudomány",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKAEB542S",
+                    "name": "Művészetszociológia",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKMIB522A",
+                    "name": "Napjaink magyar irodalma",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKAY2112G",
+                    "name": "Gyermeknyelv",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTT1213P",
+                    "name": "Politikatudomány",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKAE4212S",
+                    "name": "Vallásszociológia",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKMIB613V",
+                    "name": "Világirodalom a XX. században",
+                    "credits": 2
+                }
+            ]
+        }
+    ]
 }

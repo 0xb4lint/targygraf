@@ -1,5 +1,508 @@
 {
     "name": "Környezetmérnök",
     "description": "Környezetmérnök BSc - nappali tagozat tanterve",
-    "curriculum_updated_at": "2010-10-06"
+    "curriculum_updated_at": "2010-10-06",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMEGT30A001",
+                    "name": "Mikro- és makroökonómia",
+                    "credits": 4
+                },
+                {
+                    "code": "BMETE90AX00",
+                    "name": "Matematika A1a Analízis",
+                    "credits": 6
+                },
+                {
+                    "code": "BMETE14AX00",
+                    "name": "Fizika K1A",
+                    "credits": 4
+                },
+                {
+                    "code": "BMEVESEAKM3",
+                    "name": "Kémia I.",
+                    "credits": 3
+                },
+                {
+                    "code": "BMEVESEAKM4",
+                    "name": "Kémia gyakorlat I.",
+                    "credits": 3
+                },
+                {
+                    "code": "BMEVEMKAKM1",
+                    "name": "Biológia alapjai",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEVEELAKM1",
+                    "name": "Ökológia",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEEOEMAKM1",
+                    "name": "Geológia",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEVIVEA014",
+                    "name": "Programozás",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEEOVKAKM1",
+                    "name": "Környezetmérnöki alapok",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMEGT20A001",
+                    "name": "Menedzsment és vállalkozásgazdaságtan",
+                    "credits": 4
+                },
+                {
+                    "code": "BMETE90AX17",
+                    "name": "Matematika A2c",
+                    "credits": 6,
+                    "prerequisites": [
+                        "BMETE90AX00"
+                    ]
+                },
+                {
+                    "code": "BMETE13AX01",
+                    "name": "Fizika K2A",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMETE14AX00"
+                    ]
+                },
+                {
+                    "code": "BMEVESKAKM2",
+                    "name": "Kémia II.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "BMEVESEAKM3"
+                    ]
+                },
+                {
+                    "code": "BMEVESEAKM2",
+                    "name": "Kémia gyakorlat II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEVESEAKM3",
+                        "BMEVESEAKM4"
+                    ]
+                },
+                {
+                    "code": "BMEGEVGAKM1",
+                    "name": "Mérnöki alapok I.",
+                    "credits": 3
+                },
+                {
+                    "code": "BMEEOGTAKM1",
+                    "name": "Talajvédelem",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEVEKTAKM1",
+                    "name": "Természetvédelem",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMEVEELAKM1"
+                    ]
+                },
+                {
+                    "code": "BMEVIMIA022",
+                    "name": "Az informatika alapjai",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMEGT42A004",
+                    "name": "Környezetgazdaságtan I.",
+                    "credits": 2
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 2
+                },
+                {
+                    "code": "BMETE90AX15",
+                    "name": "Matematika A3",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMETE90AX17"
+                    ]
+                },
+                {
+                    "code": "BMEVEFKAKM1",
+                    "name": "Fizikai kémia és radiokémia",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMETE90AX00",
+                        "BMEVESEAKM2"
+                    ]
+                },
+                {
+                    "code": "BMEVEKTAKM4",
+                    "name": "Meteorológia",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEVIVEA020",
+                    "name": "Mérnöki alapok II.",
+                    "credits": 3
+                },
+                {
+                    "code": "BMEEOVKAKM2",
+                    "name": "Települési vízgazdálkodás és vízminőség védelem",
+                    "credits": 5
+                },
+                {
+                    "code": "BMEVEKTAKM2",
+                    "name": "Kémiai technológia",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEVESEAKM3",
+                        "BMEVESEAKM4"
+                    ]
+                },
+                {
+                    "code": "BMEGEVÉAK03",
+                    "name": "Levegőtisztaság-védelem",
+                    "credits": 3
+                },
+                {
+                    "code": "BMEVEAAAKM1",
+                    "name": "Analitikai kémia alapjai",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BMEVESKAKM2",
+                        "BMEVESEAKM2"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMEGT55A001",
+                    "name": "Üzleti jog",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEGT42A005",
+                    "name": "Környezetgazdaságtan II.",
+                    "credits": 2
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEVEMKAKM3",
+                    "name": "Mikrobiológia",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEVEMKAKM1"
+                    ]
+                },
+                {
+                    "code": "BMEVEKTAKM3",
+                    "name": "Környezeti kémia",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEVESKAKM2",
+                        "BMEVEKTAKM2"
+                    ]
+                },
+                {
+                    "code": "BMEGEÁTAKM1",
+                    "name": "Az áramlástan alapjai",
+                    "credits": 3
+                },
+                {
+                    "code": "BMEVEVMAKM2",
+                    "name": "Környezeti eljárástan I.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "BMETE90AX15",
+                        "BMEVEFKAKM1"
+                    ]
+                },
+                {
+                    "code": "BMEVESTAKM1",
+                    "name": "Biztonságtechnika",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BMEVESEAKM3",
+                        "BMEEOVKAKM1"
+                    ]
+                },
+                {
+                    "code": "BMEVIVEA021",
+                    "name": "Zaj-rezgés és elektromos mágneses védelem",
+                    "credits": 3
+                },
+                {
+                    "code": "BMEVEAAAKM2",
+                    "name": "Környezetvédelmi analitika",
+                    "credits": 7,
+                    "prerequisites": [
+                        "BMEVESEAKM2",
+                        "BMEVEAAAKM1"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "5. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BMEVEVMAKM1",
+                    "name": "Hulladékgazdálkodás és veszélyes hulladékok",
+                    "credits": 3
+                },
+                {
+                    "code": "BMETE80AX19",
+                    "name": "Nukleáris környezetvédelem",
+                    "credits": 3
+                },
+                {
+                    "code": "BMEGT42A014",
+                    "name": "Környezetmenedzsment",
+                    "credits": 3
+                },
+                {
+                    "code": "BMEVEVMAKM3",
+                    "name": "Környezeti eljárástan II.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "BMEVEVMAKM2"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Szakirány",
+                    "credits": 16,
+                    "course_block_references": [
+                        "Környezet technológia szakirány",
+                        "Környezet menedzsment szakirány"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "6. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEVEVMAKM4",
+                    "name": "Szennyvíztisztítási technológiák",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BMEVEVMAKM2"
+                    ]
+                },
+                {
+                    "code": "BMEEOVKAKM3",
+                    "name": "Környezeti kárelhárítás",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEKOVJA901",
+                    "name": "Környezeti hatásvizsgálat",
+                    "credits": 3
+                },
+                {
+                    "code": "BMEVEKTAKM5",
+                    "name": "Környezetvédelmi analitika és technológia labor",
+                    "credits": 5,
+                    "prerequisites": [
+                        "BMEVEKTAKM2",
+                        "BMEVEAAAKM2"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Szakirány",
+                    "credits": 8,
+                    "course_block_references": [
+                        "Környezet technológia szakirány",
+                        "Környezet menedzsment szakirány"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 5
+                }
+            ]
+        },
+        {
+            "name": "7. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEEPEGAV71",
+                    "name": "Ökológikus építészet",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEKOVJA902",
+                    "name": "Környezetegészségügy",
+                    "credits": 3
+                },
+                {
+                    "code": null,
+                    "name": "Szakirány",
+                    "credits": 2,
+                    "course_block_references": [
+                        "Környezet technológia szakirány",
+                        "Környezet menedzsment szakirány"
+                    ]
+                },
+                {
+                    "code": "szakdolgozat",
+                    "name": "Szakdolgozat",
+                    "credits": 15
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 5
+                }
+            ]
+        },
+        {
+            "name": "Környezet technológia szakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "BMEKOKUA901",
+                    "name": "Közlekedési technika",
+                    "credits": 3
+                },
+                {
+                    "code": "BMEGEVÉAK01",
+                    "name": "Környezetvédelmi gépek és berendezések",
+                    "credits": 3
+                },
+                {
+                    "code": "BMEGEGEAVKT",
+                    "name": "Környezetbarát tervezés",
+                    "credits": 3
+                },
+                {
+                    "code": "BMEGEENAKM1",
+                    "name": "Energiatermelés és környezet",
+                    "credits": 3
+                },
+                {
+                    "code": "BMEVIVEA023",
+                    "name": "Villamos rendszerek környezeti hatásai",
+                    "credits": 3
+                },
+                {
+                    "code": "BMEVEMKAKM2",
+                    "name": "Környezetvédelmi biotechnológia",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEVESTAKM2",
+                    "name": "Vegyipari technológiák",
+                    "credits": 5
+                },
+                {
+                    "code": "BMEEOFTAKM1",
+                    "name": "Monitoring és térinformatika",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEGT42A020",
+                    "name": "Stratégiai környezeti vizsgálatok",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Környezet menedzsment szakirány",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "BMEGT42A015",
+                    "name": "Energiagazdálkodás környezeti gyakorlata",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEGT42A016",
+                    "name": "Környezeti számvitel",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEGT42A022",
+                    "name": "Környezetértékelés és kockázatkezelés",
+                    "credits": 3
+                },
+                {
+                    "code": "BMEGT42A017",
+                    "name": "A környezetvédelem nemzetközi gyakorlata",
+                    "credits": 3
+                },
+                {
+                    "code": "BMEGT42A018",
+                    "name": "Környezetstratégia",
+                    "credits": 3
+                },
+                {
+                    "code": "BMEGT42A019",
+                    "name": "Komplex környezetgazdálkodási gyakorlatok I.",
+                    "credits": 6
+                },
+                {
+                    "code": "BMEGT42A021",
+                    "name": "Komplex környezetgazdálkodási gyakorlatok II.",
+                    "credits": 3
+                },
+                {
+                    "code": "BMEEOFTAKM2",
+                    "name": "Térinformatika",
+                    "credits": 2
+                },
+                {
+                    "code": "BMEGT42A020",
+                    "name": "Stratégiai környezeti vizsgálatok",
+                    "credits": 2
+                }
+            ]
+        }
+    ]
 }

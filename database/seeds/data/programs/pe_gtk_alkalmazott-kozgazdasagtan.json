@@ -1,5 +1,742 @@
 {
     "name": "Alkalmazott közgazdaságtan",
     "description": "Alkalmazott közgazdaságtan alapszak - nappali tagozat tanterve",
-    "curriculum_updated_at": "2011-10-12"
+    "curriculum_updated_at": "2011-10-12",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "GTKGB143M",
+                    "name": "Közgazdaságtan matematikai alapjai",
+                    "credits": 5
+                },
+                {
+                    "code": "GTKGB112K",
+                    "name": "Bevezetés a közgazdaságtanba",
+                    "credits": 3
+                },
+                {
+                    "code": "GTGAB114J",
+                    "name": "Gazdasági jog",
+                    "credits": 6
+                },
+                {
+                    "code": "GTKGB112G",
+                    "name": "Gazdaságtörténet",
+                    "credits": 3
+                },
+                {
+                    "code": "MIMAB112A",
+                    "name": "Lineáris algebra",
+                    "credits": 3
+                },
+                {
+                    "code": null,
+                    "name": "Választható alapozó és általános tárgy",
+                    "credits": 6,
+                    "course_block_references": [
+                        "Választható alapozó és általános tárgyak"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 3
+                },
+                {
+                    "code": "GTLEB122A",
+                    "name": "Gazdasági és üzleti szaknyelv I.",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "MKMA1344B",
+                    "name": "Valószínűségszámítás és matematikai statisztika",
+                    "credits": 6,
+                    "prerequisites": [
+                        "GTKGB143M"
+                    ]
+                },
+                {
+                    "code": "GTKGB143K",
+                    "name": "Kvantitatív módszerek a közgazdaságtanban",
+                    "credits": 4,
+                    "prerequisites": [
+                        "GTKGB143M"
+                    ]
+                },
+                {
+                    "code": "GTKGB144M",
+                    "name": "Mikroökonómia I.",
+                    "credits": 6,
+                    "prerequisites": [
+                        "GTKGB143M",
+                        "GTKGB112K"
+                    ]
+                },
+                {
+                    "code": "GTSCB144S",
+                    "name": "Számvitel alapjai",
+                    "credits": 6
+                },
+                {
+                    "code": "GTGAB144A",
+                    "name": "Vállalati gazdaságtan",
+                    "credits": 6
+                },
+                {
+                    "code": "MKEU5312M",
+                    "name": "Az EU intézményrendszere és működése",
+                    "credits": 3
+                },
+                {
+                    "code": "GTLEB222A",
+                    "name": "Gazdasági és üzleti szaknyelv II.",
+                    "credits": 0,
+                    "prerequisites": [
+                        "GTLEB122A"
+                    ]
+                },
+                {
+                    "code": "GTLEB1X0A",
+                    "name": "Gazdasági és üzleti szaknyelvi záróvizsga",
+                    "credits": 0,
+                    "prerequisites": [
+                        "GTLEB222A"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "GTGAB144S",
+                    "name": "Statisztika",
+                    "credits": 6,
+                    "prerequisites": [
+                        "MKMA1344B"
+                    ]
+                },
+                {
+                    "code": "GTKGB244M",
+                    "name": "Mikroökonómia II.",
+                    "credits": 6,
+                    "prerequisites": [
+                        "GTKGB144M"
+                    ]
+                },
+                {
+                    "code": "GTKGB114M",
+                    "name": "Makroökonómia",
+                    "credits": 6,
+                    "prerequisites": [
+                        "GTKGB144M"
+                    ]
+                },
+                {
+                    "code": "MISAM244O",
+                    "name": "Operációkutatás",
+                    "credits": 5,
+                    "prerequisites": [
+                        "MIMAB112A"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 6
+                },
+                {
+                    "code": "GTMEB144A",
+                    "name": "A gazdaságtan alapjai I.",
+                    "credits": 0,
+                    "prerequisites": [
+                        "GTLEB1X0A"
+                    ]
+                },
+                {
+                    "code": "MKLE3324A",
+                    "name": "Gazdasági és üzleti szaknyelv III.",
+                    "credits": 0,
+                    "prerequisites": [
+                        "GTLEB222A"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "GTKGB342G",
+                    "name": "Közösségi gazdaságtan",
+                    "credits": 3,
+                    "prerequisites": [
+                        "GTKGB114M"
+                    ]
+                },
+                {
+                    "code": "GTKGB212E",
+                    "name": "Közgazdasági elméletek története",
+                    "credits": 3,
+                    "prerequisites": [
+                        "GTKGB244M",
+                        "GTKGB114M"
+                    ]
+                },
+                {
+                    "code": "GTPTB212P",
+                    "name": "Vállalati pénzügyek I.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "GTKGB144M"
+                    ]
+                },
+                {
+                    "code": "GTKGB343J",
+                    "name": "Játékelmélet",
+                    "credits": 4,
+                    "prerequisites": [
+                        "GTKGB244M"
+                    ]
+                },
+                {
+                    "code": "GTKGB343Ö",
+                    "name": "Ökonometria",
+                    "credits": 4,
+                    "prerequisites": [
+                        "MKMA1344B",
+                        "GTKGB244M"
+                    ]
+                },
+                {
+                    "code": "GTVEB244I",
+                    "name": "Gazdasági informatika",
+                    "credits": 6
+                },
+                {
+                    "code": "GTMEB224A",
+                    "name": "A gazdaságtan alapjai II.",
+                    "credits": 0,
+                    "prerequisites": [
+                        "GTMEB144A"
+                    ]
+                },
+                {
+                    "code": "MKLE4324A",
+                    "name": "Gazdasági és üzleti szaknyelv IV.",
+                    "credits": 0,
+                    "prerequisites": [
+                        "MKLE3324A"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Szakmai választható tárgy",
+                    "credits": 8,
+                    "course_block_references": [
+                        "Szakmai választható tárgyak part I.",
+                        "Szakmai választható tárgyak part II.",
+                        "Szakmai választható tárgyak part III.",
+                        "Szakmai választható tárgyak part IV."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "5. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "GTKGB344V",
+                    "name": "Verseny- és piacelméletek",
+                    "credits": 6,
+                    "prerequisites": [
+                        "GTKGB343J"
+                    ]
+                },
+                {
+                    "code": "GTPTB112P",
+                    "name": "Pénzügytan (Makrogazdasági pénzügyek)",
+                    "credits": 3,
+                    "prerequisites": [
+                        "GTKGB114M"
+                    ]
+                },
+                {
+                    "code": "GTKGB312N",
+                    "name": "Nemzetközi gazdaságtan",
+                    "credits": 3,
+                    "prerequisites": [
+                        "GTKGB244M",
+                        "GTKGB114M"
+                    ]
+                },
+                {
+                    "code": "GTKGB212M",
+                    "name": "Munkagazdaságtan",
+                    "credits": 3,
+                    "prerequisites": [
+                        "GTKGB244M",
+                        "GTKGB114M"
+                    ]
+                },
+                {
+                    "code": "GTKGB322S",
+                    "name": "Szakszeminárium I.",
+                    "credits": 0
+                },
+                {
+                    "code": null,
+                    "name": "Választható alapozó és általános tárgy",
+                    "credits": 3,
+                    "course_block_references": [
+                        "Választható alapozó és általános tárgyak"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Szakmai választható tárgy",
+                    "credits": 6,
+                    "course_block_references": [
+                        "Szakmai választható tárgyak part I.",
+                        "Szakmai választható tárgyak part II.",
+                        "Szakmai választható tárgyak part III.",
+                        "Szakmai választható tárgyak part IV."
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Szakmai választható tárgy",
+                    "credits": 6,
+                    "course_block_references": [
+                        "Szakmai választható tárgyak part I.",
+                        "Szakmai választható tárgyak part II.",
+                        "Szakmai választható tárgyak part III.",
+                        "Szakmai választható tárgyak part IV."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "6. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "GTKGB312G",
+                    "name": "Gazdaságpolitika",
+                    "credits": 3,
+                    "prerequisites": [
+                        "GTKGB114M"
+                    ]
+                },
+                {
+                    "code": "GTKGB322Z",
+                    "name": "Szakszeminárium II.",
+                    "credits": 0,
+                    "prerequisites": [
+                        "GTKGB322S"
+                    ]
+                },
+                {
+                    "code": "GTAKB210S",
+                    "name": "Szakdolgozat",
+                    "credits": 0,
+                    "prerequisites": [
+                        "GTKGB322S"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Szakmai választható tárgy",
+                    "credits": 6,
+                    "course_block_references": [
+                        "Szakmai választható tárgyak part I.",
+                        "Szakmai választható tárgyak part II.",
+                        "Szakmai választható tárgyak part III.",
+                        "Szakmai választható tárgyak part IV."
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Szakmai választható tárgy",
+                    "credits": 6,
+                    "course_block_references": [
+                        "Szakmai választható tárgyak part I.",
+                        "Szakmai választható tárgyak part II.",
+                        "Szakmai választható tárgyak part III.",
+                        "Szakmai választható tárgyak part IV."
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Szakmai választható tárgy",
+                    "credits": 6,
+                    "course_block_references": [
+                        "Szakmai választható tárgyak part I.",
+                        "Szakmai választható tárgyak part II.",
+                        "Szakmai választható tárgyak part III.",
+                        "Szakmai választható tárgyak part IV."
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Szakmai választható tárgy",
+                    "credits": 9,
+                    "course_block_references": [
+                        "Szakmai választható tárgyak part I.",
+                        "Szakmai választható tárgyak part II.",
+                        "Szakmai választható tárgyak part III.",
+                        "Szakmai választható tárgyak part IV."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Választható alapozó és általános tárgyak",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "GTTUB112S",
+                    "name": "Gazdaságszociológia",
+                    "credits": 3
+                },
+                {
+                    "code": "BTTTB112F",
+                    "name": "Filozófia",
+                    "credits": 3
+                },
+                {
+                    "code": "GTMEB144M",
+                    "name": "Általános menedzsment",
+                    "credits": 6
+                },
+                {
+                    "code": "GTMEB112P",
+                    "name": "Pszichológia",
+                    "credits": 3
+                },
+                {
+                    "code": "GTEUB114E",
+                    "name": "Európai uniós jogi ismeretek",
+                    "credits": 5
+                }
+            ]
+        },
+        {
+            "name": "Szakmai választható tárgyak part I.",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "MKKG4312R",
+                    "name": "Regionális gazdaságtan",
+                    "credits": 3,
+                    "prerequisites": [
+                        "GTKGB114M"
+                    ]
+                },
+                {
+                    "code": "GTKGB412Ö",
+                    "name": "Összehasonlító gazdaságtan",
+                    "credits": 3,
+                    "prerequisites": [
+                        "GTKGB114M"
+                    ]
+                },
+                {
+                    "code": "MKGA3312K",
+                    "name": "Környezetgazdaságtan",
+                    "credits": 3
+                },
+                {
+                    "code": "GTKGB412A",
+                    "name": "Agrárgazdaságtan",
+                    "credits": 3,
+                    "prerequisites": [
+                        "GTKGB244M",
+                        "GTKGB114M"
+                    ]
+                },
+                {
+                    "code": "MKKG4322D",
+                    "name": "Demográfia és gazdaság",
+                    "credits": 3,
+                    "prerequisites": [
+                        "GTKGB114M"
+                    ]
+                },
+                {
+                    "code": "MKKG3313Á",
+                    "name": "Államháztartástan",
+                    "credits": 5,
+                    "prerequisites": [
+                        "GTKGB114M"
+                    ]
+                },
+                {
+                    "code": "GTPTB444T",
+                    "name": "Tőkepiaci ismeretek",
+                    "credits": 6,
+                    "prerequisites": [
+                        "GTPTB112P"
+                    ]
+                },
+                {
+                    "code": "GTKGB522D",
+                    "name": "Döntéselmélet",
+                    "credits": 3
+                },
+                {
+                    "code": "GTKGB542Ö",
+                    "name": "Állami és önkormányzati pénzügyek",
+                    "credits": 3,
+                    "prerequisites": [
+                        "GTKGB114M"
+                    ]
+                },
+                {
+                    "code": "GTKGB512I",
+                    "name": "Az információ közgazdaságtana",
+                    "credits": 3,
+                    "prerequisites": [
+                        "GTKGB343J"
+                    ]
+                },
+                {
+                    "code": "MKKG4312P",
+                    "name": "Pénzelméletek",
+                    "credits": 3,
+                    "prerequisites": [
+                        "GTKGB212E"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Szakmai választható tárgyak part II.",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "MKKG4312EA",
+                    "name": "Egészségügy és oktatás gazdaságtana",
+                    "credits": 3,
+                    "prerequisites": [
+                        "MKKG3313Á"
+                    ]
+                },
+                {
+                    "code": "MKKG4312EB",
+                    "name": "Egészségügy és oktatás gazdaságtana",
+                    "credits": 3,
+                    "prerequisites": [
+                        "GTKGB342G"
+                    ]
+                },
+                {
+                    "code": "GTPTB412B",
+                    "name": "Befektetési döntések",
+                    "credits": 3,
+                    "prerequisites": [
+                        "GTPTB112P"
+                    ]
+                },
+                {
+                    "code": "GTEGB522I",
+                    "name": "Infokommunikáció gazdaságtan",
+                    "credits": 3,
+                    "prerequisites": [
+                        "GTKGB244M"
+                    ]
+                },
+                {
+                    "code": "GTEGB522T",
+                    "name": "A távközlés gazdaságtana",
+                    "credits": 3,
+                    "prerequisites": [
+                        "GTKGB244M"
+                    ]
+                },
+                {
+                    "code": "GTKGB522V",
+                    "name": "A versenyképesség elmélete és tényezői",
+                    "credits": 3,
+                    "prerequisites": [
+                        "GTKGB212E",
+                        "GTKGB312N"
+                    ]
+                },
+                {
+                    "code": "GTEGB522N",
+                    "name": "Internet-gazdaságtan",
+                    "credits": 3
+                },
+                {
+                    "code": "GTEGB522E",
+                    "name": "E-Business",
+                    "credits": 3
+                },
+                {
+                    "code": "GTEGB522R",
+                    "name": "Vállalati információs rendszerek",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Szakmai választható tárgyak part III.",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "GTEGB522H",
+                    "name": "Hálózatgazdaságtan",
+                    "credits": 3
+                },
+                {
+                    "code": "GTEGB522P",
+                    "name": "Az infokommunikációs piacok szabályozása",
+                    "credits": 3,
+                    "prerequisites": [
+                        "GTEGB522I"
+                    ]
+                },
+                {
+                    "code": "GTSCB446S",
+                    "name": "Pénzügyi számvitel I.",
+                    "credits": 9,
+                    "prerequisites": [
+                        "GTSCB144S"
+                    ]
+                },
+                {
+                    "code": "GTSCB544S",
+                    "name": "Pénzügyi számvitel II.",
+                    "credits": 6,
+                    "prerequisites": [
+                        "GTSCB446S"
+                    ]
+                },
+                {
+                    "code": "GTGAB112M",
+                    "name": "Marketing alapjai",
+                    "credits": 3
+                },
+                {
+                    "code": "MKGT4212B",
+                    "name": "Banktan",
+                    "credits": 3,
+                    "prerequisites": [
+                        "GTPTB112P"
+                    ]
+                },
+                {
+                    "code": "GTKGB543M",
+                    "name": "Makrogazdasági statisztikai adatok és elemzések",
+                    "credits": 5
+                },
+                {
+                    "code": "GTKGB543J",
+                    "name": "Bevezetés a versenyjogba",
+                    "credits": 5
+                },
+                {
+                    "code": "GTSCB544E",
+                    "name": "Einführung in das Steuerwesen",
+                    "credits": 6,
+                    "prerequisites": [
+                        "GTLEB1X0A",
+                        "GTMEB224A"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Szakmai választható tárgyak part IV.",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "GTNGB512P",
+                    "name": "Európai uniós politikák",
+                    "credits": 3
+                },
+                {
+                    "code": "GTGAB544D",
+                    "name": "Grundlagen der Unternehmensgründung und Führung",
+                    "credits": 6,
+                    "prerequisites": [
+                        "GTLEB1X0A",
+                        "GTMEB224A"
+                    ]
+                },
+                {
+                    "code": "GTKGB544C",
+                    "name": "Introduction to Competition Policy",
+                    "credits": 6,
+                    "prerequisites": [
+                        "GTLEB1X0A",
+                        "GTMEB224A"
+                    ]
+                },
+                {
+                    "code": "GTKGB522M",
+                    "name": "Introductory Monetary Macroeconomics",
+                    "credits": 3,
+                    "prerequisites": [
+                        "GTLEB1X0A",
+                        "GTMEB224A"
+                    ]
+                },
+                {
+                    "code": "GTKGB544V",
+                    "name": "Versenyjogi kockázati menedzsment",
+                    "credits": 6
+                },
+                {
+                    "code": "GTKGB512A",
+                    "name": "Antitrust and Industrial Policy Analisys",
+                    "credits": 3,
+                    "prerequisites": [
+                        "GTLEB1X0A",
+                        "GTMEB224A"
+                    ]
+                },
+                {
+                    "code": "GTKGB422J",
+                    "name": "Játékelméleti alkalmazások",
+                    "credits": 3,
+                    "prerequisites": [
+                        "GTKGB343J"
+                    ]
+                },
+                {
+                    "code": "GTKGB414M",
+                    "name": "Matematikai közgazdaságtan",
+                    "credits": 6,
+                    "prerequisites": [
+                        "GTKGB143K",
+                        "GTKGB244M"
+                    ]
+                },
+                {
+                    "code": "GTKGB512M",
+                    "name": "Modern közgazdaságtani irányzatok",
+                    "credits": 3,
+                    "prerequisites": [
+                        "MKMA1344B",
+                        "GTKGB244M",
+                        "GTKGB114M"
+                    ]
+                }
+            ]
+        }
+    ]
 }

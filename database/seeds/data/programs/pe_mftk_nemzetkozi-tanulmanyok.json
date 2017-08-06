@@ -1,5 +1,651 @@
 {
     "name": "Nemzetközi tanulmányok",
     "description": "Nemzetközi tanulmányok alapszak - nappali tagozat tanterve",
-    "curriculum_updated_at": "2011-06-24"
+    "curriculum_updated_at": "2011-06-24",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VETKTT1112A",
+                    "name": "Új- és legújabb kori egyetemes történelem I. előadás",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTT1122A",
+                    "name": "Új- és legújabb kori egyetemes történelem I. szeminárium",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTT1112J",
+                    "name": "Jogi alapismeretek",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTT1213P",
+                    "name": "Politikatudomány I.",
+                    "credits": 4
+                },
+                {
+                    "code": "VETKTTB114E",
+                    "name": "Közgazdaságtan I.",
+                    "credits": 5
+                },
+                {
+                    "code": "VETKTT1112K",
+                    "name": "Kommunikációelmélet",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTT1222K",
+                    "name": "Kommunikációgyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMICOB122I",
+                    "name": "Informatikai ismeretek",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTT1112S",
+                    "name": "Bevezetés a szociológiába",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTB112U",
+                    "name": "Protokoll és etikett előadás",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTB122U",
+                    "name": "Protokoll és etikett szeminárium",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható tárgy",
+                    "credits": 2,
+                    "course_block_references": [
+                        "Kötelezően választható tárgyak Nemzetközi kapcsolatok modul (1-2. félév)"
+                    ]
+                },
+                {
+                    "code": "VETKASB122A",
+                    "name": "Idegen nyelv I. (angol\/német)",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VETKTT1212U",
+                    "name": "Új- és legújabb kori egyetemes történelem II. előadás",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VETKTT1112A"
+                    ]
+                },
+                {
+                    "code": "VETKTT1222U",
+                    "name": "Új- és legújabb kori egyetemes történelem II. szeminárium",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKTT1122A"
+                    ]
+                },
+                {
+                    "code": "VETKTTB113A",
+                    "name": "Alkotmányjog",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VETKTT1112J"
+                    ]
+                },
+                {
+                    "code": "VETKTTB114P",
+                    "name": "Összehasonlító politikatudomány",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VETKTT1213P"
+                    ]
+                },
+                {
+                    "code": "VETKTTB312T",
+                    "name": "Társadalom- és történet-filozófia",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTB113F",
+                    "name": "Általános gazdaság- és társadalomföldrajz",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTTB113C",
+                    "name": "Összehasonlító civilizációs tanulmányok",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTTB213K",
+                    "name": "Kulturális diplomácia és kulturális kapcsolatok",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTTB122M",
+                    "name": "Társadalomtudományi kutatások módszertana I.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKTT1112S"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható tárgy",
+                    "credits": 2,
+                    "course_block_references": [
+                        "Kötelezően választható tárgyak Nemzetközi kapcsolatok modul (1-2. félév)"
+                    ]
+                },
+                {
+                    "code": "VETKASB122B",
+                    "name": "Idegen nyelv II. (angol\/német)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKASB122A"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VETKTT2112K",
+                    "name": "Közigazgatástan",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTT2212J",
+                    "name": "Nemzetközi jog I.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VETKTTB113A"
+                    ]
+                },
+                {
+                    "code": "VETKTTB113B",
+                    "name": "Bevezetés a nemzetközi viszonyok elméletébe",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTT4212N",
+                    "name": "Nemzetközi szervezetek előadás",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTTB422N",
+                    "name": "Nemzetközi szervezetek szeminárium",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTB222H",
+                    "name": "Nemzetközi migráció",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTB212B",
+                    "name": "Közgazdaságtan II. (Nemzetközi gazdaságtan)",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VETKTTB114E"
+                    ]
+                },
+                {
+                    "code": "VETKEU5312F",
+                    "name": "Az európai integráció története előadás",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VETKTT1212U",
+                        "VETKTT1222U"
+                    ]
+                },
+                {
+                    "code": "VETKEU5122F",
+                    "name": "Az európai integráció története szeminárium",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKTT1212U",
+                        "VETKTT1222U"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható tárgy",
+                    "credits": 2,
+                    "course_block_references": [
+                        "Kötelezően választható tárgyak Nemzetközi kapcsolatok modul (3-4. félév)"
+                    ]
+                },
+                {
+                    "code": "VETKASB423A",
+                    "name": "Szaknyelv I.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VETKASB122B"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VETKTTB122J",
+                    "name": "Nemzetközi jog II.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKTT2212J"
+                    ]
+                },
+                {
+                    "code": "VETKTTB113D",
+                    "name": "Nemzetközi kapcsolatok története és diplomáciatörténet előadás",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VETKTT1212U",
+                        "VETKTT1222U"
+                    ]
+                },
+                {
+                    "code": "VETKTTB122D",
+                    "name": "Nemzetközi kapcsolatok története és diplomáciatörténet szeminárium",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKTT1212U",
+                        "VETKTT1222U"
+                    ]
+                },
+                {
+                    "code": "VETKEUB213R",
+                    "name": "Európai regionális- és kohéziós politika előadás",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VETKEU5312F",
+                        "VETKEU5122F"
+                    ]
+                },
+                {
+                    "code": "VETKEUB222R",
+                    "name": "Európai regionális- és kohéziós politika szeminárium",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKEU5312F",
+                        "VETKEU5122F"
+                    ]
+                },
+                {
+                    "code": "VEGTTUB212N",
+                    "name": "Bevezetés a nemzetközi turizmusföldrajzba",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKEU4112I",
+                    "name": "Európai közigazgatási rendszerek",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VETKTT2112K"
+                    ]
+                },
+                {
+                    "code": "VETKEU5312M",
+                    "name": "Az EU intézményrendszere és működése",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VETKEU5312F",
+                        "VETKEU5122F"
+                    ]
+                },
+                {
+                    "code": "GTNGB412M",
+                    "name": "Európai uniós pénzügyek",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VETKTTB212B"
+                    ]
+                },
+                {
+                    "code": "VETKTTB212K",
+                    "name": "Bevezetés Kelet-Közép-Európa történetébe",
+                    "credits": 3
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható tárgy",
+                    "credits": 2,
+                    "course_block_references": [
+                        "Kötelezően választható tárgyak Nemzetközi kapcsolatok modul (3-4. félév)"
+                    ]
+                },
+                {
+                    "code": "VETKASB423B",
+                    "name": "Szaknyelv II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VETKASB423A"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "5. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VETKEU5312N",
+                    "name": "Az európai közösségi jog alapjai",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VETKEU5312M"
+                    ]
+                },
+                {
+                    "code": "VETKTT4222K",
+                    "name": "Nemzetközi konfliktusok",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTM412P",
+                    "name": "A politikai és gazdasági szupremáciák természet-rajza a XX. században",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKTTB113B"
+                    ]
+                },
+                {
+                    "code": "VETKTTB112T",
+                    "name": "Területi kohézió és többszintű kormányzás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKEUB213R"
+                    ]
+                },
+                {
+                    "code": "VETKEU5122P",
+                    "name": "A „polgárok Európája” felé – transznacionális és interregionális kapcsolatok a bővülő EU-ban",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKEU5312F"
+                    ]
+                },
+                {
+                    "code": "VETKTTB322E",
+                    "name": "Érdekcsoportok és lobbizás az európai belpolitikában",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTB113T",
+                    "name": "Nemzetközi tárgyalások elmélete és gyakorlata előadás",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTB122T",
+                    "name": "Nemzetközi tárgyalások elmélete és gyakorlata szeminárium",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTT2212M",
+                    "name": "Bevezetés a Mediterrán térség történetébe",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTTB113J",
+                    "name": "Bevezetés Latin-Amerika történetébe",
+                    "credits": 3
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 4
+                },
+                {
+                    "code": "VETKTTB222S",
+                    "name": "Szakdolgozati szeminárium",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTB220G",
+                    "name": "Szakmai gyakorlat",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "6. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "BNGTVE2G279",
+                    "name": "Európai uniós támogatások és pályázati rendszerek",
+                    "credits": 6,
+                    "prerequisites": [
+                        "VETKEUB213R"
+                    ]
+                },
+                {
+                    "code": "VETKTTB122E",
+                    "name": "Eszmék, ideológiák, kulturális sztereotípiák Kelet-Közép-Európában",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKTTB212K"
+                    ]
+                },
+                {
+                    "code": "VEMKTT4312H",
+                    "name": "Hispán történelem – hispán kultúra",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKTT2212M"
+                    ]
+                },
+                {
+                    "code": "VETKASB223F",
+                    "name": "Idegen nyelvű forráselemzés (Angol)",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VETKASB423A"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 6
+                },
+                {
+                    "code": "VETKTTB122S",
+                    "name": "Szakdolgozati szeminárium",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKTTB222S"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Szakdolgozat",
+                    "credits": 10
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választható tárgyak Nemzetközi kapcsolatok modul (1-2. félév)",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VETKTT1312F",
+                    "name": "Bevezetés a filozófiába",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTB111F",
+                    "name": "Politikai filozófia",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTT4322D",
+                    "name": "Etika",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTB113I",
+                    "name": "Magyar politika I.",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTTB113L",
+                    "name": "Magyar politika II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VETKTTB113I"
+                    ]
+                },
+                {
+                    "code": "VETKTTB112G",
+                    "name": "A társadalmi alrendszerek szociológiája I.",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTT5322K",
+                    "name": "Kisebbségszociológia",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTB512K",
+                    "name": "Környezetszociológia",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTTB222J",
+                    "name": "Jog és igazságszolgáltatás",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKAEB113M",
+                    "name": "Művelődéstörténet (alapjai)",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKAEB142L",
+                    "name": "Logika",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKAEB542S",
+                    "name": "Művészetszociológia",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKAE4212S",
+                    "name": "Vallásszociológia",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKFRB112T",
+                    "name": "Tudományrendszertan és könyvtárismeret",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választható tárgyak Nemzetközi kapcsolatok modul (3-4. félév)",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VETKTTB212T",
+                    "name": "Társadalomtörténet I.",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTTB122B",
+                    "name": "Társadalomtörténet II.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKTTB113I"
+                    ]
+                },
+                {
+                    "code": "VETKTTB211M",
+                    "name": "Az egyetemes politikai gondolkodás története I.",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTTB211G",
+                    "name": "Az egyetemes politikai gondolkodás története II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VETKTTB211M"
+                    ]
+                },
+                {
+                    "code": "VETKTTB222N",
+                    "name": "Nemzetbiztonsági ismeretek",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTB112N",
+                    "name": "Nemzetpolitika és identitás a XX. századi Magyarországon",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKEU4212K",
+                    "name": "Kelet-Közép-Európa és az EU",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTB322G",
+                    "name": "Gazdaságetika",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTB322V",
+                    "name": "EU-közpolitikák és koncepciók",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKTTB112H",
+                    "name": "Brazil történelem-brazil kultúra",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKNLB314T",
+                    "name": "Interkulturális tanulmányok (német nyelven)",
+                    "credits": 4
+                },
+                {
+                    "code": "VETKNLB314I",
+                    "name": "Interkulturális kommunikáció (német nyelven)",
+                    "credits": 4
+                },
+                {
+                    "code": "VETKACB112B",
+                    "name": "Brit országismeret (angol nyelven)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKASB122B"
+                    ]
+                },
+                {
+                    "code": "VETKACB112A",
+                    "name": "Amerikai országismeret (angol nyelven)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VETKASB122B"
+                    ]
+                }
+            ]
+        }
+    ]
 }

@@ -1,5 +1,512 @@
 {
     "name": "Vegyészmérnök MSc",
     "description": "Vegyészmérnöki mesterszak - nappali tagozat tanterve",
-    "curriculum_updated_at": "2013-05-06"
+    "curriculum_updated_at": "2013-05-06",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VEMKOKM112N",
+                    "name": "Szerves kémia IV.",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKFIM112F",
+                    "name": "Fizika III.",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKFKM112A",
+                    "name": "Fizikai kémia III.",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKAKB212V",
+                    "name": "Koordinációs kémia",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKFOM154F",
+                    "name": "Korszerű folyamatirányítási technikák",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMKKKB212K",
+                    "name": "Környezeti kémia",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKTEM114T",
+                    "name": "Modern vegyipari technológiák",
+                    "credits": 4
+                },
+                {
+                    "code": "VEGTGAM112M",
+                    "name": "Marketing",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKMUM114S",
+                    "name": "Speciális vegyipari műveletek és transzportfolyamatok",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMIMAM143V",
+                    "name": "Valószínűségszámítás és matematikai statisztika",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VEMKKAM114A",
+                    "name": "Anyagszerkezeti vizsgálatok",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMIMAM143A",
+                    "name": "Matematikai analízis mérnököknek",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMKLIB112M",
+                    "name": "A mikrobiológia alapjai",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKLIB132M",
+                    "name": "A mikrobiológia alapjai laboratóriumi gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMIMAB112A",
+                    "name": "Lineáris algebra",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKVVM004M",
+                    "name": "Nyári szakmai gyakorlat",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VEMKMOL412O",
+                    "name": "Karbantartás az olajiparban",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKVMM1XD",
+                    "name": "Diplomamunka I.",
+                    "credits": 15
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VEMKVMM2XD",
+                    "name": "Diplomamunka II.",
+                    "credits": 15
+                },
+                {
+                    "code": "VEMKVVM236T",
+                    "name": "Egyéni tervezési feladat",
+                    "credits": 6
+                }
+            ]
+        },
+        {
+            "name": "Szakirány",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "MOL Ásványolaj- és petrolkémiai technológia modul",
+                    "credits": 42,
+                    "course_block_references": [
+                        "MOL Ásványolaj- és petrolkémiai technológia modul"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Finomkémiai műveleti modul",
+                    "credits": 42,
+                    "course_block_references": [
+                        "Finomkémiai műveleti modul"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Folyamatmérnöki modul",
+                    "credits": 42,
+                    "course_block_references": [
+                        "Folyamatmérnöki modul"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Radiokémiai technológiai modul",
+                    "credits": 42,
+                    "course_block_references": [
+                        "Radiokémiai technológiai modul"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Biotechnológiai modul",
+                    "credits": 42,
+                    "course_block_references": [
+                        "Biotechnológiai modul"
+                    ]
+                }
+            ],
+            "is_counted": false
+        },
+        {
+            "name": "Kötelezően válaszható gazdasági és humán ismeretek tárgyak",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VEMKKVB112K",
+                    "name": "Környezetgazdaságtan",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKKVM112M",
+                    "name": "Környezetmenedzsment",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKMOL112G",
+                    "name": "Kőolaj-finomítás gazdaság alapjai",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKVVB212K",
+                    "name": "Mérnöki kommunikáció",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKTE3242M",
+                    "name": "Minőségirányítás az iparban",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKMOL112O",
+                    "name": "Optimalizálás az olajiparban",
+                    "credits": 2
+                },
+                {
+                    "code": "VEGTVEB344P",
+                    "name": "Projektmenedzsment",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "Tárgyak közül egy felvétele kötelező",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VEMKOLM212K",
+                    "name": "Kenőanyagok kémiája és technológiája",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKOLM253R",
+                    "name": "Reológia",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMKMOL443M",
+                    "name": "Műanyagok fizikája és alkalmazástechnikája",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMKOLM242S",
+                    "name": "Veszteségmegelőzés a vegyiparban",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "MOL Ásványolaj- és petrolkémiai technológia modul",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VEGTVEB344P",
+                    "name": "Projektmenedzsment",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMKMOL112G",
+                    "name": "Kőolaj-finomítás gazdaság alapjai",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKFOM153A",
+                    "name": "Folyamatmérnöki eszközök az olajiparban",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMKOLM114E",
+                    "name": "Korszerű kőolajipari eljárások",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMKMOL413P",
+                    "name": "Petrolkémia",
+                    "credits": 3
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMKMOL112O",
+                    "name": "Optimalizálás az olajiparban",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKMOL458E",
+                    "name": "Szénhidrogénipari katalitikus eljárások és korszerű üzemanyagok",
+                    "credits": 8
+                },
+                {
+                    "code": "VEMKMOL132A",
+                    "name": "Kőolajipari és petrolkémiai vizsgálatok",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKKAM114A"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKOLM256T",
+                    "name": "Kőolajipari tervezés",
+                    "credits": 6
+                },
+                {
+                    "code": null,
+                    "name": "Tárgyak közül egy felvétele kötelező",
+                    "credits": 2,
+                    "course_block_references": [
+                        "Tárgyak közül egy felvétele kötelező"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Finomkémiai műveleti modul",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "Kötelezően válaszható gazdasági és humán ismeretek tárgyak",
+                    "credits": 8,
+                    "course_block_references": [
+                        "Kötelezően válaszható gazdasági és humán ismeretek tárgyak"
+                    ]
+                },
+                {
+                    "code": "VEMKFMM218M",
+                    "name": "Korszerű finomkémiai műveletek",
+                    "credits": 8
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 6
+                },
+                {
+                    "code": "VEMKFKB212B",
+                    "name": "Kolloidika",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKFMM236M",
+                    "name": "Korszerű finomkémiai műveletek gyakorlat",
+                    "credits": 6,
+                    "prerequisites": [
+                        "VEMKFMM218M"
+                    ]
+                },
+                {
+                    "code": "VEMKFMM214T",
+                    "name": "Műszaki termodinamika",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMKFMM258R",
+                    "name": "Korszerű reakciótechnika",
+                    "credits": 8
+                }
+            ]
+        },
+        {
+            "name": "Folyamatmérnöki modul",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "Kötelezően válaszható gazdasági és humán ismeretek tárgyak",
+                    "credits": 8,
+                    "course_block_references": [
+                        "Kötelezően válaszható gazdasági és humán ismeretek tárgyak"
+                    ]
+                },
+                {
+                    "code": "VEMKFOM358T",
+                    "name": "Folyamatmérnöki eszközök",
+                    "credits": 8
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 6
+                },
+                {
+                    "code": "VEMKFOM458M",
+                    "name": "Modellezés",
+                    "credits": 8
+                },
+                {
+                    "code": "VEMKFOM356T",
+                    "name": "Tervezés",
+                    "credits": 6
+                },
+                {
+                    "code": "VEMKFOM256I",
+                    "name": "Irányítás",
+                    "credits": 6
+                }
+            ]
+        },
+        {
+            "name": "Radiokémiai technológiai modul",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "Kötelezően válaszható gazdasági és humán ismeretek tárgyak",
+                    "credits": 8,
+                    "course_block_references": [
+                        "Kötelezően válaszható gazdasági és humán ismeretek tárgyak"
+                    ]
+                },
+                {
+                    "code": "VEMKRKM254N",
+                    "name": "Nukleáris mérések",
+                    "credits": 4
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 6
+                },
+                {
+                    "code": "VEMKRKM258T",
+                    "name": "Atomerőművi technológiák",
+                    "credits": 8
+                },
+                {
+                    "code": "VEMKFKB212B",
+                    "name": "Kolloidika",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKRKM216N",
+                    "name": "Sugárvédelem",
+                    "credits": 6
+                },
+                {
+                    "code": "VEMKRKM248R",
+                    "name": "Radioizotópos technológiák",
+                    "credits": 8
+                }
+            ]
+        },
+        {
+            "name": "Biotechnológiai modul",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "Kötelezően válaszható gazdasági és humán ismeretek tárgyak",
+                    "credits": 8,
+                    "course_block_references": [
+                        "Kötelezően válaszható gazdasági és humán ismeretek tárgyak"
+                    ]
+                },
+                {
+                    "code": "VEMKBMM446K",
+                    "name": "Korszerű biotechnológiai műveletek",
+                    "credits": 6
+                },
+                {
+                    "code": "VEMKBMM412K",
+                    "name": "Környezeti biotechnológia",
+                    "credits": 2
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 6
+                },
+                {
+                    "code": "VEMKBMM434K",
+                    "name": "Korszerű biotechnológiai műveletek laboratóriumi gyakorlat",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VEMKBMM446K"
+                    ]
+                },
+                {
+                    "code": "VEMKBMM412B",
+                    "name": "Különleges bioreaktorok",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKBMM434B",
+                    "name": "Különleges bioreaktorok laboratóriumi gyakorlat",
+                    "credits": 4,
+                    "prerequisites": [
+                        "(VEMKBMM412B)"
+                    ]
+                },
+                {
+                    "code": "VEMKBMM454E",
+                    "name": "Nem vizes közegű enzimes technológiák",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMKBMM412H",
+                    "name": "Fejezetek a humán gyógyászati biotechnológiából",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKBMM414F",
+                    "name": "Ipari fermentációk",
+                    "credits": 4
+                }
+            ]
+        }
+    ]
 }

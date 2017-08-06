@@ -1,5 +1,843 @@
 {
     "name": "Biomérnök",
     "description": "Biomérnöki alapszak - nappali tagozat tanterve",
-    "curriculum_updated_at": "2013-04-10"
+    "curriculum_updated_at": "2013-04-10",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VEMKMAB112M",
+                    "name": "Matematikai analízis I.",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKMAB122M",
+                    "name": "Matematikai analízis I. gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKFOB333S",
+                    "name": "Számítástechnika",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMKFI1312A",
+                    "name": "Fizika I.",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKFI1322A",
+                    "name": "Fizika I. gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKAKB112B",
+                    "name": "Általános és szervetlen kémia B",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKAKB122B",
+                    "name": "Általános és szervetlen kémia gyakorlat I. B",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKRK3321S",
+                    "name": "Sugárzástani alapismeretek",
+                    "credits": 1
+                },
+                {
+                    "code": "VEMKGEB121R",
+                    "name": "Műszaki rajz és ábrázó geometria",
+                    "credits": 1
+                },
+                {
+                    "code": "VEMKLIB112B",
+                    "name": "Infraindividuális biológia",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKLIB212B",
+                    "name": "Botanika",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKLIB112A",
+                    "name": "Általános ökológia I.",
+                    "credits": 2
+                },
+                {
+                    "code": "VEGTGAB114M",
+                    "name": "Közgazdaságtan és vállalkozás gazdaságtan",
+                    "credits": 4
+                },
+                {
+                    "code": null,
+                    "name": "Választható társadalomtudományi tárgy",
+                    "credits": 2,
+                    "course_block_references": [
+                        "Választható társadalomtudományi tárgy"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VEMKMAB212M",
+                    "name": "Matematikai analízis II.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKMAB112M",
+                        "VEMKMAB122M"
+                    ]
+                },
+                {
+                    "code": "VEMKMAB222M",
+                    "name": "Matematikai analízis II. gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKMAB112M",
+                        "VEMKMAB122M"
+                    ]
+                },
+                {
+                    "code": "VEMKMA1144C",
+                    "name": "Numerikus matematika",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VEMKMAB112M",
+                        "VEMKMAB122M"
+                    ]
+                },
+                {
+                    "code": "VEMKFI1312B",
+                    "name": "Fizika II.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFI1312A",
+                        "VEMKFI1322A"
+                    ]
+                },
+                {
+                    "code": "VEMKFI1332A",
+                    "name": "Fizika II. laboratóriumi gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFI1312A",
+                        "VEMKFI1322A"
+                    ]
+                },
+                {
+                    "code": "VEMKIKB222B",
+                    "name": "Általános és szervetlen kémia gyakorlat II. B",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKAKB112B",
+                        "VEMKAKB122B"
+                    ]
+                },
+                {
+                    "code": "VEMKAKB233B",
+                    "name": "Általános és szervetlen kémia laboratóriumi gyakorlat I. B",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEMKAKB112B",
+                        "VEMKAKB122B"
+                    ]
+                },
+                {
+                    "code": "VEMKFKB212A",
+                    "name": "Fizikai kémia I.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKMAB122M",
+                        "VEMKFI1312A",
+                        "VEMKAKB112B"
+                    ]
+                },
+                {
+                    "code": "VEMKOK1212B",
+                    "name": "Szerves kémia I. B",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKLIB132B",
+                    "name": "Infraindividuális biológia laboratóriumi gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKLIB112B"
+                    ]
+                },
+                {
+                    "code": "VEMKLIB212Z",
+                    "name": "Zoológia",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKLIB112B",
+                        "VEMKLIB112A"
+                    ]
+                },
+                {
+                    "code": "VEMKLIB232A",
+                    "name": "Mikroszkópos analízisek",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKLIB112B"
+                    ]
+                },
+                {
+                    "code": "VEMKMU2112A",
+                    "name": "Műveleti energetika",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKGEB211K",
+                    "name": "Gépészeti alapismeretek",
+                    "credits": 1,
+                    "prerequisites": [
+                        "VEMKGEB121R"
+                    ]
+                },
+                {
+                    "code": "VEMKGEB212H",
+                    "name": "Műszaki áramlástan és hőtan",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKMAB112M",
+                        "VEMKFI1312A"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VEMINAB112B",
+                    "name": "Biofizika",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFI1312B",
+                        "VEMKFI1332A"
+                    ]
+                },
+                {
+                    "code": "VEMKKAB114A",
+                    "name": "Kémiai analízis",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VEMKAKB112B"
+                    ]
+                },
+                {
+                    "code": "VEMKFKB312A",
+                    "name": "Fizikai kémia II.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(VEMKAKB122B)",
+                        "VEMKFKB212A"
+                    ]
+                },
+                {
+                    "code": "VEMKFK2132A",
+                    "name": "Fizikai kémia laboratóriumi gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFKB212A",
+                        "(VEMKFKB312A)"
+                    ]
+                },
+                {
+                    "code": "VEMKFKB322A",
+                    "name": "Fizikai kémia számítási gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFKB212A",
+                        "(VEMKFKB312A)"
+                    ]
+                },
+                {
+                    "code": "VEMKOK1112B",
+                    "name": "Szerves kémia II. B",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKOK1212B"
+                    ]
+                },
+                {
+                    "code": "VEMKOKB112B",
+                    "name": "Biokémia",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKOK1212B"
+                    ]
+                },
+                {
+                    "code": "VEMKOKB221B",
+                    "name": "Biokémia szeminárium",
+                    "credits": 1,
+                    "prerequisites": [
+                        "VEMKOK1212B"
+                    ]
+                },
+                {
+                    "code": "VEMKOKB212B",
+                    "name": "Biokoordinációs kémia",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKLIB112M",
+                    "name": "A mikrobiológia alapjai",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKLIB112B",
+                        "VEMKLIB212B"
+                    ]
+                },
+                {
+                    "code": "VEMKLIB132M",
+                    "name": "A mikrobiológia alapjai laboratóriumi gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKLIB112B",
+                        "VEMKLIB212B"
+                    ]
+                },
+                {
+                    "code": "VEMKMUB113T",
+                    "name": "Transzportfolyamatok",
+                    "credits": 3,
+                    "prerequisites": [
+                        "(VEMKMAB112M)",
+                        "VEMKFI1312A"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VEMKLIB312M",
+                    "name": "Molekuláris biológia",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKLIB112B",
+                        "VEMKOKB112B"
+                    ]
+                },
+                {
+                    "code": "VEMKKAB234A",
+                    "name": "Kémiai analízis laboratóriumi gyakorlat",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VEMKKAB114A"
+                    ]
+                },
+                {
+                    "code": "VEMKOK1232K",
+                    "name": "Szerves kémia laboratóriumi gyakorlat B",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKOK1212B",
+                        "VEMKOK1112B"
+                    ]
+                },
+                {
+                    "code": "VEMINAB212B",
+                    "name": "Biológiai makromolekulák szerkezete és működése",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMINAB112B"
+                    ]
+                },
+                {
+                    "code": "VEMKLIB212K",
+                    "name": "A környezetvédelem mérnöki vonatkozásai",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKFIB212E",
+                    "name": "Elektronika",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFI1312A"
+                    ]
+                },
+                {
+                    "code": "VEMKFIB231E",
+                    "name": "Elektronika laboratóriumi gyakorlat",
+                    "credits": 1,
+                    "prerequisites": [
+                        "VEMKFI1312A",
+                        "(VEMKFIB212E)"
+                    ]
+                },
+                {
+                    "code": "VEMKMUB244A",
+                    "name": "Művelettan A",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VEMKFKB312A"
+                    ]
+                },
+                {
+                    "code": "VEMKMUB212V",
+                    "name": "Művelettan B",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFKB312A"
+                    ]
+                },
+                {
+                    "code": "VEMKKVB212M",
+                    "name": "Minőségbiztosítás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFKB312A"
+                    ]
+                },
+                {
+                    "code": "VEMKKVB222B",
+                    "name": "Biztonságtechnika, munkavédelem és kockázatelemzés",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKLIB112B"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "5. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VEMKLIB223B",
+                    "name": "Biometria, bioinformatika",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEMKMAB212M",
+                        "VEMKMAB222M"
+                    ]
+                },
+                {
+                    "code": "VEMKLIB333M",
+                    "name": "Molekuláris biológia laboratóriumi gyakorlat",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEMKLIB312M",
+                        "VEMKOK1232K"
+                    ]
+                },
+                {
+                    "code": "VEMKLIB343G",
+                    "name": "A genetika alapjai",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEMKLIB312M"
+                    ]
+                },
+                {
+                    "code": "VEMKMUB312K",
+                    "name": "Korszerű elválasztástechnikák a biotechnológiában",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKMUB333K",
+                    "name": "Korszerű elválasztástechnikák a biotechnológiában laboratóriumi gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKBMB344B",
+                    "name": "Biomérnöki műveletek",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VEMKLIB232A",
+                        "VEMKLIB112M"
+                    ]
+                },
+                {
+                    "code": "VEMKBMB332B",
+                    "name": "Biomérnöki műveletek laboratóriumi gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKLIB232A",
+                        "VEMKLIB112M"
+                    ]
+                },
+                {
+                    "code": "VEMKKVB112H",
+                    "name": "Hulladékszegény technológiák",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKGEB211K"
+                    ]
+                },
+                {
+                    "code": "VEMKMUB134V",
+                    "name": "Vegyipari műveletek laboratóriumi gyakorlat",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VEMKMUB244A"
+                    ]
+                },
+                {
+                    "code": "VEMKFOB114M",
+                    "name": "Technológiai rendszerek modellezése",
+                    "credits": 4,
+                    "prerequisites": [
+                        "(VEMKFKB312A)"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "6. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VEMKKVB212V",
+                    "name": "Környezetvédelmi technológiák",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKLIB212K"
+                    ]
+                },
+                {
+                    "code": "VEMKBMB312E",
+                    "name": "Enzimes technológiák",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKBMB344B"
+                    ]
+                },
+                {
+                    "code": "VEMKBMB332E",
+                    "name": "Enzimes technológiák laboratóriumi gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKBMB344B",
+                        "VEMKBMB332B"
+                    ]
+                },
+                {
+                    "code": "VEMKFOB212T",
+                    "name": "Technológiai rendszerek tervezése",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFOB114M"
+                    ]
+                },
+                {
+                    "code": "VEMKMUB312B",
+                    "name": "Bioreaktorok",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKBMB344B"
+                    ]
+                },
+                {
+                    "code": "VEMKMUB332B",
+                    "name": "Bioreaktorok laboratóriumi gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKBMB344B",
+                        "VEMKBMB332B"
+                    ]
+                },
+                {
+                    "code": "VEMKFOB213F",
+                    "name": "Folyamatirányítás",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEMKFOB333S"
+                    ]
+                },
+                {
+                    "code": "VEMKEU1312E",
+                    "name": "EU ismeretek",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKBMB312F",
+                    "name": "Fermentációs feldolgozási műveletek",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKMUB244A",
+                        "VEMKBMB344B"
+                    ]
+                },
+                {
+                    "code": "VEMKBMB332F",
+                    "name": "Fermentációs feldolgozási műveletek laboratóriumi gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKMUB244A",
+                        "VEMKBMB344B",
+                        "VEMKBMB332B"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Választható differenciált szakmai tárgy",
+                    "credits": 10,
+                    "course_block_references": [
+                        "Választható differenciált szakmai tárgy part I.",
+                        "Választható differenciált szakmai tárgy part II."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "7. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "Választható differenciált szakmai tárgy",
+                    "credits": 7,
+                    "course_block_references": [
+                        "Választható differenciált szakmai tárgy part I.",
+                        "Választható differenciált szakmai tárgy part II."
+                    ]
+                },
+                {
+                    "code": "VEMKLIB12XD",
+                    "name": "Szakdolgozat",
+                    "credits": 15
+                },
+                {
+                    "code": null,
+                    "name": "Választható menedzsment tárgy",
+                    "credits": 6,
+                    "course_block_references": [
+                        "Választható menedzsment tárgy"
+                    ]
+                },
+                {
+                    "code": "???",
+                    "name": "Biomérnöki alapszak nyári szakmai gyakorlat",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "Választható társadalomtudományi tárgy",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VEMKTT1312F",
+                    "name": "Filozófia",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKTT1312P",
+                    "name": "Politika-elmélet",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKTT1312S",
+                    "name": "Szociológia",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKGES523E",
+                    "name": "Etika, protokoll, művelődés (nem csak műszakiaknak)",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Választható differenciált szakmai tárgy part I.",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VEMKBMB412M",
+                    "name": "Membrános műveletek",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKBMB432M",
+                    "name": "Membrános műveletek laboratóriumi gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKRKB452R",
+                    "name": "Radioizotópos vizsgálati módszerek",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKRK3321S"
+                    ]
+                },
+                {
+                    "code": "VEMKOT4244A",
+                    "name": "Gyógyszerkémia és szintézis tervezés",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VEMKOK1112B"
+                    ]
+                },
+                {
+                    "code": "VEMKKAB412K",
+                    "name": "Kemometria, jelfeldolgozás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFOB114M"
+                    ]
+                },
+                {
+                    "code": "VEMKBMB412K",
+                    "name": "Biokatalízis az élelmiszeriparban",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Rögzítettt biokatalizátorok, bioreaktorok",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKLIB232A",
+                        "VEMKLIB112M"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Választható differenciált szakmai tárgy part II.",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VEMKKAB454B",
+                    "name": "Bio-kromatográfia",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VEMKKAB114A"
+                    ]
+                },
+                {
+                    "code": "VEMKBMB412B",
+                    "name": "Integrált biotechnikák",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKBMB344B"
+                    ]
+                },
+                {
+                    "code": "VEMKBMB432B",
+                    "name": "Integrált biotechnikák laboratóriumi gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKBMB344B",
+                        "VEMKBMB332B"
+                    ]
+                },
+                {
+                    "code": "VEMKRK3312O",
+                    "name": "Radioökológia",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKRK3321S"
+                    ]
+                },
+                {
+                    "code": "VEMKKAB412E",
+                    "name": "Érzékelők, szenzorok",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFOB114M"
+                    ]
+                },
+                {
+                    "code": "VEMKZOB212T",
+                    "name": "Toxikológia, ökotoxikológia",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(VEMKOKB112B)"
+                    ]
+                },
+                {
+                    "code": "VEMKZOB231T",
+                    "name": "Toxikológia, ökotoxikológia laboratóriumi gyakorlat",
+                    "credits": 1,
+                    "prerequisites": [
+                        "(VEMKOKB112B)"
+                    ]
+                },
+                {
+                    "code": "VEMKOKB232K",
+                    "name": "Biokémia laboratóriumi gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKAKB112B"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Választható menedzsment tárgy",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VEMKVVB212K",
+                    "name": "Mérnöki kommunikáció",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKVVB222K",
+                    "name": "Mérnöki kommunikáció gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKVVB232K",
+                    "name": "Mérnöki kommunikáció informatikai eszközei",
+                    "credits": 2
+                },
+                {
+                    "code": "VEGTMEB312A",
+                    "name": "Általános menedzsment",
+                    "credits": 2
+                },
+                {
+                    "code": "VEGTMEB312T",
+                    "name": "Termelés menedzsment",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKVV212J",
+                    "name": "Jogi alapismeretek",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKTE3242M",
+                    "name": "Minőségirányítás az iparban",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKBMB512B",
+                    "name": "A biotechnológiai ipar helye az üzleti világban",
+                    "credits": 2
+                }
+            ]
+        }
+    ]
 }

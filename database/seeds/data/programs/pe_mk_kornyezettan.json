@@ -1,5 +1,832 @@
 {
     "name": "Környezettan",
     "description": "Környezettan alapszak - nappali tagozat tanterve",
-    "curriculum_updated_at": "2013-03-06"
+    "curriculum_updated_at": "2013-03-06",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VEMKAKB112B",
+                    "name": "Általános és szervetlen kémia B",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKAKB122B",
+                    "name": "Általános és szervetlen kémia gyakorlat I. B",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKFI1312A",
+                    "name": "Fizika I.",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKFI1322A",
+                    "name": "Fizika I. gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKFOB333S",
+                    "name": "Számítástechnika",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMKFT1112F",
+                    "name": "Természetföldrajz",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKFTB112A",
+                    "name": "Bevezetés a környezettanba",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKFTB212S",
+                    "name": "Környezetszociológia",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKLIB112A",
+                    "name": "Általános ökológia I.",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKLIB112B",
+                    "name": "Infraindividuális biológia",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKLIB132A",
+                    "name": "Általános ökológia I. laboratóriumi gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKLIB212B",
+                    "name": "Botanika",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKMAB112M",
+                    "name": "Matematikai analízis I.",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKMAB122M",
+                    "name": "Matematikai analízis I. gyakorlat",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VEMKAKB233B",
+                    "name": "Általános és szervetlen kémia laboratóriumi gyakorlat I. B",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEMKAKB112B",
+                        "VEMKAKB122B"
+                    ]
+                },
+                {
+                    "code": "VEMKFI1312B",
+                    "name": "Fizika II.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFI1312A",
+                        "VEMKFI1322A"
+                    ]
+                },
+                {
+                    "code": "VEMKFI1332A",
+                    "name": "Fizika laboratóriumi gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFI1312A",
+                        "VEMKFI1322A"
+                    ]
+                },
+                {
+                    "code": "VEMKFTB143K",
+                    "name": "Ásvány- és kőzettan",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEMKFT1112F"
+                    ]
+                },
+                {
+                    "code": "VEMKFTB214K",
+                    "name": "Környezetkémiai alapismeretek",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMKFTB243F",
+                    "name": "Általános földtan",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEMKFT1112F"
+                    ]
+                },
+                {
+                    "code": "VEMKLIB212A",
+                    "name": "Általános ökológia II.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKLIB112A"
+                    ]
+                },
+                {
+                    "code": "VEMKLIB132B",
+                    "name": "Infraindividuális biológia laboratóriumi gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKLIB112B"
+                    ]
+                },
+                {
+                    "code": "VEMKLIB212Z",
+                    "name": "Zoológia",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKLIB112A",
+                        "VEMKLIB112B"
+                    ]
+                },
+                {
+                    "code": "VEMKMAB212M",
+                    "name": "Matematikai analízis II.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKMAB112M",
+                        "VEMKMAB122M"
+                    ]
+                },
+                {
+                    "code": "VEMKMAB212S",
+                    "name": "Matematikai statisztika",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKMAB112M",
+                        "VEMKMAB122M"
+                    ]
+                },
+                {
+                    "code": "VEMKMAB222M",
+                    "name": "Matematikai analízis II. gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKMAB112M",
+                        "VEMKMAB122M"
+                    ]
+                },
+                {
+                    "code": "VEMKFTB212T",
+                    "name": "Talajtan",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFT1112F"
+                    ]
+                },
+                {
+                    "code": "VEMKFTB232T",
+                    "name": "Talajtan laboratóriumi gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFT1112F"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VEMINAB112B",
+                    "name": "Biofizika",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFI1312B",
+                        "VEMKFI1332A"
+                    ]
+                },
+                {
+                    "code": "VEMKOKB112B",
+                    "name": "Biokémia",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFTB214K"
+                    ]
+                },
+                {
+                    "code": "VEMKOKB232K",
+                    "name": "Biokémia laboratóriumi gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKAKB112B",
+                        "VEMKLIB112B"
+                    ]
+                },
+                {
+                    "code": "VEMKLIB112M",
+                    "name": "A mikrobiológia alapjai",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKLIB112B",
+                        "VEMKLIB212B"
+                    ]
+                },
+                {
+                    "code": "VEMKLIB132M",
+                    "name": "A mikrobiológia alapjai laboratóriumi gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKLIB112B",
+                        "VEMKLIB212B"
+                    ]
+                },
+                {
+                    "code": "VEMKFTB112J",
+                    "name": "Környezetjogi ismeretek",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKFTB134K",
+                    "name": "Környezetkémiai alapismeretek laboratóriumi gyakorlat",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VEMKFTB214K"
+                    ]
+                },
+                {
+                    "code": "VEMKKAB114A",
+                    "name": "Kémiai analízis",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VEMKAKB112B"
+                    ]
+                },
+                {
+                    "code": "VEMKLIB143T",
+                    "name": "Természetvédelem",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEMKLIB212A"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VEMKIKB222B",
+                    "name": "Általános és szervetlen kémia gyakorlat II. B",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKAKB112B",
+                        "VEMKAKB122B"
+                    ]
+                },
+                {
+                    "code": "VEMKFTB212L",
+                    "name": "Légkörtan",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKAKB112B",
+                        "VEMKFTB112A",
+                        "VEMKFI1312B"
+                    ]
+                },
+                {
+                    "code": "VEMKFTB214R",
+                    "name": "Környezeti megfigyelési rendszerek",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VEMKFTB214K",
+                        "VEMKLIB212A",
+                        "VEMKFTB212T"
+                    ]
+                },
+                {
+                    "code": "VEMKKVB254G",
+                    "name": "Geoinformációs rendszerek",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VEMKFT1112F"
+                    ]
+                },
+                {
+                    "code": "VEMKLIB114E",
+                    "name": "Környezetegészségtan",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VEMKOKB112B"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "5. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VEMKFTB134R",
+                    "name": "Környezeti megfigyelési rendszerek laboratóriumi gyakorlat",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VEMKFTB214R"
+                    ]
+                },
+                {
+                    "code": "VEMKRK3321S",
+                    "name": "Sugárzástani alapismeretek",
+                    "credits": 1
+                },
+                {
+                    "code": "VEMKKTBXS",
+                    "name": "Szakmai gyakorlat",
+                    "credits": 0
+                },
+                {
+                    "code": "VEMKKAB234A",
+                    "name": "Kémiai analízis laboratóriumi gyakorlat",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VEMKKAB114A"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "6. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "VEMKKTB2XXS",
+                    "name": "Szakdolgozat",
+                    "credits": 10
+                }
+            ]
+        },
+        {
+            "name": "Szakirány",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "Környezetkémia szakirány",
+                    "credits": 60,
+                    "course_block_references": [
+                        "Környezetkémia szakirány 3. félév",
+                        "Környezetkémia szakirány 4. félév",
+                        "Környezetkémia szakirány 5. félév",
+                        "Környezetkémia szakirány 6. félév"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Környezetbiológia-limnológia szakirány",
+                    "credits": 60,
+                    "course_block_references": [
+                        "Környezetbiológia-limnológia szakirány 3. félév",
+                        "Környezetbiológia-limnológia szakirány 4. félév",
+                        "Környezetbiológia-limnológia szakirány 5. félév",
+                        "Környezetbiológia-limnológia szakirány 6. félév"
+                    ]
+                }
+            ],
+            "is_counted": false
+        },
+        {
+            "name": "Környezetkémia szakirány 3. félév",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 6
+                }
+            ]
+        },
+        {
+            "name": "Környezetkémia szakirány 4. félév",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VEMKFKB212A",
+                    "name": "Fizikai kémia I.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKAKB112B",
+                        "VEMKFI1312A",
+                        "VEMKMAB122M"
+                    ]
+                },
+                {
+                    "code": "VEMKIKB242V",
+                    "name": "Általános és szervetlen kémia II.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKAKB112B"
+                    ]
+                },
+                {
+                    "code": "VEMKLIB212H",
+                    "name": "Hidrogeológia",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFTB243F"
+                    ]
+                },
+                {
+                    "code": "VEMKOK1212B",
+                    "name": "Szerves kémia I. B",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKEU1312E",
+                    "name": "EU ismeretek",
+                    "credits": 2
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Környezetkémia szakirány 5. félév",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VEMKFK2132A",
+                    "name": "Fizikai kémia laboratóriumi gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(VEMKFKB312A)"
+                    ]
+                },
+                {
+                    "code": "VEMKFKB312A",
+                    "name": "Fizikai kémia II.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(VEMKAKB122B)",
+                        "VEMKFKB212A"
+                    ]
+                },
+                {
+                    "code": "VEMKFKB322A",
+                    "name": "Fizikai kémia számítási gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFKB212A",
+                        "(VEMKFKB312A)"
+                    ]
+                },
+                {
+                    "code": "VEMKFTK112A",
+                    "name": "Környezeti analitika",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFTB214K"
+                    ]
+                },
+                {
+                    "code": "VEMKIKB133V",
+                    "name": "Általános és szervetlen kémia II. laboratóriumi gyakorlat",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEMKAKB233B"
+                    ]
+                },
+                {
+                    "code": "VEMKLIK112L",
+                    "name": "Limnológia és hidrobiológia I.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFTB214K",
+                        "VEMKFTB243F",
+                        "VEMKLIB212A"
+                    ]
+                },
+                {
+                    "code": "VEMKKVB112S",
+                    "name": "Szennyvíztisztítás alapjai",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFTB214K"
+                    ]
+                },
+                {
+                    "code": "VEMKKVB132V",
+                    "name": "Szennyvíztisztítás alapjai laboratóriumi gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFTB214K"
+                    ]
+                },
+                {
+                    "code": "VEMKKVT112E",
+                    "name": "Energiagazdálkodás és környezetvédelem",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFTB214K"
+                    ]
+                },
+                {
+                    "code": "VEMKOK1112B",
+                    "name": "Szerves kémia II. B",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKOK1212B"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Környezetkémia szakirány 6. félév",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VEMKFTK135A",
+                    "name": "Környezeti analitika laborgyakorlat",
+                    "credits": 5,
+                    "prerequisites": [
+                        "VEMKFTK112A"
+                    ]
+                },
+                {
+                    "code": "VEMKKTB323S",
+                    "name": "Szakdolgozati szeminárium",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMKOK1232K",
+                    "name": "Szerves kémia laboratóriumi gyakorlat B",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKOK1112B"
+                    ]
+                },
+                {
+                    "code": "VEMKKVB212H",
+                    "name": "Hulladék-gazdálkodás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFTB214K"
+                    ]
+                },
+                {
+                    "code": "VEMKKVB212M",
+                    "name": "Minőségbiztosítás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFTB112J"
+                    ]
+                },
+                {
+                    "code": "VEMKKVT232H",
+                    "name": "Hulladék-gazdálkodás laboratóriumi gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFTB214K"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Környezetbiológia-limnológia szakirány 3. félév",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VEMKLIK112L",
+                    "name": "Limnológia és hidrobiológia I.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFTB214K",
+                        "VEMKFTB243F",
+                        "VEMKLIB212A"
+                    ]
+                },
+                {
+                    "code": "VEMKLIK112N",
+                    "name": "Növényrendszertan és növényismeret I.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKLIB212B"
+                    ]
+                },
+                {
+                    "code": "VEMKLIK122L",
+                    "name": "Limnológia és hidrobiológia I. gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFTB214K",
+                        "VEMKFTB243F",
+                        "VEMKLIB212A"
+                    ]
+                },
+                {
+                    "code": "VEMKLIK132N",
+                    "name": "Növényrendszertan és növényismeret laboratóriumi gyakorlat I.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKLIB212B"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Környezetbiológia-limnológia szakirány 4. félév",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VEMKLIB212H",
+                    "name": "Hidrogeológia",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFTB243F"
+                    ]
+                },
+                {
+                    "code": "VEMKLIK212A",
+                    "name": "Állatrendszertan és állatismeret",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKLIB212Z"
+                    ]
+                },
+                {
+                    "code": "VEMKZOB212T",
+                    "name": "Toxikológia, ökotoxikológia",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKOKB112B"
+                    ]
+                },
+                {
+                    "code": "VEMKLIK232A",
+                    "name": "Állatrendszertan és állatismeret laboratóriumi gyakorlat I.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKLIB212Z"
+                    ]
+                },
+                {
+                    "code": "VEMKLIK232N",
+                    "name": "Növényrendszertan és növényismeret laboratóriumi gyakorlat II.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKLIK112N",
+                        "VEMKLIK132N"
+                    ]
+                },
+                {
+                    "code": "VEMKLIK253D",
+                    "name": "Algológia és diatomológia",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEMKLIB212B",
+                        "VEMKLIK112L"
+                    ]
+                },
+                {
+                    "code": "VEMKLIK253V",
+                    "name": "Vízi gerinctelenek",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEMKLIB212Z",
+                        "VEMKLIK112L"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Környezetbiológia-limnológia szakirány 5. félév",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VEMKKVB112S",
+                    "name": "Szennyvíztisztítás alapjai",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFTB214K"
+                    ]
+                },
+                {
+                    "code": "VEMKKVB132S",
+                    "name": "Szennyvíztisztítás alapjai laboratóriumi gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFTB214K"
+                    ]
+                },
+                {
+                    "code": "VEMKLIK152H",
+                    "name": "Hal- és halászatbiológia",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKLIB212Z"
+                    ]
+                },
+                {
+                    "code": "VEMKLIK112E",
+                    "name": "Evolúciógenetika",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKLIB112B",
+                        "VEMKLIB132B"
+                    ]
+                },
+                {
+                    "code": "VEMKLIK112H",
+                    "name": "Limnológia és hidrobiológia II.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKLIK112L",
+                        "VEMKLIK122L"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 8
+                }
+            ]
+        },
+        {
+            "name": "Környezetbiológia-limnológia szakirány 6. félév",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "VEMKKVB212M",
+                    "name": "Minőségbiztosítás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFTB112J"
+                    ]
+                },
+                {
+                    "code": "VEMKKTB323S",
+                    "name": "Szakdolgozati szeminárium",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMKLIK232R",
+                    "name": "Állatrendszertan és állatismeret laboratóriumi gyakorlat II.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKLIK212A",
+                        "VEMKLIK232A"
+                    ]
+                },
+                {
+                    "code": "VEMKLIK254R",
+                    "name": "Víz Keretirányelv",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VEMKLIK253D",
+                        "VEMKLIK253V",
+                        "VEMKLIK112H"
+                    ]
+                },
+                {
+                    "code": "VEMKEU1312E",
+                    "name": "EU ismeretek",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKLIK134H",
+                    "name": "Limnológia és hidrobiológia II. laboratóriumi gyakorlat",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VEMKLIK112L"
+                    ]
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható",
+                    "credits": 1
+                }
+            ]
+        }
+    ]
 }

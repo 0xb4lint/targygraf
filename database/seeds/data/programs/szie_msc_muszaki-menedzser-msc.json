@@ -1,5 +1,464 @@
 {
     "name": "Műszaki menedzser MSc",
     "description": "Műszaki menedzser MSc szak - nappali tagozat tanterve",
-    "curriculum_updated_at": "2013-09-04"
+    "curriculum_updated_at": "2013-09-04",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Alkalmazott informatika",
+                    "credits": 5
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Modern fizika",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Műszaki-gazdasági matematika",
+                    "credits": 6
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Projekt menedzsment",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Üzleti tervezés",
+                    "credits": 2
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Világgazdaságtan",
+                    "credits": 3
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható tárgy I.",
+                    "credits": 2
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható tárgy II.",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "A kémiai biztonság és minősítés alapjai",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Gazdasági jog",
+                    "credits": 2
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Matematikai operációkutatás alkalmazásai",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Vezetői gazdaságtan",
+                    "credits": 5
+                },
+                {
+                    "code": null,
+                    "name": "Modultárgy I.",
+                    "credits": 4,
+                    "course_block_references": [
+                        "Agrobiznisz modul",
+                        "Megújuló energiák modul",
+                        "Projekt tervezés és kontroll modul",
+                        "Termelés- és minőségmenedzsment modul",
+                        "Ipari marketing és logisztika modul"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Modultárgy II.",
+                    "credits": 3,
+                    "course_block_references": [
+                        "Agrobiznisz modul",
+                        "Megújuló energiák modul",
+                        "Projekt tervezés és kontroll modul",
+                        "Termelés- és minőségmenedzsment modul",
+                        "Ipari marketing és logisztika modul"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Modultárgy III.",
+                    "credits": 3,
+                    "course_block_references": [
+                        "Agrobiznisz modul",
+                        "Megújuló energiák modul",
+                        "Projekt tervezés és kontroll modul",
+                        "Termelés- és minőségmenedzsment modul",
+                        "Ipari marketing és logisztika modul"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Kötelezően választható műszaki tárgy I.",
+                    "credits": 5
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható tárgy III.",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Stratégiai-menedzsment",
+                    "credits": 4
+                },
+                {
+                    "code": null,
+                    "name": "Modultárgy IV.",
+                    "credits": 4,
+                    "course_block_references": [
+                        "Agrobiznisz modul",
+                        "Megújuló energiák modul",
+                        "Projekt tervezés és kontroll modul",
+                        "Termelés- és minőségmenedzsment modul",
+                        "Ipari marketing és logisztika modul"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Modultárgy V.",
+                    "credits": 4,
+                    "course_block_references": [
+                        "Agrobiznisz modul",
+                        "Megújuló energiák modul",
+                        "Projekt tervezés és kontroll modul",
+                        "Termelés- és minőségmenedzsment modul",
+                        "Ipari marketing és logisztika modul"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Modultárgy VI.",
+                    "credits": 4,
+                    "course_block_references": [
+                        "Agrobiznisz modul",
+                        "Megújuló energiák modul",
+                        "Projekt tervezés és kontroll modul",
+                        "Termelés- és minőségmenedzsment modul",
+                        "Ipari marketing és logisztika modul"
+                    ]
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Modul projekt feladat",
+                    "credits": 8
+                },
+                {
+                    "code": "___FREE___",
+                    "name": "Szabadon választható tárgy IV.",
+                    "credits": 2
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Kötelezően választható műszaki tárgy II.",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Kötelezően választható műszaki tárgy III.",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Diplomakészítési gyakorlat",
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Vállalkozásvezetési gyakorlat",
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Diplomamunka",
+                    "credits": 30
+                }
+            ]
+        },
+        {
+            "name": "Szakmai modulok",
+            "is_semester": true,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "Agrobiznisz modul",
+                    "credits": 22,
+                    "course_block_references": [
+                        "Agrobiznisz modul"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Megújuló energiák modul",
+                    "credits": 22,
+                    "course_block_references": [
+                        "Megújuló energiák modul"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Projekt tervezés és kontroll modul",
+                    "credits": 22,
+                    "course_block_references": [
+                        "Projekt tervezés és kontroll modul"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Termelés- és minőségmenedzsment modul",
+                    "credits": 22,
+                    "course_block_references": [
+                        "Termelés- és minőségmenedzsment modul"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Ipari marketing és logisztika modul",
+                    "credits": 22,
+                    "course_block_references": [
+                        "Ipari marketing és logisztika modul"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Agrobiznisz modul",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Mezőgazdasági technológiák",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Gépek és rendszerek üzemeltetése",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Agrármarketing",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Termelőeszköz kereskedelem",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Innováció-menedzsment",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Mezőgazdasági gépek",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "Megújuló energiák modul",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Mezőgazdasági technológiák",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Gépek és rendszerek üzemeltetése",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Energiagazdálkodás",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Ellátásbiztonság",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Innováció-menedzsment",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Energetikai berendezések",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "Projekt tervezés és kontroll modul",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Beruházások műszaki előkészítése I.",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Hálózati folyamatok műszaki alkalmazásai",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Projekt tervezés I.",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Projekt monitoring és kontroll",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Projekt tervezés II.",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Beruházások műszaki előkészítése II.",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "Termelés- és minőségmenedzsment modul",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Mezőgazdasági technológiák",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Műszaki termelésmenedzsment",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Vállalatirányítási rendszerek",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Minőségmenedzsment módszerek",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Innováció-menedzsment",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Gépipari minőségbiztosítás",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "Ipari marketing és logisztika modul",
+            "is_semester": false,
+            "courses": [
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Logisztikai folyamatok szimulációja",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Műszaki termelésmenedzsment",
+                    "credits": 3
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Logisztikai folyamatok tervezése",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Ipari marketing",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Innováció-menedzsment",
+                    "credits": 4
+                },
+                {
+                    "code": "SGMxxXxxXN",
+                    "name": "Termelési logisztika",
+                    "credits": 4
+                }
+            ]
+        }
+    ]
 }
