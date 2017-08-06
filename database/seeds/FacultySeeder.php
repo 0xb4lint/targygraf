@@ -11,10 +11,11 @@ class FacultySeeder extends AbstractJsonFileSeeder
 
     protected function processData($path, $data)
     {
-        $fileNameParts = explode('_', pathinfo($path, PATHINFO_FILENAME));
+        $fileNameParts  = explode('_', pathinfo($path, PATHINFO_FILENAME));
+        $university     = University::where('slug', $fileNameParts[0])->firstOrFail();
 
         $faculty = new Faculty;
-        $faculty->university_id = University::where('slug', $fileNameParts[0])->value('id');
+        $faculty->university_id = $university->id;
         $faculty->slug          = $fileNameParts[1];
         $faculty->name          = $data->name;
         $faculty->ordering      = $data->ordering;

@@ -22,7 +22,7 @@ class CreateProgramsTable extends Migration
             $table->string('name');
             $table->string('slug', 50)->collation('ascii_bin')->index();
 
-            $table->string('desciption')->nullable();
+            $table->string('description')->nullable();
             $table->date('curriculum_updated_at')->nullable();
 
             $table->timestamps();
