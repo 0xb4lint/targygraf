@@ -20,13 +20,9 @@ class CreateCourseBlocksTable extends Migration
             $table->foreign('program_id')->references('id')->on('programs');
 
             $table->string('name');
-            $table->string('slug')->collation('ascii_bin')->index();
             $table->boolean('is_semester')->default(true);
-            $table->boolean('is_counted')->default(true);
             $table->tinyInteger('ordering')->unsigned()->default(0);
-
-            $table->string('desciption')->nullable();
-            $table->date('curriculum_updated_at')->nullable();
+            $table->boolean('is_counted')->default(true);
 
             $table->timestamps();
             $table->softDeletes();
