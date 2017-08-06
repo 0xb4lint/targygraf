@@ -15,7 +15,7 @@ class UniversitySeeder extends AbstractJsonFileSeeder
         $university->name       = $data->name;
         $university->row        = $data->row;
         $university->ordering   = $data->ordering;
-        $university->has_logo   = (bool)@$data->has_logo;
+        $university->has_logo   = (bool)$data->has_logo;
         $university->save();
     }
 }

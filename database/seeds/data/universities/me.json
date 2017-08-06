@@ -1,5 +1,6 @@
 {
     "name": "Miskolci Egyetem",
     "row": 1,
-    "ordering": 3
+    "ordering": 3,
+    "has_logo": false
 }
