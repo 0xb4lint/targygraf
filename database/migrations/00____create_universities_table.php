@@ -18,6 +18,7 @@ class CreateUniversitiesTable extends Migration
 
             $table->string('name');
             $table->string('slug')->collation('ascii_bin')->unique();
+            $table->tinyInteger('row')->unsigned()->default(0);
             $table->tinyInteger('ordering')->unsigned()->default(0);
 
             $table->boolean('has_logo')->default(false);
