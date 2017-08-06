@@ -21,7 +21,6 @@ class CreateProgramsTable extends Migration
 
             $table->string('name');
             $table->string('slug', 50)->collation('ascii_bin')->index();
-            $table->tinyInteger('ordering')->unsigned()->default(0);
 
             $table->string('desciption')->nullable();
             $table->date('curriculum_updated_at')->nullable();
