@@ -11,7 +11,8 @@ class University extends Model
 
     public function faculties()
     {
-        return $this->hasMany(Faculty::class);
+        return $this->hasMany(Faculty::class)
+            ->orderBy('ordering');
     }
 
 

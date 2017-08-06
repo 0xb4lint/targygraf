@@ -11,7 +11,9 @@ class Program extends Model
 
     public function courseBlocks()
     {
-        return $this->hasMany(CourseBlock::class);
+        return $this->hasMany(CourseBlock::class)
+            ->orderBy('is_semester')
+            ->orderBy('ordering');
     }
 
 
