@@ -5,12 +5,14 @@ use App\University;
 
 class FacultySeeder extends AbstractJsonFileSeeder
 {
-    protected $jsonFilesDirectory = 'seeds/data/faculties';
+    protected $jsonFilesDirectory = 'json/faculties';
 
 
 
     protected function processData($path, stdClass $data)
     {
+        $this->command->comment($path);
+
         $fileNameParts  = explode('_', pathinfo($path, PATHINFO_FILENAME));
         $university     = University::where('slug', $fileNameParts[0])->firstOrFail();
 

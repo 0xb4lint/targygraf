@@ -10,12 +10,14 @@ class ProgramSeeder extends AbstractJsonFileSeeder
 {
     protected $prerequisites;
     protected $courseBlockReferences;
-    protected $jsonFilesDirectory = 'seeds/data/programs';
+    protected $jsonFilesDirectory = 'json/programs';
 
 
 
     protected function processData($path, stdClass $data)
     {
+        $this->command->comment($path);
+
         $this->prerequisites = [];
         $this->courseBlockReferences = [];
 
@@ -93,8 +95,15 @@ class ProgramSeeder extends AbstractJsonFileSeeder
             $course = Course::findOrFail($courseID);
 
             foreach ($rawPrerequisities as $rawPrerequisity) {
-                $code           = trim($rawPrerequisity, '()');
-                $prerequisity   = Course::where('code', $code)->firstOrFail();
+                $code = trim($rawPrerequisity, '()');
+                $prerequisityQuery = Course::select('courses.*')->where('courses.code', $code);
+
+                if (!preg_match('/^___\d+___$/', $code)) {
+                    $prerequisityQuery->join('course_blocks', 'course_blocks.id', '=', 'courses.course_block_id')
+                    ->where('course_blocks.program_id', $program->id);
+                }
+
+                $prerequisity = $prerequisityQuery->firstOrFail();
 
                 $course->prerequisites()->attach($prerequisity->id, [
                     'is_parallel' => preg_match('/^\(.+\)$/', $rawPrerequisity)

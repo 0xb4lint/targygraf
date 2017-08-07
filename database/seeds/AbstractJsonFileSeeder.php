@@ -21,14 +21,14 @@ abstract class AbstractJsonFileSeeder extends Seeder
 
     protected function processAllJsonFiles()
     {
-        $jsonFiles = scandir(database_path($this->jsonFilesDirectory));
+        $jsonFiles = scandir(base_path($this->jsonFilesDirectory));
 
         foreach ($jsonFiles as $jsonFile) {
             if (!ends_with($jsonFile, '.json')) {
                 continue;
             }
 
-            $this->processJsonFile(database_path($this->jsonFilesDirectory . '/' . $jsonFile));
+            $this->processJsonFile(base_path($this->jsonFilesDirectory . '/' . $jsonFile));
         }
     }
 

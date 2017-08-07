@@ -4,12 +4,14 @@ use App\University;
 
 class UniversitySeeder extends AbstractJsonFileSeeder
 {
-    protected $jsonFilesDirectory = 'seeds/data/universities';
+    protected $jsonFilesDirectory = 'json/universities';
 
 
 
     protected function processData($path, stdClass $data)
     {
+        $this->command->comment($path);
+
         $university = new University;
         $university->slug       = pathinfo($path, PATHINFO_FILENAME);
         $university->name       = $data->name;
