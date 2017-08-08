@@ -1,0 +1,445 @@
+"name": "Gazdaságinformatikus",
+    "description": "Gazdaságinformatikus BSc szak - nappali tagozat tanterve",
+    "curriculum_updated_at": "2015-09-01",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "DFAN-TKT-003",
+                    "name": "Közgazdaságtan I.",
+                    "credits": 5  
+                },
+                {
+                    "code": "DFAN-INF-400",
+                    "name": "Számítástudomány alapjai I.",
+                    "credits": 5
+                },
+                {
+                    "code": "DFAN-INF-001",
+                    "name": "Matematika I.",
+                    "credits": 5
+                },
+                {
+                    "code": "DFAN-INF-266",
+                    "name": "PC-k és perifériák",
+                    "credits": 5
+                },
+                {
+                    "code": "DFAN-INF-50",
+                    "name": "Bevezetés a programozásba",
+                    "credits": 5
+                },
+                {
+                    "code": "DFAN-INF-610",
+                    "name": "Információrendszerek fejlesztése I.",
+                    "credits": 5
+                },
+                {
+                    "code": "DFTHIH-118",
+                    "name": "Szakmentóri óra I.",
+                    "credits": 0
+                },
+                {
+                    "code": "DFAN-DSE-001",
+                    "name": "Testnevelés I.",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "DFAN-INF-002",
+                    "name": "Matematika II.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "DFAN-INF-001"
+                    ]
+                },
+                {
+                    "code": "DFAN-INF-402",
+                    "name": "Számítástudomány alapjai II.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "DFAN-INF-400"
+                    ]
+                },
+                {
+                    "code": "DFAN-INF-301",
+                    "name": "Operációs rendszerek I.",
+                    "credits": 5
+                },
+                {
+                    "code": null,
+                    "name": "Szabadon választható",
+                    "credits": 5
+                },
+                {
+                    "code": "DFAN-INF-502",
+                    "name": "Programozás I.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "DFAN-INF-001"
+                        "DFAN-INF-400"                        
+                    ]
+                },
+                {
+                    "code": "DFTHIH-120",
+                    "name": "Szakmentóri óra II.",
+                    "credits": 0,
+                    "prerequisites": [
+                        "DFTHIH-118"
+                    ]
+                },
+                {
+                    "code": "DFAO-TKM-910",
+                    "name": "Angol I.",
+                    "credits": 0
+                },
+                {
+                    "code": "DFAN-INF-260",
+                    "name": "Számítógép-architektúrák",
+                    "credits": 5,
+                    "prerequisites": [
+                        "DFAN-INF-266"
+                    ]
+                },
+                {
+                    "code": "DFAN-DSE-002",
+                    "name": "Testnevelés II.",
+                    "credits": 0,
+                    "prerequisites": [
+                        "DFAN-DSE-001"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "DFAN-TVV-337",
+                    "name": "Vállalatgazdaságtan II.",
+                    "credits": 5
+                },
+                {
+                    "code": "DFAN-INF-600",
+                    "name": "Adatbáziskezelés",
+                    "credits": 5
+                },
+                {
+                    "code": "DFAN-INF-280",
+                    "name": "Számítógép- és távközlési hálózatok",
+                    "credits": 5
+                },
+                {
+                    "code": "DFAN-TKT-010",
+                    "name": "Pénzügytan alapjai",
+                    "credits": 5
+                },
+                {
+                    "code": "DFAN-INF-504",
+                    "name": "Programozás II.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "DFAN-INF-502"
+                    ]
+                },
+                {
+                    "code": "DFAN-INF-260",
+                    "name": "Számítógép architektúrák I.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "DFAN-INF-266"
+                    ]
+                },
+                {
+                    "code": "DFAO-TKM-920",
+                    "name": "Angol II.",
+                    "credits": 0,
+                    "prerequisites": [
+                        "DFAO-TKM-910"
+                    ]
+                },
+                {
+                    "code": "DFAN-DSE-003",
+                    "name": "Testnevelés III.",
+                    "credits": 0,
+                    "prerequisites": [
+                        "DFAN-DSE-002"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "DFAN-INF-260",
+                    "name": "Operációs rendszerek II.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "DFAN-INF-301"
+                    ]                    
+                },
+                {
+                    "code": "DFAN-INF-420",
+                    "name": "Szoftverfejlesztési technológiák",
+                    "credits": 5,
+                    "prerequisites": [
+                        "DFAN-INF-504"
+                    ]
+                },
+                {
+                    "code": "DFAN-INF-241",
+                    "name": "Mesterséges intelligencia alapjai",
+                    "credits": 5,
+                    "prerequisites": [
+                        "DFAN-INF-402"
+                    ]
+                },
+                {
+                    "code": "DFAN-INF-650",
+                    "name": "Adatbiztonság, adatvédelem",
+                    "credits": 5
+                },
+                {
+                    "code": null,
+                    "name": "Szabadon választható",
+                    "credits": 5
+                },
+                {
+                    "code": "DFAN-TKT-006",
+                    "name": "Általános és gazdasági statisztika",
+                    "credits": 5
+                },
+                {
+                    "code": "DFAO-TKM-930",
+                    "name": "Angol III.",
+                    "credits": 0,
+                    "prerequisites": [
+                        "DFAO-TKM-920"
+                    ]
+                },
+                {
+                    "code": "DFAN-DSE-004",
+                    "name": "Testnevelés IV.",
+                    "credits": 0,
+                    "prerequisites": [
+                        "DFAN-DSE-003"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "5. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "DFAN-INF-450",
+                    "name": "Operációkutatás I.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "DFAN-INF-002"
+                    ]
+                },
+                {
+                    "code": "DFAN-TVV-607",
+                    "name": "Menedzsment",
+                    "credits": 5
+                },
+                {
+                    "code": "DFAN-INF-612",
+                    "name": "Információrendszerek fejlesztése II.",
+                    "credits": 5
+                },
+                {
+                    "code": "DFAN-INF-258",
+                    "name": "Inteligens szervezet",
+                    "credits": 5
+                },
+                {
+                    "code": "DFAN-INF-492",
+                    "name": "Rendszerszimuláció",
+                    "credits": 5
+                },
+                {
+                    "code": null,
+                    "name": "Szakmai választható 1.",
+                    "credits": 5,
+                    "course_block_references": [
+                        "Kötelezően választható szakmai tárgyak"
+                    ]
+                },
+                {
+                    "code": "DFAO-TKM-940",
+                    "name": "Munkába állást segítő ismeretek (angolul)",
+                    "credits": 0,
+                    "prerequisites": [
+                        "DFAO-TKM-930"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "6. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "DFAN-INF-470",
+                    "name": "Döntéselmélet, döntési módszerek",
+                    "credits": 5,
+                    "prerequisites": [
+                        "DFAN-INF-002"
+                    ]
+                },
+                {
+                    "code": "DFAN-INF-614",
+                    "name": "Információrendszerek fejlesztése III.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "DFAN-INF-612"
+                    ]
+                },
+                {
+                    "code": "DFAN-INF-630",
+                    "name": "Informatikai projektvezetés és gyakorlat",
+                    "credits": 5
+                },
+                {
+                    "code": "DFAN-INF-454",
+                    "name": "Többváltozós elemzés",
+                    "credits": 5,
+                    "prerequisites": [
+                        "DFAN-INF-002"
+                    ]
+                },
+                {
+                    "code": "DFAN-INF-672",
+                    "name": "Elektronikus- és mobil alkalmazások",
+                    "credits": 5
+                },                                
+                {
+                    "code": null,
+                    "name": "Szakmai választható 2.",
+                    "credits": 5,
+                    "course_block_references": [
+                        "Kötelezően választható szakmai tárgyak #2"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "7. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "DFAN-INF-751",
+                    "name": "Szakdolgozat",
+                    "credits": 15,
+                    "prerequisites": [
+                        "1-6 félév minden tárgya"
+                    ]
+                },
+                {
+                    "code": "DFAN-INF-750",
+                    "name": "Szakmai gyakorlat",
+                    "credits": 0,
+                    "course_block_references":[
+                        "1-6 félév minden tárgya"
+                    ]
+                },
+                {
+                    "code": "DFAN-INF-622",
+                    "name": "Vállalatirányítási rendszerek A",
+                    "credits": 5
+                },
+                {
+                    "code": "DFAN-TTA-107"",
+                    "name": "Államigazgatási és jogi ismeretek",
+                    "credits": 5
+                },
+                {
+                    "code": "DFAN-INF-640",
+                    "name": "Informatikai rendszerek minőségbiztosítása és auditja",
+                    "credits": 5
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választható szakmai tárgyak",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "DFAN-INF-286",
+                    "name": "Mobilkommunikáció",
+                    "credits": 5
+                },
+                {
+                    "code": "DFAN-INF-530",
+                    "name": "Internet technológiák",
+                    "credits": 5
+                },
+                {
+                    "code": "DFAN-TKT-014",
+                    "name": "Számvitel elemzés",
+                    "credits": 5,
+                    "prerequisites": [
+                        "DFAN-TKT-005"
+                    ]
+                },
+                {
+                    "code": "DFAN-INF-627",
+                    "name": "SAP alapjai",
+                    "credits": 5
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választható szakmai tárgyak #2",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "DFAN-INF-680",
+                    "name": "Banki információs rendszerek",
+                    "credits": 5,
+                    "prerequisites": [
+                        "DFAN-INF-002"
+                    ]
+                },
+                {
+                    "code": "DFAN-INF-524",
+                    "name": "Web programozás",
+                    "credits": 5
+                },
+                {
+                    "code": "DFAN-INF-606",
+                    "name": "Adatbányászat",
+                    "credits": 5
+                },
+                {
+                    "code": "DFAN-INF-629",
+                    "name": "SAP üzemeltetése",
+                    "credits": 5,
+                    "prerequisites": [
+                        "DFAN-INF-627"
+                    ]
+                },
+                {
+                    "code": "DFAN-INF-628",
+                    "name": "SAP programozása",
+                    "credits": 5,
+                    "prerequisites": [
+                        "DFAN-INF-627"
+                    ]
+                }
+            ]
+        }
+    ]
+}
