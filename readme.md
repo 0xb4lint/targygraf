@@ -3,14 +3,23 @@
 ## Install
 1. `composer install`
 2. edit `.env`
+3. `php artisan migrate:refresh --seed -vvv`
 
 ## Contributing
 1. fork repo
-2. edit
+2. edit (PSR-2, `.editorconfig`)
 3. pull request to `develop` branch
 
-## Migrálás
-`php artisan migrate:refresh --seed -vvv`
+## Fontos fájlok
+- `.env` - futtatókörnyezet leíró fájl
+- `json/universities/*.json` - egyetemek adatai
+- `json/faculties/*.json` - karok adatai
+- `json/programs/*.json` - szakok adatai
+- `database/migrations/*.php` - adatbázis migrációs fájlok
+- `database/seeds/*.php` - adatbázis seederek (json fájlok alapján)
+- `public/assets/js/targygraf.js` - frontend
+- `resources/views/template.blade.php` - view template
+- `resources/views/layouts/*.blade.php` - view fájlok
 
 ## Adatbázis
 ![database](https://github.com/valentinxxx/targygraf/blob/develop/database.png)
