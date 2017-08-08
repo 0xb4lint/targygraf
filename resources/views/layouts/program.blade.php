@@ -10,6 +10,16 @@
 	@include('parts.program-selector', ['hidden' => true])
 
 	<h1><a href="{{ route('university', ['university' => $university]) }}" class="muted">{{ $university->name }}</a> - {{ $program->name }}</h1>
+	@if ( $program->description )
+		<div class="program-description">
+			{{ $program->description }}
+		</div>
+	@endif
+	@if ( $program->curriculum_updated_at )
+		<div class="program-curriculum-updated">
+			Tanterv: <b>{{ $program->curriculum_updated_at }}</b>
+		</div>
+	@endif
 @stop
 
 @section('buttons')

@@ -84,7 +84,7 @@ h1 .muted {
 HEADER
 */
 header {
-	padding-bottom: 5px;
+	padding-bottom: 3px;
 	margin-bottom: 5px;
 	position: relative;
 	background-color: #d35400;
@@ -162,6 +162,16 @@ header .program-selector .program.active {
 header .program-selector .program:hover {
 	background-color: #3498db;
 	color: #fff;
+}
+
+header .program-description {
+	color: #ddd;
+	font-size: 12px;
+}
+
+header .program-curriculum-updated {
+	color: #ddd;
+	font-size: 12px;
 }
 
 
