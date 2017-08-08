@@ -1,51 +1,143 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+# Tárgygráf
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+## Adatok migrálása
+`php artisan migrate:refresh --seed -vvv`
 
-## About Laravel
+## Adatok szerkesztése
+### Egyetem
+```javascript
+// json/universities/pe.json    // string   slug
+{
+    "name": "Pannon Egyetem",   // string   név
+    "row": 0,                   // uint     megjelenítésnél sor index
+    "ordering": 0,              // uint     megjelenítésnél soron belüli index
+    "has_logo": true            // boolean  public/assets/img/logo/{slug}.svg
+}
+```
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+### Kar
+```javascript
+// json/faculties/pe_mik.json           // string   slug
+{
+    "name": "Műszaki Informatikai Kar", // string   név
+    "ordering": 0                       // uint     megjelenítésnél index
+}
+```
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### Szak
+```javascript
+// json/programs/pe_mik_mernokinformatikus.json // string   slug
+{
+    "name": "Mérnökinformatikus",               // string   név
+    "description": "Nappali tagozat tanterve",  // string   leírás
+    "curriculum_updated_at": "2014-03-25",      // date     tanterv módosítási dátuma
+    "course_blocks": [/* course_block */]       // array    tantárgy blokkok - félévek
+}
+```
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb combination of simplicity, elegance, and innovation give you tools you need to build any application with which you are tasked.
+#### Tantárgy blokk
+```javascript
+// course_block - regular
+{
+    "name": "1. félév",         // string   név
+    "row": 0,                   // boolean  megjelenítésnél sor index
+    "courses": [/* course */]   // array    tantárgyak
+}
+```
 
-## Learning Laravel
+```javascript
+// course_block - referenceable
+{
+    "name": "Differenciált szakmai tárgy I.",   // string   név (unique)
+    "row": 1,                                   // boolean  megjelenítésnél sor index
+    "courses": [/* course */]                   // array    tantárgyak
+}
+```
 
-Laravel has the most extensive and thorough documentation and video tutorial library of any modern web application framework. The [Laravel documentation](https://laravel.com/docs) is thorough, complete, and makes it a breeze to get started learning the framework.
+```javascript
+// course_block - referenceable splitted (e.g. https://pe.targygraf.hu/mernokinformatikus)
+{
+    "name": "Differenciált szakmai tárgy I. #2",    // string   név (unique) - #\d+ rész rejtve
+    "row": 1,                                       // boolean  megjelenítésnél sor index
+    "courses": [/* course */]                       // array    tantárgyak
+}
+```
 
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 900 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
+#### Tantárgy
+```javascript
+// course - regular
+{
+    "code": "VEMIMAB146M",              // string   kód
+    "name": "Matematikai analízis I.",  // string   név
+    "credits": 6                        // uint     kreditek
+}
+```
 
-## Laravel Sponsors
+```javascript
+// course - prerequisites
+{
+    "code": "VEMIMAB244M",              // string   kód
+    "name": "Matematikai analízis II.", // string   név
+    "credits": 4,                       // uint     kreditek
+    "prerequisites": [                  // array    előfeltételek
+        "VEMIMAB146M"                   // string   kód
+    ]
+}
+```
 
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](http://patreon.com/taylorotwell):
+```javascript
+// course - prerequisites - parallel
+{
+    "code": "VEMISA3144A",                      // string   kód
+    "name": "Adatstruktúrák és algoritmusok",   // string   név
+    "credits": 4,                               // uint     kreditek
+    "prerequisites": [                          // array    előfeltételek
+        "VEMIMAB146M",                          // string   kód
+        "VEMKSA2144B",                          // string   kód
+        "(VETKMA1243D)"                         // string   kód - zárójelek miatt párhuzamos felvehető előfeltétel
+    ]
+}
+```
 
-- **[Vehikl](http://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Styde](https://styde.net)**
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
+```javascript
+// course - prerequisites - n credits
+{
+    "code": "VEMIKNB312F",          // string   kód
+    "name": "Kutatás-fejlesztés",   // string   név
+    "credits": 2,                   // uint     kreditek
+    "prerequisites": [              // array    előfeltételek
+        "___75___"                  // string   kód - ___\d+___ formátum - database/seeds/HelperCourseSeeder.php
+    ]
+}
+```
 
-## Contributing
+```javascript
+// course - referenced course blocks
+{
+    "code": null,                               // string   null
+    "name": "Differenciált szakmai tárgy I.",   // string   név
+    "credits": 4,                               // uint     kreditek - melyeket a hivatkozott tantárgy blokkokban kell teljesíteni
+    "course_block_references": [                // array    hivatkozott tantárgy blokkok
+        "Differenciált szakmai tárgy I.",       // string   név
+        "Differenciált szakmai tárgy I. #2"     // string   név
+    ]
+}
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+```javascript
+// course - optional credits
+{
+    "code": "___OPTIONAL___",       // string   ___OPTIONAL___
+    "name": "Szabadon választható", // string   név
+    "credits": 6                    // uint     kreditek
+}
+```
 
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+```javascript
+// course - visual separator (e.g. https://bme.targygraf.hu/jarmumernok)
+{
+    "code": "______",   // string   ______
+    "name": null,       // string   null
+    "credits": 0        // uint     0
+}
+```
