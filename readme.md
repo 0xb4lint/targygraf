@@ -1,5 +1,9 @@
 # Tárgygráf - [targygraf.hu](https://targygraf.hu)
 
+## Install
+- `composer install`
+- edit `.env`
+
 ## Adatok migrálása
 `php artisan migrate:refresh --seed -vvv`
 

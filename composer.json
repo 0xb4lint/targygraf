@@ -28,6 +28,7 @@
     },
     "scripts": {
         "post-install-cmd": [
+            "php -r \"file_exists('.env') || copy('.env.local', '.env');\"",
             "Illuminate\\Foundation\\ComposerScripts::postInstall",
             "php artisan optimize"
         ],
