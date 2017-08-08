@@ -10,6 +10,9 @@
 2. edit (PSR-2, `.editorconfig`)
 3. pull request to `develop` branch
 
+## Testing
+`phpunit`
+
 ## Fontos fájlok
 - `.env` - futtatókörnyezet leíró fájl
 - `json/universities/*.json` - egyetemek adatai
