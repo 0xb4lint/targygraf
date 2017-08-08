@@ -107,14 +107,6 @@
                     "credits": 0
                 },
                 {
-                    "code": "DFAN-INF-260",
-                    "name": "Számítógép-architektúrák",
-                    "credits": 5,
-                    "prerequisites": [
-                        "DFAN-INF-266"
-                    ]
-                },
-                {
                     "code": "DFAN-DSE-002",
                     "name": "Testnevelés II.",
                     "credits": 0,
@@ -158,7 +150,7 @@
                 },
                 {
                     "code": "DFAN-INF-260",
-                    "name": "Számítógép architektúrák I.",
+                    "name": "Számítógép architektúrák",
                     "credits": 5,
                     "prerequisites": [
                         "DFAN-INF-266"
