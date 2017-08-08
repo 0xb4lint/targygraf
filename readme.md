@@ -9,8 +9,11 @@
 2. edit
 3. pull request to `develop` branch
 
-## Adatok migrálása
+## Migrálás
 `php artisan migrate:refresh --seed -vvv`
+
+## Adatbázis
+![database](https://github.com/valentinxxx/targygraf/blob/develop/database.png)
 
 ## Adatok szerkesztése
 ### Egyetem
