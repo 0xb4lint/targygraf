@@ -5,7 +5,7 @@
     "course_blocks": [
         {
             "name": "1. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VETKNSB123A",
@@ -81,7 +81,7 @@
         },
         {
             "name": "2. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VETKNSB122D",
@@ -189,7 +189,7 @@
         },
         {
             "name": "3. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VETKNSB222D",
@@ -261,7 +261,7 @@
         },
         {
             "name": "4. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VETKNSB222B",
@@ -341,7 +341,7 @@
         },
         {
             "name": "5. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VETKNMB114G",
@@ -408,7 +408,7 @@
         },
         {
             "name": "6. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VETKNIB113A",
@@ -460,7 +460,7 @@
         },
         {
             "name": "Specializáció I.: Interkulturális germanisztika",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VETKNLB314I",
@@ -562,7 +562,7 @@
         },
         {
             "name": "Kötelezően választható tárgyak",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VETKNMB113I",

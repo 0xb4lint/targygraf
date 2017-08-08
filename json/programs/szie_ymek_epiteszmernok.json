@@ -5,7 +5,7 @@
     "course_blocks": [
         {
             "name": "1. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "SGYMASZ214XXX",
@@ -46,7 +46,7 @@
         },
         {
             "name": "2. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "SGYMMAG212XXX",
@@ -115,7 +115,7 @@
         },
         {
             "name": "3. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "SGYMMAG213XXX",
@@ -201,7 +201,7 @@
         },
         {
             "name": "4. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "SGYMMAG2024XA",
@@ -267,7 +267,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 2
                 },
@@ -288,7 +288,7 @@
         },
         {
             "name": "5. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "SGYMMAG215XXX",
@@ -341,7 +341,7 @@
         },
         {
             "name": "6. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "SGYMMEN2056XA",
@@ -378,7 +378,7 @@
         },
         {
             "name": "7. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "SGYMMEN211XXX",
@@ -386,12 +386,12 @@
                     "credits": 2
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 2
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 2
                 }
@@ -399,15 +399,15 @@
         },
         {
             "name": "8. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 2
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 2
                 }
@@ -415,7 +415,7 @@
         },
         {
             "name": "Szakirány",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": null,
@@ -462,7 +462,7 @@
         },
         {
             "name": "Építész szakirány",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "SGYMTET2445XA",
@@ -489,7 +489,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 2
                 },
@@ -622,7 +622,7 @@
         },
         {
             "name": "Épületszerkezeti konstruktőr szakirány",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "SGYMTET2445XA",
@@ -649,7 +649,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 2
                 },
@@ -774,7 +774,7 @@
         },
         {
             "name": "Építéskivitelezés-szervezés szakirány",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "SGYMTET2445XA",
@@ -801,7 +801,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 2
                 },
@@ -937,7 +937,7 @@
         },
         {
             "name": "Településtervezés szakirány",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "SGYMTET2445XA",
@@ -964,7 +964,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 2
                 },
@@ -1099,7 +1099,7 @@
         },
         {
             "name": "Tűz- és katasztrófavédelmi szakirány",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "SGYMTUB2325XA",
@@ -1230,7 +1230,7 @@
                     "credits": 0
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 2
                 },

@@ -5,7 +5,7 @@
     "course_blocks": [
         {
             "name": "1. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "MAT02",
@@ -66,7 +66,7 @@
                     "credits": 2
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 9
                 }
@@ -74,7 +74,7 @@
         },
         {
             "name": "2. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "MAT03",
@@ -162,7 +162,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 2
                 }
@@ -170,7 +170,7 @@
         },
         {
             "name": "3. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "KEM0904",
@@ -208,7 +208,7 @@
         },
         {
             "name": "4. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "BIO3105",
@@ -269,7 +269,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 4
                 }
@@ -277,7 +277,7 @@
         },
         {
             "name": "5. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "BIO4101",
@@ -321,7 +321,7 @@
                     "credits": 5
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 9
                 }
@@ -329,7 +329,7 @@
         },
         {
             "name": "6. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "BIO4801",
@@ -360,7 +360,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 11
                 }
@@ -368,7 +368,7 @@
         },
         {
             "name": "Ajánlott szabadon választható",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "FOL01",
@@ -389,7 +389,7 @@
         },
         {
             "name": "Biológia közös specializációs alap 3. félév",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "BIO5101",
@@ -462,7 +462,7 @@
         },
         {
             "name": "Biológia közös specializációs alap 4. félév",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "BIO5302",
@@ -497,7 +497,7 @@
         },
         {
             "name": "Biológia közös specializációs alap 6. félév",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "bioinfoea",
@@ -521,7 +521,7 @@
         },
         {
             "name": "Kísérletes biológia szakirány 4. félév",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "BIO3106",
@@ -561,7 +561,7 @@
         },
         {
             "name": "Kísérletes biológia szakirány 5. félév",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "BIO2406",
@@ -603,7 +603,7 @@
         },
         {
             "name": "Kísérletes biológia szakirány 6. félév",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "bioinfogy",
@@ -632,7 +632,7 @@
         },
         {
             "name": "Szupraindividuális biológia szakirány 4. félév",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "BIO7101",
@@ -664,7 +664,7 @@
         },
         {
             "name": "Szupraindividuális biológia szakirány 5. félév",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "BIO2502",
@@ -706,7 +706,7 @@
         },
         {
             "name": "Szupraindividuális biológia szakirány 6. félév",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "BIO7401",

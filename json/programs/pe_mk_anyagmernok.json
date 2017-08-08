@@ -5,7 +5,7 @@
     "course_blocks": [
         {
             "name": "1. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEGTGAB114M",
@@ -74,7 +74,7 @@
         },
         {
             "name": "2. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKIKB222B",
@@ -180,7 +180,7 @@
         },
         {
             "name": "3. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKFI2212A",
@@ -282,7 +282,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 2
                 }
@@ -290,7 +290,7 @@
         },
         {
             "name": "4. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKFKB211K",
@@ -389,7 +389,7 @@
         },
         {
             "name": "5. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKAV3314A",
@@ -475,7 +475,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 4
                 }
@@ -483,7 +483,7 @@
         },
         {
             "name": "6. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKAMB2XXS",
@@ -551,7 +551,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 2
                 }
@@ -559,7 +559,7 @@
         },
         {
             "name": "7. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKAMB1XXS",
@@ -578,7 +578,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 2
                 }
@@ -586,7 +586,7 @@
         },
         {
             "name": "Szakirány",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": null,
@@ -609,7 +609,7 @@
         },
         {
             "name": "3 kreditet kell választani",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKSIB212P",
@@ -639,7 +639,7 @@
         },
         {
             "name": "Kötelezően választható menedzsment és társadalomtudományi tárgy",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKTT1312F",
@@ -693,7 +693,7 @@
         },
         {
             "name": "Kerámia szakirány",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKSIB238A",
@@ -723,7 +723,7 @@
         },
         {
             "name": "Anyagvizsgáló szakirány",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": null,
@@ -763,7 +763,7 @@
         },
         {
             "name": "4 kreditet kell választani",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKSIB144S",

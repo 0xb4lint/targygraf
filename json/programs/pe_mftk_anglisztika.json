@@ -5,7 +5,7 @@
     "course_blocks": [
         {
             "name": "1. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "AYB111B",
@@ -61,7 +61,7 @@
         },
         {
             "name": "2. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "MIB111A",
@@ -139,7 +139,7 @@
         },
         {
             "name": "3. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "FRB112T",
@@ -229,7 +229,7 @@
         },
         {
             "name": "4. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "AYB111K",
@@ -307,7 +307,7 @@
         },
         {
             "name": "5. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "ANB213A",
@@ -401,7 +401,7 @@
         },
         {
             "name": "6. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "ANB213B",
@@ -487,7 +487,7 @@
         },
         {
             "name": "Specializáció: angol idegenforgalmi referens",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "ASB323F",
@@ -558,7 +558,7 @@
         },
         {
             "name": "Specializáció: szaknyelvi közvetítés",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "ASB323S",
@@ -627,7 +627,7 @@
         },
         {
             "name": "Pedagógiai modul",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "PPB312B",

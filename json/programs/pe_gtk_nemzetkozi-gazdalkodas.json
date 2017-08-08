@@ -5,7 +5,7 @@
     "course_blocks": [
         {
             "name": "1. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "MIMAB144M",
@@ -56,7 +56,7 @@
         },
         {
             "name": "2. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "GTGAB144A",
@@ -111,7 +111,7 @@
         },
         {
             "name": "3. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "GTGAB144S",
@@ -174,7 +174,7 @@
         },
         {
             "name": "4. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "GTPTB212P",
@@ -237,7 +237,7 @@
         },
         {
             "name": "5. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "GTNGB312K",
@@ -270,7 +270,7 @@
                     "credits": 3
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 3
                 }
@@ -278,7 +278,7 @@
         },
         {
             "name": "6. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "GTVEB222F",
@@ -314,12 +314,12 @@
                     "credits": 3
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 3
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható ",
                     "credits": 3
                 }
@@ -327,7 +327,7 @@
         },
         {
             "name": "7. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "GTNGB30XG",

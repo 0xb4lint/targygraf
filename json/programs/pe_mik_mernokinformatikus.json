@@ -5,7 +5,7 @@
     "course_blocks": [
         {
             "name": "1. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMIMAB146M",
@@ -61,7 +61,7 @@
         },
         {
             "name": "2. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMIMAB244M",
@@ -158,7 +158,7 @@
         },
         {
             "name": "3. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKMA1344B",
@@ -265,7 +265,7 @@
         },
         {
             "name": "4. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMIVI2212M",
@@ -362,7 +362,7 @@
         },
         {
             "name": "5. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMISA3136P",
@@ -437,7 +437,7 @@
         },
         {
             "name": "6. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMISA3344R",
@@ -482,7 +482,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 4
                 }
@@ -490,7 +490,7 @@
         },
         {
             "name": "7. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": null,
@@ -510,7 +510,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 6
                 },
@@ -526,7 +526,7 @@
         },
         {
             "name": "Kötelezően választható differenciált szakmai tárgy I.",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMIIR3354W",
@@ -640,7 +640,7 @@
         },
         {
             "name": "Kötelezően választható differenciált szakmai tárgy I. #2",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMISA5334L",
@@ -730,7 +730,7 @@
         },
         {
             "name": "Kötelezően választható differenciált szakmai tárgy II.",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMISA5344M",
@@ -815,7 +815,7 @@
         },
         {
             "name": "Kötelezően válaszható humán\/gazdasági tárgy",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMISA5312F",

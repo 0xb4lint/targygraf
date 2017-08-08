@@ -5,7 +5,7 @@
     "course_blocks": [
         {
             "name": "1. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "SGMxxXxxXN",
@@ -36,7 +36,7 @@
         },
         {
             "name": "2. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "SGMxxXxxXN",
@@ -83,7 +83,7 @@
         },
         {
             "name": "3. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "SGMxxXxxXN",
@@ -115,7 +115,7 @@
         },
         {
             "name": "4. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "SGMxxXxxXN",
@@ -142,7 +142,7 @@
         },
         {
             "name": "Szakirányok",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": null,
@@ -181,7 +181,7 @@
         },
         {
             "name": "Bsc végzettségtől függően választandó két modul",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": null,
@@ -211,7 +211,7 @@
         },
         {
             "name": "Gépész modul",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "SGMxxXxxXN",
@@ -237,7 +237,7 @@
         },
         {
             "name": "Építő\/Építész modul",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "SGMxxXxxXN",
@@ -258,7 +258,7 @@
         },
         {
             "name": "Villamos modul",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "SGMxxXxxXN",
@@ -279,7 +279,7 @@
         },
         {
             "name": "Üzemeltetési szakirány",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "SGMxxXxxXN",
@@ -322,7 +322,7 @@
                     "credits": 0
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható tárgy",
                     "credits": 6
                 }
@@ -330,7 +330,7 @@
         },
         {
             "name": "Épületgépész szakirány",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "SGMxxXxxXN",
@@ -373,7 +373,7 @@
                     "credits": 0
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon válaszható tárgy",
                     "credits": 6
                 }
@@ -381,7 +381,7 @@
         },
         {
             "name": "Épületenergetikai szakirány",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "SGMxxXxxXN",
@@ -429,7 +429,7 @@
                     "credits": 0
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható tárgy",
                     "credits": 5
                 }
@@ -437,7 +437,7 @@
         },
         {
             "name": "Tűzvédelmi szakirány",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "SGMxxXxxXN",
@@ -505,7 +505,7 @@
                     "credits": 0
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható tárgy",
                     "credits": 7
                 }

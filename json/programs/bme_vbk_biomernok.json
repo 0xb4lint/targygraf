@@ -5,7 +5,7 @@
     "course_blocks": [
         {
             "name": "1. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "BMEVESZA101",
@@ -43,7 +43,7 @@
                     "credits": 2
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 6
                 }
@@ -51,7 +51,7 @@
         },
         {
             "name": "2. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "BMETE14AX15",
@@ -114,7 +114,7 @@
         },
         {
             "name": "3. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "BMEVEBEA301",
@@ -184,7 +184,7 @@
         },
         {
             "name": "4. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "BMEVEMBA403",
@@ -251,7 +251,7 @@
         },
         {
             "name": "5. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "BMEGT30A001",
@@ -284,12 +284,12 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 2
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 2
                 },
@@ -308,7 +308,7 @@
         },
         {
             "name": "6. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "BMEGT20A001",
@@ -348,7 +348,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 2
                 },
@@ -367,7 +367,7 @@
         },
         {
             "name": "7. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "BMEGT55A001",
@@ -404,7 +404,7 @@
         },
         {
             "name": "Szakirány",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": null,
@@ -443,7 +443,7 @@
         },
         {
             "name": "Alkalmazott biotechnológia szakirány",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "BMEVEMBA504",
@@ -509,7 +509,7 @@
         },
         {
             "name": "Egészségvédelmi szakirány",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "BMEVEBEA508",
@@ -571,7 +571,7 @@
         },
         {
             "name": "Élelmiszerminősítő szakirány",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "BMEVEMBA511",
@@ -628,7 +628,7 @@
         },
         {
             "name": "Környezetvédelmi szakirány",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "BMEVEMBA507",

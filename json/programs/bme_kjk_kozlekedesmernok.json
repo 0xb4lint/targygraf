@@ -5,7 +5,7 @@
     "course_blocks": [
         {
             "name": "1. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "TE90AX00",
@@ -56,7 +56,7 @@
         },
         {
             "name": "2. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "TE90AX02",
@@ -115,7 +115,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Kötelezően választott gazdasági és humán ismeretek",
                     "credits": 2
                 }
@@ -123,7 +123,7 @@
         },
         {
             "name": "3. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "TE90AX11",
@@ -194,7 +194,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Kötelezően választott gazdasági és humán ismeretek",
                     "credits": 2
                 }
@@ -202,7 +202,7 @@
         },
         {
             "name": "4. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "KORHA105",
@@ -273,7 +273,7 @@
         },
         {
             "name": "5. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "KOKAA128",
@@ -307,12 +307,12 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Kötelezően választott gazdasági és humán ismeretek",
                     "credits": 2
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható tantárgyak",
                     "credits": 2
                 },
@@ -333,7 +333,7 @@
         },
         {
             "name": "6. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "KOKGA110",
@@ -349,7 +349,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható tantárgyak",
                     "credits": 4
                 },
@@ -370,7 +370,7 @@
         },
         {
             "name": "7. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "KOEAA111",
@@ -383,12 +383,12 @@
                     "credits": 15
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Kötelezően választott gazdasági és humán ismeretek",
                     "credits": 2
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható tantárgyak",
                     "credits": 4
                 },
@@ -409,7 +409,7 @@
         },
         {
             "name": "Közúti közlekedési folyamatok",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "KOKUA201",
@@ -519,7 +519,7 @@
         },
         {
             "name": "Vasúti közlekedési folyamatok",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "KOKUA201",
@@ -618,7 +618,7 @@
         },
         {
             "name": "Légiközlekedési folyamatok",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "KOKUA201",
@@ -714,7 +714,7 @@
         },
         {
             "name": "Vizi közlekedési folyamatok",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "KOKUA201",
@@ -804,7 +804,7 @@
         },
         {
             "name": "Szállítási folyamatok",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "KOKUA241",
@@ -899,7 +899,7 @@
         },
         {
             "name": "Szállítmányozási menedzsment",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "KOKUA241",

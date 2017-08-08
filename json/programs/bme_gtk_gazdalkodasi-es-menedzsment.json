@@ -5,7 +5,7 @@
     "course_blocks": [
         {
             "name": "1. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "BMETE90AX00",
@@ -51,7 +51,7 @@
         },
         {
             "name": "2. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "BMETE90AX02",
@@ -85,7 +85,7 @@
                     "credits": 3
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 6
                 },
@@ -98,7 +98,7 @@
         },
         {
             "name": "3. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "BMEGT41A003",
@@ -165,7 +165,7 @@
         },
         {
             "name": "4. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "BMEGT35A016",
@@ -222,7 +222,7 @@
         },
         {
             "name": "5. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "BMEGT55A005",
@@ -267,7 +267,7 @@
         },
         {
             "name": "6. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "BMEGT55A006",
@@ -332,7 +332,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 6
                 }
@@ -340,7 +340,7 @@
         },
         {
             "name": "Kommunikáció I. kötelezően választható",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "BMEGT51A004",
@@ -361,7 +361,7 @@
         },
         {
             "name": "Társadalomtudomány kötelezően választható",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "BMEGT41A004",
@@ -382,7 +382,7 @@
         },
         {
             "name": "Kommunikáció II. kötelezően választható",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "BMEGT63A093",

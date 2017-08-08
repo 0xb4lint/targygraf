@@ -5,7 +5,7 @@
     "course_blocks": [
         {
             "name": "1. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "SGMMAX17XXN",
@@ -72,7 +72,7 @@
         },
         {
             "name": "2. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "SGMAVX01XXN",
@@ -186,7 +186,7 @@
         },
         {
             "name": "3. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "SGMGTX03XXN",
@@ -275,7 +275,7 @@
                     "credits": 0
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon válaszható tárgy",
                     "credits": 4
                 }
@@ -283,7 +283,7 @@
         },
         {
             "name": "4. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "SGMLGX02XXN",
@@ -378,7 +378,7 @@
                     "credits": 0
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható tárgy",
                     "credits": 2
                 }
@@ -386,7 +386,7 @@
         },
         {
             "name": "5. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "SGMMTX09XXN",
@@ -477,7 +477,7 @@
         },
         {
             "name": "6. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "SGMKLX20XXN",
@@ -548,7 +548,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható tárgy",
                     "credits": 2
                 }
@@ -556,7 +556,7 @@
         },
         {
             "name": "7. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "SGMKLX24XXN",
@@ -593,7 +593,7 @@
         },
         {
             "name": "Szakirányok 2011\/2012-től",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": null,
@@ -639,7 +639,7 @@
         },
         {
             "name": "Szakirányok 2013\/2014-től",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": null,
@@ -693,7 +693,7 @@
         },
         {
             "name": "Energetika szakirány 2011\/2012-től",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "SGMxxXxxXXN",
@@ -798,7 +798,7 @@
         },
         {
             "name": "Gépgyártó szakirány 2011\/2012-től",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "SGMxxXxxXXN",
@@ -902,7 +902,7 @@
         },
         {
             "name": "Mérnök-informatika (CAD\/CAM) szakirány 2011\/2012-től",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "SGMGSX28XXN",
@@ -1006,7 +1006,7 @@
         },
         {
             "name": "Gépjárműtechnika szakirány 2011\/2012-től",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "SGMxxXxxXXN",
@@ -1166,7 +1166,7 @@
         },
         {
             "name": "Járműelektronika szakirány 2011\/2012-től",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "SGMxxXxxXXN",
@@ -1287,7 +1287,7 @@
         },
         {
             "name": "Energetika szakirány 2013\/2014-től",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "SGMxxXxxXXN",
@@ -1392,7 +1392,7 @@
         },
         {
             "name": "Gépgyártó szakirány 2013\/2014-től",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "SGMxxXxxXXN",
@@ -1472,7 +1472,7 @@
         },
         {
             "name": "Mérnök-informatika (CAD\/CAM) szakirány 2013\/2014-től",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "SGMxxXxxXXN",
@@ -1565,7 +1565,7 @@
         },
         {
             "name": "Gépjárműtechnika szakirány 2013\/2014-től",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "SGMxxXxxXXN",
@@ -1667,7 +1667,7 @@
         },
         {
             "name": "Járműelektronika szakirány 2013\/2014-től",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "SGMxxXxxXXN",
@@ -1772,7 +1772,7 @@
         },
         {
             "name": "Épületgépészet szakirány 2013\/2014-től",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "SGMxxXxxXXN",

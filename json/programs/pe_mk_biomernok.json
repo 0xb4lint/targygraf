@@ -5,7 +5,7 @@
     "course_blocks": [
         {
             "name": "1. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKMAB112M",
@@ -84,7 +84,7 @@
         },
         {
             "name": "2. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKMAB212M",
@@ -215,7 +215,7 @@
         },
         {
             "name": "3. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMINAB112B",
@@ -318,7 +318,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 4
                 }
@@ -326,7 +326,7 @@
         },
         {
             "name": "4. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKLIB312M",
@@ -417,7 +417,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 4
                 }
@@ -425,7 +425,7 @@
         },
         {
             "name": "5. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKLIB223B",
@@ -506,7 +506,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 2
                 }
@@ -514,7 +514,7 @@
         },
         {
             "name": "6. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKKVB212V",
@@ -611,7 +611,7 @@
         },
         {
             "name": "7. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": null,
@@ -644,7 +644,7 @@
         },
         {
             "name": "Választható társadalomtudományi tárgy",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKTT1312F",
@@ -670,7 +670,7 @@
         },
         {
             "name": "Választható differenciált szakmai tárgy part I.",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKBMB412M",
@@ -724,7 +724,7 @@
         },
         {
             "name": "Választható differenciált szakmai tárgy part II.",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKKAB454B",
@@ -795,7 +795,7 @@
         },
         {
             "name": "Választható menedzsment tárgy",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKVVB212K",

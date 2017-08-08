@@ -5,7 +5,7 @@
     "course_blocks": [
         {
             "name": "1. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VETKTT1312F",
@@ -66,7 +66,7 @@
         },
         {
             "name": "2. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VETKTTB312T",
@@ -135,7 +135,7 @@
         },
         {
             "name": "3. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VETKPPB122P",
@@ -191,7 +191,7 @@
                     "credits": 2
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 4
                 }
@@ -199,7 +199,7 @@
         },
         {
             "name": "4. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VETKTTB114P",
@@ -264,7 +264,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 4
                 }
@@ -272,7 +272,7 @@
         },
         {
             "name": "5. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VETKTTB212D",
@@ -322,7 +322,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 2
                 },
@@ -340,7 +340,7 @@
         },
         {
             "name": "6. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEGTTUB213P",
@@ -385,7 +385,7 @@
         },
         {
             "name": "Társadalom és kultúra modul",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEGTTUB212S",
@@ -406,7 +406,7 @@
         },
         {
             "name": "Európai integrációs modul",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VETKEU5312F",

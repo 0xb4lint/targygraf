@@ -5,7 +5,7 @@
     "course_blocks": [
         {
             "name": "1. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMIMAM144M",
@@ -53,7 +53,7 @@
         },
         {
             "name": "2. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMISAB512S",
@@ -98,7 +98,7 @@
         },
         {
             "name": "3. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": null,
@@ -119,7 +119,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 3
                 },
@@ -135,7 +135,7 @@
         },
         {
             "name": "4. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": null,
@@ -156,7 +156,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 3
                 },
@@ -172,7 +172,7 @@
         },
         {
             "name": "Kötelezően választandó differenciált tárgy őszi félév",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMIVIM444D",
@@ -306,7 +306,7 @@
         },
         {
             "name": "Kötelezően választandó differenciált tárgy tavaszi félév",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMISAM444F",
@@ -447,7 +447,7 @@
         },
         {
             "name": "Kötelezően választandó gazdasági\/humán tárgy őszi félév",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMISA5312I",
@@ -488,7 +488,7 @@
         },
         {
             "name": "Kötelezően választandó gazdasági\/humán tárgy tavaszi félév",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKSA1212M",

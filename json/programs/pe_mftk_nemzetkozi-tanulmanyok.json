@@ -5,7 +5,7 @@
     "course_blocks": [
         {
             "name": "1. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VETKTT1112A",
@@ -79,7 +79,7 @@
         },
         {
             "name": "2. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VETKTT1212U",
@@ -161,7 +161,7 @@
         },
         {
             "name": "3. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VETKTT2112K",
@@ -242,7 +242,7 @@
         },
         {
             "name": "4. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VETKTTB122J",
@@ -343,7 +343,7 @@
         },
         {
             "name": "5. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VETKEU5312N",
@@ -408,7 +408,7 @@
                     "credits": 3
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 4
                 },
@@ -426,7 +426,7 @@
         },
         {
             "name": "6. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "BNGTVE2G279",
@@ -461,7 +461,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 6
                 },
@@ -482,7 +482,7 @@
         },
         {
             "name": "Kötelezően választható tárgyak Nemzetközi kapcsolatok modul (1-2. félév)",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VETKTT1312F",
@@ -561,7 +561,7 @@
         },
         {
             "name": "Kötelezően választható tárgyak Nemzetközi kapcsolatok modul (3-4. félév)",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VETKTTB212T",

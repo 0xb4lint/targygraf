@@ -5,7 +5,7 @@
     "course_blocks": [
         {
             "name": "1. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "GESGT001M",
@@ -55,7 +55,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható tantárgy",
                     "credits": 3
                 }
@@ -63,7 +63,7 @@
         },
         {
             "name": "2. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "GEMTT0001M",
@@ -131,7 +131,7 @@
         },
         {
             "name": "3. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "GEGED005M",
@@ -169,7 +169,7 @@
         },
         {
             "name": "4. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "GEALT143M",
@@ -204,7 +204,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható tantárgy",
                     "credits": 3
                 }
@@ -212,7 +212,7 @@
         },
         {
             "name": "Szakirányok",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": null,
@@ -299,7 +299,7 @@
         },
         {
             "name": "Alkalmazott mechanika szakirány",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "GEMET336M",
@@ -360,7 +360,7 @@
         },
         {
             "name": "Általános géptervező szakirány",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "GEGET503M",
@@ -421,7 +421,7 @@
         },
         {
             "name": "CAD\/CAM szakirány",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "GESGT049M",
@@ -482,7 +482,7 @@
         },
         {
             "name": "Gépgyártástechnológia és gyártási rendszerek szakirány",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "GEGTT306M",
@@ -543,7 +543,7 @@
         },
         {
             "name": "Hegesztéstechnológia szakirány",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "GEMTT011M",
@@ -604,7 +604,7 @@
         },
         {
             "name": "Korszerű anyagok és technológiák szakirány",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "GEMTT111M",
@@ -665,7 +665,7 @@
         },
         {
             "name": "Minőségbiztosítás szakirány",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "GEGTT306M",
@@ -726,7 +726,7 @@
         },
         {
             "name": "Szerszámgépészeti szakirány",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "GESGT051M",
@@ -787,7 +787,7 @@
         },
         {
             "name": "Terméktervező szakirány",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "GEGET503M",
@@ -848,7 +848,7 @@
         },
         {
             "name": "Vegyipari gépészeti szakirány",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "GEVGT302M",

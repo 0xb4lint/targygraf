@@ -5,7 +5,7 @@
     "course_blocks": [
         {
             "name": "1. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKOKM112M",
@@ -38,7 +38,7 @@
                     "credits": 4
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható tárgy",
                     "credits": 6
                 },
@@ -54,7 +54,7 @@
         },
         {
             "name": "2. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKFIM112F",
@@ -126,7 +126,7 @@
         },
         {
             "name": "3. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKKAM155K",
@@ -178,7 +178,7 @@
         },
         {
             "name": "4. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKOKM23XD",
@@ -200,7 +200,7 @@
         },
         {
             "name": "Kötelezően választható szigorlat",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKAKM1X0K",
@@ -216,7 +216,7 @@
         },
         {
             "name": "Kötelezően választható tárgyak őszi félév",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKFT113G",
@@ -310,7 +310,7 @@
         },
         {
             "name": "Kötelezően választható tárgyak tavaszi félév",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKAKM512S",

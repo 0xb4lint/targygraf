@@ -5,7 +5,7 @@
     "course_blocks": [
         {
             "name": "1. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKMAB112M",
@@ -71,7 +71,7 @@
         },
         {
             "name": "2. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKMAB212M",
@@ -174,7 +174,7 @@
         },
         {
             "name": "3. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKGEB143M",
@@ -258,7 +258,7 @@
         },
         {
             "name": "4. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "FQ3vSAsZ",
@@ -323,7 +323,7 @@
         },
         {
             "name": "5. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": null,
@@ -375,7 +375,7 @@
         },
         {
             "name": "6. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": null,
@@ -410,7 +410,7 @@
         },
         {
             "name": "7. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKKVB112M",
@@ -434,7 +434,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható tárgyak",
                     "credits": 10
                 },
@@ -458,7 +458,7 @@
         },
         {
             "name": "Folyamatmérnöki szakirány 5. félév",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "Z148d6g0",
@@ -469,7 +469,7 @@
         },
         {
             "name": "Folyamatmérnöki szakirány 6. félév",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": null,
@@ -496,7 +496,7 @@
         },
         {
             "name": "Mérés- és labortechnika szakirány 5. félév",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKAVB252A",
@@ -523,7 +523,7 @@
         },
         {
             "name": "Mérés- és labortechnika szakirány 6. félév",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKFIB432P",
@@ -561,7 +561,7 @@
         },
         {
             "name": "Differenciált szakmai törzsanyag (Őszi)",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKFOB254R",
@@ -598,7 +598,7 @@
         },
         {
             "name": "Differenciált szakmai törzsanyag (Tavaszi)",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKFOB213F",
@@ -636,7 +636,7 @@
         },
         {
             "name": "Kötelezően választható társadalomtudományi tárgyak (összesen 4 kredit)",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKTT1312F",
@@ -675,7 +675,7 @@
         },
         {
             "name": "Kötelezően választható menedzsment tárgyak (összesen 2 kredit)",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEGTMEB144M",
@@ -732,7 +732,7 @@
         },
         {
             "name": "Kötelezően választható tárgyak (összesen 8 kredit)",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKFIB522V",

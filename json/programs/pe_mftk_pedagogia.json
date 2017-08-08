@@ -5,7 +5,7 @@
     "course_blocks": [
         {
             "name": "1. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "PATKPPB111O",
@@ -96,7 +96,7 @@
         },
         {
             "name": "2. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "PATKPPB114N",
@@ -162,7 +162,7 @@
         },
         {
             "name": "3. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "PATLPPB143T",
@@ -205,7 +205,7 @@
                     "credits": 1
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 4
                 },
@@ -221,7 +221,7 @@
         },
         {
             "name": "4. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "PATLPPB223T",
@@ -255,7 +255,7 @@
         },
         {
             "name": "5. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "PATLPPB122E",
@@ -294,7 +294,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 4
                 }
@@ -302,7 +302,7 @@
         },
         {
             "name": "6. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "PATLAEB113E",
@@ -330,7 +330,7 @@
                     "credits": 4
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 4
                 },
@@ -346,7 +346,7 @@
         },
         {
             "name": "Választandó az alábbi kettő tárgyból",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "PATLPPB245R",
@@ -362,7 +362,7 @@
         },
         {
             "name": "Nevelési asszisztens specializáció 3. félév",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "PATLPPB314P",
@@ -383,7 +383,7 @@
         },
         {
             "name": "Nevelési asszisztens specializáció 4. félév",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "PATLPPB324J",
@@ -414,7 +414,7 @@
         },
         {
             "name": "Nevelési asszisztens specializáció 5. félév",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "PATLPPB314E",
@@ -445,7 +445,7 @@
         },
         {
             "name": "Nevelési asszisztens specializáció 6. félév",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "PATLPPB312I",

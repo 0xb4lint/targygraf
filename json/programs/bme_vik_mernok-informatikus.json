@@ -5,7 +5,7 @@
     "course_blocks": [
         {
             "name": "1. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "TE90AX04",
@@ -57,7 +57,7 @@
         },
         {
             "name": "2. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "TE90AX05",
@@ -124,7 +124,7 @@
         },
         {
             "name": "3. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VISZA208",
@@ -207,7 +207,7 @@
         },
         {
             "name": "4. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VISZA213",
@@ -294,7 +294,7 @@
         },
         {
             "name": "5. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": null,
@@ -366,7 +366,7 @@
         },
         {
             "name": "6. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VIMIA315",
@@ -395,7 +395,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható tantárgy 1",
                     "credits": 2
                 },
@@ -420,7 +420,7 @@
         },
         {
             "name": "7. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": null,
@@ -431,12 +431,12 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható tantárgy 1",
                     "credits": 4
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható tantárgy 2",
                     "credits": 4
                 }
@@ -444,7 +444,7 @@
         },
         {
             "name": "Kötelezően választható gazdasági-humán tárgyak",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "GT35A001",
@@ -525,7 +525,7 @@
         },
         {
             "name": "Autonóm intelligens rendszerek szakirány - Autonóm rendszerek ágazat",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VIIIA356",
@@ -592,7 +592,7 @@
         },
         {
             "name": "Autonóm intelligens rendszerek szakirány - Intelligens rendszerek ágazat",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VIIIA356",
@@ -659,7 +659,7 @@
         },
         {
             "name": "Infokommunikációs hálózatok szakirány - Infokommunikációs hálózatok és szolgáltatások ágazat",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VITMA364",
@@ -726,7 +726,7 @@
         },
         {
             "name": "Infokommunikációs hálózatok szakirány - Mobil infokommunikáció ágazat",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VITMA364",
@@ -793,7 +793,7 @@
         },
         {
             "name": "Informatikai technológiák szakirány - Szoftverfejlesztési ágazat",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VIAUA369",
@@ -862,7 +862,7 @@
         },
         {
             "name": "Informatikai technológiák szakirány - Rendszerfejlesztési ágazat",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VIAUA369",
@@ -931,7 +931,7 @@
         },
         {
             "name": "Informatikai technológiák szakirány - Rendszertervezési ágazat",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VIAUA369",
@@ -1000,7 +1000,7 @@
         },
         {
             "name": "Médiainformatika és -biztonság szakirány - Médiainformatika ágazat",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VITMA368",
@@ -1067,7 +1067,7 @@
         },
         {
             "name": "Médiainformatika és -biztonság szakirány - Médiatechnológiák ágazat",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VITMA368",
@@ -1134,7 +1134,7 @@
         },
         {
             "name": "Vállalati információs rendszerek szakirány",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VIETA382",
@@ -1201,7 +1201,7 @@
         },
         {
             "name": "Elágazó",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VITMA404",

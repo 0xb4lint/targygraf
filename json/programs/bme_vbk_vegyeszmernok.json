@@ -5,7 +5,7 @@
     "course_blocks": [
         {
             "name": "1. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "BMEVESZA101",
@@ -38,7 +38,7 @@
                     "credits": 2
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 6
                 }
@@ -46,7 +46,7 @@
         },
         {
             "name": "2. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "BMETE14AX15",
@@ -114,7 +114,7 @@
         },
         {
             "name": "3. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "BMETE14AX04",
@@ -186,7 +186,7 @@
         },
         {
             "name": "4. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "BMEVESZA401",
@@ -258,7 +258,7 @@
         },
         {
             "name": "5. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "BMEGT55A001",
@@ -323,7 +323,7 @@
         },
         {
             "name": "6. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "BMEGT20A001",
@@ -357,12 +357,12 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 4
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 4
                 },
@@ -381,7 +381,7 @@
         },
         {
             "name": "7. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "BMEVEKFA615",
@@ -413,7 +413,7 @@
         },
         {
             "name": "Szakirány",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": null,
@@ -468,7 +468,7 @@
         },
         {
             "name": "Általános vegyipari és folyamatmérnöki szakirány",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "BMEVEKFA502",
@@ -522,7 +522,7 @@
         },
         {
             "name": "Analitikai és szerkezet- vizsgálati szakirány",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "BMEVEAAA708",
@@ -589,7 +589,7 @@
         },
         {
             "name": "Gyógyszeripari szakirány",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "BMEVESKA605",
@@ -654,7 +654,7 @@
         },
         {
             "name": "Műanyag, textil és anyagtudományi szakirány műanyag alszakirány",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "BMEVEMGA511",
@@ -708,7 +708,7 @@
         },
         {
             "name": "Műanyag, textil és anyagtudományi szakirány anyagtudományi alszakirány",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "BMEVEMGA511",
@@ -769,7 +769,7 @@
         },
         {
             "name": "Műanyag, textil és anyagtudományi szakirány textil alszakirány",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "BMEVEFAA708",

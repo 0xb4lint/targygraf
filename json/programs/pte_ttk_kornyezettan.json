@@ -5,7 +5,7 @@
     "course_blocks": [
         {
             "name": "1. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "MAT01",
@@ -41,7 +41,7 @@
                     "credits": 5
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 9
                 }
@@ -49,7 +49,7 @@
         },
         {
             "name": "2. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "mat01gyak",
@@ -121,7 +121,7 @@
         },
         {
             "name": "3. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "FIZ06",
@@ -198,7 +198,7 @@
         },
         {
             "name": "4. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "KEM0601",
@@ -262,7 +262,7 @@
         },
         {
             "name": "5. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "FOL01",
@@ -333,7 +333,7 @@
         },
         {
             "name": "6. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "kornygazdvedjog",
@@ -367,7 +367,7 @@
         },
         {
             "name": "Kötelezően választható tárgyak",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "KORV01",

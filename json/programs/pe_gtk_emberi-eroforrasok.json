@@ -5,7 +5,7 @@
     "course_blocks": [
         {
             "name": "1. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMIMAB144M",
@@ -56,7 +56,7 @@
         },
         {
             "name": "2. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "GTGAB144A",
@@ -117,7 +117,7 @@
         },
         {
             "name": "3. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEGTGAB144S",
@@ -188,7 +188,7 @@
         },
         {
             "name": "4. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEGTPTB212P",
@@ -248,7 +248,7 @@
         },
         {
             "name": "5. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEGTVEB314T",
@@ -295,7 +295,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 3
                 },
@@ -311,7 +311,7 @@
         },
         {
             "name": "6. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEGTVEB222F",
@@ -353,7 +353,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 6
                 }
@@ -361,7 +361,7 @@
         },
         {
             "name": "Szakmai választható tárgyak part I.",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "GTKGB112G",
@@ -427,7 +427,7 @@
         },
         {
             "name": "Szakmai választható tárgyak part II.",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "GTVEB522M",
@@ -485,7 +485,7 @@
         },
         {
             "name": "Szakmai választható tárgyak part III.",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "GTVEB544F",

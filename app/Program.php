@@ -12,7 +12,7 @@ class Program extends Model
     public function courseBlocks()
     {
         return $this->hasMany(CourseBlock::class)
-            ->orderBy('is_semester', 'DESC')
+            ->orderBy('row')
             ->orderBy('ordering');
     }
 

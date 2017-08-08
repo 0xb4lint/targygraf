@@ -5,7 +5,7 @@
     "course_blocks": [
         {
             "name": "1. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKFIM112F",
@@ -68,7 +68,7 @@
                     "credits": 4
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható tárgy",
                     "credits": 4
                 }
@@ -76,7 +76,7 @@
         },
         {
             "name": "2. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKKVM122F",
@@ -147,7 +147,7 @@
         },
         {
             "name": "3. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": null,
@@ -185,7 +185,7 @@
         },
         {
             "name": "4. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKKVM23XD",
@@ -197,12 +197,12 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható tárgy (Ősszel kezdőknek)",
                     "credits": 6
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható tárgy (Tavasszal kezdőknek)",
                     "credits": 2
                 }
@@ -210,7 +210,7 @@
         },
         {
             "name": "Környezettechnológia szakirány 3. félév",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKKVM423L",
@@ -288,7 +288,7 @@
         },
         {
             "name": "Környezetállapot-értékelés, menedzsment szakirány 3. félév",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKKVM424A",
@@ -347,7 +347,7 @@
         },
         {
             "name": "Radioökológia szakirány 3. félév",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKRKM412K",

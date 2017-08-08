@@ -5,7 +5,7 @@
     "course_blocks": [
         {
             "name": "1. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "BMETE90AX33",
@@ -64,7 +64,7 @@
         },
         {
             "name": "2. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "BMETE90AX34",
@@ -134,7 +134,7 @@
         },
         {
             "name": "3. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "BMEEOEMA301",
@@ -212,7 +212,7 @@
         },
         {
             "name": "4. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "BMEGT43A044",
@@ -300,7 +300,7 @@
         },
         {
             "name": "5. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "BMEEPEKA501",
@@ -420,7 +420,7 @@
         },
         {
             "name": "6. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "BMEGT301004",
@@ -490,7 +490,7 @@
         },
         {
             "name": "7. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "BMEGT301924",
@@ -527,7 +527,7 @@
         },
         {
             "name": "8. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "BMEEPEKA801",
@@ -564,7 +564,7 @@
         },
         {
             "name": "9. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "BMEEPEKO901",
@@ -601,7 +601,7 @@
         },
         {
             "name": "10. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "BMEEP??TD01",
@@ -612,7 +612,7 @@
         },
         {
             "name": "6. félév Tervezői szakirány",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "BMEEPxxT601",
@@ -651,7 +651,7 @@
         },
         {
             "name": "6. félév Szekezeti szakirány",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "BMEEPEKK601",
@@ -673,7 +673,7 @@
         },
         {
             "name": "7. félév Tervezői szakirány",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "BMEEPEST701 \/  BMEEPEST702",
@@ -721,7 +721,7 @@
         },
         {
             "name": "7. félév Szerkezeti szakirány",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "BMEEPESK701 \/  BMEEPESK702",
@@ -758,7 +758,7 @@
         },
         {
             "name": "7.-8. félév Szerkezeti szakirány Kötvál",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "BMEEPSTK702",
@@ -801,7 +801,7 @@
         },
         {
             "name": "8. félév Tervezői szakirány",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "BMEEPEST899",
@@ -836,7 +836,7 @@
         },
         {
             "name": "8. félév Szerkezeti szakirány",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "BMEEPESK801",
@@ -894,7 +894,7 @@
         },
         {
             "name": "9. félév Tervezői szakirány",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "BMEEPETT999",
@@ -938,7 +938,7 @@
         },
         {
             "name": "9. félév Szerkezeti szakirány",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "BMEEPESS999",

@@ -5,7 +5,7 @@
     "course_blocks": [
         {
             "name": "1. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKAKB112A",
@@ -66,7 +66,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 4
                 }
@@ -74,7 +74,7 @@
         },
         {
             "name": "2. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKIKB222A",
@@ -174,7 +174,7 @@
                     "credits": 2
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 2
                 }
@@ -182,7 +182,7 @@
         },
         {
             "name": "3. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKOKB112B",
@@ -276,7 +276,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 2
                 }
@@ -284,7 +284,7 @@
         },
         {
             "name": "4. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKFIB212E",
@@ -394,7 +394,7 @@
         },
         {
             "name": "5. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": null,
@@ -463,7 +463,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 2
                 }
@@ -471,7 +471,7 @@
         },
         {
             "name": "6. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKEL3253B",
@@ -541,7 +541,7 @@
         },
         {
             "name": "7. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKVMB2XXT",
@@ -569,7 +569,7 @@
         },
         {
             "name": "Választható társadalomtudományi tárgy",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKTT1312F",
@@ -600,7 +600,7 @@
         },
         {
             "name": "Választható menedzsment tárgy",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEGTMEB144M",
@@ -630,7 +630,7 @@
         },
         {
             "name": "Üzemeltetési szakirány 6. félév",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKTEV213F",
@@ -661,7 +661,7 @@
         },
         {
             "name": "Üzemeltetési szakirány 7. félév",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKFOV132F",
@@ -698,7 +698,7 @@
         },
         {
             "name": "Technológia szakirány 6. félév",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKTEV213F",
@@ -737,7 +737,7 @@
         },
         {
             "name": "Technológia szakirány 7. félév",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKTEV17XK",

@@ -5,7 +5,7 @@
     "course_blocks": [
         {
             "name": "1. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "Roh9NP4O",
@@ -74,7 +74,7 @@
         },
         {
             "name": "2. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKAKB212B",
@@ -186,7 +186,7 @@
         },
         {
             "name": "3. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": null,
@@ -301,7 +301,7 @@
         },
         {
             "name": "4. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKFIB113E",
@@ -406,7 +406,7 @@
         },
         {
             "name": "5. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": null,
@@ -458,7 +458,7 @@
         },
         {
             "name": "6. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKGEB233H",
@@ -495,7 +495,7 @@
         },
         {
             "name": "7. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKKVB112M",
@@ -514,7 +514,7 @@
         },
         {
             "name": "Szakirány",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": null,
@@ -551,7 +551,7 @@
         },
         {
             "name": "Kötelezően választható társadalomtudományi tárgyak",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKTT1312F",
@@ -590,7 +590,7 @@
         },
         {
             "name": "Kötelezően választható menedzsment tárgyak",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEGTMEB144M",
@@ -647,7 +647,7 @@
         },
         {
             "name": "Szilikátipari gépész szakirány 5. félév (Veszprém)",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKGEB112L",
@@ -684,7 +684,7 @@
         },
         {
             "name": "Szilikátipari gépész szakirány 6. félév (Veszprém) ",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKGEB244L",
@@ -724,7 +724,7 @@
         },
         {
             "name": "Szilikátipari gépész szakirány 7. félév (Veszprém) ",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKGEB444F",
@@ -759,7 +759,7 @@
         },
         {
             "name": "Mechatronika szakirány 5. félév (Veszprém)",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKAVB252A",
@@ -815,7 +815,7 @@
         },
         {
             "name": "Mechatronika szakirány 6. félév (Veszprém)",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKGEB143F",
@@ -870,7 +870,7 @@
         },
         {
             "name": "Mechatronika szakirány 7. félév (Veszprém)",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKFOB133F",
@@ -898,7 +898,7 @@
         },
         {
             "name": "Műszaki logisztika szakirány 5. félév (Nagykanizsa)",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "NKGTNK2148A",
@@ -923,7 +923,7 @@
         },
         {
             "name": "Műszaki logisztika szakirány 6. félév (Nagykanizsa)",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "NKGTNK2248R",
@@ -949,7 +949,7 @@
         },
         {
             "name": "Műszaki logisztika szakirány 7. félév (Nagykanizsa)",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMIVI3313R",

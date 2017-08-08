@@ -282,7 +282,7 @@ Array.prototype.remove = function() {
 
 		var optionalCreditsSum = CREDITS.optional + CREDITS.overflow;
 
-		$('.course[data-code="___FREE___"]').sort(function(a, b) {
+		$('.course[data-code="___OPTIONAL___"]').sort(function(a, b) {
 			return parseInt( $(a).data('credits') ) < parseInt( $(b).data('credits') );
 		}).each(function() {
 
@@ -318,7 +318,7 @@ Array.prototype.remove = function() {
 		incrementCreditsProcessing,
 		addToProcessingArray
 	) {
-		if ($course.data('referenced-course-blocks') !== '' || $course.data('code') === '___FREE___')
+		if ($course.data('referenced-course-blocks') !== '' || $course.data('code') === '___OPTIONAL___')
 			return;
 
 		var credits = parseInt( $course.data('credits') );
@@ -343,7 +343,7 @@ Array.prototype.remove = function() {
 	) {
 		if (
 			$course.data('referenced-course-blocks') !== '' ||
-			$course.data('code') === '___FREE___'
+			$course.data('code') === '___OPTIONAL___'
 		) {
 			return;
 		}
@@ -588,7 +588,7 @@ Array.prototype.remove = function() {
 
 		if (
 			$course.data('referenced-course-blocks') !== '' ||
-			$course.data('code') == '___FREE___' ||
+			$course.data('code') == '___OPTIONAL___' ||
 			$course.hasClass('processing') ||
 			$course.hasClass('finished')
 		) {
@@ -655,7 +655,7 @@ Array.prototype.remove = function() {
 
 			if (
 				$course.data('referenced-course-blocks') !== '' ||
-				$course.data('code') === '___FREE___'
+				$course.data('code') === '___OPTIONAL___'
 			) {
 				return;
 			}
@@ -731,7 +731,7 @@ Array.prototype.remove = function() {
 
 
 
-		$('.course[data-code="___FREE___"]').hover(
+		$('.course[data-code="___OPTIONAL___"]').hover(
 		function() {
 
 			$(this).css('z-index', '101');

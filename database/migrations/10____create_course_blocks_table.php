@@ -20,7 +20,7 @@ class CreateCourseBlocksTable extends Migration
             $table->foreign('program_id')->references('id')->on('programs');
 
             $table->string('name');
-            $table->boolean('is_semester')->default(true);
+            $table->tinyInteger('row')->unsigned()->default(0);
             $table->tinyInteger('ordering')->unsigned()->default(0);
             $table->boolean('is_counted')->default(true);
         });

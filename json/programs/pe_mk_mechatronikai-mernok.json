@@ -5,7 +5,7 @@
     "course_blocks": [
         {
             "name": "1. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKMAB112M",
@@ -69,7 +69,7 @@
         },
         {
             "name": "2. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKFI1312B",
@@ -176,7 +176,7 @@
         },
         {
             "name": "3. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": null,
@@ -282,7 +282,7 @@
         },
         {
             "name": "4. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKFIB212M",
@@ -374,7 +374,7 @@
         },
         {
             "name": "5. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": null,
@@ -482,7 +482,7 @@
         },
         {
             "name": "6. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKFOB266M",
@@ -519,7 +519,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható tárgy (3 kredit)",
                     "credits": 3
                 }
@@ -527,7 +527,7 @@
         },
         {
             "name": "7. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKKVB112M",
@@ -556,7 +556,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható tárgy (7 kredit)",
                     "credits": 7
                 }
@@ -564,7 +564,7 @@
         },
         {
             "name": "Szakirány",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": null,
@@ -589,7 +589,7 @@
         },
         {
             "name": "Kötelezően választható társadalomtudományi tárgyak (összesen 4 kredit)",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKTT1312F",
@@ -628,7 +628,7 @@
         },
         {
             "name": "Kötelezően választható menedzsment tárgyak (összesen 2 kredit)",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEGTMEB144M",
@@ -685,7 +685,7 @@
         },
         {
             "name": "Kötelezően választható tárgyak (összesen 8 kredit)",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKFIB522V",
@@ -738,7 +738,7 @@
         },
         {
             "name": "Folyamatipari rendszerek mechatronikája szakirány (5. félév)",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKFOB154B",
@@ -757,7 +757,7 @@
         },
         {
             "name": "Folyamatipari rendszerek mechatronikája szakirány (6. félév)",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKFOB255F",
@@ -792,7 +792,7 @@
         },
         {
             "name": "Optika és labortechnika szakirány (5. félév)",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKFIB412M",
@@ -828,7 +828,7 @@
         },
         {
             "name": "Optika és labortechnika szakirány (6. félév)",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKFIB432P",

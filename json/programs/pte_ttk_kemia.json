@@ -5,7 +5,7 @@
     "course_blocks": [
         {
             "name": "1. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "FOL01",
@@ -53,7 +53,7 @@
                     "credits": 4
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 7
                 }
@@ -61,7 +61,7 @@
         },
         {
             "name": "2. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "matek2ea",
@@ -138,7 +138,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 2
                 }
@@ -146,7 +146,7 @@
         },
         {
             "name": "3. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "KEM1203",
@@ -242,7 +242,7 @@
         },
         {
             "name": "4. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "fizkem3sz",
@@ -337,7 +337,7 @@
         },
         {
             "name": "5. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "alkkemia1ea",
@@ -399,7 +399,7 @@
         },
         {
             "name": "6. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "kornykemea",
@@ -458,7 +458,7 @@
         },
         {
             "name": "Kötelezően választható tantárgyak part I.",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "kozettan",
@@ -543,7 +543,7 @@
         },
         {
             "name": "Kötelezően választható tantárgyak part II.",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "gyogykem",

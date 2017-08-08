@@ -5,7 +5,7 @@
     "course_blocks": [
         {
             "name": "1. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "SGMxxXxxXN",
@@ -38,12 +38,12 @@
                     "credits": 3
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható tárgy I.",
                     "credits": 2
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható tárgy II.",
                     "credits": 2
                 }
@@ -51,7 +51,7 @@
         },
         {
             "name": "2. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "SGMxxXxxXN",
@@ -115,7 +115,7 @@
                     "credits": 5
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható tárgy III.",
                     "credits": 2
                 }
@@ -123,7 +123,7 @@
         },
         {
             "name": "3. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "SGMxxXxxXN",
@@ -172,7 +172,7 @@
                     "credits": 8
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható tárgy IV.",
                     "credits": 2
                 },
@@ -190,7 +190,7 @@
         },
         {
             "name": "4. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "SGMxxXxxXN",
@@ -211,7 +211,7 @@
         },
         {
             "name": "Szakmai modulok",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": null,
@@ -257,7 +257,7 @@
         },
         {
             "name": "Agrobiznisz modul",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "SGMxxXxxXN",
@@ -298,7 +298,7 @@
         },
         {
             "name": "Megújuló energiák modul",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "SGMxxXxxXN",
@@ -339,7 +339,7 @@
         },
         {
             "name": "Projekt tervezés és kontroll modul",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "SGMxxXxxXN",
@@ -380,7 +380,7 @@
         },
         {
             "name": "Termelés- és minőségmenedzsment modul",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "SGMxxXxxXN",
@@ -421,7 +421,7 @@
         },
         {
             "name": "Ipari marketing és logisztika modul",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "SGMxxXxxXN",

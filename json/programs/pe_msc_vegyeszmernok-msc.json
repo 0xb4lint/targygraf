@@ -5,7 +5,7 @@
     "course_blocks": [
         {
             "name": "1. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKOKM112N",
@@ -61,7 +61,7 @@
         },
         {
             "name": "2. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKKAM114A",
@@ -97,7 +97,7 @@
         },
         {
             "name": "3. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKMOL412O",
@@ -113,7 +113,7 @@
         },
         {
             "name": "4. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKVMM2XD",
@@ -129,7 +129,7 @@
         },
         {
             "name": "Szakirány",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": null,
@@ -176,7 +176,7 @@
         },
         {
             "name": "Kötelezően válaszható gazdasági és humán ismeretek tárgyak",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKKVB112K",
@@ -217,7 +217,7 @@
         },
         {
             "name": "Tárgyak közül egy felvétele kötelező",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKOLM212K",
@@ -243,7 +243,7 @@
         },
         {
             "name": "MOL Ásványolaj- és petrolkémiai technológia modul",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEGTVEB344P",
@@ -271,7 +271,7 @@
                     "credits": 3
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 4
                 },
@@ -294,7 +294,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 2
                 },
@@ -315,7 +315,7 @@
         },
         {
             "name": "Finomkémiai műveleti modul",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": null,
@@ -331,7 +331,7 @@
                     "credits": 8
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 6
                 },
@@ -362,7 +362,7 @@
         },
         {
             "name": "Folyamatmérnöki modul",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": null,
@@ -378,7 +378,7 @@
                     "credits": 8
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 6
                 },
@@ -401,7 +401,7 @@
         },
         {
             "name": "Radiokémiai technológiai modul",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": null,
@@ -417,7 +417,7 @@
                     "credits": 4
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 6
                 },
@@ -445,7 +445,7 @@
         },
         {
             "name": "Biotechnológiai modul",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": null,
@@ -466,7 +466,7 @@
                     "credits": 2
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 6
                 },

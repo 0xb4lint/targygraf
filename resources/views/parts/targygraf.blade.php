@@ -1,11 +1,11 @@
-<?php $semesterSeparator = false; ?>
+<?php $lastRow = 0; ?>
 <div class="content" data-specialis="0">
 @foreach ($program->courseBlocks as $courseBlock)
 
-	@if ( !$courseBlock->is_semester && !$semesterSeparator )
+	@if ( $courseBlock->row != $lastRow )
 		</div>
 		<div class="content" data-specialis="1">
-		<?php $semesterSeparator = true; ?>
+		<?php $lastRow = $courseBlock->row; ?>
 	@endif
 
 	<?php $sumCredits = 0; ?>
@@ -31,7 +31,7 @@
 			@endif
 			@endforeach
 
-		@if ( $courseBlock->is_semester && $sumCredits )
+		@if ( !$courseBlock->row && $sumCredits )
 		<div class="muted">
 			∑ {{ $sumCredits }} kredit
 		</div>

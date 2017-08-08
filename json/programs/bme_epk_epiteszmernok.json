@@ -5,7 +5,7 @@
     "course_blocks": [
         {
             "name": "1. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "BMETE90AX33",
@@ -64,7 +64,7 @@
         },
         {
             "name": "2. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "BMETE90AX34",
@@ -134,7 +134,7 @@
         },
         {
             "name": "3. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "BMEEOEMA301",
@@ -212,7 +212,7 @@
         },
         {
             "name": "4. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "BMEGT43A044",
@@ -300,7 +300,7 @@
         },
         {
             "name": "5. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "BMEEPEKA501",
@@ -412,7 +412,7 @@
         },
         {
             "name": "6. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "BMEGT301004",
@@ -481,7 +481,7 @@
         },
         {
             "name": "7. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "BMEGT301924",
@@ -539,12 +539,12 @@
                     "credits": 0
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Acél tartószerkezetek  méretezése",
                     "credits": 4
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Fa tartószerkezetek  konstruálása",
                     "credits": 2
                 }
@@ -552,7 +552,7 @@
         },
         {
             "name": "8. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "BMEEPEKB801",
@@ -610,12 +610,12 @@
                     "credits": 0
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Fa tartószerkezetek méretezése",
                     "credits": 4
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Acél tartószerkezetek  konstruálása ",
                     "credits": 4
                 }

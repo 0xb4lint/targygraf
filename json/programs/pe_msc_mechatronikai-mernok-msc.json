@@ -5,7 +5,7 @@
     "course_blocks": [
         {
             "name": "1. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKSIM114A",
@@ -47,7 +47,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 3
                 }
@@ -55,7 +55,7 @@
         },
         {
             "name": "2. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKFOM144I",
@@ -110,7 +110,7 @@
         },
         {
             "name": "3. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKFOM264I",
@@ -135,7 +135,7 @@
         },
         {
             "name": "4. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKFIM312S",
@@ -160,7 +160,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 3
                 }
@@ -168,7 +168,7 @@
         },
         {
             "name": "Kötelezően választható tárgy Continental járműrendszertechnikai szakirány",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKGEM444M",
@@ -184,7 +184,7 @@
         },
         {
             "name": "Kötelezően választható tárgy Folyamatmérnöki szakirány",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKGEM244M",
@@ -200,7 +200,7 @@
         },
         {
             "name": "Continental járműrendszertechnikai szakirány - 3. félév",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKGEM444A",
@@ -221,7 +221,7 @@
         },
         {
             "name": "Continental járműrendszertechnikai szakirány - 4. félév",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKGEM444B",
@@ -237,7 +237,7 @@
         },
         {
             "name": "Folyamatmérnöki szakirány 3. félév",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKFOM358T",
@@ -253,7 +253,7 @@
         },
         {
             "name": "Folyamatmérnöki szakirány 4. félév",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKFOM154F",

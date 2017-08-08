@@ -43,24 +43,24 @@ class ProgramSeeder extends AbstractJsonFileSeeder
     protected function processCourseBlocks(Program $program, array $courseBlocks)
     {
         $ordering = 0;
-        $lastCourseBlockWasSemester = true;
+        $lastCourseBlockRow = 0;
 
         foreach ($courseBlocks as $rawCourseBlock) {
-            if ($lastCourseBlockWasSemester && !$rawCourseBlock->is_semester) {
+            if ($lastCourseBlockRow != $rawCourseBlock->row) {
                 $ordering = 0;
             }
 
             $courseBlock = new CourseBlock;
             $courseBlock->program_id    = $program->id;
             $courseBlock->name          = $rawCourseBlock->name;
-            $courseBlock->is_semester   = $rawCourseBlock->is_semester;
+            $courseBlock->row           = $rawCourseBlock->row;
             $courseBlock->ordering      = $ordering++;
             $courseBlock->is_counted    = (@$rawCourseBlock->is_counted !== false);
             $courseBlock->save();
 
             $this->processCourses($courseBlock, $rawCourseBlock->courses);
 
-            $lastCourseBlockWasSemester = $courseBlock->is_semester;
+            $lastCourseBlockRow = $courseBlock->row;
         }
     }
 

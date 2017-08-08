@@ -5,7 +5,7 @@
     "course_blocks": [
         {
             "name": "1. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKAKB112A",
@@ -66,7 +66,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 4
                 }
@@ -74,7 +74,7 @@
         },
         {
             "name": "2. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKAKB233A",
@@ -193,7 +193,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 2
                 }
@@ -201,7 +201,7 @@
         },
         {
             "name": "3. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKIKB135V",
@@ -289,7 +289,7 @@
         },
         {
             "name": "4. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKOKB212T",
@@ -387,7 +387,7 @@
         },
         {
             "name": "5. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKFKB154B",
@@ -465,7 +465,7 @@
         },
         {
             "name": "6. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKKEA23XS",
@@ -490,7 +490,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 3
                 }
@@ -498,7 +498,7 @@
         },
         {
             "name": "Kötelezően választható tárgy 1. félév",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEGTKGB112M",
@@ -519,7 +519,7 @@
         },
         {
             "name": "Kötelezően választható tárgy 2. félév",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKKVB212M",
@@ -535,7 +535,7 @@
         },
         {
             "name": "Választható szakmai tárgyak part I.",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKFISV12F",
@@ -605,7 +605,7 @@
         },
         {
             "name": "Választható szakmai tárgyak part II.",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKKA4112V",

@@ -5,7 +5,7 @@
     "course_blocks": [
         {
             "name": "1. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "SGMxxXxxXN",
@@ -56,7 +56,7 @@
         },
         {
             "name": "2. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "SGMxxXxxXN",
@@ -101,7 +101,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon válaszható tárgy",
                     "credits": 3
                 }
@@ -109,7 +109,7 @@
         },
         {
             "name": "3. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "SGMxxXxxXN",
@@ -139,7 +139,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható tárgy",
                     "credits": 3
                 }
@@ -147,7 +147,7 @@
         },
         {
             "name": "4. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "SGMxxXxxXN",
@@ -163,7 +163,7 @@
         },
         {
             "name": "Szakirányok",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": null,
@@ -210,7 +210,7 @@
         },
         {
             "name": "Gépipari technológiák szakirány",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "SGMxxXxxXN",
@@ -271,7 +271,7 @@
         },
         {
             "name": "Gépészeti mechatronika szakirány",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "SGMxxXxxXN",
@@ -327,7 +327,7 @@
         },
         {
             "name": "Környezetipari szakirány",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "SGMxxXxxXN",
@@ -388,7 +388,7 @@
         },
         {
             "name": "Mobilgépek és járműrendszerek szakirány",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "SGMxxXxxXN",
@@ -444,7 +444,7 @@
         },
         {
             "name": "Műszaki fejlesztő szakirány",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "SGMxxXxxXN",

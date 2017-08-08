@@ -5,7 +5,7 @@
     "course_blocks": [
         {
             "name": "1. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "BMETE90AX00",
@@ -56,7 +56,7 @@
         },
         {
             "name": "2. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "BMETE90AX02",
@@ -109,7 +109,7 @@
                     "credits": 4
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Kötelezően választott gazdasági és humán ismeretek",
                     "credits": 2
                 }
@@ -117,7 +117,7 @@
         },
         {
             "name": "3. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "BMETE90AX11",
@@ -187,7 +187,7 @@
         },
         {
             "name": "4. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "BMEKOJJA161",
@@ -267,7 +267,7 @@
         },
         {
             "name": "5. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "BMEKOJJA162",
@@ -305,7 +305,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható tantárgyak",
                     "credits": 2
                 },
@@ -329,7 +329,7 @@
         },
         {
             "name": "6. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "BMEKOJHA159",
@@ -353,7 +353,7 @@
                     "credits": 2
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható tantárgyak",
                     "credits": 4
                 },
@@ -377,7 +377,7 @@
         },
         {
             "name": "7. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "BMEKOKUA169",
@@ -395,7 +395,7 @@
                     "credits": 15
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható tantárgyak",
                     "credits": 4
                 },
@@ -419,7 +419,7 @@
         },
         {
             "name": "Vasúti járművek",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "KOVJA530",
@@ -515,7 +515,7 @@
         },
         {
             "name": "Gépjárművek",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "BMEKOGJA511",
@@ -598,7 +598,7 @@
         },
         {
             "name": "Légijárművek",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "BMEKORHA521",
@@ -703,7 +703,7 @@
         },
         {
             "name": "Vízijárművek",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "KORHA533",
@@ -814,7 +814,7 @@
         },
         {
             "name": "Építőgépek",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "KOEAA545",
@@ -907,7 +907,7 @@
         },
         {
             "name": "Automatizált anyagmozgató berendezések és robotok",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "KOEAA545",
@@ -998,7 +998,7 @@
         },
         {
             "name": "Járműgyártás",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "KOJJA565",
@@ -1081,7 +1081,7 @@
         },
         {
             "name": "Járműmechatronika",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "KOEAA545",
@@ -1177,7 +1177,7 @@
         },
         {
             "name": "Járműfelépítmények",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "KOEAA545",

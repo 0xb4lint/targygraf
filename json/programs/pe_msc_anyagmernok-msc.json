@@ -5,7 +5,7 @@
     "course_blocks": [
         {
             "name": "1. félév (tavaszi)",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKSIM112A",
@@ -59,7 +59,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 2
                 }
@@ -67,7 +67,7 @@
         },
         {
             "name": "2. félév (őszi)",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKAMM2X0A",
@@ -111,7 +111,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 4
                 },
@@ -127,7 +127,7 @@
         },
         {
             "name": "3. félév (tavaszi)",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKAMM310D",
@@ -175,7 +175,7 @@
         },
         {
             "name": "4. félév (őszi)",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "VEMKAMM410D",
@@ -197,7 +197,7 @@
         },
         {
             "name": "Kémia modul",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKOKB112V",
@@ -269,7 +269,7 @@
         },
         {
             "name": "Kötelezően választható gazdasági és humán ismeretek tárgy",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEGTVEB214G",
@@ -320,7 +320,7 @@
         },
         {
             "name": "Differenciált szakmai ismeretek modul",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "VEMKKAM412E",

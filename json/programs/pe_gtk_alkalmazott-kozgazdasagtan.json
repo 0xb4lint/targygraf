@@ -5,7 +5,7 @@
     "course_blocks": [
         {
             "name": "1. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "GTKGB143M",
@@ -41,7 +41,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 3
                 },
@@ -54,7 +54,7 @@
         },
         {
             "name": "2. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "MKMA1344B",
@@ -116,7 +116,7 @@
         },
         {
             "name": "3. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "GTGAB144S",
@@ -151,7 +151,7 @@
                     ]
                 },
                 {
-                    "code": "___FREE___",
+                    "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 6
                 },
@@ -175,7 +175,7 @@
         },
         {
             "name": "4. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "GTKGB342G",
@@ -255,7 +255,7 @@
         },
         {
             "name": "5. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "GTKGB344V",
@@ -330,7 +330,7 @@
         },
         {
             "name": "6. félév",
-            "is_semester": true,
+            "row": 0,
             "courses": [
                 {
                     "code": "GTKGB312G",
@@ -404,7 +404,7 @@
         },
         {
             "name": "Választható alapozó és általános tárgyak",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "GTTUB112S",
@@ -435,7 +435,7 @@
         },
         {
             "name": "Szakmai választható tárgyak part I.",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "MKKG4312R",
@@ -524,7 +524,7 @@
         },
         {
             "name": "Szakmai választható tárgyak part II.",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "MKKG4312EA",
@@ -594,7 +594,7 @@
         },
         {
             "name": "Szakmai választható tárgyak part III.",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "GTEGB522H",
@@ -661,7 +661,7 @@
         },
         {
             "name": "Szakmai választható tárgyak part IV.",
-            "is_semester": false,
+            "row": 1,
             "courses": [
                 {
                     "code": "GTNGB512P",
