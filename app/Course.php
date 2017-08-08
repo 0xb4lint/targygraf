@@ -52,8 +52,8 @@ class Course extends Model
         $title = $this->credits . ' kredit';
         ;
 
-        if ($this->code) {
-            $title .= ' ' . $this->code;
+        if ($this->code && !preg_match('/^___.*___$/', $this->code)) {
+            $title .= ' - ' . $this->code;
         }
 
         if (!$this->prerequisites->isEmpty()) {

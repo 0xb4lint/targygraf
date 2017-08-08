@@ -1,22 +1,23 @@
 @extends('template')
 
-@section('content')
+@section('header')
+	<div class="fb-like" data-href="https://www.facebook.com/targygraf" data-layout="standard" data-action="recommend" data-show-faces="true" data-share="false"></div>
+@stop
+
+@section('main')
 	<?php $lastRow = 0; ?>
 	@foreach ($universities as $university)
 		@if ($lastRow != $university->row)
 			<br>
 			<?php $lastRow = $university->row; ?>
 		@endif
-		<a href="{{ route('university', ['university' => $university]) }}" class="uni{{ !$university->has_logo ? ' uni-no-cimer' : '' }}">
-			<div class="uni-cimer-cont">
-				<div class="uni-cimer-helper"></div>
-				@if ($university->has_logo)
-					<img src="{{ url('assets/img/logo/' . $university->slug . '.svg') }}" alt="{{ $university->name }}" class="uni-cimer">
-				@else
-					<div class="uni-cimer-alt">{{ strtoupper($university->slug) }}</div>
+		<a href="{{ route('university', ['university' => $university]) }}" class="university">
+			<div class="logo" style="background-image:url('{{ url('assets/img/logo/' . $university->slug . '.svg') }}')">
+				@if (!$university->has_logo)
+					{{ strtoupper($university->slug) }}
 				@endif
 			</div>
-			<div class="uni-nev">{{ $university->name }}</div>
+			<div class="name">{{ $university->name }}</div>
 		</a>
 	@endforeach
 @stop

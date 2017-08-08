@@ -15,19 +15,18 @@
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<link rel="icon" type="image/png" href="{{ url('icon.png') }}">
 		<link rel="apple-touch-icon" href="{{ url('icon.png') }}">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300&subset=latin,latin-ext" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
 		<link href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-		<link href="{{ url('assets/css/core.css') }}" rel="stylesheet">
-		<link href="{{ url('assets/css/targygraf.css') }}" rel="stylesheet">
+		<link href="{{ url('assets/css/style.css') }}" rel="stylesheet">
 		<link href="{{ url('assets/css/tipsy.css') }}" rel="stylesheet">
 		<script type="text/javascript">
-			(function(d, s, id) {
-				var js, fjs = d.getElementsByTagName(s)[0];
-				if (d.getElementById(id)) return;
-				js = d.createElement(s); js.id = id;
-				js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=610081139063354";
-				fjs.parentNode.insertBefore(js, fjs);
-			}(document, 'script', 'facebook-jssdk'));
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/hu_HU/sdk.js#xfbml=1&version=v2.10&appId=233475786671363";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
 
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -41,26 +40,25 @@
 	<body>
 		<div id="fb-root"></div>
 
-		<div id="takar"></div>
-		<div id="gombok">
-			@yield('gombok')
+		<div class="fade"></div>
+
+		<div class="buttons">
+			@yield('buttons')
 		</div>
 
-		<div id="container">
+		<header>
+			@yield('header')
+		</header>
 
-			<div id="like" class="fb-like" data-href="https://www.facebook.com/targygraf" data-layout="standard" data-action="recommend" data-show-faces="false" data-share="false"></div>
+		<main>
+			@yield('main')
+		</main>
 
-			<div id="dark">
-				@yield('dark')
-				{{ isset($title) ? '<h1>' . $title . '</h1>' : '' }}
-			</div>
-			@yield('content')
-			<div id="blank"></div>
-			<div id="footer">
-				<a href="http://valentinx.hu" target="_blank"><img src="http://valentinx.hu/valentinx.svg" alt="valentinx" height="20" style="height: 20px;" alt="valentinx"></a>
-				<div class="disclaimer">Az oldalon található információk nem tekinthetőek hivatalos forrásnak.</div>
-			</div>
-		</div>
+		<footer>
+			<a href="http://valentinx.hu" target="_blank"><img src="http://valentinx.hu/valentinx.svg" alt="valentinx" height="20" style="height: 20px;" alt="valentinx"></a>
+			<div class="disclaimer">Az oldalon található információk nem tekinthetőek hivatalos forrásnak.</div>
+		</footer>
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="{{ url('assets/js/jquery.tipsy.min.js') }}"></script>
 		<script src="{{ url('assets/js/targygraf.js') }}"></script>
