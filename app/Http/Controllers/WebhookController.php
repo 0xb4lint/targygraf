@@ -11,7 +11,7 @@ class WebhookController extends Controller
     public function postWebhook(Request $request)
     {
         if ($request->input('ref') != 'refs/heads/master') {
-            throw new Exception('invalid ref');
+            return response()->json('not my business');
         }
 
         $postData = file_get_contents('php://input');
