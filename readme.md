@@ -4,6 +4,11 @@
 1. `composer install`
 2. edit `.env`
 
+## Contributing
+1. fork repo
+2. edit
+3. pull request to `develop` branch
+
 ## Adatok migrálása
 `php artisan migrate:refresh --seed -vvv`
 
