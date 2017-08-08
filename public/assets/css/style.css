@@ -1,0 +1,516 @@
+* {
+	outline: none;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+body {
+	background-color: #E6E6E6;
+	font-size: 11px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	letter-spacing: -0.3px;
+	text-align: center;
+	min-width: 1010px;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+body:before {
+	content: "";
+	position: fixed;
+	top: -10px;
+	left: 0;
+	width: 100%;
+	height: 10px;
+	z-index: 100;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+}
+
+a {
+	text-decoration: none;
+}
+
+a img {
+	border: 0;
+}
+
+h1 {
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+	font-size: 20px;
+	color: #fff;
+	font-variant: small-caps;
+	font-weight: 400;
+}
+
+b,
+strong {
+	font-weight: 400;
+}
+
+hr {
+	border: 1px solid #000;
+}
+
+.small {
+	font-size: 70%;
+}
+
+.muted {
+	color: #666;
+}
+
+h1 .muted {
+	color: #ddd;
+}
+
+.content,
+.content * {
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+
+
+/*
+HEADER
+*/
+header {
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+	position: relative;
+	background-color: #d35400;
+}
+
+header .fb-like {
+	margin-top: 10px;
+}
+
+header .fb-like.pull-left {
+	float: none;
+	position: absolute;
+	top: 0;
+	left: 4px;
+}
+
+header .university-logo {
+	position: absolute;
+	top: 50%;
+	right: 4px;
+	transform: translateY(-50%);
+	height: 80%;
+	max-height: 150px;
+}
+
+header .program-selector {
+	display: inline-block;
+	background-color: #1abc9c;
+	margin-top: 8px;
+	margin-bottom: 20px;
+	padding: 3px;
+	position: relative;
+	z-index: 2;
+	margin-right: -8px;
+	box-shadow: #131a21 1px 1px,
+				#131a21 2px 2px,
+				#131a21 3px 3px,
+				#131a21 4px 4px,
+				#131a21 5px 5px,
+				#131a21 6px 6px,
+				#131a21 7px 7px,
+				#131a21 8px 8px;
+}
+
+header .program-selector .toggle {
+	cursor: pointer;
+}
+
+header .program-selector .faculty {
+	margin-bottom: 10px;
+}
+
+header .program-selector .faculty .faculty-name {
+	font-family: sans-serif;
+	font-size: 13px;
+	letter-spacing: 0;
+	margin-bottom: 4px;
+}
+
+header .program-selector .program {
+	padding: 3px;
+	font-size: 11px;
+	color: #000;
+	border-color: #aaa;
+	background-color: white;
+	margin-left: 2px;
+	margin-right: 2px;
+	transition: all 0.1s linear;
+}
+
+header .program-selector .program.active {
+	background-color: #2ecc71;
+}
+
+header .program-selector .program:hover {
+	background-color: #3498db;
+	color: #fff;
+}
+
+
+
+/*
+MAIN
+*/
+main {
+	flex: 1;
+	position: relative;
+}
+
+main .university-logo {
+	max-height: 200px;
+	margin-bottom: 6px;
+}
+
+main .university {
+	position: relative;
+	width: 200px;
+	display: inline-block;
+	border: 1px solid #ddd;
+	background-color: #eee;
+	border-radius: 6px;
+	padding: 10px 10px 30px;
+	color: #444;
+	transition: all 0.1s linear;
+}
+
+main .university:hover {
+	background-color: #fff;
+}
+
+main .university .logo {
+	height: 200px;
+	line-height: 200px;
+	font-size: 36px;
+	font-weight: 400;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+main .university .name {
+	position: absolute;
+	bottom: 2px;
+	left: 0;
+	width: 100%;
+	font-size: 18px;
+	font-variant: small-caps;
+	color: #666;
+}
+
+main h1 {
+	font-size: 30px;
+	color: #000;
+	margin-bottom: 40px;
+}
+
+
+
+/*
+FOOTER
+*/
+footer {
+	padding-top: 20px;
+}
+
+footer .disclaimer {
+	margin-top: 2px;
+	margin-bottom: 2px;
+	color: #666;
+}
+
+
+
+/*
+FADE
+*/
+.fade {
+	position: fixed;
+	top: 0;
+	left: 0;
+	opacity: 0.75;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	z-index: 101;
+	display: none;
+}
+
+
+
+/*
+BUTTONS
+*/
+.buttons {
+	position: fixed;
+	right: 5px;
+	bottom: 8.5px;
+	z-index: 1;
+}
+
+.buttons .button {
+	display: block;
+	cursor: pointer;
+	transition: all 0.2s linear;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 28px;
+	border-radius: 6px;
+	text-align: center;
+	color: #000;
+}
+
+.buttons .button.university .fa {
+	margin-left: 2px;
+}
+
+.buttons .button:hover {
+	background-color: black;
+	color: white;
+}
+
+.buttons .button.reset:hover {
+	background-color: #f88;
+}
+
+
+
+/*
+PROGRESSBAR
+*/
+.progressbar {
+	width: 800px;
+	height: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 8px;
+	text-align: center;
+	font-weight: bold;
+	white-space: nowrap;
+	text-align: left;
+	color: #222;
+	border-right: 2px solid #666;
+	border-left: 2px solid #666;
+}
+
+.progressbar .finished,
+.progressbar .processing {
+	height: 100%;
+	display: inline-block;
+	font-size: 10px;
+	overflow: hidden;
+	text-align: center;
+	vertical-align: top;
+	white-space: normal;
+	opacity: 0.85;
+	filter:alpha(opacity=85);
+}
+
+
+
+/*
+CREDITS COUNTER
+*/
+.credits-counter {
+	color: #555;
+	font-size: 16px;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 8px;
+}
+
+.credits-counter * {
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+.credits-counter .finished {
+	float: left;
+}
+
+.credits-counter .processing {
+	float: right;
+}
+
+.credits-counter .credits-optional-container {
+	width: 300px;
+	display: inline-block;
+	position: relative;
+}
+
+.credits-counter .credits-optional-title {
+	font-size: 12px;
+	margin-top: -6px;
+}
+
+.credits-counter .credits-optional-container {
+	position: relative;
+	display: inline-block;
+	padding: 2px;
+}
+
+.credits-counter .credits-optional-control {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background-color: #ccc;
+	border-radius: 20px;
+	line-height: 25px;
+	text-align: center;
+	vertical-align: 1px;
+	margin: 0 3px;
+	cursor: pointer;
+}
+
+.credits-counter .credits-optional-control.plus {
+	background-color: #a8d3ff;
+	color: #444;
+}
+
+.credits-counter .credits-optional-control:hover {
+	background-color: #8e44ad;
+	color: #fff;
+}
+
+.credits-counter .credits-optional-control.muted {
+	cursor: default;
+	background-color: #fff;
+	color: #999;
+}
+
+.credits-counter .credits-overflow {
+	font-size: 12px;
+	position: absolute;
+	top: 18px;
+	right: 15px;
+}
+
+
+
+/*
+CONTENT
+*/
+.content {
+	margin-bottom: 8px;
+	position: relative;
+}
+
+
+
+/*
+COURSE BLOCK
+*/
+.course-block {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 1.5px;
+	margin-right: 1.5px;
+	position: relative;
+	width: 140px;
+	border-radius: 6px;
+}
+
+.course-block.finished {
+	opacity: 0.6;
+	background-color: rgba(144, 238, 144, 0.5);
+}
+
+.course-block.finished:hover {
+	opacity: 1;
+}
+
+.course-block .course-block-title {
+	margin-bottom: 4px;
+}
+
+
+
+/*
+COURSE
+*/
+.course,
+.course-help {
+	background-color: white;
+	color: #666;
+	border-radius: 6px;
+	margin: 2px 0;
+	padding: 4px 3px;
+	position: relative;
+	word-wrap: break-word;
+}
+
+.course {
+	cursor: pointer;
+}
+
+.course-help {
+	width: auto;
+}
+
+.course.processable,
+.course-help.processable {
+	background-color: #a8d3ff;
+	color: #444;
+}
+
+.course.processing,
+.course-help.processing,
+.progressbar .processing {
+	background-color: #3498db;
+	color: #fff;
+}
+
+.course.finished,
+.course-help.finished,
+.progressbar .finished {
+	background-color: #2ecc71;
+	color: #222;
+}
+
+.course.prerequisite,
+.course-help.prerequisite {
+	background-color: #e67e22;
+	color: #000;
+}
+
+.course.sequel,
+.course-help.sequel {
+	background-color: #f1c40f;
+	color: #000;
+}
+
+.course.end {
+	background-image: url('../img/end.png');
+	background-position: right center;
+	background-repeat: repeat-y;
+}
+
+
+
+/*
+HELP
+*/
+.help {
+	position: fixed;
+	bottom: 5px;
+	left: 3px;
+}
