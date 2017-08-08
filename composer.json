@@ -34,6 +34,7 @@
             "php artisan optimize"
         ],
         "post-update-cmd": [
+            "php -r \"file_exists('.env') || copy('.env.local', '.env');\"",
             "Illuminate\\Foundation\\ComposerScripts::postUpdate",
             "php artisan optimize"
         ]
