@@ -33,7 +33,7 @@ class WebhookController extends Controller
         $rmComposerLockProcess = new Process('rm composer.lock', $cwd, $env);
         $rmComposerLockProcess->run();
 
-        $composerInstallProcess = new Process('composer install', $cwd, $env);
+        $composerInstallProcess = new Process('composer install --no-dev --no-interaction', $cwd, $env);
         $composerInstallProcess->mustRun();
 
         $phpArtisanMigrateRefreshSeedProcess = new Process('php artisan migrate:refresh --seed -vvv', $cwd, $env);
