@@ -55,7 +55,7 @@
 		</main>
 
 		<footer>
-			<a href="http://valentinx.hu" target="_blank"><img src="http://valentinx.hu/valentinx.svg" alt="valentinx" height="20" style="height: 20px;" alt="valentinx"></a>
+			<iframe src="https://ghbtns.com/github-btn.html?user=valentinxxx&repo=targygraf&type=star&count=true&size=large" class="github"></iframe>
 			<div class="disclaimer">Az oldalon található információk nem tekinthetőek hivatalos forrásnak.</div>
 		</footer>
 

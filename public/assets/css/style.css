@@ -230,8 +230,13 @@ footer {
 	padding-top: 20px;
 }
 
+footer .github {
+	height: 30px;
+	width: 120px;
+	border: 0;
+}
+
 footer .disclaimer {
-	margin-top: 2px;
 	margin-bottom: 2px;
 	color: #666;
 }

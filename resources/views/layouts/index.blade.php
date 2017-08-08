@@ -5,6 +5,7 @@
 @stop
 
 @section('main')
+	<h1>Tárgygráf</h1>
 	<?php $lastRow = 0; ?>
 	@foreach ($universities as $university)
 		@if ($lastRow != $university->row)
