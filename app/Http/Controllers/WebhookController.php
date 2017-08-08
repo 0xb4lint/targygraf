@@ -36,7 +36,7 @@ class WebhookController extends Controller
         $composerInstallProcess = new Process('composer install --no-dev --no-interaction', $cwd, $env);
         $composerInstallProcess->mustRun();
 
-        $phpArtisanMigrateRefreshSeedProcess = new Process('php artisan migrate:refresh --seed -vvv', $cwd, $env);
+        $phpArtisanMigrateRefreshSeedProcess = new Process('php artisan migrate:refresh --seed --force -vvv', $cwd, $env);
         $phpArtisanMigrateRefreshSeedProcess->mustRun();
 
         return response()->json('success');
