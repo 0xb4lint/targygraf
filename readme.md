@@ -14,7 +14,7 @@
 3. pull request to `develop` branch
 
 ## Testing
-`phpunit`
+`vendor/bin/phpunit`
 
 ## Fontos fájlok
 - `.env` - futtatókörnyezet leíró fájl
