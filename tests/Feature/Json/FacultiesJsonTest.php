@@ -29,18 +29,18 @@ class FacultiesJsonTest extends AbstractJsonTest
 
         $this->assertTrue(
             is_string($data->name),
-            $path . ' name is_string'
+            $path.' name is_string'
         );
 
         $this->assertTrue(
             is_int($data->ordering),
-            $path . ' ordering is_int'
+            $path.' ordering is_int'
         );
 
         $this->assertGreaterThanOrEqual(
             0,
             $data->ordering,
-            $path . ' ordering'
+            $path.' ordering'
         );
     }
 }

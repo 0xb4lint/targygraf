@@ -12,34 +12,34 @@ class UniversitiesJsonTest extends AbstractJsonTest
 
         $this->assertTrue(
             is_string($data->name),
-            $path . ' name is_string'
+            $path.' name is_string'
         );
 
         $this->assertTrue(
             is_int($data->row),
-            $path . ' row is_int'
+            $path.' row is_int'
         );
 
         $this->assertGreaterThanOrEqual(
             0,
             $data->row,
-            $path . ' row'
+            $path.' row'
         );
 
         $this->assertTrue(
             is_int($data->ordering),
-            $path . ' ordering is_int'
+            $path.' ordering is_int'
         );
 
         $this->assertGreaterThanOrEqual(
             0,
             $data->ordering,
-            $path . ' ordering'
+            $path.' ordering'
         );
 
         $this->assertTrue(
             is_bool($data->has_logo),
-            $path . ' has_logo is_bool'
+            $path.' has_logo is_bool'
         );
     }
 }
