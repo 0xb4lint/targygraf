@@ -58,7 +58,7 @@
                     "credits": 3
                 },
                 {
-                    "code": null,
+                    "code": "ZWSwWeGc",
                     "name": "Mechatronika alapjai",
                     "credits": 1
                 },
@@ -145,7 +145,7 @@
                     ]
                 },
                 {
-                    "code": null,
+                    "code": "3CPcmPaS",
                     "name": "Elektronika gyakorlat",
                     "credits": 2,
                     "prerequisites": [
@@ -153,7 +153,7 @@
                     ]
                 },
                 {
-                    "code": null,
+                    "code": "nvjDBVWW",
                     "name": "Mérés- és műszertechnika",
                     "credits": 2
                 },
@@ -219,7 +219,7 @@
                     ]
                 },
                 {
-                    "code": null,
+                    "code": "QfFQA9Es",
                     "name": "Ipari mérések",
                     "credits": 2
                 },
@@ -237,7 +237,7 @@
                     "credits": 4
                 },
                 {
-                    "code": null,
+                    "code": "jwcp8Sps",
                     "name": "Vektoranalízis és differenciálegyenletek",
                     "credits": 2,
                     "prerequisites": [
@@ -326,7 +326,7 @@
             "row": 0,
             "courses": [
                 {
-                    "code": null,
+                    "code": "uc5rLbbu",
                     "name": "Mechatronikai tervezés",
                     "credits": 3,
                     "prerequisites": [
@@ -334,7 +334,7 @@
                     ]
                 },
                 {
-                    "code": null,
+                    "code": "2b4EhRve",
                     "name": "Jelfeldolgozás",
                     "credits": 2,
                     "prerequisites": [
@@ -342,7 +342,7 @@
                     ]
                 },
                 {
-                    "code": null,
+                    "code": "NF6sb3uN",
                     "name": "Robotos szerelés",
                     "credits": 2
                 },
@@ -378,7 +378,7 @@
             "row": 0,
             "courses": [
                 {
-                    "code": null,
+                    "code": "ZGuM6JyC",
                     "name": "Gépgyártás–technológia",
                     "credits": 4
                 },
@@ -393,7 +393,7 @@
                     "credits": 2
                 },
                 {
-                    "code": null,
+                    "code": "wzJqZpWh",
                     "name": "Szakdolgozat I.",
                     "credits": 3
                 },
@@ -421,7 +421,7 @@
                     ]
                 },
                 {
-                    "code": null,
+                    "code": "mPrE67MJ",
                     "name": "Szakdolgozat II.",
                     "credits": 12
                 },
@@ -472,7 +472,7 @@
             "row": 1,
             "courses": [
                 {
-                    "code": null,
+                    "code": "rWazFFjU",
                     "name": "Folyamat-rendszerek elemzése",
                     "credits": 6,
                     "prerequisites": [
@@ -485,7 +485,7 @@
                     "credits": 4
                 },
                 {
-                    "code": null,
+                    "code": "Mtsv7Gxj",
                     "name": "Mechatronikai rendszerek modellezése és irányítása",
                     "credits": 6,
                     "prerequisites": [
@@ -542,7 +542,7 @@
                     ]
                 },
                 {
-                    "code": null,
+                    "code": "SeS347yz",
                     "name": "Bevezetés a LabVIEW FPGA használatába",
                     "credits": 4,
                     "prerequisites": [
@@ -550,7 +550,7 @@
                     ]
                 },
                 {
-                    "code": null,
+                    "code": "sM7aQ9B3",
                     "name": "Optikai labortechnika",
                     "credits": 4,
                     "prerequisites": [
@@ -574,7 +574,7 @@
                     "credits": 3
                 },
                 {
-                    "code": null,
+                    "code": "FmC9DCsn",
                     "name": "Polimertechnika",
                     "credits": 3
                 },
