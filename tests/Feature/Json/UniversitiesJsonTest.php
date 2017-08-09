@@ -2,7 +2,7 @@
 
 namespace Tests\Feature\Json;
 
-class UniversitiesJsonTest extends JsonTest
+class UniversitiesJsonTest extends AbstractJsonTest
 {
     protected $directory = 'json/universities';
 }

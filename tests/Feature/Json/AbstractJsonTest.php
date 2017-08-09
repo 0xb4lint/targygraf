@@ -4,7 +4,7 @@ namespace Tests\Feature\Json;
 
 use Tests\TestCase;
 
-abstract class JsonTest extends TestCase
+abstract class AbstractJsonTest extends TestCase
 {
     protected $directory = 'json/universities';
 
