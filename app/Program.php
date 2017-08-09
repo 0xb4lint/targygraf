@@ -4,10 +4,8 @@ namespace App;
 
 class Program extends Model
 {
-    public $timestamps  = false;
-    protected $table    = 'programs';
-
-
+    public $timestamps = false;
+    protected $table = 'programs';
 
     public function courseBlocks()
     {
@@ -15,8 +13,6 @@ class Program extends Model
             ->orderBy('row')
             ->orderBy('ordering');
     }
-
-
 
     public function getRouteKeyName()
     {

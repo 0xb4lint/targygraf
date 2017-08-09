@@ -4,10 +4,8 @@ namespace App;
 
 class Faculty extends Model
 {
-    public $timestamps  = false;
-    protected $table    = 'faculties';
-
-
+    public $timestamps = false;
+    protected $table = 'faculties';
 
     public function programs()
     {

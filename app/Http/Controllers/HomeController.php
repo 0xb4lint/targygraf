@@ -13,7 +13,7 @@ class HomeController extends Controller
             ->get();
 
         return view('layouts.index', [
-            'universities' => $universities
+            'universities' => $universities,
         ]);
     }
 }

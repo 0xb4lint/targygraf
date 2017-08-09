@@ -11,7 +11,7 @@ class UniversityController extends Controller
         $university->load('faculties.programs');
 
         return view('layouts.university', [
-            'university' => $university
+            'university' => $university,
         ]);
     }
 }
