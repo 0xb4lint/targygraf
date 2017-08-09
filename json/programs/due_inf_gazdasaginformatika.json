@@ -28,7 +28,7 @@
                     "credits": 5
                 },
                 {
-                    "code": "DFAN-INF-50",
+                    "code": "DFAN-INF-501",
                     "name": "Bevezetés a programozásba",
                     "credits": 5
                 },
@@ -89,7 +89,7 @@
                     "name": "Programozás I.",
                     "credits": 5,
                     "prerequisites": [
-                        "DFAN-INF-001",
+                        "DFAN-INF-501",
                         "DFAN-INF-400"
                     ]
                 },
