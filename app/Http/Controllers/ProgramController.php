@@ -13,12 +13,12 @@ class ProgramController extends Controller
 
         $program->load([
             'courseBlocks.courses.prerequisites',
-            'courseBlocks.courses.courseBlockReferences'
+            'courseBlocks.courses.courseBlockReferences',
         ]);
 
         return view('layouts.program', [
             'university'    => $university,
-            'program'       => $program
+            'program'       => $program,
         ]);
     }
 }

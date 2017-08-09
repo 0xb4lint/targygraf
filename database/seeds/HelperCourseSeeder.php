@@ -13,13 +13,11 @@ class HelperCourseSeeder extends Seeder
         $this->createDummyCredits(130);
     }
 
-
-
     private function createDummyCredits($credits)
     {
         $course = new Course;
-        $course->code = '___' . $credits . '___';
-        $course->name = $credits . ' kredit';
+        $course->code = '___'.$credits.'___';
+        $course->name = $credits.' kredit';
         $course->save();
     }
 }

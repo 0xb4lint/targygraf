@@ -4,10 +4,8 @@ namespace App;
 
 class Course extends Model
 {
-    public $timestamps  = false;
-    protected $table    = 'courses';
-
-
+    public $timestamps = false;
+    protected $table = 'courses';
 
     public function prerequisites()
     {
@@ -20,8 +18,6 @@ class Course extends Model
         ->withPivot('is_parallel');
     }
 
-
-
     public function courseBlockReferences()
     {
         return $this->belongsToMany(
@@ -29,8 +25,6 @@ class Course extends Model
             'course_reference_course_block'
         );
     }
-
-
 
     public function getPaddedID()
     {
@@ -41,22 +35,19 @@ class Course extends Model
         return str_pad($this->id, 6, '0', STR_PAD_LEFT);
     }
 
-
-
     public function getTitle()
     {
-        if (!$this->courseBlockReferences->isEmpty()) {
+        if (! $this->courseBlockReferences->isEmpty()) {
             return;
         }
 
-        $title = $this->credits . ' kredit';
-        ;
+        $title = $this->credits.' kredit';
 
-        if ($this->code && !preg_match('/^___.*___$/', $this->code)) {
-            $title .= ' - ' . $this->code;
+        if ($this->code && ! preg_match('/^___.*___$/', $this->code)) {
+            $title .= ' - '.$this->code;
         }
 
-        if (!$this->prerequisites->isEmpty()) {
+        if (! $this->prerequisites->isEmpty()) {
             $title .= '<hr>';
         }
 
@@ -65,7 +56,7 @@ class Course extends Model
                 $title .= '<br>';
             }
 
-            $title .= '• ' . $prerequisite->name;
+            $title .= '• '.$prerequisite->name;
 
             if ($prerequisite->pivot->is_parallel) {
                 $title .= ' <u>felvétele</u>';
@@ -75,20 +66,16 @@ class Course extends Model
         return $title;
     }
 
-
-
     public function getPrerequisitesIDs()
     {
         $prerequisitesIDs = [];
 
         foreach ($this->prerequisites as $prerequisite) {
-            $prerequisitesIDs[] = ($prerequisite->pivot->is_parallel ? '#' : '') . $prerequisite->getPaddedID();
+            $prerequisitesIDs[] = ($prerequisite->pivot->is_parallel ? '#' : '').$prerequisite->getPaddedID();
         }
 
         return $prerequisitesIDs;
     }
-
-
 
     public function getCourseBlockReferencesIDs()
     {

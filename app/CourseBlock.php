@@ -4,10 +4,8 @@ namespace App;
 
 class CourseBlock extends Model
 {
-    public $timestamps  = false;
-    protected $table    = 'course_blocks';
-
-
+    public $timestamps = false;
+    protected $table = 'course_blocks';
 
     public function courses()
     {
@@ -15,14 +13,10 @@ class CourseBlock extends Model
             ->orderBy('ordering');
     }
 
-
-
     public function getName()
     {
         return preg_replace('/\s*#\d+$/', '', $this->name);
     }
-
-
 
     public function getPaddedID()
     {
