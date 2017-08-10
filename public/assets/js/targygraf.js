@@ -72,20 +72,20 @@ Array.prototype.remove = function() {
 
 	function loadDataFromLocalStorage() {
 
-		var coursesFinished		= SNAPSHOT.enabled ? SNAPSHOT.coursesFinished : load('targygraf-teljesitett');
-		var coursesProcessing	= SNAPSHOT.enabled ? SNAPSHOT.coursesProcessing : load('targygraf-felvett');
-		var creditsOptional		= SNAPSHOT.enabled ? SNAPSHOT.creditsOptional : load('targygraf-szabad');
+		var coursesFinished		= SNAPSHOT.enabled ? SNAPSHOT.coursesFinished : load('coursesFinished');
+		var coursesProcessing	= SNAPSHOT.enabled ? SNAPSHOT.coursesProcessing : load('coursesProcessing');
+		var creditsOptional		= SNAPSHOT.enabled ? SNAPSHOT.creditsOptional : load('creditsOptional');
 
 		if (coursesFinished) {
 
 			for (var i = 0; i < coursesFinished.length; i++) {
 
-				var $courseFinished = $('.course[data-id="' + coursesFinished[i] + '"]');
+				var $courseFinished = $('.course[data-code="' + coursesFinished[i] + '"]');
 
 				if ($courseFinished.length)
 					finishCourse($courseFinished, true, false, true, false);
 				else
-					COURSES.finished.push(coursesFinished[i]);
+					COURSES.finished.push( coursesFinished[i] );
 			}
 		}
 
@@ -93,12 +93,12 @@ Array.prototype.remove = function() {
 
 			for (var j = 0; j < coursesProcessing.length; j++) {
 
-				var $courseProcessing = $('.course[data-id="' + coursesProcessing[j] + '"]');
+				var $courseProcessing = $('.course[data-code="' + coursesProcessing[j] + '"]');
 
 				if ($courseProcessing.length)
 					processCourse($courseProcessing, true, true);
 				else
-					COURSES.processing.push(coursesProcessing[j]);
+					COURSES.processing.push( coursesProcessing[j] );
 			}
 		}
 
@@ -115,9 +115,9 @@ Array.prototype.remove = function() {
 
 	function saveDataToLocalStorage() {
 
-		save('targygraf-teljesitett', COURSES.finished);
-		save('targygraf-felvett', COURSES.processing);
-		save('targygraf-szabad', CREDITS.optional);
+		save('coursesFinished', COURSES.finished);
+		save('coursesProcessing', COURSES.processing);
+		save('creditsOptional', CREDITS.optional);
 	}
 
 
@@ -327,7 +327,7 @@ Array.prototype.remove = function() {
 			CREDITS.processing += credits;
 
 		if (addToProcessingArray === undefined || addToProcessingArray)
-			COURSES.processing.push( $course.data('id') );
+			COURSES.processing.push( $course.data('code') );
 
 		$course.removeClass('processable').addClass('processing');
 	}
@@ -357,10 +357,10 @@ Array.prototype.remove = function() {
 			CREDITS.processing -= credits;
 
 		if (addToDoneArray === undefined || addToDoneArray)
-			COURSES.finished.push( $course.data('id') );
+			COURSES.finished.push( $course.data('code') );
 
 		if (removeFromProcessingArray === undefined || removeFromProcessingArray)
-			COURSES.processing.remove( $course.data('id') );
+			COURSES.processing.remove( $course.data('code') );
 
 		$course.removeClass('processing').addClass('finished');
 
@@ -428,7 +428,7 @@ Array.prototype.remove = function() {
 			CREDITS.finished -= credits;
 
 		if (removeFromFinishedArray === undefined || removeFromFinishedArray)
-			COURSES.finished.remove($course.data('id'));
+			COURSES.finished.remove( $course.data('code') );
 
 		$course.removeClass('finished').addClass('processable');
 
@@ -785,9 +785,9 @@ Array.prototype.remove = function() {
 			if (!confirm('Biztos vagy benne?'))
 				return;
 
-			remove('teljesitett');
-			remove('felvett');
-			remove('szabad');
+			remove('coursesFinished');
+			remove('coursesProcessing');
+			remove('creditsOptional');
 
 			location.reload();
 		});
