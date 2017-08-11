@@ -22,7 +22,7 @@ class ProgramController extends Controller
             }
         }
 
-        if (!$program) {
+        if (! $program) {
             throw (new ModelNotFoundException)->setModel(Program::class);
         }
 
