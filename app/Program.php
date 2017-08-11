@@ -13,9 +13,4 @@ class Program extends Model
             ->orderBy('row')
             ->orderBy('ordering');
     }
-
-    public function getRouteKeyName()
-    {
-        return 'slug';
-    }
 }

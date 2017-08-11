@@ -7,7 +7,7 @@
 			<div class="faculty">
 				<div class="faculty-name">{{ $faculty->name }}</div>
 				@foreach ($faculty->programs as $_program)
-					<a href="{{ route('program', ['university' => $university, 'program' => $_program]) }}" class="program{{ isset($program) && $program->id == $_program->id ? ' active' : '' }}">
+					<a href="{{ route('program', ['university' => $university, 'programSlug' => $_program->slug]) }}" class="program{{ isset($program) && $program->id == $_program->id ? ' active' : '' }}">
 						{{ $_program->name }}
 					</a>
 				@endforeach
