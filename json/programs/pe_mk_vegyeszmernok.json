@@ -1,7 +1,7 @@
 {
     "name": "Vegyészmérnök",
     "description": "Vegyészmérnöki alapszak - nappali tagozat tanterve",
-    "curriculum_updated_at": "2012-03-14",
+    "curriculum_updated_at": "2015. évi tanterv",
     "course_blocks": [
         {
             "name": "1. félév",
@@ -56,6 +56,11 @@
                     "code": "VEMKRK3321S",
                     "name": "Sugárzástani alapismeretek",
                     "credits": 1
+                },
+                {
+                    "code": "VEMKFOB333S",
+                    "name": "Számítástechnika",
+                    "credits": 3
                 },
                 {
                     "code": null,
@@ -174,6 +179,11 @@
                     "credits": 2
                 },
                 {
+                    "code": "VEMKVVB232K",
+                    "name": "Mérnöki kommunikáció informatikai eszközei",
+                    "credits": 2
+                },
+                {
                     "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 2
@@ -229,7 +239,7 @@
                 },
                 {
                     "code": "VEMKGEB143H",
-                    "name": "Műszaki áramlás és hőtan I.",
+                    "name": "Műszaki áramlástan",
                     "credits": 3,
                     "prerequisites": [
                         "VEMKFI1312A",
@@ -238,7 +248,7 @@
                 },
                 {
                     "code": "VEMKGEB242H",
-                    "name": "Műszaki áramlás és hőtan II.",
+                    "name": "Műszaki hőtan",
                     "credits": 2,
                     "prerequisites": [
                         "VEMKFI1312A",
@@ -254,11 +264,6 @@
                     ]
                 },
                 {
-                    "code": "VEMKFOB333S",
-                    "name": "Számítástechnika",
-                    "credits": 3
-                },
-                {
                     "code": "VEMKOK1112A",
                     "name": "Szerves kémia II. A",
                     "credits": 2,
@@ -272,7 +277,7 @@
                     "credits": 3,
                     "prerequisites": [
                         "VEMKFI1312A",
-                        "(VEMKMAB212M)"
+                        "VEMKMAB212M"
                     ]
                 },
                 {
@@ -489,11 +494,6 @@
                 {
                     "code": "VEMKVVB222K",
                     "name": "Mérnöki kommunikáció gyakorlat",
-                    "credits": 2
-                },
-                {
-                    "code": "VEMKVVB232K",
-                    "name": "Mérnöki kommunikáció informatikai eszközei",
                     "credits": 2
                 },
                 {
