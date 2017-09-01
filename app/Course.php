@@ -37,11 +37,11 @@ class Course extends Model
 
     public function getTitle()
     {
-        if (! $this->courseBlockReferences->isEmpty()) {
-            return;
-        }
-
         $title = $this->credits.' kredit';
+
+        if (! $this->courseBlockReferences->isEmpty()) {
+            return $title;
+        }
 
         if ($this->code && ! preg_match('/^___.*___$/', $this->code)) {
             $title .= ' - '.$this->code;
