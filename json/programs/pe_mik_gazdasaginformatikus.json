@@ -531,7 +531,7 @@
                     ]
                 },
                 {
-                    "code": "",
+                    "code": "VECSHARP",
                     "name": "C# programozás",
                     "credits": 2,
                     "prerequisites": [
