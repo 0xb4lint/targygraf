@@ -71,8 +71,8 @@
                     "name": "Adatstruktúrák és algoritmusok",
                     "credits": 4,
                     "prerequisites": [
-						"(VETKMA1243D)",
-						"VEMISAB154P",
+                        "(VETKMA1243D)",
+                        "VEMISAB154P",
                         "VEMIMAB146M"
                     ]
                 },
@@ -161,7 +161,7 @@
                     "credits": 4,
                     "prerequisites": [
                         "VEMISA1144A",
-						"VEMISAB154P"
+                        "VEMISAB154P"
                     ]
                 },
                 {
@@ -208,8 +208,8 @@
                     "course_block_references": [
                         "Kötelezően választható szakmai tárgyak",
                         "Kötelezően választható szakmai tárgyak #2",
-						"Kötelezően választható szakmai tárgyak #3",
-						"Kötelezően választható szakmai tárgyak #4"
+                        "Kötelezően választható szakmai tárgyak #3",
+                        "Kötelezően választható szakmai tárgyak #4"
                     ]
                 },
                 {
@@ -249,7 +249,7 @@
                     "credits": 2,
                     "prerequisites": [
                         "VEMIMAB146M",
-						"VEMKMA1143V"
+                        "VEMKMA1143V"
                     ]
                 },
                 {
@@ -310,8 +310,8 @@
                     "course_block_references": [
                         "Kötelezően választható szakmai tárgyak",
                         "Kötelezően választható szakmai tárgyak #2",
-						"Kötelezően választható szakmai tárgyak #3",
-						"Kötelezően választható szakmai tárgyak #4"
+                        "Kötelezően választható szakmai tárgyak #3",
+                        "Kötelezően választható szakmai tárgyak #4"
                     ]
                 },
                 {
@@ -352,7 +352,7 @@
                     "credits": 6,
                     "prerequisites": [
                         "VEMIIRB214S",
-						"VEMKSA3244O"
+                        "VEMKSA3244O"
                     ]
                 },
                 {
@@ -361,7 +361,7 @@
                     "credits": 6,
                     "prerequisites": [
                         "VEMISA2354K",
-						"VEMISA3312A",
+                        "VEMISA3312A",
                         "VEMKSA3114S"
                     ]
                 },
@@ -373,15 +373,15 @@
                         "VEMIIRB214S"
                     ]
                 },
-				{
+                {
                     "code": null,
                     "name": "Kötelezően választható szakmai tárgy",
                     "credits": 4,
                     "course_block_references": [
                         "Kötelezően választható szakmai tárgyak",
                         "Kötelezően választható szakmai tárgyak #2",
-						"Kötelezően választható szakmai tárgyak #3",
-						"Kötelezően választható szakmai tárgyak #4"
+                        "Kötelezően választható szakmai tárgyak #3",
+                        "Kötelezően választható szakmai tárgyak #4"
                     ]
                 },
                 {
@@ -390,7 +390,7 @@
                     "credits": 2,
                     "course_block_references": [
                         "Választandó humán tárgyak",
-						"Választandó humán tárgyak #2"
+                        "Választandó humán tárgyak #2"
                     ]
                 }
             ]
@@ -417,13 +417,13 @@
                         "VEMISA3312A"
                     ]
                 },
-				{
+                {
                     "code": "VEMKIR5144Q",
                     "name": "Információs rendszerek minőségbiztosítása",
                     "credits": 4,
                     "prerequisites": [
                         "VEMKSA5144A",
-						"VEMKSA3114S"
+                        "VEMKSA3114S"
                     ]
                 },
                 {
@@ -441,8 +441,8 @@
                     "course_block_references": [
                         "Kötelezően választható szakmai tárgyak",
                         "Kötelezően választható szakmai tárgyak #2",
-						"Kötelezően választható szakmai tárgyak #3",
-						"Kötelezően választható szakmai tárgyak #4"
+                        "Kötelezően választható szakmai tárgyak #3",
+                        "Kötelezően választható szakmai tárgyak #4"
                     ]
                 },
                 {
@@ -462,7 +462,7 @@
                     "credits": 4,
                     "prerequisites": [
                         "VEMISAB254P",
-						"VEMISA3144A"
+                        "VEMISA3144A"
                     ]
                 },
                 {
@@ -472,8 +472,8 @@
                     "course_block_references": [
                         "Kötelezően választható szakmai tárgyak",
                         "Kötelezően választható szakmai tárgyak #2",
-						"Kötelezően választható szakmai tárgyak #3",
-						"Kötelezően választható szakmai tárgyak #4"
+                        "Kötelezően választható szakmai tárgyak #3",
+                        "Kötelezően választható szakmai tárgyak #4"
                     ]
                 },
                 {
@@ -487,7 +487,7 @@
                     "credits": 2,
                     "course_block_references": [
                         "Választandó humán tárgyak",
-						"Választandó humán tárgyak #2"
+                        "Választandó humán tárgyak #2"
                     ]
                 },
                 {
@@ -585,13 +585,13 @@
                         "VEMIVI5344I"
                     ]
                 },
-				{
+                {
                     "code": "VEMKIR5144P",
                     "name": "Párhuzamos programozás",
                     "credits": 4,
                     "prerequisites": [
                         "VEMIIR2254J",
-						"VEMIKNB113A"
+                        "VEMIKNB113A"
                     ]
                 },
                 {
@@ -649,11 +649,11 @@
                 }
             ]
         },
-		{
+        {
             "name": "Kötelezően választható szakmai tárgyak #3",
             "row": 1,
             "courses": [
-				{
+                {
                     "code": "VEMISA5334L",
                     "name": "Linux rendszergazda ismeretek",
                     "credits": 4,
@@ -670,7 +670,7 @@
                         "VEMKSA3244O"
                     ]
                 },
-				{
+                {
                     "code": "VEMKKN5244A",
                     "name": "Virtuális valóság és alkalmazásai.",
                     "credits": 4,
@@ -678,7 +678,7 @@
                         "VEMKSA3114S"
                     ]
                 },
-				{
+                {
                     "code": "VEMIVIB154V",
                     "name": "Virtuális valóság és alkalmazásai II.",
                     "credits": 4,
@@ -686,7 +686,7 @@
                         "VEMKKN5244A"
                     ]
                 },
-				{
+                {
                     "code": "VEMISAB154A",
                     "name": "Android alapú programfejlesztés",
                     "credits": 4,
@@ -694,7 +694,7 @@
                         "VEMIIR2254J"
                     ]
                 },
-				{
+                {
                     "code": "VEGTVEM122I",
                     "name": "Integrált információs rendszerek",
                     "credits": 2,
@@ -711,7 +711,7 @@
                         "VEMIKNB312F"
                     ]
                 },
-				{
+                {
                     "code": "VEMISAB332L",
                     "name": "Linux rendszertechnológiák nagyvállalati környezetben",
                     "credits": 2,
@@ -719,7 +719,7 @@
                         "VEMISA5334L"
                     ]
                 },
-				{
+                {
                     "code": "VEMISAB153T",
                     "name": "Webalkalmazások tesztelésének korszerű módszerei",
                     "credits": 3,
@@ -727,13 +727,13 @@
                         "VEMISA2354K"
                     ]
                 }
-			]
-		},
-		{
+            ]
+        },
+        {
             "name": "Kötelezően választható szakmai tárgyak #4",
             "row": 1,
             "courses": [
-				{
+                {
                     "code": "VEMIVIB212F",
                     "name": "Folyamatbányászat",
                     "credits": 2,
@@ -741,21 +741,21 @@
                         "VEMISA2354K"
                     ]
                 },
-				{
+                {
                     "code": "VEMIKN5374S",
                     "name": "Színtervezés számítógépes felhasználás számára",
                     "credits": 2,
                     "prerequisites": [
                         "VEMIMAB244M",
-						"VEMIKNB312F"
+                        "VEMIKNB312F"
                     ]
                 },
-				{
+                {
                     "code": "VEGTGAB112M",
                     "name": "Marketing alapjai \u271D",
                     "credits": 3
                 },
-				{
+                {
                     "code": "VEGTSCB444C",
                     "name": "Controlling \u271D",
                     "credits": 4,
@@ -763,7 +763,7 @@
                         "VEGTSCB245S"
                     ]
                 },
-				{
+                {
                     "code": "VEMISA4343I",
                     "name": "Információ-visszakeresés (angol nyelven) \u271D",
                     "credits": 3,
@@ -772,7 +772,7 @@
                         "VEMKLE12X0A"
                     ]
                 },
-				{
+                {
                     "code": "VEGTKG5212G",
                     "name": "Infokommunikáció gazdaságtan \u271D",
                     "credits": 2,
@@ -780,7 +780,7 @@
                         "VEGTKGB144K"
                     ]
                 },
-				{
+                {
                     "code": "VEMKKN5244I",
                     "name": "Internetes alkalmazások és fejlesztések \u271D",
                     "credits": 4,
@@ -788,7 +788,7 @@
                         "VEMISAB254P"
                     ]
                 },
-				{
+                {
                     "code": "VEMISA3354V",
                     "name": "Integrált vállalatirányítási rendszerek \u271D",
                     "credits": 4,
@@ -796,8 +796,8 @@
                         "VEMKIR5144Q"
                     ]
                 }
-			]
-		},
+            ]
+        },
         {
             "name": "Választandó humán tárgyak",
             "row": 1,
@@ -868,11 +868,11 @@
                 }
             ]
         },
-		{
+        {
             "name": "Választandó humán tárgyak #2",
             "row": 1,
             "courses": [
-				{
+                {
                     "code": "VEMIINB412U",
                     "name": "Magyar utazók, földrajzi felfedezők öt világrészen",
                     "credits": 2,
@@ -896,7 +896,7 @@
                         "___50___"
                     ]
                 },
-				{
+                {
                     "code": "VETKAE1212E",
                     "name": "Etika I.",
                     "credits": 2,
@@ -904,7 +904,7 @@
                         "___50___"
                     ]
                 },
-				{
+                {
                     "code": "VETKAEB243E",
                     "name": "Élethelyzetek etikája I.",
                     "credits": 3,
@@ -912,7 +912,7 @@
                         "___50___"
                     ]
                 },
-				{
+                {
                     "code": "VETKAEB142E",
                     "name": "Embertudomány I.",
                     "credits": 2,
@@ -920,7 +920,7 @@
                         "___50___"
                     ]
                 },
-				{
+                {
                     "code": "VEGTVE1112P",
                     "name": "Mérnöki pszichológia \u271D",
                     "credits": 2,
@@ -928,7 +928,7 @@
                         "___75___"
                     ]
                 },
-				{
+                {
                     "code": "VEMKIR1112F",
                     "name": "Filozófia \u271D",
                     "credits": 2,
@@ -936,7 +936,7 @@
                         "___50___"
                     ]
                 }
-			]
-		}
+            ]
+        }
     ]
 }
