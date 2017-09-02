@@ -1,6 +1,6 @@
 {
     "name": "Gazdaságinformatikus (régi)",
-    "description": "Gazdaságinformatikus BSc szak - nappali tagozat tanterve - a tanulmányaikat a 2017/18-as tanév előtt megkezdett hallgatóknak",
+    "description": "Gazdaságinformatikus BSc szak – nappali tagozat tanterve – a tanulmányaikat a 2017/18-as tanév előtt megkezdett hallgatóknak",
     "curriculum_updated_at": "2016-11-29 (RÉGI)",
     "course_blocks": [
         {
@@ -867,7 +867,7 @@
                     ]
                 }
             ]
-        }
+        },
 		{
             "name": "Választandó humán tárgyak #2",
             "row": 1,
@@ -937,6 +937,6 @@
                     ]
                 }
 			]
-		},
+		}
     ]
 }
