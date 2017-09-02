@@ -758,10 +758,7 @@
                 {
                     "code": "VEGTSCB444C",
                     "name": "Controlling \u271D",
-                    "credits": 4,
-                    "prerequisites": [
-                        "VEGTSCB245S"
-                    ]
+                    "credits": 4
                 },
                 {
                     "code": "VEMISA4343I",
