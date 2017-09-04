@@ -441,7 +441,7 @@
                 {
                     "code": "VEMIGIB23xT",
                     "name": "Tervezés I.",
-                    "credits": 4,
+                    "credits": 5,
                     "prerequisites": [
                         "(VEMISA3136P)"
                     ]
@@ -531,7 +531,7 @@
                     ]
                 },
                 {
-                    "code": "VECSHARP",
+                    "code": "VEcsharp",
                     "name": "C# programozás",
                     "credits": 2,
                     "prerequisites": [
@@ -562,7 +562,7 @@
                 },
                 {
                     "code": "VEMISAB132P",
-                    "name": "Bevezetés a Pyton programozási nyelvbe",
+                    "name": "Bevezetés a Python programozási nyelvbe",
                     "credits": 2,
                     "prerequisites": [
                         "VEMISAB144A"
