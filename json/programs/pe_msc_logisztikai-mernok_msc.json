@@ -1,0 +1,364 @@
+{
+    "name": "Logisztikai mérnök MSc",
+    "description": "Logisztikai mérnök MSc szak – nappali és levelező tagozat tanterve",
+    "curriculum_updated_at": "2017-05-11",
+    "course_blocks": [
+        {
+            "name": "Tavaszi félév 1.",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "VEMISAM144K",
+                    "name": "Kombinatorikus módszerek és algoritmusok",
+                    "credits": 5
+                },
+                {
+                    "code": "VEGTVEM244P",
+                    "name": "Projektek tervezése és irányítása",
+                    "credits": 6
+                },
+                {
+                    "code": "VEMISAM256L",
+                    "name": "Logisztikai szoftverek",
+                    "credits": 6
+                },
+                {
+                    "code": "VEMKGEB243B",
+                    "name": "Anyagmozgató gépek és fémszerkezetek I.",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMKVI3244I",
+                    "name": "Integrált gyártórendszerek",
+                    "credits": 5
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választandó gazdasági/humán tárgy",
+                    "credits": 3,
+                    "course_block_references": [
+                        "Kötelezően választandó humán/gazdasági blokk (Őszi félév)",
+                        "Kötelezően választandó humán/gazdasági blokk (Tavaszi félév)"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Őszi félév 1.",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "VEMISAM244O",
+                    "name": "Operációkutatás I.",
+                    "credits": 5
+                },
+                {
+                    "code": "VEMKGEM244M",
+                    "name": "Alkalmazott mechanika",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMISAM212E",
+                    "name": "Ellátási láncok modellezése",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMIMAM444D",
+                    "name": "Diszkrét és folytonos dinamikai rendszerek matematikai alapjai",
+                    "credits": 5
+                },
+                {
+                    "code": "VEMISAM254M",
+                    "name": "Mesterséges intelligencia, szakértői rendszerek",
+                    "credits": 5
+                },
+                {
+                    "code": "VEMIVI3313R",
+                    "name": "Robottechnika",
+                    "credits": 4
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választandó gazdasági/humán tárgy",
+                    "credits": 3,
+                    "course_block_references": [
+                        "Kötelezően választandó humán/gazdasági blokk (Őszi félév)",
+                        "Kötelezően választandó humán/gazdasági blokk (Tavaszi félév)"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Tavaszi félév 2.",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "VEMISAM444D",
+                    "name": "Operációkutatás II.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "VEMISAM244O"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választandó differenciált szakmai tárgy",
+                    "credits": 11,
+                    "course_block_references": [
+                        "Kötelezően választandó differenciált szakmai tárgyak (Őszi félév)",
+                        "Kötelezően választandó differenciált szakmai tárgyak (Tavaszi félév)"
+                    ]
+                },
+                {
+                    "code": "null",
+                    "name": "Diplomalabor, diplomamunka",
+                    "credits": 15,
+                    "course_block_references": [
+                        "Diplomalabor, diplomamunka"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Őszi félév 2.",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható tárgy",
+                    "credits": 6
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választandó differenciált szakmai tárgy",
+                    "credits": 10,
+                    "course_block_references": [
+                        "Kötelezően választandó differenciált szakmai tárgyak (Őszi félév)",
+                        "Kötelezően választandó differenciált szakmai tárgyak (Tavaszi félév)"
+                    ]
+                },
+                {
+                    "code": "null",
+                    "name": "Diplomalabor, diplomamunka",
+                    "credits": 15,
+                    "course_block_references": [
+                        "Diplomalabor, diplomamunka"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Diplomalabor, diplomamunka",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VEMIINMX1L",
+                    "name": "Diplomalabor",
+                    "credits": 15,
+                    "prerequisites": [
+                        "___45___"
+                    ]
+                },
+                {
+                    "code": "VEMIINMX1M",
+                    "name": "Diplomalmunka",
+                    "credits": 15,
+                    "prerequisites": [
+                        "VEMIINMX1L"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választandó differenciált szakmai tárgyak (Őszi félév)",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VEMISAM454I",
+                    "name": "Intelligens irányító rendszerek",
+                    "credits": 5,
+                    "prerequisites": [
+                        "___20___"
+                    ]
+                },
+                {
+                    "code": "VEGTVET444L",
+                    "name": "Logisztika II.",
+                    "credits": 6,
+                    "prerequisites": [
+                        "___20___"
+                    ]
+                },
+                {
+                    "code": "VEMISA3143G",
+                    "name": "Gyártórendszerek modellezése",
+                    "credits": 4,
+                    "prerequisites": [
+                        "___20___"
+                    ]
+                },
+                {
+                    "code": "VEMISA5312A",
+                    "name": "Az informatika ipari alkalmazásai",
+                    "credits": 3,
+                    "prerequisites": [
+                        "___20___"
+                    ]
+                },
+                {
+                    "code": "VEMIVIM412M",
+                    "name": "Méréstechnika",
+                    "credits": 3,
+                    "prerequisites": [
+                        "___20___"
+                    ]
+                },
+                {
+                    "code": "VEMKGEB143B",
+                    "name": "Anyagmozgató gépek és fémszerkezetek II.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "___20___",
+                        "VEMKGEB243B"
+                    ]
+                },
+                {
+                    "code": "VEMISAM412L",
+                    "name": "Logisztikai szabványok",
+                    "credits": 3,
+                    "prerequisites": [
+                        "___20___"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választandó differenciált szakmai tárgyak (Tavaszi félév)",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VEGTVEM214L",
+                    "name": "Elosztási logisztika",
+                    "credits": 6,
+                    "prerequisites": [
+                        "___20___"
+                    ]
+                },
+                {
+                    "code": "VEMISAM144D",
+                    "name": "Diszkrét eseményű rendszerek",
+                    "credits": 5,
+                    "prerequisites": [
+                        "___20___"
+                    ]
+                },
+                {
+                    "code": "VEMKIR5214V",
+                    "name": "Integrált vállalatirányítási rendszerek",
+                    "credits": 5,
+                    "prerequisites": [
+                        "___20___"
+                    ]
+                },
+                {
+                    "code": "VEMIVIM144M",
+                    "name": "Villamos műszerek és mérések",
+                    "credits": 5,
+                    "prerequisites": [
+                        "___20___"
+                    ]
+                },
+                {
+                    "code": "VEMIVIM144M",
+                    "name": "Dinamikus rendszerek irányítási és diagnosztikai célú modellezése",
+                    "credits": 5,
+                    "prerequisites": [
+                        "___20___"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választandó humán/gazdasági blokk (Őszi félév)",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VEGTVEM144A",
+                    "name": "Anyaggazdálkodás",
+                    "credits": 6
+                },
+                {
+                    "code": "VEGTVEM144M",
+                    "name": "Minőségmenedzsment",
+                    "credits": 6
+                },
+                {
+                    "code": "VEMISA5312I",
+                    "name": "* Szemelvények a magyar és a világirodalom történetéből",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMISA5312Z",
+                    "name": "* Zenetörténet",
+                    "credits": 3
+                },
+                {
+                    "code": "VEGTGAB244V",
+                    "name": "Vállalkozói ismeretek",
+                    "credits": 6
+                },
+                {
+                    "code": "VEMISA5312F",
+                    "name": "* Fejezetek a természettudományok történertéből",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMIINB412U",
+                    "name": "* Magyar utazók, földrajzi felfedezők öt világrészen",
+                    "credits": 3
+                },
+                {
+                    "code": "MIGAB512J",
+                    "name": "* Iparjogvédelem és innovációmenedzsment",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választandó humán/gazdasági blokk (Tavaszi félév)",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VEGTVEM244D",
+                    "name": "Vezetői döntések",
+                    "credits": 6
+                },
+                {
+                    "code": "VEMKSA1212M",
+                    "name": "* Az európai művészet története",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMISA5312G",
+                    "name": "* Gondolkodó magyarok",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMISA5312M",
+                    "name": "Információs rendszerek minőségbiztosítása",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMIMA5312T",
+                    "name": "* Szemelvények a matematika történetéből",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMIGAB512Z",
+                    "name": "* Szellemitulajdon-védelem",
+                    "credits": 2
+                }
+            ]
+        }
+    ]
+}
