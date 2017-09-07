@@ -633,7 +633,7 @@
                 {
                     "code": "VEGTNGB212B",
                     "name": "Globalizáció és világgazdaság",
-                    "credits": 5
+                    "credits": 3
                 },
                 {
                     "code": "VEGTMIB244M",
@@ -748,7 +748,7 @@
                 {
                     "code": "VEMISA5312A",
                     "name": "Az informatika ipari alkalmazásai",
-                    "credits": 4,
+                    "credits": 2,
                     "prerequisites": [
                         "VEMIVIB232J"
                     ]
