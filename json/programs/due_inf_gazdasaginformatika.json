@@ -1,3 +1,4 @@
+{
     "name": "Gazdaságinformatikus",
     "description": "Gazdaságinformatikus BSc szak - nappali tagozat tanterve",
     "curriculum_updated_at": "2015-09-01",
@@ -376,7 +377,7 @@
                     "code": "DFTHIH-008",
                     "name": "Munkavédelem",
                     "credits": 0
-                },                
+                }                
                        ]
         },                
         {
