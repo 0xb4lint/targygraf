@@ -245,6 +245,19 @@
                     "credits": 5
                 },
                 {
+                    "code": "DFAO-TKM-940",
+                    "name": "Munkába állást segítő ismeretek (angolul)",
+                    "credits": 0,
+                    "prerequisites": [
+                        "DFAO-TKM-930"
+                    ]
+                },                
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
                     "code": "DFAN-INF-258",
                     "name": "Inteligens szervezet",
                     "credits": 5
@@ -260,14 +273,6 @@
                     "credits": 5,
                     "course_block_references": [
                         "Kötelezően választható szakmai tárgyak"
-                    ]
-                },
-                {
-                    "code": "DFAO-TKM-940",
-                    "name": "Munkába állást segítő ismeretek (angolul)",
-                    "credits": 0,
-                    "prerequisites": [
-                        "DFAO-TKM-930"
                     ]
                 }
             ]
@@ -291,6 +296,11 @@
                     "prerequisites": [
                         "DFAN-INF-612"
                     ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
                 },
                 {
                     "code": "DFAN-INF-630",
@@ -343,6 +353,11 @@
                     "code": "DFAN-TTA-107",
                     "name": "Államigazgatási és jogi ismeretek",
                     "credits": 5
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
                 },
                 {
                     "code": "DFAN-INF-640",
