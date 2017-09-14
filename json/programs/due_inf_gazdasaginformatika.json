@@ -38,11 +38,6 @@
                     "credits": 5
                 },
                 {
-                    "code": "DFTHIH-118",
-                    "name": "Szakmentóri óra I.",
-                    "credits": 0
-                },
-                {
                     "code": "DFAN-DSE-001",
                     "name": "Testnevelés I.",
                     "credits": 0
@@ -91,14 +86,6 @@
                     "prerequisites": [
                         "DFAN-INF-501",
                         "DFAN-INF-400"
-                    ]
-                },
-                {
-                    "code": "DFTHIH-120",
-                    "name": "Szakmentóri óra II.",
-                    "credits": 0,
-                    "prerequisites": [
-                        "DFTHIH-118"
                     ]
                 },
                 {
@@ -258,6 +245,19 @@
                     "credits": 5
                 },
                 {
+                    "code": "DFAO-TKM-940",
+                    "name": "Munkába állást segítő ismeretek (angolul)",
+                    "credits": 0,
+                    "prerequisites": [
+                        "DFAO-TKM-930"
+                    ]
+                },                
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
                     "code": "DFAN-INF-258",
                     "name": "Inteligens szervezet",
                     "credits": 5
@@ -273,14 +273,6 @@
                     "credits": 5,
                     "course_block_references": [
                         "Kötelezően választható szakmai tárgyak"
-                    ]
-                },
-                {
-                    "code": "DFAO-TKM-940",
-                    "name": "Munkába állást segítő ismeretek (angolul)",
-                    "credits": 0,
-                    "prerequisites": [
-                        "DFAO-TKM-930"
                     ]
                 }
             ]
@@ -304,6 +296,11 @@
                     "prerequisites": [
                         "DFAN-INF-612"
                     ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
                 },
                 {
                     "code": "DFAN-INF-630",
@@ -349,21 +346,55 @@
                 },
                 {
                     "code": "DFAN-INF-622",
-                    "name": "Vállalatirányítási rendszerek A",
+                    "name": "Vállalatirányítási rendszerek A",
                     "credits": 5
                 },
                 {
                     "code": "DFAN-TTA-107",
-                    "name": "Államigazgatási és jogi ismeretek",
+                    "name": "Államigazgatási és jogi ismeretek",
                     "credits": 5
                 },
                 {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
                     "code": "DFAN-INF-640",
-                    "name": "Informatikai rendszerek minőségbiztosítása és auditja",
+                    "name": "Informatikai rendszerek minőségbiztosítása és auditja",
                     "credits": 5
                 }
             ]
         },
+        {
+            "name": "TCS",
+            "row": 1,
+            "courses": [        
+                {
+                    "code": "DFTHIH-119",
+                    "name": "Szakmentóri óra I.",
+                    "credits": 0
+                },
+                {
+                    "code": "DFTHIH-120",
+                    "name": "Szakmentóri óra II.",
+                    "credits": 0,
+                    "prerequisites": [
+                        "DFTHIH-119"
+                    ]
+                },
+                {
+                    "code": "DFTHIH-005",
+                    "name": "Tűzvédelem I.",
+                    "credits": 0
+                },                
+                {
+                    "code": "DFTHIH-008",
+                    "name": "Munkavédelem",
+                    "credits": 0
+                }                
+                       ]
+        },                
         {
             "name": "Kötelezően választható szakmai tárgyak",
             "row": 1,
@@ -399,7 +430,7 @@
             "courses": [
                 {
                     "code": "DFAN-INF-680",
-                    "name": "Banki információs rendszerek",
+                    "name": "Banki információs rendszerek",
                     "credits": 5,
                     "prerequisites": [
                         "DFAN-INF-002"
@@ -407,7 +438,7 @@
                 },
                 {
                     "code": "DFAN-INF-524",
-                    "name": "Web programozás",
+                    "name": "Web programozás",
                     "credits": 5
                 },
                 {
@@ -417,7 +448,7 @@
                 },
                 {
                     "code": "DFAN-INF-629",
-                    "name": "SAP üzemeltetése",
+                    "name": "SAP üzemeltetése",
                     "credits": 5,
                     "prerequisites": [
                         "DFAN-INF-627"
@@ -425,7 +456,7 @@
                 },
                 {
                     "code": "DFAN-INF-628",
-                    "name": "SAP programozása",
+                    "name": "SAP programozása",
                     "credits": 5,
                     "prerequisites": [
                         "DFAN-INF-627"
