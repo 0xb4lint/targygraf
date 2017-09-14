@@ -133,7 +133,10 @@
                 {
                     "code": null,
                     "name": "Gazdasági és humán ismeretek 1 (KV)",
-                    "credits": 0
+                    "credits": 0,
+                    "course_block_references": [
+                        "Gazdasági és humán ismeretek"
+                    ]
                 }
             ]
         },
@@ -258,7 +261,10 @@
                 {
                     "code": null,
                     "name": "Gazdasági és humán ismeretek 2 (KV)",
-                    "credits": 0
+                    "credits": 0,
+                    "course_block_references": [
+                        "Gazdasági és humán ismeretek"
+                    ]
                 }
             ]
         },
@@ -375,7 +381,10 @@
                 {
                     "code": null,
                     "name": "Gazdasági és humán ismeretek 3 (KV)",
-                    "credits": 0
+                    "credits": 0,
+                    "course_block_references": [
+                        "Gazdasági és humán ismeretek"
+                    ]
                 },
                 {
                     "code": "BMETE95AM13",

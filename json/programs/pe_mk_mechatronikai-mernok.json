@@ -179,7 +179,7 @@
             "row": 0,
             "courses": [
                 {
-                    "code": null,
+                    "code": "RgMyQR8J",
                     "name": "3. féléves szűrő: 40 kredit",
                     "credits": 0,
                     "prerequisites": [
@@ -377,7 +377,7 @@
             "row": 0,
             "courses": [
                 {
-                    "code": null,
+                    "code": "8NSvFLqd",
                     "name": "5. féléves szűrő: 75 kredit",
                     "credits": 0,
                     "prerequisites": [
@@ -839,7 +839,7 @@
                     ]
                 },
                 {
-                    "code": null,
+                    "code": "bqGhR9Xw",
                     "name": "Vákuumtechnika",
                     "credits": 2,
                     "prerequisites": [
@@ -847,7 +847,7 @@
                     ]
                 },
                 {
-                    "code": null,
+                    "code": "XS4xDKvW",
                     "name": "Optikai labortechnika",
                     "credits": 2,
                     "prerequisites": [
@@ -855,12 +855,12 @@
                     ]
                 },
                 {
-                    "code": null,
+                    "code": "aJHLhVM9",
                     "name": "Metrológia",
                     "credits": 2
                 },
                 {
-                    "code": null,
+                    "code": "EE3nevgA",
                     "name": "Bevezetés a LabVIEW FPGA használatába",
                     "credits": 2,
                     "prerequisites": [

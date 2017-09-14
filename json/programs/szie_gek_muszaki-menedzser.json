@@ -455,17 +455,26 @@
                 {
                     "code": null,
                     "name": "Energiagazdálkodás szakirány",
-                    "credits": 33
+                    "credits": 33,
+                    "course_block_references": [
+                        "Energiagazdálkodás szakirány 2011\/2012-től"
+                    ]
                 },
                 {
                     "code": null,
                     "name": "Menedzser üzletkötő",
-                    "credits": 33
+                    "credits": 33,
+                    "course_block_references": [
+                        "Menedzser üzletkötő szakirány 2011\/2012-től"
+                    ]
                 },
                 {
                     "code": null,
                     "name": "Termelés- és minőségmenedzsment",
-                    "credits": 33
+                    "credits": 33,
+                    "course_block_references": [
+                        "Termelés- és minőségmenedzsment szakirány 2011\/2012-től"
+                    ]
                 }
             ]
         },
@@ -476,7 +485,10 @@
                 {
                     "code": null,
                     "name": "Termelés- és minőségmenedzsment",
-                    "credits": 33
+                    "credits": 33,
+                    "course_block_references": [
+                        "Termelés- és minőségmenedzsment szakirány 2013\/2014-től"
+                    ]
                 }
             ]
         },
