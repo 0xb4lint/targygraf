@@ -8,42 +8,50 @@
             "row": 0,
             "courses": [
                 {
-                    "code": "VEMIMAB146M",
-                    "name": "Matematikai analízis I.",
-                    "credits": 6
+                    "code": "MIMAB122A",
+                    "name": "Matematikai alapozó",
+                    "credits": 0
                 },
                 {
-                    "code": "VEMKMA1143V",
+                    "code": "MIMAB144A",
+                    "name": "Matematikai analízis I.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "MIMAB122A"
+                    ]
+                },
+                {
+                    "code": "MKMA1143V",
                     "name": "Lineáris algebra",
                     "credits": 3
                 },
                 {
-                    "code": "VEMIMA1344I",
+                    "code": "MIMAB143A",
                     "name": "Az informatika logikai és algebrai alapjai",
-                    "credits": 4
+                    "credits": 3
                 },
                 {
-                    "code": "VEMKGA1114A",
-                    "name": "Közgazdaságtan",
-                    "credits": 4
+                    "code": "GTGAB114M",
+                    "name": "Közgazdaságtan és vállalkozástan",
+                    "credits": 5
                 },
                 {
-                    "code": "VEMISA1144A",
+                    "code": "MISAB144A",
                     "name": "Programozás alapjai",
-                    "credits": 4
+                    "credits": 5
                 },
                 {
-                    "code": "VEMKSA2144B",
+                    "code": "MISAB154R",
                     "name": "Programozás I.",
-                    "credits": 4
+                    "credits": 5
                 },
                 {
-                    "code": "VEMKVI2114I",
-                    "name": "Bevezetés a számítástechnikába",
-                    "credits": 4
+                    "code": "MIVIB112A",
+                    "name": "A számítástechnika alapjai",
+                    "credits": 2
                 },
                 {
-                    "code": "VEMKFI1312A",
+                    "code": "MKFI1312A",
                     "name": "Fizika I.",
                     "credits": 2
                 },
