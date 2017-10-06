@@ -15,7 +15,7 @@ class CourseBlock extends Model
 
     public function getName()
     {
-        return preg_replace('/\s*#\d+$/', '', $this->name);
+        return nl2br(preg_replace('/\s*#\d+$/', '', $this->name));
     }
 
     public function getPaddedID()
