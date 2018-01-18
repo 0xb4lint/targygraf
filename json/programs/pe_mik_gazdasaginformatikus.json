@@ -1,7 +1,7 @@
 {
     "name": "Gazdaságinformatikus",
     "description": "Gazdaságinformatikus BSc szak – nappali tagozat tanterve",
-    "curriculum_updated_at": "2017-04-11",
+    "curriculum_updated_at": "2017-10-24",
     "course_blocks": [
         {
             "name": "1. félév",
@@ -72,9 +72,9 @@
             "row": 0,
             "courses": [
                 {
-                    "code": "VEMISAB212P",
+                    "code": "VEMISAB254J",
                     "name": "Programozás II.",
-                    "credits": 2,
+                    "credits": 5,
                     "prerequisites": [
                         "VEMISAB144A",
                         "VEMISAB154R"
@@ -135,15 +135,6 @@
                     ]
                 },
                 {
-                    "code": "VEMIVIB232J",
-                    "name": "Programozás II. gyakorlat (Java)",
-                    "credits": 3,
-                    "prerequisites": [
-                        "VEMISAB154R",
-                        "(VEMISAB212P)"
-                    ]
-                },
-                {
                     "code": "VEMKLE1220A",
                     "name": "Angol nyelv II.",
                     "credits": 0
@@ -169,7 +160,7 @@
                     "name": "Adatbáziskezelő rendszerek I.",
                     "credits": 5,
                     "prerequisites": [
-                        "VEMISAB243A"
+                        "VEMIMAB143A"
                     ]
                 },
                 {
@@ -177,7 +168,7 @@
                     "name": "Java programozás I.",
                     "credits": 5,
                     "prerequisites": [
-                        "VEMIVIB232J"
+                        "VEMISAB254J"
                     ]
                 },
                 {
@@ -185,7 +176,7 @@
                     "name": "Számítógép hálózatok I.",
                     "credits": 5,
                     "prerequisites": [
-                        "VEMISAB154R"
+                        "VEMIVIB112A"
                     ]
                 },
                 {
@@ -198,7 +189,7 @@
                     "name": "Szoftvertechnológia",
                     "credits": 5,
                     "prerequisites": [
-                        "VEMISAB212P"
+                        "VEMISAB254J"
                     ]
                 },
                 {
@@ -354,7 +345,6 @@
                     "name": "Projekt labor",
                     "credits": 6,
                     "prerequisites": [
-                        "VEMIVIB232J",
                         "VEMISAB154B",
                         "VEMISAB244S"
                     ]
@@ -443,7 +433,8 @@
                     "name": "Tervezés I.",
                     "credits": 5,
                     "prerequisites": [
-                        "(VEMISA3136P)"
+                        "VEMISAB154B",
+                        "VEMISAB244S"
                     ]
                 },
                 {
@@ -535,7 +526,7 @@
                     "name": "C# programozás",
                     "credits": 2,
                     "prerequisites": [
-                        "VEMIVIB232J"
+                        "VEMISAB254J"
                     ]
                 },
                 {
@@ -722,6 +713,14 @@
                     "prerequisites": [
                         "VEMISAB154B"
                     ]
+                },
+                {
+                    "code": "VEMIINB154C",
+                    "name": "Autóipari szoftver- és hardverfejlesztés a gyakorlatban I.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VEMISAB254J"
+                    ]
                 }
             ]
         },
@@ -730,19 +729,11 @@
             "row": 1,
             "courses": [
                 {
-                    "code": "VEMIINB154C",
-                    "name": "Autóipari szoftver- és hardverfejlesztés a gyakorlatban I.",
-                    "credits": 4,
-                    "prerequisites": [
-                        "VEMIVIB232J"
-                    ]
-                },
-                {
                     "code": "VEMIINB254C",
                     "name": "Autóipari szoftver- és hardverfejlesztés a gyakorlatban II.",
                     "credits": 4,
                     "prerequisites": [
-                        "VEMIVIB232J"
+                        "VEMISAB254J"
                     ]
                 },
                 {
@@ -750,7 +741,15 @@
                     "name": "Az informatika ipari alkalmazásai",
                     "credits": 2,
                     "prerequisites": [
-                        "VEMIVIB232J"
+                        "VEMISAB254J"
+                    ]
+                },
+                {
+                    "code": "VEMISAB512N",
+                    "name": "Szoftverfejlesztés nagyvállalati környezetben",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMISAB244S"
                     ]
                 }
             ]
