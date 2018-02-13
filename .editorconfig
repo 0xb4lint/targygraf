@@ -14,11 +14,5 @@ trim_trailing_whitespace = false
 [*.yml]
 indent_size = 2
 
-[*.css]
-indent_style = tab
-
-[*.html]
-indent_style = tab
-
-[*.js]
+[*.{css,js,html,sh}]
 indent_style = tab

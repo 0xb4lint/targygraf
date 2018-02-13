@@ -11,3 +11,9 @@ install:
   - composer install --no-interaction --no-suggest
 
 script: vendor/bin/phpunit
+
+deploy:
+  provider: script
+  script: ./.travis-deploy.sh
+  on:
+    branch: master
