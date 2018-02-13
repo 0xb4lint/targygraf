@@ -1,7 +1,7 @@
 {
     "name": "Vegyészmérnök",
     "description": "Vegyészmérnöki alapszak - nappali tagozat tanterve",
-    "curriculum_updated_at": "2017-08-20",
+    "curriculum_updated_at": "2018-01-23",
     "course_blocks": [
         {
             "name": "1. félév",
@@ -517,7 +517,7 @@
                     "name": "Tervezés I.",
                     "credits": 3,
                     "prerequisites": [
-                        "VEMKEL3253A"
+                        "(VEMKEL3253B)"
                     ]
                 },
                 {
@@ -637,7 +637,8 @@
                     "name": "Finomkémiai technológiák",
                     "credits": 3,
                     "prerequisites": [
-                        "(VEMKMUB212V)"
+                        "(VEMKMUB212V)",
+                        "VEMKMUB113T"
                     ]
                 },
                 {
