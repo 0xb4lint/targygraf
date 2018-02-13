@@ -117,12 +117,12 @@ class ProgramsJsonTest extends AbstractJsonTest
         );
 
         $this->assertTrue(
-            !isset($course->prerequisites) || is_array($course->prerequisites),
+            ! isset($course->prerequisites) || is_array($course->prerequisites),
             $path.' prerequisites !isset || is_array - '.json_encode($course, JSON_UNESCAPED_UNICODE)
         );
 
         $this->assertTrue(
-            !isset($course->course_block_references) || is_array($course->course_block_references),
+            ! isset($course->course_block_references) || is_array($course->course_block_references),
             $path.' course_block_references !isset || is_array - '.json_encode($course, JSON_UNESCAPED_UNICODE)
         );
     }
@@ -135,7 +135,7 @@ class ProgramsJsonTest extends AbstractJsonTest
 
                 $this->assertTrue(
                     $this->checkCourseCodeExists($code, $data),
-                    $path.' prerequisite invalid: ' . $code . ' - '.json_encode($course, JSON_UNESCAPED_UNICODE)
+                    $path.' prerequisite invalid: '.$code.' - '.json_encode($course, JSON_UNESCAPED_UNICODE)
                 );
             }
         }
@@ -147,7 +147,7 @@ class ProgramsJsonTest extends AbstractJsonTest
             foreach ($course->course_block_references as $courseBlockReference) {
                 $this->assertTrue(
                     $this->checkCourseBlockNameExists($courseBlockReference, $data),
-                    $path.' course_block_reference invalid: ' . $courseBlockReference . ' - '.json_encode($course, JSON_UNESCAPED_UNICODE)
+                    $path.' course_block_reference invalid: '.$courseBlockReference.' - '.json_encode($course, JSON_UNESCAPED_UNICODE)
                 );
             }
         }
