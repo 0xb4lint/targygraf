@@ -166,7 +166,7 @@
             "row": 0,
             "courses": [
                 {
-                    "code": "DFAN-INF-260",
+                    "code": "DFAN-INF-302",
                     "name": "Operációs rendszerek II.",
                     "credits": 5,
                     "prerequisites": [
@@ -178,7 +178,7 @@
                     "name": "Szoftverfejlesztési technológiák",
                     "credits": 5,
                     "prerequisites": [
-                        "DFAN-INF-504"
+                        "DFAN-INF-501"
                     ]
                 },
                 {
