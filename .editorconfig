@@ -22,6 +22,3 @@ indent_style = tab
 
 [*.js]
 indent_style = tab
-
-[*.json]
-insert_final_newline = false
