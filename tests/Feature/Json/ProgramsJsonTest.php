@@ -88,6 +88,7 @@ class ProgramsJsonTest extends AbstractJsonTest
         foreach ($courseBlock->courses as $course) {
             $this->checkCourseJsonStructure($path, $course);
             $this->checkCoursePrerequisites($path, $course, $data);
+            $this->checkCourseCourseBlockReferences($path, $course, $data);
         }
     }
 
@@ -119,6 +120,11 @@ class ProgramsJsonTest extends AbstractJsonTest
             !isset($course->prerequisites) || is_array($course->prerequisites),
             $path.' prerequisites !isset || is_array - '.json_encode($course, JSON_UNESCAPED_UNICODE)
         );
+
+        $this->assertTrue(
+            !isset($course->course_block_references) || is_array($course->course_block_references),
+            $path.' course_block_references !isset || is_array - '.json_encode($course, JSON_UNESCAPED_UNICODE)
+        );
     }
 
     protected function checkCoursePrerequisites($path, $course, $data)
@@ -129,7 +135,19 @@ class ProgramsJsonTest extends AbstractJsonTest
 
                 $this->assertTrue(
                     $this->checkCourseCodeExists($code, $data),
-                    $path.' prerequisite code not exists: ' . $code . ' - '.json_encode($course, JSON_UNESCAPED_UNICODE)
+                    $path.' prerequisite invalid: ' . $code . ' - '.json_encode($course, JSON_UNESCAPED_UNICODE)
+                );
+            }
+        }
+    }
+
+    protected function checkCourseCourseBlockReferences($path, $course, $data)
+    {
+        if (isset($course->course_block_references)) {
+            foreach ($course->course_block_references as $courseBlockReference) {
+                $this->assertTrue(
+                    $this->checkCourseBlockNameExists($courseBlockReference, $data),
+                    $path.' course_block_reference invalid: ' . $courseBlockReference . ' - '.json_encode($course, JSON_UNESCAPED_UNICODE)
                 );
             }
         }
@@ -146,6 +164,17 @@ class ProgramsJsonTest extends AbstractJsonTest
                 if ($course->code === $code) {
                     return true;
                 }
+            }
+        }
+
+        return false;
+    }
+
+    protected function checkCourseBlockNameExists($name, $data)
+    {
+        foreach ($data->course_blocks as $courseBlock) {
+            if ($courseBlock->name === $name) {
+                return true;
             }
         }
 
