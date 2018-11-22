@@ -132,7 +132,7 @@
                 {
                     "code": "VEGTGAB144S",
                     "name": "Statisztika",
-                    "credits": 6,
+                    "credits": 6
                 },
                 {
                     "code": "VEGTMEB144M",
@@ -154,7 +154,7 @@
                     "name": "Pénzügyi számvitel I.",
                     "credits": 9,
                     "prerequisites": [
-                    "VEGTSCB144S"
+                      "VEGTSCB144S"
                     ]
                 },
                 {
@@ -192,7 +192,7 @@
                 {
                     "code": "VEGTSCB312C",
                     "name": "Controlling",
-                    "credits": 3,
+                    "credits": 3
                 },
                 {
                     "code": "VEGTSCB222S",
@@ -288,7 +288,7 @@
                     "credits": 6,
                     "prerequisites": [
                         "VEGTSCB544S"
-                        ]
+                    ]
                 },
                 {
                     "code": "VEGTPTB222G",
@@ -317,6 +317,7 @@
                     "credits": 3,
                     "prerequisites": [
                         "VEGTSCB222K"
+                    ]
                 },
                 {
                     "code": "VEGTSCB244G",
@@ -324,6 +325,7 @@
                     "credits": 3,
                     "prerequisites": [
                         "VEGTSCB222K"
+                    ]
                 },
                 {
                     "code": "___OPTIONAL___",
