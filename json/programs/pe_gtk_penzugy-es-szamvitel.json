@@ -88,7 +88,7 @@
                 },
                 {
                     "code": "VEGTNGB244K",
-                    "name": "Nemzetközi gazdaságtan (Külgazdaságtan)",
+                    "name": "Nemzetközi gazdaságtan",
                     "credits": 6
                 },
                 {
@@ -271,7 +271,7 @@
             "courses": [
                 {
                     "code": "VEGTVEB222F",
-                    "name": "Felelősségvállalás üzleti aspek-tusai",
+                    "name": "Felelősségvállalás üzleti aspektusai",
                     "credits": 3
                 },
                 {
@@ -296,11 +296,11 @@
                     "credits": 3
                 },
                 {
-                    "code": "VEGTSCB22K",
+                    "code": "VEGTSCB222K",
                     "name": "Számvitel speciális kérdései",
                     "credits": 3,
                     "prerequisites": [
-                        "VEGTSCB222K"
+                        "VEGTSCB544S"
                         ]
                 },
                 {
@@ -308,7 +308,7 @@
                     "name": "Beszámoló készítés",
                     "credits": 3,
                     "prerequisites": [
-                        "VEGTSCB222K"
+                        "VEGTSCB544S"
                         ]
                 },
                 {
@@ -316,7 +316,7 @@
                     "name": "Nemzetközi számvitel",
                     "credits": 3,
                     "prerequisites": [
-                        "VEGTSCB222K"
+                        "VEGTSCB544S"
                     ]
                 },
                 {
