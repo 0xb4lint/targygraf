@@ -1,7 +1,7 @@
 # Tárgygráf - [targygraf.hu](https://targygraf.hu)
 
-![StyleCI](https://styleci.io/repos/99475496/shield?branch=develop)
-![TravisCI](https://travis-ci.org/valentinxxx/targygraf.svg?branch=develop)
+![StyleCI](https://styleci.io/repos/99475496/shield?branch=master)
+![TravisCI](https://travis-ci.org/valentinxxx/targygraf.svg?branch=master)
 
 ## Install
 1. `composer install`
@@ -28,7 +28,7 @@
 - `resources/views/layouts/*.blade.php` - view fájlok
 
 ## Adatbázis
-![database](https://github.com/valentinxxx/targygraf/blob/develop/database.png)
+![database](database.png)
 
 ## Adatok szerkesztése
 ### Egyetem
