@@ -1,0 +1,611 @@
+{
+  "name": "Gazdálkodási és menedzsment",
+  "description": "Gazdálkodási és menedzsment BA - nappali tagozat tanterve",
+  "curriculum_updated_at": "2018-09-01",
+  "course_blocks": [
+    {
+      "name": "1. félév",
+      "row": 0,
+      "courses": [
+        {
+          "code": "INAG0BA06",
+          "name": "Informatika és a világ",
+          "credits": 6
+        },
+        {
+          "code": "KOAN1BA06",
+          "name": "Közgazdaságtan 1",
+          "credits": 6
+        },
+        {
+          "code": "VAAN0BA06",
+          "name": "Vállalati gazdaságtan",
+          "credits": 6
+        },
+        {
+          "code": "SZAI0BA06",
+          "name": "Számvitel alapjai",
+          "credits": 6
+        },
+        {
+          "code": "UZES0BA06",
+          "name": "Üzleti kommunikáció és készségfejlesztés",
+          "credits": 6
+        },
+        {
+          "code": "TEES1BA00",
+          "name": "Testnevelés 1",
+          "credits": 0
+        },
+        {
+          "code": null,
+          "name": "Szabadon választható",
+          "credits": 3,
+          "course_block_references": [
+            "Szabadon választható tárgyak"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "2. félév",
+      "row": 0,
+      "courses": [
+        {
+          "code": "GAKA0BA06",
+          "name": "Gazdasági matematika",
+          "credits": 6
+        },
+        {
+          "code": "KOAN2BA06",
+          "name": "Közgazdaságtan 2",
+          "credits": 6,
+          "prerequisites": [
+            "KOAN1BA06"
+          ]
+        },
+        {
+          "code": "UZLV1BA03",
+          "name": "Üzleti idegen nyelv A/1",
+          "credits": 3
+        },
+        {
+          "code": "GAOG0BA06",
+          "name": "Gazdasági jog",
+          "credits": 6
+        },
+        {
+          "code": "SZNT0BA06",
+          "name": "Szervezeti és humán menedzsment",
+          "credits": 6
+        },
+        {
+          "code": "KOEK0BA03",
+          "name": "Könyvvezetési ismeretek",
+          "credits": 3
+        },
+        {
+          "code": "TEES2BA00",
+          "name": "Testnevelés 2",
+          "credits": 0
+        },
+        {
+          "code": null,
+          "name": "Társadalmi, környezeti és térségi ismeretek",
+          "credits": 3,
+          "course_block_references": [
+            "Kötelezően választandó társadalmi, környezeti és térségi ismeretek"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "3. félév",
+      "row": 0,
+      "courses": [
+        {
+          "code": "STAI0BA06",
+          "name": "Statisztika és valószínűségszámítás alapjai",
+          "credits": 6
+        },
+        {
+          "code": "PEEK0BB06",
+          "name": "Pénzügyek",
+          "credits": 6
+        },
+        {
+          "code": "UZLV2BA03",
+          "name": "Üzleti idegen nyelv A/2",
+          "credits": 3
+        },
+        {
+          "code": "VAAN0BB06",
+          "name": "Vállalkozástan",
+          "credits": 6
+        },
+        {
+          "code": "MINT0BA03",
+          "name": "Minőségmenedzsment",
+          "credits": 3
+        },
+        {
+          "code": "VEEL0BA03",
+          "name": "Vezetői számvitel",
+          "credits": 3
+        },
+        {
+          "code": null,
+          "name": "Szabadon választható",
+          "credits": 3,
+          "course_block_references": [
+            "Szabadon választható tárgyak"
+          ]
+        },
+        {
+          "code": null,
+          "name": "Alapozó",
+          "credits": 3,
+          "course_block_references": [
+            "Kötelezően választandó alapozó ismeretek"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "4. félév",
+      "row": 0,
+      "courses": [
+        {
+          "code": "UZKA0BB06",
+          "name": "Üzleti statisztika",
+          "credits": 6
+        },
+        {
+          "code": "MANG0BA06",
+          "name": "Marketing",
+          "credits": 6
+        },
+        {
+          "code": "GAA0BA03",
+          "name": "Gazdálkodási szaknyelv A",
+          "credits": 3
+        },
+        {
+          "code": "SZAS0BB06",
+          "name": "Szervezeti magatartás",
+          "credits": 6
+        },
+        {
+          "code": "TENT0BA06",
+          "name": "Tevékenységmenedzsment",
+          "credits": 6
+        },
+        {
+          "code": "GAKA1BA06",
+          "name": "Gazdasági informatika 1",
+          "credits": 6
+        },
+        {
+          "code": null,
+          "name": "Szabadon választható",
+          "credits": 3,
+          "course_block_references": [
+            "Szabadon választható tárgyak"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "5. félév",
+      "row": 0,
+      "courses": [
+        {
+          "code": "UZES0BB06",
+          "name": "Üzleti tervezés",
+          "credits": 6
+        },
+        {
+          "code": "VAEK0BA06",
+          "name": "Vállalati pénzügyek",
+          "credits": 6
+        },
+        {
+          "code": null,
+          "name": "Szabadon választható",
+          "credits": 3,
+          "course_block_references": [
+            "Szabadon választható tárgyak"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "6. félév",
+      "row": 0,
+      "courses": [
+        {
+          "code": "FEAT0BA03",
+          "name": "Felelős és fenntartható vállalat",
+          "credits": 3
+        },
+        {
+          "code": "KUAN0BA03",
+          "name": "Kutatásmódszertan",
+          "credits": 3
+        },
+        {
+          "code": null,
+          "name": "Szakmai",
+          "credits": 3,
+          "course_block_references": [
+            "Kötelezően választandó szakmai ismeretek"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "7. félév",
+      "row": 0,
+      "courses": [
+        {
+          "code": "SZGY0BA20",
+          "name": "Szakmai gyakorlat",
+          "credits": 20
+        },
+        {
+          "code": "SZAT0BA07",
+          "name": "Szakdolgozat",
+          "credits": 7
+        }
+      ]
+    },
+    {
+      "name": "Választható specializáció (Egy választandó)",
+      "row": 0,
+      "courses": [
+        {
+          "code": null,
+          "name": "Specializáció",
+          "credits": 24,
+          "course_block_references": [
+            "Vállalkozás menedzsment",
+            "Szolgáltatásmenedzsment",
+            "Team Academy",
+            "Logisztika",
+            "Digitális vállalkozás"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Választható felzárkóztató tárgyak",
+      "row": 1,
+      "courses": [
+        {
+          "code": "AZAI0BA00",
+          "name": "Az üzleti matematika alapjai",
+          "credits": 0
+        },
+        {
+          "code": "INES0BA00",
+          "name": "Informatikai készségfejlesztés",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "name": "Kötelezően választandó alapozó ismeretek",
+      "row": 1,
+      "courses": [
+        {
+          "code": "DOEK0BA03",
+          "name": "Döntéselőkészítő kvantitatív módszerek",
+          "credits": 3
+        },
+        {
+          "code": "NEAN0BA03",
+          "name": "Nemzetközi gazdaságtan",
+          "credits": 3
+        },
+        {
+          "code": "GAKA0BC03",
+          "name": "Gazdaságpolitika",
+          "credits": 3
+        },
+        {
+          "code": "EUEK0BB03",
+          "name": "Európai uniós ismeretek",
+          "credits": 3
+        },
+        {
+          "code": "KOAN0BA03",
+          "name": "Környezet-gazdaságtan",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "name": "Kötelezően választandó társadalmi, környezeti és térségi ismeretek",
+      "row": 1,
+      "courses": [
+        {
+          "code": "GAET0BA03",
+          "name": "Gazdaságtörténet",
+          "credits": 3
+        },
+        {
+          "code": "SZIA0BD03",
+          "name": "Szociológia",
+          "credits": 3
+        },
+        {
+          "code": "PSIA0BA03",
+          "name": "Pszichológia",
+          "credits": 3
+        },
+        {
+          "code": "SZIA0BB03",
+          "name": "Szervezetpszichológia",
+          "credits": 3
+        },
+        {
+          "code": "GAJZ0BA03",
+          "name": "Gazdaságföldrajz",
+          "credits": 3
+        },
+        {
+          "code": "REAN0BA03",
+          "name": "Regionális gazdaságtan",
+          "credits": 3
+        },
+        {
+          "code": "INIO0BB03",
+          "name": "Interkulturális kommunikáció",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "name": "Szabadon választható tárgyak",
+      "row": 1,
+      "courses": [
+        {
+          "code": "TAAN0BB03",
+          "name": "Tanulásmódszertan",
+          "credits": 3
+        },
+        {
+          "code": "SZUM2BA03",
+          "name": "Szakkollégium 2",
+          "credits": 3
+        },
+        {
+          "code": "TDDK2BA03",
+          "name": "TDK 2",
+          "credits": 3
+        },
+        {
+          "code": "DENG0BA03",
+          "name": "Design thinking",
+          "credits": 3
+        },
+        {
+          "code": "GAKA2BA03",
+          "name": "Gazdasági informatika 2",
+          "credits": 3
+        },
+        {
+          "code": "NEKA0BA03",
+          "name": "Nemzetközi tárgyalástechnika",
+          "credits": 3
+        },
+        {
+          "code": "SZUM1BA03",
+          "name": "Szakkollégium 1",
+          "credits": 3
+        },
+        {
+          "code": "TDDK1BA03",
+          "name": "TDK 1",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "name": "Kötelezően választandó szakmai ismeretek",
+      "row": 1,
+      "courses": [
+        {
+          "code": "DOEK0BB03",
+          "name": "Döntési módszerek",
+          "credits": 3
+        },
+        {
+          "code": "PAES0BB03",
+          "name": "Pályázatkészítés",
+          "credits": 3
+        },
+        {
+          "code": "UZOK0BA03",
+          "name": "Üzleti esettanulmányok",
+          "credits": 3
+        },
+        {
+          "code": "GAES0BA03",
+          "name": "Gazdasági viselkedés",
+          "credits": 3
+        },
+        {
+          "code": "VAAN0BA03",
+          "name": "Vállalkozásmenedzsment a hálózati gazdaságban",
+          "credits": 3
+        },
+        {
+          "code": "INNT0BA03",
+          "name": "Innovációmenedzsment",
+          "credits": 3
+        },
+        {
+          "code": "VAEK0BB06",
+          "name": "Vállalatirányítási szoftverek",
+          "credits": 6
+        },
+        {
+          "code": "E-SS0BA03",
+          "name": "E-business",
+          "credits": 3
+        },
+        {
+          "code": "BENG0BA03",
+          "name": "Benchmarking",
+          "credits": 3
+        },
+        {
+          "code": "LONG0BA03",
+          "name": "Logisztikai kontrolling",
+          "credits": 3
+        },
+        {
+          "code": "UZES0BA03",
+          "name": "Üzleti projekttervezés",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "name": "Digitális vállalkozás",
+      "row": 2,
+      "courses": [
+        {
+          "code": "DISE0BA06",
+          "name": "Digitális vállalkozás indítása és menedzselése",
+          "credits": 6
+        },
+        {
+          "code": "ITNT0BA06",
+          "name": "IT projektmenedzsment",
+          "credits": 6
+        },
+        {
+          "code": "SZNG0BB06",
+          "name": "Szolgáltatásmenedzsment és marketing",
+          "credits": 6
+        },
+        {
+          "code": "DINT0BB06",
+          "name": "Digitális ügyfélélmény-menedzsment",
+          "credits": 6
+        }
+      ]
+    },
+    {
+      "name": "Logisztika",
+      "row": 2,
+      "courses": [
+        {
+          "code": "LOKA0BA06",
+          "name": "Logisztika",
+          "credits": 6
+        },
+        {
+          "code": "ITNT0BA06",
+          "name": "IT projektmenedzsment",
+          "credits": 6
+        },
+        {
+          "code": "TEJA0BA06",
+          "name": "Termelés és raktározás logisztikája",
+          "credits": 6
+        },
+        {
+          "code": "LOJA0BA06",
+          "name": "Logisztika informatikája",
+          "credits": 6
+        }
+      ]
+    },
+    {
+      "name": "Szolgáltatásmenedzsment",
+      "row": 2,
+      "courses": [
+        {
+          "code": "SSNT0BA06",
+          "name": "SSC management",
+          "credits": 6
+        },
+        {
+          "code": "LOKA0BA06",
+          "name": "Logisztika",
+          "credits": 6
+        },
+        {
+          "code": "SZNG0BB06",
+          "name": "Szolgáltatásmenedzsment és marketing",
+          "credits": 6
+        },
+        {
+          "code": "DINT0BB06",
+          "name": "Digitális ügyfélélmény-menedzsment",
+          "credits": 6
+        }
+      ]
+    },
+    {
+      "name": "Team Academy",
+      "row": 2,
+      "courses": [
+        {
+          "code": "VASA0BA09",
+          "name": "Vállalkozás indítása",
+          "credits": 9
+        },
+        {
+          "code": "ADAN0BB03",
+          "name": "Adózás a gyakorlatban",
+          "credits": 3
+        },
+        {
+          "code": "VASE0BA09",
+          "name": "Vállalkozás működtetése",
+          "credits": 9
+        },
+        {
+          "code": "CONG0BA03",
+          "name": "Coaching, mentoring",
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "name": "Vállalkozás menedzsment",
+      "row": 2,
+      "courses": [
+        {
+          "code": "NENG0BB06",
+          "name": "Nemzetközi menedzsment és marketing",
+          "credits": 6
+        },
+        {
+          "code": "PRNT0BA03",
+          "name": "Projektmenedzsment",
+          "credits": 3
+        },
+        {
+          "code": "VANT0BA03",
+          "name": "Változás- és válságmenedzsment",
+          "credits": 3
+        },
+        {
+          "code": "VAEK0BB06",
+          "name": "Vállalatirányítási szoftverek",
+          "credits": 6
+        },
+        {
+          "code": "KONG0BA06",
+          "name": "Kontrolling",
+          "credits": 6
+        }
+      ]
+    }
+  ]
+}
