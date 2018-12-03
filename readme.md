@@ -11,7 +11,7 @@
 ## Contributing
 1. fork repo
 2. edit (PSR-2, `.editorconfig`)
-3. pull request to `develop` branch
+3. pull request to `master` branch
 
 ## Testing
 `vendor/bin/phpunit`
