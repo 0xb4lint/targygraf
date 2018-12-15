@@ -744,7 +744,7 @@
                 {
                     "code": "VEMIKN5374S",
                     "name": "Színtervezés számítógépes felhasználás számára",
-                    "credits": 2,
+                    "credits": 4,
                     "prerequisites": [
                         "VEMIMAB244M",
                         "VEMIKNB312F"

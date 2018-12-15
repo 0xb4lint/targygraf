@@ -4,6 +4,15 @@ namespace Tests\Feature\Json;
 
 class ProgramsJsonTest extends AbstractJsonTest
 {
+    const DUMMY_CREDIT_COURSE_CODES = [
+        '___20___',
+        '___45___',
+        '___50___',
+        '___75___',
+        '___120___',
+        '___130___',
+    ];
+
     protected $directory = 'json/programs';
     protected $facultiesDirectory = 'json/faculties';
 
@@ -49,11 +58,11 @@ class ProgramsJsonTest extends AbstractJsonTest
         );
 
         foreach ($data->course_blocks as $courseBlock) {
-            $this->checkCourseBlockJsonStructure($path, $courseBlock);
+            $this->checkCourseBlockJsonStructure($path, $courseBlock, $data);
         }
     }
 
-    protected function checkCourseBlockJsonStructure($path, $courseBlock)
+    protected function checkCourseBlockJsonStructure($path, $courseBlock, $data)
     {
         $this->assertTrue(
             is_string($courseBlock->name),
@@ -78,6 +87,8 @@ class ProgramsJsonTest extends AbstractJsonTest
 
         foreach ($courseBlock->courses as $course) {
             $this->checkCourseJsonStructure($path, $course);
+            $this->checkCoursePrerequisites($path, $course, $data);
+            $this->checkCourseCourseBlockReferences($path, $course, $data);
         }
     }
 
@@ -104,5 +115,69 @@ class ProgramsJsonTest extends AbstractJsonTest
             $course->credits,
             $path.' credits - '.json_encode($course, JSON_UNESCAPED_UNICODE)
         );
+
+        $this->assertTrue(
+            ! isset($course->prerequisites) || is_array($course->prerequisites),
+            $path.' prerequisites !isset || is_array - '.json_encode($course, JSON_UNESCAPED_UNICODE)
+        );
+
+        $this->assertTrue(
+            ! isset($course->course_block_references) || is_array($course->course_block_references),
+            $path.' course_block_references !isset || is_array - '.json_encode($course, JSON_UNESCAPED_UNICODE)
+        );
+    }
+
+    protected function checkCoursePrerequisites($path, $course, $data)
+    {
+        if (isset($course->prerequisites)) {
+            foreach ($course->prerequisites as $prerequisite) {
+                $code = trim($prerequisite, '()');
+
+                $this->assertTrue(
+                    $this->checkCourseCodeExists($code, $data),
+                    $path.' prerequisite invalid: '.$code.' - '.json_encode($course, JSON_UNESCAPED_UNICODE)
+                );
+            }
+        }
+    }
+
+    protected function checkCourseCourseBlockReferences($path, $course, $data)
+    {
+        if (isset($course->course_block_references)) {
+            foreach ($course->course_block_references as $courseBlockReference) {
+                $this->assertTrue(
+                    $this->checkCourseBlockNameExists($courseBlockReference, $data),
+                    $path.' course_block_reference invalid: '.$courseBlockReference.' - '.json_encode($course, JSON_UNESCAPED_UNICODE)
+                );
+            }
+        }
+    }
+
+    protected function checkCourseCodeExists($code, $data)
+    {
+        if (in_array($code, static::DUMMY_CREDIT_COURSE_CODES)) {
+            return true;
+        }
+
+        foreach ($data->course_blocks as $courseBlock) {
+            foreach ($courseBlock->courses as $course) {
+                if ($course->code === $code) {
+                    return true;
+                }
+            }
+        }
+
+        return false;
+    }
+
+    protected function checkCourseBlockNameExists($name, $data)
+    {
+        foreach ($data->course_blocks as $courseBlock) {
+            if ($courseBlock->name === $name) {
+                return true;
+            }
+        }
+
+        return false;
     }
 }
