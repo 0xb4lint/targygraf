@@ -8,22 +8,22 @@
             "row": 0,
             "courses": [
                 {
-                    "code": "MIMAB143A",
+                    "code": "VEMIMAB143A",
                     "name": "Az informatika logikai és algebrai alapjai",
                     "credits": 3
                 },
                 {
-                    "code": "MKMA1143V",
+                    "code": "VEMKMA1143V",
                     "name": "Lineáris algebra",
                     "credits": 3
                 },
                 {
-                    "code": "MIMAB122A",
+                    "code": "VEMIMAB122A",
                     "name": "Matematikai alapozó",
                     "credits": 0
                 },
                 {
-                    "code": "MIMAB144A",
+                    "code": "VEMIMAB144A",
                     "name": "Matematikai analízis I.",
                     "credits": 4,
                     "prerequisites": [
@@ -31,42 +31,42 @@
                     ]
                 },
                 {
-                    "code": "MKFI1312A",
+                    "code": "VEMKFI1312A",
                     "name": "Fizika I.",
                     "credits": 2
                 },
                 {
-                    "code": "MISAB144A",
+                    "code": "VEMISAB144A",
                     "name": "A programozás alapjai",
                     "credits": 5
                 },
                 {
-                    "code": "MISAB154R",
+                    "code": "VEMISAB154R",
                     "name": "Programozás I.",
                     "credits": 5
                 },
                 {
-                    "code": "MIVIB132W",
+                    "code": "VEMIVIB132W",
                     "name": "Web programozás I.",
                     "credits": 3
                 },
                 {
-                    "code": "MISAB122E",
+                    "code": "VEMISAB122E",
                     "name": "Elemi algoritmusok",
                     "credits": 3
                 },
                 {
-                    "code": "MIVIB112A",
+                    "code": "VEMIVIB112A",
                     "name": "A számítástechnika alapjai",
                     "credits": 2
                 },
                 {
-                    "code": "MKLE1120A",
+                    "code": "VEMKLE1120A",
                     "name": "Angol nyelv I.",
                     "credits": 0
                 },
                 {
-                    "code": "PETO1122A",
+                    "code": "VEPETO1122A",
                     "name": "Testnevelés I.",
                     "credits": 0
                 }
@@ -77,101 +77,95 @@
             "row": 0,
             "courses": [
                 {
-                    "code": "MIMAB244M",
+                    "code": "VEMIMAB244M",
                     "name": "Matematikai analízis II.",
                     "credits": 4,
                     "prerequisites": [
-                        "MIMAB144A"
+                        "VEMIMAB144A"
                     ]
                 },
                 {
-                    "code": "TKMA1243D",
+                    "code": "VETKMA1243D",
                     "name": "Diszkrét matematika",
                     "credits": 3,
                     "prerequisites": [
-                        "MIMAB143A"
+                        "VEMIMAB143A"
                     ]
                 },
                 {
-                    "code": "MISAB243A",
+                    "code": "VEMISAB243A",
                     "name": "Adatstruktúrák és algoritmusok I.",
                     "credits": 3,
                     "prerequisites": [
-                        "MISAB144A",
-                        "MIMAB144A"
+                        "VEMISAB144A",
+                        "VEMIMAB144A"
                     ]
                 },
                 {
-                    "code": "MISA3242M",
+                    "code": "VEMISA3242M",
                     "name": "Mesterséges intelligencia alapjai",
                     "credits": 2,
                     "prerequisites": [
-                        "MIMAB143A"
+                        "VEMIMAB143A"
                     ]
                 },
                 {
-                    "code": "MISAB212P",
+                    "code": "VEMISAB212P",
                     "name": "Programozás II.",
                     "credits": 2,
                     "prerequisites": [
-                        "MISAB144A",
-                        "MISAB154R"
+                        "VEMISAB144A",
+                        "VEMISAB154R"
                     ]
                 },
                 {
-                    "code": "MISAB232C",
+                    "code": "VEMISAB232C",
                     "name": "Programozás II. gyakorlat (C++)",
                     "credits": 3,
                     "prerequisites": [
-                        "(MISAB212P)"
+                        "(VEMISAB212P)"
                     ]
                 },
                 {
-                    "code": "MIVIB232W",
+                    "code": "VEMIVIB232W",
                     "name": "Web programozás II.",
                     "credits": 3,
                     "prerequisites": [
-                        "MIVIB132W"
+                        "VEMIVIB132W"
                     ]
                 },
                 {
-                    "code": "MIVI1112D",
+                    "code": "VEMIVI1112D",
                     "name": "Digitális technika",
                     "credits": 2
                 },
                 {
-                    "code": "MIVI2144E",
+                    "code": "VEMIVI2144E",
                     "name": "Elektromosságtan",
                     "credits": 4,
                     "prerequisites": [
-                        "MIMAB144A"
+                        "VEMIMAB144A"
                     ]
                 },
                 {
-                    "code": "GTGAB144A",
+                    "code": "VEGTGAB144A",
                     "name": "Vállalati gazdaságtan",
                     "credits": 5
                 },
                 {
-                    "code": "MKLE1220A",
+                    "code": "VEMKLE1220A",
                     "name": "Angol nyelv II.",
-                    "credits": 0,
-                    "prerequisites": [
-                        "MKLE1120A"
-                    ]
+                    "credits": 0
                 },
                 {
-                    "code": "MKLE12X0A",
+                    "code": "VEMKLE12X0A",
                     "name": "Angol nyelvi kollokvium",
                     "credits": 0
                 },
                 {
-                    "code": "PETO2222A",
+                    "code": "VEPETO2222A",
                     "name": "Testnevelés II.",
-                    "credits": 0,
-                    "prerequisites": [
-                        "PETO1122A"
-                    ]
+                    "credits": 0
                 }
             ]
         },
@@ -180,82 +174,76 @@
             "row": 0,
             "courses": [
                 {
-                    "code": "MISAB254T",
+                    "code": "VEMISAB254T",
                     "name": "Korszerű programozási technikák",
                     "credits": 5,
                     "prerequisites": [
-                        "MISAB232C"
+                        "VEMISAB232C"
                     ]
                 },
                 {
-                    "code": "MIVIB134J",
+                    "code": "VEMIVIB134J",
                     "name": "Java programozás I.",
                     "credits": 5,
                     "prerequisites": [
-                        "MISAB232C"
+                        "VEMISAB232C"
                     ]
                 },
                 {
-                    "code": "MISAB244S",
+                    "code": "VEMISAB244S",
                     "name": "Szoftvertechnológia",
                     "credits": 5,
                     "prerequisites": [
-                        "MISAB212P"
+                        "VEMISAB212P"
                     ]
                 },
                 {
-                    "code": "MIVIB174E",
+                    "code": "VEMIVIB174E",
                     "name": "Elektronikus elemek és áramkörök",
                     "credits": 4,
                     "prerequisites": [
-                        "MIVI2144E"
+                        "VEMIVI2144E"
                     ]
                 },
                 {
-                    "code": "MIVIB112J",
+                    "code": "VEMIVIB112J",
                     "name": "Jelek és rendszerek",
                     "credits": 2,
                     "prerequisites": [
-                        "MIMAB244M",
-                        "MIVI2144E"
+                        "VEMIMAB244M",
+                        "VEMIVI2144E"
                     ]
                 },
                 {
-                    "code": "MIINB154H",
+                    "code": "VEMIINB154H",
                     "name": "Számítógépes hálózatok I.",
                     "credits": 5,
                     "prerequisites": [
-                        "MISAB154R"
+                        "VEMISAB154R"
                     ]
                 },
                 {
-                    "code": "MISAB154B",
+                    "code": "VEMISAB154B",
                     "name": "Adatbáziskezelő rendszerek I.",
                     "credits": 5,
                     "prerequisites": [
-                        "MISAB243A"
+                        "VEMISAB243A"
                     ]
                 },
                 {
-                    "code": "MKLE2120A",
+                    "code": "VEMKLE2120A",
                     "name": "Angol nyelv III.",
-                    "credits": 0,
-                    "prerequisites": [
-                        "MKLE1220A"
-                    ]
+                    "credits": 0
                 },
                 {
-                    "code": "MKLE22X0A",
+                    "code": "VEMKLE22X0A",
                     "name": "Angol nyelvi záróvizsga",
                     "credits": 0
                 },
                 {
-                    "code": "PETO3122A",
+                    "code": "VEPETO3122A",
                     "name": "Testnevelés III.",
-                    "credits": 0,
-                    "prerequisites": [
-                        "PETO2222A"
-                    ]
+                    "credits": 0
                 }
             ]
         },
@@ -264,65 +252,65 @@
             "row": 0,
             "courses": [
                 {
-                    "code": "MKMA1344B",
+                    "code": "VEMKMA1344B",
                     "name": "Valószínűségszámítás és matematikai statisztika",
                     "credits": 4,
                     "prerequisites": [
-                        "MIMAB144A"
+                        "VEMIMAB144A"
                     ]
                 },
                 {
-                    "code": "TKMA1244O",
+                    "code": "VETKMA1244O",
                     "name": "Operációkutatás",
                     "credits": 4,
                     "prerequisites": [
-                        "MKMA1143V"
+                        "VEMKMA1143V"
                     ]
                 },
                 {
-                    "code": "MIVIB232A",
+                    "code": "VEMIVIB232A",
                     "name": "Adatbázis-kezelő rendszerek II.",
                     "credits": 2,
                     "prerequisites": [
-                        "MISAB154B"
+                        "VEMISAB154B"
                     ]
                 },
                 {
-                    "code": "MKKN3214A",
+                    "code": "VEMKKN3214A",
                     "name": "Digitális rendszerek és számítógép architektúrák",
                     "credits": 4,
                     "prerequisites": [
-                        "MIVI1112D"
+                        "VEMIVI1112D"
                     ]
                 },
                 {
-                    "code": "MIKN1252P",
+                    "code": "VEMIKN1252P",
                     "name": "Számítógépes perifériák",
                     "credits": 2
                 },
                 {
-                    "code": "MISAB144O",
+                    "code": "VEMISAB144O",
                     "name": "Operációs rendszerek",
                     "credits": 5,
                     "prerequisites": [
-                        "MISAB144A",
-                        "MIVIB112A"
+                        "VEMISAB144A",
+                        "VEMIVIB112A"
                     ]
                 },
                 {
-                    "code": "MIVIB242I",
+                    "code": "VEMIVIB242I",
                     "name": "Irányításelmélet és technika I.",
                     "credits": 2,
                     "prerequisites": [
-                        "MIVIB112J"
+                        "VEMIVIB112J"
                     ]
                 },
                 {
-                    "code": "MIVI2212M",
+                    "code": "VEMIVI2212M",
                     "name": "Méréselmélet",
                     "credits": 2,
                     "prerequisites": [
-                        "(MKMA1344B)"
+                        "(VEMKMA1344B)"
                     ]
                 },
                 {
@@ -339,20 +327,14 @@
                     "credits": 2
                 },
                 {
-                    "code": "MKLE2220A",
+                    "code": "VEMKLE2220A",
                     "name": "Angol nyelv IV.",
-                    "credits": 0,
-                    "prerequisites": [
-                        "MKLE2120A"
-                    ]
+                    "credits": 0
                 },
                 {
-                    "code": "PETO4222A",
+                    "code": "VEPETO4222A",
                     "name": "Testnevelés IV.",
-                    "credits": 0,
-                    "prerequisites": [
-                        "PETO3122A"
-                    ]
+                    "credits": 0
                 }
             ]
         },
@@ -361,55 +343,55 @@
             "row": 0,
             "courses": [
                 {
-                    "code": "MIIR5354I",
+                    "code": "VEMIIR5354I",
                     "name": "Informatikai rendszerek konfigurálása és üzemeltetése",
                     "credits": 4,
                     "prerequisites": [
-                        "MISAB144O"
+                        "VEMISAB144O"
                     ]
                 },
                 {
-                    "code": "MIAIB154M",
+                    "code": "VEMIAIB154M",
                     "name": "Mobil programozás",
                     "credits": 5,
                     "prerequisites": [
-                        "MIVIB134J"
+                        "VEMIVIB134J"
                     ]
                 },
                 {
-                    "code": "MIVIB112H",
+                    "code": "VEMIVIB112H",
                     "name": "Távközlési hálózatok",
                     "credits": 2,
                     "prerequisites": [
-                        "MIINB154H"
+                        "VEMIINB154H"
                     ]
                 },
                 {
-                    "code": "MIINB354B",
+                    "code": "VEMIINB354B",
                     "name": "Informatikai biztonság (angol nyelven)",
                     "credits": 5,
                     "prerequisites": [
-                        "MIINB154H",
-                        "MISAB144O",
-                        "MKLE12X0A"
+                        "VEMIINB154H",
+                        "VEMISAB144O",
+                        "VEMKLE12X0A"
                     ]
                 },
                 {
-                    "code": "MISA3136P",
+                    "code": "VEMISA3136P",
                     "name": "Projekt labor",
                     "credits": 6,
                     "prerequisites": [
-                        "MISAB232C",
-                        "MISAB154B",
-                        "MISAB244S"
+                        "VEMISAB232C",
+                        "VEMISAB154B",
+                        "VEMISAB244S"
                     ]
                 },
                 {
-                    "code": "GTGAB244V",
+                    "code": "VEGTGAB244V",
                     "name": "Vállalkozói ismeretek",
                     "credits": 5,
                     "prerequisites": [
-                        "GTGAB144A"
+                        "VEGTGAB144A"
                     ]
                 },
                 {
@@ -430,28 +412,28 @@
             "row": 0,
             "courses": [
                 {
-                    "code": "MISAB244M",
+                    "code": "VEMISAB244M",
                     "name": "A rendszerfejlesztés korszerű módszerei",
                     "credits": 5,
                     "prerequisites": [
-                        "MISAB254T",
-                        "MISAB244S"
+                        "VEMISAB254T",
+                        "VEMISAB244S"
                     ]
                 },
                 {
-                    "code": "MISAB253G",
+                    "code": "VEMISAB253G",
                     "name": "Gyártásoptimalizálás",
                     "credits": 3,
                     "prerequisites": [
-                        "TKMA1244O"
+                        "VETKMA1244O"
                     ]
                 },
                 {
-                    "code": "MIMIB23xT",
+                    "code": "VEMIMIB23xT",
                     "name": "Tervezés I.",
                     "credits": 10,
                     "prerequisites": [
-                        "(MISA3136P)"
+                        "(VEMISA3136P)"
                     ]
                 },
                 {
@@ -501,11 +483,11 @@
                     "credits": 6
                 },
                 {
-                    "code": "MIMIB13xT",
+                    "code": "VEMIMIB13xT",
                     "name": "Tervezés II.",
                     "credits": 15,
                     "prerequisites": [
-                        "MIMIB23xT"
+                        "VEMIMIB23xT"
                     ]
                 }
             ]
@@ -515,52 +497,52 @@
             "row": 1,
             "courses": [
                 {
-                    "code": "MISAB152A",
+                    "code": "VEMISAB152A",
                     "name": "A Data Science alapjai",
                     "credits": 2,
                     "prerequisites": [
-                        "MISAB154B",
-                        "MIMAB143A"
+                        "VEMISAB154B",
+                        "VEMIMAB143A"
                     ]
                 },
                 {
-                    "code": "MIAIB253K",
+                    "code": "VEMIAIB253K",
                     "name": "Információ-visszakeresés",
                     "credits": 4,
                     "prerequisites": [
-                        "MKMA1143V"
+                        "VEMKMA1143V"
                     ]
                 },
                 {
-                    "code": "MIMAB512L",
+                    "code": "VEMIMAB512L",
                     "name": "Bevezetés a lágy számítás módszereibe",
                     "credits": 2,
                     "prerequisites": [
-                        "MIMAB143A"
+                        "VEMIMAB143A"
                     ]
                 },
                 {
-                    "code": "MIVIB232T",
+                    "code": "VEMIVIB232T",
                     "name": "Adattárház technológiák",
                     "credits": 2,
                     "prerequisites": [
-                        "MISAB154B"
+                        "VEMISAB154B"
                     ]
                 },
                 {
-                    "code": "MIVIB132A",
+                    "code": "VEMIVIB132A",
                     "name": "Korszerű adatbázis technológiák",
                     "credits": 3,
                     "prerequisites": [
-                        "MIVIB232A"
+                        "VEMIVIB232A"
                     ]
                 },
                 {
-                    "code": "MISAB232A",
+                    "code": "VEMISAB232A",
                     "name": "Adatbányászat",
                     "credits": 4,
                     "prerequisites": [
-                        "MISAB152A"
+                        "VEMISAB152A"
                     ]
                 }
             ]
@@ -570,53 +552,53 @@
             "row": 1,
             "courses": [
                 {
-                    "code": "MIINB354H",
+                    "code": "VEMIINB354H",
                     "name": "Számítógép hálózatok II.",
                     "credits": 5,
                     "prerequisites": [
-                        "MIINB154H"
+                        "VEMIINB154H"
                     ]
                 },
                 {
-                    "code": "MIIN353L",
+                    "code": "VEMIIN353L",
                     "name": "Linux rendszergazda ismeretek I.",
                     "credits": 3,
                     "prerequisites": [
-                        "MISAB144O",
-                        "MIINB154H"
+                        "VEMISAB144O",
+                        "VEMIINB154H"
                     ]
                 },
                 {
-                    "code": "MIINB332L",
+                    "code": "VEMIINB332L",
                     "name": "Linux rendszergazda ismeretek II.",
                     "credits": 2,
                     "prerequisites": [
-                        "MIIN353L"
+                        "VEMIIN353L"
                     ]
                 },
                 {
-                    "code": "MIINB332V",
+                    "code": "VEMIINB332V",
                     "name": "Nagyvállalati Linux technológiák",
                     "credits": 2,
                     "prerequisites": [
-                        "MIIN353L"
+                        "VEMIIN353L"
                     ]
                 },
                 {
-                    "code": "MIINB332V",
+                    "code": "VEMIINB332V",
                     "name": "Virtualizációs technológiák a gyakorlatban",
                     "credits": 3,
                     "prerequisites": [
-                        "MISAB144O"
+                        "VEMISAB144O"
                     ]
                 },
                 {
-                    "code": "MISAB332V",
+                    "code": "VEMISAB332V",
                     "name": "Vállalatirányítási rendszerek",
                     "credits": 3,
                     "prerequisites": [
-                        "GTGAB144A",
-                        "MISAB154R"
+                        "VEGTGAB144A",
+                        "VEMISAB154R"
                     ]
                 }
             ]
@@ -626,19 +608,19 @@
             "row": 1,
             "courses": [
                 {
-                    "code": "MIKN5312I",
+                    "code": "VEMIKN5312I",
                     "name": "Felhasználói interfészek tervezése",
                     "credits": 2,
                     "prerequisites": [
-                        "MISAB244S"
+                        "VEMISAB244S"
                     ]
                 },
                 {
-                    "code": "MIVIB234J",
+                    "code": "VEMIVIB234J",
                     "name": "Java programozás II.",
                     "credits": 5,
                     "prerequisites": [
-                        "MIVIB134J"
+                        "VEMIVIB134J"
                     ]
                 },
                 {
@@ -646,74 +628,74 @@
                     "name": "C# programozás",
                     "credits": 2,
                     "prerequisites": [
-                        "MISAB232C"
+                        "VEMISAB232C"
                     ]
                 },
                 {
-                    "code": "MIVIB234Z",
+                    "code": "VEMIVIB234Z",
                     "name": "Párhuzamos programozás",
                     "credits": 5,
                     "prerequisites": [
-                        "MIVIB134J",
-                        "MKKN3214A"
+                        "VEMIVIB134J",
+                        "VEMKKN3214A"
                     ]
                 },
                 {
-                    "code": "MISAB212M",
+                    "code": "VEMISAB212M",
                     "name": "Szoftvermodellezés és tesztelés",
                     "credits": 2,
                     "prerequisites": [
-                        "MISAB244S"
+                        "VEMISAB244S"
                     ]
                 },
                 {
-                    "code": "MKKN5244A",
+                    "code": "VEMKKN5244A",
                     "name": "Virtuális valóság I.",
                     "credits": 4,
                     "prerequisites": [
-                        "MIVIB112A",
-                        "MISAB154R"
+                        "VEMIVIB112A",
+                        "VEMISAB154R"
                     ]
                 },
                 {
-                    "code": "MIVIB154V",
+                    "code": "VEMIVIB154V",
                     "name": "Virtuális valóság II.",
                     "credits": 4,
                     "prerequisites": [
-                        "MKKN5244A"
+                        "VEMKKN5244A"
                     ]
                 },
                 {
-                    "code": "MIVIB154A",
+                    "code": "VEMIVIB154A",
                     "name": "A multimédia alapjai",
                     "credits": 5,
                     "prerequisites": [
-                        "MISAB154R",
-                        "MIVIB112A"
+                        "VEMISAB154R",
+                        "VEMIVIB112A"
                     ]
                 },
                 {
-                    "code": "MIVIB253A",
+                    "code": "VEMIVIB253A",
                     "name": "Az információ vizuális megjelenítésének és mérésének alapjai",
                     "credits": 3,
                     "prerequisites": [
-                        "MIVIB112A"
+                        "VEMIVIB112A"
                     ]
                 },
                 {
-                    "code": "MISAB512N",
+                    "code": "VEMISAB512N",
                     "name": "Szoftverfejlesztés nagyvállalati környezetben",
                     "credits": 2,
                     "prerequisites": [
-                        "MISAB244S"
+                        "VEMISAB244S"
                     ]
                 },
                 {
-                    "code": "MISA5312A",
+                    "code": "VEMISA5312A",
                     "name": "Az informatika ipari alkalmazásai",
                     "credits": 2,
                     "prerequisites": [
-                        "MISAB232C"
+                        "VEMISAB232C"
                     ]
                 }
             ]
@@ -723,67 +705,67 @@
             "row": 1,
             "courses": [
                 {
-                    "code": "MIKN5344K",
+                    "code": "VEMIKN5344K",
                     "name": "Képfeldolgozás",
                     "credits": 4,
                     "prerequisites": [
-                        "MKMA1344B"
+                        "VEMKMA1344B"
                     ]
                 },
                 {
-                    "code": "MIVIB544T",
+                    "code": "VEMIVIB544T",
                     "name": "Tervezési módszerek programozható logikai eszközökkel",
                     "credits": 4,
                     "prerequisites": [
-                        "MKKN3214A"
+                        "VEMKKN3214A"
                     ]
                 },
                 {
-                    "code": "MIVI4144B",
+                    "code": "VEMIVI4144B",
                     "name": "FPGA alapú beágyazott rendszerek",
                     "credits": 4,
                     "prerequisites": [
-                        "MIVIB544T"
+                        "VEMIVIB544T"
                     ]
                 },
                 {
-                    "code": "MIVIB112R",
+                    "code": "VEMIVIB112R",
                     "name": "Robotika",
                     "credits": 2,
                     "prerequisites": [
-                        "MIVIB242I"
+                        "VEMIVIB242I"
                     ]
                 },
                 {
-                    "code": "MIVIB234R",
+                    "code": "VEMIVIB234R",
                     "name": "Robotika labor",
                     "credits": 4,
                     "prerequisites": [
-                        "MIVIB112R"
+                        "VEMIVIB112R"
                     ]
                 },
                 {
-                    "code": "MIINB154C",
+                    "code": "VEMIINB154C",
                     "name": "Autóipari szoftver- és hardverfejlesztés a gyakorlatban I.",
                     "credits": 4,
                     "prerequisites": [
-                        "MISAB232C"
+                        "VEMISAB232C"
                     ]
                 },
                 {
-                    "code": "MIINB254C",
+                    "code": "VEMIINB254C",
                     "name": "Autóipari szoftver- és hardverfejlesztés a gyakorlatban II.",
                     "credits": 4,
                     "prerequisites": [
-                        "MISAB232C"
+                        "VEMISAB232C"
                     ]
                 },
                 {
-                    "code": "MIIR5344E",
+                    "code": "VEMIIR5344E",
                     "name": "Egészségügyi informatika",
                     "credits": 4,
                     "prerequisites": [
-                        "MISAB154B"
+                        "VEMISAB154B"
                     ]
                 }
             ]
@@ -793,32 +775,32 @@
             "row": 1,
             "courses": [
                 {
-                    "code": "MIVIB212A",
+                    "code": "VEMIVIB212A",
                     "name": "Minőségbiztosítás és audit",
                     "credits": 2
                 },
                 {
-                    "code": "MIGAB512Z",
+                    "code": "VEMIGAB512Z",
                     "name": "Szellemitulajdon-védelem",
                     "credits": 2
                 },
                 {
-                    "code": "MIGAB512J",
+                    "code": "VEMIGAB512J",
                     "name": "Iparjogvédelem és innovációmenedzsment",
                     "credits": 2
                 },
                 {
-                    "code": "MIMA5312T",
+                    "code": "VEMIMA5312T",
                     "name": "Szemelvények a matematika történetéből",
                     "credits": 2
                 },
                 {
-                    "code": "MISA5312F",
+                    "code": "VEMISA5312F",
                     "name": "Fejezetek a természettudományok történetéből",
                     "credits": 2
                 },
                 {
-                    "code": "MISA5312Z",
+                    "code": "VEMISA5312Z",
                     "name": "Zenetörténet",
                     "credits": 2
                 }
