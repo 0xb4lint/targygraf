@@ -371,11 +371,13 @@ CREDITS COUNTER
 	display: inline-block;
 	position: relative;
 	padding: 2px 0px;
+	border-radius: 6px;
 }
 
 .credits-counter .credits-optional-title {
 	font-size: 12px;
 	margin-top: -6px;
+	border-radius: 6px;
 }
 
 .credits-counter .credits-optional-control {
