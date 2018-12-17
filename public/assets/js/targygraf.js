@@ -736,11 +736,11 @@ Array.prototype.remove = function() {
 
 			$(this).css('z-index', '101');
 			$('.fade').show();
-			$('.credits-counter  .credits-optional-container').css('z-index', '101').css('background-color', 'white');
+			$('.credits-counter  .credits-optional-container, .credits-counter  .credits-optional-container  .credits-optional-title').css('z-index', '101').css('background-color', 'white');
 
 		}, function() {
 
-			$('.credits-counter  .credits-optional-container').css('z-index', '').css('background-color', '');
+			$('.credits-counter  .credits-optional-container, .credits-counter  .credits-optional-container  .credits-optional-title').css('z-index', '').css('background-color', '');
 			$('.fade').hide();
 			$(this).css('z-index', '');
 		});
