@@ -134,10 +134,7 @@
                 {
                     "code": "VEMKLE1220A",
                     "name": "Angol II.",
-                    "credits": 0,
-                    "prerequisites": [
-                        "VEMKLE1120A"
-                    ]
+                    "credits": 0
                 },
                 {
                     "code": "VEMKLE12X0A",
@@ -147,10 +144,7 @@
                 {
                     "code": "VEPETO2222A",
                     "name": "Testnevelés II.",
-                    "credits": 0,
-                    "prerequisites": [
-                        "VEPETO1122A"
-                    ]
+                    "credits": 0
                 }
             ]
         },
@@ -230,10 +224,7 @@
                 {
                     "code": "VEMKLE2120A",
                     "name": "Angol III.",
-                    "credits": 0,
-                    "prerequisites": [
-                        "VEMKLE1220A"
-                    ]
+                    "credits": 0
                 },
                 {
                     "code": "VEMKLE22X0A",
@@ -243,10 +234,7 @@
                 {
                     "code": "VEPETO3122A",
                     "name": "Testnevelés III.",
-                    "credits": 0,
-                    "prerequisites": [
-                        "VEPETO2222A"
-                    ]
+                    "credits": 0
                 }
             ]
         },
@@ -333,18 +321,12 @@
                 {
                     "code": "VEMKLE2220A",
                     "name": "Angol IV.",
-                    "credits": 0,
-                    "prerequisites": [
-                        "VEMKLE2120A"
-                    ]
+                    "credits": 0
                 },
                 {
                     "code": "VEPETO4222A",
                     "name": "Testnevelés IV.",
-                    "credits": 0,
-                    "prerequisites": [
-                        "VEPETO3122A"
-                    ]
+                    "credits": 0
                 }
             ]
         },

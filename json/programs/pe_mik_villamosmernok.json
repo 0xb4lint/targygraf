@@ -48,7 +48,7 @@
                     "credits": 0
                 },
                 {
-                    "code": "vu5CDhF8",
+                    "code": "VEPETO1122A",
                     "name": "Testnevelés I.",
                     "credits": 0
                 }
@@ -117,18 +117,12 @@
                 {
                     "code": "VEMKLE1220A",
                     "name": "Angol II.",
-                    "credits": 0,
-                    "prerequisites": [
-                        "VEMKLE1120A"
-                    ]
+                    "credits": 0
                 },
                 {
-                    "code": "tBox6q5N",
+                    "code": "VEPETO2222A",
                     "name": "Testnevelés II.",
-                    "credits": 0,
-                    "prerequisites": [
-                        "vu5CDhF8"
-                    ]
+                    "credits": 0
                 }
             ]
         },
@@ -197,10 +191,7 @@
                 {
                     "code": "VEMKLE2120A",
                     "name": "Angol III.",
-                    "credits": 0,
-                    "prerequisites": [
-                        "VEMKLE1220A"
-                    ]
+                    "credits": 0
                 },
                 {
                     "code": "VEMKLE22X0A",
@@ -208,12 +199,9 @@
                     "credits": 0
                 },
                 {
-                    "code": "W5fDJS5A",
+                    "code": "VEPETO3122A",
                     "name": "Testnevelés III.",
-                    "credits": 0,
-                    "prerequisites": [
-                        "tBox6q5N"
-                    ]
+                    "credits": 0
                 },
                 {
                     "code": "VEMIVIB1X0V",
@@ -294,18 +282,12 @@
                 {
                     "code": "VEMKLE2220A",
                     "name": "Angol IV.",
-                    "credits": 0,
-                    "prerequisites": [
-                        "VEMKLE2120A"
-                    ]
+                    "credits": 0
                 },
                 {
-                    "code": "m7UEmQYT",
+                    "code": "VEPETO4222A",
                     "name": "Testnevelés IV.",
-                    "credits": 0,
-                    "prerequisites": [
-                        "W5fDJS5A"
-                    ]
+                    "credits": 0
                 }
             ]
         },
@@ -853,7 +835,7 @@
                     ]
                 },
                 {
-                    "code": "MIGAB512J",
+                    "code": "VEMIGAB512J",
                     "name": "Iparjogvédelem és innovációmenedzsment",
                     "credits": 2,
                     "prerequisites": [
@@ -861,7 +843,7 @@
                     ]
                 },
                 {
-                    "code": "MIGAB512Z",
+                    "code": "VEMIGAB512Z",
                     "name": "Szellemitulajdon-védelem",
                     "credits": 2,
                     "prerequisites": [

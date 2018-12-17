@@ -370,17 +370,12 @@ CREDITS COUNTER
 	width: 300px;
 	display: inline-block;
 	position: relative;
+	padding: 2px 0px;
 }
 
 .credits-counter .credits-optional-title {
 	font-size: 12px;
 	margin-top: -6px;
-}
-
-.credits-counter .credits-optional-container {
-	position: relative;
-	display: inline-block;
-	padding: 2px;
 }
 
 .credits-counter .credits-optional-control {
