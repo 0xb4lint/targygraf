@@ -9,7 +9,7 @@
 
 	@include('parts.program-selector', ['hidden' => true])
 
-	<h1><a href="{{ route('university', ['university' => $university]) }}" class="muted">{{ $university->name }}</a> - {{ $program->name }}</h1>
+	<h1><a href="{{ route('university', ['university' => $university]) }}" class="muted">{{ $university->name }}</a> – {{ $program->name }}</h1>
 	@if ( $program->description )
 		<div class="program-description">
 			{{ $program->description }}
