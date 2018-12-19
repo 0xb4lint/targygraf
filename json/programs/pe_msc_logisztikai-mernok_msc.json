@@ -160,6 +160,11 @@
                     ]
                 },
                 {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
                     "code": "VEMIINMX1M",
                     "name": "Diplomalmunka",
                     "credits": 15,
@@ -175,7 +180,7 @@
             "courses": [
                 {
                     "code": "VEMISAM454I",
-                    "name": "Intelligens irányító rendszerek",
+                    "name": "Intelligens irányító rendszerek (!)",
                     "credits": 5,
                     "prerequisites": [
                         "___20___"
@@ -294,12 +299,12 @@
                 },
                 {
                     "code": "VEMISA5312I",
-                    "name": "* Szemelvények a magyar és a világirodalom történetéből",
+                    "name": "Szemelvények a magyar és a világirodalom történetéből *",
                     "credits": 3
                 },
                 {
                     "code": "VEMISA5312Z",
-                    "name": "* Zenetörténet",
+                    "name": "Zenetörténet *",
                     "credits": 3
                 },
                 {
@@ -309,17 +314,17 @@
                 },
                 {
                     "code": "VEMISA5312F",
-                    "name": "* Fejezetek a természettudományok történertéből",
+                    "name": "Fejezetek a természettudományok történertéből *",
                     "credits": 3
                 },
                 {
                     "code": "VEMIINB412U",
-                    "name": "* Magyar utazók, földrajzi felfedezők öt világrészen",
+                    "name": "Magyar utazók, földrajzi felfedezők öt világrészen *",
                     "credits": 3
                 },
                 {
                     "code": "VEMIGAB512J",
-                    "name": "* Iparjogvédelem és innovációmenedzsment",
+                    "name": "Iparjogvédelem és innovációmenedzsment *",
                     "credits": 2
                 }
             ]
@@ -335,12 +340,12 @@
                 },
                 {
                     "code": "VEMKSA1212M",
-                    "name": "* Az európai művészet története",
+                    "name": "Az európai művészet története *",
                     "credits": 3
                 },
                 {
                     "code": "VEMISA5312G",
-                    "name": "* Gondolkodó magyarok",
+                    "name": "Gondolkodó magyarok *",
                     "credits": 3
                 },
                 {
@@ -350,12 +355,12 @@
                 },
                 {
                     "code": "VEMIMA5312T",
-                    "name": "* Szemelvények a matematika történetéből",
+                    "name": "Szemelvények a matematika történetéből *",
                     "credits": 3
                 },
                 {
                     "code": "VEMIGAB512Z",
-                    "name": "* Szellemitulajdon-védelem",
+                    "name": "Szellemitulajdon-védelem *",
                     "credits": 2
                 }
             ]
