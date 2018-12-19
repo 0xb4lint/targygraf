@@ -1,83 +1,66 @@
 {
     "name": "Mérnök informatikus MSc",
-    "description": "Mérnök informatikus MSc szak - nappali tagozat tanterve",
-    "curriculum_updated_at": "2012-03-20",
+    "description": "Mérnök informatikus MSc szak – nappali tagozat tanterve",
+    "curriculum_updated_at": "2017-10-24",
     "course_blocks": [
         {
-            "name": "1. félév",
+            "name": "Tavaszi félév 1.",
             "row": 0,
             "courses": [
                 {
-                    "code": "VEMIMAM144M",
-                    "name": "Matematikai analízis",
+                    "code": "VEMIVIM254E",
+                    "name": "Diszkrét és folytonos dinamikus rendszerek elmélete",
                     "credits": 5
                 },
                 {
-                    "code": "VEMISAM213I",
-                    "name": "Információelmélet",
+                    "code": "VEMISAB512S",
+                    "name": "A számítástudomány alapjai",
                     "credits": 3
                 },
                 {
-                    "code": "VEMISAM344S",
-                    "name": "Számítógép-vezérelt szabályozások elmélete",
-                    "credits": 5,
-                    "prerequisites": [
-                        "(VEMIMAM144M)"
-                    ]
-                },
-                {
-                    "code": "VEMISAM144D",
-                    "name": "Diszkrét eseményű rendszerek (angolul)",
-                    "credits": 5
-                },
-                {
-                    "code": "VEMISAM144K",
-                    "name": "Kombinatorikus módszerek és algoritmusok (angolul)",
-                    "credits": 5
-                },
-                {
-                    "code": "VEMISAM144B",
-                    "name": "Információs rendszerek biztonságtechnikája",
-                    "credits": 5
+                    "code": "VEMIVIM233A",
+                    "name": "Haladó adatbázis-kezelő rendszerek",
+                    "credits": 4
                 },
                 {
                     "code": null,
-                    "name": "Kötelezően választandó gazdasági\/humán tárgy",
+                    "name": "Specializáció",
+                    "credits": 10,
+                    "course_block_references": [
+                        "Szoftverrendszerek és számítógép hálózatok specializáció",
+                        "Műszaki és egészségügyi alkalmazások specializáció"
+                    ]
+                },
+                {
+                    "code": "VEMIINM255L",
+                    "name": "Önálló laborgyakorlat",
+                    "credits": 5
+                }
+                {
+                    "code": null,
+                    "name": "Kötelezően választandó differenciált szakmai tárgy",
                     "credits": 3,
                     "course_block_references": [
-                        "Kötelezően választandó gazdasági\/humán tárgy őszi félév",
-                        "Kötelezően választandó gazdasági\/humán tárgy tavaszi félév"
+                        "Kötelezően választandó differenciált szakmai tárgyak Szoftverrendszerek és számítógép hálózatok specializáció esetén",
+                        "Kötelezően választandó differenciált szakmai tárgyak Szoftverrendszerek és számítógép hálózatok specializáció esetén #2",
+                        "Kötelezően választandó differenciált szakmai tárgyak Műszaki és egészségügyi alkalmazások specializáció esetén",
+                        "Kötelezően választandó differenciált szakmai tárgyak Műszaki és egészségügyi alkalmazások specializáció esetén #2"
                     ]
                 }
             ]
         },
         {
-            "name": "2. félév",
+            "name": "Őszi félév 1.",
             "row": 0,
             "courses": [
                 {
-                    "code": "VEMISAB512S",
-                    "name": "A számítástudomány alapjai",
-                    "credits": 3
-                },
-                {
-                    "code": "VEMIKNM112K",
-                    "name": "Képi információ mérése",
-                    "credits": 3
+                    "code": "VEMIMAM164N",
+                    "name": "Numerikus analízis",
+                    "credits": 5
                 },
                 {
                     "code": "VEMISAM244O",
-                    "name": "Operációkutatás I. (angolul)",
-                    "credits": 5
-                },
-                {
-                    "code": "VEMISAM254M",
-                    "name": "Mesterséges intelligencia, szakértői rendszerek",
-                    "credits": 5
-                },
-                {
-                    "code": "VEMIMAM164N",
-                    "name": "Numerikus analízis",
+                    "name": "Haladó operációkutatás",
                     "credits": 5
                 },
                 {
@@ -87,11 +70,11 @@
                 },
                 {
                     "code": null,
-                    "name": "Kötelezően választandó gazdasági\/humán tárgy",
-                    "credits": 3,
+                    "name": "Specializáció",
+                    "credits": 15,
                     "course_block_references": [
-                        "Kötelezően választandó gazdasági\/humán tárgy őszi félév",
-                        "Kötelezően választandó gazdasági\/humán tárgy tavaszi félév"
+                        "Szoftverrendszerek és számítógép hálózatok specializáció",
+                        "Műszaki és egészségügyi alkalmazások specializáció"
                     ]
                 }
             ]
@@ -102,25 +85,26 @@
             "courses": [
                 {
                     "code": null,
-                    "name": "Kötelezően választandó gazdasági\/humán tárgy",
-                    "credits": 2,
+                    "name": "Kötelezően választandó gazdasági\/humán tárgy",
+                    "credits": 5,
                     "course_block_references": [
-                        "Kötelezően választandó gazdasági\/humán tárgy őszi félév",
-                        "Kötelezően választandó gazdasági\/humán tárgy tavaszi félév"
+                        "Kötelezően választandó humán\/gazdasági blokk"
                     ]
                 },
                 {
                     "code": null,
-                    "name": "Kötelezően választandó differenciált tárgy",
-                    "credits": 10,
+                    "name": "Kötelezően választandó differenciált szakmai tárgy",
+                    "credits": 7,
                     "course_block_references": [
-                        "Kötelezően választandó differenciált tárgy őszi félév",
-                        "Kötelezően választandó differenciált tárgy tavaszi félév"
+                        "Kötelezően választandó differenciált szakmai tárgyak Szoftverrendszerek és számítógép hálózatok specializáció esetén",
+                        "Kötelezően választandó differenciált szakmai tárgyak Szoftverrendszerek és számítógép hálózatok specializáció esetén #2",
+                        "Kötelezően választandó differenciált szakmai tárgyak Műszaki és egészségügyi alkalmazások specializáció esetén",
+                        "Kötelezően választandó differenciált szakmai tárgyak Műszaki és egészségügyi alkalmazások specializáció esetén #2"
                     ]
                 },
                 {
                     "code": "___OPTIONAL___",
-                    "name": "Szabadon választható",
+                    "name": "Szabadon választható tárgy",
                     "credits": 3
                 },
                 {
@@ -139,25 +123,26 @@
             "courses": [
                 {
                     "code": null,
-                    "name": "Kötelezően választandó gazdasági\/humán tárgy",
-                    "credits": 2,
+                    "name": "Kötelezően választandó gazdasági\/humán tárgy",
+                    "credits": 5,
                     "course_block_references": [
-                        "Kötelezően választandó gazdasági\/humán tárgy őszi félév",
-                        "Kötelezően választandó gazdasági\/humán tárgy tavaszi félév"
+                        "Kötelezően választandó humán\/gazdasági blokk"
                     ]
                 },
                 {
                     "code": null,
-                    "name": "Kötelezően választandó differenciált tárgy",
-                    "credits": 10,
+                    "name": "Kötelezően választandó differenciált szakmai tárgy",
+                    "credits": 7,
                     "course_block_references": [
-                        "Kötelezően választandó differenciált tárgy őszi félév",
-                        "Kötelezően választandó differenciált tárgy tavaszi félév"
+                        "Kötelezően választandó differenciált szakmai tárgyak Szoftverrendszerek és számítógép hálózatok specializáció esetén",
+                        "Kötelezően választandó differenciált szakmai tárgyak Szoftverrendszerek és számítógép hálózatok specializáció esetén #2",
+                        "Kötelezően választandó differenciált szakmai tárgyak Műszaki és egészségügyi alkalmazások specializáció esetén",
+                        "Kötelezően választandó differenciált szakmai tárgyak Műszaki és egészségügyi alkalmazások specializáció esetén #2"
                     ]
                 },
                 {
                     "code": "___OPTIONAL___",
-                    "name": "Szabadon választható",
+                    "name": "Szabadon választható tárgy",
                     "credits": 3
                 },
                 {
@@ -171,354 +156,309 @@
             ]
         },
         {
-            "name": "Kötelezően választandó differenciált tárgy őszi félév",
+            "name": "Szoftverrendszerek és számítógép hálózatok specializáció",
             "row": 1,
             "courses": [
                 {
-                    "code": "VEMIVIM444D",
-                    "name": "Digitális jelfeldolgozás",
-                    "credits": 5,
-                    "prerequisites": [
-                        "___20___"
-                    ]
+                    "code": "VEMIVIM234F",
+                    "name": "Felhő programozás",
+                    "credits": 5
                 },
                 {
-                    "code": "VEMIVIM412M",
-                    "name": "Méréstechnika",
-                    "credits": 3,
-                    "prerequisites": [
-                        "___20___"
-                    ]
+                    "code": "VEMIVIM254N",
+                    "name": "Nagyvállalati rendszerintegráció",
+                    "credits": 5
                 },
                 {
-                    "code": "VEMIKNM454G",
-                    "name": "Számítógépes vizualizáció és grafika",
-                    "credits": 5,
-                    "prerequisites": [
-                        "___20___"
-                    ]
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
                 },
                 {
-                    "code": "VEMISAM453P",
-                    "name": "Logikai programozás, Prolog",
-                    "credits": 4,
-                    "prerequisites": [
-                        "___20___"
-                    ]
+                    "code": "VEMISAM144E",
+                    "name": "Információelmélet és kombinatorika",
+                    "credits": 5
                 },
                 {
-                    "code": "VEMIIRM444E",
-                    "name": "Egészségügyi információs rendszerek",
-                    "credits": 5,
-                    "prerequisites": [
-                        "___20___"
-                    ]
+                    "code": "VEMISAM154E",
+                    "name": "Rendszerelemzés és rendszertervezés",
+                    "credits": 5
                 },
                 {
-                    "code": "VEMISAM454I",
-                    "name": "Intelligens irányító rendszerek",
-                    "credits": 5,
-                    "prerequisites": [
-                        "___20___"
-                    ]
-                },
-                {
-                    "code": "VEMKSA5144D",
-                    "name": "Dinamikus rendszerek paramétereinek becslése",
-                    "credits": 5,
-                    "prerequisites": [
-                        "___20___"
-                    ]
-                },
-                {
-                    "code": "VEMISAM554O",
-                    "name": "Optimalizálás műszaki rendszerekben",
-                    "credits": 5,
-                    "prerequisites": [
-                        "___20___"
-                    ]
-                },
-                {
-                    "code": "VEMIVIM544E",
-                    "name": "Élettani ismeretek",
-                    "credits": 5,
-                    "prerequisites": [
-                        "___20___"
-                    ]
-                },
-                {
-                    "code": "VEMIVIM544B",
-                    "name": "Bioelektromos jelenségek",
-                    "credits": 5,
-                    "prerequisites": [
-                        "___20___"
-                    ]
-                },
-                {
-                    "code": "VEMIVIM544D",
-                    "name": "Számítógépes döntéstámogatás",
-                    "credits": 5,
-                    "prerequisites": [
-                        "___20___"
-                    ]
-                },
-                {
-                    "code": "VEMISAM113T",
-                    "name": "Tömegkiszolgálás",
-                    "credits": 3,
-                    "prerequisites": [
-                        "___20___"
-                    ]
-                },
-                {
-                    "code": "VEMIINM556U",
-                    "name": "Útválasztás a nagyvállalati hálózatokban",
-                    "credits": 6,
-                    "prerequisites": [
-                        "VEMICO5234c"
-                    ]
-                },
-                {
-                    "code": "VEMIINM556K",
-                    "name": "Kapcsolás a nagyvállalati hálózatokban",
-                    "credits": 6,
-                    "prerequisites": [
-                        "VEMICO5234c"
-                    ]
-                },
-                {
-                    "code": "VEMISAM212E",
-                    "name": "Ellátási láncok modellezése",
-                    "credits": 3,
-                    "prerequisites": [
-                        "___20___"
-                    ]
-                },
-                {
-                    "code": "VEMISA3143G",
-                    "name": "Gyártórendszerek modellezése",
-                    "credits": 4,
-                    "prerequisites": [
-                        "___20___"
-                    ]
+                    "code": "VEMISAM144B",
+                    "name": "Információs rendszerek biztonságtechnikája",
+                    "credits": 5
                 }
             ]
         },
         {
-            "name": "Kötelezően választandó differenciált tárgy tavaszi félév",
+            "name": "Műszaki és egészségügyi alkalmazások specializáció",
             "row": 1,
             "courses": [
                 {
-                    "code": "VEMISAM444F",
-                    "name": "Fordítóprogramok",
-                    "credits": 5,
+                    "code": "VEMIVIM444D",
+                    "name": "Digitális jelfeldolgozás",
+                    "credits": 5
+                },
+                {
+                    "code": "VEMIVIM254L",
+                    "name": "Számítógépes látás",
+                    "credits": 5
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "VEMIVIM144I",
+                    "name": "Információelmélet és sztochasztika",
+                    "credits": 5
+                },
+                {
+                    "code": "VEMIVIM142I",
+                    "name": "Mesterséges intelligencia",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMISAM142S",
+                    "name": "Szakértői rendszerek",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMIVIM133P",
+                    "name": "Paraméterbecslés",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választandó differenciált szakmai tárgyak Szoftverrendszerek és számítógép hálózatok specializáció esetén",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VEMIINM556H",
+                    "name": "Hibaelhárítás nagyvállalati hálózatokban (!)",
+                    "credits": 6
+                },
+                {
+                    "code": "VEMIINM556K",
+                    "name": "Kapcsolás nagyvállalati hálózatokban (!)",
+                    "credits": 6
+                },
+                {
+                    "code": "VEMIINM556U",
+                    "name": "Útválasztás nagyvállalati hálózatokban (!)",
+                    "credits": 6
+                },
+                {
+                    "code": "VEMIINM353M",
+                    "name": "Infokommunikációs rendszerek méréstechnikája",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMISAM453P",
+                    "name": "Logikai és funkcionális programozás",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMIMAM134S",
+                    "name": "Szerver oldali .Net programozás (!)",
+                    "credits": 5
+                },
+                {
+                    "code": "VEMISAM154J",
+                    "name": "Szerver oldali JavaScript programozás",
+                    "credits": 5
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választandó differenciált szakmai tárgyak Szoftverrendszerek és számítógép hálózatok specializáció esetén #2",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VEMISAM153W",
+                    "name": "Web alkalmazások tesztelésének korszerű módszerei",
+                    "credits": 4,
                     "prerequisites": [
-                        "___20___"
+                        "VEMIMAM134S"
                     ]
                 },
                 {
-                    "code": "VEMIIRM444P",
-                    "name": "Párhuzamos programozás",
-                    "credits": 5,
+                    "code": "VEMISAM153H",
+                    "name": "Hálózatszintézis és optimalizálás",
+                    "credits": 4,
                     "prerequisites": [
-                        "___20___"
-                    ]
-                },
-                {
-                    "code": "VEMIMAM444D",
-                    "name": "Diszkrét és folytonos dinamikai rendszerek  matematikai alapjai (angol)",
-                    "credits": 5,
-                    "prerequisites": [
-                        "___20___"
-                    ]
-                },
-                {
-                    "code": "VEMINAM412N",
-                    "name": "Nanotechnológia (angol)",
-                    "credits": 3,
-                    "prerequisites": [
-                        "___20___"
-                    ]
-                },
-                {
-                    "code": "VEMISAM444D",
-                    "name": "Operációkutatás II. (angol)",
-                    "credits": 5,
-                    "prerequisites": [
-                        "___20___",
                         "VEMISAM244O"
                     ]
                 },
                 {
-                    "code": "VEMISAM444H",
-                    "name": "Szenzorhálózatok",
-                    "credits": 5,
-                    "prerequisites": [
-                        "___20___"
-                    ]
-                },
-                {
-                    "code": "VEMIKNM412B",
-                    "name": "Biometria a számítógépes személyazonosításban és az egészségügyi alkalmazásokban",
+                    "code": "VEMISAM232F",
+                    "name": "Fordítóprogramok",
                     "credits": 3,
                     "prerequisites": [
-                        "___20___",
-                        "VEMIKNM112K"
-                    ]
-                },
-                {
-                    "code": "VEMINAM412K",
-                    "name": "Kémiai informatika",
-                    "credits": 3,
-                    "prerequisites": [
-                        "___20___"
-                    ]
-                },
-                {
-                    "code": "VEMIVIM544M",
-                    "name": "Dinamikus rendszerek irányítási és diagnosztikai célú modellezése",
-                    "credits": 5,
-                    "prerequisites": [
-                        "___20___"
-                    ]
-                },
-                {
-                    "code": "VEMIVIM544O",
-                    "name": "Orvosi méréselmélet",
-                    "credits": 5,
-                    "prerequisites": [
-                        "___20___"
-                    ]
-                },
-                {
-                    "code": "VEMIVIM554E",
-                    "name": "Egészségügyi adatbázisok",
-                    "credits": 5,
-                    "prerequisites": [
-                        "___20___"
+                        "VEMISAB512S"
                     ]
                 },
                 {
                     "code": "VEMISAM213H",
                     "name": "Hálózatelemzés",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMIIRM444P",
+                    "name": "Párhuzamos programozás",
+                    "credits": 5
+                },
+                {
+                    "code": "VEMISAM212K",
+                    "name": "Haladó kombinatorika és gráfelmélet",
                     "credits": 3,
                     "prerequisites": [
-                        "___20___"
-                    ]
-                },
-                {
-                    "code": "VEMICO5234c",
-                    "name": "CISCO II.",
-                    "credits": 4
-                },
-                {
-                    "code": "VEMIINM556H",
-                    "name": "Hibaelhárítás a nagyvállalati hálózatokban",
-                    "credits": 6,
-                    "prerequisites": [
-                        "VEMICO5234c"
-                    ]
-                },
-                {
-                    "code": "VEMIINM353M",
-                    "name": "Infokommunikációs rendszerek méréstechnikája",
-                    "credits": 4,
-                    "prerequisites": [
-                        "___20___"
-                    ]
-                },
-                {
-                    "code": "VEMIINM353V",
-                    "name": "VoIP és mobil alapú technológiák",
-                    "credits": 4,
-                    "prerequisites": [
-                        "___20___"
-                    ]
-                },
-                {
-                    "code": "VEMISAM256L",
-                    "name": "Logisztikai szoftverek",
-                    "credits": 6,
-                    "prerequisites": [
-                        "___20___"
+                        "VEMISAM144E"
                     ]
                 }
             ]
         },
         {
-            "name": "Kötelezően választandó gazdasági\/humán tárgy őszi félév",
+            "name": "Kötelezően választandó differenciált szakmai tárgyak Műszaki és egészségügyi alkalmazások specializáció esetén",
             "row": 1,
             "courses": [
                 {
-                    "code": "VEMISA5312I",
-                    "name": "Szemelvények a magyar és a világirodalom történetéből",
-                    "credits": 3
+                    "code": "VEMIVIM554E",
+                    "name": "Egészségügyi adatbázisok",
+                    "credits": 5
                 },
                 {
-                    "code": "VEMISA5312Z",
-                    "name": "Zenetörténet",
-                    "credits": 3
+                    "code": "VEMIVIM544O",
+                    "name": "Orvosi méréselmélet",
+                    "credits": 5
                 },
                 {
-                    "code": "VEMIKN5312V",
-                    "name": "A vizuális médiafejlődéstörténete",
-                    "credits": 3
+                    "code": "VEMIVIM133J",
+                    "name": "Egészségügyi jelfeldolgozás",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VEMIVIM444D"
+                    ]
                 },
                 {
-                    "code": "VEGTGAB244V",
-                    "name": "Vállalkozói ismeretek",
-                    "credits": 6
+                    "code": "VEMISAM154R",
+                    "name": "Beágyazott rendszerek fejlesztése",
+                    "credits": 5,
+                    "prerequisites": [
+                        "VEMIVIM444D"
+                    ]
                 },
                 {
-                    "code": "VEMISA5312F",
-                    "name": "Fejezetek a természettudományok történetéből",
-                    "credits": 3
+                    "code": "VEMISAM444H",
+                    "name": "Szenzorhálózatok",
+                    "credits": 5,
+                    "prerequisites": [
+                        "VEMIVIM444D"
+                    ]
                 },
                 {
-                    "code": "VEMIVIM542F",
-                    "name": "Egészségügyi finanszírozási ismeretek",
-                    "credits": 3
-                },
-                {
-                    "code": "VEMIINB412U",
-                    "name": "Magyar utazók, földrajzi felfedezők öt világrészen",
-                    "credits": 3
+                    "code": "VEMIVIM254M",
+                    "name": "Modellezés mérnöki alapelvek felhasználásával",
+                    "credits": 5
                 }
             ]
         },
         {
-            "name": "Kötelezően választandó gazdasági\/humán tárgy tavaszi félév",
+            "name": "Kötelezően választandó differenciált szakmai tárgyak Műszaki és egészségügyi alkalmazások specializáció esetén #2",
             "row": 1,
             "courses": [
                 {
-                    "code": "VEMKSA1212M",
-                    "name": "Az európai művészet története",
-                    "credits": 3
+                    "code": "VEMIVIM254S",
+                    "name": "Szabályozáselmélet",
+                    "credits": 5,
+                    "prerequisites": [
+                        "VEMIVIM254E"
+                    ]
                 },
                 {
-                    "code": "VEMISA5312G",
-                    "name": "Gondolkodó magyarok",
-                    "credits": 3
+                    "code": "VEMISAM454I",
+                    "name": "Intelligens irányító rendszerek",
+                    "credits": 5,
+                    "prerequisites": [
+                        "VEMIVIM254E"
+                    ]
+                },
+                {
+                    "code": "VEMIVIM254R",
+                    "name": "Robottechnika",
+                    "credits": 5
+                },
+                {
+                    "code": "VEMIVIM544B",
+                    "name": "Bioelektromos jelenségek \u271D",
+                    "credits": 5
+                },
+                {
+                    "code": "VEMIVIM544D",
+                    "name": "Orvosi döntéstámogatás \u271D",
+                    "credits": 5
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választandó humán\/gazdasági blokk",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VEMIVIM544E",
+                    "name": "Élettani ismeretek",
+                    "credits": 5
                 },
                 {
                     "code": "VEMIKN5312E",
-                    "name": "Ergonómia",
+                    "name": "Szoftver ergonómia",
                     "credits": 3
                 },
                 {
-                    "code": "VEMISA5312M",
-                    "name": "Információs rendszerek minőségbiztosítása",
+                    "code": "VEMISAM154I",
+                    "name": "Üzleti intelligencia rendszerek",
+                    "credits": 5
+                },
+                {
+                    "code": "VEGTGAB244V",
+                    "name": "Vállalkozói ismeretek *",
+                    "credits": 5
+                },
+                {
+                    "code": "VEMIGAB512J",
+                    "name": "Iparjogvédelem és innováció menedzsment *",
                     "credits": 3
                 },
                 {
-                    "code": "VEMIMA5312T",
-                    "name": "Szemelvények a matematika történetéből",
+                    "code": "VEMIINM323D",
+                    "name": "Demonstrátori tevékenység",
                     "credits": 3
                 },
                 {
-                    "code": "VEMIVIM522A",
-                    "name": "Egészségügyi adatszabványok",
-                    "credits": 3
+                    "code": "VETKACM112I",
+                    "name": "Interkulturális kompetencia és többnyelvűség",
+                    "credits": 2
+                },
+                {
+                    "code": "VEGTMEB122K",
+                    "name": "Üzleti kommunikáció",
+                    "credits": 2
+                },
+                {
+                    "code": "VETKMNBR14M",
+                    "name": "Magyar, mint idegen nyelv I. **",
+                    "credits": 4
+                },
+                {
+                    "code": "VETKMNBR24M",
+                    "name": "Magyar, mint idegen nyelv II. **",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VETKMNBR14M"
+                    ]
                 }
             ]
         }
