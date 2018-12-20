@@ -41,10 +41,10 @@
                     "name": "Kötelezően választandó differenciált szakmai tárgy",
                     "credits": 3,
                     "course_block_references": [
-                        "Kötelezően választandó differenciált szakmai tárgyak Szoftverrendszerek és számítógép hálózatok specializáció esetén",
-                        "Kötelezően választandó differenciált szakmai tárgyak Szoftverrendszerek és számítógép hálózatok specializáció esetén #2",
-                        "Kötelezően választandó differenciált szakmai tárgyak Műszaki és egészségügyi alkalmazások specializáció esetén",
-                        "Kötelezően választandó differenciált szakmai tárgyak Műszaki és egészségügyi alkalmazások specializáció esetén #2"
+                        "Kötelezően választandó differenciált szakmai tárgyak:\nSzoftverrendszerek és számítógép hálózatok specializáció",
+                        "Kötelezően választandó differenciált szakmai tárgyak:\nSzoftverrendszerek és számítógép hálózatok specializáció #2",
+                        "Kötelezően választandó differenciált szakmai tárgyak:\nMűszaki és egészségügyi alkalmazások specializáció",
+                        "Kötelezően választandó differenciált szakmai tárgyak:\nMűszaki és egészségügyi alkalmazások specializáció #2"
                     ]
                 }
             ]
@@ -85,10 +85,10 @@
             "courses": [
                 {
                     "code": null,
-                    "name": "Kötelezően választandó gazdasági\/humán tárgy",
+                    "name": "Kötelezően választandó gazdasági/humán tárgy",
                     "credits": 5,
                     "course_block_references": [
-                        "Kötelezően választandó humán\/gazdasági blokk"
+                        "Kötelezően választandó humán/gazdasági blokk"
                     ]
                 },
                 {
@@ -96,10 +96,10 @@
                     "name": "Kötelezően választandó differenciált szakmai tárgy",
                     "credits": 7,
                     "course_block_references": [
-                        "Kötelezően választandó differenciált szakmai tárgyak Szoftverrendszerek és számítógép hálózatok specializáció esetén",
-                        "Kötelezően választandó differenciált szakmai tárgyak Szoftverrendszerek és számítógép hálózatok specializáció esetén #2",
-                        "Kötelezően választandó differenciált szakmai tárgyak Műszaki és egészségügyi alkalmazások specializáció esetén",
-                        "Kötelezően választandó differenciált szakmai tárgyak Műszaki és egészségügyi alkalmazások specializáció esetén #2"
+                        "Kötelezően választandó differenciált szakmai tárgyak:\nSzoftverrendszerek és számítógép hálózatok specializáció",
+                        "Kötelezően választandó differenciált szakmai tárgyak:\nSzoftverrendszerek és számítógép hálózatok specializáció #2",
+                        "Kötelezően választandó differenciált szakmai tárgyak:\nMűszaki és egészségügyi alkalmazások specializáció",
+                        "Kötelezően választandó differenciált szakmai tárgyak:\nMűszaki és egészségügyi alkalmazások specializáció #2"
                     ]
                 },
                 {
@@ -123,10 +123,10 @@
             "courses": [
                 {
                     "code": null,
-                    "name": "Kötelezően választandó gazdasági\/humán tárgy",
+                    "name": "Kötelezően választandó gazdasági/humán tárgy",
                     "credits": 5,
                     "course_block_references": [
-                        "Kötelezően választandó humán\/gazdasági blokk"
+                        "Kötelezően választandó humán/gazdasági blokk"
                     ]
                 },
                 {
@@ -233,7 +233,7 @@
             ]
         },
         {
-            "name": "Kötelezően választandó differenciált szakmai tárgyak Szoftverrendszerek és számítógép hálózatok specializáció esetén",
+            "name": "Kötelezően választandó differenciált szakmai tárgyak:\nSzoftverrendszerek és számítógép hálózatok specializáció",
             "row": 1,
             "courses": [
                 {
@@ -274,7 +274,7 @@
             ]
         },
         {
-            "name": "Kötelezően választandó differenciált szakmai tárgyak Szoftverrendszerek és számítógép hálózatok specializáció esetén #2",
+            "name": "Kötelezően választandó differenciált szakmai tárgyak:\nSzoftverrendszerek és számítógép hálózatok specializáció #2",
             "row": 1,
             "courses": [
                 {
@@ -322,7 +322,7 @@
             ]
         },
         {
-            "name": "Kötelezően választandó differenciált szakmai tárgyak Műszaki és egészségügyi alkalmazások specializáció esetén",
+            "name": "Kötelezően választandó differenciált szakmai tárgyak:\nMűszaki és egészségügyi alkalmazások specializáció",
             "row": 1,
             "courses": [
                 {
@@ -367,7 +367,7 @@
             ]
         },
         {
-            "name": "Kötelezően választandó differenciált szakmai tárgyak Műszaki és egészségügyi alkalmazások specializáció esetén #2",
+            "name": "Kötelezően választandó differenciált szakmai tárgyak:\nMűszaki és egészségügyi alkalmazások specializáció #2",
             "row": 1,
             "courses": [
                 {
@@ -404,7 +404,7 @@
             ]
         },
         {
-            "name": "Kötelezően választandó humán\/gazdasági blokk",
+            "name": "Kötelezően választandó humán/gazdasági blokk",
             "row": 1,
             "courses": [
                 {
