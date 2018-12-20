@@ -359,8 +359,8 @@
                     "name": "Kötelezően választandó differenciált szakmai tárgy",
                     "credits": 8,
                     "course_block_references": [
-                        "Kötelezően választandó differenciált szakmai tárgyak (páratlan félév)",
-                        "Kötelezően választandó differenciált szakmai tárgyak (páros félév)"
+                        "Kötelezően választandó differenciált szakmai tárgyak\n(páratlan félév)",
+                        "Kötelezően választandó differenciált szakmai tárgyak\n(páros félév)"
                     ]
                 },
                 {
@@ -370,8 +370,8 @@
                     "course_block_references": [
                         "Villamosmérnöki választható tárgyak",
                         "Villamosmérnöki választható tárgyak #2",
-                        "Kötelezően választandó differenciált szakmai tárgyak (páratlan félév)",
-                        "Kötelezően választandó differenciált szakmai tárgyak (páros félév)"
+                        "Kötelezően választandó differenciált szakmai tárgyak\n(páratlan félév)",
+                        "Kötelezően választandó differenciált szakmai tárgyak\n(páros félév)"
                     ]
                 }
             ]
@@ -411,8 +411,8 @@
                     "name": "Kötelezően választandó differenciált szakmai tárgy",
                     "credits": 8,
                     "course_block_references": [
-                        "Kötelezően választandó differenciált szakmai tárgyak (páratlan félév)",
-                        "Kötelezően választandó differenciált szakmai tárgyak (páros félév)"
+                        "Kötelezően választandó differenciált szakmai tárgyak\n(páratlan félév)",
+                        "Kötelezően választandó differenciált szakmai tárgyak\n(páros félév)"
                     ]
                 },
                 {
@@ -422,8 +422,8 @@
                     "course_block_references": [
                         "Villamosmérnöki választható tárgyak",
                         "Villamosmérnöki választható tárgyak #2",
-                        "Kötelezően választandó differenciált szakmai tárgyak (páratlan félév)",
-                        "Kötelezően választandó differenciált szakmai tárgyak (páros félév)"
+                        "Kötelezően választandó differenciált szakmai tárgyak\n(páratlan félév)",
+                        "Kötelezően választandó differenciált szakmai tárgyak\n(páros félév)"
                     ]
                 },
                 {
@@ -444,8 +444,8 @@
                     "course_block_references": [
                         "Villamosmérnöki választható tárgyak",
                         "Villamosmérnöki választható tárgyak #2",
-                        "Kötelezően választandó differenciált szakmai tárgyak (páratlan félév)",
-                        "Kötelezően választandó differenciált szakmai tárgyak (páros félév)"
+                        "Kötelezően választandó differenciált szakmai tárgyak\n(páratlan félév)",
+                        "Kötelezően választandó differenciált szakmai tárgyak\n(páros félév)"
                     ]
                 },
                 {
@@ -464,7 +464,7 @@
             ]
         },
         {
-            "name": "Kötelezően választandó differenciált szakmai tárgyak (páratlan félév)",
+            "name": "Kötelezően választandó differenciált szakmai tárgyak\n(páratlan félév)",
             "row": 1,
             "courses": [
                 {
@@ -511,7 +511,7 @@
             ]
         },
         {
-            "name": "Kötelezően választandó differenciált szakmai tárgyak (páros félév)",
+            "name": "Kötelezően választandó differenciált szakmai tárgyak\n(páros félév)",
             "row": 1,
             "courses": [
                 {
