@@ -37,8 +37,8 @@
                     "name": "Kötelezően választandó gazdasági/humán tárgy",
                     "credits": 3,
                     "course_block_references": [
-                        "Kötelezően választandó humán/gazdasági blokk (Őszi félév)",
-                        "Kötelezően választandó humán/gazdasági blokk (Tavaszi félév)"
+                        "Kötelezően választandó humán/gazdasági blokk:\nŐszi félév",
+                        "Kötelezően választandó humán/gazdasági blokk:\nTavaszi félév"
                     ]
                 }
             ]
@@ -82,8 +82,8 @@
                     "name": "Kötelezően választandó gazdasági/humán tárgy",
                     "credits": 3,
                     "course_block_references": [
-                        "Kötelezően választandó humán/gazdasági blokk (Őszi félév)",
-                        "Kötelezően választandó humán/gazdasági blokk (Tavaszi félév)"
+                        "Kötelezően választandó humán/gazdasági blokk:\nŐszi félév",
+                        "Kötelezően választandó humán/gazdasági blokk:\nTavaszi félév"
                     ]
                 }
             ]
@@ -105,13 +105,13 @@
                     "name": "Kötelezően választandó differenciált szakmai tárgy",
                     "credits": 11,
                     "course_block_references": [
-                        "Kötelezően választandó differenciált szakmai tárgyak (Őszi félév)",
-                        "Kötelezően választandó differenciált szakmai tárgyak (Tavaszi félév)"
+                        "Kötelezően választandó differenciált szakmai tárgyak:\nŐszi félév",
+                        "Kötelezően választandó differenciált szakmai tárgyak:\nTavaszi félév"
                     ]
                 },
                 {
                     "code": "null",
-                    "name": "Diplomalabor, diplomamunka",
+                    "name": "Diplomadolgozat",
                     "credits": 15,
                     "course_block_references": [
                         "Diplomalabor, diplomamunka"
@@ -133,13 +133,13 @@
                     "name": "Kötelezően választandó differenciált szakmai tárgy",
                     "credits": 10,
                     "course_block_references": [
-                        "Kötelezően választandó differenciált szakmai tárgyak (Őszi félév)",
-                        "Kötelezően választandó differenciált szakmai tárgyak (Tavaszi félév)"
+                        "Kötelezően választandó differenciált szakmai tárgyak:\nŐszi félév",
+                        "Kötelezően választandó differenciált szakmai tárgyak:\nTavaszi félév"
                     ]
                 },
                 {
                     "code": "null",
-                    "name": "Diplomalabor, diplomamunka",
+                    "name": "Diplomadolgozat",
                     "credits": 15,
                     "course_block_references": [
                         "Diplomalabor, diplomamunka"
@@ -148,7 +148,7 @@
             ]
         },
         {
-            "name": "Diplomalabor, diplomamunka",
+            "name": "Diplomadolgozat",
             "row": 1,
             "courses": [
                 {
@@ -175,7 +175,7 @@
             ]
         },
         {
-            "name": "Kötelezően választandó differenciált szakmai tárgyak (Őszi félév)",
+            "name": "Kötelezően választandó differenciált szakmai tárgyak:\nŐszi félév",
             "row": 1,
             "courses": [
                 {
@@ -238,7 +238,7 @@
             ]
         },
         {
-            "name": "Kötelezően választandó differenciált szakmai tárgyak (Tavaszi félév)",
+            "name": "Kötelezően választandó differenciált szakmai tárgyak:\nTavaszi félév",
             "row": 1,
             "courses": [
                 {
@@ -284,7 +284,7 @@
             ]
         },
         {
-            "name": "Kötelezően választandó humán/gazdasági blokk (Őszi félév)",
+            "name": "Kötelezően választandó humán/gazdasági blokk:\nŐszi félév",
             "row": 1,
             "courses": [
                 {
@@ -330,7 +330,7 @@
             ]
         },
         {
-            "name": "Kötelezően választandó humán/gazdasági blokk (Tavaszi félév)",
+            "name": "Kötelezően választandó humán/gazdasági blokk:\nTavaszi félév",
             "row": 1,
             "courses": [
                 {
