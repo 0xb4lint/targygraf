@@ -55,6 +55,10 @@
 		</main>
 
 		<footer>
+			<ins class="adsbygoogle" data-ad-client="ca-pub-6543577519725877" data-ad-slot="8295171039" data-ad-format="auto" data-full-width-responsive="true"></ins>
+			<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
 			<iframe src="https://ghbtns.com/github-btn.html?user=valentinxxx&repo=targygraf&type=star&count=true&size=large" class="github"></iframe>
 			<div class="disclaimer">Az oldalon található információk nem tekinthetőek hivatalos forrásnak.</div>
 		</footer>
@@ -62,6 +66,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="{{ url('assets/js/jquery.tipsy.min.js') }}"></script>
 		<script src="{{ url('assets/js/targygraf.js') }}"></script>
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 		@yield('scripts')
 	</body>
 </html>
