@@ -17,7 +17,7 @@
 		<link rel="apple-touch-icon" href="{{ url('icon.png') }}">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
 		<link href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-		<link href="{{ url('assets/css/style.css') }}" rel="stylesheet">
+		<link href="{{ url('assets/css/style.css') }}?v=20190217" rel="stylesheet">
 		<link href="{{ url('assets/css/tipsy.css') }}" rel="stylesheet">
 		<script type="text/javascript">
 		(function(d, s, id) {
@@ -55,10 +55,7 @@
 		</main>
 
 		<footer>
-			<ins class="adsbygoogle" data-ad-client="ca-pub-6543577519725877" data-ad-slot="8295171039" data-ad-format="auto" data-full-width-responsive="true"></ins>
-			<script>
-				(adsbygoogle = window.adsbygoogle || []).push({});
-			</script>
+			@yield('footer')
 			<iframe src="https://ghbtns.com/github-btn.html?user=valentinxxx&repo=targygraf&type=star&count=true&size=large" class="github"></iframe>
 			<div class="disclaimer">Az oldalon található információk nem tekinthetőek hivatalos forrásnak.</div>
 		</footer>
