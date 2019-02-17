@@ -3,7 +3,6 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="initial-scale=1">
 		<meta name="keywords" content="tárgygráf, pannon egyetem, pe, bme, pte, pécs, műszaki, műegyetem, tanterv, mintatanterv, egyetem, pannon, gráf, kredit, félév, tárgyak, tárgy, tantárgy, előfeltétel, előtanulmány, előtanulmányi rend, ráépülés">
 		<meta name="description" content="{{ @$htmlDescription ?: 'Interaktív tanulmányi előrehaladás vizualizáció' }}">
 		<title>{{ isset($htmlTitle) ? $htmlTitle . ' | ' : '' }}Tárgygráf</title>
