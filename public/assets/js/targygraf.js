@@ -135,10 +135,10 @@ Array.prototype.remove = function() {
 		var courseBlocksNotSemester = $('.content[data-specialis="1"] .course-block').length;
 
 		if (courseBlocksSemester + courseBlocksNotSemester)
-			sumWidth = Math.max(courseBlocksSemester, courseBlocksNotSemester) * 145;
+			sumWidth = Math.max(courseBlocksSemester, courseBlocksNotSemester) * 146;
 
-		if ($('#help').length)
-			sumWidth += $('#help').width() * 2;
+		if ($('main .help').length)
+			sumWidth += $('main .help').width() * 2;
 
 		$('body').css('min-width', sumWidth + 'px');
 	}

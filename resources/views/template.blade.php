@@ -61,7 +61,7 @@
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="{{ url('assets/js/jquery.tipsy.min.js') }}"></script>
-		<script src="{{ url('assets/js/targygraf.js') }}"></script>
+		<script src="{{ url('assets/js/targygraf.js') }}?v=20190217"></script>
 		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 		@yield('scripts')
 	</body>
