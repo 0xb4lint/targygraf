@@ -4,7 +4,7 @@
 	@endforeach
 </div>
 
-<ins class="adsbygoogle" data-ad-client="ca-pub-6543577519725877" data-ad-slot="8295171039" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<ins class="adsbygoogle" data-ad-client="ca-pub-6543577519725877" data-ad-slot="5243903221" data-ad-format="auto" data-full-width-responsive="true"></ins>
 <script>
 	(adsbygoogle = window.adsbygoogle || []).push({});
 </script>
