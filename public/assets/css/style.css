@@ -240,6 +240,12 @@ footer {
 	padding-top: 20px;
 }
 
+main .adsbygoogle,
+footer .adsbygoogle {
+	display: block;
+	margin-bottom: 15px;
+}
+
 footer .github {
 	height: 30px;
 	width: 120px;

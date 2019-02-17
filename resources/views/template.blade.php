@@ -3,7 +3,6 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="initial-scale=1">
 		<meta name="keywords" content="tárgygráf, pannon egyetem, pe, bme, pte, pécs, műszaki, műegyetem, tanterv, mintatanterv, egyetem, pannon, gráf, kredit, félév, tárgyak, tárgy, tantárgy, előfeltétel, előtanulmány, előtanulmányi rend, ráépülés">
 		<meta name="description" content="{{ @$htmlDescription ?: 'Interaktív tanulmányi előrehaladás vizualizáció' }}">
 		<title>{{ isset($htmlTitle) ? $htmlTitle . ' | ' : '' }}Tárgygráf</title>
@@ -17,7 +16,7 @@
 		<link rel="apple-touch-icon" href="{{ url('icon.png') }}">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
 		<link href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-		<link href="{{ url('assets/css/style.css') }}" rel="stylesheet">
+		<link href="{{ url('assets/css/style.css') }}?v=20190217" rel="stylesheet">
 		<link href="{{ url('assets/css/tipsy.css') }}" rel="stylesheet">
 		<script type="text/javascript">
 		(function(d, s, id) {
@@ -55,6 +54,7 @@
 		</main>
 
 		<footer>
+			@yield('footer')
 			<iframe src="https://ghbtns.com/github-btn.html?user=valentinxxx&repo=targygraf&type=star&count=true&size=large" class="github"></iframe>
 			<div class="disclaimer">Az oldalon található információk nem tekinthetőek hivatalos forrásnak.</div>
 		</footer>
@@ -62,6 +62,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="{{ url('assets/js/jquery.tipsy.min.js') }}"></script>
 		<script src="{{ url('assets/js/targygraf.js') }}"></script>
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 		@yield('scripts')
 	</body>
 </html>

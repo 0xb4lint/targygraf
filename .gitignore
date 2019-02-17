@@ -11,3 +11,5 @@ npm-debug.log
 yarn-error.log
 .env
 composer.lock
+.deploy_rsa
+.deploy_rsa.pub
