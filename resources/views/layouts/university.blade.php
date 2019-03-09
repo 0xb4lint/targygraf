@@ -17,10 +17,3 @@
 
 	<div class="fb-page" data-href="https://www.facebook.com/targygraf" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/targygraf" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/targygraf">Tárgygráf</a></blockquote></div>
 @stop
-
-@section('footer')
-	<ins class="adsbygoogle" data-ad-client="ca-pub-6543577519725877" data-ad-slot="8295171039" data-ad-format="auto" data-full-width-responsive="true"></ins>
-	<script>
-		(adsbygoogle = window.adsbygoogle || []).push({});
-	</script>
-@stop
