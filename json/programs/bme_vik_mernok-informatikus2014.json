@@ -119,14 +119,6 @@
 					]
 				},
 				{
-					"code": "TE11AX04",
-					"name": "Fizika 2",
-					"credits": 4,
-					"prerequisites": [
-						"TE11AX03"
-					]
-				},
-				{
 					"code": "VIHIAB00",
 					"name": "Kódolástechnika",
 					"credits": 4,
