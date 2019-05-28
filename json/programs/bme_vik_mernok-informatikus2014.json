@@ -536,7 +536,7 @@
 					]
 				},
 				{
-					"code": "szakdoga",
+					"code": "szakdogaInfokom",
 					"name": "Szakdolgozat-készítés",
 					"credits": 15,
 					"prerequisites": [
@@ -808,7 +808,7 @@
 					]
 				},
 				{
-					"code": "szakdogaRete",
+					"code": "szakdogaVall",
 					"name": "Szakdolgozat-készítés",
 					"credits": 15,
 					"prerequisites": [
