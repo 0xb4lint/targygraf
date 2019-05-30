@@ -269,27 +269,12 @@
 				{
 					"code": "vikSpec",
 					"name": "Specializáció (5 - 7. félév)",
-					"credits": 4,
+					"credits": 0,
 					"course_block_references": [
 						"Infokommunikáció specializáció",
 						"Rendszertervezés specializáció",
 						"Szoftverfejlesztés specializáció",
 						"Vállalati információs rendszerek specializáció"
-					],
-					"prerequisites": [
-						"TE90AX20",
-						"TE90AX21",
-						"VISZAA03",
-						"VIMIAA02",
-						"VIEEAA00",
-						"TE11AX23",
-						"GT52A400",
-						"TE90AX22",
-						"VISZAA04",
-						"TE11AX24",
-						"VIMIAA00",
-						"VIHIAA02",
-						"VIIIAA03"
 					]
 				}
 			]
@@ -335,7 +320,7 @@
 				{
 					"code": "___OPTIONAL___",
 					"name": "Szabadon választható tárgy 1",
-					"credits": 2
+					"credits": 4
 				}
 			]
 		},
@@ -466,7 +451,19 @@
 					"name": "Mobil kommunikációs hálózatok",
 					"credits": 4,
 					"prerequisites": [
-						"(vikSpec)"
+						"TE90AX20",
+						"TE90AX21",
+						"VISZAA03",
+						"VIMIAA02",
+						"VIEEAA00",
+						"TE11AX23",
+						"GT52A400",
+						"TE90AX22",
+						"VISZAA04",
+						"TE11AX24",
+						"VIMIAA00",
+						"VIHIAA02",
+						"VIIIAA03"
 					]
 				},
 				{
@@ -474,7 +471,19 @@
 					"name": "Hálózatok építése és üzemeltetése",
 					"credits": 4,
 					"prerequisites": [
-						"(vikSpec)"
+						"TE90AX20",
+						"TE90AX21",
+						"VISZAA03",
+						"VIMIAA02",
+						"VIEEAA00",
+						"TE11AX23",
+						"GT52A400",
+						"TE90AX22",
+						"VISZAA04",
+						"TE11AX24",
+						"VIMIAA00",
+						"VIHIAA02",
+						"VIIIAA03"
 					]
 				},
 				{
@@ -482,7 +491,19 @@
 					"name": "Témalaboratórium",
 					"credits": 3,
 					"prerequisites": [
-						"(vikSpec)"
+						"TE90AX20",
+						"TE90AX21",
+						"VISZAA03",
+						"VIMIAA02",
+						"VIEEAA00",
+						"TE11AX23",
+						"GT52A400",
+						"TE90AX22",
+						"VISZAA04",
+						"TE11AX24",
+						"VIMIAA00",
+						"VIHIAA02",
+						"VIIIAA03"
 					]
 				},
 				{
@@ -495,7 +516,19 @@
 					"name": "Médiaalkalmazások és -hálózatok a gyakorlatban",
 					"credits": 4,
 					"prerequisites": [
-						"(vikSpec)"
+						"TE90AX20",
+						"TE90AX21",
+						"VISZAA03",
+						"VIMIAA02",
+						"VIEEAA00",
+						"TE11AX23",
+						"GT52A400",
+						"TE90AX22",
+						"VISZAA04",
+						"TE11AX24",
+						"VIMIAA00",
+						"VIHIAA02",
+						"VIIIAA03"
 					]
 				},
 				{
@@ -503,7 +536,19 @@
 					"name": "Hálózatba kapcsolt erőforrás platformok és alkalmazásaik",
 					"credits": 4,
 					"prerequisites": [
-						"(vikSpec)"
+						"TE90AX20",
+						"TE90AX21",
+						"VISZAA03",
+						"VIMIAA02",
+						"VIEEAA00",
+						"TE11AX23",
+						"GT52A400",
+						"TE90AX22",
+						"VISZAA04",
+						"TE11AX24",
+						"VIMIAA00",
+						"VIHIAA02",
+						"VIIIAA03"
 					]
 				},
 				{
@@ -511,7 +556,19 @@
 					"name": "Infokommunikáció laboratórium 1",
 					"credits": 3,
 					"prerequisites": [
-						"(vikSpec)"
+						"TE90AX20",
+						"TE90AX21",
+						"VISZAA03",
+						"VIMIAA02",
+						"VIEEAA00",
+						"TE11AX23",
+						"GT52A400",
+						"TE90AX22",
+						"VISZAA04",
+						"TE11AX24",
+						"VIMIAA00",
+						"VIHIAA02",
+						"VIIIAA03"
 					]
 				},
 				{
@@ -519,7 +576,19 @@
 					"name": "Önálló laboratórium",
 					"credits": 5,
 					"prerequisites": [
-						"(vikSpec)"
+						"TE90AX20",
+						"TE90AX21",
+						"VISZAA03",
+						"VIMIAA02",
+						"VIEEAA00",
+						"TE11AX23",
+						"GT52A400",
+						"TE90AX22",
+						"VISZAA04",
+						"TE11AX24",
+						"VIMIAA00",
+						"VIHIAA02",
+						"VIIIAA03"
 					]
 				},
 				{
@@ -532,7 +601,19 @@
 					"name": "Infokommunikáció laboratórium 2",
 					"credits": 3,
 					"prerequisites": [
-						"(vikSpec)"
+						"TE90AX20",
+						"TE90AX21",
+						"VISZAA03",
+						"VIMIAA02",
+						"VIEEAA00",
+						"TE11AX23",
+						"GT52A400",
+						"TE90AX22",
+						"VISZAA04",
+						"TE11AX24",
+						"VIMIAA00",
+						"VIHIAA02",
+						"VIIIAA03"
 					]
 				},
 				{
@@ -540,7 +621,19 @@
 					"name": "Szakdolgozat-készítés",
 					"credits": 15,
 					"prerequisites": [
-						"(vikSpec)"
+						"TE90AX20",
+						"TE90AX21",
+						"VISZAA03",
+						"VIMIAA02",
+						"VIEEAA00",
+						"TE11AX23",
+						"GT52A400",
+						"TE90AX22",
+						"VISZAA04",
+						"TE11AX24",
+						"VIMIAA00",
+						"VIHIAA02",
+						"VIIIAA03"
 					]
 				}
 			]
@@ -553,7 +646,19 @@
 					"name": "Informatikai rendszertervezés",
 					"credits": 4,
 					"prerequisites": [
-						"(vikSpec)"
+						"TE90AX20",
+						"TE90AX21",
+						"VISZAA03",
+						"VIMIAA02",
+						"VIEEAA00",
+						"TE11AX23",
+						"GT52A400",
+						"TE90AX22",
+						"VISZAA04",
+						"TE11AX24",
+						"VIMIAA00",
+						"VIHIAA02",
+						"VIIIAA03"
 					]
 				},
 				{
@@ -561,7 +666,19 @@
 					"name": "Ipari informatika",
 					"credits": 4,
 					"prerequisites": [
-						"(vikSpec)"
+						"TE90AX20",
+						"TE90AX21",
+						"VISZAA03",
+						"VIMIAA02",
+						"VIEEAA00",
+						"TE11AX23",
+						"GT52A400",
+						"TE90AX22",
+						"VISZAA04",
+						"TE11AX24",
+						"VIMIAA00",
+						"VIHIAA02",
+						"VIIIAA03"
 					]
 				},
 				{
@@ -569,7 +686,19 @@
 					"name": "Témalaboratórium",
 					"credits": 3,
 					"prerequisites": [
-						"(vikSpec)"
+						"TE90AX20",
+						"TE90AX21",
+						"VISZAA03",
+						"VIMIAA02",
+						"VIEEAA00",
+						"TE11AX23",
+						"GT52A400",
+						"TE90AX22",
+						"VISZAA04",
+						"TE11AX24",
+						"VIMIAA00",
+						"VIHIAA02",
+						"VIIIAA03"
 					]
 				},
 				{
@@ -582,7 +711,19 @@
 					"name": "Alkalmazásfejlesztési környezetek",
 					"credits": 4,
 					"prerequisites": [
-						"(vikSpec)"
+						"TE90AX20",
+						"TE90AX21",
+						"VISZAA03",
+						"VIMIAA02",
+						"VIEEAA00",
+						"TE11AX23",
+						"GT52A400",
+						"TE90AX22",
+						"VISZAA04",
+						"TE11AX24",
+						"VIMIAA00",
+						"VIHIAA02",
+						"VIIIAA03"
 					]
 				},
 				{
@@ -590,7 +731,19 @@
 					"name": "Intelligens elosztott rendszerek",
 					"credits": 4,
 					"prerequisites": [
-						"(vikSpec)"
+						"TE90AX20",
+						"TE90AX21",
+						"VISZAA03",
+						"VIMIAA02",
+						"VIEEAA00",
+						"TE11AX23",
+						"GT52A400",
+						"TE90AX22",
+						"VISZAA04",
+						"TE11AX24",
+						"VIMIAA00",
+						"VIHIAA02",
+						"VIIIAA03"
 					]
 				},
 				{
@@ -598,7 +751,19 @@
 					"name": "Rendszertervezés laboratórium 1",
 					"credits": 3,
 					"prerequisites": [
-						"(vikSpec)"
+						"TE90AX20",
+						"TE90AX21",
+						"VISZAA03",
+						"VIMIAA02",
+						"VIEEAA00",
+						"TE11AX23",
+						"GT52A400",
+						"TE90AX22",
+						"VISZAA04",
+						"TE11AX24",
+						"VIMIAA00",
+						"VIHIAA02",
+						"VIIIAA03"
 					]
 				},
 				{
@@ -606,7 +771,19 @@
 					"name": "Önálló laboratórium",
 					"credits": 5,
 					"prerequisites": [
-						"(vikSpec)"
+						"TE90AX20",
+						"TE90AX21",
+						"VISZAA03",
+						"VIMIAA02",
+						"VIEEAA00",
+						"TE11AX23",
+						"GT52A400",
+						"TE90AX22",
+						"VISZAA04",
+						"TE11AX24",
+						"VIMIAA00",
+						"VIHIAA02",
+						"VIIIAA03"
 					]
 				},
 				{
@@ -619,7 +796,19 @@
 					"name": "Rendszertervezés laboratórium 2",
 					"credits": 3,
 					"prerequisites": [
-						"(vikSpec)"
+						"TE90AX20",
+						"TE90AX21",
+						"VISZAA03",
+						"VIMIAA02",
+						"VIEEAA00",
+						"TE11AX23",
+						"GT52A400",
+						"TE90AX22",
+						"VISZAA04",
+						"TE11AX24",
+						"VIMIAA00",
+						"VIHIAA02",
+						"VIIIAA03"
 					]
 				},
 				{
@@ -627,7 +816,19 @@
 					"name": "Szakdolgozat-készítés",
 					"credits": 15,
 					"prerequisites": [
-						"(vikSpec)"
+						"TE90AX20",
+						"TE90AX21",
+						"VISZAA03",
+						"VIMIAA02",
+						"VIEEAA00",
+						"TE11AX23",
+						"GT52A400",
+						"TE90AX22",
+						"VISZAA04",
+						"TE11AX24",
+						"VIMIAA00",
+						"VIHIAA02",
+						"VIIIAA03"
 					]
 				}
 			]
@@ -640,7 +841,19 @@
 					"name": "Adatvezérelt rendszerek",
 					"credits": 4,
 					"prerequisites": [
-						"(vikSpec)"
+						"TE90AX20",
+						"TE90AX21",
+						"VISZAA03",
+						"VIMIAA02",
+						"VIEEAA00",
+						"TE11AX23",
+						"GT52A400",
+						"TE90AX22",
+						"VISZAA04",
+						"TE11AX24",
+						"VIMIAA00",
+						"VIHIAA02",
+						"VIIIAA03"
 					]
 				},
 				{
@@ -648,7 +861,19 @@
 					"name": "Objektumorientált szoftvertervezés",
 					"credits": 4,
 					"prerequisites": [
-						"(vikSpec)"
+						"TE90AX20",
+						"TE90AX21",
+						"VISZAA03",
+						"VIMIAA02",
+						"VIEEAA00",
+						"TE11AX23",
+						"GT52A400",
+						"TE90AX22",
+						"VISZAA04",
+						"TE11AX24",
+						"VIMIAA00",
+						"VIHIAA02",
+						"VIIIAA03"
 					]
 				},
 				{
@@ -656,7 +881,19 @@
 					"name": "Témalaboratórium",
 					"credits": 3,
 					"prerequisites": [
-						"(vikSpec)"
+						"TE90AX20",
+						"TE90AX21",
+						"VISZAA03",
+						"VIMIAA02",
+						"VIEEAA00",
+						"TE11AX23",
+						"GT52A400",
+						"TE90AX22",
+						"VISZAA04",
+						"TE11AX24",
+						"VIMIAA00",
+						"VIHIAA02",
+						"VIIIAA03"
 					]
 				},
 				{
@@ -669,7 +906,19 @@
 					"name": "Integrációs és ellenőrzési technikák",
 					"credits": 4,
 					"prerequisites": [
-						"(vikSpec)"
+						"TE90AX20",
+						"TE90AX21",
+						"VISZAA03",
+						"VIMIAA02",
+						"VIEEAA00",
+						"TE11AX23",
+						"GT52A400",
+						"TE90AX22",
+						"VISZAA04",
+						"TE11AX24",
+						"VIMIAA00",
+						"VIHIAA02",
+						"VIIIAA03"
 					]
 				},
 				{
@@ -677,7 +926,19 @@
 					"name": "Kliensoldali technológiák",
 					"credits": 4,
 					"prerequisites": [
-						"(vikSpec)"
+						"TE90AX20",
+						"TE90AX21",
+						"VISZAA03",
+						"VIMIAA02",
+						"VIEEAA00",
+						"TE11AX23",
+						"GT52A400",
+						"TE90AX22",
+						"VISZAA04",
+						"TE11AX24",
+						"VIMIAA00",
+						"VIHIAA02",
+						"VIIIAA03"
 					]
 				},
 				{
@@ -685,15 +946,38 @@
 					"name": "3D grafikus rendszerek",
 					"credits": 4,
 					"prerequisites": [
-						"(vikSpec)"
+						"TE90AX20",
+						"TE90AX21",
+						"VISZAA03",
+						"VIMIAA02",
+						"VIEEAA00",
+						"TE11AX23",
+						"GT52A400",
+						"TE90AX22",
+						"VISZAA04",
+						"TE11AX24",
+						"VIMIAA00",
+						"VIHIAA02",
+						"VIIIAA03"
 					]
 				},
 				{
 					"code": "VIAUAC09",
 					"name": "Szoftverfejlesztés laboratórium 1",
-					"credits": 3,
-					"prerequisites": [
-						"(vikSpec)",
+                    "prerequisites": [
+						"TE90AX20",
+						"TE90AX21",
+						"VISZAA03",
+						"VIMIAA02",
+						"VIEEAA00",
+						"TE11AX23",
+						"GT52A400",
+						"TE90AX22",
+						"VISZAA04",
+						"TE11AX24",
+						"VIMIAA00",
+						"VIHIAA02",
+						"VIIIAA03",
 						"VIAUAC01"
 					]
 				},
@@ -702,7 +986,19 @@
 					"name": "Önálló laboratórium",
 					"credits": 5,
 					"prerequisites": [
-						"(vikSpec)"
+						"TE90AX20",
+						"TE90AX21",
+						"VISZAA03",
+						"VIMIAA02",
+						"VIEEAA00",
+						"TE11AX23",
+						"GT52A400",
+						"TE90AX22",
+						"VISZAA04",
+						"TE11AX24",
+						"VIMIAA00",
+						"VIHIAA02",
+						"VIIIAA03"
 					]
 				},
 				{
@@ -715,7 +1011,19 @@
 					"name": "Szoftverfejlesztés laboratórium 2",
 					"credits": 3,
 					"prerequisites": [
-						"(vikSpec)",
+						"TE90AX20",
+						"TE90AX21",
+						"VISZAA03",
+						"VIMIAA02",
+						"VIEEAA00",
+						"TE11AX23",
+						"GT52A400",
+						"TE90AX22",
+						"VISZAA04",
+						"TE11AX24",
+						"VIMIAA00",
+						"VIHIAA02",
+						"VIIIAA03",
 						"VIMIAC04",
 						"VIAUAC02"
 					]
@@ -725,7 +1033,19 @@
 					"name": "Szakdolgozat-készítés",
 					"credits": 15,
 					"prerequisites": [
-						"(vikSpec)"
+						"TE90AX20",
+						"TE90AX21",
+						"VISZAA03",
+						"VIMIAA02",
+						"VIEEAA00",
+						"TE11AX23",
+						"GT52A400",
+						"TE90AX22",
+						"VISZAA04",
+						"TE11AX24",
+						"VIMIAA00",
+						"VIHIAA02",
+						"VIIIAA03"
 					]
 				}
 			]
@@ -738,7 +1058,19 @@
 					"name": "Vállalatirányítási rendszerek",
 					"credits": 4,
 					"prerequisites": [
-						"(vikSpec)"
+						"TE90AX20",
+						"TE90AX21",
+						"VISZAA03",
+						"VIMIAA02",
+						"VIEEAA00",
+						"TE11AX23",
+						"GT52A400",
+						"TE90AX22",
+						"VISZAA04",
+						"TE11AX24",
+						"VIMIAA00",
+						"VIHIAA02",
+						"VIIIAA03"
 					]
 				},
 				{
@@ -746,7 +1078,19 @@
 					"name": "Termelésinformatika",
 					"credits": 4,
 					"prerequisites": [
-						"(vikSpec)"
+						"TE90AX20",
+						"TE90AX21",
+						"VISZAA03",
+						"VIMIAA02",
+						"VIEEAA00",
+						"TE11AX23",
+						"GT52A400",
+						"TE90AX22",
+						"VISZAA04",
+						"TE11AX24",
+						"VIMIAA00",
+						"VIHIAA02",
+						"VIIIAA03"
 					]
 				},
 				{
@@ -754,7 +1098,19 @@
 					"name": "Témalaboratórium",
 					"credits": 3,
 					"prerequisites": [
-						"(vikSpec)"
+						"TE90AX20",
+						"TE90AX21",
+						"VISZAA03",
+						"VIMIAA02",
+						"VIEEAA00",
+						"TE11AX23",
+						"GT52A400",
+						"TE90AX22",
+						"VISZAA04",
+						"TE11AX24",
+						"VIMIAA00",
+						"VIHIAA02",
+						"VIIIAA03"
 					]
 				},
 				{
@@ -767,7 +1123,19 @@
 					"name": "Gazdálkodási információmenedzsment",
 					"credits": 4,
 					"prerequisites": [
-						"(vikSpec)"
+						"TE90AX20",
+						"TE90AX21",
+						"VISZAA03",
+						"VIMIAA02",
+						"VIEEAA00",
+						"TE11AX23",
+						"GT52A400",
+						"TE90AX22",
+						"VISZAA04",
+						"TE11AX24",
+						"VIMIAA00",
+						"VIHIAA02",
+						"VIIIAA03"
 					]
 				},
 				{
@@ -775,7 +1143,19 @@
 					"name": "Adatelemzés",
 					"credits": 4,
 					"prerequisites": [
-						"(vikSpec)"
+						"TE90AX20",
+						"TE90AX21",
+						"VISZAA03",
+						"VIMIAA02",
+						"VIEEAA00",
+						"TE11AX23",
+						"GT52A400",
+						"TE90AX22",
+						"VISZAA04",
+						"TE11AX24",
+						"VIMIAA00",
+						"VIHIAA02",
+						"VIIIAA03"
 					]
 				},
 				{
@@ -783,7 +1163,19 @@
 					"name": "Vállalati rendszerek programozása laboratórium",
 					"credits": 3,
 					"prerequisites": [
-						"(vikSpec)"
+						"TE90AX20",
+						"TE90AX21",
+						"VISZAA03",
+						"VIMIAA02",
+						"VIEEAA00",
+						"TE11AX23",
+						"GT52A400",
+						"TE90AX22",
+						"VISZAA04",
+						"TE11AX24",
+						"VIMIAA00",
+						"VIHIAA02",
+						"VIIIAA03"
 					]
 				},
 				{
@@ -791,7 +1183,19 @@
 					"name": "Önálló laboratórium",
 					"credits": 5,
 					"prerequisites": [
-						"(vikSpec)"
+						"TE90AX20",
+						"TE90AX21",
+						"VISZAA03",
+						"VIMIAA02",
+						"VIEEAA00",
+						"TE11AX23",
+						"GT52A400",
+						"TE90AX22",
+						"VISZAA04",
+						"TE11AX24",
+						"VIMIAA00",
+						"VIHIAA02",
+						"VIIIAA03"
 					]
 				},
 				{
@@ -804,7 +1208,19 @@
 					"name": "Vállalati jelentéskészítés laboratórium",
 					"credits": 3,
 					"prerequisites": [
-						"(vikSpec)"
+						"TE90AX20",
+						"TE90AX21",
+						"VISZAA03",
+						"VIMIAA02",
+						"VIEEAA00",
+						"TE11AX23",
+						"GT52A400",
+						"TE90AX22",
+						"VISZAA04",
+						"TE11AX24",
+						"VIMIAA00",
+						"VIHIAA02",
+						"VIIIAA03"
 					]
 				},
 				{
@@ -812,7 +1228,19 @@
 					"name": "Szakdolgozat-készítés",
 					"credits": 15,
 					"prerequisites": [
-						"(vikSpec)"
+						"TE90AX20",
+						"TE90AX21",
+						"VISZAA03",
+						"VIMIAA02",
+						"VIEEAA00",
+						"TE11AX23",
+						"GT52A400",
+						"TE90AX22",
+						"VISZAA04",
+						"TE11AX24",
+						"VIMIAA00",
+						"VIHIAA02",
+						"VIIIAA03"
 					]
 				}
 			]
