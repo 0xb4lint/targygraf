@@ -964,7 +964,8 @@
 				{
 					"code": "VIAUAC09",
 					"name": "Szoftverfejlesztés laboratórium 1",
-          "prerequisites": [
+                    "credits": 3,
+                    "prerequisites": [
 						"TE90AX20",
 						"TE90AX21",
 						"VISZAA03",
