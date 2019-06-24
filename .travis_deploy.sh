@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ssh -l www-data targygraf.hu \
+ssh -o "StrictHostKeyChecking no" -l www-data targygraf.hu \
 	"sh -c ' \
 	cd /var/www/targygraf.hu; \
 	rm composer.lock; \
