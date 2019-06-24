@@ -1,0 +1,302 @@
+{
+    "name": "Mérnökinformatikus MSc - Műszaki és egészségügyi alkalmazások",
+    "description": "Mérnökinformatikus MSc szak - Műszaki és egészségügyi alkalmazások specializáció",
+    "curriculum_updated_at": "2019-03-19",
+    "course_blocks": [
+        {
+            "name": "1. félév (tavasz) \/ 2. félév (ősz)",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "VEMIVIM254E",
+                    "name": "Diszkrét és folytonos dinamikus rendszerek elmélete",
+                    "credits": 5
+                },
+                {
+                    "code": "VEMISAB512S",
+                    "name": "A számítástudomány alapjai",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMIVIM233A",
+                    "name": "Haladó adatbázis-kezelő rendszerek",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMIVIM444D",
+                    "name": "Digitális jelfeldolgozás",
+                    "credits": 5
+                },
+                {
+                    "code": "VEMIVIM254L",
+                    "name": "Számítógépes látás",
+                    "credits": 5
+                },
+                {
+                    "code": "VEMISAM235P",
+                    "name": "Projekt labor",
+                    "credits": 5
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választandó differenciált szakmai tárgy",
+                    "credits": 2,
+					"course_block_references": [
+                        "Kötelezően választandó differenciált szakmai tárgyak"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "1. félév (ősz) \/ 2. félév (tavasz)",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "VEMIMAM164N",
+                    "name": "Numerikus analízis",
+                    "credits": 5
+                },
+                {
+                    "code": "VEMISAM244O",
+                    "name": "Haladó operációkutatás",
+                    "credits": 5
+                },
+                {
+                    "code": "VEMIINM255L",
+                    "name": "Önálló laborgyakorlat",
+                    "credits": 5
+                },
+                {
+                    "code": "VEMIVIM113",
+                    "name": "Információ-elmélet mérnöki alkalmazásokkal",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMIMAM143S",
+                    "name": "Matematikai statisztika és sztochasztikus folyamatok",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMIVIM142I",
+                    "name": "Mesterséges intelligencia",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMISAM142S",
+                    "name": "Szakértői rendszerek",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMIVIM133P",
+                    "name": "Paraméterbecslés",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "row": 0,
+            "courses": [
+				{
+                    "code": null,
+                    "name": "Kötelezően választandó gazdasági\/humán tárgy",
+                    "credits": 5,
+					"course_block_references": [
+                        "Kötelezően válaszható humán\/gazdasági tárgyak"
+                    ]
+                },
+				{
+                    "code": null,
+                    "name": "Kötelezően választandó differenciált szakmai tárgy",
+                    "credits": 7,
+					"course_block_references": [
+                        "Kötelezően választandó differenciált szakmai tárgyak"
+                    ]
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható tárgy",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMISAMX0L",
+                    "name": "Diplomalabor",
+                    "credits": 15,
+                    "prerequisites": [
+                        "VEMIINM255L"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "row": 0,
+            "courses": [
+				{
+                    "code": null,
+                    "name": "Kötelezően választandó gazdasági\/humán tárgy",
+                    "credits": 5,
+					"course_block_references": [
+                        "Kötelezően válaszható humán\/gazdasági tárgyak"
+                    ]
+                },
+				{
+                    "code": null,
+                    "name": "Kötelezően választandó differenciált szakmai tárgy",
+                    "credits": 7,
+					"course_block_references": [
+                        "Kötelezően választandó differenciált szakmai tárgyak"
+                    ]
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható tárgy",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMISAMX0M",
+                    "name": "Diplomamunka",
+                    "credits": 15,
+                    "prerequisites": [
+                        "VEMISAMX0L"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választandó differenciált szakmai tárgyak",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VEMIVIM554E",
+                    "name": "Egészségügyi adatbázisok",
+                    "credits": 5
+                },
+                {
+                    "code": "VEMIVIM544O",
+                    "name": "Orvosi méréselmélet",
+                    "credits": 5
+                },
+                {
+                    "code": "VEMIVIM133J",
+                    "name": "Egészségügyi jelfeldolgozás",
+                    "credits": 4,
+					"prerequisites": [
+                        "VEMIVIM444D",
+                    ]
+                },
+                {
+                    "code": "VEMISAM154R",
+                    "name": "Beágyazott rendszerek fejlesztése",
+                    "credits": 5,
+					"prerequisites": [
+                        "VEMIVIM444D",
+                    ]
+                },
+                {
+                    "code": "VEMISAM444H",
+                    "name": "Szenzorhálózatok",
+                    "credits": 5,
+					"prerequisites": [
+                        "VEMIVIM444D",
+                    ]
+                },
+                {
+                    "code": "VEMIVIM254M",
+                    "name": "Modellezés mérnöki alapelvek felhasználásával",
+                    "credits": 5
+                },
+                {
+                    "code": "VEMIVIM254S",
+                    "name": "Szabályozáselmélet",
+                    "credits": 5,
+					"prerequisites": [
+                        "VEMIVIM254E",
+                    ]
+                },
+                {
+                    "code": "VEMISAM454I",
+                    "name": "Intelligens irányító rendszerek",
+                    "credits": 5,
+                    "prerequisites": [
+                        "VEMIVIM254E",
+                    ]
+                },
+                {
+                    "code": "VEMIVIM254R",
+                    "name": "Robottechnika",
+                    "credits": 5
+                },
+                {
+                    "code": "VEMIINM323I",
+                    "name": "Irányított önálló tanulás I.",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMIINM323O",
+                    "name": "Irányított önálló tanulás II.",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően válaszható humán\/gazdasági tárgyak",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VEMIVIM544E",
+                    "name": "Élettani ismeretek",
+                    "credits": 5,
+                },
+                {
+                    "code": "VEMIKN5312E",
+                    "name": "Szoftver ergonómia",
+                    "credits": 3,
+                },
+                {
+                    "code": "VEMISAM154I",
+                    "name": "Üzleti intelligencia rendszerek",
+                    "credits": 5,
+                },
+                {
+                    "code": "VEGTGAB244V",
+                    "name": "Vállalkozói ismeretek",
+                    "credits": 5,
+                },
+                {
+                    "code": "VEMIGAB512J",
+                    "name": "Iparjogvédelem és innováció menedzsment",
+                    "credits": 3,
+                },
+                {
+                    "code": "VEMIINM323D",
+                    "name": "Demonstrátori tevékenység",
+                    "credits": 3,
+                },
+                {
+                    "code": "VETKACM112I",
+                    "name": "Interkulturális kompetencia és többnyelvűség",
+                    "credits": 2,
+                },
+                {
+                    "code": "VEGTMEB122K",
+                    "name": "Üzleti kommunikáció",
+                    "credits": 2,
+                },
+                {
+                    "code": "VETKMNBR14M",
+                    "name": "Magyar, mint idegen nyelv I.",
+                    "credits": 4,
+                },
+                {
+                    "code": "VETKMNBR24M",
+                    "name": "Magyar, mint idegen nyelv II.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VETKMNBR14M",
+                    ]
+                }
+            ]
+        }
+    ]
+}
