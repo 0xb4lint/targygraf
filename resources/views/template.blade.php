@@ -18,6 +18,7 @@
 		<link href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 		<link href="{{ url('assets/css/style.css') }}?v=20190217" rel="stylesheet">
 		<link href="{{ url('assets/css/tipsy.css') }}" rel="stylesheet">
+		<link href="{{ url('assets/css/notie.min.css') }}" rel="stylesheet">
 		<script type="text/javascript">
 		(function(d, s, id) {
 			var js, fjs = d.getElementsByTagName(s)[0];
@@ -61,7 +62,8 @@
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="{{ url('assets/js/jquery.tipsy.min.js') }}"></script>
-		<script src="{{ url('assets/js/targygraf.js') }}?v=20190217"></script>
+		<script src="{{ url('assets/js/notie.min.js') }}"></script>
+		<script src="{{ url('assets/js/targygraf.js') }}?v=20190625"></script>
 		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 		@yield('scripts')
 	</body>

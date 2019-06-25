@@ -845,6 +845,16 @@ Array.prototype.remove = function() {
 
 
 
+	function showLegal() {
+		notie.alert({
+			type: 'error',
+			text: 'Az oldalon található információk nem tekinthetőek hivatalos forrásnak.',
+			position: 'bottom'
+		});
+	}
+
+
+
 
 	//////////
 	// INIT //
@@ -865,6 +875,8 @@ Array.prototype.remove = function() {
 
 		creditsCounterUpdate();
 		registerEvents();
+
+		showLegal();
 	};
 
 }(window.Targygraf = window.Targygraf || {}, window.jQuery, window));
