@@ -211,7 +211,7 @@
                     "credits": 2,
                     "prerequisites": [
                         "VEMIMAB244M",
-                        "VEMIVI2144E"
+                        "VEMKMA1143V"
                     ]
                 },
                 {
@@ -632,6 +632,14 @@
                     ]
                 },
                 {
+                    "code": "VEMISAB332K",
+                    "name": "Kotlin programozás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMIVIB134J"
+                    ]
+                },
+                {
                     "code": "VEMIVIB234Z",
                     "name": "Párhuzamos programozás",
                     "credits": 5,
@@ -697,7 +705,24 @@
                     "prerequisites": [
                         "VEMISAB232C"
                     ]
-                }
+                },
+                {
+                    "code": "VEMISAB134K",
+                    "name": "Haladó kliens oldali technológiák",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VEMISAB212P",
+                        "VEMIVIB232W"
+                    ]
+                },
+                    "code": "VEMISAB234S",
+                    "name": "Haladó szerver oldali technológiák",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VEMISAB212P",
+                        "VEMIVIB232A"
+                    ]
+                },
             ]
         },
         {
