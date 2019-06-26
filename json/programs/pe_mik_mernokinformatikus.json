@@ -715,6 +715,7 @@
                         "VEMIVIB232W"
                     ]
                 },
+                {
                     "code": "VEMISAB234S",
                     "name": "Haladó szerver oldali technológiák",
                     "credits": 4,
@@ -722,7 +723,7 @@
                         "VEMISAB212P",
                         "VEMIVIB232A"
                     ]
-                },
+                }
             ]
         },
         {
