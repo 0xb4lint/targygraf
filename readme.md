@@ -1,7 +1,7 @@
 # Tárgygráf - [targygraf.hu](https://targygraf.hu)
 
 ![StyleCI](https://styleci.io/repos/99475496/shield?branch=master)
-![TravisCI](https://travis-ci.org/valentinxxx/targygraf.svg?branch=master)
+![TravisCI](https://travis-ci.com/0xB4LINT/targygraf.svg?branch=master)
 
 ## Install
 1. `composer install`

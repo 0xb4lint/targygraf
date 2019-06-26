@@ -3,9 +3,6 @@ language: php
 php:
   - 7.2
 
-addons:
-  ssh_known_hosts: targygraf.hu
-
 cache:
   directories:
     - $HOME/.composer/cache
