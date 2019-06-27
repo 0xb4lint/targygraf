@@ -1,6 +1,6 @@
 <div class="help">
 	<div class="course-help" title="Nem teljesítetted az előfeltételeket.">Nem vehető fel</div>
-	<div class="course-help processable" title="Teljesített az előfeltételeket,{{ '<br>' }}lehetőséged van felvenni a tárgyat.">Felvehető</div>
+	<div class="course-help processable" title="Teljesített az előfeltételeket,{{ '<br>' }}lehetőséged van felvenni a tárgyat.">Felvehető<br>(ha Neptunban <br>meg van hirdetve)</div>
 	<div class="course-help processing" title="Felvetted a tárgyat.">Felvett</div>
 	<div class="course-help finished" title="Teljesítetted a tárgyat.">Teljesített</div>
 	<div class="course-help prerequisite" title="Kiválasztott tárgy felvételéhez{{ '<br>' }}szükséges előfeltételek.">Előfeltétel</div>
