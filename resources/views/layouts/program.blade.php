@@ -16,11 +16,11 @@
 		</div>
 	@endif
 	@if ( $program->curriculum_updated_at )
-		@if ( date('Y', strtotime($program->curriculum_updated_at)) < date("Y"); )
+		@if ( date('Y', strtotime($program->curriculum_updated_at)) < date('Y'); )
 			<div class="program-curriculum-updated">
 				Ez egy régebbi (<b>{{ $program->curriculum_updated_at }}</b>) tanterv, hivatalos forrásból is ellenőrizd a tárgyaidat!
 			</div>
-		@else ( $program->curriculum_updated_at )
+		@elseif ( $program->curriculum_updated_at )
 			<div class="program-curriculum-updated">
 				Tanterv: <b>{{ $program->curriculum_updated_at }}</b>
 			</div>
