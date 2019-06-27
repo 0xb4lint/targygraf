@@ -16,9 +16,15 @@
 		</div>
 	@endif
 	@if ( $program->curriculum_updated_at )
-		<div class="program-curriculum-updated">
-			Tanterv: <b>{{ $program->curriculum_updated_at }}</b>
-		</div>
+		@if ( $program->curriculum_updated_at < date("Y-m-d"); )
+			<div class="program-curriculum-updated">
+				Ez egy régebbi (<b>{{ $program->curriculum_updated_at }}</b>) tanterv, hivatalos forrásból is ellenőrizd a tárgyaidat!
+			</div>
+		@else ( $program->curriculum_updated_at )
+			<div class="program-curriculum-updated">
+				Tanterv: <b>{{ $program->curriculum_updated_at }}</b>
+			</div>
+		@endif
 	@endif
 @stop
 
