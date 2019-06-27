@@ -1,7 +1,6 @@
 #!/bin/bash
 
-ssh -o "StrictHostKeyChecking no" -l www-data targygraf.hu \
-	"sh -c ' \
+ssh -o "StrictHostKeyChecking no" -l www-data targygraf.hu "sh -c ' \
 	cd /var/www/targygraf.hu; \
 	rm composer.lock; \
 	git pull origin master && \
