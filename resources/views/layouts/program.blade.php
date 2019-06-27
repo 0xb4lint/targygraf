@@ -16,7 +16,7 @@
 		</div>
 	@endif
 	@if ( $program->curriculum_updated_at )
-		@if ( $program->curriculum_updated_at < date("Y-m-d"); )
+		@if ( date('Y', strtotime($program->curriculum_updated_at)) < date("Y"); )
 			<div class="program-curriculum-updated">
 				Ez egy régebbi (<b>{{ $program->curriculum_updated_at }}</b>) tanterv, hivatalos forrásból is ellenőrizd a tárgyaidat!
 			</div>
