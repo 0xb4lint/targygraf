@@ -20,7 +20,7 @@
 			<div class="program-curriculum-updated">
 				Ez egy régebbi (<b>{{ $program->curriculum_updated_at }}</b>) tanterv, hivatalos forrásból is ellenőrizd a tárgyaidat!
 			</div>
-		@elseif ( $program->curriculum_updated_at )
+		@else
 			<div class="program-curriculum-updated">
 				Tanterv: <b>{{ $program->curriculum_updated_at }}</b>
 			</div>
