@@ -1,0 +1,19 @@
+// json/universities/due.json    // string   slug
+{
+    "name": "Dunaújvarosi Egyetem",   // string   név
+    "row": 0,                   // uint     megjelenítésnél sor index
+    "ordering": 0,              // uint     megjelenítésnél soron belüli index
+    "has_logo": true            // boolean  public/assets/img/logo/{slug}.svg
+}
+// json/faculties/due_mk.json           // string   slug
+{
+    "name": "Mérnöki Kar", // string   név
+    "ordering": 0                       // uint     megjelenítésnél index
+}
+// json/programs/due_mk_gepeszmernok.json // string   slug
+{
+    "name": "Gépészmérnök",               // string   név
+    "description": "Levelező tagozat tanterve",  // string   leírás
+    "curriculum_updated_at": "2019-10-16",      // date     tanterv módosítási dátuma
+    "course_blocks": [/* course_block */]       // array    tantárgy blokkok - félévek
+}
