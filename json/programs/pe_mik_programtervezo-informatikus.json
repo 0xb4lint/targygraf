@@ -1,7 +1,7 @@
 {
     "name": "Programtervező informatikus",
     "description": "Programtervező informatikus BSc – nappali tagozat tanterve",
-    "curriculum_updated_at": "2017-10-24",
+    "curriculum_updated_at": "2019-11-26",
     "course_blocks": [
         {
             "name": "1. félév",
@@ -138,12 +138,9 @@
                     ]
                 },
                 {
-                    "code": "VEMISA3242M",
-                    "name": "Mesterséges intelligencia alapjai",
-                    "credits": 2,
-                    "prerequisites": [
-                        "VEMIMAB143A"
-                    ]
+                    "code": "VEMIGAB512J",
+                    "name": "Iparjogvédelem és innovációmenedzsment",
+                    "credits": 2
                 },
                 {
                     "code": "VEMKLE1220A",
@@ -244,11 +241,12 @@
             "row": 0,
             "courses": [
                 {
-                    "code": "VEMIVIB242P",
-                    "name": "Haladó informatikai algoritmusok",
-                    "credits": 3,
+                    "code": "VEMIVIB234Z",
+                    "name": "Párhuzamos programozás",
+                    "credits": 5,
                     "prerequisites": [
-                        "VEMISAB112A"
+                        "VEMIVIB134J",
+                        "VEMIKNB113A"
                     ]
                 },
                 {
@@ -285,14 +283,17 @@
                     ]
                 },
                 {
-                    "code": "VEMIGAB512J",
-                    "name": "Iparjogvédelem és innovációmenedzsment",
-                    "credits": 2
+                    "code": "VEMISA3242M",
+                    "name": "Mesterséges intelligencia alapjai",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMISAB243A"
+                    ]
                 },
                 {
                     "code": "___OPTIONAL___",
                     "name": "Szabadon választható tárgyak",
-                    "credits": 6
+                    "credits": 4
                 },
                 {
                     "code": null,
@@ -409,12 +410,11 @@
                     ]
                 },
                 {
-                    "code": "VEMIVIB234Z",
-                    "name": "Párhuzamos programozás",
-                    "credits": 5,
+                    "code": "VEMIVIB242P",
+                    "name": "Haladó informatikai algoritmusok",
+                    "credits": 3,
                     "prerequisites": [
-                        "VEMIVIB134J",
-                        "VEMIKNB113A"
+                        "VEMISAB112A"
                     ]
                 },
                 {
@@ -428,7 +428,7 @@
                 {
                     "code": "___OPTIONAL___",
                     "name": "Szabadon választható tárgyak",
-                    "credits": 2
+                    "credits": 4
                 },
                 {
                     "code": "VEMIKNB312F",
@@ -534,6 +534,22 @@
                     "prerequisites": [
                         "VEMISAB254C"
                     ]
+                },
+                {
+                    "code": "VEMISAB332K",
+                    "name": "Kotlin programozás",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMIVIB134J"
+                    ]
+                },
+                {
+                    "code": "Szoftverfejlesztés Qt keretrendszerrel",
+                    "name": "VEMISAB232S",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMISAB254T"
+                    ]
                 }
             ]
         },
@@ -587,7 +603,6 @@
                     "name": "Adatelemzés Pythonban",
                     "credits": 3,
                     "prerequisites": [
-                        "VEMISAB152A",
                         "VEMISAB132P"
                     ]
                 }
@@ -721,8 +736,7 @@
                     "name": "Linux rendszergazda ismeretek I.",
                     "credits": 3,
                     "prerequisites": [
-                        "VEMISAB144O",
-                        "VEMIINB154H"
+                        "VEMIVIB112A"
                     ]
                 },
                 {
@@ -769,6 +783,14 @@
                     "code": "VEMIVIB112H",
                     "name": "Távközlési hálózatok",
                     "credits": 2,
+                    "prerequisites": [
+                        "VEMIINB154H"
+                    ]
+                },
+                {
+                    "code": "VEMIINB253C",
+                    "name": "Egységes kommunikáció",
+                    "credits": 4,
                     "prerequisites": [
                         "VEMIINB154H"
                     ]
