@@ -1,7 +1,7 @@
 {
     "name": "Vegyészmérnök",
-    "description": "Vegyészmérnöki alapszak - nappali tagozat tanterve",
-    "curriculum_updated_at": "2018-01-23",
+    "description": "Vegyészmérnöki alapszak tanterve",
+    "curriculum_updated_at": "2019-03-13",
     "course_blocks": [
         {
             "name": "1. félév",
@@ -43,19 +43,9 @@
                     "credits": 4
                 },
                 {
-                    "code": "VEMKMAB112M",
+                    "code": "VEMIMAB114H",
                     "name": "Matematikai analízis I.",
-                    "credits": 2
-                },
-                {
-                    "code": "VEMKMAB122M",
-                    "name": "Matematikai analízis I. gyakorlat",
-                    "credits": 2
-                },
-                {
-                    "code": "VEMKRK3321S",
-                    "name": "Sugárzástani alapismeretek",
-                    "credits": 1
+                    "credits": 4
                 },
                 {
                     "code": "VEMKFOB333S",
@@ -73,7 +63,7 @@
                 {
                     "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
-                    "credits": 4
+                    "credits": 2
                 }
             ]
         },
@@ -128,30 +118,19 @@
                     ]
                 },
                 {
-                    "code": "VEMKMAB212M",
+                    "code": "VEMIMAB244H",
                     "name": "Matematikai analízis II.",
-                    "credits": 2,
+                    "credits": 4,
                     "prerequisites": [
-                        "VEMKMAB112M",
-                        "VEMKMAB122M"
-                    ]
-                },
-                {
-                    "code": "VEMKMAB222M",
-                    "name": "Matematikai analízis II. gyakorlat",
-                    "credits": 2,
-                    "prerequisites": [
-                        "VEMKMAB112M",
-                        "VEMKMAB122M"
+                        "VEMIMAB114H"
                     ]
                 },
                 {
                     "code": "VEMKMAB212S",
-                    "name": "Matematikai statisztika",
+                    "name": "Statisztika",
                     "credits": 2,
                     "prerequisites": [
-                        "VEMKMAB112M",
-                        "VEMKMAB122M"
+                        "VEMIMAB114H"
                     ]
                 },
                 {
@@ -169,18 +148,12 @@
                     "name": "Numerikus módszerek",
                     "credits": 4,
                     "prerequisites": [
-                        "VEMKMAB112M",
-                        "VEMKMAB122M"
+                        "VEMIMAB114H"
                     ]
                 },
                 {
                     "code": "VEMKOK1212A",
                     "name": "Szerves kémia I. A",
-                    "credits": 2
-                },
-                {
-                    "code": "VEMKVVB232K",
-                    "name": "Mérnöki kommunikáció informatikai eszközei",
                     "credits": 2
                 },
                 {
@@ -247,15 +220,6 @@
                     ]
                 },
                 {
-                    "code": "VEMKGEB242H",
-                    "name": "Műszaki hőtan",
-                    "credits": 2,
-                    "prerequisites": [
-                        "VEMKFI1312A",
-                        "VEMKMAB112M"
-                    ]
-                },
-                {
                     "code": "VEMKFK3242T",
                     "name": "Műszaki termodinamika",
                     "credits": 2,
@@ -277,13 +241,29 @@
                     "credits": 3,
                     "prerequisites": [
                         "VEMKFI1312A",
-                        "VEMKMAB212M"
+                        "VEMKMAB222M"
+                    ]
+                },
+                {
+                    "code": "VEMKFIB112I/F1MNMER",
+                    "name": "Ipari mérések",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKFI1312B"
                     ]
                 },
                 {
                     "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
-                    "credits": 2
+                    "credits": 4
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható szakmai ismeretek",
+                    "credits": 2,
+                    "course_block_references": [
+                        "Kötelezően választható szakamai ismeretek"
+                    ]
                 }
             ]
         },
@@ -300,15 +280,6 @@
                     ]
                 },
                 {
-                    "code": "VEMKFIB231E",
-                    "name": "Elektronika laboratóriumi gyakorlat",
-                    "credits": 1,
-                    "prerequisites": [
-                        "VEMKFI1312A",
-                        "(VEMKFIB212E)"
-                    ]
-                },
-                {
                     "code": "VEMKEL3253A",
                     "name": "Eljárástervezés I.",
                     "credits": 3,
@@ -321,7 +292,7 @@
                     "name": "Folyamatirányítás",
                     "credits": 3,
                     "prerequisites": [
-                        "VEMKFOB333S"
+                        "VEMKFIB222M/F1MNMER"
                     ]
                 },
                 {
@@ -329,7 +300,8 @@
                     "name": "Irányításelmélet és technika",
                     "credits": 2,
                     "prerequisites": [
-                        "VEMKFOB333S"
+                        "VEMKFIB222M/F1MNMER",
+                        "VEMKFIB112I/F1MNMER"
                     ]
                 },
                 {
@@ -346,11 +318,11 @@
                     ]
                 },
                 {
-                    "code": "VEMKFKB211K",
+                    "code": "VEMKFKB212K",
                     "name": "Korróziós alapismeretek",
-                    "credits": 1,
+                    "credits": 2,
                     "prerequisites": [
-                        "VEMKFKB312A"
+                        "VEMKFKB312B"
                     ]
                 },
                 {
@@ -359,7 +331,7 @@
                     "credits": 2,
                     "prerequisites": [
                         "VEMKGEB143H",
-                        "VEMKGEB242H"
+                        "VEMKMU2112A"
                     ]
                 },
                 {
@@ -375,7 +347,8 @@
                     "name": "Bevezetés a kémiai technológiába",
                     "credits": 2,
                     "prerequisites": [
-                        "VEMKGEB113V"
+                        "VEMKGEB113V",
+                        "VEMKGEB143H"
                     ]
                 },
                 {
@@ -468,9 +441,13 @@
                     ]
                 },
                 {
-                    "code": "___OPTIONAL___",
-                    "name": "Szabadon választható",
-                    "credits": 2
+                    "code": "VEMKGEB243H",
+                    "name": "Áramlás és hőtechnikai gépek",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEMKGEB143H",
+                        "VEMKMU2112A"
+                    ]
                 }
             ]
         },
@@ -485,16 +462,6 @@
                     "prerequisites": [
                         "VEMKEL3153A"
                     ]
-                },
-                {
-                    "code": "VEMKVVB212K",
-                    "name": "Mérnöki kommunikáció",
-                    "credits": 2
-                },
-                {
-                    "code": "VEMKVVB222K",
-                    "name": "Mérnöki kommunikáció gyakorlat",
-                    "credits": 2
                 },
                 {
                     "code": "VEMKTE3242M",
@@ -530,12 +497,25 @@
                 },
                 {
                     "code": null,
+                    "name": "Kötelezően választható szakmai ismeretek",
+                    "credits": 2,
+                    "course_block_references": [
+                        "Kötelezően választható szakamai ismeretek"
+                    ]
+                },
+                {
+                    "code": null,
                     "name": "Választott szakirány",
                     "credits": 12,
                     "course_block_references": [
                         "Üzemeltetési szakirány 6. félév",
                         "Technológia szakirány 6. félév"
                     ]
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható",
+                    "credits": 2
                 }
             ]
         },
@@ -559,7 +539,7 @@
                 {
                     "code": null,
                     "name": "Választott szakirány",
-                    "credits": 18,
+                    "credits": 15,
                     "course_block_references": [
                         "Üzemeltetési szakirány 7. félév",
                         "Technológia szakirány 7. félév"
@@ -572,29 +552,59 @@
             "row": 1,
             "courses": [
                 {
-                    "code": "VEMKTT1312F",
-                    "name": "Filozófia",
+                    "code": "VETKTT1312F",
+                    "name": "Filozófiatörténet I.",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKPP1312A",
+                    "name": "Bevezetés a pszichológiába",
                     "credits": 2
                 },
                 {
-                    "code": "VEMKTT1312P",
-                    "name": "Politika-elmélet",
-                    "credits": 2
+                    "code": "VETKAEB2130",
+                    "name": "Összehasonlító kultúratörténet I.",
+                    "credits": 3
                 },
                 {
-                    "code": "VEMKTT1312S",
-                    "name": "Szociológia",
-                    "credits": 2
-                },
-                {
-                    "code": "VEMKEU1312E",
-                    "name": "EU ismeretek",
-                    "credits": 2
+                    "code": "VETKAEB112C",
+                    "name": "Kulturális antropológia I.",
+                    "credits": 3
                 },
                 {
                     "code": "VEMKGES523E",
-                    "name": "Etika, protokoll, művelődés (nem csak műszakiaknak)",
+                    "name": "Etika,protokoll,művelődés",
                     "credits": 3
+                },
+                {
+                    "code": "VEMKVVB212K",
+                    "name": "Mérnöki kommunikáció",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKVVB222K",
+                    "name": "Mérnöki kommunikáció gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "VEGTVEB212E",
+                    "name": "Emberi erőforrás menedzsment",
+                    "credits": 2
+                },
+                {
+                    "code": "VEGTVEB222E",
+                    "name": "Emberi erőforrás menedzsment gyakorlata",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKKVB212P",
+                    "name": "Környezetpolitika,környezetszociológia",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKLIB512E",
+                    "name": "Az EU környezetpolitikája és annak irányelvei",
+                    "credits": 2
                 }
             ]
         },
@@ -625,6 +635,63 @@
                     "prerequisites": [
                         "VEMKOK1212A"
                     ]
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választható szakmai ismeretek",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VEMKRK3321S",
+                    "name": "Sugárzástani alapismeretek",
+                    "credits": 1
+                },
+                {
+                    "code": "VEMKVVB232K",
+                    "name": "Mérnöki kommunukáció informatikai eszközei",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMKGEB242H",
+                    "name": "Műszaki áramlás és hőtan II",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKMAB112M",
+                        "VEMKFI1312A"
+                    ]
+                },
+                {
+                    "code": "VEMKSIB312K",
+                    "name": "Korszerű szerkezeti anyagok",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKSIB113A"
+                    ]
+                },
+                {
+                    "code": "VEMKFIB231E",
+                    "name": "Elektronika labor gyakorlat",
+                    "credits": 1,
+                    "prerequisites": [
+                        "VEMKFI1312A",
+                        "(VEMKFIB212E)"
+                    ]
+                },
+                {
+                    "code": "VEMKBMB412M",
+                    "name": "Membrános műveletek",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMIMAM143A",
+                    "name": "Matematikai analízis mérnököknek",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMKMA1143G",
+                    "name": "Lineáris algebra",
+                    "credits": 3
                 }
             ]
         },
@@ -691,9 +758,9 @@
                     ]
                 },
                 {
-                    "code": "VEMKMUB145V",
+                    "code": "VEMKMUB143V",
                     "name": "Vegyi gyár",
-                    "credits": 5
+                    "credits": 3
                 }
             ]
         },
@@ -706,13 +773,14 @@
                     "name": "Finomkémiai technológiák",
                     "credits": 3,
                     "prerequisites": [
-                        "(VEMKMUB212V)"
+                        "(VEMKMUB212V)",
+                        "VEMKMUB113T"
                     ]
                 },
                 {
                     "code": "VEMKTEV246T",
-                    "name": "Terméktervezés",
-                    "credits": 6,
+                    "name": "Ásványolaj technológia laborgyakorlat",
+                    "credits": 3,
                     "prerequisites": [
                         "VEMKOLB143A"
                     ]
@@ -749,9 +817,17 @@
                     ]
                 },
                 {
-                    "code": "VEMKMUB145V",
+                    "code": "VEMKMUB143V",
                     "name": "Vegyi gyár",
-                    "credits": 5
+                    "credits": 3
+                },
+                {
+                    "code": "VEMKTEV243T",
+                    "name": "Terméktervezés",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEMKOLM233T"
+                    ]
                 }
             ]
         }
