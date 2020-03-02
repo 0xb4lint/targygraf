@@ -1,9 +1,9 @@
 <?php
 
 use App\Course;
+use App\CourseBlock;
 use App\Program;
 use App\University;
-use App\CourseBlock;
 
 class ProgramSeeder extends AbstractJsonFileSeeder
 {
