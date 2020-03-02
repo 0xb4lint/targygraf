@@ -2,8 +2,8 @@
 
 namespace Tests\Database;
 
-use Tests\TestCase;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
+use Tests\TestCase;
 
 class SeedTest extends TestCase
 {
