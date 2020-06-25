@@ -41,7 +41,7 @@
    					"credits": 3
    				},
    				{
-   					"code": "VEMIMAB114H",
+   					"code": "VEMIMAB144H",
    					"name": "Matematikai analízis I.",
    					"credits": 4
    				},
@@ -113,7 +113,7 @@
    					"prerequisites": [
    						"VEMKAKB112A",
    						"VEMKFI1312A",
-   						"VEMIMAB114H"
+   						"VEMIMAB144H"
    					]
    				},
    				{
@@ -121,7 +121,7 @@
    					"name": "Matematikai analízis II.",
    					"credits": 4,
    					"prerequisites": [
-   						"VEMIMAB114H"
+   						"VEMIMAB144H"
    					]
    				},
    				{
@@ -129,7 +129,7 @@
    					"name": "Statisztika",
    					"credits": 2,
    					"prerequisites": [
-   						"VEMIMAB114H"
+   						"VEMIMAB144H"
    					]
    				},
    				{
@@ -147,7 +147,7 @@
    					"name": "Numerikus módszerek",
    					"credits": 4,
    					"prerequisites": [
-   						"VEMIMAB114H"
+   						"VEMIMAB144H"
    					]
    				},
    				{
@@ -215,7 +215,7 @@
    					"credits": 3,
    					"prerequisites": [
    						"VEMKFI1312A",
-   						"VEMIMAB114H"
+   						"VEMIMAB144H"
    					]
    				},
    				{
@@ -653,7 +653,7 @@
    					"name": "Műszaki áramlás és hőtan II",
    					"credits": 2,
    					"prerequisites": [
-   						"VEMKMAB112M",
+   						"VEMIMAB144H",
    						"VEMKFI1312A"
    					]
    				},
