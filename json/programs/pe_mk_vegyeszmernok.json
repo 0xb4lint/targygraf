@@ -1,7 +1,7 @@
-{
+
     "name": "Vegyészmérnök",
     "description": "Vegyészmérnöki alapszak tanterve",
-    "curriculum_updated_at": "2019-03-19",
+    "curriculum_updated_at": "2020-04-15",
     "course_blocks": [
         {
             "name": "1. félév",
@@ -38,9 +38,9 @@
                     "credits": 3
                 },
                 {
-                    "code": "VEGTGAB114M",
-                    "name": "Közgazdaságtan és vállalkozásgazdaságtan",
-                    "credits": 4
+                    "code": "VEGTKGB112K",
+                    "name": "Bevezetés a közgadaságtanba",
+                    "credits": 3
                 },
                 {
                     "code": "VEMIMAB114H",
@@ -49,21 +49,21 @@
                 },
                 {
                     "code": "VEMKFOB333S",
-                    "name": "Számítástechnika",
+                    "name": "Számítástechnika I.",
                     "credits": 3
                 },
                 {
+                    "code": "VEMKTE3222S",
+                    "name": "Veszteség megelőzés",
+                    "credits": 2
+                },
+                {
                     "code": null,
-                    "name": "Választható társadalomtudományi tárgy",
-                    "credits": 2,
+                    "name": "Kötelezően választható társadalomtudományi tárgy",
+                    "credits": 3,
                     "course_block_references": [
                         "Választható társadalomtudományi tárgy"
                     ]
-                },
-                {
-                    "code": "___OPTIONAL___",
-                    "name": "Szabadon választható",
-                    "credits": 2
                 }
             ]
         },
@@ -86,7 +86,8 @@
                     "credits": 3,
                     "prerequisites": [
                         "VEMKAKB112A",
-                        "VEMKAKB122A"
+                        "VEMKAKB122A",
+                        "VEMKTE3222S"
                     ]
                 },
                 {
@@ -104,7 +105,8 @@
                     "credits": 2,
                     "prerequisites": [
                         "VEMKFI1312A",
-                        "VEMKFI1322A"
+                        "VEMKFI1322A",
+                        "VEMKTE3222S"
                     ]
                 },
                 {
@@ -190,7 +192,8 @@
                     "credits": 2,
                     "prerequisites": [
                         "VEMKFKB212A",
-                        "(VEMKFKB312A)"
+                        "(VEMKFKB312A)",
+                        "VEMKTE3222S",
                     ]
                 },
                 {
@@ -216,7 +219,7 @@
                     "credits": 3,
                     "prerequisites": [
                         "VEMKFI1312A",
-                        "VEMIMAB114H"
+                        "VEMIMAB144H"
                     ]
                 },
                 {
@@ -262,7 +265,7 @@
                     "name": "Kötelezően választható szakmai ismeretek",
                     "credits": 2,
                     "course_block_references": [
-                        "Kötelezően választható szakmai ismeretek"
+                        "Kötelezően választható szakamai ismeretek"
                     ]
                 }
             ]
@@ -292,7 +295,7 @@
                     "name": "Folyamatirányítás",
                     "credits": 3,
                     "prerequisites": [
-                        "VEMKFIB112I/F1MNMER"
+                        "VEMKFIB222M/F1MNMER"
                     ]
                 },
                 {
@@ -300,6 +303,7 @@
                     "name": "Irányításelmélet és technika",
                     "credits": 2,
                     "prerequisites": [
+                        "VEMKFIB222M/F1MNMER",
                         "VEMKFIB112I/F1MNMER"
                     ]
                 },
@@ -313,7 +317,8 @@
                     "name": "Kémiai analízis laboratóriumi gyakorlat",
                     "credits": 4,
                     "prerequisites": [
-                        "VEMKKAB114A"
+                        "VEMKKAB114A",
+                        "VEMKTE3222S"
                     ]
                 },
                 {
@@ -321,7 +326,7 @@
                     "name": "Korróziós alapismeretek",
                     "credits": 2,
                     "prerequisites": [
-                        "VEMKFI1312B"
+                        "VEMKFKB312B"
                     ]
                 },
                 {
@@ -330,7 +335,8 @@
                     "credits": 2,
                     "prerequisites": [
                         "VEMKGEB143H",
-                        "VEMKMU2112A"
+                        "VEMKFK3242T",
+                        "VEMKTE3222S"
                     ]
                 },
                 {
@@ -364,7 +370,8 @@
                     "name": "Szerves kémia laboratóriumi gyakorlat A",
                     "credits": 4,
                     "prerequisites": [
-                        "VEMKOK1112A"
+                        "VEMKOK1112A",
+                        "VEMKTE3222S"
                     ]
                 }
             ]
@@ -373,14 +380,6 @@
             "name": "5. félév",
             "row": 0,
             "courses": [
-                {
-                    "code": null,
-                    "name": "Választható menedzsment tárgy",
-                    "credits": 4,
-                    "course_block_references": [
-                        "Választható menedzsment tárgy"
-                    ]
-                },
                 {
                     "code": "VEMKEL3153A",
                     "name": "Eljárástervezés II.",
@@ -419,7 +418,8 @@
                     "name": "Válogatott vegyipari technológiák laboratóriumi gyakorlat",
                     "credits": 6,
                     "prerequisites": [
-                        "(VEMKTEB143A)"
+                        "(VEMKTEB143A)",
+                        "VEMKTE3222S"
                     ]
                 },
                 {
@@ -436,7 +436,8 @@
                     "credits": 4,
                     "prerequisites": [
                         "VEMKMUB244A",
-                        "VEMKMUB212V"
+                        "VEMKMUB212V",
+                        "VEMKTE3222S"
                     ]
                 },
                 {
@@ -448,6 +449,14 @@
                         "VEMKMU2112A"
                     ]
                 }
+                {
+                    "code": null,
+                    "name": "Kötelezően választható menedzsment tárgy",
+                    "credits": 4,
+                    "course_block_references": [
+                        "Választható menedzsment tárgy"
+                                   ]
+                               },
             ]
         },
         {
@@ -487,24 +496,16 @@
                     ]
                 },
                 {
-                    "code": "VEMKTE3222S",
-                    "name": "Veszteségmegelőzés",
-                    "credits": 2,
-                    "prerequisites": [
-                        "VEMKFKB312A"
-                    ]
-                },
-                {
                     "code": null,
                     "name": "Kötelezően választható szakmai ismeretek",
                     "credits": 2,
                     "course_block_references": [
-                        "Kötelezően választható szakmai ismeretek"
+                        "Kötelezően választható szakamai ismeretek"
                     ]
                 },
                 {
                     "code": null,
-                    "name": "Választott szakirány",
+                    "name": "Választott specilizáció",
                     "credits": 12,
                     "course_block_references": [
                         "Üzemeltetési szakirány 6. félév",
@@ -514,7 +515,7 @@
                 {
                     "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
-                    "credits": 2
+                    "credits": 4
                 }
             ]
         },
@@ -531,13 +532,21 @@
                     ]
                 },
                 {
+                    "code": null,
+                    "name": "Kötelezően választható szakmai ismeretek",
+                    "credits": 2,
+                    "course_block_references": [
+                        "Kötelezően választható szakamai ismeretek"
+                    ]
+                },
+                {
                     "code": "VEMKVMBX0G",
                     "name": "Vegyészmérnök alapszak nyári szakmai gyakorlat",
                     "credits": 0
                 },
                 {
                     "code": null,
-                    "name": "Választott szakirány",
+                    "name": "Választott specializáció",
                     "credits": 15,
                     "course_block_references": [
                         "Üzemeltetési szakirány 7. félév",
@@ -547,7 +556,7 @@
             ]
         },
         {
-            "name": "Választható társadalomtudományi tárgy",
+            "name": "Kötelezően választható társadalomtudományi tárgy",
             "row": 1,
             "courses": [
                 {
@@ -588,12 +597,12 @@
                 {
                     "code": "VEGTVEB212E",
                     "name": "Emberi erőforrás menedzsment",
-                    "credits": 2
+                    "credits": 3
                 },
                 {
                     "code": "VEGTVEB222E",
                     "name": "Emberi erőforrás menedzsment gyakorlata",
-                    "credits": 2
+                    "credits": 3
                 },
                 {
                     "code": "VEMKKVB212P",
@@ -608,13 +617,13 @@
             ]
         },
         {
-            "name": "Választható menedzsment tárgy",
+            "name": "Kötelezően választható menedzsment tárgy",
             "row": 1,
             "courses": [
                 {
                     "code": "VEGTMEB144M",
                     "name": "Általános menedzsment",
-                    "credits": 4,
+                    "credits": 6,
                     "prerequisites": [
                         "VEGTGAB114M"
                     ]
@@ -622,7 +631,7 @@
                 {
                     "code": "VEGTVEB314T",
                     "name": "Termelés és szolgáltatás menedzsment",
-                    "credits": 4,
+                    "credits": 6,
                     "prerequisites": [
                         "VEGTGAB114M"
                     ]
@@ -656,7 +665,7 @@
                     "name": "Műszaki áramlás és hőtan II",
                     "credits": 2,
                     "prerequisites": [
-                        "VEMIMAB114H",
+                        "VEMKMAB112M",
                         "VEMKFI1312A"
                     ]
                 },
@@ -695,7 +704,7 @@
             ]
         },
         {
-            "name": "Üzemeltetési szakirány 6. félév",
+            "name": "Üzemeltetési specializáció 6. félév",
             "row": 1,
             "courses": [
                 {
@@ -712,8 +721,7 @@
                     "name": "Környezetvédelmi technológiák",
                     "credits": 2,
                     "prerequisites": [
-                        "VEMKSIB113A",
-                        "VEMKMUB244A"
+                        "VEMKSIB113A"
                     ]
                 },
                 {
@@ -727,7 +735,7 @@
             ]
         },
         {
-            "name": "Üzemeltetési szakirány 7. félév",
+            "name": "Üzemeltetési specializáció 7. félév",
             "row": 1,
             "courses": [
                 {
@@ -764,7 +772,7 @@
             ]
         },
         {
-            "name": "Technológia szakirány 6. félév",
+            "name": "Technológia specializáció 6. félév",
             "row": 1,
             "courses": [
                 {
@@ -777,11 +785,12 @@
                     ]
                 },
                 {
-                    "code": "VEMKOLM233T",
+                    "code": "VEMKTEV246T",
                     "name": "Ásványolaj technológia laborgyakorlat",
                     "credits": 3,
                     "prerequisites": [
-                        "VEMKOLB143A"
+                        "VEMKOLB143A",
+                        "VEMKTE3222S"
                     ]
                 },
                 {
@@ -790,7 +799,6 @@
                     "credits": 2,
                     "prerequisites": [
                         "VEMKSIB113A",
-                        "VEMKMUB244A"
                     ]
                 },
                 {
@@ -804,7 +812,7 @@
             ]
         },
         {
-            "name": "Technológia szakirány 7. félév",
+            "name": "Technológia specializáció 7. félév",
             "row": 1,
             "courses": [
                 {
