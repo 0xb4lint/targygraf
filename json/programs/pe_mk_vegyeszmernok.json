@@ -290,7 +290,7 @@
    					"name": "Folyamatirányítás",
    					"credits": 3,
    					"prerequisites": [
-   						"VEMKFIB222I/F1MNMER"
+   						"VVEMKFIB112I/F1MNMER"
    					]
    				},
    				{
@@ -298,7 +298,7 @@
    					"name": "Irányításelmélet és technika",
    					"credits": 2,
    					"prerequisites": [
-   						"VEMKFIB222I/F1MNMER"
+   						"VEMKFIB112I/F1MNMER"
    					]
    				},
    				{
