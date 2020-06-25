@@ -60,7 +60,7 @@
    					"name": "Kötelezően választható társadalomtudományi tárgy",
    					"credits": 3,
    					"course_block_references": [
-   						"Választható társadalomtudományi tárgy"
+   						"Kötelezően választható társadalomtudományi tárgy"
    					]
    				}
    			]
@@ -448,7 +448,7 @@
    					"name": "Kötelezően választható menedzsment tárgy",
    					"credits": 4,
    					"course_block_references": [
-   						"Választható menedzsment tárgy"
+   						"Kötelezően választható menedzsment tárgy"
    					]
    				}
    			]
@@ -501,8 +501,8 @@
    					"name": "Választott specilizáció",
    					"credits": 12,
    					"course_block_references": [
-   						"Üzemeltetési szakirány 6. félév",
-   						"Technológia szakirány 6. félév"
+   						"Üzemeltetési specializáció 6. félév",
+   						"Technológia specializáció 6. félév"
    					]
    				},
    				{
@@ -541,8 +541,8 @@
    					"name": "Választott specializáció",
    					"credits": 15,
    					"course_block_references": [
-   						"Üzemeltetési szakirány 7. félév",
-   						"Technológia szakirány 7. félév"
+   						"Üzemeltetési specializáció 7. félév",
+   						"Technológia specialzáció 7. félév"
    					]
    				}
    			]
