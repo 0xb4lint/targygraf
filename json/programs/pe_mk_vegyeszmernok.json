@@ -614,7 +614,7 @@
    					"name": "Általános menedzsment",
    					"credits": 6,
    					"prerequisites": [
-   						"VEGTGAB114M"
+   						"VEGTKGB122K"
    					]
    				},
    				{
@@ -622,7 +622,7 @@
    					"name": "Termelés és szolgáltatás menedzsment",
    					"credits": 6,
    					"prerequisites": [
-   						"VEGTGAB114M"
+   						"VEGTKGB122K"
    					]
    				},
    				{
