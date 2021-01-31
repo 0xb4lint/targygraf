@@ -1,0 +1,322 @@
+{
+    "name": "Programtervező informatikus MSc",
+    "description": "Programtervező informatikus MSc szak - nappali tagozat tanterve",
+    "curriculum_updated_at": "2019-11-26",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "VEMIMAM164N",
+                    "name": "Numerikus analízis",
+                    "credits": 5
+                },
+                {
+                    "code": "VEMISAM244O",
+                    "name": "Haladó operációkutatás",
+                    "credits": 5
+                },
+                {
+                    "code": "VEMIVIM142I",
+                    "name": "Mesterséges intelligencia",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMISAM143A",
+                    "name": "Korszerű adatbányászati módszerek I.",
+                    "credits": 4
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választandó matematikai és számítástudományi ismeretek",
+                    "credits": 6,
+                    "course_block_references": [
+                        "Kötelezően választandó matematikai és számítástudományi ismeretek"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választandó informatikai ismeretek",
+                    "credits": 7,
+                    "course_block_references": [
+                        "Kötelezően választandó informatikai ismeretek"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "VEMISAM243A",
+                    "name": "Algoritmus- és bonyolultságelmélet",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMIVIM233A",
+                    "name": "Haladó adatbázis-kezelő rendszerek",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMIVIM234F",
+                    "name": "Felhő programozás",
+                    "credits": 5
+                },
+                {
+                    "code": "VEMISAM233P",
+                    "name": "Projekt alapú szoftverfejlesztés",
+                    "credits": 6
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választandó matematikai és számítástudományi ismeretek",
+                    "credits": 5,
+                    "course_block_references": [
+                        "Kötelezően választandó matematikai és számítástudományi ismeretek"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választandó informatikai ismeretek",
+                    "credits": 6,
+                    "course_block_references": [
+                        "Kötelezően választandó informatikai ismeretek"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "VEMIINPRX1m",
+                    "name": "Diplomalabor",
+                    "credits": 15,
+                    "prerequisites": [
+                        "___40___"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választandó matematikai és számítástudományi ismeretek",
+                    "credits": 7,
+                    "course_block_references": [
+                        "Kötelezően választandó matematikai és számítástudományi ismeretek"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választandó informatikai ismeretek",
+                    "credits": 8,
+                    "course_block_references": [
+                        "Kötelezően választandó informatikai ismeretek"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "VEMIINPRX2m",
+                    "name": "Diplomamunka",
+                    "credits": 15,
+                    "prerequisites": [
+                        "VEMIINPRX1m"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választandó matematikai és számítástudományi ismeretek",
+                    "credits": 3,
+                    "course_block_references": [
+                        "Kötelezően választandó matematikai és számítástudományi ismeretek"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választandó informatikai ismeretek",
+                    "credits": 6,
+                    "course_block_references": [
+                        "Kötelezően választandó informatikai ismeretek"
+                    ]
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható",
+                    "credits": 6
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választandó matematikai és számítástudományi ismeretek",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VEMIMAM243N",
+                    "name": "Numerikus analízis II.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VEMIMAM164N"
+                    ]
+                },
+                {
+                    "code": "VEMIMAM343S",
+                    "name": "Matematikai statisztika",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMIMAM312K",
+                    "name": "Kriptográfia matematikai alapjai ",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMISAM143K",
+                    "name": "Kombinatorikus algoritmusok",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMISAM212K",
+                    "name": "Haladó kombinatorika és gráfelmélet",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEMISAM143K"
+                    ]
+                },
+                {
+                    "code": "VEMISAM153H",
+                    "name": "Hálózatszintézis és optimalizálás",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VEMISAM244O"
+                    ]
+                },
+                {
+                    "code": "VEMISAM342O",
+                    "name": "Kombinatorikus optimalizálás",
+                    "credits": 5,
+                    "prerequisites": [
+                        "VEMISAM244O"
+                    ]
+                },
+                {
+                    "code": "VEMISAM154E",
+                    "name": "Rendszerelemzés és rendszertervezés",
+                    "credits": 5
+                },
+                {
+                    "code": "VEMISAM454I",
+                    "name": "Intelligens irányító rendszerek",
+                    "credits": 5
+                },
+                {
+                    "code": "VEMISAM232F",
+                    "name": "Fordítóprogramok",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEMISAM243A"
+                    ]
+                },
+                {
+                    "code": "VEMISAM213H",
+                    "name": "Hálózatelemzés",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választandó informatikai ismeretek",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VEMIPRM353T",
+                    "name": "Mélytanuló rendszerek",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VEMISAM143A"
+                    ]
+                },
+                {
+                    "code": "VEMISAM242A",
+                    "name": "Korszerű adatbányászati módszerek II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEMISAM143A"
+                    ]
+                },
+                {
+                    "code": "VEMISAM142S",
+                    "name": "Szakértői rendszerek",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMIVIM254N",
+                    "name": "Nagyvállalati rendszerintegráció",
+                    "credits": 5
+                },
+                {
+                    "code": "VEMISAM154I",
+                    "name": "Üzleti intelligencia rendszerek",
+                    "credits": 5
+                },
+                {
+                    "code": "VEGTGAM122G",
+                    "name": "Vezetői gazdaságtan",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMIVIM254L",
+                    "name": "Számítógépes látás",
+                    "credits": 5
+                },
+                {
+                    "code": "VEMIVIM355K",
+                    "name": "Fejlett képfeldolgozási módszerek",
+                    "credits": 5,
+                    "prerequisites": [
+                        "VEMIVIM254L"
+                    ]
+                },
+                {
+                    "code": "VEMISAM453P",
+                    "name": "Logikai és funkcionális programozás",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMIIRM444P",
+                    "name": "Párhuzamos programozás",
+                    "credits": 5
+                },
+                {
+                    "code": "VEMISAM154J",
+                    "name": "Szerver oldali JavaScript programozás",
+                    "credits": 5
+                },
+                {
+                    "code": "VEMISAM334W",
+                    "name": "Haladó web alapú programfejlesztés",
+                    "credits": 5
+                },
+                {
+                    "code": "VEMIMAM134S",
+                    "name": "Szerver oldali .Net programozás",
+                    "credits": 5
+                },
+                {
+                    "code": "VEMISAM132G",
+                    "name": "Dokumentum és gráf adatbázisok",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMIVIM113I",
+                    "name": "Információ-elmélet mérnöki alkalmazásokkal",
+                    "credits": 3
+                }
+            ]
+        }
+    ]
+}
