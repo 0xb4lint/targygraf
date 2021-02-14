@@ -6,6 +6,7 @@ class ProgramsJsonTest extends AbstractJsonTest
 {
     const DUMMY_CREDIT_COURSE_CODES = [
         '___20___',
+        '___40___',
         '___45___',
         '___50___',
         '___75___',
