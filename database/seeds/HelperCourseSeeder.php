@@ -8,7 +8,6 @@ class HelperCourseSeeder extends Seeder
     public function run()
     {
         $this->createDummyCredits(20);
-        $this->createDummyCredits(40);
         $this->createDummyCredits(45);
         $this->createDummyCredits(50);
         $this->createDummyCredits(75);

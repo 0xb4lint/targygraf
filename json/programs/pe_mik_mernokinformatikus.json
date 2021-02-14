@@ -1,5 +1,5 @@
 {
-    "curriculum_updated_at": "2019-10-29",
+    "curriculum_updated_at": "2020-06-24",
     "name": "Mérnökinformatikus",
     "description": "Mérnökinformatikus BSc szak - nappali tagozat tanterve",
     "course_blocks": [
@@ -27,7 +27,7 @@
                     "name": "Matematikai alapozó"
                 },
                 {
-                    "code": "VEMKFI1312A",
+                    "code": "VEMKFIB112F",
                     "credits": 2,
                     "name": "Fizika I."
                 },
@@ -268,7 +268,7 @@
                     "name": "Méréselmélet"
                 },
                 {
-                    "course_block_references": ["Kötelezően választható humán/gazdasági tárgy"],
+                    "course_block_references": ["Kötelezően választható humán/gazdasági tárgyak"],
                     "code": null,
                     "credits": 2,
                     "name": "Kötelezően választható humán/gazdasági tárgy"
@@ -388,7 +388,7 @@
                     "name": "Kötelezően választható szakmai tárgy"
                 },
                 {
-                    "course_block_references": ["Kötelezően választható humán/gazdasági tárgy"],
+                    "course_block_references": ["Kötelezően választható humán/gazdasági tárgyak"],
                     "code": null,
                     "credits": 3,
                     "name": "Kötelezően választható humán/gazdasági tárgy"
@@ -484,7 +484,7 @@
                     "name": "Az informatika története"
                 }
             ],
-            "name": "Kötelezően választható humán/gazdasági tárgy",
+            "name": "Kötelezően választható humán/gazdasági tárgyak",
             "row": 1
         },
         {
@@ -538,7 +538,7 @@
                     "prerequisites": ["VEMIINB154H"],
                     "code": "VEMIINB253C",
                     "credits": 4,
-                    "name": "Egységes kommunikáció"
+                    "name": "Vállalati kommunikációs rendszerek"
                 }
             ],
             "name": "Kötelezően választható szakmai tárgyak:\nHálózatok és rendszerek tárgycsoport",
@@ -646,7 +646,7 @@
                     ],
                     "code": "VEMISAB152A",
                     "credits": 2,
-                    "name": "Data Science alapjai"
+                    "name": "A Data Science alapjai"
                 },
                 {
                     "prerequisites": [
