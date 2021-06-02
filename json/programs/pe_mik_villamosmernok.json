@@ -1,7 +1,7 @@
 {
     "name": "Villamosmérnök",
     "description": "Villamosmérnöki BSc szak - nappali tagozat tanterve",
-    "curriculum_updated_at": "2021-01-15",
+    "curriculum_updated_at": "2021-06-02",
     "course_blocks": [
         {
             "name": "1. félév",
@@ -10,9 +10,9 @@
                 {
                     "code": "VEMIMAB346M",
                     "name": "Matematikai analízis I.",
-                    "credits": 6
+                    "credits": 6,
                     "prerequisites": [
-                        "(VEMIMAB122A)"
+                        "VEMIMAB122A"
                     ]
                 },
                 {
@@ -200,7 +200,7 @@
                 {
                     "code": "VEMIVIB112J",
                     "name": "Jelek és rendszerek",
-                    "credits": 2
+                    "credits": 2,
                     "prerequisites": [
                         "VEMIMAB246M",
                         "VEMKMA1143V"
@@ -209,7 +209,7 @@
                 {
                     "code": "VEMIVIB112E",
                     "name": "Villamos energetika és Smart Grid",
-                    "credits": 2
+                    "credits": 2,
                     "prerequisites": [
                         "VEMIVIB145V"
                     ]
@@ -419,7 +419,7 @@
                     "course_block_references": [
                         "Kötelezően választandó differenciált szakmai tárgyak"
                     ]
-                }
+                },
                 {
                     "code": null,
                     "name": "Villamosmérnöki választható tárgy",
