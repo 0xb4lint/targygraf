@@ -8,17 +8,17 @@
             "row": 0,
             "courses": [
                 {
+                    "code": "VEMIMAB122A",
+                    "name": "Matematikai alapozó",
+                    "credits": 0
+                },
+                {
                     "code": "VEMIMAB346M",
                     "name": "Matematikai analízis I.",
                     "credits": 6,
                     "prerequisites": [
-                        "VEMIMAB122A"
+                        "(VEMIMAB122A)"
                     ]
-                },
-                {
-                    "code": "VEMIMAB122A",
-                    "name": "Matematikai alapozó",
-                    "credits": 0
                 },
                 {
                     "code": "VEMKMA1143V",
@@ -120,7 +120,7 @@
                 {
                     "code": "VEMKVI2212A",
                     "name": "Méréstechnika",
-                    "credits": 2,
+                    "credits": 2
                 },
                 {
                     "code": null,
@@ -375,7 +375,7 @@
                     "course_block_references": [
                         "Villamosmérnöki választható tárgyak"
                     ]
-                },
+                }
             ]
         },
         {
@@ -402,7 +402,7 @@
                 {
                     "code": "VEMKKVB222B",
                     "name": "Biztonságtechnika, munkavédelem és kockázatelemzés",
-                    "credits": 2,
+                    "credits": 2
                 },
                 {
                     "code": "VEMIINB3X4T",
@@ -432,10 +432,7 @@
                     "code": "___OPTIONAL___",
                     "name": "Szabadon választható tárgy",
                     "credits": 5
-                },
-                
-                
-                
+                }
             ]
         },
         {
@@ -677,7 +674,7 @@
                 {
                     "code": "VEMIVIB322S",
                     "name": "Mérnöki számítások",
-                    "credits": 2,
+                    "credits": 2
                 },
                 {
                     "code": null,
@@ -712,22 +709,22 @@
                 {
                     "code": "VEMISA5312F",
                     "name": "Fejezetek a természettudományok történetéből",
-                    "credits": 2,
+                    "credits": 2
                 },
                 {
                     "code": "VEMISA5312Z",
                     "name": "Zenetörténet",
-                    "credits": 2,
+                    "credits": 2
                 },
                 {
                     "code": "VEMIGAB512J",
                     "name": "Iparjogvédelem és innovációmenedzsment",
-                    "credits": 2,
+                    "credits": 2
                 },
                 {
                     "code": "VEMIGAB512Z",
                     "name": "Szellemitulajdon-védelem",
-                    "credits": 2,
+                    "credits": 2
                 },
                 {
                     "code": "VEMIMA5312T",
@@ -736,7 +733,7 @@
                     "prerequisites": [
                         "___75___"
                     ]
-                },
+                }
             ]
         }
     ]
