@@ -595,7 +595,7 @@
                     "credits": 3
                 },
                 {
-                    "code": "VEMKVVB212K",
+                    "code": "VEMKKVB122K",
                     "name": "Mérnöki kommunikáció",
                     "credits": 2
                 },
@@ -675,7 +675,7 @@
                     "name": "Műszaki áramlás és hőtan II",
                     "credits": 2,
                     "prerequisites": [
-                        "VEMKMAB112M",
+                        "VEMKMAB144H",
                         "VEMKFI1312A"
                     ]
                 },
@@ -700,16 +700,6 @@
                     "code": "VEMKBMB412M",
                     "name": "Membrános műveletek",
                     "credits": 2
-                },
-                {
-                    "code": "VEMIMAM143A",
-                    "name": "Matematikai analízis mérnököknek",
-                    "credits": 3
-                },
-                {
-                    "code": "VEMKMA1143G",
-                    "name": "Lineáris algebra",
-                    "credits": 3
                 }
             ]
         },

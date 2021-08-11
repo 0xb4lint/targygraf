@@ -64,7 +64,6 @@
 		<script src="{{ url('assets/js/jquery.tipsy.min.js') }}"></script>
 		<script src="{{ url('assets/js/notie.min.js') }}"></script>
 		<script src="{{ url('assets/js/targygraf.js') }}?v=20190625"></script>
-		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 		@yield('scripts')
 	</body>
 </html>
