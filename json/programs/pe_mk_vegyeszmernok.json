@@ -86,8 +86,7 @@
                     "credits": 3,
                     "prerequisites": [
                         "VEMKAKB112A",
-                        "VEMKAKB122A",
-                        "VEMKTE3222S"
+                        "VEMKAKB122A"
                     ]
                 },
                 {
@@ -105,8 +104,7 @@
                     "credits": 2,
                     "prerequisites": [
                         "VEMKFI1312A",
-                        "VEMKFI1322A",
-                        "VEMKTE3222S"
+                        "VEMKFI1322A"
                     ]
                 },
                 {
@@ -192,8 +190,7 @@
                     "credits": 2,
                     "prerequisites": [
                         "VEMKFKB212A",
-                        "(VEMKFKB312A)",
-                        "VEMKTE3222S",
+                        "(VEMKFKB312A)"
                     ]
                 },
                 {
@@ -317,8 +314,7 @@
                     "name": "Kémiai analízis laboratóriumi gyakorlat",
                     "credits": 4,
                     "prerequisites": [
-                        "VEMKKAB114A",
-                        "VEMKTE3222S"
+                        "VEMKKAB114A"
                     ]
                 },
                 {
@@ -335,8 +331,7 @@
                     "credits": 2,
                     "prerequisites": [
                         "VEMKGEB143H",
-                        "VEMKFK3242T",
-                        "VEMKTE3222S"
+                        "VEMKFK3242T"
                     ]
                 },
                 {
@@ -370,8 +365,7 @@
                     "name": "Szerves kémia laboratóriumi gyakorlat A",
                     "credits": 4,
                     "prerequisites": [
-                        "VEMKOK1112A",
-                        "VEMKTE3222S"
+                        "VEMKOK1112A"
                     ]
                 }
             ]
@@ -418,8 +412,7 @@
                     "name": "Válogatott vegyipari technológiák laboratóriumi gyakorlat",
                     "credits": 6,
                     "prerequisites": [
-                        "(VEMKTEB143A)",
-                        "VEMKTE3222S"
+                        "(VEMKTEB143A)"
                     ]
                 },
                 {
@@ -436,8 +429,7 @@
                     "credits": 4,
                     "prerequisites": [
                         "VEMKMUB244A",
-                        "VEMKMUB212V",
-                        "VEMKTE3222S"
+                        "VEMKMUB212V"
                     ]
                 },
                 {
@@ -448,7 +440,7 @@
                         "VEMKGEB143H",
                         "VEMKMU2112A"
                     ]
-                }
+                },
                 {
                     "code": null,
                     "name": "Kötelezően választható menedzsment tárgy",
@@ -456,7 +448,7 @@
                     "course_block_references": [
                         "Választható menedzsment tárgy"
                                    ]
-                               },
+                               }
             ]
         },
         {
@@ -500,8 +492,8 @@
                     "name": "Tervezés I.",
                     "credits": 3,
                     "prerequisites": [
-                        "VEMKEL3253B"
-                        "VEMKMUB113T"
+                        "VEMKEL3253B",
+                        "VEMKMUB113T",
                         "(VEMKFOB213F)"
                     ]
                 },
@@ -798,7 +790,7 @@
                     "name": "Környezetvédelmi technológiák",
                     "credits": 2,
                     "prerequisites": [
-                        "VEMKSIB113A",
+                        "VEMKSIB113A"
                     ]
                 },
                 {
