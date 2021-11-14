@@ -1,0 +1,26 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - run: >
+          mkdir /home/runner/.ssh &&
+          mv .deploy/ssh_config /home/runner/.ssh/config &&
+          echo "$ID_RSA" > /home/runner/.ssh/id_rsa &&
+          chmod 600 /home/runner/.ssh/*
+        env:
+          ID_RSA: ${{ secrets.ID_RSA }}
+      - run: >
+          ssh www-data@targygraf.hu "sh -c '
+          cd /var/www/targygraf.hu; \
+          rm composer.lock; \
+          git pull origin master && \
+          composer install --no-dev --no-interaction && \
+          php artisan migrate:refresh --seed --force -vvv'"
+

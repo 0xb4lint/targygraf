@@ -1,0 +1,5 @@
+Host *
+	StrictHostKeyChecking no
+	UserKnownHostsFile /dev/null
+	IdentitiesOnly yes
+	IdentityFile /home/runner/.ssh/id_rsa
