@@ -1,4 +1,4 @@
-name: Deploy
+name: Test && Deploy
 
 on:
   push:
@@ -6,9 +6,20 @@ on:
       - master
 
 jobs:
-  deploy:
+  test:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4'
+      - run: composer install --profile --no-interaction
+      - run: ./vendor/bin/phpunit
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
       - run: >
           mkdir /home/runner/.ssh &&
           mv .deploy/ssh_config /home/runner/.ssh/config &&
