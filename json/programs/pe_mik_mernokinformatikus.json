@@ -1,5 +1,5 @@
 {
-    "curriculum_updated_at": "2020-06-24",
+    "curriculum_updated_at": "2021-04-20",
     "name": "Mérnökinformatikus",
     "description": "Mérnökinformatikus BSc szak - nappali tagozat tanterve",
     "course_blocks": [
@@ -710,6 +710,12 @@
                     "code": "VEMIMAB222C",
                     "credits": 2,
                     "name": "C# programozás"
+                },
+                {
+                    "prerequisites": ["VEMISAB144A"],
+                    "code": "VEMISAB132P",
+                    "credits": 2,
+                    "name": "Bevezetés a Python programozási nyelvbe"
                 },
                 {
                     "prerequisites": [
