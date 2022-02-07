@@ -246,7 +246,7 @@
          "row":0,
          "courses":[
             {
-               "code":"ZEMKFIB255A ",
+               "code":"ZEMKFIB255A",
                "name":"Aktuátortechnika",
                "credits":5,
                "prerequisites":[
