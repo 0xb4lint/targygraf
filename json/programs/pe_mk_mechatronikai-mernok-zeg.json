@@ -212,7 +212,7 @@
             },
             {
                "code":"ZEMKFOB133S",
-               "name":"Számítástechnika II. ",
+               "name":"Számítástechnika II.",
                "credits":3,
                "prerequisites":[
                   "ZEMKFOB333S"
@@ -353,7 +353,7 @@
          "row":0,
          "courses":[
             {
-               "code":"ZEMKFIB233S ",
+               "code":"ZEMKFIB233S",
                "name":"Szakdolgozat I.",
                "credits":3,
                "prerequisites":[
@@ -361,7 +361,7 @@
                ]
             },
             {
-               "code":"ZEMKGEB244T ",
+               "code":"ZEMKGEB244T",
                "name":"Gépgyártás–technológia",
                "credits":4,
                "prerequisites":[
@@ -462,7 +462,7 @@
                "credits":4
             },
             {
-               "code":"ZEMKZEB254F ",
+               "code":"ZEMKZEB254F",
                "name":"Forgácsolás",
                "credits":4
             }
