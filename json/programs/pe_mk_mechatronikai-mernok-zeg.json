@@ -1,0 +1,628 @@
+{
+   "name":"Mechatronikai mérnök ZEG",
+   "description":"Mechatronikai mérnöki alapszak 2017 után (ZEG)",
+   "curriculum_updated_at":"2022-02-07",
+   "course_blocks":[
+      {
+         "name":"1. félév",
+         "row":0,
+         "courses":[
+            {
+               "code":"ZEMIMAB144H",
+               "name":"Matematikai analízis I.",
+               "credits":4
+            },
+            {
+               "code":"ZEMKMA1143G",
+               "name":"Lineáris algebra",
+               "credits":3
+            },
+            {
+               "code":"ZEMKFI1312A",
+               "name":"Fizika I.",
+               "credits":2
+            },
+            {
+               "code":"ZEMKFI1322A",
+               "name":"Fizika I. gyak",
+               "credits":2
+            },
+            {
+               "code":"ZEMKGEB113V",
+               "name":"Gépelelemek és ábrázolás",
+               "credits":3
+            },
+            {
+               "code":"VEGTKGB122K",
+               "name":"Bevezetés a közgazdaságtanba",
+               "credits":3
+            },
+            {
+               "code":"ZEMKGEB112M",
+               "name":"Műszaki mechanika I.",
+               "credits":2
+            },
+            {
+               "code":"ZEMKGEB122M",
+               "name":"Műszaki mechanika I. gyak.",
+               "credits":2
+            },
+            {
+               "code":"ZEMKSIB113A",
+               "name":"Anyagtudomány",
+               "credits":3
+            },
+            {
+               "code":"ZEMKFIB111M",
+               "name":"Mechatronika alapjai",
+               "credits":1
+            },
+            {
+               "code":"ZEMKGEB112T",
+               "name":"Szerkezeti anyagok és technológiájuk (Fémes) I.",
+               "credits":2
+            }
+         ]
+      },
+      {
+         "name":"2. félév",
+         "row":0,
+         "courses":[
+            {
+               "code":"ZEMIMAB244H",
+               "name":"Matematikai analízis II.",
+               "credits":4,
+               "prerequisites":[
+                  "ZEMIMAB144H"
+               ]
+            },
+            {
+               "code":"ZEMKFI1312B",
+               "name":"Fizika II.",
+               "credits":2,
+               "prerequisites":[
+                  "ZEMKFI1322A",
+                  "ZEMKFI1312A"
+               ]
+            },
+            {
+               "code":"ZEMKFI1332A",
+               "name":"Fizika lab. gyak.",
+               "credits":2,
+               "prerequisites":[
+                  "ZEMKFI1322A",
+                  "ZEMKFI1312A"
+               ]
+            },
+            {
+               "code":"ZEMKMA1144C",
+               "name":"Numerikus módszerek",
+               "credits":4,
+               "prerequisites":[
+                  "ZEMIMAB144H"
+               ]
+            },
+            {
+               "code":"ZEMKGEB212M",
+               "name":"Műszaki mechanika II.",
+               "credits":2,
+               "prerequisites":[
+                  "ZEMKGEB112M",
+                  "ZEMKGEB122M"
+               ]
+            },
+            {
+               "code":"ZEMKGEB222M",
+               "name":"Műszaki mechanika II. gyak.",
+               "credits":2,
+               "prerequisites":[
+                  "ZEMKGEB112M",
+                  "ZEMKGEB122M"
+               ]
+            },
+            {
+               "code":"ZEMKFIB212E",
+               "name":"Elektronika",
+               "credits":2,
+               "prerequisites":[
+                  "ZEMKFI1312A"
+               ]
+            },
+            {
+               "code":"3CPcmPaS",
+               "name":"Elektronika gyakorlat",
+               "credits":2,
+               "prerequisites":[
+                  "(ZEMKFIB212E)"
+               ]
+            },
+            {
+               "code":"ZEMKFIB252M",
+               "name":"Mérés- és műszertechnika",
+               "credits":2
+            },
+            {
+               "code":"ZEMKFOB333S",
+               "name":"Számítástechnika I.",
+               "credits":3
+            },
+            {
+               "code":null,
+               "name":"Választható társadalomtudományi tárgy",
+               "credits":7,
+               "course_block_references":[
+                  "Kötelezően választható társadalomtudományi tárgyak"
+               ]
+            }
+         ]
+      },
+      {
+         "name":"3. félév",
+         "row":0,
+         "courses":[
+            {
+               "code":"ZEMKGEB143M",
+               "name":"Műszaki mechanika III.",
+               "credits":3,
+               "prerequisites":[
+                  "ZEMKGEB212M",
+                  "ZEMKGEB222M"
+               ]
+            },
+            {
+               "code":"ZEMKGEB1143H",
+               "name":"Műszaki áramlástan",
+               "credits":3,
+               "prerequisites":[
+                  "ZEMIMAB144H",
+                  "ZEMKFI1312A"
+               ]
+            },
+            {
+               "code":"ZEMKFIB155S",
+               "name":"Szenzortechnika",
+               "credits":5,
+               "prerequisites":[
+                  "ZEMKFIB212E"
+               ]
+            },
+            {
+               "code":"ZEMKFIB134E",
+               "name":"Digitális elektronika",
+               "credits":4,
+               "prerequisites":[
+                  "ZEMKFI1312B"
+               ]
+            },
+            {
+               "code":"ZEMKFIB232E",
+               "name":"Elektronika lab.gyak.",
+               "credits":2,
+               "prerequisites":[
+                  "ZEMKFIB212E"
+               ]
+            },
+            {
+               "code":"ZEMKFIB112I",
+               "name":"Ipari mérések",
+               "credits":2,
+               "prerequisites":[
+                  "ZEMKFI1312B"
+               ]
+            },
+            {
+               "code":"ZEMKFOB133S",
+               "name":"Számítástechnika II. ",
+               "credits":3,
+               "prerequisites":[
+                  "ZEMKFOB333S"
+               ]
+            },
+            {
+               "code":"ZEMKFIB354M",
+               "name":"Mechatronikai szoftverek",
+               "credits":4
+            },
+            {
+               "code":"ZEMIMAB112V",
+               "name":"Vektoranalízis és differenciálegyenletek",
+               "credits":2,
+               "prerequisites":[
+                  "ZEMIMAB244H"
+               ]
+            },
+            {
+               "code":null,
+               "name":"Differenciált szakmai törzsanyag",
+               "credits":4,
+               "course_block_references":[
+                  "Differenciált szakmai törzsanyag (3. félév)"
+               ]
+            }
+         ]
+      },
+      {
+         "name":"4. félév",
+         "row":0,
+         "courses":[
+            {
+               "code":"ZEMKFIB255A ",
+               "name":"Aktuátortechnika",
+               "credits":5,
+               "prerequisites":[
+                  "ZEMKFIB155S"
+               ]
+            },
+            {
+               "code":"ZEMKGEB243M",
+               "name":"Műszaki mechanika IV.",
+               "credits":3,
+               "prerequisites":[
+                  "ZEMKGEB143M"
+               ]
+            },
+            {
+               "code":"ZEMKFIB255V",
+               "name":"Mikrovezérlők",
+               "credits":5,
+               "prerequisites":[
+                  "ZEMKFIB134E"
+               ]
+            },
+            {
+               "code":"ZEMKGEB113F",
+               "name":"Finommechanika",
+               "credits":3,
+               "prerequisites":[
+                  "ZEMKGEB222M"
+               ]
+            },
+            {
+               "code":"ZEMKGEB234S",
+               "name":"Gépszerkezettan III. (CAD) lab. gyak.",
+               "credits":4,
+               "prerequisites":[
+                  "ZEMKGEB113V"
+               ]
+            },
+            {
+               "code":"ZEMKAKB212B",
+               "name":"Általános kémia",
+               "credits":2
+            },
+            {
+               "code":"ZEMKGEB242H",
+               "name":"Műszaki hőtan",
+               "credits":2
+            },
+            {
+               "code":null,
+               "name":"Differenciált szakmai törzsanyag",
+               "credits":7,
+               "course_block_references":[
+                  "Differenciált szakmai törzsanyag (4. félév)"
+               ]
+            }
+         ]
+      },
+      {
+         "name":"5. félév",
+         "row":0,
+         "courses":[
+            {
+               "code":"ZEMKFIB113T",
+               "name":"Mechatronikai tervezés",
+               "credits":3,
+               "prerequisites":[
+                  "ZEMKFIB255A"
+               ]
+            },
+            {
+               "code":"ZEMKGEB112J",
+               "name":"Jelfeldolgozás",
+               "credits":2,
+               "prerequisites":[
+                  "ZEMKFIB212E"
+               ]
+            },
+            {
+               "code":"ZEMKGEB142R",
+               "name":"Robotos szerelés",
+               "credits":2
+            },
+            {
+               "code":null,
+               "name":"Differenciált szakmai törzsanyag",
+               "credits":10,
+               "course_block_references":[
+                  "Differenciált szakmai törzsanyag (5. félév)"
+               ]
+            },
+            {
+               "code":null,
+               "name":"Specializációs tárgyak",
+               "credits":7,
+               "course_block_references":[
+                  "Mechatronikai technológiák specializáció szakirány (5. félév)"
+               ]
+            }
+         ]
+      },
+      {
+         "name":"6. félév",
+         "row":0,
+         "courses":[
+            {
+               "code":"ZEMKFIB233S ",
+               "name":"Szakdolgozat I.",
+               "credits":3,
+               "prerequisites":[
+                  "ZEMKFIB255A"
+               ]
+            },
+            {
+               "code":"ZEMKGEB244T ",
+               "name":"Gépgyártás–technológia",
+               "credits":4,
+               "prerequisites":[
+                  "ZEMKGEB112T"
+               ]
+            },
+            {
+               "code":"ZEMKVVB212J",
+               "name":"Jogi alapismeretek",
+               "credits":2
+            },
+            {
+               "code":"ZEMKKVB212M",
+               "name":"Minőségbiztosítás",
+               "credits":2
+            },
+            {
+               "code":null,
+               "name":"Differenciált szakmai törzsanyag",
+               "credits":4,
+               "course_block_references":[
+                  "Differenciált szakmai törzsanyag (6. félév)"
+               ]
+            },
+            {
+               "code":null,
+               "name":"Specializációs tárgyak",
+               "credits":14,
+               "course_block_references":[
+                  "Mechatronikai technológiák specializáció szakirány (6. félév)"
+               ]
+            }
+         ]
+      },
+      {
+         "name":"7. félév",
+         "row":0,
+         "courses":[
+            {
+               "code":"ZEMKFIB13XS",
+               "name":"Szakdolgozat II.",
+               "credits":12,
+               "prerequisites":[
+                  "ZEMKFIB233S"
+               ]
+            },
+            {
+               "code":"ZEMKMEBX0G",
+               "name":"Szakmai gyakorlat",
+               "credits":0
+            },
+            {
+               "code":"ZEMKKVB112M",
+               "name":"Környezetvédelem, biztonságtechnika",
+               "credits":2,
+               "prerequisites":[
+                  "ZEMKAKB212B"
+               ]
+            },
+            {
+               "code":null,
+               "name":"Kötelezően választható tárgyak",
+               "credits":4,
+               "course_block_references":[
+                  "Kötelezően választható tárgyak"
+               ]
+            },
+            {
+               "code":"___OPTIONAL___",
+               "name":"Szabadon választható tárgyak",
+               "credits":10
+            }
+         ]
+      },
+      {
+         "name":"Differenciált szakmai törzsanyag (3. félév)",
+         "row":1,
+         "courses":[
+            {
+               "code":"ZEMKZEB142I",
+               "name":"Gépészeti Informatika",
+               "credits":3
+            },
+			{
+               "code":"ZEMKOLB553P",
+               "name":"Polimertechnika",
+               "credits":3
+            }
+         ]
+      },
+      {
+         "name":"Differenciált szakmai törzsanyag (4. félév)",
+         "row":1,
+         "courses":[
+            {
+               "code":"ZEMKZEB243T",
+               "name":"Termelésinformatika",
+               "credits":4
+            },
+            {
+               "code":"ZEMKZEB254F ",
+               "name":"Forgácsolás",
+               "credits":4
+            }
+         ]
+      },
+      {
+         "name":"Differenciált szakmai törzsanyag (5. félév)",
+         "row":1,
+         "courses":[
+            {
+               "code":"ZEMKGEB153H",
+               "name":"Hidraulika és pneumatika",
+               "credits":3,
+               "prerequisites":[
+                  "ZEMKFI1312B"
+               ]
+            },
+            {
+               "code":"ZEMKGEB153R",
+               "name":"Robottechnika",
+               "credits":3,
+               "prerequisites":[
+                  "ZEMKFIB255A"
+               ]
+            },
+            {
+               "code":"ZEMKZEB243T",
+               "name":"Adatfeldolgozás és programozás",
+               "credits":4,
+               "prerequisites":[
+                  "ZEMKFOB133S"
+               ]
+            },
+            {
+               "code":"ZEMKZEB113R",
+               "name":"Szerszámgépek és robotok",
+               "credits":3,
+               "prerequisites":[
+                  "ZEMKFIB255A"
+               ]
+            }
+         ]
+      },
+	  {
+         "name":"Mechatronikai technológiák specializáció szakirány (5. félév)",
+         "row":1,
+         "courses":[
+            {
+               "code":"ZEMKZEB144E",
+               "name":"Elektronikai technológia I.",
+               "credits":4,
+               "prerequisites":[
+                  "ZEMKFIB155S"
+               ]
+            },
+            {
+               "code":"ZEMKZEB143A",
+               "name":"Alkatrészgyártás I.",
+               "credits":3
+            }
+         ]
+      },
+      {
+         "name":"Differenciált szakmai törzsanyag (6. félév)",
+         "row":1,
+         "courses":[
+            {
+               "code":"ZEMKZEB253N",
+               "name":"NC technológia és programozás",
+               "credits":3
+            }
+         ]
+      },
+	        {
+         "name":"Mechatronikai technológiák specializáció szakirány (6. félév)",
+         "row":1,
+         "courses":[
+            {
+               "code":"ZEMKZEB144E",
+               "name":"Elektronikai technológia II.",
+               "credits":3,
+               "prerequisites":[
+                  "ZEMKZEB144E"
+               ]
+            },
+            {
+               "code":"ZEMKFOB2121I",
+               "name":"Irányításelmélet és technika",
+               "credits":2,
+               "prerequisites":[
+                  "ZEMKFIB113T"
+               ]
+            },
+            {
+               "code":"ZEMKZEB212A",
+               "name":"Automatika",
+               "credits":2,
+               "prerequisites":[
+                  "ZEMKFOB2121I"
+               ]
+            },
+            {
+               "code":"ZEMKZEB243G",
+               "name":"Gyártástervezés",
+               "credits":3,
+               "prerequisites":[
+                  "ZEMKFOB2121I"
+               ]
+            },
+            {
+               "code":"ZEMKZEB243A",
+               "name":"Alkatrészgyártás II.",
+               "credits":3,
+               "prerequisites":[
+                  "ZEMKOLB553P"
+               ]
+            },
+            {
+               "code":"ZEMKZEB211M",
+               "name":"Munkavédelem",
+               "credits":3
+            }
+         ]
+      },
+      {
+         "name":"Kötelezően választható társadalomtudományi tárgyak",
+         "row":1,
+         "courses":[
+            {
+               "code":"ZEGTVEB212E",
+               "name":"Emberi erőforrás menedzsment",
+               "credits":3
+            },
+            {
+               "code":"ZEGTVEB222E",
+               "name":"Emberi erőforrás menedzsment gyak.",
+               "credits":3
+            },
+            {
+               "code":"ZEMKZEB522T",
+               "name":"Kommunikációs tréning",
+               "credits":2
+            }
+         ]
+      },
+      {
+         "name":"Kötelezően választható tárgyak",
+         "row":1,
+         "courses":[
+            {
+               "code":"VEMKFIF320A",
+               "name":"Szakmai angol nyelv",
+               "credits":2
+            },
+            {
+               "code":"ZEMKZEB332L",
+               "name":"Önálló labor I.",
+               "credits":2
+            }
+         ]
+      }
+   ]
+}
