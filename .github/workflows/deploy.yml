@@ -1,0 +1,37 @@
+name: Test && Deploy
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4'
+      - run: composer install --profile --no-interaction
+      - run: ./vendor/bin/phpunit
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: >
+          mkdir /home/runner/.ssh &&
+          mv .deploy/ssh_config /home/runner/.ssh/config &&
+          echo "$ID_RSA" > /home/runner/.ssh/id_rsa &&
+          chmod 600 /home/runner/.ssh/*
+        env:
+          ID_RSA: ${{ secrets.ID_RSA }}
+      - run: >
+          ssh www-data@targygraf.hu "sh -c '
+          cd /var/www/targygraf.hu;
+          rm composer.lock;
+          git pull origin master &&
+          composer install --no-dev --no-interaction &&
+          php artisan migrate:refresh --seed --force -vvv'"
+

@@ -440,6 +440,11 @@
 					"code": "GT43A001",
 					"name": "Kommunikáció",
 					"credits": 2
+				},
+				{
+					"code": "VITMAK50",
+					"name": "Pénzügyi technológiák (FinTech) alapjai",
+					"credits": 2
 				}
 			]
 		},
