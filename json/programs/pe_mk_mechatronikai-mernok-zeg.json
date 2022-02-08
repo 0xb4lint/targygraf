@@ -561,7 +561,7 @@
                "name":"Automatika",
                "credits":2,
                "prerequisites":[
-                  "ZEMKFOB2121I"
+                  "(ZEMKFOB2121I)"
                ]
             },
             {
@@ -569,7 +569,7 @@
                "name":"Gyártástervezés",
                "credits":3,
                "prerequisites":[
-                  "ZEMKFOB2121I"
+                  "(ZEMKFOB2121I)"
                ]
             },
             {
