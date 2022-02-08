@@ -1,5 +1,5 @@
 {
-    "curriculum_updated_at": "2021-04-20",
+    "curriculum_updated_at": "2021-11-16",
     "name": "Mérnökinformatikus",
     "description": "Mérnökinformatikus BSc szak - nappali tagozat tanterve",
     "course_blocks": [
@@ -482,6 +482,11 @@
                     "code": "VETKCO3112S",
                     "credits": 2,
                     "name": "Az informatika története"
+                },
+                {
+                    "code": "VEMIINB112A",
+                    "credits": 2,
+                    "name": "Ipar 4.0 kihívások"
                 }
             ],
             "name": "Kötelezően választható humán/gazdasági tárgyak",
@@ -539,6 +544,12 @@
                     "code": "VEMIINB253C",
                     "credits": 4,
                     "name": "Vállalati kommunikációs rendszerek"
+                },
+                {
+                    "prerequisites": ["VEMIINB154H"],
+                    "code": "VEMIINB253T",
+                    "credits": 3,
+                    "name": "IoT biztonság"
                 }
             ],
             "name": "Kötelezően választható szakmai tárgyak:\nHálózatok és rendszerek tárgycsoport",
@@ -599,6 +610,12 @@
                     "code": "VEMIVIB544L",
                     "credits": 4,
                     "name": "A LabVIEW fejlesztői környezet"
+                },
+                {
+                    "prerequisites": ["VEMISAB254C","VEMIVIB174E"],
+                    "code": "VEMIVIB233I",
+                    "credits": 3,
+                    "name": "IoT rendszerek"
                 }
             ],
             "name": "Kötelezően választható szakmai tárgyak:\nBeágyazott rendszerek tárgycsoport",
@@ -649,15 +666,6 @@
                     "name": "A Data Science alapjai"
                 },
                 {
-                    "prerequisites": [
-                        "VEMKMA1143V",
-                        "VEMISAB154R"
-                    ],
-                    "code": "VEMIAIB253K",
-                    "credits": 4,
-                    "name": "Információ-visszakeresés"
-                },
-                {
                     "prerequisites": ["VEMIMAB143A"],
                     "code": "VEMIMAB512L",
                     "credits": 2,
@@ -686,6 +694,12 @@
                     "code": "VEMIVIB212F",
                     "credits": 2,
                     "name": "Folyamatbányászat"
+                },
+                {
+                    "prerequisites": ["VEMISAB154B"],
+                    "code": "VEMISAB153B",
+                    "credits": 3,
+                    "name": "Big Data rendszerek és elemzési módszerek"
                 }
             ],
             "name": "Kötelezően választható szakmai tárgyak:\nAdattudomány tárgycsoport",
@@ -697,7 +711,7 @@
                     "prerequisites": ["VEMISAB244S"],
                     "code": "VEMIKN5312I",
                     "credits": 2,
-                    "name": "Felhasználói interfészek"
+                    "name": "Felhasználói interfészek tervezése"
                 },
                 {
                     "prerequisites": ["VEMIVIB134J"],
