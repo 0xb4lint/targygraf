@@ -56,7 +56,7 @@
 
 		<footer>
 			@yield('footer')
-			<iframe src="https://ghbtns.com/github-btn.html?user=0xB4LINT&repo=targygraf&type=star&count=true&size=large" class="github"></iframe>
+			<iframe src="https://ghbtns.com/github-btn.html?user=0xb4lint&repo=targygraf&type=star&count=true&size=large" class="github"></iframe>
 			<div class="disclaimer">Az oldalon található információk nem tekinthetőek hivatalos forrásnak.</div>
 		</footer>
 
