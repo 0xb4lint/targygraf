@@ -11,6 +11,6 @@ class SeedTest extends TestCase
 
     public function testSeed()
     {
-        $this->artisan('db:seed');
+        $this->artisan('db:seed')->assertExitCode(0);
     }
 }
