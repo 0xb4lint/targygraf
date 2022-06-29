@@ -28,8 +28,8 @@ jobs:
         env:
           ID_RSA: ${{ secrets.ID_RSA }}
       - run: >
-          ssh www-data@targygraf.hu "sh -c '
-          cd /var/www/targygraf.hu;
+          ssh www-data@104.248.26.170 "sh -c '
+          cd /var/www/104.248.26.170;
           rm composer.lock;
           git pull origin master &&
           composer install --no-dev --no-interaction &&
