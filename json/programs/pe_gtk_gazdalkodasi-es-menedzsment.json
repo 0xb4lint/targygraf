@@ -144,7 +144,7 @@
                 {
                     "code": "VEGTSCB124S",
                     "name": "Számviteli gyakorlatok",
-                    "credits": 3,
+                    "credits": 6,
                     "prerequisites": [
                         "VEGTSCB244K"
                     ]
