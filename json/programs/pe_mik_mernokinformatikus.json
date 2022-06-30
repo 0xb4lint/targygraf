@@ -1,5 +1,5 @@
 {
-    "curriculum_updated_at": "2021-11-16",
+    "curriculum_updated_at": "2022-05-03",
     "name": "Mérnökinformatikus",
     "description": "Mérnökinformatikus BSc szak - nappali tagozat tanterve",
     "course_blocks": [
@@ -152,9 +152,9 @@
             "courses": [
                 {
                     "prerequisites": ["VEMISAB254C"],
-                    "code": "VEMISAB254T",
-                    "credits": 5,
-                    "name": "Korszerű programozási technikák"
+                    "code": "VEMISAB154K",
+                    "credits": 4,
+                    "name": "Korszerű programozási technikák I."
                 },
                 {
                     "prerequisites": ["VEMISAB254C"],
@@ -262,21 +262,19 @@
                     "name": "Irányításelmélet és technika I."
                 },
                 {
-                    "prerequisites": ["(VEMKMA1344B)"],
-                    "code": "VEMIVI2212M",
-                    "credits": 2,
-                    "name": "Méréselmélet"
+                    "prerequisites": [
+                        "VEMISAB154K",
+                        "VEMISAB244S"
+                    ],
+                    "code": "VEMISAB244M",
+                    "credits": 5,
+                    "name": "A rendszerfejlesztés korszerű módszerei"
                 },
                 {
                     "course_block_references": ["Kötelezően választható humán/gazdasági tárgyak"],
                     "code": null,
                     "credits": 2,
                     "name": "Kötelezően választható humán/gazdasági tárgy"
-                },
-                {
-                    "code": "___OPTIONAL___",
-                    "credits": 2,
-                    "name": "Szabadon választható tárgy"
                 },
                 {
                     "code": "VEMKLE2220A",
@@ -354,13 +352,10 @@
         {
             "courses": [
                 {
-                    "prerequisites": [
-                        "VEMISAB254T",
-                        "VEMISAB244S"
-                    ],
-                    "code": "VEMISAB244M",
-                    "credits": 5,
-                    "name": "A rendszerfejlesztés korszerű módszerei"
+                    "prerequisites": ["(VEMKMA1344B)"],
+                    "code": "VEMIVI2212M",
+                    "credits": 2,
+                    "name": "Méréselmélet"
                 },
                 {
                     "prerequisites": ["VETKMA1244O"],
@@ -384,7 +379,7 @@
                     "Kötelezően választható szakmai tárgyak:\nBeágyazott rendszerek tárgycsoport",
                     "Kötelezően választható szakmai tárgyak:\nHálózatok és rendszerek tárgycsoport"],
                     "code": null,
-                    "credits": 6,
+                    "credits": 7,
                     "name": "Kötelezően választható szakmai tárgy"
                 },
                 {
@@ -395,7 +390,7 @@
                 },
                 {
                     "code": "___OPTIONAL___",
-                    "credits": 2,
+                    "credits": 5,
                     "name": "Szabadon választható tárgy"
                 }
             ],
@@ -416,7 +411,7 @@
                 },
                 {
                     "code": "___OPTIONAL___",
-                    "credits": 6,
+                    "credits": 5,
                     "name": "Szabadon választható tárgy"
                 },
                 {
@@ -795,7 +790,7 @@
                     "name": "Kotlin programozás"
                 },
                 {
-                    "prerequisites": ["VEMISAB254T"],
+                    "prerequisites": ["VEMISAB154K"],
                     "code": "VEMISAB232S",
                     "credits": 2,
                     "name": "Szoftverfejlesztés Qt keretrendszerrel"
@@ -811,6 +806,12 @@
                     "code": "VEMISAB243E",
                     "credits": 3,
                     "name": "A digitális számítás elmélete"
+                },
+                {
+                    "prerequisites": ["VEMISAB154K"],
+                    "code": "VEMISAB254K",
+                    "credits": 4,
+                    "name": "Korszerű programozási technikák II."
                 }
             ],
             "name": "Kötelezően választható szakmai tárgyak:\nRendszer- és szoftverfejlesztés tárgycsoport",
