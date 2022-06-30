@@ -1,50 +1,60 @@
 {
     "name": "Turizmus-vendéglátás",
     "description": "Turizmus-vendéglátás alapszak - nappali tagozat tanterve",
-    "curriculum_updated_at": "2013-05-14",
+    "curriculum_updated_at": "2022-06-30",
     "course_blocks": [
         {
             "name": "1. félév",
             "row": 0,
             "courses": [
                 {
-                    "code": "MIMAB144M",
+                    "code": "VEMIMAB144M",
                     "name": "Közgazdaságtan matematikai alapjai",
                     "credits": 6
                 },
                 {
-                    "code": "GTKGB114Ö",
+                    "code": "VEGTGAB112J",
+                    "name": "Gazdasági jog",
+                    "credits": 3
+                },
+                {
+                    "code": "VEGTKGB114Ö",
                     "name": "Makroökonómia",
                     "credits": 6
                 },
                 {
-                    "code": "GTTUB112S",
-                    "name": "Gazdaságszociológia",
-                    "credits": 3
-                },
-                {
-                    "code": "GTNGB112E",
-                    "name": "Európai Uniós ismeretek",
-                    "credits": 3
-                },
-                {
-                    "code": "GTMEB112P",
-                    "name": "Pszichológia",
-                    "credits": 3
-                },
-                {
-                    "code": "GTGAB114J",
-                    "name": "Gazdasági jog",
-                    "credits": 6
-                },
-                {
-                    "code": "GTMEB122K",
+                    "code": "VEGTMEB122K",
                     "name": "Üzleti kommunikáció",
                     "credits": 3
                 },
                 {
-                    "code": "GTLE1122A",
-                    "name": "Üzleti és idegenforgalmi szaknyelv I.",
+                    "code": "VEGTNGB112E",
+                    "name": "Európai Uniós ismeretek",
+                    "credits": 3
+                },
+                {
+                    "code": "VEGTTUB112U",
+                    "name": "Üzleti élet társadalmi összefüggései",
+                    "credits": 3
+                },
+                {
+                    "code": "VEGTVEB122T",
+                    "name": "Tanulási, önismereti és szocializációs tréning",
+                    "credits": 3
+                },
+                {
+                    "code": "VEGTMEB112P",
+                    "name": "Pszichológia",
+                    "credits": 3
+                },
+                {
+                    "code": "VEGTLEB122N",
+                    "name": "Gazdasági és üzleti szaknyelv I. (német)",
+                    "credits": 0
+                },
+                {
+                    "code": "VEGTLEB122A",
+                    "name": "Gazdasági és üzleti szaknyelv I. (angol)",
                     "credits": 0
                 }
             ]
@@ -54,58 +64,68 @@
             "row": 0,
             "courses": [
                 {
-                    "code": "MKMA1344B",
-                    "name": "Valószínűségszámítás és matematikai statisztika",
-                    "credits": 6,
-                    "prerequisites": [
-                        "MIMAB144M"
-                    ]
-                },
-                {
-                    "code": "GTKGB144K",
-                    "name": "Mikroökonómia",
-                    "credits": 6,
-                    "prerequisites": [
-                        "MIMAB144M"
-                    ]
-                },
-                {
-                    "code": null,
-                    "name": "Választandó az alábbi kettő tárgyból",
-                    "credits": 3,
-                    "course_block_references": [
-                        "Választandó az alábbi kettő tárgyból"
-                    ]
-                },
-                {
-                    "code": "GTGAB144A",
+                    "code": "VEGTGAB144A",
                     "name": "Vállalati gazdaságtan",
                     "credits": 6
                 },
                 {
-                    "code": "GTGAB112M",
-                    "name": "Marketing alapjai",
-                    "credits": 3
-                },
-                {
-                    "code": "GTSCB144S",
+                    "code": "VEGTSCB144S",
                     "name": "Számvitel alapjai",
                     "credits": 6
                 },
                 {
-                    "code": "GTLE1222A",
-                    "name": "Üzleti és idegenforgalmi szaknyelv II.",
-                    "credits": 0,
+                    "code": "VEGTKGB144K",
+                    "name": "Mikroökonómia",
+                    "credits": 6,
                     "prerequisites": [
-                        "GTLE1122A"
+                        "VEMIMAB144M"
                     ]
                 },
                 {
-                    "code": "GTLE33X0A",
-                    "name": "Üzleti és idegenforgalmi szaknyelvi záróvizsga",
+                    "code": "VEGTMIB212M",
+                    "name": "Bevezetés a marketingbe",
+                    "credits": 3
+                },
+                {
+                    "code": "VEGTMIB222M",
+                    "name": "Bevezetés a marketingbe gyakorlat",
+                    "credits": 3
+                },
+                {
+                    "code": "VEGTNGB244K",
+                    "name": "Nemzetközi gazdaságtan",
+                    "credits": 6
+                },
+                {
+                    "code": "VEGTLEB222N",
+                    "name": "Gazdasági és üzleti szaknyelv II. (német)",
                     "credits": 0,
                     "prerequisites": [
-                        "GTLE1222A"
+                        "VEGTLEB122N"
+                    ]
+                },
+                {
+                    "code": "VEGTLEB222A",
+                    "name": "Gazdasági és üzleti szaknyelv II. (angol)",
+                    "credits": 0,
+                    "prerequisites": [
+                        "VEGTLEB122A"
+                    ]
+                },
+                {
+                    "code": "VEGTLEB1X0N",
+                    "name": "Gazdasági és üzleti szaknyelvi záróvizsga (német)",
+                    "credits": 0,
+                    "prerequisites": [
+                        "VEGTLEB222N"
+                    ]
+                },
+                {
+                    "code": "VEGTLEB1X0A",
+                    "name": "Gazdasági és üzleti szaknyelvi záróvizsga (angol)",
+                    "credits": 0,
+                    "prerequisites": [
+                        "VEGTLEB222A"
                     ]
                 }
             ]
@@ -115,51 +135,42 @@
             "row": 0,
             "courses": [
                 {
-                    "code": "GTGAB144S",
+                    "code": "VEGTGAB144S",
                     "name": "Statisztika",
-                    "credits": 6,
-                    "prerequisites": [
-                        "MKMA1344B"
-                    ]
+                    "credits": 6
                 },
                 {
-                    "code": "GTPTB112P",
-                    "name": "Pénzügytan (Makrogazdasági pénzügyek)",
-                    "credits": 3,
-                    "prerequisites": [
-                        "GTKGB114Ö"
-                    ]
-                },
-                {
-                    "code": null,
-                    "name": "Választandó az alábbi négy tárgyból",
-                    "credits": 3,
-                    "course_block_references": [
-                        "Választandó az alábbi négy tárgyból"
-                    ]
-                },
-                {
-                    "code": "GTMEB144M",
+                    "code": "VEGTMEB144M",
                     "name": "Általános menedzsment",
                     "credits": 6
                 },
                 {
-                    "code": "GTTUB144T",
-                    "name": "Turizmus társadalmi- gazdasági alapjai",
-                    "credits": 6
+                    "code": "VEGTPTB112P",
+                    "name": "Pénzügytan (Makrogazdasági pénzügyek)",
+                    "credits": 3
                 },
                 {
-                    "code": "GTTUB214F",
-                    "name": "Turizmus földrajzi alapjai",
-                    "credits": 6
-                },
-                {
-                    "code": "GTMEB144A",
-                    "name": "A gazdaságtan alapjai I.",
-                    "credits": 0,
+                    "code": "VEGTGAB312G",
+                    "name": "Ágazati gazdaságtan",
+                    "credits": 3,
                     "prerequisites": [
-                        "GTLE1222A"
+                        "VEGTKGB144K"
                     ]
+                },
+                {
+                    "code": "VEGTTUB144T",
+                    "name": "Turizmus társadalmi-gazdasági alapjai",
+                    "credits": 6
+                },
+                {
+                    "code": "VEGTTUB112F",
+                    "name": "Turizmus földrajzi alapjai",
+                    "credits": 3
+                },
+                {
+                    "code": "VEGTTUB312F",
+                    "name": "Területfejlesztés",
+                    "credits": 3
                 }
             ]
         },
@@ -168,45 +179,39 @@
             "row": 0,
             "courses": [
                 {
-                    "code": "GTVEB244I",
-                    "name": "Üzleti folyamatok támogatása",
-                    "credits": 6
-                },
-                {
-                    "code": "GTPTB212P",
+                    "code": "VEGTPTB212P",
                     "name": "Vállalati pénzügyek I.",
                     "credits": 3
                 },
                 {
-                    "code": "GTTUB144M",
+                    "code": "VEGTVEB244I",
+                    "name": "Üzleti folyamatok támogatása",
+                    "credits": 6
+                },
+                {
+                    "code": "VEGTTUB144M",
                     "name": "Turizmus marketing I.",
                     "credits": 6
                 },
                 {
-                    "code": "GTTUB214H",
+                    "code": "VEGTTUB214H",
                     "name": "Szállodai ismeretek",
                     "credits": 6
                 },
                 {
-                    "code": "GTTUB212V",
-                    "name": "Vendéglátó ismeretek",
+                    "code": "VEGTTUB312T",
+                    "name": "Nemzetközi turizmusföldrajz",
                     "credits": 3
                 },
                 {
-                    "code": null,
-                    "name": "Szakmai választható tárgy",
-                    "credits": 6,
-                    "course_block_references": [
-                        "Szakmai választható tárgyak"
-                    ]
+                    "code": "VEGTMIB222G",
+                    "name": "A problémamegoldás gyakorlata",
+                    "credits": 3
                 },
                 {
-                    "code": "GTMEB224A",
-                    "name": "A gazdaságtan alapjai II.",
-                    "credits": 0,
-                    "prerequisites": [
-                        "GTMEB144A"
-                    ]
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható",
+                    "credits": 3
                 }
             ]
         },
@@ -215,80 +220,39 @@
             "row": 0,
             "courses": [
                 {
-                    "code": "GTVEB314T",
-                    "name": "Termelés- és szolgáltatás-menedzsment",
-                    "credits": 6,
-                    "prerequisites": [
-                        "GTGAB144A"
-                    ]
-                },
-                {
-                    "code": "GTTUB312F",
-                    "name": "Területfejlesztés és turizmus",
+                    "code": "VEGTTUB212V",
+                    "name": "Vendéglátó ismeretek",
                     "credits": 3
                 },
                 {
-                    "code": "GTTUB412Z",
-                    "name": "Turisztikai fogyasztói magatartás",
-                    "credits": 3,
-                    "prerequisites": [
-                        "GTTUB144M"
-                    ]
+                    "code": "VEGTTUB444R",
+                    "name": "Rendezvényszervezés",
+                    "credits": 6
                 },
                 {
-                    "code": null,
-                    "name": "Szakirány-tárgy",
-                    "credits": 6,
-                    "course_block_references": [
-                        "Szálloda-szervezés szakirány",
-                        "Utazás- és rendezvényszervezés szakirány",
-                        "Turizmusmarketing szakirány",
-                        "Aktív, sport- és ökoturizmus szakirány",
-                        "Vendéglátás-szervezés szakirány",
-                        "Egészségturizmus szakirány",
-                        "Borturizmus szakirány"
-                    ]
+                    "code": "VEGTTUB412F",
+                    "name": "Magyarország turizmusföldrajza",
+                    "credits": 3
                 },
                 {
-                    "code": null,
-                    "name": "Szakirány-tárgy",
-                    "credits": 6,
-                    "course_block_references": [
-                        "Szálloda-szervezés szakirány",
-                        "Utazás- és rendezvényszervezés szakirány",
-                        "Turizmusmarketing szakirány",
-                        "Aktív, sport- és ökoturizmus szakirány",
-                        "Vendéglátás-szervezés szakirány",
-                        "Egészségturizmus szakirány",
-                        "Borturizmus szakirány"
-                    ]
+                    "code": "VEGTTUB444U",
+                    "name": "Utazásszervezés",
+                    "credits": 6
                 },
                 {
-                    "code": null,
-                    "name": "Szakirány-tárgy",
-                    "credits": 3,
-                    "course_block_references": [
-                        "Szálloda-szervezés szakirány",
-                        "Utazás- és rendezvényszervezés szakirány",
-                        "Turizmusmarketing szakirány",
-                        "Aktív, sport- és ökoturizmus szakirány",
-                        "Vendéglátás-szervezés szakirány",
-                        "Egészségturizmus szakirány",
-                        "Borturizmus szakirány"
-                    ]
+                    "code": "VEGTTUB442E",
+                    "name": "Egészségturizmus menedzsment",
+                    "credits": 3
+                },
+                {
+                    "code": "VEGTTUB422I",
+                    "name": "Szálláshelyi informatika",
+                    "credits": 3
                 },
                 {
                     "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
-                    "credits": 3
-                },
-                {
-                    "code": "GTTUB322S",
-                    "name": "Szakszeminárium I.",
-                    "credits": 0,
-                    "prerequisites": [
-                        "GTTUB144T"
-                    ]
+                    "credits": 6
                 }
             ]
         },
@@ -297,80 +261,58 @@
             "row": 0,
             "courses": [
                 {
-                    "code": "GTTUB312J",
-                    "name": "Turisztikai és utazási jog",
+                    "code": "VEGTVEB222F",
+                    "name": "Felelősségvállalás üzleti aspektusai",
+                    "credits": 3
+                },
+                {
+                    "code": "VEGTTUB412V",
+                    "name": "Vendéglátó menedzsment",
                     "credits": 3,
                     "prerequisites": [
-                        "GTGAB114J"
+                        "VEGTTUB212V"
                     ]
                 },
                 {
-                    "code": null,
-                    "name": "Szakmai választható tárgy",
+                    "code": "VEGTTUB444M",
+                    "name": "Utazási irodai menedzsment",
+                    "credits": 6
+                },
+                {
+                    "code": "VEGTTUB412D",
+                    "name": "Desztináció menedzsment",
+                    "credits": 3
+                },
+                {
+                    "code": "GTTUB312J",
+                    "name": "Szállodai menedzsment",
                     "credits": 6,
-                    "course_block_references": [
-                        "Szakmai választható tárgyak"
+                    "prerequisites": [
+                        "VEGTTUB214H"
                     ]
                 },
                 {
-                    "code": null,
-                    "name": "Szakirány-tárgy",
-                    "credits": 6,
-                    "course_block_references": [
-                        "Szálloda-szervezés szakirány",
-                        "Utazás- és rendezvényszervezés szakirány",
-                        "Turizmusmarketing szakirány",
-                        "Aktív, sport- és ökoturizmus szakirány",
-                        "Vendéglátás-szervezés szakirány",
-                        "Egészségturizmus szakirány",
-                        "Borturizmus szakirány"
-                    ]
+                    "code": "VEGTTUB242K",
+                    "name": "Kulturális turizmus",
+                    "credits": 3
                 },
                 {
-                    "code": null,
-                    "name": "Szakirány-tárgy",
-                    "credits": 6,
-                    "course_block_references": [
-                        "Szálloda-szervezés szakirány",
-                        "Utazás- és rendezvényszervezés szakirány",
-                        "Turizmusmarketing szakirány",
-                        "Aktív, sport- és ökoturizmus szakirány",
-                        "Vendéglátás-szervezés szakirány",
-                        "Egészségturizmus szakirány",
-                        "Borturizmus szakirány"
-                    ]
+                    "code": "VEGTTUB242A",
+                    "name": "Aktív turizmus",
+                    "credits": 3
                 },
                 {
-                    "code": null,
-                    "name": "Szakirány-tárgy",
-                    "credits": 3,
-                    "course_block_references": [
-                        "Szálloda-szervezés szakirány",
-                        "Utazás- és rendezvényszervezés szakirány",
-                        "Turizmusmarketing szakirány",
-                        "Aktív, sport- és ökoturizmus szakirány",
-                        "Vendéglátás-szervezés szakirány",
-                        "Egészségturizmus szakirány",
-                        "Borturizmus szakirány"
+                    "code": "VEGTTUB244G",
+                    "name": "A problémamegoldás gyakorlata II.",
+                    "credits": 0,
+                    "prerequisites": [
+                        "VEGTMIB222G"
                     ]
                 },
                 {
                     "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
-                    "credits": 6
-                },
-                {
-                    "code": "GTTUB322Z",
-                    "name": "Szakszeminárium II.",
-                    "credits": 0,
-                    "prerequisites": [
-                        "GTTUB322S"
-                    ]
-                },
-                {
-                    "code": "GTTUB210S",
-                    "name": "Szakdolgozat",
-                    "credits": 0
+                    "credits": 3
                 }
             ]
         },
@@ -379,462 +321,14 @@
             "row": 0,
             "courses": [
                 {
-                    "code": "GTTUB30XG",
+                    "code": "VEGTTUB20XG",
                     "name": "Szakmai gyakorlat",
-                    "credits": 30
-                }
-            ]
-        },
-        {
-            "name": "Választandó az alábbi kettő tárgyból",
-            "row": 1,
-            "courses": [
-                {
-                    "code": "GTNGB112K",
-                    "name": "Külgazdaságtan",
-                    "credits": 3,
-                    "prerequisites": [
-                        "GTKGB114Ö"
-                    ]
+                    "credits": 20
                 },
                 {
-                    "code": "BNGTUB2K141",
-                    "name": "Regionális gazdaságtan",
-                    "credits": 3
-                }
-            ]
-        },
-        {
-            "name": "Választandó az alábbi négy tárgyból",
-            "row": 1,
-            "courses": [
-                {
-                    "code": "GTTUB212K",
-                    "name": "Környezetgazdaságtan",
-                    "credits": 3,
-                    "prerequisites": [
-                        "GTKGB144K"
-                    ]
-                },
-                {
-                    "code": "GTKGB212M",
-                    "name": "Munkagazdaságtan",
-                    "credits": 3,
-                    "prerequisites": [
-                        "GTKGB144K"
-                    ]
-                },
-                {
-                    "code": "GTKGB212V",
-                    "name": "Verseny- és piacelmélet",
-                    "credits": 3,
-                    "prerequisites": [
-                        "GTKGB144K"
-                    ]
-                },
-                {
-                    "code": "BNMVUB3K785",
-                    "name": "Környezet és egészség",
-                    "credits": 3
-                }
-            ]
-        },
-        {
-            "name": "Szakmai választható tárgyak",
-            "row": 1,
-            "courses": [
-                {
-                    "code": "GTKGB112G",
-                    "name": "Gazdaságtörténet",
-                    "credits": 3
-                },
-                {
-                    "code": "GTTUB514T",
-                    "name": "A turizmus fejlődéstörténete",
-                    "credits": 6
-                },
-                {
-                    "code": "GTTUB512S",
-                    "name": "A turizmus szociológiája",
-                    "credits": 3,
-                    "prerequisites": [
-                        "GTTUB112S"
-                    ]
-                },
-                {
-                    "code": "GTTUB412I",
-                    "name": "Idegenvezetés módszertana",
-                    "credits": 3
-                },
-                {
-                    "code": "GTTUB544K",
-                    "name": "Kulturális turizmus",
-                    "credits": 6
-                },
-                {
-                    "code": "GTTUB514M",
-                    "name": "Művészettörténet",
-                    "credits": 6
-                },
-                {
-                    "code": "GTNGB212B",
-                    "name": "Nemzetközi gazdaságtan B",
-                    "credits": 6
-                },
-                {
-                    "code": "GTMEB214M",
-                    "name": "Nemzetközi menedzsment",
-                    "credits": 6
-                },
-                {
-                    "code": "GTNGB314P",
-                    "name": "Nemzetközi pénzügyi ismeretek",
-                    "credits": 6
-                },
-                {
-                    "code": "GTNGB244Ü",
-                    "name": "Nemzetközi ügyletszervezés",
-                    "credits": 6
-                },
-                {
-                    "code": "GTTU4212H",
-                    "name": "Egészségturizmus",
-                    "credits": 3
-                },
-                {
-                    "code": "GTVEB344P",
-                    "name": "Projekt menedzsment",
-                    "credits": 6,
-                    "prerequisites": [
-                        "GTMEB144M"
-                    ]
-                },
-                {
-                    "code": "MKOK1312É",
-                    "name": "Élelmiszer- és háztartási anyagismeret",
-                    "credits": 3
-                },
-                {
-                    "code": "MKTU5324B",
-                    "name": "Kutatószeminárium I.",
-                    "credits": 6,
-                    "prerequisites": [
-                        "GTTUB144T"
-                    ]
-                },
-                {
-                    "code": "GTTUB412D",
-                    "name": "Desztináció menedzsment",
-                    "credits": 3
-                }
-            ]
-        },
-        {
-            "name": "Szálloda-szervezés szakirány",
-            "row": 1,
-            "courses": [
-                {
-                    "code": "GTTUB444G",
-                    "name": "Szállodai gazdálkodás és értékesítés",
-                    "credits": 6,
-                    "prerequisites": [
-                        "GTTUB214H"
-                    ]
-                },
-                {
-                    "code": "GTTUB422I",
-                    "name": "Szálláshelyi informatika",
-                    "credits": 3
-                },
-                {
-                    "code": "GTTUB412V",
-                    "name": "Vendéglátó menedzsment",
-                    "credits": 3,
-                    "prerequisites": [
-                        "GTTUB212V"
-                    ]
-                },
-                {
-                    "code": "GTTUB444A",
-                    "name": "Animáció",
-                    "credits": 6
-                },
-                {
-                    "code": "GTTUB444R",
-                    "name": "Rendezvényszervezés",
-                    "credits": 6
-                },
-                {
-                    "code": "GTTUB414M",
-                    "name": "Szállodai menedzsment",
-                    "credits": 6,
-                    "prerequisites": [
-                        "GTTUB214H"
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Utazás- és rendezvényszervezés szakirány",
-            "row": 1,
-            "courses": [
-                {
-                    "code": "GTTUB444U",
-                    "name": "Utazásszervezés",
-                    "credits": 6
-                },
-                {
-                    "code": "GTTUB412K",
-                    "name": "Közlekedés és turizmus",
-                    "credits": 3
-                },
-                {
-                    "code": "GTTUB444M",
-                    "name": "Utazási irodai menedzsment",
-                    "credits": 6
-                },
-                {
-                    "code": "GTTUB414N",
-                    "name": "Nemzetközi turizmusföldrajz",
-                    "credits": 6,
-                    "prerequisites": [
-                        "GTTUB214F"
-                    ]
-                },
-                {
-                    "code": "GTTUB444R",
-                    "name": "Rendezvényszervezés",
-                    "credits": 6
-                },
-                {
-                    "code": "GTTUB412F",
-                    "name": "Magyarország turizmusföldrajza",
-                    "credits": 3
-                }
-            ]
-        },
-        {
-            "name": "Turizmusmarketing szakirány",
-            "row": 1,
-            "courses": [
-                {
-                    "code": "GTTUB444T",
-                    "name": "Turizmus marketing II.",
-                    "credits": 6,
-                    "prerequisites": [
-                        "GTTUB144M"
-                    ]
-                },
-                {
-                    "code": "GTTUB412Y",
-                    "name": "Térségmarketing",
-                    "credits": 3,
-                    "prerequisites": [
-                        "GTTUB144M"
-                    ]
-                },
-                {
-                    "code": "GTTUB412D",
-                    "name": "Desztináció menedzsment",
-                    "credits": 3
-                },
-                {
-                    "code": "GTTUB444G",
-                    "name": "Szállodai gazdálkodás és értékesítés",
-                    "credits": 6,
-                    "prerequisites": [
-                        "GTTUB214H"
-                    ]
-                },
-                {
-                    "code": "GTTUB444F",
-                    "name": "Turisztikai termékek fejlesztése",
-                    "credits": 6,
-                    "prerequisites": [
-                        "GTTUB144M"
-                    ]
-                },
-                {
-                    "code": "GTTUB444P",
-                    "name": "Piackutatási módszerek a turizmusban",
-                    "credits": 6,
-                    "prerequisites": [
-                        "GTTUB144M"
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Aktív, sport- és ökoturizmus szakirány",
-            "row": 1,
-            "courses": [
-                {
-                    "code": "GTTUB412C",
-                    "name": "Gyógyturizmus",
-                    "credits": 3
-                },
-                {
-                    "code": "GTTUB444S",
-                    "name": "Aktív turizmus",
-                    "credits": 6
-                },
-                {
-                    "code": "GTTNB444R",
-                    "name": "Sportturizmus és sport-rekreáció",
-                    "credits": 6
-                },
-                {
-                    "code": "GTTUB444E",
-                    "name": "Egészségturizmus menedzsment",
-                    "credits": 6
-                },
-                {
-                    "code": "GTTU4112Ö",
-                    "name": "Ökoturizmus menedzsment",
-                    "credits": 3
-                },
-                {
-                    "code": "GTTNB444W",
-                    "name": "Wellness turizmus",
-                    "credits": 6
-                }
-            ]
-        },
-        {
-            "name": "Vendéglátás-szervezés szakirány",
-            "row": 1,
-            "courses": [
-                {
-                    "code": "KKqvRd87",
-                    "name": "Mikrobiológia",
-                    "credits": 5
-                },
-                {
-                    "code": "XAGWyBLC",
-                    "name": "Műszaki ismeretek",
-                    "credits": 6
-                },
-                {
-                    "code": "Zhs33Lgc",
-                    "name": "Élelmiszerminőség és higiéne jogi szabályozása",
-                    "credits": 3
-                },
-                {
-                    "code": "3qAc7ULs",
-                    "name": "Táplálkozás- és élelmezéstan",
-                    "credits": 5
-                },
-                {
-                    "code": "2qjXbKQG",
-                    "name": "Vendéglátás-szervezés gazdaságtana",
-                    "credits": 6
-                },
-                {
-                    "code": "2mPryfsu",
-                    "name": "Élelmianyag-ismeret",
-                    "credits": 3
-                },
-                {
-                    "code": "V6bjysHW",
-                    "name": "Ételkészítés technológiája",
-                    "credits": 3
-                },
-                {
-                    "code": "mXuxfmmn",
-                    "name": "Ételkészítés gyakorlat",
-                    "credits": 0
-                },
-                {
-                    "code": "7xkUmqWu",
-                    "name": "Éttermi értékesítési gyakorlat",
-                    "credits": 0
-                }
-            ]
-        },
-        {
-            "name": "Egészségturizmus szakirány",
-            "row": 1,
-            "courses": [
-                {
-                    "code": "ytkyVmUa",
-                    "name": "Egészség-gazdaságtan és egészségbiztosítás",
-                    "credits": 3
-                },
-                {
-                    "code": "YfhMyftE",
-                    "name": "Egészségturizmus",
-                    "credits": 6
-                },
-                {
-                    "code": "UrsXGsFR",
-                    "name": "Wellness-turizmus menedzsment",
-                    "credits": 6
-                },
-                {
-                    "code": "ZVJmMQ5y",
-                    "name": "A rekreáció elmélete és módszertana",
-                    "credits": 3
-                },
-                {
-                    "code": "7c6NR75n",
-                    "name": "Életmód-tanácsadás",
-                    "credits": 3
-                },
-                {
-                    "code": "qdLmfYyJ",
-                    "name": "Táplálkozás- és élelmezéstan",
-                    "credits": 5
-                },
-                {
-                    "code": "qQGsxdNS",
-                    "name": "Balneológia",
-                    "credits": 4
-                }
-            ]
-        },
-        {
-            "name": "Borturizmus szakirány",
-            "row": 1,
-            "courses": [
-                {
-                    "code": "J4HGhqwD",
-                    "name": "Szőlészeti és borászati alapismeretek",
-                    "credits": 6
-                },
-                {
-                    "code": "QQASkvnp",
-                    "name": "Szőlő-bor vertikum jogi szabályozása",
-                    "credits": 3
-                },
-                {
-                    "code": "zyxq2TCV",
-                    "name": "Borok és borpárlatok",
-                    "credits": 3
-                },
-                {
-                    "code": "fL2vUard",
-                    "name": "Érzékszervi borbírálat",
-                    "credits": 3
-                },
-                {
-                    "code": "f3DhnAtM",
-                    "name": "Bor és gasztronómia",
-                    "credits": 3
-                },
-                {
-                    "code": "sqU9GXXM",
-                    "name": "Borturizmus menedzsmentje és marketingje",
-                    "credits": 6
-                },
-                {
-                    "code": "Dck3ARz6",
-                    "name": "Vendéglátás-szervezés gazdaságtana",
-                    "credits": 6
-                },
-                {
-                    "code": "yrVSdDuC",
-                    "name": "Éttermi értékesítési gyakorlat",
-                    "credits": 0
+                    "code": "VEGTTUB10XG",
+                    "name": "Szakdolgozat készítés",
+                    "credits": 10
                 }
             ]
         }
