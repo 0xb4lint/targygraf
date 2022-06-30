@@ -1,45 +1,50 @@
 {
     "name": "Gazdálkodási és menedzsment",
     "description": "Gazdálkodási és menedzsment alapszak - nappali tagozat tanterve",
-    "curriculum_updated_at": "2012-09-01",
+    "curriculum_updated_at": "2022-06-30",
     "course_blocks": [
         {
             "name": "1. félév",
             "row": 0,
             "courses": [
                 {
-                    "code": "MIMAB144M",
+                    "code": "VEMIMAB144M",
                     "name": "Közgazdaságtan matematikai alapjai",
                     "credits": 6
                 },
                 {
-                    "code": "GTKGB114Ö",
-                    "name": "Makroökonómia",
-                    "credits": 6
-                },
-                {
-                    "code": "GTNGB112E",
-                    "name": "Európai Uniós ismeretek",
-                    "credits": 3
-                },
-                {
-                    "code": "VEGTTUB144Ü",
-                    "name": "Üzleti élet társadalmi összefüggései",
-                    "credits": 6
-                },
-                {
-                    "code": "GTMEB112P",
-                    "name": "Pszichológia",
-                    "credits": 3
-                },
-                {
-                    "code": "GTGAB114J",
+                    "code": "VEGTGAB112J",
                     "name": "Gazdasági jog",
                     "credits": 3
                 },
                 {
-                    "code": "GTMEB122K",
+                    "code": "VEGTKGB114Ö",
+                    "name": "Makroökonómia",
+                    "credits": 6
+                },
+                {
+                    "code": "VEGTMEB122K",
                     "name": "Üzleti kommunikáció",
+                    "credits": 3
+                },
+                {
+                    "code": "VEGTNGB112E",
+                    "name": "Európai Uniós ismeretek",
+                    "credits": 3
+                },
+                {
+                    "code": "VEGTTUB112U",
+                    "name": "Üzleti élet társadalmi összefüggései",
+                    "credits": 3
+                },
+                {
+                    "code": "VEGTVEB122T",
+                    "name": "Tanulási, önismereti és szocializációs tréning",
+                    "credits": 3
+                },
+                {
+                    "code": "VEGTMEB112P",
+                    "name": "Pszichológia",
                     "credits": 3
                 },
                 {
@@ -54,31 +59,36 @@
             "row": 0,
             "courses": [
                 {
-                    "code": "GTKGB144K",
-                    "name": "Mikroökonómia",
-                    "credits": 6,
-                    "prerequisites": [
-                        "MIMAB144M"
-                    ]
-                },
-                {
-                    "code": "VEGTNGB244K",
-                    "name": "Nemzetközi gazdaságtan",
-                    "credits": 6
-                },
-                {
-                    "code": "GTGAB144A",
+                    "code": "VEGTGAB144A",
                     "name": "Vállalati gazdaságtan",
                     "credits": 6
                 },
                 {
-                    "code": "VEGTMIB244M",
-                    "name": "Bevezetés a marketingbe",
+                    "code": "VEGTSCB244K",
+                    "name": "Könyvviteli ismeretek",
                     "credits": 6
                 },
                 {
-                    "code": "GTSCB144S",
-                    "name": "Számvitel alapjai",
+                    "code": "VEGTKGB144K",
+                    "name": "Mikroökonómia",
+                    "credits": 6,
+                    "prerequisites": [
+                        "VEMIMAB144M"
+                    ]
+                },
+                {
+                    "code": "VEGTMIB212M",
+                    "name": "Bevezetés a marketingbe",
+                    "credits": 3
+                },
+                {
+                    "code": "VEGTMIB222M",
+                    "name": "Bevezetés a marketingbe gyakorlat",
+                    "credits": 3
+                },
+                {
+                    "code": "VEGTNGB244K",
+                    "name": "Nemzetközi gazdaságtan",
                     "credits": 6
                 },
                 {
@@ -104,41 +114,19 @@
             "row": 0,
             "courses": [
                 {
-                    "code": "GTGAB144S",
+                    "code": "VEGTGAB144S",
                     "name": "Statisztika",
-                    "credits": 6,
-                    "prerequisites": [
-                        "MIMAB144M"
-                    ]
+                    "credits": 6
                 },
                 {
-                    "code": "GTPTB112P",
-                    "name": "Pénzügytan (Makrogazdasági pénzügyek)",
-                    "credits": 3,
-                    "prerequisites": [
-                        "GTKGB114Ö"
-                    ]
-                },
-                {
-                    "code": "GTGAB244V",
-                    "name": "Vállalkozói ismeretek",
-                    "credits": 6,
-                    "prerequisites": [
-                        "GTGAB144A"
-                    ]
-                },
-                {
-                    "code": "GTMEB144M",
+                    "code": "VEGTMEB144M",
                     "name": "Általános menedzsment",
                     "credits": 6
                 },
                 {
-                    "code": "VEGTGAB312G",
-                    "name": "Ágazati gazdaságtan",
-                    "credits": 3,
-                    "prerequisites": [
-                        "GTKGB144K"
-                    ]
+                    "code": "VEGTPTB112P",
+                    "name": "Pénzügytan (Makrogazdasági pénzügyek)",
+                    "credits": 3
                 },
                 {
                     "code": "VEGTGAB312R",
@@ -146,11 +134,19 @@
                     "credits": 3
                 },
                 {
-                    "code": "VEGTSCB122G",
+                    "code": "VEGTGAB244V",
+                    "name": "Vállalkozói ismeretek",
+                    "credits": 6,
+                    "prerequisites": [
+                        "VEGTGAB144A"
+                    ]
+                },
+                {
+                    "code": "VEGTSCB124S",
                     "name": "Számviteli gyakorlatok",
                     "credits": 3,
                     "prerequisites": [
-                        "GTSCB144S"
+                        "VEGTSCB244K"
                     ]
                 }
             ]
@@ -160,34 +156,37 @@
             "row": 0,
             "courses": [
                 {
-                    "code": "GTVEB244I",
-                    "name": "Üzleti folyamatok támogatása",
-                    "credits": 6
-                },
-                {
-                    "code": "GTPTB212P",
+                    "code": "VEGTPTB212P",
                     "name": "Vállalati pénzügyek I.",
                     "credits": 3
                 },
                 {
-                    "code": "GTVEB344P",
-                    "name": "Projekt menedszmen",
-                    "credits": 6,
-                    "prerequisites": [
-                        "GTMEB144M"
-                    ]
-                },
-                {
-                    "code": "GTVEB214G",
-                    "name": "Emberi erőforrás gazdálkodás",
+                    "code": "VEGTVEB244I",
+                    "name": "Üzleti folyamatok támogatása",
                     "credits": 6
                 },
                 {
-                    "code": "GTVEB244L",
+                    "code": "VEGTVEB344P",
+                    "name": "Projekt menedszment",
+                    "credits": 6,
+                    "prerequisites": [
+                        "VEGTMEB144M"
+                    ]
+                },
+                {
+                    "code": "VEGTSCB244V",
+                    "name": "Vezetői számvitel",
+                    "credits": 6,
+                    "prerequisites": [
+                        "VEGTSCB124S"
+                    ]
+                },
+                {
+                    "code": "VEGTVEB244L",
                     "name": "Logisztika I.",
                     "credits": 6,
                     "prerequisites": [
-                        "GTGAB144A"
+                        "VEGTGAB144A"
                     ]
                 },
                 {
@@ -202,54 +201,48 @@
             "row": 0,
             "courses": [
                 {
-                    "code": "GTVEB314T",
+                    "code": "VEGTVEB314T",
                     "name": "Termelés- és szolgáltatás-menedzsment",
                     "credits": 6,
                     "prerequisites": [
-                        "GTGAB144A"
+                        "VEGTGAB144A"
                     ]
                 },
                 {
-                    "code": "GTPTB344V",
-                    "name": "Vállalati pénzügyek II.",
-                    "credits": 6,
+                    "code": "VEGTGAB312G",
+                    "name": "Ágazati gazdaságtan",
+                    "credits": 3,
                     "prerequisites": [
-                        "GTPTB212P"
+                        "VEGTKGB144K"
                     ]
                 },
                 {
-                    "code": "VEGTGAB412A",
+                    "code": "VEGTGAB124S",
                     "name": "Adózási és TB ismeretek",
-                    "credits": 3,
-                    "prerequisites": [
-                        "GTSCB144S"
-                    ]
-                },
-                {
-                    "code": "VEGTGAB322V",
-                    "name": "Vállalati esettanulmányok",
-                    "credits": 3
-                },
-                {
-                    "code": "VEGTGAB344E",
-                    "name": "Határmenti együttműködések",
                     "credits": 6,
                     "prerequisites": [
-                        "GTNGB112E"
+                        "VEGTSCB244K"
                     ]
                 },
                 {
-                    "code": "VEGTGAB422V",
-                    "name": "Vállalkozásfejlesztés",
-                    "credits": 3,
-                    "prerequisites": [
-                        "GTGAB144A"
+                    "code": null,
+                    "name": "Szakirány-tárgy",
+                    "credits": 9,
+                    "course_block_references": [
+                        "Specializáció nélkül (Veszprém) 5. félév",
+                        "Specializáció nélkül (Veszprém) 6. félév",
+                        "Sportközgazdász specializáció (Veszprém) 5. félév",
+                        "Sportközgazdász specializáció (Veszprém) 6. félév",
+                        "Szolgáltatásmenedzsment specializáció (Zalaegerszeg) 5. félév",
+                        "Szolgáltatásmenedzsment specializáció (Zalaegerszeg) 6. félév",
+                        "Logisztika specializáció (Zalaegerszeg) 5. félév",
+                        "Logisztika specializáció (Zalaegerszeg) 6. félév"
                     ]
                 },
                 {
                     "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
-                    "credits": 3
+                    "credits": 6
                 }
             ]
         },
@@ -257,14 +250,6 @@
             "name": "6. félév",
             "row": 0,
             "courses": [
-                {
-                    "code": "VEGTNGB344P",
-                    "name": "Nemzetközi pénzügyi ismeretek",
-                    "credits": 6,
-                    "prerequisites": [
-                        "VEGTNGB244K"
-                    ]
-                },
                 {
                     "code": "VEGTVEB222F",
                     "name": "Felelősségvállalás üzleti aspektusai",
@@ -276,24 +261,42 @@
                     "credits": 3
                 },
                 {
-                    "code": "VEGTGAB512V",
-                    "name": "Vám - és szállítmányozástan",
-                    "credits": 3
-                },
-                {
-                    "code": "VEGTGAB444H",
-                    "name": "Helyi gazdaságfejlesztés",
-                    "credits": 6,
+                    "code": "VEGTVEB212E",
+                    "name": "Emberi erőforrás menedzsment",
+                    "credits": 3,
                     "prerequisites": [
-                        "GTGAB144A"
+                        "VEGTMEB144M"
                     ]
                 },
                 {
-                    "code": "VEGTGAB422R",
-                    "name": "Régiók marketingstratégiája",
+                    "code": "VEGTVEB222E",
+                    "name": "Emberi erőforrás menedzsment gyakorlata",
                     "credits": 3,
                     "prerequisites": [
-                        "VEGTMIB244M"
+                        "(VEGTVEB212E)"
+                    ]
+                },
+                {
+                    "code": "VEGTGAB244G",
+                    "name": "A problémamegoldás gyakorlata II.",
+                    "credits": 0,
+                    "prerequisites": [
+                        "VEGTMIB222G"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Szakirány-tárgy",
+                    "credits": 12,
+                    "course_block_references": [
+                        "Specializáció nélkül (Veszprém) 5. félév",
+                        "Specializáció nélkül (Veszprém) 6. félév",
+                        "Sportközgazdász specializáció (Veszprém) 5. félév",
+                        "Sportközgazdász specializáció (Veszprém) 6. félév",
+                        "Szolgáltatásmenedzsment specializáció (Zalaegerszeg) 5. félév",
+                        "Szolgáltatásmenedzsment specializáció (Zalaegerszeg) 6. félév",
+                        "Logisztika specializáció (Zalaegerszeg) 5. félév",
+                        "Logisztika specializáció (Zalaegerszeg) 6. félév"
                     ]
                 },
                 {
@@ -308,9 +311,219 @@
             "row": 0,
             "courses": [
                 {
-                    "code": "GTGABX30S",
+                    "code": "VEGTGAB20XG",
                     "name": "Szakmai gyakorlat",
-                    "credits": 30
+                    "credits": 20
+                },
+                {
+                    "code": "VEGTGAB10XG",
+                    "name": "Szakdolgozat készítés",
+                    "credits": 10,
+                    "prerequisites": [
+                        "VEGTGAB244G"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Specializáció nélkül (Veszprém) 5. félév",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VEGTPTB344V",
+                    "name": "Vállalati pénzügyek II.",
+                    "credits": 6,
+                    "prerequisites": [
+                        "VEGTPTB212P"
+                    ]
+                },
+                {
+                    "code": "VEGTGAB422V",
+                    "name": "Vállalkozásfejlesztés",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEGTGAB144A"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Specializáció nélkül (Veszprém) 6. félév",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VEGTGAB512V",
+                    "name": "Vám- és szállítmányozástan",
+                    "credits": 3
+                },
+                {
+                    "code": "VEGTGAB444H",
+                    "name": "Helyi gazdaságfejlesztés ",
+                    "credits": 6
+                },
+                {
+                    "code": "VEGTPTB122V",
+                    "name": "Vállalatértékelés",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Sportközgazdász specializáció (Veszprém) 5. félév",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VEGTMIB122S",
+                    "name": "Sportmarketing és menedzsment",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEGTMIB212M",
+                        "VEGTMIB222M"
+                    ]
+                },
+                {
+                    "code": "VEGTVEB142M",
+                    "name": "Sportesemények projektalapú menedzsmentje",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEGTVEB344P"
+                    ]
+                },
+                {
+                    "code": "VEGTGAB122S",
+                    "name": "Sportgazdasági esettanulmányok",
+                    "credits": 3
+                },
+                {
+                    "code": "VEGTGAB112D",
+                    "name": "Sportdiplomácia",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Sportközgazdász specializáció (Veszprém) 6. félév",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VEGTSCB122S",
+                    "name": "Sportszervezetek adózása és számvitele",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEGTGAB124S"
+                    ]
+                },
+                {
+                    "code": "VEGTGAB222K",
+                    "name": "Sportkutatási alapismeretek",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEGTGAB144S"
+                    ]
+                },
+                {
+                    "code": "VEGTGAB222G",
+                    "name": "Sportlétesítmények gazdálkodása",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEGTGAB144A"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Szolgáltatásmenedzsment specializáció (Zalaegerszeg) 5. félév",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VEGTMIB244B",
+                    "name": "Szolgáltatás és B2B marketing",
+                    "credits": 6,
+                    "prerequisites": [
+                        "VEGTMIB212M"
+                    ]
+                },
+                {
+                    "code": "ZEGTLMB142S",
+                    "name": "SSC menedzsment",
+                    "credits": 3
+                },
+                {
+                    "code": "ZEGTLMB122P",
+                    "name": "Pályázatkészítés",
+                    "credits": 3
+                },
+                {
+                    "code": "ZEGTLMB122B",
+                    "name": "Benchmarking",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Szolgáltatásmenedzsment specializáció (Zalaegerszeg) 6. félév",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "ZEGTLMB122E",
+                    "name": "Szolgáltatásmenedzsment üzleti esettanulmányok",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEGTVEB314T"
+                    ]
+                },
+                {
+                    "code": "ZEGTLMB222D",
+                    "name": "Digitális ügyfélélménymenedzsment",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Logisztika specializáció (Zalaegerszeg) 5. félév",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "ZEGTLMB142A",
+                    "name": "Innovációmenedzsment alapjai",
+                    "credits": 3
+                },
+                {
+                    "code": "ZEGTLMB342E",
+                    "name": "Ellátási lánc menedzsment alapjai",
+                    "credits": 3
+                },
+                {
+                    "code": "ZEGTLMB222P",
+                    "name": "IT projektmenedzsment",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEGTVEB344P"
+                    ]
+                },
+                {
+                    "code": "ZEGTLMB122L",
+                    "name": "Logisztikai üzleti esettanulmányok",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEGTVEB244L"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Logisztika specializáció (Zalaegerszeg) 6. félév",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VEGTGAB512V",
+                    "name": "Vám- és szállítmányozástan",
+                    "credits": 3
+                },
+                {
+                    "code": "ZEGTLMB224L",
+                    "name": "Termelési és raktározási logisztika",
+                    "credits": 6
                 }
             ]
         }
