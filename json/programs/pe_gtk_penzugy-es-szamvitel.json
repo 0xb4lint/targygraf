@@ -1,7 +1,7 @@
 {
     "name": "Pénzügy és számvitel",
     "description": "Pénzügy és számvitel alapszak - nappali tagozat tanterve",
-    "curriculum_updated_at": "2018-11-22",
+    "curriculum_updated_at": "2022-06-30",
     "course_blocks": [
         {
             "name": "1. félév",
@@ -33,9 +33,14 @@
                     "credits": 3
                 },
                 {
-                    "code": "VEGTTUB144Ü",
-                    "name": "Üzleti élet társadalmi összefüg-gései",
-                    "credits": 6
+                    "code": "VEGTTUB112U",
+                    "name": "Üzleti élet társadalmi összefüggései",
+                    "credits": 3
+                },
+                {
+                    "code": "VEGTVEB122T",
+                    "name": "Tanulási, önismereti és szocializációs tréning",
+                    "credits": 3
                 },
                 {
                     "code": "VEGTMEB112P",
@@ -64,8 +69,8 @@
                     "credits": 6
                 },
                 {
-                    "code": "VEGTSCB144S",
-                    "name": "Számvitel alapjai",
+                    "code": "VEGTSCB244K",
+                    "name": "Könyvviteli ismeretek",
                     "credits": 6
                 },
                 {
@@ -154,15 +159,15 @@
                     "name": "Pénzügyi számvitel I.",
                     "credits": 9,
                     "prerequisites": [
-                      "VEGTSCB144S"
+                      "VEGTSCB244K"
                     ]
                 },
                 {
-                    "code": "VEGTGAB124S",
-                    "name": "Adózási és TB ismeretek",
+                    "code": "VEGTSCB124A",
+                    "name": "Adózási feladatok ellátása",
                     "credits": 6,
                     "prerequisites": [
-                        "VEGTSCB144S"
+                        "VEGTSCB244K"
                     ]
                 }
             ]
@@ -199,7 +204,7 @@
                     "name": "Számvitelszervezés",
                     "credits": 3,
                     "prerequisites": [
-                        "VEGTSCB144S"
+                        "VEGTSCB244K"
                     ]
                 },
                 {
@@ -208,8 +213,8 @@
                     "credits": 3
                 },
                 {
-                    "code": "___OPTIONAL___",
-                    "name": "Szabadon választható",
+                    "code": "VEGTPTB122V",
+                    "name": "Vállalatértékelés",
                     "credits": 3
                 }
             ]
@@ -231,21 +236,16 @@
                     "name": "Elemzés módszertana",
                     "credits": 6,
                     "prerequisites": [
-                        "VEGTSCB144S"
+                        "VEGTSCB244K"
                     ]
                 },
                 {
                     "code": "VEGTSCB324K",
-                    "name": "Számítógépes könyvelés",
+                    "name": "Számvitel és adózás digitális környezetben",
                     "credits": 6,
                     "prerequisites": [
-                        "VEGTSCB144S"
+                        "VEGTSCB244K"
                     ]
-                },
-                {
-                    "code": "VEGTPTB122V",
-                    "name": "Vállalatértékelés",
-                    "credits": 3
                 },
                 {
                     "code": "VEGTGAB244V",
@@ -254,6 +254,11 @@
                     "prerequisites": [
                         "VEGTGAB144A"
                         ]
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható",
+                    "credits": 3
                 },
                 {
                     "code": "VEGTGAB312G",
@@ -275,14 +280,6 @@
                     "credits": 3
                 },
                 {
-                    "code": "VEGTSCB242E",
-                    "name": "Ellenőrzés",
-                    "credits": 3,
-                    "prerequisites": [
-                        "VEGTSCB544S"
-                        ]
-                },
-                {
                     "code": "VEGTSCB244V",
                     "name": "Vezetői számvitel",
                     "credits": 6,
@@ -294,6 +291,85 @@
                     "code": "VEGTPTB222G",
                     "name": "Gyakorlati pénzügyi számítások",
                     "credits": 3
+                },
+                {
+                    "code": null,
+                    "name": "Szakirány-tárgy",
+                    "credits": 3,
+                    "course_block_references": [
+                        "Specializáció nélkül",
+                        "Pénzügy specializáció (Csak Zalaegerszegen)"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Szakirány-tárgy",
+                    "credits": 3,
+                    "course_block_references": [
+                        "Specializáció nélkül",
+                        "Pénzügy specializáció (Csak Zalaegerszegen)"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Szakirány-tárgy",
+                    "credits": 3,
+                    "course_block_references": [
+                        "Specializáció nélkül",
+                        "Pénzügy specializáció (Csak Zalaegerszegen)"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Szakirány-tárgy",
+                    "credits": 3,
+                    "course_block_references": [
+                        "Specializáció nélkül",
+                        "Pénzügy specializáció (Csak Zalaegerszegen)"
+                    ]
+                },
+                {
+                    "code": "VEGTSCB244G",
+                    "name": "A problémamegoldás gyakorlata II.",
+                    "credits": 0,
+                    "prerequisites": [
+                        "VEGTMIB222G"
+                    ]
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható",
+                    "credits": 6
+                }
+            ]
+        },
+        {
+            "name": "7. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "VEGTSCB20XG",
+                    "name": "Szakmai gyakorlat",
+                    "credits": 20
+                },
+                {
+                    "code": "VEGTSCB10XP",
+                    "name": "Szakdolgozat",
+                    "credits": 10
+                }
+            ]
+        },
+        {
+            "name": "Specializáció nélkül",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VEGTSCB242E",
+                    "name": "Ellenőrzés",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEGTSCB544S"
+                        ]
                 },
                 {
                     "code": "VEGTSCB222K",
@@ -318,35 +394,44 @@
                     "prerequisites": [
                         "VEGTSCB544S"
                     ]
-                },
-                {
-                    "code": "VEGTSCB244G",
-                    "name": "A problémamegoldás gyakorlata II.",
-                    "credits": 3,
-                    "prerequisites": [
-                        "VEGTSCB222K"
-                    ]
-                },
-                {
-                    "code": "___OPTIONAL___",
-                    "name": "Szabadon választható",
-                    "credits": 6
                 }
             ]
         },
         {
-            "name": "7. félév",
-            "row": 0,
+            "name": "Pénzügy specializáció (Csak Zalaegerszegen)",
+            "row": 1,
             "courses": [
                 {
-                    "code": "VEGTSCB20XG",
-                    "name": "Szakmai gyakorlat",
-                    "credits": 20
+                    "code": "ZEGTPGB222S",
+                    "name": "Pénzügyi üzleti szimuláció",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEGTPTB344V"
+                        ]
                 },
                 {
-                    "code": "VEGTSCB10XP",
-                    "name": "Szakdolgozat",
-                    "credits": 10
+                    "code": "ZEGTPGB222E",
+                    "name": "Komplex pénzügyi esettanulmányok",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEGTPTB344V"
+                        ]
+                },
+                {
+                    "code": "ZEGTPGB222B",
+                    "name": "Bankszakmai ismeretek",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEGTPTB344V"
+                        ]
+                },
+                {
+                    "code": "ZEGTPGB242P",
+                    "name": "Pénz és tőkepiac",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEGTPTB344V"
+                    ]
                 }
             ]
         }
