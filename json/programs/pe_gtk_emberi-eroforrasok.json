@@ -1,7 +1,7 @@
 {
     "name": "Emberi erőforrások",
     "description": "Emberi erőforrások alapszak - nappali tagozat tanterve",
-    "curriculum_updated_at": "2011-10-12",
+    "curriculum_updated_at": "2022-07-03",
     "course_blocks": [
         {
             "name": "1. félév",
@@ -33,9 +33,14 @@
                     "credits": 3
                 },
                 {
-                    "code": "VEGTTUB144Ü",
+                    "code": "VEGTTUB112U",
                     "name": "Üzleti élet társadalmi összefüggései",
-                    "credits": 6
+                    "credits": 3
+                },
+                {
+                    "code": "VEGTVEB122T",
+                    "name": "Tanulási, önismereti és szocializációs tréning",
+                    "credits": 3
                 },
                 {
                     "code": "VEGTMEB112P",
@@ -43,13 +48,13 @@
                     "credits": 3
                 },
                 {
-                    "code": "VEGTLEB122A ; VEGTLEB122N",
-                    "name": "Gazdasági és üzleti szaknyelv I.",
+                    "code": "VEGTLEB122N",
+                    "name": "Gazdasági és üzleti szaknyelv I. (német)",
                     "credits": 0
                 },
                 {
-                    "code": "VEPETO1122A",
-                    "name": "Testnevelés I.",
+                    "code": "VEGTLEB122A",
+                    "name": "Gazdasági és üzleti szaknyelv I. (angol)",
                     "credits": 0
                 }
             ]
@@ -59,8 +64,13 @@
             "row": 0,
             "courses": [
                 {
-                    "code": "GTGAB144A",
+                    "code": "VEGTGAB144A",
                     "name": "Vállalati gazdaságtan",
+                    "credits": 6
+                },
+                {
+                    "code": "VEGTNGB244K",
+                    "name": "Nemzetközi gazdaságtan",
                     "credits": 6
                 },
                 {
@@ -77,40 +87,45 @@
                     ]
                 },
                 {
-                    "code": "VEGTMIB244M",
+                    "code": "VEGTMIB212M",
                     "name": "Bevezetés a marketingbe",
-                    "credits": 6
+                    "credits": 3
                 },
                 {
-                    "code": "VEGTNGB244K",
-                    "name": "Nemzetközi gazdaságtan (Külgazdaságtan)",
-                    "credits": 6,
+                    "code": "VEGTMIB222M",
+                    "name": "Bevezetés a marketingbe gyakorlat",
+                    "credits": 3
+                },
+                {
+                    "code": "VEGTLEB222N",
+                    "name": "Gazdasági és üzleti szaknyelv II. (német)",
+                    "credits": 0,
                     "prerequisites": [
-                        "VEGTKGB114Ö"
+                        "VEGTLEB122N"
                     ]
                 },
                 {
-                    "code": "GTLEB222A",
-                    "name": "Gazdasági és üzleti szaknyelv II.",
+                    "code": "VEGTLEB222A",
+                    "name": "Gazdasági és üzleti szaknyelv II. (angol)",
                     "credits": 0,
                     "prerequisites": [
-                        "VEGTLEB122A ; VEGTLEB122N"
+                        "VEGTLEB122A"
                     ]
                 },
                 {
-                    "code": "GTLEB1X0A",
-                    "name": "Gazdasági és üzleti szaknyelvi záróvizsga",
+                    "code": "VEGTLEB1X0N",
+                    "name": "Gazdasági és üzleti szaknyelvi záróvizsga (német)",
                     "credits": 0,
                     "prerequisites": [
-                        "GTLEB222A"
+                        "VEGTLEB222N"
                     ]
                 },
                 {
-                    "code": "VEPETO2222A",
-                    "name": "Testnevelés II.",
+                    "code": "VEGTLEB1X0A",
+                    "name": "Gazdasági és üzleti szaknyelvi záróvizsga (angol)",
                     "credits": 0,
                     "prerequisites": [
-                        "VEPETO1122A"
+                        "VEGTLEB222A"
                     ]
                 }
             ]
@@ -122,10 +137,7 @@
                 {
                     "code": "VEGTGAB144S",
                     "name": "Statisztika",
-                    "credits": 6,
-                    "prerequisites": [
-                        "VEMIMAB144M"
-                    ]
+                    "credits": 6
                 },
                 {
                     "code": "VEGTMEB144M",
@@ -164,25 +176,9 @@
                     "credits": 3
                 },
                 {
-                    "code": "VEGTVEB2X0G",
-                    "name": "Szakmai gyakorlat I.",
-                    "credits": 0
-                },
-                {
-                    "code": "GTMEB144A",
-                    "name": "A gazdaságtan alapjai I.",
-                    "credits": 0,
-                    "prerequisites": [
-                        "GTLEB1X0A"
-                    ]
-                },
-                {
-                    "code": "VEPETO3122A",
-                    "name": "Testnevelés III.",
-                    "credits": 0,
-                    "prerequisites": [
-                        "VEPETO2222A"
-                    ]
+                    "code": "VEGTVEB212S",
+                    "name": "Személyügy",
+                    "credits": 3
                 }
             ]
         },
@@ -197,18 +193,8 @@
                 },
                 {
                     "code": "VEGTVEB244I",
-                    "name": "Üzleti folyamatok támogatása (Gazdasági Informatika)",
+                    "name": "Üzleti folyamatok támogatása",
                     "credits": 6
-                },
-                {
-                    "code": "VEGTVEB214G",
-                    "name": "Emberi erőforrás gazdálkodás",
-                    "credits": 6
-                },
-                {
-                    "code": "VEGTVEB212S",
-                    "name": "Személyügy",
-                    "credits": 3
                 },
                 {
                     "code": "VEGTVEB244M",
@@ -221,27 +207,22 @@
                 {
                     "code": "VEGTVEB222P",
                     "name": "Pályaszocializációs tréning",
-                    "credits": 3
-                },
-                {
-                    "code": "VEGTMIB222G",
-                    "name": "A problémamegoldás gyakorlata",
-                    "credits": 3
-                },
-                {
-                    "code": "GTMEB224A",
-                    "name": "A gazdaságtan alapjai II.",
-                    "credits": 0,
+                    "credits": 3,
                     "prerequisites": [
-                        "GTMEB144A"
+                        "VEGTVEB212S"
                     ]
                 },
                 {
-                    "code": "VEPETO4222A",
-                    "name": "Testnevelés IV.",
-                    "credits": 0,
+                    "code": "VEGTMIB222G",
+                    "name": "A problémamegoldás gyakorlata I.",
+                    "credits": 3
+                },
+                {
+                    "code": "VEGTVEB344P",
+                    "name": "Projekt menedzsment",
+                    "credits": 6,
                     "prerequisites": [
-                        "VEPETO3122A"
+                        "VEGTMEB144M"
                     ]
                 }
             ]
@@ -255,13 +236,8 @@
                     "name": "Termelés- és szolgáltatásmenedzsment",
                     "credits": 6,
                     "prerequisites": [
-                        "GTGAB144A"
+                        "VEGTGAB144A"
                     ]
-                },
-                {
-                    "code": "VEGTVEB522M",
-                    "name": "Munkaköri leírások",
-                    "credits": 3
                 },
                 {
                     "code": "VEGTVEB312M",
@@ -297,14 +273,14 @@
                 {
                     "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
-                    "credits": 3
+                    "credits": 6
                 },
                 {
-                    "code": "VEGTVEB3X0G",
-                    "name": "Szakmai gyakorlat II.",
-                    "credits": 0,
+                    "code": "VEGTVEB122E",
+                    "name": "Emberi erőforrás gazdálkodás esettanulmányok",
+                    "credits": 3,
                     "prerequisites": [
-                        "VEGTVEB2X0G"
+                        "VEGTVEB212S"
                     ]
                 }
             ]
@@ -317,14 +293,6 @@
                     "code": "VEGTVEB222F",
                     "name": "Felelősségvállalás üzleti aspektusai",
                     "credits": 3
-                },
-                {
-                    "code": "VEGTVEB344P",
-                    "name": "Projekt menedzsment",
-                    "credits": 6,
-                    "prerequisites": [
-                        "VEGTMEB144M"
-                    ]
                 },
                 {
                     "code": "VEGTVEB342M",
@@ -340,223 +308,67 @@
                     "credits": 3
                 },
                 {
+                    "code": "VEGTVEB242K",
+                    "name": "Kompetencia- és ösztönzésmenedzsment",
+                    "credits": 6,
+                    "prerequisites": [
+                        "(VEGTVEB222E)"
+                    ]
+                },
+                {
                     "code": "VEGTVEB322T",
                     "name": "Szervezeti kommunikáció és  tárgyalástechnika",
                     "credits": 3
                 },
                 {
-                    "code": "VEGTVEB244Ö",
-                    "name": "Kompetencia- és ösztönzésmenedzsment",
-                    "credits": 6,
+                    "code": "VEGTEEB244G",
+                    "name": "A problémamegoldás gyakorlata II.",
+                    "credits": 0,
                     "prerequisites": [
-                        "VEGTVEB214G"
+                        "VEGTMIB222G"
                     ]
                 },
                 {
                     "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 6
-                }
-            ]
-        },
-        {
-            "name": "Szakmai választható tárgyak part I.",
-            "row": 1,
-            "courses": [
-                {
-                    "code": "GTKGB112G",
-                    "name": "Gazdaságtörténet",
-                    "credits": 3
                 },
                 {
-                    "code": "GTVEB312L",
-                    "name": "Logisztika",
-                    "credits": 3
-                },
-                {
-                    "code": "GTVEB522Ü",
-                    "name": "Üzleti szimuláció",
-                    "credits": 3,
-                    "prerequisites": [
-                        "GTGAB144A"
-                    ]
-                },
-                {
-                    "code": "GTMEB542E",
-                    "name": "Ergonómia",
+                    "code": "VEGTVEB212E",
+                    "name": "Emberi erőforrás menedzsment",
                     "credits": 3,
                     "prerequisites": [
                         "VEGTMEB144M"
                     ]
                 },
                 {
-                    "code": "GTTUB212K",
-                    "name": "Környezetgazdaságtan",
+                    "code": "VEGTVEB222E",
+                    "name": "Emberi erőforrás menedzsment gyakorlatok",
                     "credits": 3,
                     "prerequisites": [
-                        "VEGTKGB144K"
-                    ]
-                },
-                {
-                    "code": "GTMEB522V",
-                    "name": "Változásmenedzsment",
-                    "credits": 3,
-                    "prerequisites": [
-                        "VEGTMEB144M"
-                    ]
-                },
-                {
-                    "code": "GTGAB544M",
-                    "name": "Médiagazdaságtan",
-                    "credits": 6
-                },
-                {
-                    "code": "GTGAB244V",
-                    "name": "Vállalkozói ismeretek",
-                    "credits": 6,
-                    "prerequisites": [
-                        "GTGAB144A"
-                    ]
-                },
-                {
-                    "code": "GTVEB112B",
-                    "name": "Bürotika és irodakultúra",
-                    "credits": 3
-                }
-            ]
-        },
-        {
-            "name": "Szakmai választható tárgyak part II.",
-            "row": 1,
-            "courses": [
-                {
-                    "code": "GTVEB522M",
-                    "name": "Munkaköri leírások",
-                    "credits": 3,
-                    "prerequisites": [
-                        "VEGTVEB214G"
-                    ]
-                },
-                {
-                    "code": "GTVEB522V",
-                    "name": "Vállalati ösztönzési rendszerek, motivációs technikák a gyakorlatban",
-                    "credits": 3
-                },
-                {
-                    "code": "GTVEB522K",
-                    "name": "Kulturális különbözőségekmenedzselése",
-                    "credits": 3
-                },
-                {
-                    "code": "GTVEM543H",
-                    "name": "Személyes hatékonyság",
-                    "credits": 6
-                },
-                {
-                    "code": "GTMEB522E",
-                    "name": "Szervezeti együttműködés és tudásmegosztás",
-                    "credits": 3
-                },
-                {
-                    "code": "GTMEB514M",
-                    "name": "Internationales Management",
-                    "credits": 6,
-                    "prerequisites": [
-                        "GTMEB224A"
-                    ]
-                },
-                {
-                    "code": "GTMEB512P",
-                    "name": "Internationales Projektmanagement",
-                    "credits": 3,
-                    "prerequisites": [
-                        "GTMEB224A"
-                    ]
-                },
-                {
-                    "code": "GTMEB512L",
-                    "name": "Internationale Produktionsmanagement und Logistik",
-                    "credits": 3,
-                    "prerequisites": [
-                        "GTMEB224A"
+                        "(VEGTVEB212E)"
                     ]
                 }
             ]
         },
         {
-            "name": "Szakmai választható tárgyak part III.",
-            "row": 1,
+            "name": "7. félév",
+            "row": 0,
             "courses": [
                 {
-                    "code": "GTVEB544F",
-                    "name": "Internationale Finanzierung",
-                    "credits": 6,
+                    "code": "VEGTEEB20XG",
+                    "name": "Szakmai gyakorlat",
+                    "credits": 20,
                     "prerequisites": [
-                        "GTMEB224A"
+                        "VEGTEEB244G"
                     ]
                 },
                 {
-                    "code": "GTSCB544E",
-                    "name": "Einführung in das Steuerwesen",
-                    "credits": 6,
+                    "code": "VEGTEEB10XG",
+                    "name": "Szakdolgozat készítés",
+                    "credits": 10,
                     "prerequisites": [
-                        "GTMEB224A"
-                    ]
-                },
-                {
-                    "code": "GTSC5312C",
-                    "name": "Internationales Controlling",
-                    "credits": 3,
-                    "prerequisites": [
-                        "GTMEB224A"
-                    ]
-                },
-                {
-                    "code": "GTNGB413E",
-                    "name": "International Economic Relations",
-                    "credits": 3,
-                    "prerequisites": [
-                        "GTMEB224A"
-                    ]
-                },
-                {
-                    "code": "GTMEB522M",
-                    "name": "Improving Management",
-                    "credits": 3,
-                    "prerequisites": [
-                        "GTMEB224A"
-                    ]
-                },
-                {
-                    "code": "GTMEB522B",
-                    "name": "Business Simulation",
-                    "credits": 3,
-                    "prerequisites": [
-                        "GTMEB224A"
-                    ]
-                },
-                {
-                    "code": "GTMEB522Q",
-                    "name": "Quality Management Systems",
-                    "credits": 3,
-                    "prerequisites": [
-                        "GTMEB224A"
-                    ]
-                },
-                {
-                    "code": "GTTUB525C",
-                    "name": "Communication Skills",
-                    "credits": 6,
-                    "prerequisites": [
-                        "GTMEB224A"
-                    ]
-                },
-                {
-                    "code": "GTVEB512P",
-                    "name": "Governance and Partnership",
-                    "credits": 3,
-                    "prerequisites": [
-                        "GTMEB224A"
+                        "VEGTEEB244G"
                     ]
                 }
             ]
