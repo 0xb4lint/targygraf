@@ -1,7 +1,7 @@
 {
     "name": "Kémia",
     "description": "Kémia alapszak - Vegyész szakirány - nappali tagozat tanterve",
-    "curriculum_updated_at": "2012-10-24",
+    "curriculum_updated_at": "2022-05-11",
     "course_blocks": [
         {
             "name": "1. félév",
@@ -33,14 +33,9 @@
                     "credits": 2
                 },
                 {
-                    "code": "VEMKMAB112M",
+                    "code": "VEMIMAB144H",
                     "name": "Matematikai analízis I.",
-                    "credits": 2
-                },
-                {
-                    "code": "VEMKMAB122M",
-                    "name": "Matematikai analízis I. gyakorlat",
-                    "credits": 2
+                    "credits": 4
                 },
                 {
                     "code": "VEMKRK3353S",
@@ -58,12 +53,9 @@
                     "credits": 2
                 },
                 {
-                    "code": null,
-                    "name": "Kötelezően választható tárgy",
-                    "credits": 2,
-                    "course_block_references": [
-                        "Kötelezően választható tárgy 1. félév"
-                    ]
+                    "code": "VEMKFTB212S",
+                    "name": "Környezetszociológia",
+                    "credits": 2
                 },
                 {
                     "code": "___OPTIONAL___",
@@ -81,8 +73,8 @@
                     "name": "Általános és szervetlen kémiai laboratóriumi gyakorlat",
                     "credits": 3,
                     "prerequisites": [
-                        "VEMKAKB112A",
-                        "VEMKAKB122A"
+                        "VEMKAKB122A",
+                        "VEMKAKB112A"
                     ]
                 },
                 {
@@ -108,9 +100,9 @@
                     "name": "Fizikai kémia I.",
                     "credits": 2,
                     "prerequisites": [
-                        "VEMKAKB112A",
+                        "VEMIMAB144H",
                         "VEMKFI1312A",
-                        "VEMKMAB122M"
+                        "VEMKAKB112A"
                     ]
                 },
                 {
@@ -148,49 +140,38 @@
                     ]
                 },
                 {
-                    "code": "VEMKMAB212M",
+                    "code": "VEMIMAB244H",
                     "name": "Matematikai analízis II.",
-                    "credits": 2,
+                    "credits": 4,
                     "prerequisites": [
-                        "VEMKMAB112M",
-                        "VEMKMAB122M"
-                    ]
-                },
-                {
-                    "code": "VEMKMAB222M",
-                    "name": "Matematikai analízis II. gyakorlat",
-                    "credits": 2,
-                    "prerequisites": [
-                        "VEMKMAB112M",
-                        "VEMKMAB122M"
+                        "VEMIMAB144H"
                     ]
                 },
                 {
                     "code": "VEMKOK1212A",
-                    "name": "Szerves kémia I. A",
+                    "name": "Szerves kémia I.",
                     "credits": 2
                 },
                 {
+                    "code": "VEMKOKB221A",
+                    "name": "Szerves kémia I. gyakorlat",
+                    "credits": 1,
+                    "prerequisites": [
+                        "(VEMKOK1212A)"
+                    ]
+                },
+                {
                     "code": "VEMKMAB212S",
-                    "name": "Matematikai statisztika",
+                    "name": "Statisztika",
                     "credits": 2,
                     "prerequisites": [
-                        "VEMKMAB112M",
-                        "VEMKMAB122M"
+                        "VEMIMAB144H"
                     ]
                 },
                 {
                     "code": "VEMKFTB143K",
                     "name": "Ásvány- és kőzettan",
                     "credits": 3
-                },
-                {
-                    "code": null,
-                    "name": "Kötelezően választható tárgy",
-                    "credits": 2,
-                    "course_block_references": [
-                        "Kötelezően választható tárgy 2. félév"
-                    ]
                 },
                 {
                     "code": "___OPTIONAL___",
@@ -224,7 +205,6 @@
                     "name": "Fizikai kémia II.",
                     "credits": 2,
                     "prerequisites": [
-                        "(VEMKAKB122A)",
                         "VEMKFKB212A"
                     ]
                 },
@@ -247,15 +227,24 @@
                 },
                 {
                     "code": "VEMKOK1112A",
-                    "name": "Szerves kémia II. A",
+                    "name": "Szerves kémia II.",
                     "credits": 2,
                     "prerequisites": [
                         "VEMKOK1212A"
                     ]
                 },
                 {
-                    "code": "VEMKLIB112B",
-                    "name": "Infraindividuális biológia",
+                    "code": "VEMKOKB121G",
+                    "name": "Szerves kémia II. gyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMKOK1212A",
+                        "(VEMKOK1112A)"
+                    ]
+                },
+                {
+                    "code": "VEMKLIB142A",
+                    "name": "A biológia alapjai",
                     "credits": 2
                 },
                 {
@@ -280,9 +269,7 @@
                     "name": "Bevezetés a koordinációs kémiába",
                     "credits": 2,
                     "prerequisites": [
-                        "VEMKAKB233A",
-                        "VEMKIKB242V",
-                        "VEMKIKB222A"
+                        "VEMKIKB242V"
                     ]
                 }
             ]
@@ -432,7 +419,7 @@
                     ]
                 },
                 {
-                    "code": "Gmug5myM",
+                    "code": "VEMKKEBXG",
                     "name": "Szakmai gyakorlat",
                     "credits": 0
                 },
@@ -449,7 +436,7 @@
                     "name": "Anyagszerkezeti vizsgálatok",
                     "credits": 4,
                     "prerequisites": [
-                        "VEMKKAB114A"
+                        "VEMKKAM114A"
                     ]
                 },
                 {
@@ -470,14 +457,17 @@
                 {
                     "code": "VEMKKEA23XS",
                     "name": "Szakdolgozat",
-                    "credits": 10
+                    "credits": 10,
+                    "prerequisites": [
+                        "VEMKKP2122V"
+                    ]
                 },
                 {
                     "code": "VEMKFTB336A",
                     "name": "Anyagszerkezeti vizsgálatok laboratóriumi gyakorlat",
                     "credits": 6,
                     "prerequisites": [
-                        "VEMKFTB314A"
+                        "VEMKKAM114A"
                     ]
                 },
                 {
@@ -493,43 +483,6 @@
                     "code": "___OPTIONAL___",
                     "name": "Szabadon választható",
                     "credits": 3
-                }
-            ]
-        },
-        {
-            "name": "Kötelezően választható tárgy 1. félév",
-            "row": 1,
-            "courses": [
-                {
-                    "code": "VEGTKGB112M",
-                    "name": "Közgazdaságtan",
-                    "credits": 2
-                },
-                {
-                    "code": "VEMKEU1312E",
-                    "name": "EU ismeretek",
-                    "credits": 2
-                },
-                {
-                    "code": "VEGTMEB312A",
-                    "name": "Általános menedzsment",
-                    "credits": 2
-                }
-            ]
-        },
-        {
-            "name": "Kötelezően választható tárgy 2. félév",
-            "row": 1,
-            "courses": [
-                {
-                    "code": "VEMKKVB212M",
-                    "name": "Minőségbiztosítás",
-                    "credits": 2
-                },
-                {
-                    "code": "VEMKME2312K",
-                    "name": "Kockázatmenedzsment",
-                    "credits": 2
                 }
             ]
         },
@@ -592,14 +545,6 @@
                     "prerequisites": [
                         "VEMKOKB112V"
                     ]
-                },
-                {
-                    "code": "VEMKOKB112Z",
-                    "name": "Zöld kémia",
-                    "credits": 2,
-                    "prerequisites": [
-                        "VEMKOK1112A"
-                    ]
                 }
             ]
         },
@@ -608,11 +553,11 @@
             "row": 1,
             "courses": [
                 {
-                    "code": "VEMKKA4112V",
-                    "name": "Vízkémia elméleti és környezettudományi alkalmazásai",
+                    "code": "VEMKFKB212K",
+                    "name": "Korróziós alapismeretek",
                     "credits": 2,
                     "prerequisites": [
-                        "VEMKKKB212K"
+                        "VEMKFKB312A"
                     ]
                 },
                 {
@@ -644,19 +589,12 @@
                 {
                     "code": "VEMKKVB212H",
                     "name": "Hulladékgazdálkodás",
-                    "credits": 2,
-                    "prerequisites": [
-                        "VEMKFTB143K",
-                        "VEMKOK1112A"
-                    ]
+                    "credits": 2
                 },
                 {
-                    "code": "VEMKKAV143K",
-                    "name": "Korszerű kromatográfiás módszerek",
-                    "credits": 3,
-                    "prerequisites": [
-                        "VEMKKAB114A"
-                    ]
+                    "code": "VEMKSIB113A",
+                    "name": "Anyagtudomány",
+                    "credits": 3
                 }
             ]
         }
