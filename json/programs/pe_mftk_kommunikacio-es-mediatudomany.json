@@ -1,0 +1,440 @@
+{
+    "name": "Kommunikáció- és médiatudomány",
+    "description": "Kommunikáció- és médiatudomány alapszak - nappali tagozat tanterve",
+    "curriculum_updated_at": "2022-07-03",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "VETKTTB316F",
+                    "name": "Bevezetés a filozófiába",
+                    "credits": 6
+                },
+                {
+                    "code": "VETKTTB111P",
+                    "name": "Politikatudomány I.",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTT2123K",
+                    "name": "Közigazgatástan",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKAYB123S",
+                    "name": "Perszonális és társadalmi kommunikáció",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKAEB113P",
+                    "name": "Bevezetés a pszichológiába ea",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTTB123P",
+                    "name": "Bevezetés a pszichológiába sz.",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKMNB123I",
+                    "name": "Kreatív írás",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKAEB223K",
+                    "name": "Kutatásmódszertan és tudományos írás I",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKAEB113C",
+                    "name": "Művelődéstörténet I.",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "VETKTTB113B",
+                    "name": "Bevezetés a nemzetközi viszonyok elméletébe",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTTB223K",
+                    "name": "Közvéleménykutatás",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTTB111R",
+                    "name": "Politikatudomány II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VETKTTB111P"
+                    ]
+                },
+                {
+                    "code": "VETKPPB313S",
+                    "name": "Szociálpszichológia, csoportlélektan ea",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTTB223M",
+                    "name": "Médiatudomány és kultúra",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKAEB323K",
+                    "name": "Kutatásmódszertan és tudományos írás II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VETKAEB223K"
+                    ]
+                },
+                {
+                    "code": "VETKTTB313K",
+                    "name": "A kommunikációs tér színhelyei",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKAYB113E",
+                    "name": "Szemantika, pragmatika",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKAEB213C",
+                    "name": "Művelődéstörténet II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VETKAEB113C"
+                    ]
+                },
+                {
+                    "code": "VETKMNB223K",
+                    "name": "Kommunikáció szóban és írásban",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "VETKTTB313M",
+                    "name": "Marketingkommunikáció",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKAYM123B",
+                    "name": "Nyelv és beszéd",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKAIM113N",
+                    "name": "Társadalmi nemek és kommunikáció",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKAYT113P",
+                    "name": "Pszicholingvisztika ea.",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKAYT123P",
+                    "name": "Pszicholingvisztika sz.",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKAYM113L",
+                    "name": "Szociolingvisztika ea.",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKAYM123L",
+                    "name": "Szociolingvisztika sz.",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTTM113L",
+                    "name": "Nyelv és logika ea.",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTTM123L",
+                    "name": "Nyelv és logika sz.",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKMNB123B",
+                    "name": "Kommunikáció szóban és írásban II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VETKMNB223K"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "VETKTTB22XP",
+                    "name": "Szakmai gyakorlat",
+                    "credits": 10
+                },
+                {
+                    "code": null,
+                    "name": "Szakirány-tárgy",
+                    "credits": 21,
+                    "course_block_references": [
+                        "Digitális szerkesztő specializáció 4. félév",
+                        "Digitális szerkesztő specializáció 5. félév",
+                        "Digitális szerkesztő specializáció 6. félév",
+                        "Kulturális kreatív ipar specializáció 4. félév",
+                        "Kulturális kreatív ipar specializáció 5. félév",
+                        "Kulturális kreatív ipar specializáció 6. félév"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "5. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "VETKAEB313T",
+                    "name": "Tudományrendszertan és könyvtárismeret",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTTB116M",
+                    "name": "Médiaismeret",
+                    "credits": 6
+                },
+                {
+                    "code": "VETKTTB125S",
+                    "name": "Szakdolgozat",
+                    "credits": 5
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható",
+                    "credits": 5
+                },
+                {
+                    "code": null,
+                    "name": "Szakirány-tárgy",
+                    "credits": 12,
+                    "course_block_references": [
+                        "Digitális szerkesztő specializáció 4. félév",
+                        "Digitális szerkesztő specializáció 5. félév",
+                        "Digitális szerkesztő specializáció 6. félév",
+                        "Kulturális kreatív ipar specializáció 4. félév",
+                        "Kulturális kreatív ipar specializáció 5. félév",
+                        "Kulturális kreatív ipar specializáció 6. félév"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "6. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "VETKTTB116E",
+                    "name": "Kommunikatív etika",
+                    "credits": 6
+                },
+                {
+                    "code": "VETKTTB213E",
+                    "name": "Kommunikációfilozófia és -elmélet",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKTTB225S",
+                    "name": "Szakdolgozat",
+                    "credits": 5
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható",
+                    "credits": 5
+                },
+                {
+                    "code": null,
+                    "name": "Szakirány-tárgy",
+                    "credits": 9,
+                    "course_block_references": [
+                        "Digitális szerkesztő specializáció 4. félév",
+                        "Digitális szerkesztő specializáció 5. félév",
+                        "Digitális szerkesztő specializáció 6. félév",
+                        "Kulturális kreatív ipar specializáció 4. félév",
+                        "Kulturális kreatív ipar specializáció 5. félév",
+                        "Kulturális kreatív ipar specializáció 6. félév"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Digitális szerkesztő specializáció 4. félév",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VETKMNB123S",
+                    "name": "Képszerkesztés",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKMNB223T",
+                    "name": "Szövegszerkesztés",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKMNB213B",
+                    "name": "Kiadványszerkesztés",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKMNB213P",
+                    "name": "Kézirat előkészítés, korrektúra",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKMNB113T",
+                    "name": "Szövegtan",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKMNB213A",
+                    "name": "Kiadói alapismeretek",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKMNB323T",
+                    "name": "Tördelési ismeretek",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Digitális szerkesztő specializáció 5. félév",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VETKMNB123O",
+                    "name": "Helyesírás",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKMNB223S",
+                    "name": "Stilisztika",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKMNM113M",
+                    "name": "Médianyelvészet",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKAYB123K",
+                    "name": "Idegen nyelvi szakkommunikáció",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Digitális szerkesztő specializáció 6. félév",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VETKAYM112Z",
+                    "name": "Nyelvi zavarok",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKAYM223S",
+                    "name": "Idegen nyelvi szakszövegek feldolgozása",
+                    "credits": 3
+                },
+                {
+                    "code": "VETKAYM213K",
+                    "name": "Interkulturális kommunikáció",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Kulturális kreatív ipar specializáció 4. félév",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VETKTTB314C",
+                    "name": "Kulturális- és sajtóesemény",
+                    "credits": 4
+                },
+                {
+                    "code": "VETKTTB324T",
+                    "name": "Médiaszöveg kritikai elemzése",
+                    "credits": 4
+                },
+                {
+                    "code": "VETKTTB324D",
+                    "name": "Digitális önkép",
+                    "credits": 4
+                },
+                {
+                    "code": "VETKTTB315E",
+                    "name": "Gazdaságetika",
+                    "credits": 5
+                },
+                {
+                    "code": "VETKTTB314M",
+                    "name": "Médiajog, Médiagazdaságtan",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "Kulturális kreatív ipar specializáció 5. félév",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VETKTTB324B",
+                    "name": "Média- és kultúrabefogadás",
+                    "credits": 4
+                },
+                {
+                    "code": "VETKSTB324A",
+                    "name": "Alkalmazott dramaturgia",
+                    "credits": 4
+                },
+                {
+                    "code": "VETKTTB314E",
+                    "name": "Filmesztétika",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "Kulturális kreatív ipar specializáció 6. félév",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VETKAYB314V",
+                    "name": "Vizuális kreativitás és kompetencia fejlesztés",
+                    "credits": 4
+                },
+                {
+                    "code": "VETKTTB325P",
+                    "name": "Digitális munkaportfólió",
+                    "credits": 5
+                }
+            ]
+        }
+    ]
+}
