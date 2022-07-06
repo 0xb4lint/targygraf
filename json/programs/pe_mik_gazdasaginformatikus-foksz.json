@@ -1,0 +1,182 @@
+{
+    "name": "Gazdaságinformatikus FOKSZ",
+    "description": "Gazdaságinformatikus felsőoktatási szakképzés - nappali tagozat tanterve",
+    "curriculum_updated_at": "2022-05-03",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "VEMKLE1120A",
+                    "name": "Angol nyelv I.",
+                    "credits": 4
+                },
+                {
+                    "code": "VEGTVEF122M",
+                    "name": "Munkaerő-piaci ismeretek",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMIINF124F",
+                    "name": "Szakmai és pénzügyi információ-feldolgozási alapismeretek",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMIVIB112A",
+                    "name": "A számítástechnika alapjai",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMIMAT143M",
+                    "name": "Bevezetés a matematikába I",
+                    "credits": 3
+                },
+                {
+                    "code": "VEGTKGB114Ö",
+                    "name": "Makroökonómia",
+                    "credits": 5
+                },
+                {
+                    "code": "VEMISAB154R",
+                    "name": "Programozás I.",
+                    "credits": 5
+                },
+                {
+                    "code": "VEMISAB144A",
+                    "name": "A programozás alapjai",
+                    "credits": 5
+                },
+                {
+                    "code": "VEPETO1122A",
+                    "name": "Testnevelés I.",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "VEMKLE1220A",
+                    "name": "Angol nyelv II.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VEMKLE1120A"
+                    ]
+                },
+                {
+                    "code": "VEMIMAT122M ",
+                    "name": "Bevezetés a matematikába II",
+                    "credits": 2,
+                    "prerequisites": [
+                        "VEMIMAT143M"
+                    ]
+                },
+                {
+                    "code": "VEMILMB343E",
+                    "name": "Ellátási lánc menedzsment alapjai",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMISAB254J",
+                    "name": "Programozás II.",
+                    "credits": 7,
+                    "prerequisites": [
+                        "VEMISAB144A",
+                        "VEMISAB154R"
+                    ]
+                },
+                {
+                    "code": "VEGTGAB144A",
+                    "name": "Vállalati gazdaságtan",
+                    "credits": 5
+                },
+                {
+                    "code": "VEGTSCB244I",
+                    "name": "Számvitel",
+                    "credits": 5
+                },
+                {
+                    "code": "VEMISAB144O",
+                    "name": "Operációs rendszerek",
+                    "credits": 5,
+                    "prerequisites": [
+                        "VEMISAB144A",
+                        "VEMIVIB112A"
+                    ]
+                },
+                {
+                    "code": "VEPETO2222A",
+                    "name": "Testnevelés II.",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "VEGTMEB122K",
+                    "name": "Üzleti kommunikáció",
+                    "credits": 2
+                },
+                {
+                    "code": "VEMIINB154H",
+                    "name": "Számítógép hálózatok I.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "VEMIVIB112A"
+                    ]
+                },
+                {
+                    "code": "VEMISAB154B",
+                    "name": "Adatbáziskezelő rendszerek I.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "VEMIMAT143M"
+                    ]
+                },
+                {
+                    "code": "VEMIINF134G",
+                    "name": "Projekt labor és tervezés",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMISAB244S",
+                    "name": "Szoftvertechnológia",
+                    "credits": 5,
+                    "prerequisites": [
+                        "VEMISAB254J"
+                    ]
+                },
+                {
+                    "code": "VEGTPTB112P",
+                    "name": "Pénzügytan (makrogazdasági pénzügyek)",
+                    "credits": 3
+                },
+                {
+                    "code": "VEGTGAB244V",
+                    "name": "Vállalkozói ismeretek",
+                    "credits": 5,
+                    "prerequisites": [
+                        "VEGTGAB144A"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "VEMIINF22XG",
+                    "name": "Szakmai gyakorlat",
+                    "credits": 30
+                }
+            ]
+        }
+    ]
+}
