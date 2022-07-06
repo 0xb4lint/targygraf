@@ -17,6 +17,7 @@ jobs:
       - run: composer install --profile --no-interaction
       - run: ./vendor/bin/phpunit
   deploy:
+    concurrency: deploy_to_master
     needs: test
     runs-on: ubuntu-latest
     steps:
