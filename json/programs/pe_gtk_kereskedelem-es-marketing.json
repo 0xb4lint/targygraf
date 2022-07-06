@@ -263,7 +263,7 @@
                 {
                     "code": "VEGTGAB244V",
                     "name": "Vállalkozói ismeretek",
-                    "credits": 3,
+                    "credits": 6,
                     "prerequisites": [
                         "VEGTGAB144A"
                     ]
@@ -291,7 +291,7 @@
                 {
                     "code": "VEGTMIB244S",
                     "name": "Marketingstratégia",
-                    "credits": 3,
+                    "credits": 6,
                     "prerequisites": [
                         "VEGTMIB212M",
                         "VEGTMIB222M"
