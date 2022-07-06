@@ -32,6 +32,7 @@ jobs:
           cd /var/www/targygraf.hu;
           rm composer.lock;
           git pull origin master &&
+          composer config --no-plugins allow-plugins.kylekatarnls/update-helper false &&
           composer install --no-dev --no-interaction &&
           php artisan migrate:refresh --seed --force -vvv'"
 
