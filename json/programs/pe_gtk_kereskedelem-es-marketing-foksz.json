@@ -1,0 +1,210 @@
+{
+    "name": "Kereskedelem és marketing FOKSZ",
+    "description": "Kereskedelem és marketing felsőoktatási szakképzés - nappali tagozat tanterve",
+    "curriculum_updated_at": "2022-07-06",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "VEGTTUB112U",
+                    "name": "Üzleti élet társadalmi összefüggései",
+                    "credits": 3
+                },
+                {
+                    "code": "VEGTVEB122T",
+                    "name": "Tanulási, önismereti és szocializációs tréning",
+                    "credits": 3
+                },
+                {
+                    "code": "VEGTMEB122K",
+                    "name": "Üzleti kommunikáció",
+                    "credits": 3
+                },
+                {
+                    "code": "VEGTNGB112E",
+                    "name": "Európai Uniós ismeretek",
+                    "credits": 3
+                },
+                {
+                    "code": "VEGTGAB112J",
+                    "name": "Gazdasági jog",
+                    "credits": 3
+                },
+                {
+                    "code": "VEGTVEF122M",
+                    "name": "Munkaerő-piaci ismeretek",
+                    "credits": 3
+                },
+                {
+                    "code": "VEGTMEB112P",
+                    "name": "Pszichológia",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMIINF124F",
+                    "name": "Szakmai és pénzügyi információ-feldolgozási alapismeretek",
+                    "credits": 6
+                },
+                {
+                    "code": "VEGTLEB122N",
+                    "name": "Gazdasági és üzleti szaknyelv I. (német)",
+                    "credits": 0
+                },
+                {
+                    "code": "VEGTLEB122A",
+                    "name": "Gazdasági és üzleti szaknyelv I. (angol)",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "VEGTGAB144A",
+                    "name": "Vállalati gazdaságtan",
+                    "credits": 6
+                },
+                {
+                    "code": "VEGTMIB212M",
+                    "name": "Bevezetés a marketingbe",
+                    "credits": 3
+                },
+                {
+                    "code": "VEGTMIB222M",
+                    "name": "Bevezetés a marketingbe gyakorlat",
+                    "credits": 3
+                },
+                {
+                    "code": "VEGTGAB422K",
+                    "name": "Marketingkommunikáció",
+                    "credits": 3
+                },
+                {
+                    "code": "VEGTPTB212P",
+                    "name": "Vállalati pénzügyek I.",
+                    "credits": 3
+                },
+                {
+                    "code": "VEGTSCB144S",
+                    "name": "Számvitel alapjai",
+                    "credits": 6
+                },
+                {
+                    "code": "VEGTVEB244L",
+                    "name": "Logisztika I",
+                    "credits": 6,
+                    "prerequisites": [
+                        "VEGTGAB144A"
+                    ]
+                },
+                {
+                    "code": "VEGTLEB222N",
+                    "name": "Gazdasági és üzleti szaknyelv II. (német)",
+                    "credits": 0,
+                    "prerequisites": [
+                        "VEGTLEB122N"
+                    ]
+                },
+                {
+                    "code": "VEGTLEB222A",
+                    "name": "Gazdasági és üzleti szaknyelv II. (angol)",
+                    "credits": 0,
+                    "prerequisites": [
+                        "VEGTLEB122A"
+                    ]
+                },
+                {
+                    "code": "VEGTLEB1X0N",
+                    "name": "Gazdasági és üzleti szaknyelvi záróvizsga (német)",
+                    "credits": 0,
+                    "prerequisites": [
+                        "VEGTLEB222N"
+                    ]
+                },
+                {
+                    "code": "VEGTLEB1X0A",
+                    "name": "Gazdasági és üzleti szaknyelvi záróvizsga (angol)",
+                    "credits": 0,
+                    "prerequisites": [
+                        "VEGTLEB222A"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "VEGTVEB314T",
+                    "name": "Termelés- és szolgáltatás-menedzsment",
+                    "credits": 6,
+                    "prerequisites": [
+                        "VEGTGAB144A"
+                    ]
+                },
+                {
+                    "code": "VEGTGAB244V",
+                    "name": "Vállalkozói ismeretek",
+                    "credits": 6,
+                    "prerequisites": [
+                        "VEGTGAB144A"
+                    ]
+                },
+                {
+                    "code": "VEGTMIB212K",
+                    "name": "Kereskedelem gazdaságtana",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEGTGAB144A"
+                    ]
+                },
+                {
+                    "code": "VEGTMIB112E",
+                    "name": "Eladásmenedzsment",
+                    "credits": 3
+                },
+                {
+                    "code": "VEGTMIB144F",
+                    "name": "Fogyasztói magatartás",
+                    "credits": 6
+                },
+                {
+                    "code": "VEGTMIB244B",
+                    "name": "Szolgáltatás & B2B Marketing",
+                    "credits": 6
+                },
+                {
+                    "code": "VEGTMIB242K",
+                    "name": "Kereskedelmi vállalatok",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEGTGAB144A",
+                        "VEGTMIB212M",
+                        "VEGTPTB212P"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "VEGTKMF122E",
+                    "name": "Az elemzés gyakorlata",
+                    "credits": 0
+                },
+                {
+                    "code": "VEGTMIF30XS",
+                    "name": "Szakmai gyakorlat",
+                    "credits": 30
+                }
+            ]
+        }
+    ]
+}
