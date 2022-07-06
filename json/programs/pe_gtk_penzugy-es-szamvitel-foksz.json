@@ -96,10 +96,7 @@
                 {
                     "code": "VEGTSCB222S",
                     "name": "Számvitelszervezés",
-                    "credits": 3,
-                    "prerequisites": [
-                        "VEGTSCB244K"
-                    ]
+                    "credits": 3
                 },
                 {
                     "code": "VEGTPTB212P",
