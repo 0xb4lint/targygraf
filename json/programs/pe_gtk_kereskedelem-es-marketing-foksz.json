@@ -1,7 +1,7 @@
 {
-    "name": "Pénzügy és számvitel FOKSZ",
-    "description": "Pénzügy és számvitel felsőoktatási szakképzés - nappali tagozat tanterve",
-    "curriculum_updated_at": "2022-07-03",
+    "name": "Kereskedelem és marketing FOKSZ",
+    "description": "Kereskedelem és marketing felsőoktatási szakképzés - nappali tagozat tanterve",
+    "curriculum_updated_at": "2022-07-06",
     "course_blocks": [
         {
             "name": "1. félév",
@@ -15,6 +15,11 @@
                 {
                     "code": "VEGTVEB122T",
                     "name": "Tanulási, önismereti és szocializációs tréning",
+                    "credits": 3
+                },
+                {
+                    "code": "VEGTMEB122K",
+                    "name": "Üzleti kommunikáció",
                     "credits": 3
                 },
                 {
@@ -33,11 +38,6 @@
                     "credits": 3
                 },
                 {
-                    "code": "VEGTPTB112P",
-                    "name": "Pénzügytan (Makrogazdasági pénzügyek)",
-                    "credits": 3
-                },
-                {
                     "code": "VEGTMEB112P",
                     "name": "Pszichológia",
                     "credits": 3
@@ -46,11 +46,6 @@
                     "code": "VEMIINF124F",
                     "name": "Szakmai és pénzügyi információ-feldolgozási alapismeretek",
                     "credits": 6
-                },
-                {
-                    "code": "VEGTMEB122K",
-                    "name": "Üzleti kommunikáció",
-                    "credits": 3
                 },
                 {
                     "code": "VEGTLEB122N",
@@ -69,6 +64,11 @@
             "row": 0,
             "courses": [
                 {
+                    "code": "VEGTGAB144A",
+                    "name": "Vállalati gazdaságtan",
+                    "credits": 6
+                },
+                {
                     "code": "VEGTMIB212M",
                     "name": "Bevezetés a marketingbe",
                     "credits": 3
@@ -79,23 +79,8 @@
                     "credits": 3
                 },
                 {
-                    "code": "VEGTGAB144A",
-                    "name": "Vállalati gazdaságtan",
-                    "credits": 6
-                },
-                {
-                    "code": "VEGTNGB244K",
-                    "name": "Nemzetközi gazdaságtan",
-                    "credits": 6
-                },
-                {
-                    "code": "VEGTSCB244K",
-                    "name": "Könyvviteli ismeretek",
-                    "credits": 6
-                },
-                {
-                    "code": "VEGTSCB222S",
-                    "name": "Számvitelszervezés",
+                    "code": "VEGTGAB422K",
+                    "name": "Marketingkommunikáció",
                     "credits": 3
                 },
                 {
@@ -104,9 +89,17 @@
                     "credits": 3
                 },
                 {
-                    "code": "VEGTSCB312C",
-                    "name": "Controlling",
-                    "credits": 3
+                    "code": "VEGTSCB144S",
+                    "name": "Számvitel alapjai",
+                    "credits": 6
+                },
+                {
+                    "code": "VEGTVEB244L",
+                    "name": "Logisztika I",
+                    "credits": 6,
+                    "prerequisites": [
+                        "VEGTGAB144A"
+                    ]
                 },
                 {
                     "code": "VEGTLEB222N",
@@ -147,35 +140,52 @@
             "row": 0,
             "courses": [
                 {
-                    "code": "VEGTSCB124E",
-                    "name": "Elemzés módszertana",
+                    "code": "VEGTVEB314T",
+                    "name": "Termelés- és szolgáltatás-menedzsment",
                     "credits": 6,
                     "prerequisites": [
-                        "VEGTSCB244K"
+                        "VEGTGAB144A"
                     ]
                 },
                 {
-                    "code": "VEGTSCB446S",
-                    "name": "Pénzügyi számvitel I.",
-                    "credits": 9,
+                    "code": "VEGTGAB244V",
+                    "name": "Vállalkozói ismeretek",
+                    "credits": 6,
                     "prerequisites": [
-                      "VEGTSCB244K"
+                        "VEGTGAB144A"
                     ]
                 },
                 {
-                    "code": "VEGTSCB124A",
-                    "name": "Adózási feladatok ellátása",
-                    "credits": 6,
+                    "code": "VEGTMIB212K",
+                    "name": "Kereskedelem gazdaságtana",
+                    "credits": 3,
                     "prerequisites": [
-                        "VEGTSCB244K"
+                        "VEGTGAB144A"
                     ]
                 },
                 {
-                    "code": "VEGTSCB324K",
-                    "name": "Számvitel és adózás digitális környezetben",
-                    "credits": 6,
+                    "code": "VEGTMIB112E",
+                    "name": "Eladásmenedzsment",
+                    "credits": 3
+                },
+                {
+                    "code": "VEGTMIB144F",
+                    "name": "Fogyasztói magatartás",
+                    "credits": 6
+                },
+                {
+                    "code": "VEGTMIB244B",
+                    "name": "Szolgáltatás & B2B Marketing",
+                    "credits": 6
+                },
+                {
+                    "code": "VEGTMIB242K",
+                    "name": "Kereskedelmi vállalatok",
+                    "credits": 3,
                     "prerequisites": [
-                        "VEGTSCB244K"
+                        "VEGTGAB144A",
+                        "VEGTMIB212M",
+                        "VEGTPTB212P"
                     ]
                 }
             ]
@@ -185,12 +195,12 @@
             "row": 0,
             "courses": [
                 {
-                    "code": "VEGTSCF122E",
+                    "code": "VEGTKMF122E",
                     "name": "Az elemzés gyakorlata",
                     "credits": 0
                 },
                 {
-                    "code": "VEGTSCF30XS",
+                    "code": "VEGTMIF30XS",
                     "name": "Szakmai gyakorlat",
                     "credits": 30
                 }
