@@ -1,7 +1,7 @@
 {
     "name": "Programtervező informatikus MSc",
     "description": "Programtervező informatikus MSc szak - nappali tagozat tanterve",
-    "curriculum_updated_at": "2019-11-26",
+    "curriculum_updated_at": "2021-11-16",
     "course_blocks": [
         {
             "name": "1. félév",
@@ -287,11 +287,6 @@
                     "credits": 4
                 },
                 {
-                    "code": "VEMIIRM444P",
-                    "name": "Párhuzamos programozás",
-                    "credits": 5
-                },
-                {
                     "code": "VEMISAM154J",
                     "name": "Szerver oldali JavaScript programozás",
                     "credits": 5
@@ -315,6 +310,16 @@
                     "code": "VEMIVIM113I",
                     "name": "Információ-elmélet mérnöki alkalmazásokkal",
                     "credits": 3
+                },
+                {
+                    "code": "VEMIVIM155G",
+                    "name": "GPU programozás",
+                    "credits": 5
+                },
+                {
+                    "code": "VEMIINM254F",
+                    "name": "Felhőbiztonság",
+                    "credits": 4
                 }
             ]
         }
