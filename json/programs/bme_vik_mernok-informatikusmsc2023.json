@@ -1,0 +1,717 @@
+{
+	"name": "Mérnökinformatikus MSc (2023-tól felvetteknek)",
+	"description": "Mérnökinformatikus MSc szak - nappali tagozat tanterve, tavaszi kezdéssel",
+	"curriculum_updated_at": "2022-11-28",
+	"course_blocks": [
+		{
+			"name": "1. félév",
+			"row": 0,
+			"courses": [
+				{
+					"code": null,
+					"name": "Felsőbb matematika informatikusoknak",
+					"credits": 5,
+					"course_block_references": [
+						"Felsőbb matematika"
+					]
+				},
+				{
+					"code": null,
+					"name": "Közös tantárgy",
+					"credits": 5,
+					"course_block_references": [
+						"Közös tantárgyak"
+					]
+				},
+				{
+					"code": null,
+					"name": "Kötelezően választható gazdasági-humán tárgy 1",
+					"credits": 2,
+					"course_block_references": [
+						"Kötelezően választható gazdasági-humán tárgyak"
+					]
+				},
+				{
+					"code": null,
+					"name": "Kötelezően választható gazdasági-humán tárgy 2",
+					"credits": 2,
+					"course_block_references": [
+						"Kötelezően választható gazdasági-humán tárgyak"
+					]
+				},
+				{
+					"code": null,
+					"name": "Főspecializáció A1 tantárgy",
+					"credits": 5,
+					"course_block_references": [
+						"Adattudomány és mesterséges intelligencia főspec",
+						"Internetarchitektúra és felhőszolgáltatások főspecializáció",
+						"IT biztonság főspecializáció",
+						"Szoftverfejlesztés főspec",
+						"Vizuális informatika főspecializáció"
+					]
+				},
+				{
+					"code": null,
+					"name": "Mellékspecializáció A tantárgy",
+					"credits": 5,
+					"course_block_references": [
+						"Energetikai informatika mellékspecializáció",
+						"Felhasználói élmény - UX és interakció mellékspecializáció",
+						"Felhő alapú elosztott rendszerek mellékspecializáció",
+						"Kritikus rendszerek mellékspecializáció",
+						"Kvantuminformatika mellékspecializáció",
+						"Mobilszoftver-fejlesztés mellékspecializáció",
+						"Számításelmélet mellékspecializáció",
+						"Szenzorrendszerek mellékspecializáció"
+					]
+				},
+				{
+					"code": "VI__ML10",
+					"name": "Önálló laboratórium",
+					"credits": 5
+				}
+			]
+		},
+		{
+			"name": "2. félév",
+			"row": 0,
+			"courses": [
+				{
+					"code": null,
+					"name": "Felsőbb matematika informatikusoknak",
+					"credits": 5,
+					"course_block_references": [
+						"Felsőbb matematika"
+					]
+				},
+				{
+					"code": null,
+					"name": "Közös tantárgy",
+					"credits": 5,
+					"course_block_references": [
+						"Közös tantárgyak"
+					]
+				},
+				{
+					"code": null,
+					"name": "Kötelezően választható gazdasági-humán tárgy 3",
+					"credits": 2,
+					"course_block_references": [
+						"Kötelezően választható gazdasági-humán tárgyak"
+					]
+				},
+				{
+					"code": null,
+					"name": "Főspecializáció A1 labor",
+					"credits": 5,
+					"course_block_references": [
+						"Adattudomány és mesterséges intelligencia főspec",
+						"Internetarchitektúra és felhőszolgáltatások főspecializáció",
+						"IT biztonság főspecializáció",
+						"Szoftverfejlesztés főspec",
+						"Vizuális informatika főspecializáció"
+					]
+				},
+				{
+					"code": null,
+					"name": "Főspecializáció A2 tantárgy",
+					"credits": 5,
+					"course_block_references": [
+						"Adattudomány és mesterséges intelligencia főspec",
+						"Internetarchitektúra és felhőszolgáltatások főspecializáció",
+						"IT biztonság főspecializáció",
+						"Szoftverfejlesztés főspec",
+						"Vizuális informatika főspecializáció"
+					]
+				},
+				{
+					"code": null,
+					"name": "Mellékspecializáció B tantárgy",
+					"credits": 5,
+					"course_block_references": [
+						"Energetikai informatika mellékspecializáció",
+						"Felhasználói élmény - UX és interakció mellékspecializáció",
+						"Felhő alapú elosztott rendszerek mellékspecializáció",
+						"Kritikus rendszerek mellékspecializáció",
+						"Kvantuminformatika mellékspecializáció",
+						"Mobilszoftver-fejlesztés mellékspecializáció",
+						"Számításelmélet mellékspecializáció",
+						"Szenzorrendszerek mellékspecializáció"
+					]
+				},
+				{
+					"code": "VI__ML11",
+					"name": "Önálló laboratórium",
+					"credits": 5
+				}
+			]
+		},
+		{
+			"name": "3. félév",
+			"row": 0,
+			"courses": [
+				{
+					"code": null,
+					"name": "Főspecializáció A2 labor",
+					"credits": 5,
+					"course_block_references": [
+						"Adattudomány és mesterséges intelligencia főspec",
+						"Internetarchitektúra és felhőszolgáltatások főspecializáció",
+						"IT biztonság főspecializáció",
+						"Szoftverfejlesztés főspec",
+						"Vizuális informatika főspecializáció"
+					]
+				},
+				{
+					"code": null,
+					"name": "Főspecializáció B tantárgy",
+					"credits": 5,
+					"course_block_references": [
+						"Adattudomány és mesterséges intelligencia főspec",
+						"Internetarchitektúra és felhőszolgáltatások főspecializáció",
+						"IT biztonság főspecializáció",
+						"Szoftverfejlesztés főspec",
+						"Vizuális informatika főspecializáció"
+					]
+				},
+				{
+					"code": null,
+					"name": "Főspecializáció C tantárgy",
+					"credits": 5,
+					"course_block_references": [
+						"C-típusú tantárgyak"
+					]
+				},
+				{
+					"code": null,
+					"name": "Mellékspecializáció A labor",
+					"credits": 4,
+					"course_block_references": [
+						"Energetikai informatika mellékspecializáció",
+						"Felhasználói élmény - UX és interakció mellékspecializáció",
+						"Felhő alapú elosztott rendszerek mellékspecializáció",
+						"Kritikus rendszerek mellékspecializáció",
+						"Kvantuminformatika mellékspecializáció",
+						"Mobilszoftver-fejlesztés mellékspecializáció",
+						"Számításelmélet mellékspecializáció",
+						"Szenzorrendszerek mellékspecializáció"
+					]
+				},
+				{
+					"code": "VI__MT10",
+					"name": "Diplomatervezés",
+					"credits": 10
+				},
+				{
+					"code": "___OPTIONAL___",
+					"name": "Szabadon választható tárgy 1",
+					"credits": 2
+				}
+			]
+		},
+		{
+			"name": "4. félév",
+			"row": 0,
+			"courses": [
+				{
+					"code": "VITMMB03",
+					"name": "Mérnöki menedzsment",
+					"credits": 4
+				},
+				{
+					"code": "VI__MT11",
+					"name": "Diplomatervezés",
+					"credits": 20
+				},
+				{
+					"code": "___OPTIONAL___",
+					"name": "Szabadon választható tárgy 2",
+					"credits": 2
+				},
+				{
+					"code": "___OPTIONAL___",
+					"name": "Szabadon választható tárgy 3",
+					"credits": 2
+				}
+			]
+		},
+		{
+			"name": "Kötelezően választható gazdasági-humán tárgyak",
+			"row": 1,
+			"courses": [				
+				{
+					"code": "GT35M004",
+					"name": "Befektetések",
+					"credits": 2
+				},
+				{
+					"code": "GT41MS01",
+					"name": "Érvelés, tárgyalás, meggyőzés",
+					"credits": 2
+				},
+				{
+					"code": "GT55M005",
+					"name": "Információs társadalom joga",
+					"credits": 2
+				},
+				{
+					"code": "GT20M002",
+					"name": "Minőségmenedzsment",
+					"credits": 2
+				},
+				{
+					"code": "GT20M400",
+					"name": "Projektmenedzsment",
+					"credits": 2
+				},
+				{
+					"code": "GT55M002",
+					"name": "Vállalati jog",
+					"credits": 2
+				},
+				{
+					"code": "GT35M005",
+					"name": "Vezetői számvitel",
+					"credits": 2
+				},
+				{
+					"code": "VITMAK50",
+					"name": "Pénzügyi technológiák (FinTech) alapjai",
+					"credits": 2
+				}
+			]
+		},
+		{
+			"name": "Felsőbb matematika",
+			"row": 1,
+			"courses": [
+				{
+					"code": "TE90MX75",
+					"name": "Alkalmazott algebra és matematikai logika",
+					"credits": 5
+				},
+				{
+					"code": "VISZMA11",
+					"name": "Matematikai statisztika",
+					"credits": 5
+				},
+				{
+					"code": "TE90MX77",
+					"name": "Sztochasztika",
+					"credits": 5
+				},
+				{
+					"code": "______",
+					"name": null,
+					"credits": 0
+				},
+				{
+					"code": "TE90MX76",
+					"name": "Analízis",
+					"credits": 5
+				},
+				{
+					"code": "VISZMA10",
+					"name": "Rendszeroptimalizálás",
+					"credits": 5
+				}
+			]
+		},
+		{
+			"name": "Közös tantárgyak",
+			"row": 1,
+			"courses": [
+				{
+					"code": "VISZMA12",
+					"name": "Nyelvek és automaták",
+					"credits": 5
+				},
+				{
+					"code": "VIAUMA21",
+					"name": "Szoftverarchitektúrák",
+					"credits": 5
+				},
+				{
+					"code": "______",
+					"name": null,
+					"credits": 0
+				},
+				{
+					"code": "VIMIMA26",
+					"name": "Formális módszerek",
+					"credits": 5
+				},
+				{
+					"code": "VISZMA13",
+					"name": "Információelmélet",
+					"credits": 5
+				},
+				{
+					"code": "VITMMA17",
+					"name": "Adatbázisok elmélete",
+					"credits": 5
+				}
+			]
+		},
+		{
+			"name": "Adattudomány és mesterséges intelligencia főspec",
+			"row": 1,
+			"courses": [
+				{
+					"code": "VIMIMA27",
+					"name": "Gépi tanulás",
+					"credits": 5
+				},
+				{
+					"code": "VITMMA18",
+					"name": "Gépi tanulási esettanulmányok",
+					"credits": 5
+				},
+				{
+					"code": "VITMMA19",
+					"name": "Mélytanulás",
+					"credits": 5
+				},
+				{
+					"code": "VITMMB10",
+					"name": "Haladó adatelemzési módszerek labor",
+					"credits": 5
+				},
+				{
+					"code": "VIMIMB09",
+					"name": "Intelligens adatelemzés és döntéstámogatás",
+					"credits": 5
+				}
+			]
+		},
+		{
+			"name": "Internetarchitektúra és felhőszolgáltatások főspecializáció",
+			"row": 1,
+			"courses": [
+				{
+					"code": "VITMMA20",
+					"name": "Felhő- és mikroszolgáltatások hálózati architektúrái",
+					"credits": 5
+				},
+				{
+					"code": "VITMMA21",
+					"name": "Felhők hálózati architektúrái laboratórium",
+					"credits": 5
+				},
+				{
+					"code": "VITMMA22",
+					"name": "Felhőalapú hálózati szolgáltatások programozása Go nyelven",
+					"credits": 5
+				},
+				{
+					"code": "VITMMB11",
+					"name": "Felhők hálózati szolgáltatásai laboratórium ",
+					"credits": 5
+				},
+				{
+					"code": "VIMIMB12",
+					"name": "Az Internet ökoszisztémája",
+					"credits": 5
+				}
+			]
+		},
+		{
+			"name": "IT biztonság főspecializáció",
+			"row": 1,
+			"courses": [
+				{
+					"code": "VIHIMA21",
+					"name": "Szoftverbiztonság",
+					"credits": 5
+				},
+				{
+					"code": "VIHIMA22",
+					"name": "Szoftverbiztonság labor",
+					"credits": 5
+				},
+				{
+					"code": "VIHIMA23",
+					"name": "Számítógép- és hálózatbiztonság",
+					"credits": 5
+				},
+				{
+					"code": "VIHIMB07",
+					"name": "Számítógép- és hálózatbiztonság labor",
+					"credits": 5
+				},
+				{
+					"code": "VIHIMB08",
+					"name": "Kriptográfiai protokollok",
+					"credits": 5
+				}
+			]
+		},
+		{
+			"name": "Szoftverfejlesztés főspec",
+			"row": 1,
+			"courses": [
+				{
+					"code": "VIAUMA22",
+					"name": "Modellalapú szoftverfejlesztés",
+					"credits": 5
+				},
+				{
+					"code": "VIAUMA23",
+					"name": "Modellalapú szoftverfejlesztés labor",
+					"credits": 5
+				},
+				{
+					"code": "VIAUMA24",
+					"name": "Üzleti intelligencia ",
+					"credits": 5
+				},
+				{
+					"code": "VIAUMB09",
+					"name": "Üzleti intelligencia labor",
+					"credits": 5
+				},
+				{
+					"code": "VIAUMB10",
+					"name": "Szoftverfejlesztés az iparban",
+					"credits": 5
+				}
+			]
+		},
+		{
+			"name": "Vizuális informatika főspecializáció",
+			"row": 1,
+			"courses": [
+				{
+					"code": "VIIIMA23",
+					"name": "Képszintézis",
+					"credits": 5
+				},
+				{
+					"code": "VIIIMA24",
+					"name": "Játékfejlesztés labor",
+					"credits": 5
+				},
+				{
+					"code": "VIIIMA25",
+					"name": "3D számítógépes geometria és alakzatrekonstrukció",
+					"credits": 5
+				},
+				{
+					"code": "VIIIMB09",
+					"name": "GPU programozás és párhuzamos rendszerek labor",
+					"credits": 5
+				},
+				{
+					"code": "VIIIMB10",
+					"name": "Deep-learning a vizuális informatikában",
+					"credits": 5
+				}
+			]
+		},
+		{
+			"name": "C-típusú tantárgyak",
+			"row": 1,
+			"courses": [
+				{
+					"code": "VIAUMB11",
+					"name": "Skálázható szoftverek",
+					"credits": 5
+				},
+				{
+					"code": "VIHIMB09",
+					"name": "A gépi tanulás biztonsága",
+					"credits": 5
+				},
+				{
+					"code": "VIIIMB11",
+					"name": "Vizualizáció és orvosi képalkotás",
+					"credits": 5
+				},
+				{
+					"code": "VIMIMB10",
+					"name": "Megbízható mesterséges intelligencia és adatelemzés",
+					"credits": 5
+				},
+				{
+					"code": "VISZMB02",
+					"name": "Adatszerkezetek és algoritmusok",
+					"credits": 5
+				},
+				{
+					"code": "VITMMB13 őszi",
+					"name": "IoT - Tárgyak internete",
+					"credits": 5
+				}
+			]
+		},
+		{
+			"name": "Energetikai informatika mellékspecializáció",
+			"row": 2,
+			"courses": [
+				{
+					"code": "VIVEMA25",
+					"name": "A villamosenergia-rendszer működése és üzemirányítása",
+					"credits": 5
+				},
+				{
+					"code": "VIVEMA26",
+					"name": "A villamosenergia-rendszer informatikai infrastruktúrája",
+					"credits": 5
+				},
+				{
+					"code": "VIVEMB08",
+					"name": "Energetikai informatika laboratórium",
+					"credits": 4
+				}
+			]
+		},
+		{
+			"name": "Felhasználói élmény - UX és interakció mellékspecializáció",
+			"row": 2,
+			"courses": [
+				{
+					"code": "VITMMA25",
+					"name": "Felhasználói élmény - UX elmélete és gyakorlata",
+					"credits": 5
+				},
+				{
+					"code": "VITMMA23",
+					"name": "MI alapú ember-gép interakció",
+					"credits": 5
+				},
+				{
+					"code": "VITMMB14",
+					"name": "UX laboratórium",
+					"credits": 4
+				}
+			]
+		},
+		{
+			"name": "Felhő alapú elosztott rendszerek mellékspecializáció",
+			"row": 2,
+			"courses": [
+				{
+					"code": "VIIIMA26",
+					"name": "Számítási és tárolási felhők alapjai",
+					"credits": 5
+				},
+				{
+					"code": "VIIIMA27",
+					"name": "Szolgáltatásorientált rendszerek és alkalmazások fejlesztése",
+					"credits": 5
+				},
+				{
+					"code": "VIIIMB12",
+					"name": "Felhőalapú elosztott rendszerek laboratórium",
+					"credits": 4
+				}
+			]
+		},
+		{
+			"name": "Kritikus rendszerek mellékspecializáció",
+			"row": 2,
+			"courses": [
+				{
+					"code": "VIMIMA28",
+					"name": "Megbízható elosztott és decentralizált rendszerek",
+					"credits": 5
+				},
+				{
+					"code": "VIMIMA29",
+					"name": "Automatizált ellenőrzési technikák",
+					"credits": 5
+				},
+				{
+					"code": "VIMIMB11",
+					"name": "Kritikus rendszerek laboratórium",
+					"credits": 4
+				}
+			]
+		},
+		{
+			"name": "Kvantuminformatika mellékspecializáció",
+			"row": 2,
+			"courses": [
+				{
+					"code": "VIHIMA24",
+					"name": "Kvantumszámítógépek és alkalmazásaik",
+					"credits": 5
+				},
+				{
+					"code": "VIHIMA25",
+					"name": "Kvantumhálózatok",
+					"credits": 5
+				},
+				{
+					"code": "VIHIMN10",
+					"name": "Kvantuminformatika laboratórium",
+					"credits": 4
+				}
+			]
+		},
+		{
+			"name": "Mobilszoftver-fejlesztés mellékspecializáció",
+			"row": 2,
+			"courses": [
+				{
+					"code": "VIAUMA25",
+					"name": "Mobilszoftver-platformok ",
+					"credits": 5
+				},
+				{
+					"code": "VIAUMA26",
+					"name": "Mobilszoftver-rendszerek fejlesztése",
+					"credits": 5
+				},
+				{
+					"code": "VIAUMB02",
+					"name": "Mobilszoftver laboratórium",
+					"credits": 4
+				}
+			]
+		},
+		{
+			"name": "Számításelmélet mellékspecializáció",
+			"row": 2,
+			"courses": [
+				{
+					"code": "VISZMA14",
+					"name": "Algoritmusok és bonyolultságuk",
+					"credits": 5
+				},
+				{
+					"code": "VISZMA15",
+					"name": "Gráfok, hipergráfok és alkalmazásaik",
+					"credits": 5
+				},
+				{
+					"code": "VISZMB01",
+					"name": "Nagyhatékonyságú deklaratív programozás laboratórium",
+					"credits": 4
+				}
+			]
+		},
+		{
+			"name": "Szenzorrendszerek mellékspecializáció",
+			"row": 2,
+			"courses": [
+				{
+					"code": "VIETMA17",
+					"name": "Szenzorok rendszertechnikája",
+					"credits": 5
+				},
+				{
+					"code": "VIEEMA12",
+					"name": "Érzékelő eszközök hardver-szoftver integrációja",
+					"credits": 5
+				},
+				{
+					"code": "VIETMB05",
+					"name": "Alkalmazott szenzorika laboratórium",
+					"credits": 4
+				}
+			]
+		}
+	]
+}
