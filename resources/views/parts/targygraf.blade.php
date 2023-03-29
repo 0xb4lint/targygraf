@@ -11,3 +11,11 @@
 		@endforeach
 	</div>
 @endif
+
+@if (($special2Blocks = $program->courseBlocks->where('row', 2)) && !$special2Blocks->isEmpty())
+	<div class="content" data-specialis="1">
+		@foreach ($program->courseBlocks->where('row', 2) as $courseBlock)
+			@include('parts.course-block')
+		@endforeach
+	</div>
+@endif
