@@ -21,7 +21,7 @@ abstract class AbstractJsonFileSeeder extends Seeder
         $jsonFiles = scandir(base_path($this->jsonFilesDirectory));
 
         foreach ($jsonFiles as $jsonFile) {
-            if (! ends_with($jsonFile, '.json')) {
+            if ($jsonFile[0] == '.' || ! ends_with($jsonFile, '.json')) {
                 continue;
             }
 
