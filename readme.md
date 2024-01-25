@@ -8,6 +8,10 @@
 2. edit `.env`
 3. `php artisan migrate:refresh --seed -vvv`
 
+or
+
+Run `docker-compose up -d`
+
 ## Contributing
 1. fork repo
 2. edit (PSR-2, `.editorconfig`)
