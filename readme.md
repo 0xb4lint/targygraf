@@ -10,7 +10,8 @@
 
 or
 
-Run `docker-compose up -d`
+Run `docker-compose up -d mysql redis` to warm up mysql
+then `docker-compose up -d targygraf`
 
 ## Contributing
 1. fork repo

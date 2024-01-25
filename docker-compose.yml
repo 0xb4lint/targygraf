@@ -27,6 +27,7 @@ services:
 
   targygraf:
     container_name: targygraf
+    image: targygraf
     build:
       context: .
       dockerfile: Dockerfile
