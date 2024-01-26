@@ -23,6 +23,26 @@
                     "credits": 4
                 },
                 {
+                    "code": "PSZI0526",
+                    "name": "Az egészségpszichológia alapkérdései és társadalmi kontextusa",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0543",
+                    "name": "Az intelligenciadeficit típusai és mérése a klinikai gyakorlatban",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0542",
+                    "name": "Klinikai interjú gyakorlata",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0544",
+                    "name": "Pszichodiagnosztika I. (kérdőívek)",
+                    "credits": 3
+                },
+                {
                     "code": null,
                     "name": "Kötelezően választható blokk",
                     "credits": 3,
@@ -52,11 +72,35 @@
                     "credits": 3
                 },
                 {
+                    "code": "PSZI0525",
+                    "name": "Részletes pszichopatológia",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0527",
+                    "name": "Klinikai egészségpszichológia I.",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0530",
+                    "name": "Egészségmagatartás, egészségfejlesztés, egészségkommunikáció",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0531",
+                    "name": "Stressz, megküzdés, a személyiség pozitív erőforrásai",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0545",
+                    "name": "Pszichodiagnosztika II. (projektív tesztek I.)",
+                    "credits": 3
+                },
+                {
                     "code": "PSZI0230",
                     "name": "Szakdolgozati tutorálás I.",
                     "credits": 3
                 }
-                
             ]
         },
         {
@@ -71,6 +115,36 @@
                 {
                     "code": "PSZI0221",
                     "name": "Pályaszocializáció és pszichológus etika",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0532",
+                    "name": "Klinikai esettanulmányok",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0529",
+                    "name": "Klinikai egészségpszichológia II.",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0541",
+                    "name": "Pszichodiagnosztika III. (projektív tesztek II.)",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0533",
+                    "name": "Egybefüggő folyamatos terepmunka az egészségpszichológia területén (40 óra)",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0534",
+                    "name": "Egészségpszichológiai gyakorlat szupervíziója",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0535",
+                    "name": "Egybefüggő folyamatos terepmunka a klinikai pszichológia területén (40 óra)",
                     "credits": 3
                 },
                 {
@@ -95,9 +169,34 @@
                     "credits": 3
                 },
                 {
+                    "code": "PSZI0524",
+                    "name": "A pszichoterápia alapjai",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0524",
+                    "name": "Egészség-pszichofiziológia és pszichoneuroimmunológia",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0536",
+                    "name": "Egészségpszichológiai edukációs programok",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0537",
+                    "name": "Klinikai pszichológiai gyakorlat szupervíziója",
+                    "credits": 3
+                },
+                {
                     "code": "PSZI0232",
                     "name": "Szakdolgozati tutorálás III.",
                     "credits": 10
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "credits": 6,
+                    "name": "Szabadon választható tárgy"
                 }
             ]
         },
