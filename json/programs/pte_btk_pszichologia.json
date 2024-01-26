@@ -212,6 +212,14 @@
                     "code": "PSZI0913",
                     "name": "Kutatási gyakorlat II. (kísérletes)",
                     "credits": 5
+                },
+                {
+                    "code": "PSZI0190",
+                    "name": "Szociálpszichológia II. szeminárium",
+                    "credits": 4,
+                    "prerequisites": [
+                        "PSZI0189"
+                    ]
                 }
             ]
         },
@@ -249,9 +257,14 @@
                     "credits": 4
                 },
                 {
+                    "code": "PSZI0918",
+                    "name": "Szakmai szocializáció",
+                    "credits": 4
+                },
+                {
                     "code": null,
-                    "name": "Kötelezően választható",
-                    "credits": 8,
+                    "name": "Kérdőíves eljárások blokk",
+                    "credits": 4,
                     "course_block_references": [
                         "Kérdőíves eljárások"
                     ]
@@ -293,12 +306,24 @@
                 },
                 {
                     "code": null,
-                    "name": "Kötelezően választható",
-                    "credits": 8,
+                    "name": "Pszichológiai felmérés blokk",
+                    "credits": 4,
                     "course_block_references": [
-                        "Pszichológiai felmérés",
+                        "Pszichológiai felmérés"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Bevezetés a klinikai pszichológiába blokk",
+                    "credits": 4,
+                    "course_block_references": [
                         "Bevezetés a klinikai pszichológiába"
                     ]
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "credits": 10,
+                    "name": "Szabadon választható tárgy"
                 }
 
             ]
