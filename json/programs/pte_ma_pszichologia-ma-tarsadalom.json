@@ -1,0 +1,257 @@
+{
+    "name": "Pszichológia MA - Társadalom- és szervezetpszichológia",
+    "description": "Pszichológia MA - Társadalom- és szervezetpszichológia szakirány - nappali tagozat tanterve",
+    "curriculum_updated_at": "2024-01-01",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "PSZI0216",
+                    "name": "Fejlődéspszichológia mesterfokon",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0223",
+                    "name": "Általános pszichopatológia",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0229",
+                    "name": "Magyar és idegen nyelvű tudományos publikációk készítésének és prezentációjának módszertana",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0426",
+                    "name": "A szociális reprezentációelmélet alapjai",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0427",
+                    "name": "Szervezetelmélet és szervezeti diagnosztika",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0432",
+                    "name": "A munkaerő-kiválasztás pszichológiai kérdései",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0433",
+                    "name": "Csapatépítő gyakorlat",
+                    "credits": 4
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható blokk",
+                    "credits": 3,
+                    "course_block_references": [
+                        "Kötelezően választható"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "PSZI0217",
+                    "name": "Kognitív pszichológia mesterfokon",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0220",
+                    "name": "Szociálpszichológia mesterfokon",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0222",
+                    "name": "Statisztika haladóknak",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0222",
+                    "name": "Narratív pszichológia",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0424",
+                    "name": "Csoportdinamika és személyközi viszonyok",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0428",
+                    "name": "Szociális identitás és szociális kategorizáció",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0437",
+                    "name": "Munkahelyi gyakorlat I. (60 óra)",
+                    "credits": 2
+                },
+                {
+                    "code": "PSZI0438",
+                    "name": "Munkahelyi gyakorlat I. szupervíziója",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0336",
+                    "name": "Szakdolgozati tutorálás I.",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "PSZI0218",
+                    "name": "Evolúciós pszichológia mesterfokon",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0221",
+                    "name": "Pályaszocializáció és pszichológus etika",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0429",
+                    "name": "Szervezetfejlesztés elmélete és gyakorlata",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0434",
+                    "name": "Munkahelyi gyakorlat II. (60 óra)",
+                    "credits": 2
+                },
+                {
+                    "code": "PSZI0435",
+                    "name": "Munkahelyi gyakorlat II. szupervíziója",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0436",
+                    "name": "Konfliktuskezelési gyakorlat",
+                    "credits": 3
+                },
+                {
+                    "code": null,
+                    "name": "Kutatómunka Kötelezően választható blokk",
+                    "credits": 8,
+                    "course_block_references": [
+                        "Kutatómunka Kötelezően választható"
+                    ]
+                },
+                {
+                    "code": "PSZI0231",
+                    "name": "Szakdolgozati tutorálás II.",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "PSZI0219",
+                    "name": "Személyiségpszichológia mesterfokon",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0224",
+                    "name": "Kommunikációs készségfejlesztés",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0430",
+                    "name": "Kollektív emlékezet",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0431",
+                    "name": "Munkahelyi mentálhigiéné",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0443",
+                    "name": "Modern vezetéselméletek",
+                    "credits": 3
+                },
+                {
+                    "code": null,
+                    "name": "Kutatómunka Kötelezően választható blokk",
+                    "credits": 4,
+                    "course_block_references": [
+                        "Kutatómunka Kötelezően választható"
+                    ]
+                },
+                {
+                    "code": "PSZI0232",
+                    "name": "Szakdolgozati tutorálás III.",
+                    "credits": 10
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "credits": 6,
+                    "name": "Szabadon választható tárgy"
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választható",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "PSZI0225",
+                    "name": "Kvalitatív kutatási módszerek",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0226",
+                    "name": "Tartalomelemzés",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0227",
+                    "name": "Számítógépes kísérlettervezés",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0228",
+                    "name": "Kérdőívszerkesztés",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Kutatómunka Kötelezően választható",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "PSZI0440",
+                    "name": "Kutatás a narratív pszichológia területén",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0444",
+                    "name": "Kutatás a szervezetpszichológia területén",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0439",
+                    "name": "Kutatás a kisebbségek pszichológiájának területén",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0442",
+                    "name": "Kutatás a szervezett közösségek területén",
+                    "credits": 4
+                }
+            ]
+        }
+    ]
+}
