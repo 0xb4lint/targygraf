@@ -23,6 +23,26 @@
                     "credits": 4
                 },
                 {
+                    "code": "PSZI0330",
+                    "name": "Általános pszichopatológia",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0337",
+                    "name": "Fejlődéslélektani módszerek",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0337",
+                    "name": "A személyiség strukturális és tárgykapcsolati elméletei",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0341",
+                    "name": "A Rorschach-teszt alapismeretei",
+                    "credits": 4
+                },
+                {
                     "code": null,
                     "name": "Kötelezően választható blokk",
                     "credits": 3,
@@ -52,6 +72,26 @@
                     "credits": 3
                 },
                 {
+                    "code": "PSZI0331",
+                    "name": "Részletes pszichopatológia",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0332",
+                    "name": "Gyermek pszichodiagnosztika",
+                    "credits": 6
+                },
+                {
+                    "code": "PSZI0333",
+                    "name": "Az idegrendszer fejlődési zavarai és fejlesztésük",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0336",
+                    "name": "Narratív pszichológia",
+                    "credits": 3
+                },
+                {
                     "code": "PSZI0230",
                     "name": "Szakdolgozati tutorálás I.",
                     "credits": 3
@@ -71,6 +111,31 @@
                 {
                     "code": "PSZI0221",
                     "name": "Pályaszocializáció és pszichológus etika",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0335",
+                    "name": "Fejlődési kognitív idegtudomány",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0340",
+                    "name": "A TAT alapismeretei",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0342",
+                    "name": "A gyerekpszichoterápia alapjai",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0343",
+                    "name": "Egybefüggő folyamatos terepmunka a klinikai pszichológia területén (60 óra)",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0344",
+                    "name": "Klinikai terepmunka szupervíziója",
                     "credits": 3
                 },
                 {
@@ -95,9 +160,34 @@
                     "credits": 3
                 },
                 {
-                    "code": "PSZI0232",
+                    "code": "PSZI0334",
+                    "name": "Fejlődési pszichopatológia",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0339",
+                    "name": "A gyermekmegfigyelésen és kísérleten alapuló dinamikus elméletek",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0345",
+                    "name": "Fejlődéspszichológiai terepmunka kísérőszeminárium",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0345",
+                    "name": "Egybefüggő folyamatos terepmunka a fejlődéspszichológia területén (60 óra)",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0346",
                     "name": "Szakdolgozati tutorálás III.",
                     "credits": 10
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "credits": 6,
+                    "name": "Szabadon választható tárgy"
                 }
             ]
         },
