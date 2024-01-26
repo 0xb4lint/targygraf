@@ -1,0 +1,540 @@
+{
+    "name": "Szociológia",
+    "description": "Szociológia BA - nappali tagozat tanterve",
+    "curriculum_updated_at": "2024-01-01",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "BSZOC 1020",
+                    "name": "Bevezetés a szociológiába",
+                    "credits": 3
+                },
+                {
+                    "code": "BSZOC 1210",
+                    "name": "Szociológiatörténet I.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "(BSZOC 1211)"
+                    ]
+                },
+                {
+                    "code": "BSZOC 1211",
+                    "name": "Szociológiatörténet 1.",
+                    "credits": 3
+                },
+                {
+                    "code": "BSZOC 1010",
+                    "name": "Egyházismeret",
+                    "credits": 2
+                },
+                {
+                    "code": "BSZOC 2110",
+                    "name": "Társadalomtörténet I.",
+                    "credits": 3
+                },
+                {
+                    "code": "BSZOC 1260",
+                    "name": "Matematikai statisztika I.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(BSZOC 1261)"
+                    ]
+                },
+                {
+                    "code": "BSZOC 1261",
+                    "name": "Matematikai statisztika 1.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "(BSZOC 1011)"
+                    ]
+                },
+                {
+                    "code": "BSZOC 1011",
+                    "name": "Matematika felzárkóztató",
+                    "credits": 0
+                },
+                {
+                    "code": "BSZOC 2411",
+                    "name": "Számítógépes adatelemzés 1.",
+                    "credits": 3
+                },
+                {
+                    "code": "BSZOC 1141",
+                    "name": "Kutatásmódszertan I.",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "BSZOC 1220",
+                    "name": "Szociológiatörténet II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BSZOC 1210",
+                        "BSZOC 1211",
+                        "(BSZOC 1221)"
+                    ]
+                },
+                {
+                    "code": "BSZOC 1221",
+                    "name": "Szociológiatörténet 2.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BSZOC 1210",
+                        "BSZOC 1211"
+                    ]
+                },
+                {
+                    "code": "BSZOC 2120",
+                    "name": "Társadalomtörténet II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BSZOC 2110"
+                    ]
+                },
+                {
+                    "code": "BAA 0060",
+                    "name": "Bevezetés a Biblia olvasásába",
+                    "credits": 0
+                },
+                {
+                    "code": "BSZOC 1152",
+                    "name": "Kutatásmódszertan III.",
+                    "credits": 3
+                },
+                {
+                    "code": "BSZOC 1270",
+                    "name": "Matematikai statisztika II.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BSZOC 1260",
+                        "(BSZOC 1271)"
+                    ]
+                },
+                {
+                    "code": "BSZOC 1271",
+                    "name": "Matematikai statisztika 2.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BSZOC 1260"
+                    ]
+                },
+                {
+                    "code": "BSZOC 2412",
+                    "name": "Számítógépes adatelemzés 2.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BSZOC 2411"
+                    ]
+                },
+                {
+                    "code": "BSZOC 2541",
+                    "name": "Felkészülés a nyári szakmai gyakorlatra 1.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BSZOC 1141"
+                    ]
+                },
+                {
+                    "code": "BSZOC 2431",
+                    "name": "Kvantitatív módszerek 1.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BSZOC 1141"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Társadalomtudományi Kötelezően választható blokk",
+                    "credits": 12,
+                    "course_block_references": [
+                        "Társadalomtudományi Kötelezően választható"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "BSZOC 4998",
+                    "name": "Komplex módszertani vizsga",
+                    "credits": 0,
+                    "prerequisites": [
+                        "(BSZOC 1280)",
+                        "(BSZOC 2413)",
+                        "(BSZOC 2431)",
+                        "(BSZOC 2441)"
+                    ]
+                },
+                {
+                    "code": "BSZOC 1030",
+                    "name": "Szociológiaelmélet I.",
+                    "credits": 3
+                },
+                {
+                    "code": "BSZOC 2140",
+                    "name": "Társadalmi szerkezet és mobilitás I",
+                    "credits": 3
+                },
+                {
+                    "code": "BSZOC 1310",
+                    "name": "Filozófiatörténet",
+                    "credits": 2
+                },
+                {
+                    "code": "BSZOC 1720",
+                    "name": "Szociálpszichológia I.",
+                    "credits": 2
+                },
+                {
+                    "code": "BSZOC 1280",
+                    "name": "Matematikai statisztika III.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BSZOC 1270",
+                        "(BSZOC 1281)"
+                    ]
+                },
+                {
+                    "code": "BSZOC 1281",
+                    "name": "Matematikai statisztika 3.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BSZOC 1270"
+                    ]
+                },
+                {
+                    "code": "BSZOC 2413",
+                    "name": "Számítógépes adatelemzés 3.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BSZOC 2412"
+                    ]
+                },
+                {
+                    "code": "BSZOC 2542",
+                    "name": "A nyári szakmai gyakorlat értékelése 1.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BSZOC 2541",
+                        "BSZOC 2411",
+                        "(BSZOC 3481)"
+                    ]
+                },
+                {
+                    "code": "BSZOC 2441",
+                    "name": "Kvalitatív módszerek 1.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BSZOC 1141"
+                    ]
+                },
+                {
+                    "code": "BSZOC 3481",
+                    "name": "Nyári szakmai gyakorlat I. a 2. és a 3. szemeszter közötti nyáron",
+                    "credits": 6,
+                    "prerequisites": [
+                        "BSZOC 2541"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "BSZOC 1040",
+                    "name": "Szociológiaelmélet II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BSZOC 1030"
+                    ]
+                },
+                {
+                    "code": "BSZOC 1130",
+                    "name": "Demográfia",
+                    "credits": 3
+                },
+                {
+                    "code": "BSZOC 2190",
+                    "name": "Társadalmi devianciák",
+                    "credits": 3
+                },
+                {
+                    "code": "BSZOC 1140",
+                    "name": "Vallás- és egyházszociológia",
+                    "credits": 3
+                },
+                {
+                    "code": "BSZOC 2150",
+                    "name": "Társadalmi szerkezet és mobilitás II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BSZOC 2140"
+                    ]
+                },
+                {
+                    "code": "BSZOC 2551",
+                    "name": "Felkészülés a nyári szakmai gyakorlatra 2.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BSZOC 3481",
+                        "BSZOC 2542",
+                        "BSZOC 2431"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Szakszociológia Kötelezően választható blokk",
+                    "credits": 9,
+                    "course_block_references": [
+                        "Szakszociológia Kötelezően választható"
+                    ]
+                },
+                {
+                    "code": "BSZOC 4999",
+                    "name": "Komplex elméleti vizsga",
+                    "credits": 0,
+                    "prerequisites": [
+                        "(BSZOC 1020)",
+                        "(BSZOC 1040)",
+                        "(BSZOC 1220 )",
+                        "(BSZOC 2120 )",
+                        "(BSZOC 2150)"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "5. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "BSZOC 2552",
+                    "name": "A nyári szakmai gyakorlat értékelése 2",
+                    "credits": 2,
+                    "prerequisites": [
+                        "BSZOC 2551",
+                        "(BSZOC 3482)"
+                    ]
+                },
+                {
+                    "code": "BSZOC 2811",
+                    "name": "A szakdolgozatírás módszertana",
+                    "credits": 3
+                },
+                {
+                    "code": "BSZOC 3482",
+                    "name": "Nyári szakmai gyakorlat II. a 4. és az 5. szemeszter közötti nyáron",
+                    "credits": 9,
+                    "prerequisites": [
+                        "BSZOC 2551"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható Készségtárgyak blokk",
+                    "credits": 4,
+                    "course_block_references": [
+                        "Kötelezően választható Készségtárgyak"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Módszertani gyakorlati Kötelezően választható blokk",
+                    "credits": 6,
+                    "course_block_references": [
+                        "Módszertani gyakorlati Kötelezően választható"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "6. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "BSZOC 5998N",
+                    "name": "Szakdolgozat (egyéni szakdolgozati felkészülés)",
+                    "credits": 10
+                },
+                {
+                    "code": "BSZOC 5999",
+                    "name": "Záróvizsga",
+                    "credits": 0
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "credits": 9,
+                    "name": "Szabadon választható tárgy"
+                }
+            ]
+        },
+        {
+            "name": "Társadalomtudományi Kötelezően választható",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "BSZOC 2330",
+                    "name": "Kommunikációelmélet I.",
+                    "credits": 3
+                },
+                {
+                    "code": "BSZOC 1410",
+                    "name": "Politológia",
+                    "credits": 3
+                },
+                {
+                    "code": "BSZOC 1610",
+                    "name": " Kulturális antropológia I.",
+                    "credits": 3
+                },
+                {
+                    "code": "BSZOC 1710",
+                    "name": "Pszichológia",
+                    "credits": 3
+                },
+                {
+                    "code": "BSZOC 1840",
+                    "name": "Jogi alapismeretek",
+                    "credits": 3
+                },
+                {
+                    "code": "BSZOC 1190",
+                    "name": "Társadalom- és szociálpolitika",
+                    "credits": 3
+                },
+                {
+                    "code": "BSZOC 1830",
+                    "name": "Közgazdaságtan",
+                    "credits": 3
+                },
+                {
+                    "code": "BSZOC 1730",
+                    "name": "Szociálpszichológia II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BSZOC 1720"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Szakszociológia Kötelezően választható",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "BSZOC 1910",
+                    "name": "Bevezetés a piac- és közvéleménykutatásba",
+                    "credits": 3
+                },
+                {
+                    "code": "BSZOC 3110",
+                    "name": "Szociográfia",
+                    "credits": 3
+                },
+                {
+                    "code": "BSZOC 3180",
+                    "name": "Szervezetszociológia",
+                    "credits": 3
+                },
+                {
+                    "code": "BSZOC 3140",
+                    "name": "Kisebbségszociológia és romológia",
+                    "credits": 3
+                },
+                {
+                    "code": "BSZOC 3150",
+                    "name": "Család- és ifjúságszociológia",
+                    "credits": 3
+                },
+                {
+                    "code": "BSZOC 2210",
+                    "name": "Civil társadalom",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választható Készségtárgyak",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "BSZOC 2621",
+                    "name": "Angol szakszövegolvasás",
+                    "credits": 4
+                },
+                {
+                    "code": "BSZOC 2622",
+                    "name": "Német szakszövegolvasás",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "Módszertani gyakorlati Kötelezően választható",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "BSZOC 3212",
+                    "name": "Számítógépes adatelemzés 4.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BSZOC 2413"
+                    ]
+                },
+                {
+                    "code": "BSZOC 3221",
+                    "name": "Matematikai statisztika 4.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BSZOC 1280",
+                        "BSZOC 1281"
+                    ]
+                },
+                {
+                    "code": "BSZOC 3232",
+                    "name": "Kvantitatív módszerek 2.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BSZOC 2431"
+                    ]
+                },
+                {
+                    "code": "BSZOC 3242",
+                    "name": "Kvalitatív módszerek 2.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BSZOC 1141"
+                    ]
+                },
+                {
+                    "code": "BSZOC 3243",
+                    "name": "Kvalitatív módszerek 3.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BSZOC 1141"
+                    ]
+                },
+                {
+                    "code": "BSZOC 3233",
+                    "name": "Számítógépes szövegelemzés",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BSZOC 3243"
+                    ]
+                }
+            ]
+        }
+    ]
+}
