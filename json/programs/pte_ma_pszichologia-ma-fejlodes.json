@@ -1,0 +1,131 @@
+{
+    "name": "Pszichológia MA - Fejlődés- és klinikai gyermekpszichológia",
+    "description": "Pszichológia MA - Fejlődés- és klinikai gyermekpszichológia szakirány - nappali tagozat tanterve",
+    "curriculum_updated_at": "2024-01-01",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "PSZI0216",
+                    "name": "Fejlődéspszichológia mesterfokon",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0223",
+                    "name": "Általános pszichopatológia",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0229",
+                    "name": "Magyar és idegen nyelvű tudományos publikációk készítésének és prezentációjának módszertana",
+                    "credits": 4
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható blokk",
+                    "credits": 3,
+                    "course_block_references": [
+                        "Kötelezően választható"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "PSZI0217",
+                    "name": "Kognitív pszichológia mesterfokon",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0220",
+                    "name": "Szociálpszichológia mesterfokon",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0222",
+                    "name": "Statisztika haladóknak",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0230",
+                    "name": "Szakdolgozati tutorálás I.",
+                    "credits": 3
+                }
+                
+            ]
+        },
+        {
+            "name": "3. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "PSZI0218",
+                    "name": "Evolúciós pszichológia mesterfokon",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0221",
+                    "name": "Pályaszocializáció és pszichológus etika",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0231",
+                    "name": "Szakdolgozati tutorálás II.",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "PSZI0219",
+                    "name": "Személyiségpszichológia mesterfokon",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0224",
+                    "name": "Kommunikációs készségfejlesztés",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0232",
+                    "name": "Szakdolgozati tutorálás III.",
+                    "credits": 10
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választható",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "PSZI0225",
+                    "name": "Kvalitatív kutatási módszerek",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0226",
+                    "name": "Tartalomelemzés",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0227",
+                    "name": "Számítógépes kísérlettervezés",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0228",
+                    "name": "Kérdőívszerkesztés",
+                    "credits": 3
+                }
+            ]
+        }
+    ]
+}
