@@ -233,22 +233,22 @@
             "courses": [
                 {
                     "code": "PSZI0440",
-                    "name": "Kutatás a narratív pszichológia területén",
+                    "name": "Kutatás a narratív pszichológia területén - 3. félév",
                     "credits": 4
                 },
                 {
                     "code": "PSZI0444",
-                    "name": "Kutatás a szervezetpszichológia területén",
+                    "name": "Kutatás a szervezetpszichológia területén - 3. félév",
                     "credits": 4
                 },
                 {
                     "code": "PSZI0439",
-                    "name": "Kutatás a kisebbségek pszichológiájának területén",
+                    "name": "Kutatás a kisebbségek pszichológiájának területén - 4. félév",
                     "credits": 4
                 },
                 {
                     "code": "PSZI0442",
-                    "name": "Kutatás a szervezett közösségek területén",
+                    "name": "Kutatás a szervezett közösségek területén - 4. félév",
                     "credits": 4
                 }
             ]
