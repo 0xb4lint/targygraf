@@ -1,0 +1,390 @@
+{
+    "name": "Pszichológia BA",
+    "description": "Pszichológia BA - nappali tagozat tanterve",
+    "curriculum_updated_at": "2024-01-01",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "Bevezetés a pszichológiába és pszichológiatörténet",
+                    "credits": 4
+                },
+                {
+                    "code": null,
+                    "name": "Biológiai pszichológia 1",
+                    "credits": 3
+                },
+                {
+                    "code": null,
+                    "name": "Fejlődéslélektan 1. előadás",
+                    "credits": 5
+                },
+                {
+                    "code": null,
+                    "name": "Fejlődéslélektan 1. gyakorlat",
+                    "credits": 3
+                },
+                {
+                    "code": null,
+                    "name": "Kísérleti és általános lélektan 1. előadás",
+                    "credits": 5
+                },
+                {
+                    "code": null,
+                    "name": "Kísérleti és általános lélektan 1. gyakorlat",
+                    "credits": 3
+                },
+                {
+                    "code": null,
+                    "name": "Pályaszocializáció és kommunikációs készségfejlesztés 1",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Statisztika 1. előadás",
+                    "credits": 3
+                },
+                {
+                    "code": null,
+                    "name": "Statisztika 1. gyakorlat",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "Biológiai pszichológia 2",
+                    "credits": 3
+                },
+                {
+                    "code": null,
+                    "name": "Fejlődéslélektan 2. előadás",
+                    "credits": 5
+                },
+                {
+                    "code": null,
+                    "name": "Fejlődéslélektan 2. gyakorlat",
+                    "credits": 3
+                },
+                {
+                    "code": null,
+                    "name": "Kísérleti és általános lélektan 2. előadás",
+                    "credits": 5
+                },
+                {
+                    "code": null,
+                    "name": "Kísérleti és általános lélektan 2. gyakorlat",
+                    "credits": 3
+                },
+                {
+                    "code": null,
+                    "name": "Módszertani alapismeretek előadás",
+                    "credits": 4
+                },
+                {
+                    "code": null,
+                    "name": "Módszertani alapismeretek gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Statisztika 2. előadás",
+                    "credits": 3
+                },
+                {
+                    "code": null,
+                    "name": "Statisztika 2. gyakorlat",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "A pszichológia alkalmazási területei",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Differenciált kutatásmódszertan 1.",
+                    "credits": 3
+                },
+                {
+                    "code": null,
+                    "name": "Evolúciós pszichológia",
+                    "credits": 3
+                },
+                {
+                    "code": null,
+                    "name": "Neveléslélektan",
+                    "credits": 3
+                },
+                {
+                    "code": null,
+                    "name": "Pszichológusi etika, jogi alapismeretek",
+                    "credits": 3
+                },
+                {
+                    "code": null,
+                    "name": "Személyiséglélektan 1. előadás",
+                    "credits": 5
+                },
+                {
+                    "code": null,
+                    "name": "Személyiséglélektan 1. gyakorlat",
+                    "credits": 3
+                },
+                {
+                    "code": null,
+                    "name": "Szociálpszichológia 1. előadás",
+                    "credits": 5
+                },
+                {
+                    "code": null,
+                    "name": "Szociálpszichológia 1. gyakorlat",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "Differenciált kutatásmódszertan 2.",
+                    "credits": 3
+                },
+                {
+                    "code": null,
+                    "name": "Pszichiátria",
+                    "credits": 4
+                },
+                {
+                    "code": null,
+                    "name": "Személyiséglélektan 2. előadás",
+                    "credits": 5
+                },
+                {
+                    "code": null,
+                    "name": "Személyiséglélektan 2. gyakorlat",
+                    "credits": 3
+                },
+                {
+                    "code": null,
+                    "name": "Szociálpszichológia 2. előadás",
+                    "credits": 5
+                },
+                {
+                    "code": null,
+                    "name": "Szociálpszichológia 2. gyakorlat",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "5. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "Differenciált kutatásmódszertan 3.",
+                    "credits": 6
+                },
+                {
+                    "code": null,
+                    "name": "Fejezetek a fejlődéslélektan köréből",
+                    "credits": 5
+                },
+                {
+                    "code": null,
+                    "name": "Fejezetek az általános lélektan köréből",
+                    "credits": 5
+                },
+                {
+                    "code": null,
+                    "name": "Szakdolgozati szeminárium 1. Konzultációs",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható blokk",
+                    "credits": 6,
+                    "course_block_references": [
+                        "Kötelezően választható"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelező közismereti tárgyak 1 blokk",
+                    "credits": 6,
+                    "course_block_references": [
+                        "Kötelező közismereti tárgyak 1"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "6. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "Etológia és magatartásgenetika",
+                    "credits": 3
+                },
+                {
+                    "code": null,
+                    "name": "Fejezetek a személyiséglélektan köréből",
+                    "credits": 5
+                },
+                {
+                    "code": null,
+                    "name": "Fejezetek a szociálpszichológia köréből",
+                    "credits": 5
+                },
+                {
+                    "code": null,
+                    "name": "Szakdolgozati szeminárium 2. Konzultációs",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Kötelező közismereti tárgyak 2 blokk",
+                    "credits": 12,
+                    "course_block_references": [
+                        "Kötelező közismereti tárgyak 2"
+                    ]
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "credits": 10,
+                    "name": "Szabadon választható tárgy"
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választható",
+            "row": 1,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "Bevezetés az iskolapszichológiába",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Bevezetés a nevelési tanácsadásba",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Bevezetés a tanácsadás pszichológiájába",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Bevezetés az egészségpszichológiába",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Bevezetés a kutatási gyakorlatba",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Bevezetés a neuropszichológiába",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Bevezetés a krízisintervencióba",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Bevezetés a sportpszichológiába",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Bevezetés a gyermekvédelembe és a gyermekjogokba",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Bevezetés a kvalitatív pszichológiába",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Bevezetés az alternatív vitarendezés módszertanába",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Bevezetés a kriminálpszichológiába",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Kötelező közismereti tárgyak 1",
+            "row": 1,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "Filozófiatörténet",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Társadalomismeret",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Könyvtár- és informatikai alapismeretek",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Kötelező közismereti tárgyak 2",
+            "row": 1,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "Bevezetés a kommunikáció- és médiatudományba",
+                    "credits": 3
+                },
+                {
+                    "code": null,
+                    "name": "Bevezetés a kulturális antropológiába",
+                    "credits": 3
+                },
+                {
+                    "code": null,
+                    "name": "Bevezetés a szociológiába",
+                    "credits": 3
+                },
+                {
+                    "code": null,
+                    "name": "Bevezetés a vallástudományba",
+                    "credits": 3
+                }
+            ]
+        }
+    ]
+}
