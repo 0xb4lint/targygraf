@@ -1,0 +1,367 @@
+{
+    "name": "Pszichológia MA - Tanácsadás és iskolapszichológia",
+    "description": "Pszichológia MA - Tanácsadás és iskolapszichológia szakirány - nappali tagozat tanterve",
+    "curriculum_updated_at": "2024-01-01",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "BTPS112MA",
+                    "name": "Intelligencia (elmélet és mérés)",
+                    "credits": 3
+                },
+                {
+                    "code": "BTPS113MA",
+                    "name": "A humán információfeldolgozás",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS117MA",
+                    "name": "Pozitív pszichológia",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS120MA",
+                    "name": "Pályaszocializáció, pszichológus etika",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS315MA",
+                    "name": "Iskolaérettségi vizsgálatok",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS336MA",
+                    "name": "A tanulók megismerése labor/terepgyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS400MA",
+                    "name": "Pálya- és munkatanácsadás elmélete",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS401MA",
+                    "name": "A tanácsadás elméleti irányzatai, életvezetési tanácsadás, krízis elméletek",
+                    "credits": 3
+                },
+                {
+                    "code": "BTPS406MA",
+                    "name": "Iskolai konzultáció, életvezetési és pályatanácsadás",
+                    "credits": 3
+                },
+                {
+                    "code": "BTPS415MA",
+                    "name": "Személyiségfejlesztő csoportmunka az iskolában",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "BTPS110MA",
+                    "name": "Felnőttkori változások",
+                    "credits": 3
+                },
+                {
+                    "code": "BTPS114MA",
+                    "name": "Döntéselmélet és szociálpszichológiai alkalmazásai",
+                    "credits": 3
+                },
+                {
+                    "code": "BTPS116MA",
+                    "name": "Egészséges személyiség személyiséglélektani alapjai",
+                    "credits": 3
+                },
+                {
+                    "code": "BTPS310MA",
+                    "name": "Diagnosztikai módszerek az iskolapszichológiában",
+                    "credits": 3
+                },
+                {
+                    "code": "BTPS313MA",
+                    "name": "Iskolai tehetséggondozás",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS402MA",
+                    "name": "Diagnosztikai módszerek az egyéni tanácsadásban",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS404MA",
+                    "name": "Az iskolapszichológia elméleti irányzatai, feladatai, munkamódszerei",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS407MA",
+                    "name": "Pályaszocializáció és jövőtervezés",
+                    "credits": 3
+                },
+                {
+                    "code": "BTPS410MA",
+                    "name": "Családi tanácsadás",
+                    "credits": 3
+                },
+                {
+                    "code": "BTPS414MA",
+                    "name": "Tanulás tanítása",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Társtudományi alapozás/mesterkurzusok blokk",
+                    "credits": 2,
+                    "course_block_references": [
+                        "Társtudományi alapozás/mesterkurzusok"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Választható tárgyak I. blokk",
+                    "credits": 8,
+                    "course_block_references": [
+                        "Választható tárgyak I."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "BTPS115MA",
+                    "name": "Értékítélet és attitűd",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS121MA",
+                    "name": "Kommunikációs készségfejlesztés",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS312MA",
+                    "name": "Iskolai egészségpszichológia",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS403MA",
+                    "name": "Diagnosztikai módszerek a pálya- és munkatanácsadásban",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS405MA",
+                    "name": "Preventív iskolai programok, az oktató - nevelő intézmények szervezeti sajátosságai",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS408MA",
+                    "name": "Tanácsadás a felsőoktatásban",
+                    "credits": 3
+                },
+                {
+                    "code": "BTPS411MA",
+                    "name": "Empirikus munka a tehetség-tanácsadás területén",
+                    "credits": 3
+                },
+                {
+                    "code": "BTPS416MA",
+                    "name": "Az iskola szervezetpszichológiai vizsgálata",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS417MA",
+                    "name": "Iskolapszichológiai labor/terepgyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Módszertani készségfejlesztés blokk",
+                    "credits": 4,
+                    "course_block_references": [
+                        "Módszertani készségfejlesztés"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "BTPS409MA",
+                    "name": "Fejlődés- és kognitív pszichodiagnosztika",
+                    "credits": 3
+                },
+                {
+                    "code": "BTPS413MA",
+                    "name": "Nevelés- és oktatáspszichológiai vizsgálatok",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS500MA",
+                    "name": "Szakdolgozat",
+                    "credits": 20
+                },
+                {
+                    "code": null,
+                    "name": "Választható tárgyak II. blokk",
+                    "credits": 8,
+                    "course_block_references": [
+                        "Választható tárgyak II."
+                    ]
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "credits": 4,
+                    "name": "Szabadon választható tárgy"
+                }
+            ]
+        },
+        {
+            "name": "Társtudományi alapozás/mesterkurzusok",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "BTED",
+                    "name": "Életkorok pedagógiája I.",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS800MA",
+                    "name": "Munkajogi alapismeretek",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS700MA",
+                    "name": "Bevezetés a közgazdaságtanba",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS254MA",
+                    "name": "Társas hálózatok elemzése",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Választható tárgyak I.",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "BTPS244MA",
+                    "name": "Szervezetpszichológiai labor/terepgyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS343MA",
+                    "name": "Egészségpszichológiai labor/terepgyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS233MA",
+                    "name": "Pszichológiai tesztek fejlesztése",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS238MA",
+                    "name": "Pszichometriai gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS412MA",
+                    "name": "Mindfulness és sprirituális intelligencia a tanácsadásban",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS419MA",
+                    "name": "Új irányzatok a tanácsadásban",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Módszertani készségfejlesztés",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "BTPS122MA",
+                    "name": "Modern tesztelmélet",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS123MA",
+                    "name": "Kvalitatív struktúrák elemzése",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS124MA",
+                    "name": "Neurális modellek a pszichológiában",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS125MA",
+                    "name": "Fejezetek a pszichometria köréből",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS126MA",
+                    "name": "Fejezetek a kísérleti pszichológia köréből",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Választható tárgyak II.",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "BTPS210MA",
+                    "name": "Pszichológiai alkalmasság és kiválasztás",
+                    "credits": 3
+                },
+                {
+                    "code": "BTPS220MA",
+                    "name": "Humán erőforrás gazdálkodás",
+                    "credits": 3
+                },
+                {
+                    "code": "BTPS223MA",
+                    "name": "Vezetéspszichológia",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS228MA",
+                    "name": "Szervezeti kultúra",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS323MA",
+                    "name": "A tanulási zavarok diagnosztikája, tanácsadás",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS222MA",
+                    "name": "Szervezetfejlesztés",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS325MA",
+                    "name": "Fejezetek az egészségpszichológiából",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS418MA",
+                    "name": "Az idegennyelv-tanulás pszichológiája",
+                    "credits": 3
+                }
+            ]
+        }
+    ]
+}
