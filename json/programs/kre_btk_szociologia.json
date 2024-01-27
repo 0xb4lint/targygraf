@@ -1,7 +1,7 @@
 {
     "name": "Szociológia",
     "description": "Szociológia BA - nappali tagozat tanterve",
-    "curriculum_updated_at": "2024-01-01",
+    "curriculum_updated_at": "2023-09-01",
     "course_blocks": [
         {
             "name": "1. félév",
@@ -239,6 +239,11 @@
                     ]
                 },
                 {
+                    "code": "BAA 1001",
+                    "name": "Testnevelés nappalisoknak",
+                    "credits": 0
+                },
+                {
                     "code": "BSZOC 3481",
                     "name": "Nyári szakmai gyakorlat I. a 2. és a 3. szemeszter közötti nyáron",
                     "credits": 6,
@@ -377,6 +382,22 @@
                     "code": "___OPTIONAL___",
                     "credits": 9,
                     "name": "Szabadon választható tárgy"
+                }
+            ]
+        },
+        {
+            "name": "Specializáció",
+            "row": 0,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "Specializáció",
+                    "credits": 20,
+                    "course_block_references": [
+                        "Szociálpszhichológia specializáció",
+                        "Projektmenedzsment specializáció",
+                        "Big data elemzés specializáció"
+                    ]
                 }
             ]
         },
@@ -532,6 +553,157 @@
                     "credits": 3,
                     "prerequisites": [
                         "BSZOC 3243"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Szociálpszhichológia specializáció",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "BSZOC 6111",
+                    "name": "Szociálpszichológia 1. - 5. félév",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BSZOC 1730"
+                    ]
+                },
+                {
+                    "code": "BSZOC 6140",
+                    "name": " Kisebbségszociológia és romológia - 5. félév",
+                    "credits": 3
+                },
+                {
+                    "code": "BSZOC 6112",
+                    "name": "Kommunikációs tréning - 5. félév",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "BSZOC 6113",
+                    "name": "Csoportdinamikai gyakorlat - 6. félév",
+                    "credits": 2
+                },
+                {
+                    "code": "BSZOC 6114",
+                    "name": "Konfliktuskezelés mediációval - 6. félév",
+                    "credits": 3
+                },
+                {
+                    "code": "BSZOC 6110",
+                    "name": "Kultúraközi kommunikáció - 6. félév",
+                    "credits": 3
+                },
+                {
+                    "code": "BSZOC 6180",
+                    "name": "Szervezetszociológia - 6. félév",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Projektmenedzsment specializáció",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "BSZOC 6210",
+                    "name": " Projektmenedzsment I. - 5. félév",
+                    "credits": 4
+                },
+                {
+                    "code": "BSZOC 6220",
+                    "name": "Szervezet és vezetéselmélet - 5. félév",
+                    "credits": 3
+                },
+                {
+                    "code": "BSZOC 6112",
+                    "name": "Kommunikációs tréning - 5. félév",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "BSZOC 6211",
+                    "name": "Projektmenedzsment II. - 6. félév",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BSZOC 6210"
+                    ]
+                },
+                {
+                    "code": "BSZOC 6280",
+                    "name": "Szervezetszociológia - 6. félév",
+                    "credits": 3
+                },
+                {
+                    "code": "BSZOC 6230",
+                    "name": "Civil társadalom - 6. félév",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Big data elemzés specializáció",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "BSZOC 6421",
+                    "name": "Matematika statisztika 4. - 5. félév",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BSZOC 1280",
+                        "BSZOC 2413"
+                    ]
+                },
+                {
+                    "code": "BSZOC 6432",
+                    "name": "Kvantitatív módszerek 2. - 5. félév",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BSZOC 2431"
+                    ]
+                },
+                {
+                    "code": "BSZOC 6412",
+                    "name": "Számítógépes adatelemzés 4. - 5. félév",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BSZOC 2413",
+                        "BSZOC 1280"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "BSZOC 6410",
+                    "name": "Bevezetés a piac- és közvéleménykutatásba - 6. félév",
+                    "credits": 3
+                },
+                {
+                    "code": "BSZOC 6422",
+                    "name": "Idősorok statisztikai analízise - 6. félév",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BSZOC 6421"
+                    ]
+                },
+                {
+                    "code": "BSZOC 6413",
+                    "name": "Adatbányász szoftverek alkalmazása - 6. félév",
+                    "credits": 4,
+                    "prerequisites": [
+                        "BSZOC 6412"
                     ]
                 }
             ]
