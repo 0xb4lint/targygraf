@@ -39,6 +39,9 @@ RUN composer install
 # Set permissions for the storage directory
 RUN chown -R www-data:www-data /var/www/html/storage
 
+# Run unit tests
+RUN vendor/bin/phpunit
+
 # Expose port 80 for the Apache server
 EXPOSE 80
 
