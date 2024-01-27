@@ -258,6 +258,18 @@
             "row": 0,
             "courses": [
                 {
+                    "code": "BSZOC 4999",
+                    "name": "Komplex elméleti vizsga",
+                    "credits": 0,
+                    "prerequisites": [
+                        "(BSZOC 1020)",
+                        "(BSZOC 1040)",
+                        "(BSZOC 1220)",
+                        "(BSZOC 2120)",
+                        "(BSZOC 2150)"
+                    ]
+                },
+                {
                     "code": "BSZOC 1040",
                     "name": "Szociológiaelmélet II.",
                     "credits": 3,
@@ -304,18 +316,6 @@
                     "credits": 9,
                     "course_block_references": [
                         "Szakszociológia Kötelezően választható"
-                    ]
-                },
-                {
-                    "code": "BSZOC 4999",
-                    "name": "Komplex elméleti vizsga",
-                    "credits": 0,
-                    "prerequisites": [
-                        "(BSZOC 1020)",
-                        "(BSZOC 1040)",
-                        "(BSZOC 1220 )",
-                        "(BSZOC 2120 )",
-                        "(BSZOC 2150)"
                     ]
                 }
             ]
