@@ -8,6 +8,11 @@
 2. edit `.env`
 3. `php artisan migrate:refresh --seed -vvv`
 
+or
+
+Run `docker-compose up -d mysql redis` to warm up mysql
+then `docker-compose up -d targygraf`
+
 ## Contributing
 1. fork repo
 2. edit (PSR-2, `.editorconfig`)

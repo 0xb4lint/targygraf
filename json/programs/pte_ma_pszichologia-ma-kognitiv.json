@@ -1,0 +1,278 @@
+{
+    "name": "Pszichológia MA - Kognitív pszichológia",
+    "description": "Pszichológia MA - Kognitív pszichológia szakirány - nappali tagozat tanterve",
+    "curriculum_updated_at": "2024-01-01",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "PSZI0216",
+                    "name": "Fejlődéspszichológia mesterfokon",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0223",
+                    "name": "Általános pszichopatológia",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0229",
+                    "name": "Magyar és idegen nyelvű tudományos publikációk készítésének és prezentációjának módszertana",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0335",
+                    "name": "Fejlődési kognitív idegtudomány",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0628",
+                    "name": "Hormonok, agy, viselkedés",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0629",
+                    "name": "Kognitív tudomány",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0642",
+                    "name": "Biológiai alapú kutatási módszerek",
+                    "credits": 4
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható blokk",
+                    "credits": 3,
+                    "course_block_references": [
+                        "Kötelezően választható"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "PSZI0217",
+                    "name": "Kognitív pszichológia mesterfokon",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0220",
+                    "name": "Szociálpszichológia mesterfokon",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0222",
+                    "name": "Statisztika haladóknak",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0333",
+                    "name": "Az idegrendszer fejlődési zavarai és fejlesztésük",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0627",
+                    "name": "Neuropszichológia és rehabilitáció",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0630",
+                    "name": "Érzelem és megismerés",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0632",
+                    "name": "Szociális megismerés fejlődése",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0640",
+                    "name": "Vezetett kutatómunka a kognitív pszichológia köréből",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0644",
+                    "name": "Neuropszichológia terepgyakorlat (60 óra)",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0230",
+                    "name": "Szakdolgozati tutorálás I.",
+                    "credits": 3
+                }
+                
+            ]
+        },
+        {
+            "name": "3. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "PSZI0218",
+                    "name": "Evolúciós pszichológia mesterfokon",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0221",
+                    "name": "Pályaszocializáció és pszichológus etika",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0637",
+                    "name": "Szociális megismerés és társas kapcsolatok",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0649",
+                    "name": "Az emberi szexualitás pszichológiája",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0636",
+                    "name": "Pszichopatológiák evolúciós alapjai",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0641",
+                    "name": "Vezetett kutatómunka az evolúciós pszichológia köréből",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0643",
+                    "name": "Egybefüggő szakmai terepgyakorlat (Közoktatási intézményben) 60 óra",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0645",
+                    "name": "Az intelligencia és a részképességek vizsgálata",
+                    "credits": 4
+                },
+                {
+                    "code": null,
+                    "name": "Kognitív pszichológia alkalmazott területei - Kötelezően választott blokk",
+                    "credits": 3,
+                    "course_block_references": [
+                        "Kognitív pszichológia alkalmazott területei - Kötelezően választott"
+                    ]
+                },
+                {
+                    "code": "PSZI0231",
+                    "name": "Szakdolgozati tutorálás II.",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "PSZI0219",
+                    "name": "Személyiségpszichológia mesterfokon",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0224",
+                    "name": "Kommunikációs készségfejlesztés",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0638",
+                    "name": "Alkalmazott evolúciós pszichológia",
+                    "credits": 3
+                },
+                {
+                    "code": null,
+                    "name": "Kognitív pszichológia alkalmazott területei - Kötelezően választott blokk",
+                    "credits": 3,
+                    "course_block_references": [
+                        "Kognitív pszichológia alkalmazott területei - Kötelezően választott"
+                    ]
+                },
+                {
+                    "code": "PSZI0232",
+                    "name": "Szakdolgozati tutorálás III.",
+                    "credits": 10
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "credits": 6,
+                    "name": "Szabadon választható tárgy"
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választható",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "PSZI0225",
+                    "name": "Kvalitatív kutatási módszerek",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0226",
+                    "name": "Tartalomelemzés",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0227",
+                    "name": "Számítógépes kísérlettervezés",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0228",
+                    "name": "Kérdőívszerkesztés",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Kognitív pszichológia alkalmazott területei - Kötelezően választott",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "PSZI0646",
+                    "name": "Pszicholingvisztika - 3. félév",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0647",
+                    "name": "Ember számítógép interakció - 3. félév",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0648",
+                    "name": "Szorongásos zavarok kognitív-neurológiai háttere - 3. félév",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "PSZI0633",
+                    "name": "Bevezetés a kognitív és viselkedés terápiába - 4. félév",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0634",
+                    "name": "Szociális kapcsolatok neuropszichológiája - 4. félév",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0635",
+                    "name": "Addiktív viselkedés - 4. félév",
+                    "credits": 3
+                }
+            ]
+        }
+    ]
+}

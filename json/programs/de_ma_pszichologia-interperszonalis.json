@@ -1,0 +1,347 @@
+{
+    "name": "Pszichológia MA - Interperszonális és interkulturális pszichológia",
+    "description": "Pszichológia MA - Interperszonális és interkulturális pszichológia szakirány- nappali tagozat tanterve",
+    "curriculum_updated_at": "2017-01-01",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "BTPS112MA",
+                    "name": "Intelligencia (elmélet és mérés)",
+                    "credits": 3
+                },
+                {
+                    "code": "BTPS113MA",
+                    "name": "A humán információfeldolgozás",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS117MA",
+                    "name": "Pozitív pszichológia",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS120MA",
+                    "name": "Pályaszocializáció, pszichológus etika",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS400MA",
+                    "name": "Pálya- és munkatanácsadás elmélete",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS600MA",
+                    "name": "Az öregedés gerontológiai, és gerontopszichológiai megközelítése. Az öregedés, mint másság.",
+                    "credits": 3
+                },
+                {
+                    "code": "BTPS605MA",
+                    "name": "A szülői viselkedés és nevelés kulturantropológiai és evolúciós pszichológiai szempontjai",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS607MA",
+                    "name": "Csoportdinamika",
+                    "credits": 3
+                },
+                {
+                    "code": "BTPS611MA",
+                    "name": "Konfliktuskezelés, a mediáció alapjai",
+                    "credits": 3
+                },
+                {
+                    "code": "BTPS617MA",
+                    "name": "Szexuálpszichológia",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "BTPS110MA",
+                    "name": "Felnőttkori változások",
+                    "credits": 3
+                },
+                {
+                    "code": "BTPS114MA",
+                    "name": "Döntéselmélet és szociálpszichológiai alkalmazásai",
+                    "credits": 3
+                },
+                {
+                    "code": "BTPS116MA",
+                    "name": "Egészséges személyiség személyiséglélektani alapjai",
+                    "credits": 3
+                },
+                {
+                    "code": "BTPS601MA",
+                    "name": "Társadalmi kisebbségi csoportok és a velük kapcsolatos nézetrendszerek",
+                    "credits": 3
+                },
+                {
+                    "code": "BTPS603MA",
+                    "name": "A társadalmi közérzet pszichológiája",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS604MA",
+                    "name": "Család-és párterápiai alapok: elméletek, modellek, iskolák",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS612MA",
+                    "name": "Projektív tesztek a pszichológiai szakértésben és a gyógyításban",
+                    "credits": 3
+                },
+                {
+                    "code": "BTPS616MA",
+                    "name": "Gender kutatások",
+                    "credits": 3
+                },
+                {
+                    "code": null,
+                    "name": "Társtudományi alapozás/mesterkurzusok blokk",
+                    "credits": 2,
+                    "course_block_references": [
+                        "Társtudományi alapozás/mesterkurzusok"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Választható tárgyak I. blokk",
+                    "credits": 8,
+                    "course_block_references": [
+                        "Választható tárgyak I."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "BTPS115MA",
+                    "name": "Értékítélet és attitűd",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS121MA",
+                    "name": "Kommunikációs készségfejlesztés",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS224MA",
+                    "name": "Reklámpszichológia",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS602MA",
+                    "name": "Kultúra és identitás",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS606MA",
+                    "name": "Intézményi és társadalmi konfliktusok",
+                    "credits": 3
+                },
+                {
+                    "code": "BTPS614MA",
+                    "name": "Kultúra és tömegkommunikáció",
+                    "credits": 3
+                },
+                {
+                    "code": "BTPS615MA",
+                    "name": "Családterápia: módszerek, gyakorlati szempontok",
+                    "credits": 3
+                },
+                {
+                    "code": "BTPS622MA",
+                    "name": "Családi struktúra, funkciók és dinamika kutatása",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS623MA",
+                    "name": "Gerontopszichológiai kutatások",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Módszertani készségfejlesztés blokk",
+                    "credits": 4,
+                    "course_block_references": [
+                        "Módszertani készségfejlesztés"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Választható tárgyak II. blokk",
+                    "credits": 8,
+                    "course_block_references": [
+                        "Választható tárgyak II."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "BTPS500MA",
+                    "name": "Szakdolgozat",
+                    "credits": 20
+                },
+                {
+                    "code": "BTPS613MA",
+                    "name": "A pasztorálpszichológia speciális területei: a gyász folyamata",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS624MA",
+                    "name": "A gyógyítás interperszonális és kulturális szempontjainak kutatása",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS625MA",
+                    "name": "Attitűd kutatás gyakorlata",
+                    "credits": 2
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "credits": 4,
+                    "name": "Szabadon választható tárgy"
+                }
+            ]
+        },
+        {
+            "name": "Társtudományi alapozás/mesterkurzusok",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "BTPS800MA",
+                    "name": "Munkajogi alapismeretek",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS700MA",
+                    "name": "Bevezetés a közgazdaságtanba",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS253MA",
+                    "name": "Mesterséges intelligencia",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS254MA",
+                    "name": "Társas hálózatok elemzése",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Választható tárgyak I.",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "BTPS608MA",
+                    "name": "A függő viselkedés, a szerhasználat interkulturális szempontjai, és kultúrtörténete.",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS229MA",
+                    "name": "Társadalmi és szervezeti igazságosság",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS252MA",
+                    "name": "Környezetpszichológia",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS609MA",
+                    "name": "Közösségek a pszichológiai segítségnyújtásban",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS610MA",
+                    "name": "Valláslélektan",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS418MA",
+                    "name": "Az idegennyelv-tanulás pszichológiája",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Módszertani készségfejlesztés",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "BTPS122MA",
+                    "name": "Modern tesztelmélet",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS123MA",
+                    "name": "Kvalitatív struktúrák elemzése",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS124MA",
+                    "name": "Neurális modellek a pszichológiában",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS125MA",
+                    "name": "Fejezetek a pszichometria köréből",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS126MA",
+                    "name": "Fejezetek a kísérleti pszichológia köréből",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Választható tárgyak II.",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "BTPS618MA",
+                    "name": "Interkulturális szenzitivitás tréning",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS619MA",
+                    "name": "Önmenedzselés, önmegvalósítás, életprogramok, enkulturáció, proaktivitás",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS620MA",
+                    "name": "NLP technikák használata a kommunikációfejlesztésben és viselkedésmódosításban",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS432MA",
+                    "name": "Közvéleménykutatás és módszertana",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS621MA",
+                    "name": "Pasztorális kommunikációelmélet/ A lelkigondozói beszélgetés",
+                    "credits": 2
+                }
+            ]
+        }
+    ]
+}

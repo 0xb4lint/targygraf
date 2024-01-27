@@ -1,0 +1,454 @@
+{
+    "name": "Pszichológia MA - Munka és szervezetpszichológia",
+    "description": "Pszichológia MA - Munka és szervezetpszichológia szakirány- nappali tagozat tanterve",
+    "curriculum_updated_at": "2017-01-01",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "BTPS112MA",
+                    "name": "Intelligencia (elmélet és mérés)",
+                    "credits": 3
+                },
+                {
+                    "code": "BTPS113MA",
+                    "name": "A humán információfeldolgozás",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS117MA",
+                    "name": "Pozitív pszichológia",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS120MA",
+                    "name": "Pályaszocializáció, pszichológus etika",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS210MA",
+                    "name": "Pszichológiai alkalmasság és kiválasztás",
+                    "credits": 3
+                },
+                {
+                    "code": "BTPS228MA",
+                    "name": "Szervezeti kultúra",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS240MA",
+                    "name": "Módszerspecifikus laborgyakorlat szervezetpszichológiából 1.",
+                    "credits": 3
+                },
+                {
+                    "code": "BTPS400MA",
+                    "name": "Pálya- és munkatanácsadás elmélete",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS430MA",
+                    "name": "Munkahelyi képesség és készségfejlesztés",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Vezetett Kutatómunka Kötelezően választott blokk",
+                    "credits": 2,
+                    "course_block_references": [
+                        "Vezetett Kutatómunka Kötelezően választott"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "BTPS110MA",
+                    "name": "Felnőttkori változások",
+                    "credits": 3
+                },
+                {
+                    "code": "BTPS114MA",
+                    "name": "Döntéselmélet és szociálpszichológiai alkalmazásai",
+                    "credits": 3
+                },
+                {
+                    "code": "BTPS116MA",
+                    "name": "Egészséges személyiség személyiséglélektani alapjai",
+                    "credits": 3
+                },
+                {
+                    "code": "BTPS212MA",
+                    "name": "Munkahelyi szocializáció",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS220MA",
+                    "name": "Humán erőforrás gazdálkodás",
+                    "credits": 3
+                },
+                {
+                    "code": "BTPS230MA",
+                    "name": "Módszerspecifikus terep- és labgyak. munkapszichológiából 1.",
+                    "credits": 3
+                },
+                {
+                    "code": "BTPS233MA",
+                    "name": "Pszichológiai tesztek fejlesztése",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS241MA",
+                    "name": "Módszerspecifikus laborgyakorlat szervezetpszichológiából 2.",
+                    "credits": 3
+                },
+                {
+                    "code": "BTPS242MA",
+                    "name": "Módszerspecifikus laborgyakorlat szervezetpszichológiából 3.",
+                    "credits": 3
+                },
+                {
+                    "code": "BTPS260MA",
+                    "name": "Fejezetek a munkapszichológia kutatási területeiből",
+                    "credits": 3
+                },
+                {
+                    "code": null,
+                    "name": "Társtudományi alapozás/mesterkurzusok blokk",
+                    "credits": 2,
+                    "course_block_references": [
+                        "Társtudományi alapozás/mesterkurzusok"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Munkapszichológiai gyakorlat Kötelezően választott blokk",
+                    "credits": 4,
+                    "course_block_references": [
+                        "Munkapszichológiai gyakorlat Kötelezően választott"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "BTPS115MA",
+                    "name": "Értékítélet és attitűd",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS121MA",
+                    "name": "Kommunikációs készségfejlesztés",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS213MA",
+                    "name": "Munkahelyi egészségpszichológia",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS223MA",
+                    "name": "Vezetéspszichológia",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS231MA",
+                    "name": "Módszerspecifikus terep- és labgyak. munkapszichológiából 2.",
+                    "credits": 3
+                },
+                {
+                    "code": "BTPS243MA",
+                    "name": "Alkalmazott döntéselmélet laborgyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS262MA",
+                    "name": "Fejezetek a szociálpszichológia kutatási területeiből",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Módszertani készségfejlesztés blokk",
+                    "credits": 4,
+                    "course_block_references": [
+                        "Módszertani készségfejlesztés"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Munkapszichológiai elmélet Kötelezően választott blokk",
+                    "credits": 4,
+                    "course_block_references": [
+                        "Munkapszichológiai elmélet Kötelezően választott"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Szervezetpszichológiai gyakorlat Kötelezően választott blokk",
+                    "credits": 4,
+                    "course_block_references": [
+                        "Szervezetpszichológiai gyakorlat Kötelezően választott"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "BTPS222MA",
+                    "name": "Szervezetfejlesztés",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS232MA",
+                    "name": "Módszerspecifikus terep- és labgyak. munkapszichológiából 3.",
+                    "credits": 3
+                },
+                {
+                    "code": "BTPS261MA",
+                    "name": "Fejezetek a szervezetpszichológia kutatási területeiből",
+                    "credits": 3
+                },
+                {
+                    "code": "BTPS500MA",
+                    "name": "Szakdolgozat",
+                    "credits": 20
+                },
+                {
+                    "code": null,
+                    "name": "Szervezetpszichológiai elmélet Kötelezően választott blokk",
+                    "credits": 4,
+                    "course_block_references": [
+                        "Szervezetpszichológiai elmélet Kötelezően választott"
+                    ]
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "credits": 4,
+                    "name": "Szabadon választható tárgy"
+                }
+            ]
+        },
+        {
+            "name": "Vezetett Kutatómunka Kötelezően választott",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "BTPS263MA",
+                    "name": "Fejezetek a munkapszichológiai kutatások módszertanából",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS264MA",
+                    "name": "Fejezetek a szervezetpszichológiai kutatások módszertanából",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS265MA",
+                    "name": "Fejezetek a gazdaságpszichológia kutatási területeiből",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS266MA",
+                    "name": "Játékelméleti alapok és pszichológiai alkalmazásaik",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Társtudományi alapozás/mesterkurzusok",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "BTPS432MA",
+                    "name": "Közvéleménykutatás és módszertana",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS251MA",
+                    "name": "Optimalizálási problémák és módszerek",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS252MA",
+                    "name": "Környezetpszichológia",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS800MA",
+                    "name": "Munkajogi alapismeretek",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS700MA",
+                    "name": "Bevezetés a közgazdaságtanba",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS253MA",
+                    "name": "Mesterséges intelligencia",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS254MA",
+                    "name": "Társas hálózatok elemzése",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Munkapszichológiai gyakorlat Kötelezően választott",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "BTPS234MA",
+                    "name": "Munkapszichológiai terep és laborgyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS235MA",
+                    "name": "Sportpszichológiai gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS236MA",
+                    "name": "Közlekedéspszichológiai terep és laborgyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS238MA",
+                    "name": "Pszichometriai gyakorlat",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Módszertani készségfejlesztés",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "BTPS122MA",
+                    "name": "Modern tesztelmélet",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS123MA",
+                    "name": "Kvalitatív struktúrák elemzése",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS124MA",
+                    "name": "Neurális modellek a pszichológiában",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS125MA",
+                    "name": "Fejezetek a pszichometria köréből",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS126MA",
+                    "name": "Fejezetek a kísérleti pszichológia köréből",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Munkapszichológiai elmélet Kötelezően választott",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "BTPS214MA",
+                    "name": "Ergonómia, munkahelytervezés",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS215MA",
+                    "name": "Közlekedéspszichológia",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS216MA",
+                    "name": "Sportpszichológia",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS217MA",
+                    "name": "Fejezetek a munkapszichológia kapcsolódó területeiből",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Szervezetpszichológiai gyakorlat Kötelezően választott",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "BTPS244MA",
+                    "name": "Szervezetpszichológiai terepgyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS245MA",
+                    "name": "Reklámpszichológiai terep és laborgyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS246MA",
+                    "name": "Értékítélet és attitűd kutatás gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS247MA",
+                    "name": "Munkahelyi devianciák gyakorlat",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Szervezetpszichológiai elmélet Kötelezően választott",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "BTPS224MA",
+                    "name": "Reklámpszichológia",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS225MA",
+                    "name": "Munkahelyi devianciák",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS226MA",
+                    "name": "Lineáris és hierarchikus struktúra modellek",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS227MA",
+                    "name": "Fejezetek a szervezetpszichológia kapcsolódó területeiből",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS431MA",
+                    "name": "Szervezeti magatartás",
+                    "credits": 2
+                },
+                {
+                    "code": "BTPS229MA",
+                    "name": "Társadalmi és szervezeti igazságosság",
+                    "credits": 2
+                }
+            ]
+        }
+    ]
+}

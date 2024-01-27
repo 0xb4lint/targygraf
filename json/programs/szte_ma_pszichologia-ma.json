@@ -1,0 +1,566 @@
+{
+    "name": "Pszichológia MA",
+    "description": "Pszichológia MA - nappali tagozat tanterve",
+    "curriculum_updated_at": "2023-01-01",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "PSZIM-18A10",
+                    "name": "A Rorschach-teszt alapjai - elmélet és alkalmazás",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZIM-17A11",
+                    "name": "Fejlődéslélektani mesterkurzusok",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZIM-17A12",
+                    "name": "Kognitív pszichológiai mesterkurzusok",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZIM-17A22",
+                    "name": "Módszertani készségfejlesztés: kritikai gondolkodás",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZIM-18A24",
+                    "name": "Pályaszocializáció és kommunikációs készségfejlesztés",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZIM-18A23",
+                    "name": "Pszichopatológiai alapismeretek",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZIM-17A13",
+                    "name": "Személyiséglélektani mesterkurzusok",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZIM-17A14",
+                    "name": "Szociálpszichológiai mesterkurzusok",
+                    "credits": 3
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható blokk",
+                    "credits": 6,
+                    "course_block_references": [
+                        "Kötelezően választható"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "PSZIM-18A36",
+                    "name": "Rorschach-teszt 2",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "PSZIM-18SZD-1",
+                    "name": "Módszertani készségfejlesztés: többváltozós statisztika",
+                    "credits": 2
+                },
+                {
+                    "code": "PSZIM-18SZD-1",
+                    "name": "Szakdolgozati szeminárium 1.",
+                    "credits": 10
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "PSZIM-18A26",
+                    "name": "Pályaszocializáció és szakmai önreflexió",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZIM-18A26",
+                    "name": "Pszichológus etika",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZIM-18SZD-2",
+                    "name": "Szakdolgozati szeminárium 2.",
+                    "credits": 10
+                }
+            ]
+        },
+        {
+            "name": "Szakirányok",
+            "row": 0,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "Szakirányok",
+                    "credits": 59,
+                    "course_block_references": [
+                        "Klinikai és egészségpszichológia szakirány",
+                        "Kognitív pszichológia szakirány",
+                        "Tanácsadás és iskolapszichológia szakirány",
+                        "Fejlődés- és klinikai gyermekpszichológia szakirány"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választható",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "PSZIM-18A31",
+                    "name": "Az egészség-pszichofiziológia anatómiai és élettani alapjai",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZIM-18A32",
+                    "name": "Az egészségpszichológia alapkérdései és társadalmi kontextusa",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZIM-18A35",
+                    "name": "Gyermek- és serdülő pszichiátria, fejlődési pszichopatológia",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZIM-18A33",
+                    "name": "Kognitív rendszerek 1. Észlelés",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZIM-18A34",
+                    "name": "Új utak a kognitív tudományban",
+                    "credits": 3
+                },
+                {
+                    "code": "TE-XM0011",
+                    "name": "Általánosan művelő tárgyak MA, MSc",
+                    "credits": 2
+                },
+                {
+                    "code": "TE-XN0011",
+                    "name": "Lektorátusi nyelvórák (8x2)",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "Klinikai és egészségpszichológia szakirány",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "PSZIM-SZMKE11",
+                    "name": "A klinikai pszichológia és a tanácsadás alapjai - 2. félév",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZIM-18SZMKE27",
+                    "name": "A preventív magatartás alapjai - 2. félév",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZIM-TAKE13",
+                    "name": "Addiktológiai alapismeretek - 2. félév",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZIM-17SZMKE22",
+                    "name": "Egészség-pszichofiziológia és pszichoneuroimmunológia - 2. félév",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZIM-TAKE12",
+                    "name": "Klinikai neuropszichológia és diagnosztika  - 2. félév",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZIM-SZMKE21",
+                    "name": "Klinikai egészségpszichológia  - 2. félév",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZIM-TAKE11",
+                    "name": "Kognitív idegtudomány  - 2. félév",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZIM-18SZMKE14",
+                    "name": "Pszichoterápiás elméletek és intervenciós módszerek  - 2. félév",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZIM-18SZMKE24",
+                    "name": "Stressz, megküzdés és személyes növekedés  - 2. félév",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "PSZIM-18SZMKE23",
+                    "name": "Egészségmagatartás, egészségfejlesztés és egészségkommunikáció - 3. félév",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZIM-18SZMKE12",
+                    "name": "Klinikai pszichodiagnosztika  - 3. félév",
+                    "credits": 2
+                },
+                {
+                    "code": "PSZIM-18SZMKE13",
+                    "name": "Rendszerszemléletű diagnosztikai eljárások a klinikumban  - 3. félév",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZIM-18TAKE14",
+                    "name": "Részletes patopszichológia és pszichofarmakológia alapjai  - 3. félév",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZIM-18SZAMKE4",
+                    "name": "Módszertani specializáció  - 3. félév",
+                    "credits": 2
+                },
+                {
+                    "code": "PSZIM-18KMKE4",
+                    "name": "Vezetett kutatómunka (KE)  - 3. félév",
+                    "credits": 5
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "PSZIM-SZMKE25",
+                    "name": "Egybefüggő folyamatos terepmunka a klinikai pszichológia területén - 4. félév",
+                    "credits": 5
+                },
+                {
+                    "code": "PSZIM-SZMKE26",
+                    "name": "Egybefüggő folyamatos terepmunka az egészségpszichológia területén - 4. félév",
+                    "credits": 5
+                },
+                {
+                    "code": "PSZIM-18SZMKE28",
+                    "name": "Klinikai és egészségpszichológiai betegvizsgálat, komplex esetelemzések - 4. félév",
+                    "credits": 2
+                },
+                {
+                    "code": "PSZIM-18TAKE15",
+                    "name": "Intézményen belüli gyakorlat (KE) - 4. félév",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Kognitív pszichológia szakirány",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "PSZIM-18SZMK41",
+                    "name": "Fejezetek a fejlődéslélektan területeiről - 2. félév",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZIM-18SZAKK21",
+                    "name": "Intézményen belüli gyakorlat 1 (KN) - 2. félév",
+                    "credits": 6
+                },
+                {
+                    "code": "PSZIM-17SZMK23",
+                    "name": "Klinikai neuropszichológia és diagnosztika - 2. félév",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZIM-17TAK11",
+                    "name": "Kognitív idegtudomány - 2. félév",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZIM-18SZMK21",
+                    "name": "Kognitív rendszerek 2. Alvás és emlékezet - 2. félév",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZIM-18SZMK32",
+                    "name": "Kognitív rendszerek fejlődése és modellezése. Agyi képalkotó eljárások - 2. félév",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZIM-17SZMK33",
+                    "name": "Programozás 1 - 2. félév",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "PSZIM-18TAK12",
+                    "name": "Gyermek- és serdülő pszichiátria, fejlődési pszichopatológia  - 3. félév",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZIM-18SZAKK22",
+                    "name": "Intézményen belüli gyakorlat 2 (KN) - 3. félév",
+                    "credits": 6
+                },
+                {
+                    "code": "PSZIM-SZMK24",
+                    "name": "Klinikai pszichológia és pszichoterápia - 3. félév",
+                    "credits": 2
+                },
+                {
+                    "code": "PSZIM-18SZMK22",
+                    "name": "Kognitív rendszerek 3. Magasabb rendű kognitív folyamatok  - 3. félév",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZIM-18SZMK31",
+                    "name": "Programozás 2 - 2. félév",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "PSZIM-18SZAKK11",
+                    "name": "Terepgyakorlat (KN) - 4. félév",
+                    "credits": 9
+                },
+                {
+                    "code": "PSZIM-18KMK11",
+                    "name": "Vezetett kutatómunka (KN) - 4. félév",
+                    "credits": 5
+                }
+            ]
+        },
+        {
+            "name": "Tanácsadás és iskolapszichológia szakirány",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "PSZIM-18SZMTI23",
+                    "name": "A preventív magatartás alapjai - 2. félév",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZIM-SZMTI15",
+                    "name": "Addiktológiai alapismeretek - 2. félév",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZIM-18SZMTI21",
+                    "name": "Az iskolapszichológia elméletei, szervezeti keretei és módszerei - 2. félév",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZIM-18SZMTI32",
+                    "name": "Az önszabályozás és a személyes növekedés modelljei - 2. félév",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZIM-18SZMTI12",
+                    "name": "Karrier és életvezetési tanácsadás - 2. félév",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZIM-18SZMTI27",
+                    "name": "Különleges bánásmódot igénylő tanulók - 2. félév",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZIM-18SZMTI22",
+                    "name": "Szocializációs zavarok és következményeik - 2. félév",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZIM-18SZMTI11",
+                    "name": "Tanácsadás elméletei és irányzatai - 2. félév",
+                    "credits": 4
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "PSZIM-18SZMTI14",
+                    "name": "Diagnosztikai módszerek a tanácsadásban és az iskolában - 2. félév",
+                    "credits": 2
+                },
+                {
+                    "code": "PSZIM-18SZMTI24",
+                    "name": "Intervenciós és fejlesztő módszerek 1 - 2. félév",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZIM-18SZMTI25",
+                    "name": "Rendszerszemléletű diagnosztikai eljárások a tanácsadásban - 2. félév",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZIM-18SZAKTI11",
+                    "name": "Terepmunka 1 (TI) - 2. félév",
+                    "credits": 5
+                },
+                {
+                    "code": "PSZIM-18KMTI11",
+                    "name": "Vezetett kutatómunka (TI) - 2. félév",
+                    "credits": 5
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "PSZIM-18SZMTI33",
+                    "name": "Esetvezetés a tanácsadásban - 4. félév",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZIM-18SZMTI26",
+                    "name": "Intervenciós és fejlesztő módszerek 2 - 4. félév",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZIM-18SZAKTI21",
+                    "name": "Intézményen belüli gyakorlat (TI) - 4. félév",
+                    "credits": 2
+                },
+                {
+                    "code": "PSZIM-18SZAKTI12",
+                    "name": "Terepmunka 2 (TI) - 4. félév",
+                    "credits": 5
+                }
+            ]
+        },
+        {
+            "name": "Fejlődés- és klinikai gyermekpszichológia szakirány",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "PSZIM-SZMFK11",
+                    "name": "Dinamikus fejlődési pszichopatológia - 2. félév",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZIM-SZMFK41",
+                    "name": "Fejezetek a fejlődéslélektan területeiről - 2. félév",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZIM-SZMFK15",
+                    "name": "Fejlődési neurológia - 2. félév",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZIM-SZMFK14",
+                    "name": "Fejlődési neuropszichológia - 2. félév",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZIM-SZMFK12",
+                    "name": "Gyermek-és serdülő diagnosztika - 2. félév",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZIM-SZMFK16",
+                    "name": "Korai intervenció lehetőségei - 2. félév",
+                    "credits": 2
+                },
+                {
+                    "code": "PSZIM-SZMFK18",
+                    "name": "Serdülőkori fejlődés jellegzetességei - 2. félév",
+                    "credits": 2
+                },
+                {
+                    "code": "PSZIM-SZMFK22",
+                    "name": "Szocializációs zavarok és következményeik - 2. félév",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZIM-SZMFK17",
+                    "name": "Tipikus és atipikus fejlődésmenet - 2. félév",
+                    "credits": 4
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "PSZIM-SZAKFK22",
+                    "name": "Fejlődéspszichológiai esetbemutatás - 3. félév",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZIM-SZAKFK24",
+                    "name": "Fejlődéspszichológiai terepgyakorlat - 3. félév",
+                    "credits": 6
+                },
+                {
+                    "code": "PSZIM-SZAKFK21",
+                    "name": "Intézményen belüli gyakorlat (FK) - 3. félév",
+                    "credits": 6
+                },
+                {
+                    "code": "PSZIM-SZMFK13",
+                    "name": "Rendszerszemléletű diagnosztikai eljárások a klinikumban - 3. félév",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "PSZIM-SZAKFK23",
+                    "name": "Klinikai esetbemutatás - 4. félév",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZIM-SZAKFK25",
+                    "name": "Klinikai gyermekpszichológiai terepgyakorlat - 4. félév",
+                    "credits": 6
+                },
+                {
+                    "code": "PSZIM-SZMFK27",
+                    "name": "Különleges bánásmódot igénylő tanulók - 4. félév",
+                    "credits": 2
+                },
+                {
+                    "code": "PSZIM-SZMFK19",
+                    "name": "Pszichoterápiás elméletek és intervenciók gyermekterápiákban - 4. félév",
+                    "credits": 2
+                }
+            ]
+        }
+    ]
+}
