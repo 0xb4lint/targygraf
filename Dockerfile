@@ -32,6 +32,8 @@ RUN echo '</VirtualHost>' >> /etc/apache2/sites-available/000-default.conf
 # Copy the rest of the application code
 COPY . /var/www/html/
 
+COPY composer.json composer.json
+
 # Install composer and dependencies
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 RUN composer install 
