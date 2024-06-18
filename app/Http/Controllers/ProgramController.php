@@ -32,8 +32,8 @@ class ProgramController extends Controller
         ]);
 
         return view('layouts.program', [
-            'university'    => $university,
-            'program'       => $program,
+            'university' => $university,
+            'program' => $program,
         ]);
     }
 }
