@@ -1,0 +1,236 @@
+{
+    "name": "Adattudmány MSc",
+    "description": "Adattudomány MSc szak - nappali tagozat tanterve",
+    "curriculum_updated_at": "2024-05-27",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "VEMIVIM142I",
+                    "name": "Mesterséges intelligenca",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMISAM146F",
+                    "name": "Felügyelt gépi tanulás",
+                    "credits": 6
+                },
+                {
+                    "code": "VEMIMAM343S",
+                    "name": "Matematikai statisztika",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMISAM254A",
+                    "name": "Adatvizualizációs és üzleti intelligencia rendszerek",
+                    "credits": 4
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választandó szakmai ismeretek",
+                    "credits": 12,
+                    "course_block_references": [
+                        "Kötelezően választandó szakmai ismeretek"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "VEMISAM255N",
+                    "name": "Nem felügyelt gépi tanulás",
+                    "credits": 5
+                },
+                {
+                    "code": "VEMIVIM246H",
+                    "name": "Haladó adatbázis-kezelő rendszerek",
+                    "credits": 6
+                },
+                {
+                    "code": "VEMKFOM253F",
+                    "name": "Folyamatmodellezés és folyamatbányászat",
+                    "credits": 3
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választandó szakmai ismeretek",
+                    "credits": 16,
+                    "course_block_references": [
+                        "Kötelezően választandó szakmai ismeretek"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "VEMIPRM353T",
+                    "name": "Mélytanuló rendszerek",
+                    "credits": 5,
+                    "prerequisites": [
+                        "VEMIVIM142I",
+                        "VEMISAM146F"
+                    ]
+                },
+                {
+                    "code": "VEMIVIM113A",
+                    "name": "Információbiztonság és adatvédelem",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMIINADX1m",
+                    "name": "Diplomalabor",
+                    "credits": 15,
+                    "prerequisites": ["___40___"]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választandó szakmai ismeretek",
+                    "credits": 8,
+                    "course_block_references": [
+                        "Kötelezően választandó szakmai ismeretek"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "VEMIINADX2m",
+                    "name": "Diplomamunka",
+                    "credits": 15,
+                    "prerequisites": ["VEMIINADX1m"]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választandó szakmai ismeretek",
+                    "credits": 9,
+                    "course_block_references": [
+                        "Kötelezően választandó szakmai ismeretek"
+                    ]
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható",
+                    "credits": 6
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választandó szakmai ismeretek",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VEMISAM353S",
+                    "name": "Szövegbányászat, természetes nyelvfeldolgozás",
+                    "credits": 3,
+                    "prerequisites": ["VEMISAM255N"]
+                },
+                {
+                    "code": "VEMISAM213H",
+                    "name": "Hálózatelemzés",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMIVIM153H",
+                    "name": "Haladó adattárház technológiák",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMISAM334P",
+                    "name": "Python programozás",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMIVIM156G",
+                    "name": "GPU programozás",
+                    "credits": 6
+                },
+                {
+                    "code": "VEMIVIM256F",
+                    "name": "Felhő programozás",
+                    "credits": 6
+                },
+                {
+                    "code": "VEMIINM254F",
+                    "name": "Felhőbiztonság",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMIVIM133T",
+                    "name": "Mesterséges intelligencia labor",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMIMAM176H",
+                    "name": "Haladó operációkutatás",
+                    "credits": 6
+                },
+                {
+                    "code": "VEMISAM346K",
+                    "name": "Kombinatorikus optimalizálás",
+                    "credits": 6,
+                    "prerequisites": ["VEMIMAM176H"]
+                },
+                {
+                    "code": "VEMIVIM346P",
+                    "name": "Fejlett képfeldolgozási módszerek",
+                    "credits": 6
+                },
+                {
+                    "code": "VEMIVIM356E",
+                    "name": "Egészségügyi adatbázisok és elemzésük",
+                    "credits": 6,
+                    "prerequisites": ["VEMIVIM246H"]
+                },
+                {
+                    "code": "VEGTVEM144K",
+                    "name": "Kvantitatív módszerek",
+                    "credits": 6
+                },
+                {
+                    "code": "VEGTMEM246G",
+                    "name": "Gazdasági, társadalmi jelenségek kvantitatív vizsgálata",
+                    "credits": 6,
+                    "prerequisites": ["VEGTVEM144K"]
+                },
+                {
+                    "code": "VEMKFOM256T",
+                    "name": "Termelési intelligencia és folyamatinformatika",
+                    "credits": 6
+                },
+                {
+                    "code": "VEMISAM313T",
+                    "name": "Trendek az adattudományban",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMIVIM254I",
+                    "name": "Információbiztonsági kockázatmenedzsment",
+                    "credits": 4,
+                    "prerequisites": ["VEMIVIM113A"]
+                },
+                {
+                    "code": "VEMIINM314F",
+                    "name": "Kutatás-fejlesztés I",
+                    "credits": 4
+                },
+                {
+                    "code": "VEMIINM314K",
+                    "name": "Kutatás-fejlesztés II",
+                    "credits": 4,
+                    "prerequisites": ["VEMIINM314F"]
+                }
+            ]
+        }
+    ]
+}

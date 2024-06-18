@@ -39,7 +39,7 @@ services:
       APP_NAME: Tárgygráf
       APP_ENV: local
       APP_KEY: base64:zy5ofrMOnLl/cfJheOMVCkGb34sOm+SiVF6rJMq0oKU=
-      APP_DEBUG: true
+      APP_DEBUG: 1
       APP_LOG_LEVEL: debug
       APP_DOMAIN: localhost
       APP_URL: http://localhost
