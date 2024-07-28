@@ -1,0 +1,105 @@
+{
+    "name": "Pszichológia", 
+    "description": "Nappali tagozat tanterve", 
+    "curriculum_updated_at": "2023-01-01",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "PSZB17-201",              
+                    "name": "Tudományfilozófia és pszichológiatörténet",  
+                    "credits": 3                        
+                },
+                {
+                    "code": "PSZB17-102",              
+                    "name": "Tanulási, kommunikációs készségfejlesztés",  
+                    "credits": 3                        
+                },
+                {
+                    "code": "PSZB17-103",              
+                    "name": "Bevezetés a pszichológiába",  
+                    "credits": 3                        
+                },
+                {
+                    "code": "PSZB17-104",              
+                    "name": "A kutatásmódszertan alapjai",  
+                    "credits": 4                        
+                },
+                {
+                    "code": "PSZB17-305",              
+                    "name": "Biológiai pszichológia 1.",  
+                    "credits": 3                        
+                },
+                {
+                    "code": "PSZB17-206",              
+                    "name": "Biológiai pszichológia gyakorlat",  
+                    "credits": 2                        
+                },
+                {
+                    "code": "PSZB17-109",              
+                    "name": "Kultúra és társadalom",  
+                    "credits": 2                        
+                },
+                {
+                    "code": "PSZB17-210",              
+                    "name": "Adatelemzés és statisztikai következtetés",  
+                    "credits": 2                        
+                },
+                {
+                    "code": "PSZB17-134",              
+                    "name": "Bevezetés a társtudományokba",  
+                    "credits": 2                        
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "PSZB17-207",              
+                    "name": "Biológiai pszichológia 2.",  
+                    "credits": 2,
+                    "prerequisites": [               
+                    "PSZB17-305"                   
+                ]        
+                }
+
+            ]
+        },
+        {
+            "name": "3. félév",
+            "row": 0,
+            "courses": [
+
+
+            ]
+        },
+        {
+            "name": "4. félév",
+            "row": 0,
+            "courses": [
+
+
+            ]
+        },
+        {
+            "name": "5. félév",
+            "row": 0,
+            "courses": [
+
+
+            ]
+        },
+        {
+            "name": "6. félév",
+            "row": 0,
+            "courses": [
+
+
+            ]
+        }
+    ] 
+}
