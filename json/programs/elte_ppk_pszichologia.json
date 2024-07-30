@@ -62,11 +62,54 @@
                     "code": "PSZB17-207",              
                     "name": "Biológiai pszichológia 2.",  
                     "credits": 2,
-                    "prerequisites": [               
+                    "prerequisites": 
+                    [               
                     "PSZB17-305"                   
-                ]        
+                    ]        
+                },
+                {
+                    "code": "PSZB17-144",              
+                    "name": "Neurológia",  
+                    "credits": 3,
+                    "prerequisites": 
+                    [               
+                    "PSZB17-305"                   
+                    ]        
+                },
+                {
+                    "code": "PSZB17-328",              
+                    "name": "Bevezetés a kognitív idegtudományba",  
+                    "credits": 3,
+                    "prerequisites": 
+                    [               
+                    "PSZB17-305"                   
+                    ]        
+                },
+                {
+                    "code": "PSZB17-108",              
+                    "name": "Evolúciós pszichológia és magatartásgenetika",  
+                    "credits": 3
+                },
+                {
+                    "code": "PSZB17-211",              
+                    "name": "Kognitív pszichológia 1.",  
+                    "credits": 6,
+                    "prerequisites": 
+                    [               
+                    "PSZB17-103",
+                    "PSZB17-328",
+                    "PSZB17-144"                   
+                    ]   
+                },
+                {
+                    "code": "PSZB17-113",              
+                    "name": "Affektív pszichológia",  
+                    "credits": 6,
+                    "prerequisites": 
+                    [               
+                    "PSZB17-103"                   
+                    ]   
                 }
-
             ]
         },
         {
