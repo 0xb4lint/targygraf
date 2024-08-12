@@ -1,0 +1,695 @@
+{
+    "name": "Pszichológia", 
+    "description": "Nappali tagozat tanterve", 
+    "curriculum_updated_at": "2023-01-01",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "PSZB17-201",              
+                    "name": "Tudományfilozófia és pszichológiatörténet",  
+                    "credits": 3                        
+                },
+                {
+                    "code": "PSZB17-102",              
+                    "name": "Tanulási, kommunikációs készségfejlesztés",  
+                    "credits": 3                        
+                },
+                {
+                    "code": "PSZB17-103",              
+                    "name": "Bevezetés a pszichológiába",  
+                    "credits": 3                        
+                },
+                {
+                    "code": "PSZB17-305",              
+                    "name": "Biológiai pszichológia 1.",  
+                    "credits": 3                        
+                },
+                {
+                    "code": "PSZB17-206",              
+                    "name": "Biológiai pszichológia gyakorlat",  
+                    "credits": 3                        
+                },
+                {
+                    "code": "PSZB17-109",              
+                    "name": "Kultúra és társadalom",  
+                    "credits": 3                        
+                },
+                {
+                    "code": "PSZB17-210",              
+                    "name": "Adatelemzés és statisztikai következtetés",  
+                    "credits": 5                        
+                },
+                {
+                    "code": "PSZB17-104",              
+                    "name": "A kutatásmódszertan alapjai",  
+                    "credits": 4                        
+                },
+                {
+					"code": "___OPTIONAL___",
+					"name": "Szabadon választható tárgy 1",
+					"credits": 2,
+                    "course_block_references": [
+                        "Szabadon választható tárgyak"
+                    ]
+				}
+            ]
+        },
+        {
+            "name": "2. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "PSZB17-134",              
+                    "name": "Bevezetés a társtudományokba",  
+                    "credits": 5                        
+                },                
+                {
+                    "code": "PSZB17-207",              
+                    "name": "Biológiai pszichológia 2.",  
+                    "credits": 2,
+                    "prerequisites": 
+                    [               
+                    "(PSZB17-305)"                   
+                    ]        
+                },
+                {
+                    "code": "PSZB17-144",              
+                    "name": "Neurológia",  
+                    "credits": 3,
+                    "prerequisites": 
+                    [               
+                    "PSZB17-305"                   
+                    ]        
+                },
+                {
+                    "code": "PSZB17-328",              
+                    "name": "Bevezetés a kognitív idegtudományba",  
+                    "credits": 3,
+                    "prerequisites": 
+                    [               
+                    "PSZB17-305"                   
+                    ]        
+                },
+                
+                {
+                    "code": "PSZB17-211",              
+                    "name": "Kognitív pszichológia 1.",  
+                    "credits": 6,
+                    "prerequisites": 
+                    [               
+                    "PSZB17-103",
+                    "(PSZB17-328)",
+                    "(PSZB17-144)"                   
+                    ]   
+                },
+                {
+                    "code": "PSZB17-113",              
+                    "name": "Affektív pszichológia",  
+                    "credits": 6,
+                    "prerequisites": 
+                    [               
+                    "PSZB17-103"                   
+                    ]   
+                },
+                {
+                    "code": "PSZB17-124",              
+                    "name": " Szociálpszichológia 1.",  
+                    "credits": 6,
+                    "prerequisites": 
+                    [               
+                    "PSZB17-103"                   
+                    ]   
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "row": 0,
+            "courses": [
+                {
+					"code": "___OPTIONAL___",
+					"name": "Szabadon választható tárgy 2",
+					"credits": 4,
+                    "course_block_references": [
+                        "Szabadon választható tárgyak"
+                    ]
+				},
+                {
+                    "code":"PSZB17-129",
+                    "name":"Módszertan gyakorlat 1.: Pszichometria és kérdőíves kutatások módszertana",
+                    "credits": 3,
+                    "prerequisites":
+                    [
+                        "PSZB17-104",
+                        "PSZB17-210"
+                    ]
+                },
+                {
+                    "code": "PSZB17-214",              
+                    "name": "Kutatási terepgyakorlat az általános pszichológia területén",  
+                    "credits": 3
+                },
+                {
+                    "code": "PSZB17-108",              
+                    "name": "Evolúciós pszichológia és magatartásgenetika",  
+                    "credits": 4
+                },
+                {
+                    "code":"PSZB17-130",
+                    "name":"Módszertan gyakorlat 2.",
+                    "credits": 3,
+                    "prerequisites":
+                    [
+                        "PSZB17-104",
+                        "PSZB17-210"
+                    ],
+                    "course_block_references": 
+                    [  
+                        "Módszertan gyakorlat 2."
+                    ]
+                },
+                {
+                    "code": "PSZB17-225",              
+                    "name": "Szociálpszichológia 2.",  
+                    "credits": 6,
+                    "prerequisites": 
+                    [               
+                    "PSZB17-103"                   
+                    ]   
+                },
+                {
+                    "code": "PSZB17-127",              
+                    "name": "Szociálpszichológia szigorlat",  
+                    "credits": 2,
+                    "prerequisites": 
+                    [               
+                    "(PSZB17-225)"                   
+                    ]   
+                },
+                {
+                    "code": "PSZB17-212",              
+                    "name": "Kognitív pszichológia 2.",  
+                    "credits": 3,
+                    "prerequisites": 
+                    [               
+                    "PSZB17-211"                   
+                    ]   
+                },
+                {
+                    "code": "PSZB17-115",              
+                    "name": "Általános pszichológia szigorlat",  
+                    "credits": 2,
+                    "prerequisites": 
+                    [               
+                    "(PSZB17-212)",
+                    "PSZB17-113"
+                    ]   
+                }
+
+
+            ]
+        },
+        {
+            "name": "4. félév",
+            "row": 0,
+            "courses": [
+                {
+					"code": "___OPTIONAL___",
+					"name": "Szabadon választható tárgy 3",
+					"credits": 4,
+                    "course_block_references": [
+                        "Szabadon választható tárgyak"
+                    ]
+				},
+                {
+                    "code": "PSZB17-136",              
+                    "name": "Pszichológus etika és jog",  
+                    "credits": 3
+                },
+                {
+                    "code": "PSZB17-237",              
+                    "name": "Bevezetés a felnőtt és gyermek klinikai pszichológiába",  
+                    "credits": 4
+                },
+                
+                {
+                    "code":"PSZB17-120",
+                    "name":"Fejlődéspszichológia 1.",
+                    "credits": 6,
+                    "prerequisites":
+                    [
+                        "PSZB17-211"
+                    ]
+                },
+                {
+                    "code":"PSZB17-221",
+                    "name":"Fejlődéspszichológia 2.",
+                    "credits": 6,
+                    "prerequisites":
+                    [
+                        "(PSZB17-120)"
+                    ]
+                },
+                {
+                    "code":"PSZB17-123",
+                    "name":"Fejlődéspszichológia szigorlat",
+                    "credits": 2,
+                    "prerequisites":
+                    [
+                        "(PSZB17-221)"
+                    ]
+                },
+                
+                {
+                    "code":"PSZB17-326",
+                    "name":"Kutatási terepgyakorlat a szociálpszichológia területén",
+                    "credits": 3,
+                    "prerequisites":
+                    [
+                        "PSZB17-210",
+                        "PSZB17-124",
+                        "PSZB17-129"
+                    ]
+                },
+                {
+                    "code":"PSZB17-322",
+                    "name":"Kutatási terepgyakorlat a fejlődéspszichológia területén",
+                    "credits": 3,
+                    "prerequisites":
+                    [
+                        "(PSZB17-120)"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "5. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code":"PSZB17-131",
+                    "name":"Módszertan gyakorlat 3.",
+                    "credits": 3,
+                    "prerequisites":
+                    [
+                        "PSZB17-129"
+                    ],
+                    "course_block_references": 
+                    [  
+                        "Módszertan gyakorlat 3."
+                    ]
+                },
+                {
+                    "code":"PSZB17-132",
+                    "name":"Módszertan gyakorlat 4.",
+                    "credits": 3,
+                    "prerequisites":
+                    [
+                        "PSZB17-129",
+                        "PSZB17-120"
+                    ],
+                    "course_block_references": 
+                    [  
+                        "Módszertan gyakorlat 4."
+                    ]
+                },
+                {
+                    "code":"PSZB17-116",
+                    "name":"Személyiségpszichológia 1.",
+                    "credits": 6,
+                    "prerequisites":
+                    [
+                        "PSZB17-103"
+                    ]
+                },
+                {
+                    "code":"PSZB17-217",
+                    "name":"Személyiségpszichológia 2.",
+                    "credits": 6,
+                    "prerequisites":
+                    [
+                        "(PSZB17-120)"
+                    ]
+                },
+                {
+                    "code":"PSZB17-318",
+                    "name":"Kutatási terepgyakorlat a személyiségpszichológia területén",
+                    "credits": 3,
+                    "prerequisites":
+                    [
+                        "(PSZB17-120)"
+                    ]
+                },
+                {
+                    "code":"PSZB17-119",
+                    "name":"Személyiségpszichológia szigorlat",
+                    "credits": 2,
+                    "prerequisites":
+                    [
+                        "(PSZB17-217)"
+                    ]
+                },
+                {
+                    "code":"PSZB17-133",
+                    "name":"Viselkedéselemzés készségtárgyak",
+                    "credits": 8,
+                    "course_block_references": 
+                    [  
+                        "Viselkedéselemzés készségtárgyak"
+                    ]
+                }
+
+            ]
+        },
+        {
+            "name": "6. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "PSZB17-243",              
+                    "name": "Szakdolgozat szeminárium",  
+                    "credits": 4
+                },
+                {
+                    "code": "PSZB17-SZD",              
+                    "name": "Szakdolgozat",  
+                    "credits": 4
+                },
+                {
+                    "code": "PSZB17-135",              
+                    "name": "Fejezetek az alkalmazott pszichológiából",  
+                    "credits": 3,
+                    "course_block_references": 
+                    [  
+                        "Fejezetek az alkalmazott pszichológiából"
+                    ]
+                },
+                {
+                    "code": "PSZB17-138",              
+                    "name": "Klinikai gyakorlat",  
+                    "credits": 5,
+                    "prerequisites":[
+                        "PSZB17-237"
+                    ]
+                },
+                {
+                    "code": "PSZB17-139",              
+                    "name": "Bevezetés az egészségpszichológiába",  
+                    "credits": 3
+                },
+                {
+                    "code": "PSZB17-140",              
+                    "name": "Bevezetés a neveléspszichológiába",  
+                    "credits": 3
+                },
+                {
+                    "code": "PSZB17-141",              
+                    "name": "Bevezetés a munka- és szervezetpszichológiába",  
+                    "credits": 3
+                },
+                {
+                    "code": "PSZB17-142",              
+                    "name": "Bevezetés a tanácsadás-pszichológiába",  
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Módszertan gyakorlat 2.",
+            "row": 1,
+            "courses": 
+            [
+                {
+                    "code":"PSZB17-130:1",
+                    "name":"Megfigyelés és terepvizsgálat",
+                    "credits": 3,
+                    "prerequisites":
+                    [
+                        "PSZB17-104",
+                        "PSZB17-210"
+                    ]
+                },
+                {
+                    "code":"PSZB17-130:2",
+                    "name":"Interjú, fókuszcsoport és tartalomelemzés",
+                    "credits": 3,
+                    "prerequisites":
+                    [
+                        "PSZB17-104",
+                        "PSZB17-210"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Módszertan gyakorlat 3.",
+            "row": 1,
+            "courses": 
+            [
+                {
+                    "code":"PSZB17-131:1",
+                    "name":"Neuropszichológia és teljesítménymérés",
+                    "credits": 3,
+                    "prerequisites":
+                    [
+                        "PSZB17-129"
+                    ]
+                },
+                {
+                    "code":"PSZB17-131:2",
+                    "name":"Véleménykutatás, attitűdök explicit és implicit mérése",
+                    "credits": 3,
+                    "prerequisites":
+                    [
+                        "PSZB17-129"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Módszertan gyakorlat 4.",
+            "row": 1,
+            "courses": 
+            [
+                {
+                    "code":"PSZB17-132:1",
+                    "name":"Kísérletezés módszertana",
+                    "credits": 3,
+                    "prerequisites":
+                    [
+                        "PSZB17-129",
+                        "PSZB17-120"
+                    ]
+                },
+                {
+                    "code":"PSZB17-132:2",
+                    "name":"Csecsemő és gyermekvizsgálatok",
+                    "credits": 3,
+                    "prerequisites":
+                    [
+                        "PSZB17-129",
+                        "PSZB17-120"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Viselkedéselemzés készségtárgyak",
+            "row": 1,
+            "courses": [
+                {
+                    "code":"PSZB17-133:1",
+                    "name":"Kreatív mozgásos terápiák (Integrált kifejezés és táncterápia; Szenzoros integrációs terápia)",
+                    "credits": 2
+                },
+                {
+                    "code":"PSZB17-133:4",
+                    "name":"Autogén tréning",
+                    "credits": 2
+                },
+                {
+                    "code":"PSZB17-133:14",
+                    "name":"Viselkedéselemzés: Angol nyelvű pszichológiai szakszövegolvasás",
+                    "credits": 2
+                },
+                {
+                    "code":"PSZB17-133:17",
+                    "name":"A családi életciklusok filmek tükrében",
+                    "credits": 2
+                },
+                {
+                    "code":"PSZB17-133:18",
+                    "name":"Testvérkapcsolatok pszichológiája",
+                    "credits": 2
+                },
+                {
+                    "code":"PSZB17-133:28",
+                    "name":"Addiktológiai konzultáció",
+                    "credits": 2
+                },
+                {
+                    "code":"PSZB17-133:34",
+                    "name":"Világproblémák I.: Globális kérdések és megoldások a közvélekedés tükrében",
+                    "credits": 2
+                },
+                {
+                    "code":"PSZB17-133:40",
+                    "name":"Viselkedéselemzés: Konfliktuskezelés és asszertív kommunikáció",
+                    "credits": 2
+                },
+                {
+                    "code":"PSZB17-133:42",
+                    "name":"Viselkedéselemzés: Vissza az élményhez! A pszichológia számok nélkül",
+                    "credits": 2
+                },
+                {
+                    "code":"PSZB17-133:51",
+                    "name":"Viselkedéselemzés készségtárgyak: Rumináció(rágódás) szerepe a pszichopatológiák kialakulásában",
+                    "credits": 2
+                },
+                {
+                    "code":"PSZB17-133:52",
+                    "name":"Viselkedéselemzés készségtárgyak: Veszélypercepció és repülési környezeti viselkedés",
+                    "credits": 2
+                },
+                {
+                    "code":"PSZB17-133:53",
+                    "name":"Modern addikciók",
+                    "credits": 4
+                },
+                {
+                    "code":"PSZB17-133:61",
+                    "name":"Viselkedéselemzés készségtárgyak: Mit jelent egy élmény? - bevezetés az Interpretatív Fenomenológiai Analízisbe",
+                    "credits": 2
+                },
+                {
+                    "code":"PSZB17-133:67",
+                    "name":"Viselkedéselemzés készségtárgyak: Foundations of Positive Psychology: Theory, Research and Applications",
+                    "credits": 2
+                },
+                {
+                    "code":"PSZB17-133:75",
+                    "name":"Viselkedéselemzés készségtárgyak: Mese és pszichológia",
+                    "credits": 2
+                },
+                {
+                    "code":"PSZB17-133:82",
+                    "name":"Világproblémák II.: Társadalmi hatások és a filmkultúra szerepvállalása",
+                    "credits": 2
+                },
+                {
+                    "code":"PSZB17-133:83",
+                    "name":"Viselkedéselemzési készségtárgy: Fejlődéslélektan az irodalom tükrében",
+                    "credits": 2
+                },
+                {
+                    "code":"PSZB17-133:84",
+                    "name":"Psychological Skill Training: Academic Writing and Presentation Skills",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Fejezetek az alkalmazott pszichológiából",
+            "row": 1,
+            "courses": 
+            [
+                {
+                    "code":"PSZB17-135:2",
+                    "name":"Fejezetek az alkalmazott lélektanból: Szülés-születés I.: A szülés Janus-arcai. Lelki és családi élmény versus hightech orvoslás",
+                    "credits": 3
+                },
+                {
+                    "code":"PSZB17-135:7",
+                    "name":"Fejezetek az alkalmazott lélektanból: Szülés-születés I.: készülődés a szülésre",
+                    "credits": 3
+                },
+                {
+                    "code":"PSZB17-135:8",
+                    "name":"Fejezetek az alkalmazott lélektanból: Szexuálpszichológia 1.",
+                    "credits": 3
+                },
+                {
+                    "code":"PSZB17-135:11",
+                    "name":"Fejezetek az alkalmazott pszichológiából: Szuggesztív hatások egészségügyi vonatkozásai",
+                    "credits": 3
+                },
+                {
+                    "code":"PSZB17-135:27",
+                    "name":"Fejezetek az alkalmazott pszichológiából: Krónikus betegségek lélektana",
+                    "credits": 3
+                },
+                {
+                    "code":"PSZB17-135:32",
+                    "name":"Fejezetek az alkalmazott pszichológiából: Érzelemszabályozás",
+                    "credits": 3
+                },
+                {
+                    "code":"PSZB17-135:38",
+                    "name":"Médiapszichológia – a közösségi média eszközeivel a bántalmazás ellen",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+			"name": "Szabadon választható tárgyak",
+			"row": 1,
+			"courses": [
+                
+                {
+                    "code":"VKN-096:22",
+                    "name":"Bevezetés a művészetpszichológiába",
+                    "credits": 0
+                },
+                {
+                    "code":"VKN-096:25",
+                    "name":"Karriermenedzsment II.: Álláskeresői készségfejlesztés",
+                    "credits": 0
+                },
+                {
+                    "code":"VKN-096:47",
+                    "name":"Világproblémák I.: Globális kérdések és megoldások a közvélekedés tükrében",
+                    "credits": 0
+                },
+                {
+                    "code":"VKN-096G:27",
+                    "name":"Logika és intuíció",
+                    "credits": 0
+                },
+                {
+                    "code":"VKN-096G:43",
+                    "name":"Karriermenedzsment: Az álláskeresés lépései (Karriermenedzsment I.)",
+                    "credits": 0
+                },
+                {
+                    "code":"VKN-096G:63",
+                    "name":"Pszichológiai kísérletben és tudományos aktivitásban való részvétel",
+                    "credits": 0
+                },
+                {
+                    "code":"VKN-096G:65",
+                    "name":"Karriermenedzsment: Önkéntesség a munkavállalásban (Karriermenedzsment III.)",
+                    "credits": 0
+                },
+                {
+                    "code":"VKN-096G:70",
+                    "name":"Szexuálpszichológia 1.",
+                    "credits": 0
+                },
+                {
+                    "code":"VKN-096G:75",
+                    "name":"Pszichológiai kísérletben és tudományos aktivitásban való részvétel",
+                    "credits": 0
+                },
+                {
+                    "code":"VKN-096G:94",
+                    "name":"A telefonos segítségnyújtás gyakorlata 5.",
+                    "credits": 0
+                }
+            ]
+        }
+    ] 
+}
