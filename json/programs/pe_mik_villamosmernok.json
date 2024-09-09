@@ -469,14 +469,6 @@
                     ]
                 },
                 {
-                    "code": "VEMIVIB112R",
-                    "name": "Robotika",
-                    "credits": 2,
-                    "prerequisites": [
-                        "VEMKMA1143V"
-                    ]
-                },
-                {
                     "code": "VEMIVIB333DR",
                     "name": "Dinamikus rendszerek szimulációja",
                     "credits": 3,
