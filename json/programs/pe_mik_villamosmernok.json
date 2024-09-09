@@ -1,7 +1,7 @@
 {
     "name": "Villamosmérnök",
     "description": "Villamosmérnöki BSc szak - nappali tagozat tanterve",
-    "curriculum_updated_at": "2021-06-02",
+    "curriculum_updated_at": "2024-09-09",
     "course_blocks": [
         {
             "name": "1. félév",
@@ -263,7 +263,7 @@
                     "credits": 0
                 },
                 {
-                    "code": "w",
+                    "code": "",
                     "name": "Testnevelés",
                     "credits": 0
                 }
@@ -301,7 +301,7 @@
                 {
                     "code": "VEMKGEB113VI",
                     "name": "Műszaki ábrázolás",
-                    "credits": 3,
+                    "credits": 3
                 },
                 {
                     "code": "VEMIVIB144CE",
@@ -336,7 +336,7 @@
                 {
                     "code": "VEMIVIB213MA",
                     "name": "Minőségbiztosítás és audit",
-                    "credits": 3,
+                    "credits": 3
                 },
                 {
                     "code": "VEMIVIB234TL",
