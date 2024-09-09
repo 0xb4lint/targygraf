@@ -189,7 +189,7 @@
                     "code": "",
                     "name": "Testnevelés",
                     "credits": 0
-                },
+                }
             ]
         },
         {
@@ -318,7 +318,7 @@
                     "course_block_references": [
                         "Villamosmérnöki választható tárgyak"
                     ]
-                }
+                },
                 {
                     "code": null,
                     "name": "Kötelezően választandó differenciált szakmai tárgy",
@@ -326,7 +326,7 @@
                     "course_block_references": [
                         "Kötelezően választandó differenciált szakmai tárgyak"
                     ]
-                },
+                }
             ]
         },
         {
