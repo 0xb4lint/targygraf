@@ -366,7 +366,7 @@
                     ]
                 },
                 {
-                    "code": null,
+                    "code": "",
                     "name": "Szakdolgozat-készítés",
                     "credits": 15,
                     "prerequisites": [
@@ -389,7 +389,7 @@
                     "credits": 2
                 },
                 {
-                    "code": null,
+                    "code": "",
                     "name": "Szakmai gyakorlat",
                     "credits": 0
                 }
