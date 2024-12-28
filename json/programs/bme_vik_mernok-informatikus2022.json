@@ -1,0 +1,797 @@
+{
+	"name": "Mérnökinformatikus (2022-től felvetteknek)",
+	"description": "Mérnökinformatikus BSc szak - nappali tagozat tanterve",
+	"curriculum_updated_at": "2022-09-01",
+	"course_blocks": [
+        {
+            "name": "1. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "VISZAA06",
+                    "name": "Bevezetés a számításelméletbe 1",
+                    "credits": 6
+                },
+                {
+                    "code": "TE11AX52",
+                    "name": "Fizikai alapismeretek",
+                    "credits": 2
+                },
+                {
+                    "code": "VIETAA00",
+                    "name": "Villamos alapismeretek",
+                    "credits": 3
+                },
+                {
+                    "code": "VIMIAA03",
+                    "name": "Digitális technika",
+                    "credits": 5
+                },
+                {
+                    "code": "VIEEAA00",
+                    "name": "A programozás alapjai 1",
+                    "credits": 7
+                },
+                {
+                    "code": "GT70BS1A",
+                    "name": "Testnevelés",
+                    "credits": 0
+                },
+                {
+                    "code": "A1_DIGIT",
+                    "name": "Analízis és Digitális kompetenciák",
+                    "credits": 6,
+                    "course_block_references": [
+                        "2024 tantervi különbség"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "VISZAA04",
+                    "name": "Bevezetés a számításelméletbe 2",
+                    "credits": 5
+                },
+                {
+                    "code": "VISZAA08",
+                    "name": "Algoritmuselmélet",
+                    "credits": 5,
+                    "prerequisites": [
+                        "(VISZAA04)"
+                    ]
+                },
+                {
+                    "code": "TE11AX53",
+                    "name": "Fizikai i",
+                    "credits": 4,
+                    "prerequisites": [
+                        "TE11AX52",
+                        "(VIETAA00)"
+                    ]
+                },
+                {
+                    "code": "VIHIAA03",
+                    "name": "Számítógép-architektúrák",
+                    "credits": 5,
+                    "prerequisites": [
+                        "VIMIAA03"
+                    ]
+                },
+                {
+                    "code": "VIIIAA03",
+                    "name": "A programozás alapjai 2",
+                    "credits": 6,
+                    "prerequisites": [
+                        "VIEEAA00"
+                    ]
+                },
+                {
+                    "code": "GT70BS2A",
+                    "name": "Testnevelés",
+                    "credits": 0
+                },
+                {
+                    "code": "TE90AX57",
+                    "name": "Analízis 2 informatikusoknak",
+                    "credits": 6,
+                    "prerequisites": [
+                        "A1_DIGIT"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "VISZAB04",
+                    "name": "Valószínűségszámítás és statisztika",
+                    "credits": 6,
+                    "prerequisites": [
+                        "A1_DIGIT"
+                    ]
+                },
+                {
+                    "code": "VIHIAB04",
+                    "name": "Kódolástechnika",
+                    "credits": 4,
+                    "prerequisites": [
+                        "VISZAA06"
+                    ]
+                },
+                {
+                    "code": "VIMIAB03",
+                    "name": "Operációs rendszerek",
+                    "credits": 5,
+                    "prerequisites": [
+                        "(VIHIAA03)"
+                    ]
+                },
+                {
+                    "code": "VIIIAB00",
+                    "name": "A programozás alapjai 3",
+                    "credits": 5,
+                    "prerequisites": [
+                        "VIIIAA03"
+                    ]
+                },
+                {
+                    "code": "VITMAB04",
+                    "name": "Adatbázisok",
+                    "credits": 5,
+                    "prerequisites": [
+                        "VISZAA04"
+                    ]
+                },
+                {
+                    "code": "VIMIAB04",
+                    "name": "Szoftvertechnológia",
+                    "credits": 5,
+                    "prerequisites": [
+                        "VIIIAA03",
+                        "(VIIIAB00)"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "GT20A001",
+                    "name": "Menedzsment és vállalkozásgazdaságtan",
+                    "credits": 4
+                },
+                {
+                    "code": "GT55A405",
+                    "name": "Jogi alapismeretek",
+                    "credits": 3
+                },
+                {
+                    "code": "VITMAB06",
+                    "name": "Kommunikációs hálózatok",
+                    "credits": 7,
+                    "prerequisites": [
+                        "(VIMIAA03)"
+                    ]
+                },
+                {
+                    "code": "VIAUAB00",
+                    "name": "Szoftvertechnikák",
+                    "credits": 5,
+                    "prerequisites": [
+                        "(VIMIAB04)"
+                    ]
+                },
+                {
+                    "code": "VIIIAB11",
+                    "name": "Szoftver projekt laboratórium",
+                    "credits": 4,
+                    "prerequisites": [
+                        "(VIMIAB04)"
+                    ]
+                },
+                {
+                    "code": "VIIIAB12",
+                    "name": "Számítógépes grafika",
+                    "credits": 5,
+                    "prerequisites": [
+                        "VIIIAA03",
+                        "VISZAA06"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható gazdasági-humán tárgy 1",
+                    "credits": 2,
+                    "course_block_references": [
+                        "Kötelezően választható GTK"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "5. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "VIMIAC16",
+                    "name": "Mesterséges intelligencia",
+                    "credits": 5,
+                    "prerequisites": [
+                        "VISZAA08"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható szakmai tantárgy 1",
+                    "credits": 5,
+                    "course_block_references": [
+                        "Kötelezően választható szakmai tantárgyak",
+                        "Kötelezően választható szakmai tantárgyak #2"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható szakmai tantárgy 2",
+                    "credits": 5,
+                    "course_block_references": [
+                        "Kötelezően választható szakmai tantárgyak",
+                        "Kötelezően választható szakmai tantárgyak #2"
+                    ]
+                },
+                {
+                    "code": "FOTARGY",
+                    "name": "Specializáció ágazati főtantárgy",
+                    "credits": 5,
+                    "course_block_references": [
+                        "Intelligens hálózatok specializáció",
+                        "Szoftverfejlesztés specializáció",
+                        "Információs rendszerek specializáció"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Specializáció tantárgy 2",
+                    "credits": 5,
+                    "course_block_references": [
+                        "Intelligens hálózatok specializáció",
+                        "Szoftverfejlesztés specializáció",
+                        "Információs rendszerek specializáció"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Specializáció tantárgy 3",
+                    "credits": 5,
+                    "course_block_references": [
+                        "Intelligens hálózatok specializáció",
+                        "Szoftverfejlesztés specializáció",
+                        "Információs rendszerek specializáció"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "6. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "GT30A430",
+                    "name": "Mikro- és makroökonomia B",
+                    "credits": 3
+                },
+                {
+                    "code": "VIHIAC07",
+                    "name": "IT biztonság",
+                    "credits": 5,
+                    "prerequisites": [
+                        "VIIIAB00",
+                        "VIMIAB03"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható szakmai tantárgy 3",
+                    "credits": 5,
+                    "course_block_references": [
+                        "Kötelezően választható szakmai tantárgyak",
+                        "Kötelezően választható szakmai tantárgyak #2"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható szakmai tantárgy 4",
+                    "credits": 5,
+                    "course_block_references": [
+                        "Kötelezően választható szakmai tantárgyak",
+                        "Kötelezően választható szakmai tantárgyak #2"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Specializáció ágazati laboratórium",
+                    "credits": 5,
+                    "course_block_references": [
+                        "Intelligens hálózatok specializáció",
+                        "Szoftverfejlesztés specializáció",
+                        "Információs rendszerek specializáció"
+                    ]
+                },
+                {
+                    "code": "ONLAB",
+                    "name": "Önálló laboratórium",
+                    "credits": 5,
+                    "prerequisites": [
+                        "FOTARGY"
+                    ]
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható tantárgy 1",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "7. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "Kötelezően választható gazdasági-humán tárgy 2",
+                    "credits": 2,
+                    "course_block_references": [
+                        "Kötelezően választható GTK",
+                        "Kötelezően választható VIK"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható szakmai tantárgy 5",
+                    "credits": 5,
+                    "course_block_references": [
+                        "Kötelezően választható szakmai tantárgyak",
+                        "Kötelezően választható szakmai tantárgyak #2"
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "Szakdolgozat-készítés",
+                    "credits": 15,
+                    "prerequisites": [
+                        "ONLAB"
+                    ]
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható tantárgy 2",
+                    "credits": 2
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható tantárgy 3",
+                    "credits": 2
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható tantárgy 4",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "2024 tantervi különbség",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "TEMIBSVANL1-00",
+                    "name": "Analízis 1 informatikusoknak (2024-től)",
+                    "credits": 8
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "TE90AX21", 
+                    "name": "Analízis 1 informatikusoknak (2022-23)",
+                    "credits": 6
+                },
+                {
+                    "code": "VIAUAA02",
+                    "name": "Digitális kompetenciák (2022-23)",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választható GTK",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "GT35A001",
+                    "name": "Pénzügyek",
+                    "credits": 2
+                },
+                {
+                    "code": "GT20V100",
+                    "name": "Innovatív vállalkozások indítása és működtetése",
+                    "credits": 2
+                },
+                {
+                    "code": "GT35A003",
+                    "name": "Gazdaságpolitika",
+                    "credits": 2
+                },
+                {
+                    "code": "GT42A001",
+                    "name": "Környezetgazdaságtan",
+                    "credits": 2
+                },
+                {
+                    "code": "GT43A001",
+                    "name": "Kommunikáció",
+                    "credits": 2
+                },
+                {
+                    "code": "GT35A002",
+                    "name": "Számvitel",
+                    "credits": 2
+                },
+                {
+                    "code": "GT20A002",
+                    "name": "Marketing",
+                    "credits": 2
+                },
+                {
+                    "code": "GT52A001",
+                    "name": "Ergonómia",
+                    "credits": 2
+                },
+                {
+                    "code": "GT43A002",
+                    "name": "Szociológia",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választható VIK",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VITMAK47",
+                    "name": "Mérnöki menedzsment módszerek",
+                    "credits": 2
+                },
+                {
+                    "code": "VIETAK49",
+                    "name": "Adatvédelem és információszabadság",
+                    "credits": 2
+                },
+                {
+                    "code": "VIVEAK48",
+                    "name": "Mérnöki problémamegoldás",
+                    "credits": 2
+                },
+                {
+                    "code": "VITMAK48",
+                    "name": "Érzelmek logikája",
+                    "credits": 2
+                },
+                {
+                    "code": "VITMAK49",
+                    "name": "Digitális életmód",
+                    "credits": 2
+                },
+                {
+                    "code": "VITMAK50",
+                    "name": "Pénzügyi technológiák (FinTech) alapjai",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választható szakmai tantárgyak",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VIAUAD02",
+                    "name": "Mobil és webes szoftverek",
+                    "credits": 5,
+                    "prerequisites": ["VISZAA04","VISZAA08","TE11AX53","VIHIAA03","VIIIAA03","TE90AX57","VISZAA06","TE11AX52","VIETAA00","VIMIAA03","VIEEAA00","A1_DIGIT"]
+                },
+                {
+                    "code": "VIHIAD00",
+                    "name": "Kvantuminformatikai alkalmazások",
+                    "credits": 5,
+                    "prerequisites": [
+                        "VISZAA08"
+                    ]
+                },
+                {
+                    "code": "VIHVAD00",
+                    "name": "Rendszerelmélet",
+                    "credits": 5,
+                    "prerequisites": [
+                        "TE90AX57",
+                        "VIETAA00"
+                    ]
+                },
+                {
+                    "code": "VIIIAD01",
+                    "name": "Képfeldolgozás",
+                    "credits": 5,
+                    "prerequisites": ["VISZAA04","VISZAA08","TE11AX53","VIHIAA03","VIIIAA03","TE90AX57","VISZAA06","TE11AX52","VIETAA00","VIMIAA03","VIEEAA00","A1_DIGIT"]
+                },
+                {
+                    "code": "VISZAD01",
+                    "name": "Deklaratív programozás",
+                    "credits": 5,
+                    "prerequisites": ["VISZAA04","VISZAA08","TE11AX53","VIHIAA03","VIIIAA03","TE90AX57","VISZAA06","TE11AX52","VIETAA00","VIMIAA03","VIEEAA00","A1_DIGIT"]
+                },
+                {
+                    "code": "VITMAD02",
+                    "name": "Beszédinformációs rendszerek",
+                    "credits": 5,
+                    "prerequisites": [
+                        "VISZAB04"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választható szakmai tantárgyak #2",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VIEEAD00",
+                    "name": "IT eszközök technológiája",
+                    "credits": 5,
+                    "prerequisites": [
+                        "VIETAA00",
+                        "VIMIAA03"
+                    ]
+                },
+                {
+                    "code": "VIETAD00",
+                    "name": "Intelligens gyártás",
+                    "credits": 5
+                },
+                {
+                    "code": "VIMIAD03",
+                    "name": "Rendszermodellezés",
+                    "credits": 5,
+                    "prerequisites": ["VISZAA04","VISZAA08","TE11AX53","VIHIAA03","VIIIAA03","TE90AX57","VISZAA06","TE11AX52","VIETAA00","VIMIAA03","VIEEAA00","A1_DIGIT"]
+                },
+                {
+                    "code": "VIMIAD04",
+                    "name": "Beágyazott információs rendszerek",
+                    "credits": 5,
+                    "prerequisites": ["VISZAA04","VISZAA08","TE11AX53","VIHIAA03","VIIIAA03","TE90AX57","VISZAA06","TE11AX52","VIETAA00","VIMIAA03","VIEEAA00","A1_DIGIT"]
+                },
+                {
+                    "code": "VITMAD01",
+                    "name": "Információs rendszerek üzemeltetése",
+                    "credits": 5
+                }
+            ]
+        },
+        {
+            "name": "Intelligens hálózatok specializáció",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VIHIAC11",
+                    "name": "Hálózat- és forgalommenedzsment",
+                    "credits": 5
+                },
+                {
+                    "code": "VIHIAC12",
+                    "name": "Hálózat- és forgalommenedzsment laboratórium",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "VIHVAC11",
+                    "name": "Szoftverrádiós technológiák",
+                    "credits": 5
+                },
+                {
+                    "code": "VIHVAC12",
+                    "name": "Szoftverrádió és távérzékelés laboratórium",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "VITMAC12",
+                    "name": "Cloud Native hálózati funkciók fejlesztése",
+                    "credits": 5
+                },
+                {
+                    "code": "VITMAC13",
+                    "name": "Cloud Native technológiák laboratórium",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "VIHIAC10",
+                    "name": "Mobil kommunikációs hálózatok és alkalmazásaik",
+                    "credits": 5
+                },
+                {
+                    "code": "VIHVAC13",
+                    "name": "Távérzékelés és helymeghatározás",
+                    "credits": 5
+                },
+                {
+                    "code": "VITMAC14",
+                    "name": "Konténeralapú felhőplatformok",
+                    "credits": 5
+                },
+                {
+                    "code": "VIEEAC07",
+                    "name": "Intelligens érzékelők és gépi adatfeldolgozás",
+                    "credits": 5
+                }
+            ]
+        },
+        {
+            "name": "Szoftverfejlesztés specializáció",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VIAUAC15",
+                    "name": "Adatvezérelt rendszerek",
+                    "credits": 5
+                },
+                {
+                    "code": "VIAUAC16",
+                    "name": "Adatvezérelt szoftverfejlesztés laboratórium",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "VIIIAC09",
+                    "name": "Objektumorientált szoftvertervezés",
+                    "credits": 5
+                },
+                {
+                    "code": "VIIIAC10",
+                    "name": "Objektumorientált laboratórium",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "VIMIAC20",
+                    "name": "Automatizált szoftverfejlesztés",
+                    "credits": 5
+                },
+                {
+                    "code": "VIMIAC21",
+                    "name": "Automatizált szoftverfejlesztés laboratórium",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "VIAUAC17",
+                    "name": "Kliensoldali rendszerek",
+                    "credits": 5
+                },
+                {
+                    "code": "VIIIAC11",
+                    "name": "3D grafikus rendszerek",
+                    "credits": 5
+                },
+                {
+                    "code": "VIMIAC22",
+                    "name": "Természetes nyelvi és szemantikus technológiák",
+                    "credits": 5
+                },
+                {
+                    "code": "VIVEAC18",
+                    "name": "SCADA és a villamosenergia-rendszer",
+                    "credits": 5
+                }
+            ]
+        },
+        {
+            "name": "Információs rendszerek specializáció",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VIETAC13",
+                    "name": "Vállalatirányítási rendszerek",
+                    "credits": 5
+                },
+                {
+                    "code": "VIETAC14",
+                    "name": "Vállalatirányítási rendszerek programozása laboratórium",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "VISZAC01",
+                    "name": "Algoritmikus játékelmélet",
+                    "credits": 5
+                },
+                {
+                    "code": "VISZAC02",
+                    "name": "Algoritmikus problémák megoldása laboratórium",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "VITMAC15",
+                    "name": "Adatelemzés mélytanulási módszerekkel",
+                    "credits": 5
+                },
+                {
+                    "code": "VITMAC16",
+                    "name": "Adatelemzés és mélytanulás laboratórium",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "VIETAC15",
+                    "name": "Termeléstervezés és ipari IoT",
+                    "credits": 5
+                },
+                {
+                    "code": "VISZAC03",
+                    "name": "Véges matematika",
+                    "credits": 5
+                },
+                {
+                    "code": "VITMAC17",
+                    "name": "Data science módszerek Python környezetben",
+                    "credits": 5
+                }
+            ]
+        }
+    ]
+}
