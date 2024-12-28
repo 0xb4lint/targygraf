@@ -1,65 +1,50 @@
 {
-    "curriculum_updated_at": "2022-05-03",
+    "curriculum_updated_at": "2024-05-20",
     "name": "Mérnökinformatikus",
     "description": "Mérnökinformatikus BSc szak - nappali tagozat tanterve",
     "course_blocks": [
         {
             "courses": [
                 {
-                    "code": "VEMIMAB143A",
-                    "credits": 3,
+                    "code": "VEMIMAB144IN",
+                    "credits": 4,
                     "name": "Az informatika logikai és algebrai alapjai"
                 },
                 {
-                    "code": "VEMKMA1143V",
-                    "credits": 3,
-                    "name": "Lineáris algebra"
+                    "code": "VEMIMAB122MA",
+                    "credits": 2,
+                    "name": "Matematikai alapismeretek"
                 },
                 {
-                    "prerequisites": ["(VEMIMAB122A)"],
-                    "code": "VEMIMAB144A",
-                    "credits": 4,
+                    "prerequisites": ["(VEMIMAB122MA)"],
+                    "code": "VEMIMAB346MA",
+                    "credits": 6,
                     "name": "Matematikai analízis I."
                 },
                 {
-                    "code": "VEMIMAB122A",
-                    "credits": 0,
-                    "name": "Matematikai alapozó"
-                },
-                {
-                    "code": "VEMKFIB112F",
-                    "credits": 2,
+                    "code": "VEMKFIB113MI",
+                    "credits": 3,
                     "name": "Fizika I."
                 },
                 {
-                    "code": "VEMISAB144A",
-                    "credits": 5,
+                    "code": "VEMIVIB113IN",
+                    "credits": 3,
+                    "name": "Információs technológia"
+                },
+                {
+                    "code": "VEMISAB146AP",
+                    "credits": 6,
                     "name": "A programozás alapjai"
                 },
                 {
-                    "code": "VEMISAB154R",
-                    "credits": 5,
+                    "code": "VEMISAB156PI",
+                    "credits": 6,
                     "name": "Programozás I."
                 },
                 {
-                    "code": "VEMIVIB132W",
-                    "credits": 3,
-                    "name": "Web programozás I."
-                },
-                {
-                    "code": "VEMISAB122E",
-                    "credits": 3,
-                    "name": "Elemi algoritmusok"
-                },
-                {
-                    "code": "VEMIVIB112A",
-                    "credits": 2,
-                    "name": "A számítástechnika alapjai"
-                },
-                {
-                    "code": "VEMKLE1120A",
-                    "credits": 0,
-                    "name": "Angol nyelv I."
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható tárgyak",
+                    "credits": 3
                 },
                 {
                     "code": "VEPETO1122A",
@@ -73,66 +58,48 @@
         {
             "courses": [
                 {
-                    "prerequisites": ["VEMIMAB144A"],
-                    "code": "VEMIMAB244M",
+                    "prerequisites": ["VEMIMAB144IN"],
+                    "code": "VEMIMAB244DI",
                     "credits": 4,
-                    "name": "Matematikai analízis II."
-                },
-                {
-                    "prerequisites": ["VEMIMAB143A"],
-                    "code": "VETKMA1243D",
-                    "credits": 3,
                     "name": "Diszkrét matematika"
                 },
                 {
-                    "prerequisites": [
-                        "VEMISAB144A",
-                        "VEMIMAB144A"
-                    ],
-                    "code": "VEMISAB243A",
-                    "credits": 3,
+                    "code": "VEMIMAB344LI",
+                    "credits": 4,
+                    "name": "Lineáris algebra"
+                },
+                {
+                    "prerequisites": ["VEMIMAB346MA"],
+                    "code": "VEMIMAB246TV",
+                    "credits": 6,
+                    "name": "Matematikai analízis II."
+                },
+                {
+                    "prerequisites": ["VEMISAB146AP"],
+                    "code": "VEMISAB244DF",
+                    "credits": 4,
                     "name": "Adatstruktúrák és algoritmusok I."
                 },
                 {
-                    "code": "VEMIKN1252P",
-                    "credits": 2,
-                    "name": "Számítógépes perifériák"
-                },
-                {
-                    "prerequisites": [
-                        "VEMISAB144A",
-                        "VEMISAB154R"
-                    ],
-                    "code": "VEMISAB254C",
-                    "credits": 5,
-                    "name": "Programozás II."
-                },
-                {
-                    "prerequisites": ["VEMIVIB132W"],
-                    "code": "VEMIVIB232W",
-                    "credits": 3,
-                    "name": "Web programozás II."
-                },
-                {
-                    "code": "VEMIVI1112D",
-                    "credits": 2,
-                    "name": "Digitális technika"
-                },
-                {
-                    "prerequisites": ["VEMIMAB144A"],
-                    "code": "VEMIVI2144E",
+                    "prerequisites": ["VEMIMAB346MA"],
+                    "code": "VEMIVIB244EV",
                     "credits": 4,
                     "name": "Elektromosságtan"
                 },
                 {
-                    "code": "VEGTGAB144A",
-                    "credits": 5,
-                    "name": "Vállalati gazdaságtan"
+                    "prerequisites": [
+                        "VEMISAB156PI",
+                        "VEMISAB146AP"
+                    ],
+                    "code": "VEMISAB256SF",
+                    "credits": 6,
+                    "name": "Programozás II."
                 },
                 {
-                    "code": "VEMKLE1220A",
-                    "credits": 0,
-                    "name": "Angol nyelv II."
+                    "prerequisites": ["VEMIVIB113IN"],
+                    "code": "VEMIVIB213SF",
+                    "credits": 3,
+                    "name": "Számítógép-architektúrák I."
                 },
                 {
                     "code": "VEMKLE12X0A",
@@ -151,54 +118,48 @@
         {
             "courses": [
                 {
-                    "prerequisites": ["VEMISAB254C"],
-                    "code": "VEMISAB154K",
-                    "credits": 4,
-                    "name": "Korszerű programozási technikák I."
+                    "prerequisites": ["VEMIMAB144IN"],
+                    "code": "VEMISAB156AV",
+                    "credits": 6,
+                    "name": "Adatbázis-kezelő rendszerek I."
                 },
                 {
-                    "prerequisites": ["VEMISAB254C"],
-                    "code": "VEMIVIB134J",
-                    "credits": 5,
-                    "name": "Java programozás I."
-                },
-                {
-                    "prerequisites": ["VEMISAB254C"],
-                    "code": "VEMISAB244S",
-                    "credits": 5,
-                    "name": "Szoftvertechnológia"
-                },
-                {
-                    "prerequisites": ["VEMIVI2144E"],
-                    "code": "VEMIVIB174E",
+                    "prerequisites": ["VEMIVIB244EV"],
+                    "code": "VEMIVIB174EF",
                     "credits": 4,
                     "name": "Elektronikus elemek és áramkörök"
                 },
                 {
-                    "prerequisites": [
-                        "VEMIMAB244M",
-                        "VEMKMA1143V"
-                    ],
-                    "code": "VEMIVIB112J",
-                    "credits": 2,
+                    "prerequisites": ["VEMISAB256SF"],
+                    "code": "VEMISAB154MÜ",
+                    "credits": 4,
+                    "name": "Haladó programozási technikák I."
+                },
+                {
+                    "prerequisites": ["VEMIMAB246TV"],
+                    "code": "VEMIVIB143JV",
+                    "credits": 3,
                     "name": "Jelek és rendszerek"
                 },
                 {
-                    "prerequisites": ["VEMIVIB112A"],
-                    "code": "VEMIINB154H",
-                    "credits": 5,
-                    "name": "Számítógép hálózatok I."
+                    "prerequisites": [
+						"VEMKLE12X0A",
+						"VEMIVIB113IN"
+					],
+                    "code": "VEMIVIB256SF",
+                    "credits": 6,
+                    "name": "Számítógép-hálózatok I."
                 },
                 {
-                    "prerequisites": ["VEMIMAB143A"],
-                    "code": "VEMISAB154B",
-                    "credits": 5,
-                    "name": "Adatbáziskezelő rendszerek I."
+                    "prerequisites": ["VEMISAB256SF"],
+                    "code": "VEMISAB144SV",
+                    "credits": 4,
+                    "name": "Szoftvertechnológia"
                 },
                 {
-                    "code": "VEMKLE2120A",
-                    "credits": 0,
-                    "name": "Angol nyelv III."
+                    "code": "VEMIVIB153WB",
+                    "credits": 3,
+                    "name": "Web programozás I."
                 },
                 {
                     "code": "VEMKLE22X0A",
@@ -217,69 +178,59 @@
         {
             "courses": [
                 {
-                    "prerequisites": ["VEMIMAB144A"],
-                    "code": "VEMKMA1344B",
+                    "prerequisites": [
+                        "VEMISAB154MÜ",
+                        "VEMISAB156AV"
+                    ],
+                    "code": "VEMISAB223RF",
+                    "credits": 3,
+                    "name": "A rendszerfejlesztés haladó módszerei"
+                },
+                {
+                    "prerequisites": ["VEMISAB244DF"],
+                    "code": "VEMISAB254MV",
                     "credits": 4,
-                    "name": "Valószínűségszámítás és matematikai statisztika"
-                },
-                {
-                    "prerequisites": ["VEMKMA1143V"],
-                    "code": "VETKMA1244O",
-                    "credits": 4,
-                    "name": "Operációkutatás"
-                },
-                {
-                    "prerequisites": ["VEMISAB154B"],
-                    "code": "VEMIVIB232A",
-                    "credits": 2,
-                    "name": "Adatbázis-kezelő rendszerek II."
-                },
-                {
-                    "prerequisites": ["VEMIVI1112D"],
-                    "code": "VEMKKN3214A",
-                    "credits": 4,
-                    "name": "Digitális rendszerek és számítógép architektúrák"
-                },
-                {
-                    "prerequisites": ["VEMISAB243A"],
-                    "code": "VEMISA3242M",
-                    "credits": 2,
                     "name": "Mesterséges intelligencia alapjai"
                 },
                 {
                     "prerequisites": [
-                        "VEMISAB144A",
-                        "VEMIVIB112A"
+                        "VEMISAB146AP",
+                        "VEMIVIB113IN"
                     ],
-                    "code": "VEMISAB144O",
-                    "credits": 5,
+                    "code": "VEMISAB244OK",
+                    "credits": 4,
                     "name": "Operációs rendszerek"
                 },
                 {
-                    "prerequisites": ["VEMIVIB112J"],
-                    "code": "VEMIVIB242I",
-                    "credits": 2,
-                    "name": "Irányításelmélet és technika I."
+                    "prerequisites": ["VEMISAB256SF"],
+                    "code": "VEMISAB254ZF",
+                    "credits": 4,
+                    "name": "Python programozás"
                 },
                 {
-                    "prerequisites": [
-                        "VEMISAB154K",
-                        "VEMISAB244S"
-                    ],
-                    "code": "VEMISAB244M",
-                    "credits": 5,
-                    "name": "A rendszerfejlesztés korszerű módszerei"
+                    "prerequisites": ["VEMIVIB213SF"],
+                    "code": "VEMIVIB344ZV",
+                    "credits": 4,
+                    "name": "Számítógép-architektúrák II."
                 },
                 {
-                    "course_block_references": ["Kötelezően választható humán/gazdasági tárgyak"],
+                    "code": "VEMIVIB343SP",
+                    "credits": 3,
+                    "name": "Számítógépes perifériák"
+                },
+                {
+                    "code": "VEGTGAB144A",
+                    "credits": 6,
+                    "name": "Vállalati gazdaságtan"
+                },
+                {
+                    "course_block_references": ["Kötelezően választható szakmai tárgyak:\nRendszer- és szoftverfejlesztés tárgycsoport",
+                    "Kötelezően választható szakmai tárgyak:\nAdattudomány tárgycsoport",
+                    "Kötelezően választható szakmai tárgyak:\nBeágyazott rendszerek tárgycsoport",
+                    "Kötelezően választható szakmai tárgyak:\nHálózatok és rendszerek tárgycsoport"],
                     "code": null,
-                    "credits": 2,
-                    "name": "Kötelezően választható humán/gazdasági tárgy"
-                },
-                {
-                    "code": "VEMKLE2220A",
-                    "credits": 0,
-                    "name": "Angol nyelv IV."
+                    "credits": 3,
+                    "name": "Kötelezően választható szakmai tárgy"
                 },
                 {
                     "code": "VEPETO4222A",
@@ -293,57 +244,48 @@
         {
             "courses": [
                 {
-                    "prerequisites": ["VEMISAB144O"],
-                    "code": "VEMIIR5354I",
-                    "credits": 4,
+                    "prerequisites": ["VEMIMAB346MA"],
+                    "code": "VEMIMAB346VF",
+                    "credits": 6,
+                    "name": "Valószínűségszámítás és matematikai statisztika"
+                },
+                {
+                    "prerequisites": ["VEMIVIB143JV"],
+                    "code": "VEMIVIB153BV",
+                    "credits": 3,
+                    "name": "Bevezetés a digitális jelfeldolgozásba"
+                },
+                {
+                    "prerequisites": ["VEMISAB244OK"],
+                    "code": "VEMIVIB133RF",
+                    "credits": 3,
                     "name": "Informatikai rendszerek konfigurálása és üzemeltetése"
                 },
                 {
-                    "prerequisites": ["VEMIVIB134J"],
-                    "code": "VEMIAIB154M",
-                    "credits": 5,
-                    "name": "Mobil programozás"
-                },
-                {
-                    "prerequisites": ["VEMIINB154H"],
-                    "code": "VEMIVIB112H",
-                    "credits": 2,
-                    "name": "Távközlési hálózatok"
-                },
-                {
-                    "prerequisites": [
-                        "VEMIINB154H",
-                        "VEMISAB144O",
-                        "VEMKLE12X0A"
-                    ],
-                    "code": "VEMIINB354B",
-                    "credits": 5,
-                    "name": "Informatikai biztonság (angol nyelven)"
-                },
-                {
-                    "prerequisites": [
-                        "VEMISAB154B",
-                        "VEMISAB244S"
-                    ],
-                    "code": "VEMISA3136P",
+                    "prerequisites": ["VEMISAB223RF"],
+                    "code": "VEMIINB336PL",
                     "credits": 6,
                     "name": "Projekt labor"
                 },
                 {
                     "prerequisites": ["VEGTGAB144A"],
                     "code": "VEGTGAB244V",
-                    "credits": 5,
+                    "credits": 6,
                     "name": "Vállalkozói ismeretek"
                 },
                 {
                     "course_block_references": ["Kötelezően választható szakmai tárgyak:\nRendszer- és szoftverfejlesztés tárgycsoport",
                     "Kötelezően választható szakmai tárgyak:\nAdattudomány tárgycsoport",
-                    "Kötelezően választható szakmai tárgyak:\nIpari automatizálás tárgycsoport",
                     "Kötelezően választható szakmai tárgyak:\nBeágyazott rendszerek tárgycsoport",
                     "Kötelezően választható szakmai tárgyak:\nHálózatok és rendszerek tárgycsoport"],
                     "code": null,
                     "credits": 3,
                     "name": "Kötelezően választható szakmai tárgy"
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "credits": 2,
+                    "name": "Szabadon választható tárgy"
                 }
             ],
             "name": "5. félév",
@@ -352,46 +294,49 @@
         {
             "courses": [
                 {
-                    "prerequisites": ["(VEMKMA1344B)"],
-                    "code": "VEMIVI2212M",
-                    "credits": 2,
-                    "name": "Méréselmélet"
+                    "prerequisites": [
+                        "VEMIVIB256SF",
+                        "VEMISAB244OK"
+                    ],
+                    "code": "VEMIVIB256CF",
+                    "credits": 6,
+                    "name": "Informatikai biztonság"
                 },
                 {
-                    "prerequisites": ["VETKMA1244O"],
-                    "code": "VEMISAB253G",
+                    "prerequisites": ["VEMIMAB344LI"],
+                    "code": "VEMIVIB254MV",
+                    "credits": 4,
+                    "name": "Mobil robotika"
+                },
+                {
+                    "prerequisites": ["VEMIMAB344LI"],
+                    "code": "VEMIMAB244FO",
+                    "credits": 4,
+                    "name": "Operációkutatás"
+                },
+                {
+                    "prerequisites": ["VEMIVIB256SF"],
+                    "code": "VEMIVIB213KT",
                     "credits": 3,
-                    "name": "Gyártásoptimalizálás"
+                    "name": "Távközlési hálózatok"
                 },
                 {
                     "prerequisites": [
-                        "VEMISAB154B",
-                        "VEMISAB244S"
+                        "VEMISAB156AV",
+                        "VEMISAB144SV"
                     ],
-                    "code": "VEMIMIB23xT",
-                    "credits": 10,
+                    "code": "VEMIMIB10xT",
+                    "credits": 5,
                     "name": "Tervezés I."
                 },
                 {
                     "course_block_references": ["Kötelezően választható szakmai tárgyak:\nRendszer- és szoftverfejlesztés tárgycsoport",
                     "Kötelezően választható szakmai tárgyak:\nAdattudomány tárgycsoport",
-                    "Kötelezően választható szakmai tárgyak:\nIpari automatizálás tárgycsoport",
                     "Kötelezően választható szakmai tárgyak:\nBeágyazott rendszerek tárgycsoport",
                     "Kötelezően választható szakmai tárgyak:\nHálózatok és rendszerek tárgycsoport"],
                     "code": null,
                     "credits": 7,
                     "name": "Kötelezően választható szakmai tárgy"
-                },
-                {
-                    "course_block_references": ["Kötelezően választható humán/gazdasági tárgyak"],
-                    "code": null,
-                    "credits": 3,
-                    "name": "Kötelezően választható humán/gazdasági tárgy"
-                },
-                {
-                    "code": "___OPTIONAL___",
-                    "credits": 5,
-                    "name": "Szabadon választható tárgy"
                 }
             ],
             "name": "6. félév",
@@ -402,7 +347,6 @@
                 {
                     "course_block_references": ["Kötelezően választható szakmai tárgyak:\nRendszer- és szoftverfejlesztés tárgycsoport",
                     "Kötelezően választható szakmai tárgyak:\nAdattudomány tárgycsoport",
-                    "Kötelezően választható szakmai tárgyak:\nIpari automatizálás tárgycsoport",
                     "Kötelezően választható szakmai tárgyak:\nBeágyazott rendszerek tárgycsoport",
                     "Kötelezően választható szakmai tárgyak:\nHálózatok és rendszerek tárgycsoport"],
                     "code": null,
@@ -415,9 +359,15 @@
                     "name": "Szabadon választható tárgy"
                 },
                 {
-                    "prerequisites": ["VEMIMIB23xT"],
-                    "code": "VEMIMIB13xT",
-                    "credits": 15,
+                    "course_block_references": ["Kötelezően választható humán/gazdasági tárgyak"],
+                    "code": null,
+                    "credits": 3,
+                    "name": "Kötelezően választható humán/gazdasági tárgy"
+                },
+                {
+                    "prerequisites": ["VEMIMIB10xT"],
+                    "code": "VEMIMIB20xT",
+                    "credits": 10,
                     "name": "Tervezés II."
                 }
             ],
@@ -427,274 +377,55 @@
         {
             "courses": [
                 {
-                    "prerequisites": ["(VEMKMA1344B)"],
-                    "code": "VEMIVIB212A",
-                    "credits": 2,
-                    "name": "Minőségbiztosítás és audit"
-                },
-                {
-                    "code": "VEMIGAB512Z",
-                    "credits": 2,
-                    "name": "Szellemitulajdon-védelem"
-                },
-                {
-                    "code": "VEMIGAB512J",
-                    "credits": 2,
-                    "name": "Iparjogvédelem és innovációmenedzsment"
-                },
-                {
-                    "code": "VEMIMA5312T",
-                    "credits": 2,
-                    "name": "Szemelvények a matematika történetéből"
-                },
-                {
-                    "code": "VEMISA5312F",
-                    "credits": 2,
-                    "name": "Fejezetek a természettudományok történetéből"
-                },
-                {
-                    "code": "VEMISA5312Z",
-                    "credits": 2,
-                    "name": "Zenetörténet"
-                },
-                {
-                    "code": "VEGTMIB222G",
-                    "credits": 2,
-                    "name": "A problémamegoldás gyakorlata"
-                },
-                {
-                    "code": "VEGTMEB122K",
-                    "credits": 3,
-                    "name": "Üzleti kommunikáció"
-                },
-                {
-                    "code": "VEGTNGB112E",
-                    "credits": 3,
-                    "name": "Európai uniós ismeretek"
-                },
-                {
-                    "prerequisites": ["VEMIVIB112A"],
-                    "code": "VETKCO3112S",
-                    "credits": 2,
-                    "name": "Az informatika története"
-                },
-                {
-                    "code": "VEMIINB112A",
-                    "credits": 2,
-                    "name": "Ipar 4.0 kihívások"
-                }
-            ],
-            "name": "Kötelezően választható humán/gazdasági tárgyak",
-            "row": 1
-        },
-        {
-            "courses": [
-                {
-                    "prerequisites": ["VEMIINB154H"],
-                    "code": "VEMIINB354H",
-                    "credits": 5,
-                    "name": "Számítógép hálózatok II."
-                },
-                {
-                    "prerequisites": ["VEMIVIB112A"],
-                    "code": "VEMIIN353L",
-                    "credits": 3,
-                    "name": "Linux rendszergazda ismeretek I."
-                },
-                {
-                    "prerequisites": ["VEMIIN353L"],
-                    "code": "VEMIINB332L",
-                    "credits": 2,
-                    "name": "Linux rendszergazda ismeretek II."
-                },
-                {
-                    "prerequisites": ["VEMIIN353L"],
-                    "code": "VEMIINB332V",
-                    "credits": 2,
-                    "name": "Nagyvállalati Linux technológiák"
-                },
-                {
-                    "prerequisites": ["VEMISAB144O"],
-                    "code": "VEMIINB533V",
-                    "credits": 3,
-                    "name": "Virtualizációs technológiák a gyakorlatban"
-                },
-                {
                     "prerequisites": [
-                        "VEGTGAB144A",
-                        "VEMISAB154R"
+                        "VEMISAB156AV",
+                        "VEMIMAB344LI"
                     ],
-                    "code": "VEMISAB332V",
+                    "code": "VEMISAB153DS",
                     "credits": 3,
-                    "name": "Vállalatirányítási rendszerek"
-                },
-                {
-                    "prerequisites": ["VEMIINB154H"],
-                    "code": "VEMIIR4144M",
-                    "credits": 4,
-                    "name": "Mobil hálózatok"
-                },
-                {
-                    "prerequisites": ["VEMIINB154H"],
-                    "code": "VEMIINB253C",
-                    "credits": 4,
-                    "name": "Vállalati kommunikációs rendszerek"
-                },
-                {
-                    "prerequisites": ["VEMIINB154H"],
-                    "code": "VEMIINB253T",
-                    "credits": 3,
-                    "name": "IoT biztonság"
-                }
-            ],
-            "name": "Kötelezően választható szakmai tárgyak:\nHálózatok és rendszerek tárgycsoport",
-            "row": 1
-        },
-        {
-            "courses": [
-                {
-                    "prerequisites": ["VEMKMA1344B"],
-                    "code": "VEMIKN5344K",
-                    "credits": 4,
-                    "name": "Képfeldolgozás"
-                },
-                {
-                    "prerequisites": ["VEMKKN3214A"],
-                    "code": "VEMIVIB544T",
-                    "credits": 4,
-                    "name": "Tervezési módszerek programozható logikai eszközökkel"
-                },
-                {
-                    "prerequisites": ["VEMIVIB544T"],
-                    "code": "VEMIVI4144B",
-                    "credits": 4,
-                    "name": "FPGA alapú beágyazott rendszerek"
-                },
-                {
-                    "prerequisites": ["VEMKMA1143V"],
-                    "code": "VEMIVIB112R",
-                    "credits": 2,
-                    "name": "Robotika"
-                },
-                {
-                    "prerequisites": ["VEMIVIB112R"],
-                    "code": "VEMIVIB234R",
-                    "credits": 4,
-                    "name": "Robotika labor"
-                },
-                {
-                    "prerequisites": ["VEMISAB254C"],
-                    "code": "VEMIINB154C",
-                    "credits": 4,
-                    "name": "Autóipari szoftver- és hardverfejlesztés a gyakorlatban I."
-                },
-                {
-                    "prerequisites": ["VEMISAB254C"],
-                    "code": "VEMIINB254C",
-                    "credits": 4,
-                    "name": "Autóipari szoftver- és hardverfejlesztés a gyakorlatban II."
-                },
-                {
-                    "prerequisites": ["VEMISAB154B"],
-                    "code": "VEMIIR5344E",
-                    "credits": 4,
-                    "name": "Egészségügyi informatika"
-                },
-                {
-                    "prerequisites": ["VEMISAB154R"],
-                    "code": "VEMIVIB544L",
-                    "credits": 4,
-                    "name": "A LabVIEW fejlesztői környezet"
-                },
-                {
-                    "prerequisites": ["VEMISAB254C","VEMIVIB174E"],
-                    "code": "VEMIVIB233I",
-                    "credits": 3,
-                    "name": "IoT rendszerek"
-                }
-            ],
-            "name": "Kötelezően választható szakmai tárgyak:\nBeágyazott rendszerek tárgycsoport",
-            "row": 1
-        },
-        {
-            "courses": [
-                {
-                    "prerequisites": ["VEMIVIB242I"],
-                    "code": "VEMIAIB254A",
-                    "credits": 4,
-                    "name": "Automatizálás és folyamatirányítás"
-                },
-                {
-                    "prerequisites": ["VEMIVIB242I"],
-                    "code": "VEMIAIB153H",
-                    "credits": 3,
-                    "name": "Szabályozott villamos hajtások"
-                },
-                {
-                    "prerequisites": ["VEMIVIB174E"],
-                    "code": "VEMIAIB133T",
-                    "credits": 3,
-                    "name": "Villamos tervezés"
-                },
-                {
-                    "prerequisites": [
-                        "VEMISAB253G",
-                        "VEMIAIB254A"
-                    ],
-                    "code": "VEMIAIB154A",
-                    "credits": 4,
-                    "name": "Ipari automatizálás"
-                }
-            ],
-            "name": "Kötelezően választható szakmai tárgyak:\nIpari automatizálás tárgycsoport",
-            "row": 1
-        },
-        {
-            "courses": [
-                {
-                    "prerequisites": [
-                        "VEMISAB154B",
-                        "VEMIMAB143A"
-                    ],
-                    "code": "VEMISAB152A",
-                    "credits": 2,
                     "name": "A Data Science alapjai"
                 },
                 {
-                    "prerequisites": ["VEMIMAB143A"],
-                    "code": "VEMIMAB512L",
-                    "credits": 2,
-                    "name": "Bevezetés a lágy számítás módszereibe"
-                },
-                {
-                    "prerequisites": ["VEMISAB154B"],
-                    "code": "VEMIVIB232T",
-                    "credits": 2,
-                    "name": "Adattárház technológiák"
-                },
-                {
-                    "prerequisites": ["VEMIVIB232A"],
-                    "code": "VEMIVIB132A",
-                    "credits": 3,
-                    "name": "Korszerű adatbázis technológiák"
-                },
-                {
-                    "prerequisites": ["VEMISAB152A"],
-                    "code": "VEMISAB232A",
+                    "prerequisites": ["VEMISAB153DS"],
+                    "code": "VEMISAB254AB",
                     "credits": 4,
                     "name": "Adatbányászat"
                 },
                 {
-                    "prerequisites": ["VEMIMAB143A"],
-                    "code": "VEMIVIB212F",
-                    "credits": 2,
-                    "name": "Folyamatbányászat"
+                    "prerequisites": ["VEMISAB156AV"],
+                    "code": "VEMIVIB233FA",
+                    "credits": 3,
+                    "name": "Adatbázis-kezelő rendszerek II."
                 },
                 {
-                    "prerequisites": ["VEMISAB154B"],
-                    "code": "VEMISAB153B",
+                    "prerequisites": [
+						"VEMISAB254ZF",
+						"VEMISAB156AV"
+					],
+                    "code": "VEMISAB353AP",
                     "credits": 3,
-                    "name": "Big Data rendszerek és elemzési módszerek"
+                    "name": "Adatelemzés Pythonban"
+                },
+                {
+                    "prerequisites": ["VEMIMAB144IN"],
+                    "code": "VEMIVIB343BL",
+                    "credits": 3,
+                    "name": "Bevezetés a lágy számítás módszereibe"
+                },
+                {
+                    "prerequisites": [
+						"VEMIMAB344LI",
+						"VEMIMAB346MA"
+					],
+                    "code": "VEMIINB313IA",
+                    "credits": 3,
+                    "name": "Információ ábrázolás és modellezés"
+                },
+                {
+                    "prerequisites": ["VEMIVIB233FA"],
+                    "code": "VEMIVIB132A",
+                    "credits": 3,
+                    "name": "Korszerű adatbázis technológiák"
                 }
             ],
             "name": "Kötelezően választható szakmai tárgyak:\nAdattudomány tárgycsoport",
@@ -703,118 +434,254 @@
         {
             "courses": [
                 {
-                    "prerequisites": ["VEMISAB244S"],
-                    "code": "VEMIKN5312I",
-                    "credits": 2,
-                    "name": "Felhasználói interfészek tervezése"
-                },
-                {
-                    "prerequisites": ["VEMIVIB134J"],
-                    "code": "VEMIVIB234J",
-                    "credits": 5,
-                    "name": "Java programozás II."
-                },
-                {
-                    "prerequisites": ["VEMISAB254C"],
-                    "code": "VEMIMAB222C",
-                    "credits": 2,
-                    "name": "C# programozás"
-                },
-                {
-                    "prerequisites": ["VEMISAB144A"],
-                    "code": "VEMISAB132P",
-                    "credits": 2,
-                    "name": "Bevezetés a Python programozási nyelvbe"
-                },
-                {
-                    "prerequisites": [
-                        "VEMIVIB134J",
-                        "VEMKKN3214A"
-                    ],
-                    "code": "VEMIVIB234Z",
-                    "credits": 5,
-                    "name": "Párhuzamos programozás"
-                },
-                {
-                    "prerequisites": ["VEMISAB244S"],
-                    "code": "VEMISAB212M",
-                    "credits": 2,
-                    "name": "Szoftvermodellezés és tesztelés"
-                },
-                {
-                    "prerequisites": [
-                        "VEMIVIB112A",
-                        "VEMISAB154R"
-                    ],
-                    "code": "VEMKKN5244A",
-                    "credits": 4,
-                    "name": "Virtuális valóság I."
-                },
-                {
-                    "prerequisites": ["VEMKKN5244A"],
-                    "code": "VEMIVIB154V",
-                    "credits": 4,
-                    "name": "Virtuális valóság II."
-                },
-                {
-                    "prerequisites": [
-                        "VEMISAB154R",
-                        "VEMIVIB112A"
-                    ],
-                    "code": "VEMIVIB154A",
-                    "credits": 5,
-                    "name": "A multimédia alapjai"
-                },
-                {
-                    "prerequisites": ["VEMIVIB112A"],
-                    "code": "VEMIVIB253A",
+                    "prerequisites": ["VEMIVIB256SF"],
+                    "code": "VEMIINB253T",
                     "credits": 3,
-                    "name": "Az információ vizuális megjelenítésének és mérésének alapjai"
+                    "name": "IoT biztonság"
                 },
                 {
-                    "prerequisites": ["VEMISAB244S"],
-                    "code": "VEMISAB512N",
-                    "credits": 2,
-                    "name": "Szoftverfejlesztés nagyvállalati környezetben"
+                    "prerequisites": ["VEMIVIB113IN"],
+                    "code": "VEMIVIB354RI",
+                    "credits": 4,
+                    "name": "Linux rendszergazda ismeretek I."
                 },
                 {
-                    "prerequisites": ["VEMISAB254C"],
-                    "code": "VEMISA5312A",
-                    "credits": 2,
-                    "name": "Az informatika ipari alkalmazásai"
-                },
-                {
-                    "prerequisites": ["VEMIVIB134J"],
-                    "code": "VEMISAB332K",
-                    "credits": 2,
-                    "name": "Kotlin programozás"
-                },
-                {
-                    "prerequisites": ["VEMISAB154K"],
-                    "code": "VEMISAB232S",
-                    "credits": 2,
-                    "name": "Szoftverfejlesztés Qt keretrendszerrel"
-                },
-                {
-                    "prerequisites": ["VETKMA1243D"],
-                    "code": "VEMIAIB212D",
-                    "credits": 2,
-                    "name": "Diszkrét optimalizálási problémák"
-                },
-                {
-                    "prerequisites": ["VEMIMAB143A"],
-                    "code": "VEMISAB243E",
+                    "prerequisites": ["VEMIVIB354RI"],
+                    "code": "VEMIVIB333RI",
                     "credits": 3,
+                    "name": "Linux rendszergazda ismeretek II."
+                },
+                {
+                    "prerequisites": ["VEMIVIB256SF"],
+                    "code": "VEMIAIB356MH",
+                    "credits": 6,
+                    "name": "Mobil hálózatok"
+                },
+                {
+                    "prerequisites": ["VEMIVIB354RI"],
+                    "code": "VEMIVIB333LT",
+                    "credits": 3,
+                    "name": "Nagyvállalati Linux technológiák"
+                },
+                {
+                    "prerequisites": ["VEMISAB244OK"],
+                    "code": "VEMIVIB234VT",
+                    "credits": 4,
+                    "name": "Virtualizációs technológiák a gyakorlatban"
+                },
+                {
+                    "prerequisites": ["VEMIVIB256SF"],
+                    "code": "VEMIINB253C",
+                    "credits": 4,
+                    "name": "Vállalati kommunikációs rendszerek"
+                },
+                {
+                    "prerequisites": ["VEMIVIB256SF"],
+                    "code": "VEMIVIB256SH",
+                    "credits": 6,
+                    "name": "Számítógép hálózatok II."
+                }
+            ],
+            "name": "Kötelezően választható szakmai tárgyak:\nHálózatok és rendszerek tárgycsoport",
+            "row": 1
+        },
+        {
+            "courses": [
+                {
+                    "prerequisites": ["VEMIMAB144IN"],
+                    "code": "VEMISAB244AV",
+                    "credits": 4,
                     "name": "A digitális számítás elmélete"
                 },
                 {
-                    "prerequisites": ["VEMISAB154K"],
-                    "code": "VEMISAB254K",
+                    "prerequisites": [
+                        "VEMISAB156PI",
+                        "VEMIVIB113IN"
+                    ],
+                    "code": "VEMIVIB356MA",
+                    "credits": 6,
+                    "name": "A multimédia alapjai"
+                },
+                {
+                    "prerequisites": ["VEMISAB256SF"],
+                    "code": "VEMISAB313II",
+                    "credits": 3,
+                    "name": "Az informatika ipari alkalmazásai"
+                },
+                {
+                    "prerequisites": ["VEMISAB256SF"],
+                    "code": "VEMIMAB133CF",
+                    "credits": 3,
+                    "name": "C# programozás"
+                },
+                {
+                    "prerequisites": [
+                        "VEMISAB156PI",
+                        "VEMIVIB113IN"
+                    ],
+                    "code": "VEMIVIB313FI",
+                    "credits": 3,
+                    "name": "Felhasználói interfészek tervezése"
+                },
+                {
+                    "prerequisites": ["VEMISAB256SF"],
+                    "code": "VEMIVIB146JF",
+                    "credits": 6,
+                    "name": "Java programozás I."
+                },
+                {
+                    "prerequisites": ["VEMIVIB146JF"],
+                    "code": "VEMIVIB336JP",
+                    "credits": 6,
+                    "name": "Java programozás II."
+                },
+                {
+                    "prerequisites": ["VEMISAB256SF"],
+                    "code": "VEMIAIB256MO",
+                    "credits": 6,
+                    "name": "Mobil programozás"
+                },
+                {
+                    "prerequisites": [
+                        "VEMIVIB146JF",
+                        "VEMIVIB213SF"
+                    ],
+                    "code": "VEMIVIB336PP",
+                    "credits": 6,
+                    "name": "Párhuzamos programozás"
+                },
+                {
+                    "prerequisites": ["VEMISAB144SV"],
+                    "code": "VEMISAB154RF",
                     "credits": 4,
-                    "name": "Korszerű programozási technikák II."
+                    "name": "Rendszertesztelés"
+                },
+                {
+                    "prerequisites": [
+                        "VEMISAB156PI",
+                        "VEMIVIB113IN"
+                    ],
+                    "code": "VEMIVIB354VK",
+                    "credits": 4,
+                    "name": "Virtuális és kiterjesztett valóság"
+                },
+                {
+                    "prerequisites": ["VEMIVIB153WB"],
+                    "code": "VEMIVIB233WF",
+                    "credits": 3,
+                    "name": "Web programozás II."
                 }
             ],
             "name": "Kötelezően választható szakmai tárgyak:\nRendszer- és szoftverfejlesztés tárgycsoport",
+            "row": 1
+        },
+        {
+            "courses": [
+                {
+                    "prerequisites": ["VEMISAB156PI"],
+                    "code": "VEMIVIB356LV",
+                    "credits": 6,
+                    "name": "A LabVIEW fejlesztői környezet"
+                },
+                {
+                    "prerequisites": ["VEMISAB256SF"],
+                    "code": "VEMIVIB356SH",
+                    "credits": 6,
+                    "name": "Autóipari szoftver- és hardverfejlesztés a gyakorlatban I."
+                },
+                {
+                    "prerequisites": ["VEMISAB256SF"],
+                    "code": "VEMIVIB356SG",
+                    "credits": 6,
+                    "name": "Autóipari szoftver- és hardverfejlesztés a gyakorlatban II."
+                },
+                {
+                    "prerequisites": ["VEMIVIB334TM"],
+                    "code": "VEMIVIB334BR",
+                    "credits": 4,
+                    "name": "FPGA alapú beágyazott rendszerek"
+                },
+                {
+                    "prerequisites": [
+						"VEMIVIB113IN",
+						"VEMISAB256SF"
+					],
+                    "code": "VEMIVIB233I",
+                    "credits": 3,
+                    "name": "IoT rendszerek"
+                },
+                {
+                    "prerequisites": [
+						"VEMIMAB344LI",
+						"VEMIVIB143JV"
+					],
+                    "code": "VEMIVIB343IT",
+                    "credits": 3,
+                    "name": "Irányításelmélet és -technika I."
+                },
+                {
+                    "prerequisites": [
+						"VEMIMAB346MA",
+						"VEMIMAB344LI"
+					],
+                    "code": "VEMIVIB356KF",
+                    "credits": 6,
+                    "name": "Képfeldolgozás"
+                },
+                {
+                    "prerequisites": ["VEMIVIB344ZV"],
+                    "code": "VEMIVIB334TM",
+                    "credits": 4,
+                    "name": "Tervezési módszerek programozható logikai eszközökkel"
+                }
+            ],
+            "name": "Kötelezően választható szakmai tárgyak:\nBeágyazott rendszerek tárgycsoport",
+            "row": 1
+        },
+        {
+            "courses": [
+                {
+                    "code": "VEMIVIB213MA",
+                    "credits": 3,
+                    "name": "Minőségbiztosítás és audit"
+                },
+                {
+                    "code": "VEMIINB323SV",
+                    "credits": 3,
+                    "name": "Szellemitulajdon-védelem"
+                },
+                {
+                    "code": "VEMIIN313IN",
+                    "credits": 3,
+                    "name": "Iparjogvédelem és innovációmenedzsment"
+                },
+                {
+                    "code": "VEMIMAB313MT",
+                    "credits": 3,
+                    "name": "Szemelvények a matematika történetéből"
+                },
+                {
+                    "code": "VEGTMIB222G",
+                    "credits": 3,
+                    "name": "A problémamegoldás gyakorlata"
+                },
+                {
+                    "code": "VEGTMEB122K",
+                    "credits": 3,
+                    "name": "Üzleti kommunikáció"
+                },
+                {
+                    "code": "VEMIMAB313IT",
+                    "credits": 3,
+                    "name": "Az informatika története"
+                },
+                {
+                    "code": "VEMIINB112A",
+                    "credits": 3,
+                    "name": "Ipar 4.0 kihívások"
+                }
+            ],
+            "name": "Kötelezően választható humán/gazdasági tárgyak",
             "row": 1
         }
     ]

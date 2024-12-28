@@ -1,0 +1,390 @@
+{
+    "name": "Pszichológia BA",
+    "description": "Pszichológia BA - nappali tagozat tanterve",
+    "curriculum_updated_at": "2023-01-01",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "NOCODE01",
+                    "name": "Bevezetés a pszichológiába és pszichológiatörténet",
+                    "credits": 4
+                },
+                {
+                    "code": "NOCODE02",
+                    "name": "Biológiai pszichológia 1",
+                    "credits": 3
+                },
+                {
+                    "code": "NOCODE03",
+                    "name": "Fejlődéslélektan 1. előadás",
+                    "credits": 5
+                },
+                {
+                    "code": "NOCODE04",
+                    "name": "Fejlődéslélektan 1. gyakorlat",
+                    "credits": 3
+                },
+                {
+                    "code": "NOCODE05",
+                    "name": "Kísérleti és általános lélektan 1. előadás",
+                    "credits": 5
+                },
+                {
+                    "code": "NOCODE06",
+                    "name": "Kísérleti és általános lélektan 1. gyakorlat",
+                    "credits": 3
+                },
+                {
+                    "code": "NOCODE07",
+                    "name": "Pályaszocializáció és kommunikációs készségfejlesztés 1",
+                    "credits": 2
+                },
+                {
+                    "code": "NOCODE08",
+                    "name": "Statisztika 1. előadás",
+                    "credits": 3
+                },
+                {
+                    "code": "NOCODE09",
+                    "name": "Statisztika 1. gyakorlat",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "NOCODE10",
+                    "name": "Biológiai pszichológia 2",
+                    "credits": 3
+                },
+                {
+                    "code": "NOCODE11",
+                    "name": "Fejlődéslélektan 2. előadás",
+                    "credits": 5
+                },
+                {
+                    "code": "NOCODE12",
+                    "name": "Fejlődéslélektan 2. gyakorlat",
+                    "credits": 3
+                },
+                {
+                    "code": "NOCODE13",
+                    "name": "Kísérleti és általános lélektan 2. előadás",
+                    "credits": 5
+                },
+                {
+                    "code": "NOCODE14",
+                    "name": "Kísérleti és általános lélektan 2. gyakorlat",
+                    "credits": 3
+                },
+                {
+                    "code": "NOCODE15",
+                    "name": "Módszertani alapismeretek előadás",
+                    "credits": 4
+                },
+                {
+                    "code": "NOCODE16",
+                    "name": "Módszertani alapismeretek gyakorlat",
+                    "credits": 2
+                },
+                {
+                    "code": "NOCODE17",
+                    "name": "Statisztika 2. előadás",
+                    "credits": 3
+                },
+                {
+                    "code": "NOCODE18",
+                    "name": "Statisztika 2. gyakorlat",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "NOCODE19",
+                    "name": "A pszichológia alkalmazási területei",
+                    "credits": 2
+                },
+                {
+                    "code": "NOCODE20",
+                    "name": "Differenciált kutatásmódszertan 1.",
+                    "credits": 3
+                },
+                {
+                    "code": "NOCODE21",
+                    "name": "Evolúciós pszichológia",
+                    "credits": 3
+                },
+                {
+                    "code": "NOCODE22",
+                    "name": "Neveléslélektan",
+                    "credits": 3
+                },
+                {
+                    "code": "NOCODE23",
+                    "name": "Pszichológusi etika, jogi alapismeretek",
+                    "credits": 3
+                },
+                {
+                    "code": "NOCODE24",
+                    "name": "Személyiséglélektan 1. előadás",
+                    "credits": 5
+                },
+                {
+                    "code": "NOCODE25",
+                    "name": "Személyiséglélektan 1. gyakorlat",
+                    "credits": 3
+                },
+                {
+                    "code": "NOCODE26",
+                    "name": "Szociálpszichológia 1. előadás",
+                    "credits": 5
+                },
+                {
+                    "code": "NOCODE27",
+                    "name": "Szociálpszichológia 1. gyakorlat",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "NOCODE28",
+                    "name": "Differenciált kutatásmódszertan 2.",
+                    "credits": 3
+                },
+                {
+                    "code": "NOCODE29",
+                    "name": "Pszichiátria",
+                    "credits": 4
+                },
+                {
+                    "code": "NOCODE30",
+                    "name": "Személyiséglélektan 2. előadás",
+                    "credits": 5
+                },
+                {
+                    "code": "NOCODE31",
+                    "name": "Személyiséglélektan 2. gyakorlat",
+                    "credits": 3
+                },
+                {
+                    "code": "NOCODE32",
+                    "name": "Szociálpszichológia 2. előadás",
+                    "credits": 5
+                },
+                {
+                    "code": "NOCODE33",
+                    "name": "Szociálpszichológia 2. gyakorlat",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "5. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "NOCODE34",
+                    "name": "Differenciált kutatásmódszertan 3.",
+                    "credits": 6
+                },
+                {
+                    "code": "NOCODE35",
+                    "name": "Fejezetek a fejlődéslélektan köréből",
+                    "credits": 5
+                },
+                {
+                    "code": "NOCODE36",
+                    "name": "Fejezetek az általános lélektan köréből",
+                    "credits": 5
+                },
+                {
+                    "code": "NOCODE37",
+                    "name": "Szakdolgozati szeminárium 1. Konzultációs",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható blokk",
+                    "credits": 6,
+                    "course_block_references": [
+                        "Kötelezően választható"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelező közismereti tárgyak 1 blokk",
+                    "credits": 6,
+                    "course_block_references": [
+                        "Kötelező közismereti tárgyak 1"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "6. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "NOCODE38",
+                    "name": "Etológia és magatartásgenetika",
+                    "credits": 3
+                },
+                {
+                    "code": "NOCODE39",
+                    "name": "Fejezetek a személyiséglélektan köréből",
+                    "credits": 5
+                },
+                {
+                    "code": "NOCODE40",
+                    "name": "Fejezetek a szociálpszichológia köréből",
+                    "credits": 5
+                },
+                {
+                    "code": "NOCODE41",
+                    "name": "Szakdolgozati szeminárium 2. Konzultációs",
+                    "credits": 2
+                },
+                {
+                    "code": null,
+                    "name": "Kötelező közismereti tárgyak 2 blokk",
+                    "credits": 12,
+                    "course_block_references": [
+                        "Kötelező közismereti tárgyak 2"
+                    ]
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "credits": 10,
+                    "name": "Szabadon választható tárgy"
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választható",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "NOCODE42",
+                    "name": "Bevezetés az iskolapszichológiába",
+                    "credits": 2
+                },
+                {
+                    "code": "NOCODE43",
+                    "name": "Bevezetés a nevelési tanácsadásba",
+                    "credits": 2
+                },
+                {
+                    "code": "NOCODE44",
+                    "name": "Bevezetés a tanácsadás pszichológiájába",
+                    "credits": 2
+                },
+                {
+                    "code": "NOCODE45",
+                    "name": "Bevezetés az egészségpszichológiába",
+                    "credits": 2
+                },
+                {
+                    "code": "NOCODE46",
+                    "name": "Bevezetés a kutatási gyakorlatba",
+                    "credits": 2
+                },
+                {
+                    "code": "NOCODE47",
+                    "name": "Bevezetés a neuropszichológiába",
+                    "credits": 2
+                },
+                {
+                    "code": "NOCODE48",
+                    "name": "Bevezetés a krízisintervencióba",
+                    "credits": 2
+                },
+                {
+                    "code": "NOCODE49",
+                    "name": "Bevezetés a sportpszichológiába",
+                    "credits": 2
+                },
+                {
+                    "code": "NOCODE50",
+                    "name": "Bevezetés a gyermekvédelembe és a gyermekjogokba",
+                    "credits": 2
+                },
+                {
+                    "code": "NOCODE51",
+                    "name": "Bevezetés a kvalitatív pszichológiába",
+                    "credits": 2
+                },
+                {
+                    "code": "NOCODE52",
+                    "name": "Bevezetés az alternatív vitarendezés módszertanába",
+                    "credits": 2
+                },
+                {
+                    "code": "NOCODE53",
+                    "name": "Bevezetés a kriminálpszichológiába",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Kötelező közismereti tárgyak 1",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "NOCODE54",
+                    "name": "Filozófiatörténet",
+                    "credits": 2
+                },
+                {
+                    "code": "NOCODE55",
+                    "name": "Társadalomismeret",
+                    "credits": 2
+                },
+                {
+                    "code": "NOCODE56",
+                    "name": "Könyvtár- és informatikai alapismeretek",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Kötelező közismereti tárgyak 2",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "NOCODE57",
+                    "name": "Bevezetés a kommunikáció- és médiatudományba",
+                    "credits": 3
+                },
+                {
+                    "code": "NOCODE58",
+                    "name": "Bevezetés a kulturális antropológiába",
+                    "credits": 3
+                },
+                {
+                    "code": "NOCODE59",
+                    "name": "Bevezetés a szociológiába",
+                    "credits": 3
+                },
+                {
+                    "code": "NOCODE60",
+                    "name": "Bevezetés a vallástudományba",
+                    "credits": 3
+                }
+            ]
+        }
+    ]
+}

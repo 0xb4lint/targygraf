@@ -1,0 +1,395 @@
+{
+    "name": "Pszichológia",
+    "description": "Pszichológia BA - nappali tagozat tanterve",
+    "curriculum_updated_at": "2024-01-01",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "PSZI0111",
+                    "name": "Evolúciós pszichológia I.",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0187",
+                    "name": "Szociálpszichológia I.",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0183",
+                    "name": "A fejlődéslélektan nagy témái",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0193",
+                    "name": "Statisztika I.",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0192",
+                    "name": "Módszertan és kutatásetika",
+                    "credits": 5
+                },
+                {
+                    "code": "PSZI0194",
+                    "name": "Történeti bevezetés a pszichológiába",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0195",
+                    "name": "A pszichológia biológiai alapjai I.",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "PSZI0171",
+                    "name": "Kognitív pszichológia I.",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0188",
+                    "name": "Szociálpszichológia I. szeminárium",
+                    "credits": 4,
+                    "prerequisites": [
+                        "PSZI0187"
+                    ]
+                },
+                {
+                    "code": "PSZI0198",
+                    "name": "Társas fejlődés",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0197",
+                    "name": "Statisztika II.",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0172",
+                    "name": "Evolúciós pszichológia II.",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0173",
+                    "name": "Evolúciós pszichológia II. szeminárium",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0175",
+                    "name": "Affektív pszichológia",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0191",
+                    "name": "Szervezet és vezetéspszchológia",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0196",
+                    "name": "A pszichológia biológiai alapjai II.",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "PSZI0174",
+                    "name": "Kognitív pszichológia II.",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0176",
+                    "name": "Kognitív pszichológia labor",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0184",
+                    "name": "Társas fejlődés",
+                    "credits": 3,
+                    "prerequisites": [
+                        "PSZI0198"
+                    ]
+                },
+                {
+                    "code": "PSZI0901",
+                    "name": "Pszichometria",
+                    "credits": 5,
+                    "prerequisites": [
+                        "PSZI0193",
+                        "PSZI0197"
+                    ]
+                },
+                {
+                    "code": "PSZI0178",
+                    "name": "Személyiségpszichológia I.",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0179",
+                    "name": "Személyiségpszichológia I. szeminárium",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0185",
+                    "name": "A fejlődés dinamikus megközelítései",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0189",
+                    "name": "Szociálpszichológia II.",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0912",
+                    "name": "Kutatási gyakorlat I. (esszé)",
+                    "credits": 5
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "PSZI0117",
+                    "name": "Általános pszichológia szigorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "PSZI0111",
+                        "PSZI0171",
+                        "PSZI0174"
+                    ]
+                },
+                {
+                    "code": "PSZI0130",
+                    "name": "Szociálpszichológia szigorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "PSZI0187",
+                        "PSZI0189",
+                        "PSZI0191"
+                    ]
+                },
+                {
+                    "code": "PSZI0177",
+                    "name": "Kognitív pszichológia III.",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0180",
+                    "name": "Személyiségpszichológia II.",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0181",
+                    "name": "Személyiségpszichológia II. szeminárium",
+                    "credits": 3
+                },
+                {
+                    "code": "FILO0026",
+                    "name": "Bevezetés a filozófiába / pszichológia szakos hallgatók számára",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0186",
+                    "name": "A fejlődés dinamikus megközelítései",
+                    "credits": 3,
+                    "prerequisites": [
+                        "PSZI0185"
+                    ]
+                },
+                {
+                    "code": "PSZI0913",
+                    "name": "Kutatási gyakorlat II. (kísérletes)",
+                    "credits": 5
+                },
+                {
+                    "code": "PSZI0190",
+                    "name": "Szociálpszichológia II. szeminárium",
+                    "credits": 4,
+                    "prerequisites": [
+                        "PSZI0189"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "5. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "PSZI0130",
+                    "name": "Fejlődéslélektan szigorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "PSZI0198",
+                        "PSZI0185"
+                    ]
+                },
+                {
+                    "code": "PSZI0914",
+                    "name": "Kutatási gyakorlat III. (kérdőíves)",
+                    "credits": 5
+                },
+                {
+                    "code": "PSZI0199",
+                    "name": "Humángenetika",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0902",
+                    "name": "Egészségpszichológia",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0910",
+                    "name": "Bevezetés a tanácsadás pszichológiájába",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0918",
+                    "name": "Szakmai szocializáció",
+                    "credits": 4
+                },
+                {
+                    "code": null,
+                    "name": "Kérdőíves eljárások blokk",
+                    "credits": 4,
+                    "course_block_references": [
+                        "Kérdőíves eljárások"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "6. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "PSZI0123",
+                    "name": "Személyiséglélektan szigorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "PSZI0178",
+                        "PSZI0180"
+                    ]
+                },
+                {
+                    "code": "PSZI0182",
+                    "name": "A személyiségpszichológia aktuális kérdései",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0907",
+                    "name": "Bevezetés a neuropszichológiába",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0919",
+                    "name": "Bevezetés az iskolapszichológiába",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0911",
+                    "name": "Szakdolgozati szeminárium",
+                    "credits": 4
+                },
+                {
+                    "code": null,
+                    "name": "Pszichológiai felmérés blokk",
+                    "credits": 4,
+                    "course_block_references": [
+                        "Pszichológiai felmérés"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Bevezetés a klinikai pszichológiába blokk",
+                    "credits": 4,
+                    "course_block_references": [
+                        "Bevezetés a klinikai pszichológiába"
+                    ]
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "credits": 10,
+                    "name": "Szabadon választható tárgy"
+                }
+
+            ]
+        },
+        {
+            "name": "Kérdőíves eljárások",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "PSZI0915",
+                    "name": "Személyiségmérés",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0916",
+                    "name": "Attitűdök mérése",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0917",
+                    "name": "Kérdőíves módszerek a munka- és szervezetpszichológiában",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "Pszichológiai felmérés",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "PSZI0903",
+                    "name": "Megfigyelés és képességmérés",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0904",
+                    "name": "Képességmérés a sportpszichológiában",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0905",
+                    "name": "Munkahelyi mérése",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0906",
+                    "name": "Interjúk",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "Bevezetés a klinikai pszichológiába",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "PSZI0908",
+                    "name": "Bevezetés a gyermek és serdülő klinikai pszichológiába",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0909",
+                    "name": "Bevezetés a felnőtt klinikai pszichológiába",
+                    "credits": 4
+                }
+            ]
+        }
+    ]
+}

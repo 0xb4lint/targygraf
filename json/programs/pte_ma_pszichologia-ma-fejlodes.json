@@ -1,0 +1,221 @@
+{
+    "name": "Pszichológia MA - Fejlődés- és klinikai gyermekpszichológia",
+    "description": "Pszichológia MA - Fejlődés- és klinikai gyermekpszichológia szakirány - nappali tagozat tanterve",
+    "curriculum_updated_at": "2024-01-01",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "PSZI0216",
+                    "name": "Fejlődéspszichológia mesterfokon",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0223",
+                    "name": "Általános pszichopatológia",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0229",
+                    "name": "Magyar és idegen nyelvű tudományos publikációk készítésének és prezentációjának módszertana",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0330",
+                    "name": "Általános pszichopatológia",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0337",
+                    "name": "Fejlődéslélektani módszerek",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0337",
+                    "name": "A személyiség strukturális és tárgykapcsolati elméletei",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0341",
+                    "name": "A Rorschach-teszt alapismeretei",
+                    "credits": 4
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható blokk",
+                    "credits": 3,
+                    "course_block_references": [
+                        "Kötelezően választható"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "PSZI0217",
+                    "name": "Kognitív pszichológia mesterfokon",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0220",
+                    "name": "Szociálpszichológia mesterfokon",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0222",
+                    "name": "Statisztika haladóknak",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0331",
+                    "name": "Részletes pszichopatológia",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0332",
+                    "name": "Gyermek pszichodiagnosztika",
+                    "credits": 6
+                },
+                {
+                    "code": "PSZI0333",
+                    "name": "Az idegrendszer fejlődési zavarai és fejlesztésük",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0336",
+                    "name": "Narratív pszichológia",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0230",
+                    "name": "Szakdolgozati tutorálás I.",
+                    "credits": 3
+                }
+                
+            ]
+        },
+        {
+            "name": "3. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "PSZI0218",
+                    "name": "Evolúciós pszichológia mesterfokon",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0221",
+                    "name": "Pályaszocializáció és pszichológus etika",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0335",
+                    "name": "Fejlődési kognitív idegtudomány",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0340",
+                    "name": "A TAT alapismeretei",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0342",
+                    "name": "A gyerekpszichoterápia alapjai",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0343",
+                    "name": "Egybefüggő folyamatos terepmunka a klinikai pszichológia területén (60 óra)",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0344",
+                    "name": "Klinikai terepmunka szupervíziója",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0231",
+                    "name": "Szakdolgozati tutorálás II.",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "PSZI0219",
+                    "name": "Személyiségpszichológia mesterfokon",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0224",
+                    "name": "Kommunikációs készségfejlesztés",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0334",
+                    "name": "Fejlődési pszichopatológia",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0339",
+                    "name": "A gyermekmegfigyelésen és kísérleten alapuló dinamikus elméletek",
+                    "credits": 4
+                },
+                {
+                    "code": "PSZI0345",
+                    "name": "Fejlődéspszichológiai terepmunka kísérőszeminárium",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0345",
+                    "name": "Egybefüggő folyamatos terepmunka a fejlődéspszichológia területén (60 óra)",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0346",
+                    "name": "Szakdolgozati tutorálás III.",
+                    "credits": 10
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "credits": 6,
+                    "name": "Szabadon választható tárgy"
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választható",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "PSZI0225",
+                    "name": "Kvalitatív kutatási módszerek",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0226",
+                    "name": "Tartalomelemzés",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0227",
+                    "name": "Számítógépes kísérlettervezés",
+                    "credits": 3
+                },
+                {
+                    "code": "PSZI0228",
+                    "name": "Kérdőívszerkesztés",
+                    "credits": 3
+                }
+            ]
+        }
+    ]
+}

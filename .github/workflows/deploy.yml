@@ -9,7 +9,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - uses: shivammathur/setup-php@v2
         with:
           php-version: '7.4'
@@ -21,7 +21,12 @@ jobs:
     needs: test
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
+      - uses: tailscale/github-action@v2
+        with:
+          oauth-client-id: ${{ secrets.TS_OAUTH_CLIENT_ID }}
+          oauth-secret: ${{ secrets.TS_OAUTH_SECRET }}
+          tags: tag:ci
       - run: >
           mkdir /home/runner/.ssh &&
           mv .deploy/ssh_config /home/runner/.ssh/config &&
@@ -30,7 +35,7 @@ jobs:
         env:
           ID_RSA: ${{ secrets.ID_RSA }}
       - run: >
-          ssh www-data@104.248.26.170 "sh -c '
+          ssh www-data@vpn.targygraf.hu "sh -c '
           cd /var/www/targygraf.hu;
           rm composer.lock;
           git pull origin master &&

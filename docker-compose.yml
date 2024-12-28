@@ -1,0 +1,62 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: targygraf-mysql
+    environment:
+      MYSQL_DATABASE: site_targygraf
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: mysqluser
+      MYSQL_PASSWORD: mysqluser
+      MYSQL_PORT: 3306
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+    networks:
+      - targygraf-network
+
+  redis:
+    image: 'redis:latest'
+    container_name: redis
+    ports:
+      - "6379:6379"
+    networks:
+      - targygraf-network
+
+  targygraf:
+    container_name: targygraf
+    image: targygraf
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    depends_on:
+      - mysql
+    environment:
+      APP_NAME: Tárgygráf
+      APP_ENV: local
+      APP_KEY: base64:zy5ofrMOnLl/cfJheOMVCkGb34sOm+SiVF6rJMq0oKU=
+      APP_DEBUG: 1
+      APP_LOG_LEVEL: debug
+      APP_DOMAIN: localhost
+      APP_URL: http://localhost
+      DB_CONNECTION: mysql
+      DB_HOST: targygraf-mysql
+      DB_PORT: 3306
+      DB_DATABASE: site_targygraf
+      DB_USERNAME: mysqluser
+      DB_PASSWORD: mysqluser
+      REDIS_HOST: redis
+      SESSION_DRIVER: redis
+    networks:
+      - targygraf-network
+
+networks:
+  targygraf-network:
+    driver: bridge
+
+volumes:
+  mysql-data:
