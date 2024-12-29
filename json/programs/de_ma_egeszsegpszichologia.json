@@ -1,0 +1,265 @@
+{
+    "name": "Egészségpszichológia MA",
+    "description": "Egészségpszichológia - nappali tagozat tanterve",
+    "curriculum_updated_at": "2017-01-01",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "AO_EPSL_GEN",
+                    "name": "A genetika alapjai",
+                    "credits": 2
+                },
+                {
+                    "code": "AO_EPSL_EPA",
+                    "name": "Az epidemiológia alapjai",
+                    "credits": 3
+                },
+                {
+                    "code": "AO_EPSL_EPSI",
+                    "name": "Bevezetés az egészségpszichológiába",
+                    "credits": 3
+                },
+                {
+                    "code": "AO_EPSL_DEV",
+                    "name": "Devianciák",
+                    "credits": 2
+                },
+                {
+                    "code": "AO_EPSL_GMVZ",
+                    "name": "Gyermekkori mentális és viselkedés zavarok",
+                    "credits": 4
+                },
+                {
+                    "code": "AO_EPSL_NEG",
+                    "name": "Népegészségtan",
+                    "credits": 4
+                },
+                {
+                    "code": "AO_EPSL_NME",
+                    "name": "Népegészségügyi medicina I.",
+                    "credits": 4
+                },
+                {
+                    "code": "AO_EPSL_PPA",
+                    "name": "Patopszichológiai alapok I.",
+                    "credits": 3
+                },
+                {
+                    "code": "AO_EPSL_PDI",
+                    "name": "Pszichodiagnosztika I",
+                    "credits": 3
+                },
+                {
+                    "code": "AO_EPSL_SZEM",
+                    "name": "Személyiséglélektan",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "EPSL_EUM",
+                    "name": "Egészségügyi menedzsment",
+                    "credits": 2
+                },
+                {
+                    "code": "AO_EPSL_GPDI1",
+                    "name": "Gyermek pszichodiagnosztika I.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "AO_EPSL_PDI"
+                    ]
+                },
+                {
+                    "code": "AO_EPSL_KLIEP",
+                    "name": "Klinikai egészségpszichológia",
+                    "credits": 3,
+                    "prerequisites": [
+                        "AO_EPSL_EPSI"
+                    ]
+                },
+                {
+                    "code": "AO_EPSL_KUTM",
+                    "name": "Kutatásmódszertan",
+                    "credits": 3,
+                    "prerequisites": [
+                        "AO_EPSL_EPA"
+                    ]
+                },
+                {
+                    "code": "AO_EPSL_NME2",
+                    "name": "Népegészségügyi medicina II.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "AO_EPSL_NME"
+                    ]
+                },
+                {
+                    "code": "AO_EPSL_PPA2",
+                    "name": "Patopszichológiai alapok II.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "AO_EPSL_PPA"
+                    ]
+                },
+                {
+                    "code": "AO_EPSL_PDI2",
+                    "name": "Pszichodiagnosztika II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "AO_EPSL_PDI"
+                    ]
+                },
+                {
+                    "code": "AO_EPSL_ROR1",
+                    "name": "Rorschach teszt I.",
+                    "credits": 3
+                },
+                {
+                    "code": "AO_EPSL_PTA1",
+                    "name": "Segítő kapcsolatok és pszichoterápia alkalmazott módszerei I.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "AO_EPSL_SZEM"
+                    ]
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható tárgy",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "AO_EPSL_ADD",
+                    "name": "Addiktológia",
+                    "credits": 3,
+                    "prerequisites": [
+                        "AO_EPSL_PPA"
+                    ]
+                },
+                {
+                    "code": "AO_EPSL_EGF",
+                    "name": "Az egészségfejlesztés alapjai",
+                    "credits": 3,
+                    "prerequisites": [
+                        "AO_EPSL_EPA"
+                    ]
+                },
+                {
+                    "code": "AO_EPSL_EPK",
+                    "name": "Epidemiológiai kutatásmódszertan",
+                    "credits": 3,
+                    "prerequisites": [
+                        "AO_EPSL_EPA"
+                    ]
+                },
+                {
+                    "code": "AO_EPSL_ETI",
+                    "name": "Etika",
+                    "credits": 2
+                },
+                {
+                    "code": "AO_EPSL_GPDI2",
+                    "name": "Gyermek pszichodiagnosztika II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "AO_EPSL_GPDI1"
+                    ]
+                },
+                {
+                    "code": "AO_EPSL_KRI",
+                    "name": "Krízislélektan",
+                    "credits": 3,
+                    "prerequisites": [
+                        "AO_EPSL_SZEM"
+                    ]
+                },
+                {
+                    "code": "AO_EPSL_ROR2",
+                    "name": "Rorschach teszt II",
+                    "credits": 3,
+                    "prerequisites": [
+                        "AO_EPSL_ROR1"
+                    ]
+                },
+                {
+                    "code": "AO_EPSL_PTA2",
+                    "name": "Segítő kapcsolatok és pszichoterápia alkalmazott módszerei II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "AO_EPSL_PTA1"
+                    ]
+                },
+                {
+                    "code": "AO_EPSL_DIP1",
+                    "name": "Diplomamunka I.",
+                    "credits": 2
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható tárgy",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "AO_EPSL_KSZF",
+                    "name": "Korai személyiségfejlődés",
+                    "credits": 3,
+                    "prerequisites": [
+                        "AO_EPSL_SZEM"
+                    ]
+                },
+                {
+                    "code": "AO_EPSL_DIN",
+                    "name": "Pár- és családdinamika",
+                    "credits": 3,
+                    "prerequisites": [
+                        "AO_EPSL_GMVZ"
+                    ]
+                },
+                {
+                    "code": "AO_EPSL_SZGY",
+                    "name": "Szakmai gyakorlat és kutatómunka",
+                    "credits": 10
+                },
+                {
+                    "code": "AO_EPSL_SZUP",
+                    "name": "Szupervízió (diplomamunka)",
+                    "credits": 3,
+                    "prerequisites": [
+                        "AO_EPSL_DIP1"
+                    ]
+                },
+                {
+                    "code": "AO_EPSL_DIP2",
+                    "name": "Diplomamunka II.",
+                    "credits": 10,
+                    "prerequisites": [
+                        "AO_EPSL_DIP1"
+                    ]
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható tárgy",
+                    "credits": 2
+                }
+            ]
+        }
+    ]
+}
