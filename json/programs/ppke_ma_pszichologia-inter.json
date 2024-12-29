@@ -10,38 +10,32 @@
                 {
                     "code": "BMNPS07100M",
                     "name": "Kognitív pszichológiai mesterkurzus",
-                    "credits": 3,
-                    "semester": 1
+                    "credits": 3
                 },
                 {
                     "code": "BMNPS07200M",
                     "name": "Fejlődéslélektani mesterkurzus",
-                    "credits": 3,
-                    "semester": 1
+                    "credits": 3
                 },
                 {
                     "code": "BMNPS07300M",
                     "name": "Személyiséglélektani mesterkurzus",
-                    "credits": 3,
-                    "semester": 1
+                    "credits": 3
                 },
                 {
                     "code": "BMNPS00900M",
                     "name": "Pályaszocializáció, pszichológus etika",
-                    "credits": 2,
-                    "semester": 1
+                    "credits": 2
                 },
                 {
                     "code": "BMNPS07500M",
                     "name": "Módszertani készségfejlesztés: Többváltozós statisztika elméleti alapjai",
-                    "credits": 3,
-                    "semester": 1
+                    "credits": 3
                 },
                 {
                     "code": "BMNPS07600M",
                     "name": "Módszertani készségfejlesztés: Többváltozós statisztika, regressziós eljárások",
-                    "credits": 3,
-                    "semester": 1
+                    "credits": 3
                 },
                 {
                     "code": "BMNPS08500M",
@@ -49,32 +43,27 @@
                     "prerequisites": [
                         "(BMNPS07300M)"
                     ],
-                    "credits": 3,
-                    "semester": 1
+                    "credits": 3
                 },
                 {
                     "code": "BMNPS04400M",
                     "name": "Bevezetés a valláspszichológiába",
-                    "credits": 3,
-                    "semester": 1
+                    "credits": 3
                 },
                 {
                     "code": "BMNPS06900M",
                     "name": "Általános és részletes pszichopatológia",
-                    "credits": 4,
-                    "semester": 1
+                    "credits": 4
                 },
                 {
                     "code": "BMNPS09500M",
                     "name": "Csoportközi viszonyok",
-                    "credits": 3,
-                    "semester": 1
+                    "credits": 3
                 },
                 {
                     "code": "BMNKM00100M",
                     "name": "A közvetlen emberi kommunikáció elméletei",
-                    "credits": 3,
-                    "semester": 1
+                    "credits": 3
                 }
             ]
         },
@@ -85,8 +74,7 @@
                 {
                     "code": "BMNPS07400M",
                     "name": "Szociálpszichológiai mesterkurzus",
-                    "credits": 3,
-                    "semester": 2
+                    "credits": 3
                 },
                 {
                     "code": "BMNPS07700M",
@@ -94,20 +82,17 @@
                     "prerequisites": [
                         "BMNPS07600M"
                     ],
-                    "credits": 3,
-                    "semester": 2
+                    "credits": 3
                 },
                 {
                     "code": "BMNPS07800M",
                     "name": "Kutatásmódszertan",
-                    "credits": 3,
-                    "semester": 2
+                    "credits": 3
                 },
                 {
                     "code": "BMNPS04100M",
                     "name": "Kommunikációs készségfejlesztés",
-                    "credits": 2,
-                    "semester": 2
+                    "credits": 2
                 },
                 {
                     "code": "BMNPS08600M",
@@ -115,8 +100,7 @@
                     "prerequisites": [
                         "BMNPS08500M"
                     ],
-                    "credits": 3,
-                    "semester": 2
+                    "credits": 3
                 },
                 {
                     "code": "BMNPS06800M",
@@ -124,8 +108,7 @@
                     "prerequisites": [
                         "BMNPS04400M"
                     ],
-                    "credits": 3,
-                    "semester": 2
+                    "credits": 3
                 },
                 {
                     "code": "BMNPS17900M",
@@ -133,20 +116,17 @@
                     "prerequisites": [
                         "BMNPS06900M"
                     ],
-                    "credits": 3,
-                    "semester": 2
+                    "credits": 3
                 },
                 {
                     "code": "BMNPS09300M",
                     "name": "Egészségmagatartás, egészségfejlesztés és egészségkommunikáció",
-                    "credits": 3,
-                    "semester": 2
+                    "credits": 3
                 },
                 {
                     "code": "BMNPS12600M",
                     "name": "Logoterápia",
-                    "credits": 2,
-                    "semester": 2
+                    "credits": 2
                 }
             ]
         },
@@ -160,8 +140,7 @@
                     "prerequisites": [
                         "BMNPS00900M"
                     ],
-                    "credits": 5,
-                    "semester": 3
+                    "credits": 5
                 },
                 {
                     "code": "BMNPS88200M",
@@ -169,8 +148,7 @@
                     "prerequisites": [
                         "BMNPS07800M"
                     ],
-                    "credits": 3,
-                    "semester": 3
+                    "credits": 3
                 },
                 {
                     "code": "BMNPS88300M",
@@ -178,38 +156,32 @@
                     "prerequisites": [
                         "(BMNPS70000M)"
                     ],
-                    "credits": 3,
-                    "semester": 3
+                    "credits": 3
                 },
                 {
                     "code": "BMNPS08400M",
                     "name": "Vallástudományi alapok",
-                    "credits": 3,
-                    "semester": 3
+                    "credits": 3
                 },
                 {
                     "code": "BMNPS08200M",
                     "name": "Kultúra, média, család",
-                    "credits": 3,
-                    "semester": 3
+                    "credits": 3
                 },
                 {
                     "code": "BMNPS06700M",
                     "name": "Tartalomelemzési módszerek, narratív technikák",
-                    "credits": 3,
-                    "semester": 3
+                    "credits": 3
                 },
                 {
                     "code": "BMNPS09200M",
                     "name": "Stressz és coping",
-                    "credits": 3,
-                    "semester": 3
+                    "credits": 3
                 },
                 {
                     "code": "BMNPS06600M",
                     "name": "Szociálpszichológia a civil szférában",
-                    "credits": 3,
-                    "semester": 3
+                    "credits": 3
                 }
             ]
         },
@@ -228,8 +200,7 @@
                     "prerequisites": [
                         "BMNPS70000M"
                     ],
-                    "credits": 5,
-                    "semester": 4
+                    "credits": 5
                 },
                 {
                     "code": "BMNPS88100M",
@@ -237,8 +208,7 @@
                     "prerequisites": [
                         "BMNPS07800M"
                     ],
-                    "credits": 5,
-                    "semester": 4
+                    "credits": 5
                 },
                 {
                     "code": "BMNPS88400M",
@@ -246,8 +216,7 @@
                     "prerequisites": [
                         "(BMNPS70100M)"
                     ],
-                    "credits": 3,
-                    "semester": 4
+                    "credits": 3
                 },
                 {
                     "code": "BMNPS88600M",
@@ -255,38 +224,32 @@
                     "prerequisites": [
                         "BMNPS88100M"
                     ],
-                    "credits": 6,
-                    "semester": 4
+                    "credits": 6
                 },
                 {
                     "code": "BMNPS90000M",
                     "name": "Pszichológia MA záróvizsga",
-                    "credits": 0,
-                    "semester": 4
+                    "credits": 0
                 },
                 {
                     "code": "BMNPS04500M",
                     "name": "A vallás és család kapcsolódási területei",
-                    "credits": 3,
-                    "semester": 4
+                    "credits": 3
                 },
                 {
                     "code": "BMNPS08300M",
                     "name": "Alkalmazott szociálpszichológia",
-                    "credits": 3,
-                    "semester": 4
+                    "credits": 3
                 },
                 {
                     "code": "BMNPS09400M",
                     "name": "Nemek és kultúrák",
-                    "credits": 3,
-                    "semester": 4
+                    "credits": 3
                 },
                 {
                     "code": "BMNPS03100M",
                     "name": "Resztoratív eljárás a konfliktusok kezelésében",
-                    "credits": 2,
-                    "semester": 4
+                    "credits": 2
                 }
             ]
         }
