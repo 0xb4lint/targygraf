@@ -1,0 +1,307 @@
+{
+    "name": "Pszichológia MA - Fejlődés/klinikai gyermekpszichológia",
+    "description": "Pszichológia MA - nappali tagozat tanterve - Fejlődés- és klinikai gyermekpszichológia specializáció",
+    "curriculum_updated_at": "2024-12-01",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "BMNPS07100M",
+                    "name": "Kognitív pszichológiai mesterkurzus",
+                    "credits": 3,
+                    "semester": 1
+                },
+                {
+                    "code": "BMNPS07200M",
+                    "name": "Fejlődéslélektani mesterkurzus",
+                    "credits": 3,
+                    "semester": 1
+                },
+                {
+                    "code": "BMNPS07300M",
+                    "name": "Személyiséglélektani mesterkurzus",
+                    "credits": 3,
+                    "semester": 1
+                },
+                {
+                    "code": "BMNPS00900M",
+                    "name": "Pályaszocializáció, pszichológus etika",
+                    "credits": 2,
+                    "semester": 1
+                },
+                {
+                    "code": "BMNPS07500M",
+                    "name": "Módszertani készségfejlesztés: Többváltozós statisztika elméleti alapjai",
+                    "credits": 3,
+                    "semester": 1
+                },
+                {
+                    "code": "BMNPS07600M",
+                    "name": "Módszertani készségfejlesztés: Többváltozós statisztika, regressziós eljárások",
+                    "credits": 3,
+                    "semester": 1
+                },
+                {
+                    "code": "BMNPS09900M",
+                    "name": "Evolúciós szemlélet a fejlődéspszichológiában",
+                    "credits": 3,
+                    "semester": 1
+                },
+                {
+                    "code": "BMNPS06900M",
+                    "name": "Általános és részletes pszichopatológia",
+                    "credits": 4,
+                    "semester": 1
+                },
+                {
+                    "code": "BMNPS11800M",
+                    "name": "Neuropszichológia",
+                    "prerequisites": [
+                        "(BMNPS06900M)"
+                    ],
+                    "credits": 4,
+                    "semester": 1
+                },
+                {
+                    "code": "BMNPS08500M",
+                    "name": "Bevezetés a családterápiába",
+                    "prerequisites": [
+                        "(BMNPS07300M)"
+                    ],
+                    "credits": 3,
+                    "semester": 1
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "BMNPS07400M",
+                    "name": "Szociálpszichológiai mesterkurzus",
+                    "credits": 3,
+                    "semester": 2
+                },
+                {
+                    "code": "BMNPS07700M",
+                    "name": "Módszertani készségfejlesztés: Többváltozós statisztika, ANOVA és adatredukciós módszerek",
+                    "prerequisites": [
+                        "BMNPS07600M"
+                    ],
+                    "credits": 3,
+                    "semester": 2
+                },
+                {
+                    "code": "BMNPS07800M",
+                    "name": "Kutatásmódszertan",
+                    "credits": 3,
+                    "semester": 2
+                },
+                {
+                    "code": "BMNPS04100M",
+                    "name": "Kommunikációs készségfejlesztés",
+                    "credits": 2,
+                    "semester": 2
+                },
+                {
+                    "code": "BMNPS18400M",
+                    "name": "Kötődés és korai fejlődés",
+                    "credits": 3,
+                    "semester": 2
+                },
+                {
+                    "code": "BMNPS18500M",
+                    "name": "Klinikai zavarok gyermek- és serdülőkorban",
+                    "prerequisites": [
+                        "BMNPS06900M"
+                    ],
+                    "credits": 3,
+                    "semester": 2
+                },
+                {
+                    "code": "BMNPS18600M",
+                    "name": "Az idegrendszer érése és a korai fejlődési zavarok kialakulása",
+                    "prerequisites": [
+                        "(BMNPS18500M)"
+                    ],
+                    "credits": 3,
+                    "semester": 2
+                },
+                {
+                    "code": "BMNPS18900M",
+                    "name": "Gyermekpszichodiagnosztikai módszerek",
+                    "credits": 3,
+                    "semester": 2
+                },
+                {
+                    "code": "BMNPS17900M",
+                    "name": "Addiktológia",
+                    "prerequisites": [
+                        "BMNPS06900M"
+                    ],
+                    "credits": 3,
+                    "semester": 2
+                },
+                {
+                    "code": "BMNPS08600M",
+                    "name": "Elméleti irányzatok a családterápiában",
+                    "prerequisites": [
+                        "BMNPS08500M"
+                    ],
+                    "credits": 3,
+                    "semester": 2
+                },
+                {
+                    "code": "BMNPS12700M",
+                    "name": "A Rorschach diagnosztika alapjai",
+                    "credits": 3,
+                    "semester": 2
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "BMNPS70000M",
+                    "name": "Terepgyakorlat",
+                    "prerequisites": [
+                        "BMNPS00900M"
+                    ],
+                    "credits": 5,
+                    "semester": 3
+                },
+                {
+                    "code": "BMNPS88200M",
+                    "name": "Tudományos prezentáció előkészítése",
+                    "prerequisites": [
+                        "BMNPS07800M"
+                    ],
+                    "credits": 3,
+                    "semester": 3
+                },
+                {
+                    "code": "BMNPS88300M",
+                    "name": "Intézményi megfigyelés módszertana: alapozó",
+                    "prerequisites": [
+                        "(BMNPS70000M)"
+                    ],
+                    "credits": 3,
+                    "semester": 3
+                },
+                {
+                    "code": "BMNPS18700M",
+                    "name": "A fejlődési pszichopatológia és pszichoanalitikus fejlődéspszichológia",
+                    "credits": 3,
+                    "semester": 3
+                },
+                {
+                    "code": "BMNPS19000M",
+                    "name": "Klinikai gyermekpszichodiagnosztika",
+                    "prerequisites": [
+                        "BMNPS18900M",
+                        "BMNPS18500M"
+                    ],
+                    "credits": 3,
+                    "semester": 3
+                },
+                {
+                    "code": "BMNPS04600M",
+                    "name": "Diagnosztikai eljárások csecsemő és kisgyermekkorban",
+                    "prerequisites": [
+                        "BMNPS18600M"
+                    ],
+                    "credits": 3,
+                    "semester": 3
+                },
+                {
+                    "code": "BMNPS08200M",
+                    "name": "Kultúra, média, család",
+                    "credits": 3,
+                    "semester": 3
+                },
+                {
+                    "code": "BMNPS11900M",
+                    "name": "Rorschach diagnosztika",
+                    "prerequisites": [
+                        "BMNPS12700M"
+                    ],
+                    "credits": 3,
+                    "semester": 3
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "___OPTIONAL___",
+                    "credits": 6,
+                    "name": "Szabadon választható tárgy"
+                },
+                {
+                    "code": "BMNPS70100M",
+                    "name": "Szakmai gyakorlat",
+                    "prerequisites": [
+                        "BMNPS70000M"
+                    ],
+                    "credits": 5,
+                    "semester": 4
+                },
+                {
+                    "code": "BMNPS88100M",
+                    "name": "Vezetett kutatómunka",
+                    "prerequisites": [
+                        "BMNPS07800M"
+                    ],
+                    "credits": 5,
+                    "semester": 4
+                },
+                {
+                    "code": "BMNPS88400M",
+                    "name": "Intézményi megfigyelés módszertana: haladó",
+                    "prerequisites": [
+                        "(BMNPS70100M)"
+                    ],
+                    "credits": 3,
+                    "semester": 4
+                },
+                {
+                    "code": "BMNPS88600M",
+                    "name": "Szakdolgozati konzultáció",
+                    "prerequisites": [
+                        "BMNPS88100M"
+                    ],
+                    "credits": 6,
+                    "semester": 4
+                },
+                {
+                    "code": "BMNPS90000M",
+                    "name": "Pszichológia MA záróvizsga",
+                    "credits": 0,
+                    "semester": 4
+                },
+                {
+                    "code": "BMNPS18800M",
+                    "name": "Trauma és emlékezeti zavarok",
+                    "prerequisites": [
+                        "(BMNPS06900M)"
+                    ],
+                    "credits": 3,
+                    "semester": 4
+                },
+                {
+                    "code": "BMNPS06500M",
+                    "name": "Pszichoterápiás módszerek gyermekkorban",
+                    "credits": 3,
+                    "semester": 4
+                }
+            ]
+        }
+    ]
+}

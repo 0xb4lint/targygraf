@@ -1,0 +1,288 @@
+{
+    "name": "Pszichológia MA - Társadalom és szervezetpszichológia",
+    "description": "Pszichológia MA - nappali tagozat tanterve - Társadalom- és szervezetpszichológia specializáció",
+    "curriculum_updated_at": "2024-12-01",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "BMNPS07100M",
+                    "name": "Kognitív pszichológiai mesterkurzus",
+                    "credits": 3,
+                    "semester": 1
+                },
+                {
+                    "code": "BMNPS07200M",
+                    "name": "Fejlődéslélektani mesterkurzus",
+                    "credits": 3,
+                    "semester": 1
+                },
+                {
+                    "code": "BMNPS07300M",
+                    "name": "Személyiséglélektani mesterkurzus",
+                    "credits": 3,
+                    "semester": 1
+                },
+                {
+                    "code": "BMNPS00900M",
+                    "name": "Pályaszocializáció, pszichológus etika",
+                    "credits": 2,
+                    "semester": 1
+                },
+                {
+                    "code": "BMNPS07500M",
+                    "name": "Módszertani készségfejlesztés: Többváltozós statisztika elméleti alapjai",
+                    "credits": 3,
+                    "semester": 1
+                },
+                {
+                    "code": "BMNPS07600M",
+                    "name": "Módszertani készségfejlesztés: Többváltozós statisztika, regressziós eljárások",
+                    "credits": 3,
+                    "semester": 1
+                },
+                {
+                    "code": "BMNPS19200M",
+                    "name": "Szervezetpszichológia",
+                    "credits": 3,
+                    "semester": 1
+                },
+                {
+                    "code": "BMNPS08700M",
+                    "name": "Bevezetés a gazdaságpszichológiába",
+                    "credits": 3,
+                    "semester": 1
+                },
+                {
+                    "code": "BMNPS09500M",
+                    "name": "Csoportközi viszonyok",
+                    "credits": 3,
+                    "semester": 1
+                },
+                {
+                    "code": "BMNPS11600M",
+                    "name": "Szervezetfejlesztés",
+                    "credits": 3,
+                    "semester": 1
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "BMNPS07400M",
+                    "name": "Szociálpszichológiai mesterkurzus",
+                    "credits": 3,
+                    "semester": 2
+                },
+                {
+                    "code": "BMNPS07700M",
+                    "name": "Módszertani készségfejlesztés: Többváltozós statisztika, ANOVA és adatredukciós módszerek",
+                    "prerequisites": [
+                        "BMNPS07600M"
+                    ],
+                    "credits": 3,
+                    "semester": 2
+                },
+                {
+                    "code": "BMNPS07800M",
+                    "name": "Kutatásmódszertan",
+                    "credits": 3,
+                    "semester": 2
+                },
+                {
+                    "code": "BMNPS04100M",
+                    "name": "Kommunikációs készségfejlesztés",
+                    "credits": 2,
+                    "semester": 2
+                },
+                {
+                    "code": "BMNPS19100M",
+                    "name": "Bevezetés a történeti és politikai pszichológiába",
+                    "credits": 3,
+                    "semester": 2
+                },
+                {
+                    "code": "BMNPS19300M",
+                    "name": "Vezetés- és döntéspszichológia",
+                    "credits": 3,
+                    "semester": 2
+                },
+                {
+                    "code": "BMNPS19400M",
+                    "name": "Emberi erőforrás gazdálkodás",
+                    "credits": 3,
+                    "semester": 2
+                },
+                {
+                    "code": "BMNPS11500M",
+                    "name": "Tréningmódszerek",
+                    "credits": 3,
+                    "semester": 2
+                },
+                {
+                    "code": "BMNPS19800M",
+                    "name": "Művészetpszichológia",
+                    "credits": 2,
+                    "semester": 2
+                },
+                {
+                    "code": "BMNPS09300M",
+                    "name": "Egészségmagatartás, egészségfejlesztés és egészségkommunikáció",
+                    "credits": 3,
+                    "semester": 2
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "BMNPS70000M",
+                    "name": "Terepgyakorlat",
+                    "prerequisites": [
+                        "BMNPS00900M"
+                    ],
+                    "credits": 5,
+                    "semester": 3
+                },
+                {
+                    "code": "BMNPS88200M",
+                    "name": "Tudományos prezentáció előkészítése",
+                    "prerequisites": [
+                        "BMNPS07800M"
+                    ],
+                    "credits": 3,
+                    "semester": 3
+                },
+                {
+                    "code": "BMNPS88300M",
+                    "name": "Intézményi megfigyelés módszertana: alapozó",
+                    "prerequisites": [
+                        "(BMNPS70000M)"
+                    ],
+                    "credits": 3,
+                    "semester": 3
+                },
+                {
+                    "code": "BMNPS06700M",
+                    "name": "Tartalomelemzési módszerek, narratív technikák",
+                    "credits": 3,
+                    "semester": 3
+                },
+                {
+                    "code": "BMNPS08200M",
+                    "name": "Kultúra, média, család",
+                    "credits": 3,
+                    "semester": 3
+                },
+                {
+                    "code": "BMNPS09200M",
+                    "name": "Stressz és coping",
+                    "credits": 3,
+                    "semester": 3
+                },
+                {
+                    "code": "BMNPS06600M",
+                    "name": "Szociálpszichológia a civil szférában",
+                    "credits": 3,
+                    "semester": 3
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "___OPTIONAL___",
+                    "credits": 6,
+                    "name": "Szabadon választható tárgy"
+                },
+                {
+                    "code": "BMNPS70100M",
+                    "name": "Szakmai gyakorlat",
+                    "prerequisites": [
+                        "BMNPS70000M"
+                    ],
+                    "credits": 5,
+                    "semester": 4
+                },
+                {
+                    "code": "BMNPS88100M",
+                    "name": "Vezetett kutatómunka",
+                    "prerequisites": [
+                        "BMNPS07800M"
+                    ],
+                    "credits": 5,
+                    "semester": 4
+                },
+                {
+                    "code": "BMNPS88400M",
+                    "name": "Intézményi megfigyelés módszertana: haladó",
+                    "prerequisites": [
+                        "(BMNPS70100M)"
+                    ],
+                    "credits": 3,
+                    "semester": 4
+                },
+                {
+                    "code": "BMNPS88600M",
+                    "name": "Szakdolgozati konzultáció",
+                    "prerequisites": [
+                        "BMNPS88100M"
+                    ],
+                    "credits": 6,
+                    "semester": 4
+                },
+                {
+                    "code": "BMNPS90000M",
+                    "name": "Pszichológia MA záróvizsga",
+                    "credits": 0,
+                    "semester": 4
+                },
+                {
+                    "code": "BMNPS19500M",
+                    "name": "Reklámpszichológia",
+                    "credits": 3,
+                    "semester": 4
+                },
+                {
+                    "code": "BMNPS08300M",
+                    "name": "Alkalmazott szociálpszichológia",
+                    "credits": 3,
+                    "semester": 4
+                },
+                {
+                    "code": "BMNPS09400M",
+                    "name": "Nemek és kultúrák",
+                    "credits": 3,
+                    "semester": 4
+                },
+                {
+                    "code": "BMNPS19900M",
+                    "name": "Munkahelyi mentálhigiéné",
+                    "credits": 2,
+                    "semester": 4
+                },
+                {
+                    "code": "BMNPS20000M",
+                    "name": "Szervezeti érzelmek",
+                    "credits": 2,
+                    "semester": 4
+                },
+                {
+                    "code": "BMNPS11700M",
+                    "name": "Kulturális pszichológia",
+                    "credits": 2,
+                    "semester": 4
+                }
+            ]
+        }
+    ]
+}
