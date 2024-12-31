@@ -32,12 +32,17 @@
                     "credits": 0
                 },
                 {
-                    "code": "A1_DIGIT",
-                    "name": "Analízis és Digitális kompetenciák",
+                    "code": "MATEK_A1",
+                    "name": "Matematika A1",
                     "credits": 6,
                     "course_block_references": [
-                        "2024 tantervi különbség"
+                        "Matematika A1"
                     ]
+                },
+                {
+                    "code": "VIAUAA02",
+                    "name": "Digitális kompetenciák (2022-23)",
+                    "credits": 2
                 }
             ]
         },{
@@ -50,7 +55,7 @@
                     "credits": 4,
                     "prerequisites": [
                         "TE11AX21",
-                        "A1_DIGIT"
+                        "MATEK_A1"
                     ]
                 },
                 {
@@ -79,7 +84,7 @@
                     "name": "Matematika A2",
                     "credits": 6,
                     "prerequisites": [
-                        "A1_DIGIT",
+                        "MATEK_A1",
                         "VISZAA07"
                     ]
                 },
@@ -93,7 +98,7 @@
                     "name": "Jelek és rendszerek 1",
                     "credits": 6,
                     "prerequisites": [
-                        "A1_DIGIT"
+                        "MATEK_A1"
                     ]
                 }
             ]
@@ -128,7 +133,8 @@
                     "name": "Kötelezően választható gazdasági-humán tárgy 1",
                     "credits": 2,
                     "course_block_references": [
-                        "Kötelezően választható GTK"
+                        "Kötelezően választható GTK",
+                        "Kötelezően választható VIK (max 1 számít kötválnak)"
                     ]
                 },
                 {
@@ -353,7 +359,8 @@
                     "name": "Kötelezően választható gazdasági-humán tárgy 2",
                     "credits": 2,
                     "course_block_references": [
-                        "Kötelezően választható GTK"
+                        "Kötelezően választható GTK",
+                        "Kötelezően választható VIK (max 1 számít kötválnak)"
                     ]
                 },
                 {
@@ -362,7 +369,7 @@
                     "credits": 2,
                     "course_block_references": [
                         "Kötelezően választható GTK",
-                        "Kötelezően választható VIK"
+                        "Kötelezően választható VIK (max 1 számít kötválnak)"
                     ]
                 },
                 {
@@ -396,7 +403,7 @@
             ]
         },
         {
-            "name": "2024 tantervi különbség",
+            "name": "Matematika A1",
             "row": 1,
             "courses": [
                 {
@@ -413,11 +420,6 @@
                     "code": "TE90AX00", 
                     "name": "Matematika A1 - Analízis (2022-23)",
                     "credits": 6
-                },
-                {
-                    "code": "VIAUAA02",
-                    "name": "Digitális kompetenciák (2022-23)",
-                    "credits": 2
                 }
             ]
         },
@@ -473,7 +475,7 @@
             ]
         },
         {
-            "name": "Kötelezően választható VIK",
+            "name": "Kötelezően választható VIK (max 1 számít kötválnak)",
             "row": 1,
             "courses": [
                 {
