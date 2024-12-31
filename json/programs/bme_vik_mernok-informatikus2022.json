@@ -38,12 +38,17 @@
                     "credits": 0
                 },
                 {
-                    "code": "A1_DIGIT",
+                    "code": "ANAL1",
                     "name": "Analízis és Digitális kompetenciák",
                     "credits": 6,
                     "course_block_references": [
-                        "2024 tantervi különbség"
+                        "Analízis 1"
                     ]
+                },
+                {
+                    "code": "VIAUAA02",
+                    "name": "Digitális kompetenciák (2022-23)",
+                    "credits": 2
                 }
             ]
         },
@@ -99,7 +104,7 @@
                     "name": "Analízis 2 informatikusoknak",
                     "credits": 6,
                     "prerequisites": [
-                        "A1_DIGIT"
+                        "ANAL1"
                     ]
                 }
             ]
@@ -113,7 +118,7 @@
                     "name": "Valószínűségszámítás és statisztika",
                     "credits": 6,
                     "prerequisites": [
-                        "A1_DIGIT"
+                        "ANAL1"
                     ]
                 },
                 {
@@ -211,7 +216,8 @@
                     "name": "Kötelezően választható gazdasági-humán tárgy 1",
                     "credits": 2,
                     "course_block_references": [
-                        "Kötelezően választható GTK"
+                        "Kötelezően választható GTK",
+                        "Kötelezően választható VIK (max 1 számít kötválnak)"
                     ]
                 }
             ]
@@ -233,8 +239,7 @@
                     "name": "Kötelezően választható szakmai tantárgy 1",
                     "credits": 5,
                     "course_block_references": [
-                        "Kötelezően választható szakmai tantárgyak",
-                        "Kötelezően választható szakmai tantárgyak #2"
+                        "Kötelezően választható szakmai tantárgyak"
                     ]
                 },
                 {
@@ -242,8 +247,7 @@
                     "name": "Kötelezően választható szakmai tantárgy 2",
                     "credits": 5,
                     "course_block_references": [
-                        "Kötelezően választható szakmai tantárgyak",
-                        "Kötelezően választható szakmai tantárgyak #2"
+                        "Kötelezően választható szakmai tantárgyak"
                     ]
                 },
                 {
@@ -301,8 +305,7 @@
                     "name": "Kötelezően választható szakmai tantárgy 3",
                     "credits": 5,
                     "course_block_references": [
-                        "Kötelezően választható szakmai tantárgyak",
-                        "Kötelezően választható szakmai tantárgyak #2"
+                        "Kötelezően választható szakmai tantárgyak"
                     ]
                 },
                 {
@@ -310,14 +313,13 @@
                     "name": "Kötelezően választható szakmai tantárgy 4",
                     "credits": 5,
                     "course_block_references": [
-                        "Kötelezően választható szakmai tantárgyak",
-                        "Kötelezően választható szakmai tantárgyak #2"
+                        "Kötelezően választható szakmai tantárgyak"
                     ]
                 },
                 {
                     "code": null,
                     "name": "Specializáció ágazati laboratórium",
-                    "credits": 5,
+                    "credits": 3,
                     "course_block_references": [
                         "Intelligens hálózatok specializáció",
                         "Szoftverfejlesztés specializáció",
@@ -349,7 +351,7 @@
                     "credits": 2,
                     "course_block_references": [
                         "Kötelezően választható GTK",
-                        "Kötelezően választható VIK"
+                        "Kötelezően választható VIK (max 1 számít kötválnak)"
                     ]
                 },
                 {
@@ -357,8 +359,7 @@
                     "name": "Kötelezően választható szakmai tantárgy 5",
                     "credits": 5,
                     "course_block_references": [
-                        "Kötelezően választható szakmai tantárgyak",
-                        "Kötelezően választható szakmai tantárgyak #2"
+                        "Kötelezően választható szakmai tantárgyak"
                     ]
                 },
                 {
@@ -387,7 +388,7 @@
             ]
         },
         {
-            "name": "2024 tantervi különbség",
+            "name": "Analízis 1",
             "row": 1,
             "courses": [
                 {
@@ -404,11 +405,6 @@
                     "code": "TE90AX21", 
                     "name": "Analízis 1 informatikusoknak (2022-23)",
                     "credits": 6
-                },
-                {
-                    "code": "VIAUAA02",
-                    "name": "Digitális kompetenciák (2022-23)",
-                    "credits": 2
                 }
             ]
         },
@@ -464,7 +460,7 @@
             ]
         },
         {
-            "name": "Kötelezően választható VIK",
+            "name": "Kötelezően választható VIK (max 1 számít kötválnak)",
             "row": 1,
             "courses": [
                 {
@@ -507,7 +503,7 @@
                     "code": "VIAUAD02",
                     "name": "Mobil és webes szoftverek",
                     "credits": 5,
-                    "prerequisites": ["VISZAA04","VISZAA08","TE11AX53","VIHIAA03","VIIIAA03","TE90AX57","VISZAA06","TE11AX52","VIETAA00","VIMIAA03","VIEEAA00","A1_DIGIT"]
+                    "prerequisites": ["VISZAA04","VISZAA08","TE11AX53","VIHIAA03","VIIIAA03","TE90AX57","VISZAA06","TE11AX52","VIETAA00","VIMIAA03","VIEEAA00","ANAL1"]
                 },
                 {
                     "code": "VIHIAD00",
@@ -530,13 +526,13 @@
                     "code": "VIIIAD01",
                     "name": "Képfeldolgozás",
                     "credits": 5,
-                    "prerequisites": ["VISZAA04","VISZAA08","TE11AX53","VIHIAA03","VIIIAA03","TE90AX57","VISZAA06","TE11AX52","VIETAA00","VIMIAA03","VIEEAA00","A1_DIGIT"]
+                    "prerequisites": ["VISZAA04","VISZAA08","TE11AX53","VIHIAA03","VIIIAA03","TE90AX57","VISZAA06","TE11AX52","VIETAA00","VIMIAA03","VIEEAA00","ANAL1"]
                 },
                 {
                     "code": "VISZAD01",
                     "name": "Deklaratív programozás",
                     "credits": 5,
-                    "prerequisites": ["VISZAA04","VISZAA08","TE11AX53","VIHIAA03","VIIIAA03","TE90AX57","VISZAA06","TE11AX52","VIETAA00","VIMIAA03","VIEEAA00","A1_DIGIT"]
+                    "prerequisites": ["VISZAA04","VISZAA08","TE11AX53","VIHIAA03","VIIIAA03","TE90AX57","VISZAA06","TE11AX52","VIETAA00","VIMIAA03","VIEEAA00","ANAL1"]
                 },
                 {
                     "code": "VITMAD02",
@@ -545,13 +541,13 @@
                     "prerequisites": [
                         "VISZAB04"
                     ]
-                }
-            ]
-        },
-        {
-            "name": "Kötelezően választható szakmai tantárgyak #2",
-            "row": 1,
-            "courses": [
+                },
+                {
+                    
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
                 {
                     "code": "VIEEAD00",
                     "name": "IT eszközök technológiája",
@@ -570,13 +566,13 @@
                     "code": "VIMIAD03",
                     "name": "Rendszermodellezés",
                     "credits": 5,
-                    "prerequisites": ["VISZAA04","VISZAA08","TE11AX53","VIHIAA03","VIIIAA03","TE90AX57","VISZAA06","TE11AX52","VIETAA00","VIMIAA03","VIEEAA00","A1_DIGIT"]
+                    "prerequisites": ["VISZAA04","VISZAA08","TE11AX53","VIHIAA03","VIIIAA03","TE90AX57","VISZAA06","TE11AX52","VIETAA00","VIMIAA03","VIEEAA00","ANAL1"]
                 },
                 {
                     "code": "VIMIAD04",
                     "name": "Beágyazott információs rendszerek",
                     "credits": 5,
-                    "prerequisites": ["VISZAA04","VISZAA08","TE11AX53","VIHIAA03","VIIIAA03","TE90AX57","VISZAA06","TE11AX52","VIETAA00","VIMIAA03","VIEEAA00","A1_DIGIT"]
+                    "prerequisites": ["VISZAA04","VISZAA08","TE11AX53","VIHIAA03","VIIIAA03","TE90AX57","VISZAA06","TE11AX52","VIETAA00","VIMIAA03","VIEEAA00","ANAL1"]
                 },
                 {
                     "code": "VITMAD01",
