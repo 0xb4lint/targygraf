@@ -1,0 +1,756 @@
+{
+	"name": "Villamosmérnök (2022-től felvetteknek)",
+	"description": "Villamosmérnök BSc szak - nappali tagozat tanterve",
+	"curriculum_updated_at": "2022-09-01",
+	"course_blocks": [{
+            "name": "1. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "TE11AX21",
+                    "name": "Fizika 1",
+                    "credits": 4
+                },
+                {
+                    "code": "VISZAA07",
+                    "name": "A számítástudomány alapjai",
+                    "credits": 5
+                },
+                {
+                    "code": "VIHIAA01",
+                    "name": "A programozás alapjai 1",
+                    "credits": 7
+                },
+                {
+                    "code": "VIIIAA04",
+                    "name": "Digitális technika 1",
+                    "credits": 6
+                },
+                {
+                    "code": "GT70BS1A",
+                    "name": "Testnevelés",
+                    "credits": 0
+                },
+                {
+                    "code": "A1_DIGIT",
+                    "name": "Analízis és Digitális kompetenciák",
+                    "credits": 6,
+                    "course_block_references": [
+                        "2024 tantervi különbség"
+                    ]
+                }
+            ]
+        },{
+            "name": "2. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "TE11AX22",
+                    "name": "Fizika 2",
+                    "credits": 4,
+                    "prerequisites": [
+                        "TE11AX21",
+                        "A1_DIGIT"
+                    ]
+                },
+                {
+                    "code": "VIAUAA01",
+                    "name": "A programozás alapjai 2",
+                    "credits": 6,
+                    "prerequisites": [
+                        "VIHIAA01"
+                    ]
+                },
+                {
+                    "code": "VIIIAA05",
+                    "name": "Digitális technika 2",
+                    "credits": 6,
+                    "prerequisites": [
+                        "VIIIAA04"
+                    ]
+                },
+                {
+                    "code": "GT70BS2A",
+                    "name": "Testnevelés",
+                    "credits": 0
+                },
+                {
+                    "code": "TE90AX59",
+                    "name": "Matematika A2",
+                    "credits": 6,
+                    "prerequisites": [
+                        "A1_DIGIT",
+                        "VISZAA07"
+                    ]
+                },
+                {
+                    "code": "VIETAA01",
+                    "name": "Elektronikai anyagtudomány",
+                    "credits": 2
+                },
+                {
+                    "code": "VIHVAA03",
+                    "name": "Jelek és rendszerek 1",
+                    "credits": 6,
+                    "prerequisites": [
+                        "A1_DIGIT"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "TE90AX09",
+                    "name": "Matematika A3",
+                    "credits": 4,
+                    "prerequisites": [
+                        "TE90AX59"
+                    ]
+                },
+                {
+                    "code": "TE90AX58",
+                    "name": "Matematika A4",
+                    "credits": 4,
+                    "prerequisites": [
+                        "TE90AX59"
+                    ]
+                },
+                {
+                    "code": "VIETAB01",
+                    "name": "Elektronikai technológia",
+                    "credits": 4
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható gazdasági-humán tárgy 1",
+                    "credits": 2,
+                    "course_block_references": [
+                        "Kötelezően választható GTK"
+                    ]
+                },
+                {
+                    "code": "VIHVAB02",
+                    "name": "Jelek és rendszerek 2",
+                    "credits": 6,
+                    "prerequisites": [
+                        "VIHVAA03"
+                    ]
+                },
+                {
+                    "code": "VIEEAB01",
+                    "name": "Mikroelektronika",
+                    "credits": 5
+                },
+                {
+                    "code": "VIVEAB02",
+                    "name": "Elektrotechnika",
+                    "credits": 5,
+                    "prerequisites": [
+                        "VIHVAA03"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "VIIIAB09",
+                    "name": "Informatika 1",
+                    "credits": 5,
+                    "prerequisites": [
+                        "VIIIAA05"
+                    ]
+                },
+                {
+                    "code": "VIHIAB03",
+                    "name": "Elektronika 1",
+                    "credits": 5,
+                    "prerequisites": [
+                        "VIEEAB01",
+                        "(VIHVAB02)"
+                    ]
+                },
+                {
+                    "code": "VIMIAB02",
+                    "name": "Méréstechnika",
+                    "credits": 6,
+                    "prerequisites": [
+                        "(VIHVAB02)"
+                    ]
+                },
+                {
+                    "code": "VIIIAB10",
+                    "name": "Szabályozástechnika",
+                    "credits": 5,
+                    "prerequisites": [
+                        "(VIHVAB02)"
+                    ]
+                },
+                {
+                    "code": "VITMAB05",
+                    "name": "Infokommunikáció",
+                    "credits": 6,
+                    "prerequisites": [
+                        "(VIHVAB02)"
+                    ]
+                },
+                {
+                    "code": "VIVEAB03",
+                    "name": "Villamos energetika",
+                    "credits": 4,
+                    "prerequisites": [
+                        "(VIVEAB02)"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "5. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "VIAUAC10",
+                    "name": "Informatika 2",
+                    "credits": 5,
+                    "prerequisites": [
+                        "VIAUAA01"
+                    ]
+                },
+                {
+                    "code": "VIAUAC11",
+                    "name": "Elektronika 2",
+                    "credits": 5,
+                    "prerequisites": [
+                        "(VIMIAB02)",
+                        "VIHIAB03"
+                    ]
+                },
+                {
+                    "code": "VIMIAC14",
+                    "name": "Laboratórium 1",
+                    "credits": 5,
+                    "prerequisites": [
+                        "VIMIAB02",
+                        "(VIHIAB03)"
+                    ]
+                },
+                {
+                    "code": "FOTARGY",
+                    "name": "Specializáció ágazati főtantárgy",
+                    "credits": 5,
+                    "course_block_references": [
+                        "Beágyazott és irányító rendszerek specializáció",
+                        "Intelligens kommunikáció specializáció",
+                        "Mikroelektronikai hardvertervezés és integráció specializáció",
+                        "Fenntartható villamos energetika specializáció"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Specializáció tantárgy 2",
+                    "credits": 5,
+                    "course_block_references": [
+                        "Beágyazott és irányító rendszerek specializáció",
+                        "Intelligens kommunikáció specializáció",
+                        "Mikroelektronikai hardvertervezés és integráció specializáció",
+                        "Fenntartható villamos energetika specializáció"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Specializáció tantárgy 3",
+                    "credits": 5,
+                    "course_block_references": [
+                        "Beágyazott és irányító rendszerek specializáció",
+                        "Intelligens kommunikáció specializáció",
+                        "Mikroelektronikai hardvertervezés és integráció specializáció",
+                        "Fenntartható villamos energetika specializáció"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "6. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "GT30A430",
+                    "name": "Mikro- és makroökonomia B",
+                    "credits": 3
+                },
+                {
+                    "code": "GT55A405",
+                    "name": "Jogi alapismeretek",
+                    "credits": 3
+                },
+                {
+                    "code": "VIHVAC07",
+                    "name": "Elektromágneses terek alapjai",
+                    "credits": 5,
+                    "prerequisites": [
+                        "(TE90AX09)",
+                        "TE11AX22"
+                    ]
+                },
+                {
+                    "code": "VIMIAC15",
+                    "name": "Laboratórium 2",
+                    "credits": 5,
+                    "prerequisites": [
+                        "VIMIAC14"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Specializáció ágazati laboratórium",
+                    "credits": 5,
+                    "course_block_references": [
+                        "Beágyazott és irányító rendszerek specializáció",
+                        "Intelligens kommunikáció specializáció",
+                        "Mikroelektronikai hardvertervezés és integráció specializáció",
+                        "Fenntartható villamos energetika specializáció"
+                    ],
+                    "prerequisites": [
+                        "(FOTARGY)"
+                    ]
+                },
+                {
+                    "code": "ONLAB",
+                    "name": "Önálló laboratórium",
+                    "credits": 5,
+                    "prerequisites": [
+                        "FOTARGY"
+                    ]
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható tantárgy 1",
+                    "credits": 2
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható tantárgy 2",
+                    "credits": 2
+                }                
+            ]
+        },
+        {
+            "name": "7. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "GT20A001",
+                    "name": "Menedzsment és vállalkozásgazdaságtan",
+                    "credits": 4
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható gazdasági-humán tárgy 2",
+                    "credits": 2,
+                    "course_block_references": [
+                        "Kötelezően választható GTK"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható gazdasági-humán tárgy 3",
+                    "credits": 2,
+                    "course_block_references": [
+                        "Kötelezően választható GTK",
+                        "Kötelezően választható VIK"
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "Szakdolgozat-készítés",
+                    "credits": 15,
+                    "prerequisites": [
+                        "ONLAB"
+                    ]
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható tantárgy 3",
+                    "credits": 2
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható tantárgy 4",
+                    "credits": 2
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható tantárgy 5",
+                    "credits": 2
+                },
+                {
+                    "code": "",
+                    "name": "Szakmai gyakorlat",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "2024 tantervi különbség",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "TEMIBSVMAT1-00",
+                    "name": "Matematika A1 - Analízis (2024-től)",
+                    "credits": 8
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "TE90AX00", 
+                    "name": "Matematika A1 - Analízis (2022-23)",
+                    "credits": 6
+                },
+                {
+                    "code": "VIAUAA02",
+                    "name": "Digitális kompetenciák (2022-23)",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választható GTK",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "GT35A001",
+                    "name": "Pénzügyek",
+                    "credits": 2
+                },
+                {
+                    "code": "GT20V100",
+                    "name": "Innovatív vállalkozások indítása és működtetése",
+                    "credits": 2
+                },
+                {
+                    "code": "GT35A003",
+                    "name": "Gazdaságpolitika",
+                    "credits": 2
+                },
+                {
+                    "code": "GT42A001",
+                    "name": "Környezetgazdaságtan",
+                    "credits": 2
+                },
+                {
+                    "code": "GT43A001",
+                    "name": "Kommunikáció",
+                    "credits": 2
+                },
+                {
+                    "code": "GT35A002",
+                    "name": "Számvitel",
+                    "credits": 2
+                },
+                {
+                    "code": "GT20A002",
+                    "name": "Marketing",
+                    "credits": 2
+                },
+                {
+                    "code": "GT52A001",
+                    "name": "Ergonómia",
+                    "credits": 2
+                },
+                {
+                    "code": "GT43A002",
+                    "name": "Szociológia",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választható VIK",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VITMAK47",
+                    "name": "Mérnöki menedzsment módszerek",
+                    "credits": 2
+                },
+                {
+                    "code": "VIETAK49",
+                    "name": "Adatvédelem és információszabadság",
+                    "credits": 2
+                },
+                {
+                    "code": "VIVEAK48",
+                    "name": "Mérnöki problémamegoldás",
+                    "credits": 2
+                },
+                {
+                    "code": "VITMAK48",
+                    "name": "Érzelmek logikája",
+                    "credits": 2
+                },
+                {
+                    "code": "VITMAK49",
+                    "name": "Digitális életmód",
+                    "credits": 2
+                },
+                {
+                    "code": "VITMAK50",
+                    "name": "Pénzügyi technológiák (FinTech) alapjai",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Beágyazott és irányító rendszerek specializáció",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VIAUAC12",
+                    "name": "Mikrokontroller alapú rendszerek",
+                    "credits": 5
+                },
+                {
+                    "code": "VIAUAC13",
+                    "name": "Mikrokontroller laboratórium",
+                    "credits": 5
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "VIIIAC06",
+                    "name": "Robotizált gyártórendszerek",
+                    "credits": 5
+                },
+                {
+                    "code": "VIIIAC07",
+                    "name": "Robotizált gyártórendszerek laboratórium",
+                    "credits": 5
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "VIMIAC17",
+                    "name": "Beágyazottszoftver-fejlesztés",
+                    "credits": 5
+                },
+                {
+                    "code": "VIMIAC18",
+                    "name": "Beágyazottszoftver-fejlesztés laboratórium",
+                    "credits": 5
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "VIAUAC14",
+                    "name": "Beágyazott operációs rendszerek és kliens alkalmazások",
+                    "credits": 5
+                },
+                {
+                    "code": "VIIIAC08",
+                    "name": "Folyamatszabályozás",
+                    "credits": 5
+                },
+                {
+                    "code": "VIMIAC19",
+                    "name": "Beágyazott Linux és platformjai",
+                    "credits": 5
+                }
+            ]
+        },
+        {
+            "name": "Intelligens kommunikáció specializáció",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VIHIAC08",
+                    "name": "Internetes multimédia rendszerek",
+                    "credits": 5
+                },
+                {
+                    "code": "VIHIAC09",
+                    "name": "Hálózati multimédia megoldások a gyakorlatban laboratórium",
+                    "credits": 5
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "VIHVAC08",
+                    "name": "Nagyfrekvenciás rendszerek",
+                    "credits": 5
+                },
+                {
+                    "code": "VIHVAC09",
+                    "name": "Nagyfrekvenciás rendszerek és alkalmazások laboratórium",
+                    "credits": 5
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "VITMAC09",
+                    "name": "Hálózati technológiák és alkalmazások",
+                    "credits": 5
+                },
+                {
+                    "code": "VITMAC10",
+                    "name": "Infokommunikációs technológiák és alkalmazások laboratórium",
+                    "credits": 5
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "VIHIAC10",
+                    "name": "Mobil kommunikációs hálózatok és alkalmazásaik",
+                    "credits": 5
+                },
+                {
+                    "code": "VIHVAC10",
+                    "name": "Űrtechnológia",
+                    "credits": 5
+                },
+                {
+                    "code": "VITMAC11",
+                    "name": "IoT kommunikáció",
+                    "credits": 5
+                }
+            ]
+        },
+        {
+            "name": "Mikroelektronikai hardvertervezés és integráció specializáció",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VIEEAC04",
+                    "name": "Alkalmazott félvezetőtechnológia",
+                    "credits": 5
+                },
+                {
+                    "code": "VIEEAC05",
+                    "name": "Mikroelektronikai hardvertervezés laboratórium",
+                    "credits": 5
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "VIETAC10",
+                    "name": "Áramkör- és készüléktervezés",
+                    "credits": 5
+                },
+                {
+                    "code": "VIETAC11",
+                    "name": "Elektronikai termékek prototipizálása laboratórium",
+                    "credits": 5
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "VIEEAC06",
+                    "name": "Mikroelektronikai áramkörtervezés",
+                    "credits": 5
+                },
+                {
+                    "code": "VIETAC12",
+                    "name": "Elektronikai gyártás és minőségbiztosítás",
+                    "credits": 5
+                }
+            ]
+        },
+        {
+            "name": "Fenntartható villamos energetika specializáció",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VIVEAC11",
+                    "name": "Villamos berendezések és szigetelések",
+                    "credits": 5
+                },
+                {
+                    "code": "VIVEAC14",
+                    "name": "Innovatív elektrotechnika laboratórium",
+                    "credits": 5
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "VIVEAC10",
+                    "name": "Villamos gépek és hajtások",
+                    "credits": 5
+                },
+                {
+                    "code": "VIVEAC13",
+                    "name": "Villamos gépek és hajtások laboratórium",
+                    "credits": 5
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "VIVEAC09",
+                    "name": "Intelligens hálózatüzemeltetés eszközei és módszerei",
+                    "credits": 5
+                },
+                {
+                    "code": "VIVEAC12",
+                    "name": "Smart grid laboratórium",
+                    "credits": 5
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "VIVEAC17",
+                    "name": "Innovatív technológiák az elektrotechnikában",
+                    "credits": 5
+                },
+                {
+                    "code": "VIVEAC16",
+                    "name": "Villamos hajtások szabályozása",
+                    "credits": 5
+                },
+                {
+                    "code": "VIVEAC15",
+                    "name": "Smart villamos hálózatok felépítése",
+                    "credits": 5
+                }
+            ]
+        }
+    ]
+}
