@@ -1,16 +1,16 @@
 {
-    "name": "Számítógépes és kognitív idegtudomány",
-    "description": "Számítógépes és kognitív idegtudomány MSc mintatanterve 2025 előtt kezdett hallgatóknak",
-    "curriculum_updated_at": "2024-01-01",
+    "name": "Számítógépes és kognitív idegtudomány (2025-től felvetteknek)",
+    "description": "Számítógépes és kognitív idegtudomány MSc mintatanterve 2025-től kezdett hallgatóknak",
+    "curriculum_updated_at": "2025-08-21",
         "course_blocks": [
             {
                 "name": "1. félév",
                 "row": 0,
                 "courses": [
                     {
-                        "code": "BMETE47MC22",
+                        "code": "BMETEKTMsCNBI1-00",
                         "name": "Neurobiológia 1 - Alapok és az észlelés neurobiológiája",
-                        "credits": 5
+                        "credits": 4
                     },
                     {
                         "code": "BMETEAGMsCAMAT-00",
@@ -23,24 +23,29 @@
                         "credits": 3
                     },
                     {
-                        "code": "BMETE47MC38",
+                        "code": "BMETEKTMsCSTKT-00",
                         "name": "Statisztika és kísérlettervezés",
-                        "credits": 5
+                        "credits": 4
                     },
                     {
-                        "code": "BMETEKTMsCBKTU-00",
+                        "code": "BMETEKTMsCBKTD-00",
                         "name": "Bevezetés a Kognitív Tudományba",
-                        "credits": 5
+                        "credits": 4
                     },
                     {
-                        "code": "BMETE47MC25",
+                        "code": "BMETEKTMsCBKPS-00",
                         "name": "Bevezetés a Kísérleti Pszichológiába",
-                        "credits": 3
+                        "credits": 2
                     },
                     {
-                        "code": "BMETEKTMsCEGNY-00",
+                        "code": "BMETEKTMsCEGNF-00",
                         "name": "Emberi és gépi nyelvfeldolgozás",
-                        "credits": 3
+                        "credits": 2
+                    },
+                    {
+                        "code": "BMETEKTMsCPTP1-00",
+                        "name": "Tudományos és prezentációs készségek fejlesztése I.",
+                        "credits": 5
                     },
                     {
                         "code": "___OPTIONAL___",
@@ -54,22 +59,22 @@
                 "row": 0,
                 "courses": [
                     {
-                        "code": "BMETE47MC23",
+                        "code": "BMETEKTMsCNBI2-00",
                         "name": "Neurobiológia 2 - Szenzoros és motors feldolgozás",
-                        "credits": 3,
-                        "prerequisites": ["BMETE47MC22"]
+                        "credits": 2,
+                        "prerequisites": ["BMETEKTMsCNBI1-00"]
                     },
                     {
-                        "code": "BMETE47MC37",
+                        "code": "BMETEKTMsCNPSZ-00",
                         "name": "Neuropszichológia",
-                        "credits": 3,
-                        "prerequisites": ["BMETE47MC22"]
+                        "credits": 2,
+                        "prerequisites": ["BMETEKTMsCNBI1-00"]
                     },
                     {
-                        "code": "BMETE47MC07",
+                        "code": "BMETEKTMsCEPSZ-00 ",
                         "name": "Evolúciós Pszichológia",
-                        "credits": 3,
-                        "prerequisites": ["BMETEKTMsCBKTU-00"]
+                        "credits": 2,
+                        "prerequisites": ["BMETEKTMsCBKTD-00"]
                     },
                     {
                         "code": null,
@@ -88,16 +93,21 @@
                         ]
                     },
                     {
-                        "code": "BMETE91MC26",
+                        "code": "BMETEAGMsCBAYM-00 ",
                         "name": "Bayesiánus modellezés",
-                        "credits": 3,
+                        "credits": 2,
                         "prerequisites": []
                     },
                     {
                         "code": "BMETEKTMsCKPLG-00",
                         "name": "Kognitív pszichológia laboratóriumi gyakorlat",
                         "credits": 9,
-                        "prerequisites": ["BMETE47MC25"]
+                        "prerequisites": ["BMETEKTMsCBKPS-00"]
+                    },
+                    {
+                        "code": "BMETEKTMsCPTP2-00",
+                        "name": "Tudományos és prezentációs készségek fejlesztése II.",
+                        "credits": 4
                     },
                     {
                         "code": "___OPTIONAL___",
@@ -160,7 +170,7 @@
                         ]
                     },
                     {
-                        "code": "BMETE47MC35",
+                        "code": "BMETEKTMsCDMEK-00",
                         "name": "Diplomamunka előkészítés",
                         "credits": 12,
                         "prerequisites": []
@@ -173,13 +183,13 @@
                 "row": 0,
                 "courses": [
                     {
-                        "code": "BMETE47MC20",
+                        "code": "BMETEKTMsCPKUT-00",
                         "name": "Kutatószeminárium",
                         "credits": 10,
                         "prerequisites": []
                     },
                     {
-                        "code": "BMETE47MC21",
+                        "code": "BMETEKTMsCDMKE-00",
                         "name": "Diplomamunka készítés",
                         "credits": 20,
                         "prerequisites": []
@@ -191,10 +201,9 @@
                 "row": 1,
                 "courses": [
                     {
-                        "code": "BMETE47MC26",
-                        "name": "Megismerés és Érzelem",
-                        "credits": 3,
-                        "prerequisites": ["BMETEKTMsCBKTU-00"]
+                        "code": "BMETEKTMsCSTRK-00",
+                        "name": "Stressz és kogníció",
+                        "credits": 3
                     },
                     {
                         "code": "BMEGT41M410",
@@ -207,26 +216,24 @@
                         "credits": 3
                     },
                     {
-                        "code": "BMETE47MC41",
+                        "code": "BMETEKTMsCBRPR-00",
                         "name": "Bevezetés az R programozásba",
                         "credits": 3
                     },
                     {
-                        "code": "BMETE47MC39",
+                        "code": "BMETEKTMsCSTIR-00",
                         "name": "Statisztikai tanulás az idegrendszerben",
                         "credits": 3
                     },
                     {
-                        "code": "BMETE47MC46",
+                        "code": "BMETEKTMSCAKIT-00 ",
                         "name": "Alvás a kognitív idegtudományban",
-                        "credits": 3,
-                        "prerequisites": ["BMETEKTMsCBKTU-00"]
+                        "credits": 3
                     },
                     {
                         "code": "BMETE47MC45",
                         "name": "Alkalmazott kognitív pszichológia",
-                        "credits": 3,
-                        "prerequisites": ["BMETEKTMsCBKTU-00"]
+                        "credits": 3
                     }
                 ]
             },
@@ -234,6 +241,12 @@
                 "name": "Kötelezően választható Differenciált szakmai ismeretek",
                 "row": 1,
                 "courses": [
+                    {
+                        "code": "BMETE47MC26",
+                        "name": "Megismerés és Érzelem",
+                        "credits": 3,
+                        "prerequisites": ["BMETEKTMsCBKTD-00"]
+                    },
                     {
                         "code": "BMEGT43M410",
                         "name": "Bevezetés a Kultúrakutatásba",
@@ -243,37 +256,36 @@
                         "code": "BMETE47MC28",
                         "name": "Társas megismerés",
                         "credits": 3,
-                        "prerequisites": ["BMETEKTMsCBKTU-00"]
+                        "prerequisites": ["BMETEKTMsCBKTD-00"]
                     },
                     {
-                        "code": "BMETE47MC42",
-                        "name": "Az agykutatás története",
-                        "credits": 3,
-                        "prerequisites": ["BMETEKTMsCBKTU-00"]
+                        "code": "BMETEKTMsCGTVA-00",
+                        "name": "Gépi tanulás viselkedéses adatokon",
+                        "credits": 3
                     },
                     {
                         "code": "BMETE47MC24",
                         "name": "Neurobiológia 3 - Magasabb rendű kognitív folyamatok",
                         "credits": 3,
-                        "prerequisites": ["BMETE47MC23"]
+                        "prerequisites": ["BMETEKTMsCNBI2-00"]
                     },
                     {
                         "code": "BMETE47MC30",
                         "name": "Kognitív Neuropszichiátria",
                         "credits": 3,
-                        "prerequisites": ["BMETE47MC23"]
+                        "prerequisites": ["BMETEKTMsCNBI2-00"]
                     },
                     {
                         "code": "BMETE47MC29",
                         "name": "Emlékezet és a tanulás pszichológiája",
                         "credits": 3,
-                        "prerequisites": ["BMETE47MC25"]
+                        "prerequisites": ["BMETEKTMsCBKPS-00"]
                     },
                     {
                         "code": "BMETE47MC34",
                         "name": "(N)agy bajban",
                         "credits": 3,
-                        "prerequisites": ["BMETE47MC22"]
+                        "prerequisites": ["BMETEKTMsCNBI1-00"]
                     },
                     {
                         "code": "BMEVIMIAV24",
@@ -294,7 +306,7 @@
                         "code": "BMETEAOMsCBJKM-00",
                         "name": "Biológiai jel- és képfeldolgozás Matlabbal",
                         "credits": 3,
-                        "prerequisites": ["BMETEAGMsCAMAT-00", "BMETEAGMsCINFO-00", "BMETE47MC38"]
+                        "prerequisites": ["BMETEAGMsCAMAT-00", "BMETEAGMsCINFO-00", "BMETEKTMsCSTKT-00"]
                     },
                     {
                         "code": "BMETE47MC44",
@@ -305,7 +317,7 @@
                         "code": "BMETEKTMsCEMKF-00",
                         "name": "Egyéni módszertani készségfejlesztés",
                         "credits": 3,
-                        "prerequisites": ["BMETEAGMsCAMAT-00", "BMETEAGMsCINFO-00", "BMETE47MC38"]
+                        "prerequisites": ["BMETEAGMsCAMAT-00", "BMETEAGMsCINFO-00", "BMETEKTMsCSTKT-00"]
                     },
                     {
                         "code": "BMETEAGMsCFMAT-00",
@@ -321,19 +333,13 @@
                         "code": "BMETE47MC31",
                         "name": "Nyelvi olvasószeminárium 1",
                         "credits": 3,
-                        "prerequisites": ["BMETEKTMsCEGNY-00"]
+                        "prerequisites": ["BMETEKTMsCEGNF-00"]
                     },
                     {
                         "code": "BMETE47MC32",
                         "name": "Nyelvi olvasószeminárium 2",
                         "credits": 3,
-                        "prerequisites": ["BMETEKTMsCEGNY-00"]
-                    },
-                    {
-                        "code": "BMETE47MC33",
-                        "name": "Nyelvi olvasószeminárium 3",
-                        "credits": 3,
-                        "prerequisites": ["BMETEKTMsCEGNY-00"]
+                        "prerequisites": ["BMETEKTMsCEGNF-00"]
                     },
                     {
                         "code": "BMEVITMJV62",
