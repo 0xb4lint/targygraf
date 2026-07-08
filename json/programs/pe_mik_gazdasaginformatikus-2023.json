@@ -1,0 +1,586 @@
+{
+    "name": "Gazdaságinformatikus",
+    "description": "Gazdaságinformatikus BSc szak (Business Informatics BSc) tanterve.",
+    "curriculum_updated_at": "2025-06-17",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "MIMAB144IN",
+                    "name": "Az informatika logikai és algebrai alapjai",
+                    "credits": 4
+                },
+                {
+                    "code": "MIMAB144M",
+                    "name": "Közgazdaságtan matematikai alapjai",
+                    "credits": 6
+                },
+                {
+                    "code": "MIMAB122MA",
+                    "name": "Matematikai alapismeretek",
+                    "credits": 2
+                },
+                {
+                    "code": "MISAB146AP",
+                    "name": "A programozás alapjai",
+                    "credits": 6
+                },
+                {
+                    "code": "MISAB156GF",
+                    "name": "Programozás I.",
+                    "credits": 6
+                },
+                {
+                    "code": "GTKGB114Ö",
+                    "name": "Makroökonómia",
+                    "credits": 6
+                },
+                {
+                    "code": "TKDMI120MK",
+                    "name": "Tanulásmódszertan",
+                    "credits": 0
+                },
+                {
+                    "code": "NULL",
+                    "name": "Testnevelés I.",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "MIMAB244DI",
+                    "name": "Diszkrét matematika",
+                    "credits": 4,
+                    "prerequisites": [
+                        "MIMAB144IN"
+                    ]
+                },
+                {
+                    "code": "MIMAB344LI",
+                    "name": "Lineáris algebra",
+                    "credits": 4
+                },
+                {
+                    "code": "MISAB244DF",
+                    "name": "Adatstruktúrák és algoritmusok I.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "MISAB146AP"
+                    ]
+                },
+                {
+                    "code": "MISAB256GF",
+                    "name": "Programozás II.",
+                    "credits": 6,
+                    "prerequisites": [
+                        "MISAB156GF",
+                        "MISAB146AP"
+                    ]
+                },
+                {
+                    "code": "MIVIB256GB",
+                    "name": "Web programozás",
+                    "credits": 6
+                },
+                {
+                    "code": "GTGAB144A",
+                    "name": "Vállalati gazdaságtan",
+                    "credits": 6
+                },
+                {
+                    "code": "NULL",
+                    "name": "Testnevelés II.",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "MIMAB346VF",
+                    "name": "Valószínűségszámítás és matematikai statisztika",
+                    "credits": 6,
+                    "prerequisites": [
+                        "MIMAB144M"
+                    ]
+                },
+                {
+                    "code": "MISAB156AV",
+                    "name": "Adatbázis-kezelő rendszerek I.",
+                    "credits": 6,
+                    "prerequisites": [
+                        "MIMAB144IN"
+                    ]
+                },
+                {
+                    "code": "MIMAB133CF",
+                    "name": "C# programozás",
+                    "credits": 3,
+                    "prerequisites": [
+                        "MISAB256GF"
+                    ]
+                },
+                {
+                    "code": "MISAB154GB",
+                    "name": "Haladó programozási technikák I.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "MISAB256GF"
+                    ]
+                },
+                {
+                    "code": "MIVIB113IN",
+                    "name": "Információs technológia",
+                    "credits": 3
+                },
+                {
+                    "code": "GTVEM1221",
+                    "name": "Integrált információs rendszerek",
+                    "credits": 3
+                },
+                {
+                    "code": "MISAB144SV",
+                    "name": "Szoftvertechnológia",
+                    "credits": 4,
+                    "prerequisites": [
+                        "MISAB256GF"
+                    ]
+                },
+                {
+                    "code": "GTPTB112P",
+                    "name": "Pénzügytan (makrogazdasági pénzügyek)",
+                    "credits": 3
+                },
+                {
+                    "code": "MKLE12X0A",
+                    "name": "Angol nyelvi kollokvium",
+                    "credits": 0
+                },
+                {
+                    "code": "NULL",
+                    "name": "Testnevelés III.",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "MISAB223RF",
+                    "name": "A rendszerfejlesztés haladó módszerei",
+                    "credits": 3,
+                    "prerequisites": [
+                        "MISAB154GB",
+                        "MISAB156AV"
+                    ]
+                },
+                {
+                    "code": "MIVIB233FA",
+                    "name": "Adatbázis-kezelő rendszerek II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "MISAB156AV"
+                    ]
+                },
+                {
+                    "code": "MISAB254MV",
+                    "name": "Mesterséges intelligencia alapjai",
+                    "credits": 4,
+                    "prerequisites": [
+                        "MISAB244DF"
+                    ]
+                },
+                {
+                    "code": "MISAB244OK",
+                    "name": "Operációs rendszerek",
+                    "credits": 4,
+                    "prerequisites": [
+                        "MISAB146AP",
+                        "MIVIB113IN"
+                    ]
+                },
+                {
+                    "code": "MIVIB256SF",
+                    "name": "Számítógép-hálózatok I.",
+                    "credits": 6,
+                    "prerequisites": [
+                        "MKLE12X0A",
+                        "MIVIB113IN"
+                    ]
+                },
+                {
+                    "code": "GTVEB344P",
+                    "name": "Projekt menedzsment",
+                    "credits": 6,
+                    "prerequisites": [
+                        "GTGAB144A"
+                    ]
+                },
+                {
+                    "code": "GTSPB246GI",
+                    "name": "Számvitel",
+                    "credits": 6
+                },
+                {
+                    "code": "MKLE22X0A",
+                    "name": "Angol nyelvi záróvizsga",
+                    "credits": 0
+                },
+                {
+                    "code": "NULL",
+                    "name": "Testnevelés IV.",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "5. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "MIMAB123SF",
+                    "name": "Statisztika",
+                    "credits": 3,
+                    "prerequisites": [
+                        "MIMAB346VF"
+                    ]
+                },
+                {
+                    "code": "MISAB153DS",
+                    "name": "A Data Science alapjai",
+                    "credits": 3,
+                    "prerequisites": [
+                        "MISAB156AV",
+                        "MIMAB344LI"
+                    ]
+                },
+                {
+                    "code": "MIVIB133TF",
+                    "name": "Adattárház technológiák",
+                    "credits": 3,
+                    "prerequisites": [
+                        "MISAB156AV"
+                    ]
+                },
+                {
+                    "code": "MIINB336PL",
+                    "name": "Projekt labor",
+                    "credits": 6,
+                    "prerequisites": [
+                        "MISAB154GB",
+                        "MISAB156AV"
+                    ]
+                },
+                {
+                    "code": "GTSCB222S",
+                    "name": "Számvitelszervezés",
+                    "credits": 3,
+                    "prerequisites": [
+                        "GTSPB246GI"
+                    ]
+                },
+                {
+                    "code": "GTGAB244V",
+                    "name": "Vállalkozói ismeretek",
+                    "credits": 6,
+                    "prerequisites": [
+                        "GTGAB144A"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható szakmai tárgy",
+                    "credits": 4,
+                    "course_block_references": [
+                        "Kötelezően választható szakmai tárgyak (GI BSc)",
+                        "Kötelezően választható szakmai tárgyak (GI BSc) #2",
+                        "Kötelezően választható szakmai tárgyak (GI BSc) #3",
+                        "Kötelezően választható szakmai tárgyak (GI BSc) #4"
+                    ]
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható tárgy",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "6. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "MIMAB244FO",
+                    "name": "Operációkutatás",
+                    "credits": 4,
+                    "prerequisites": [
+                        "MIMAB344LI"
+                    ]
+                },
+                {
+                    "code": "MISAB254AB",
+                    "name": "Adatbányászat",
+                    "credits": 4,
+                    "prerequisites": [
+                        "MISAB153DS"
+                    ]
+                },
+                {
+                    "code": "MIVIB213MA",
+                    "name": "Minőségbiztosítás és audit",
+                    "credits": 3
+                },
+                {
+                    "code": "MIGIB23XT",
+                    "name": "Tervezés I.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "MISAB156AV",
+                        "MISAB144SV"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható szakmai tárgy",
+                    "credits": 9,
+                    "course_block_references": [
+                        "Kötelezően választható szakmai tárgyak (GI BSc)",
+                        "Kötelezően választható szakmai tárgyak (GI BSc) #2",
+                        "Kötelezően választható szakmai tárgyak (GI BSc) #3",
+                        "Kötelezően választható szakmai tárgyak (GI BSc) #4"
+                    ]
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható tárgy",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "7. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "MISAB133RA",
+                    "name": "Riportgenerálás és adatvizualizáció",
+                    "credits": 3,
+                    "prerequisites": [
+                        "MISAB156AV",
+                        "MISAB153DS"
+                    ]
+                },
+                {
+                    "code": "MIGIB13XT",
+                    "name": "Tervezés II.",
+                    "credits": 10,
+                    "prerequisites": [
+                        "MIGIB23XT"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható szakmai tárgy",
+                    "credits": 10,
+                    "course_block_references": [
+                        "Kötelezően választható szakmai tárgyak (GI BSc)",
+                        "Kötelezően választható szakmai tárgyak (GI BSc) #2",
+                        "Kötelezően választható szakmai tárgyak (GI BSc) #3",
+                        "Kötelezően választható szakmai tárgyak (GI BSc) #4"
+                    ]
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható tárgy",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választható szakmai tárgyak (GI BSc)",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "MIMAB353MP",
+                    "name": "Matematikai programcsomagok",
+                    "credits": 3,
+                    "prerequisites": ["MIMAB144M", "MIMAB344LI"]
+                },
+                {
+                    "code": "MISAB244AV",
+                    "name": "A digitális számítás elmélete",
+                    "credits": 4,
+                    "prerequisites": ["MIMAB144IN"]
+                },
+                {
+                    "code": "MIVIB356MA",
+                    "name": "A multimédia alapjai",
+                    "credits": 6,
+                    "prerequisites": ["MISAB156GF", "MIVIB113IN"]
+                },
+                {
+                    "code": "MISAB313II",
+                    "name": "Az informatika ipari alkalmazásai",
+                    "credits": 3,
+                    "prerequisites": ["MISAB256GF"]
+                },
+                {
+                    "code": "MISAB323MN",
+                    "name": "Az UML modellezési nyelv",
+                    "credits": 3,
+                    "prerequisites": ["MISAB144SV"]
+                },
+                {
+                    "code": "MISAB353AP",
+                    "name": "Adatelemzés Pythonban",
+                    "credits": 3,
+                    "prerequisites": ["MISAB156GF", "MISAB156AV"]
+                },
+                {
+                    "code": "MIVIB153D",
+                    "name": "Döntéstámogatás",
+                    "credits": 4,
+                    "prerequisites": ["MIMAB144IN"]
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választható szakmai tárgyak (GI BSc) #2",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "MIVIB256CF",
+                    "name": "Informatikai biztonság",
+                    "credits": 6,
+                    "prerequisites": ["MIVIB256SF", "MISAB244OK"]
+                },
+                {
+                    "code": "MIVIB146JF",
+                    "name": "Java programozás I.",
+                    "credits": 6,
+                    "prerequisites": ["MISAB256GF"]
+                },
+                {
+                    "code": "MIVIB336JP",
+                    "name": "Java programozás II.",
+                    "credits": 6,
+                    "prerequisites": ["MIVIB146JF"]
+                },
+                {
+                    "code": "MIVIB343FB",
+                    "name": "Folyamatbányászat",
+                    "credits": 3,
+                    "prerequisites": ["MIMAB144IN"]
+                },
+                {
+                    "code": "MIAIB256MO",
+                    "name": "Mobil programozás",
+                    "credits": 6,
+                    "prerequisites": ["MISAB256GF"]
+                },
+                {
+                    "code": "MISAB333NE",
+                    "name": ".NET alapú webfejlesztés",
+                    "credits": 3,
+                    "prerequisites": ["MIVIB256GB", "MIMAB133CF"]
+                },
+                {
+                    "code": "MIVIB213SF",
+                    "name": "Számítógép-architektúrák I.",
+                    "credits": 3,
+                    "prerequisites": ["MIVIB113IN"]
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választható szakmai tárgyak (GI BSc) #3",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "MIVIB256SH",
+                    "name": "Számítógép-hálózatok II.",
+                    "credits": 6,
+                    "prerequisites": ["MIVIB256SF"]
+                },
+                {
+                    "code": "MISAB154RF",
+                    "name": "Rendszertesztelés",
+                    "credits": 4,
+                    "prerequisites": ["MISAB144SV"]
+                },
+                {
+                    "code": "MILMB212A",
+                    "name": "Anyagáramlási rendszerek",
+                    "credits": 3,
+                    "prerequisites": ["GTVEB244L"]
+                },
+                {
+                    "code": "GTMIB212M",
+                    "name": "Bevezetés a marketingbe",
+                    "credits": 3
+                },
+                {
+                    "code": "GTMIB222M",
+                    "name": "Bevezetés a marketingbe gyakorlat",
+                    "credits": 3
+                },
+                {
+                    "code": "GTVEB112B",
+                    "name": "Bürotika és irodakultúra",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választható szakmai tárgyak (GI BSc) #4",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "GTNGB123GT",
+                    "name": "Globalizáció, világgazdasági kihívások",
+                    "credits": 3
+                },
+                {
+                    "code": "MILMB343E",
+                    "name": "Ellátási lánc menedzsment alapjai",
+                    "credits": 3
+                },
+                {
+                    "code": "MILMB223I",
+                    "name": "IT projektmenedzsment",
+                    "credits": 3,
+                    "prerequisites": ["GTVEB344P"]
+                },
+                {
+                    "code": "GTVEB244L",
+                    "name": "Logisztika I.",
+                    "credits": 5,
+                    "prerequisites": ["GTGAB144A"]
+                },
+                {
+                    "code": "MILMB142L",
+                    "name": "Logisztikai folyamatok modellezése",
+                    "credits": 3
+                },
+                {
+                    "code": "MIIRB155S",
+                    "name": "SQL üzleti alkalmazásokhoz",
+                    "credits": 6,
+                    "prerequisites": [
+                        "MISAB156AV"
+                    ]
+                }
+            ]
+        }
+    ]
+}

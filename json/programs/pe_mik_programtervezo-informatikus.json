@@ -287,7 +287,8 @@
                     "name": "Projekt labor",
                     "credits": 6,
                     "prerequisites": [
-                        "VEMISAB223RF"
+                        "VEMISAB156AV",
+                        "VEMISAB154HF"
                     ]
                 },
                 {
