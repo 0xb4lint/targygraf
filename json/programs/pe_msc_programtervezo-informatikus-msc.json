@@ -153,7 +153,7 @@
                     "code": "VEMIMAM243N",
                     "name": "Numerikus analízis II.",
                     "credits": 4,
-                    "prerequisites": ["VEMIMAM164N", "VEMIMAM276N"]
+                    "prerequisites": ["VEMIMAM276N"]
                 },
                 {
                     "code": "VEMIMAM343S",
