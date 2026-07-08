@@ -180,13 +180,13 @@
                     "code": "VEMISAM153H",
                     "name": "Hálózatszintézis és optimalizálás",
                     "credits": 4,
-                    "prerequisites": ["VEMISAM244O", "VEMIMAM176H"]
+                    "prerequisites": ["VEMIMAM176H"]
                 },
                 {
                     "code": "VEMISAM346K",
                     "name": "Kombinatorikus optimalizálás",
                     "credits": 6,
-                    "prerequisites": ["VEMISAM244O", "VEMIMAM176H"]
+                    "prerequisites": ["VEMIMAM176H"]
                 },
                 {
                     "code": "VEMISAM156V",
