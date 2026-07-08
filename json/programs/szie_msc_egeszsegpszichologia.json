@@ -1,0 +1,269 @@
+{
+    "name": "Egészségpszichológia MSc",
+    "description": "Egészségpszichológia MSc - levelező tagozat mintatanterve",
+    "curriculum_updated_at": "2025-01-01",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "ESLM_SNTM023",
+                    "name": "A genetika alapjai",
+                    "credits": 3
+                },
+                {
+                    "code": "ESLM_EGTM166",
+                    "name": "Fejlődéslélektani mesterkurzus",
+                    "credits": 5
+                },
+                {
+                    "code": "ESLM_EGTM167",
+                    "name": "Kognitív pszichológiai mesterkurzus",
+                    "credits": 5
+                },
+                {
+                    "code": "ESLM_EGTM169",
+                    "name": "Korai személyiség- és mozgásfejlődés",
+                    "credits": 4
+                },
+                {
+                    "code": "ESLM_EGTM165",
+                    "name": "Neuroanatómia, a pszichológia biológiai alapjai",
+                    "credits": 3
+                },
+                {
+                    "code": "AKLM_TTTM378",
+                    "name": "Személyiséglélektani mesterkurzus",
+                    "credits": 5
+                },
+                {
+                    "code": "ESLM_EGTM168",
+                    "name": "Szociálpszichológiai mesterkurzus",
+                    "credits": 5
+                },
+                {
+                    "code": "AKLM_SSTM210",
+                    "name": "Bevezetés a statisztikai adatok elemzésébe",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "ESLM_EGTM176",
+                    "name": "Pszichodiagnosztika, pszichoterápiás alapismeretek",
+                    "credits": 4
+                },
+                {
+                    "code": "ESLM_EGTM174",
+                    "name": "Pszichoneuroimmunológia",
+                    "credits": 4,
+                    "prerequisites": [
+                        "ESLM_EGTM165"
+                    ]
+                },
+                {
+                    "code": "ESLM_EGTM175",
+                    "name": "Stressz és megküzdés",
+                    "credits": 4
+                },
+                {
+                    "code": "ESLM_EGTM170",
+                    "name": "Népegészségtan",
+                    "credits": 4
+                },
+                {
+                    "code": "ESLM_EGTM173",
+                    "name": "Egészség-pszichofiziológia",
+                    "credits": 4
+                },
+                {
+                    "code": "ESLM_EGTM172",
+                    "name": "Bevezetés az egészségpszichológiába",
+                    "credits": 4
+                },
+                {
+                    "code": "ESLM_EGTM171",
+                    "name": "Egészségmagatartás, egészségkommunikáció",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "ESLM_EGTM181",
+                    "name": "Sport-egészségtan",
+                    "credits": 4
+                },
+                {
+                    "code": "ESLM_EGTM177",
+                    "name": "Viselkedési addiktológia",
+                    "credits": 3,
+                    "prerequisites": [
+                        "ESLM_EGTM165"
+                    ]
+                },
+                {
+                    "code": "ESLM_EGTM180",
+                    "name": "Sportpszichológiai alapismeretek",
+                    "credits": 4
+                },
+                {
+                    "code": "ESLM_EGTM178",
+                    "name": "Pszichofarmakológia",
+                    "credits": 3,
+                    "prerequisites": [
+                        "ESLM_EGTM165"
+                    ]
+                },
+                {
+                    "code": "ESLM_EGTM179",
+                    "name": "Klinikai egészségpszichológia",
+                    "credits": 4
+                },
+                {
+                    "code": "ESLM_EGTM183",
+                    "name": "Diplomamunka-konzultáció I.",
+                    "credits": 6
+                },
+                {
+                    "code": "ESLM_EGTM182",
+                    "name": "Dietetika és táplálkozástudomány",
+                    "credits": 3
+                },
+                {
+                    "code": null,
+                    "name": "Szabadon választható tantárgyak blokk",
+                    "credits": 6,
+                    "course_block_references": [
+                        "Szabadon választható tantárgyak"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "ESLM_EGTM185",
+                    "name": "Diplomamunka-konzultáció II.",
+                    "credits": 6,
+                    "prerequisites": [
+                        "ESLM_EGTM183"
+                    ]
+                },
+                {
+                    "code": "ESLM_KKTM013",
+                    "name": "Egészségügyi projekttervezés",
+                    "credits": 2
+                },
+                {
+                    "code": "ESLM_EGTM184",
+                    "name": "Kutatásmódszertan mesterfokon",
+                    "credits": 3
+                },
+                {
+                    "code": "AKLM_NKTM167",
+                    "name": "Prezentációs készségfejlesztés",
+                    "credits": 2
+                },
+                {
+                    "code": "DKLM_BTTM075",
+                    "name": "Pszichológus etika és jog",
+                    "credits": 4
+                },
+                {
+                    "code": "TKLM_TSKM008",
+                    "name": "Pályaszocializáció",
+                    "credits": 4
+                },
+                {
+                    "code": "ESLM_EGTM186",
+                    "name": "Területi szakmai gyakorlat",
+                    "credits": 6
+                },
+                {
+                    "code": null,
+                    "name": "Szakmai nyelvi kritérium tantárgycsoport blokk",
+                    "credits": 0,
+                    "course_block_references": [
+                        "Szakmai nyelvi kritérium tantárgycsoport"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Szabadon választható tantárgyak",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "ESLM_EGTM189",
+                    "name": "Boldogság, pszichológiai jóllét és öngondoskodás",
+                    "credits": 3
+                },
+                {
+                    "code": "GKLM_INTM180",
+                    "name": "Coaching, tanácsadási elméletek",
+                    "credits": 3
+                },
+                {
+                    "code": "ESLM_SNTM046",
+                    "name": "Családterápia",
+                    "credits": 3
+                },
+                {
+                    "code": "ESLM_EDTM001",
+                    "name": "Mediáció a pszichológiában",
+                    "credits": 3
+                },
+                {
+                    "code": "ESLM_EGTM188",
+                    "name": "Neuropszichológia",
+                    "credits": 3,
+                    "prerequisites": [
+                        "ESLM_EGTM165"
+                    ]
+                },
+                {
+                    "code": "ESLM_EGTM190",
+                    "name": "Placebo a viselkedésben",
+                    "credits": 3
+                },
+                {
+                    "code": "ESLM_EGTM187",
+                    "name": "Szenzomotoros prevenció és rehabilitáció",
+                    "credits": 3
+                },
+                {
+                    "code": "ESLM_EGTM162",
+                    "name": "Vezetői kommunikáció az egészségügyben",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Szakmai nyelvi kritérium tantárgycsoport",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "ESLM_EGTM191",
+                    "name": "Pszichológiai tudományos közlemények írása idegen nyelven I.",
+                    "credits": 0
+                },
+                {
+                    "code": "ESLM_EGTM192",
+                    "name": "Pszichológiai tudományos közlemények írása idegen nyelven II.",
+                    "credits": 0
+                }
+            ]
+        }
+    ]
+}
