@@ -1,7 +1,7 @@
 {
     "name": "Gazdaságinformatikus",
     "description": "Gazdaságinformatikus BSc szak (Business Informatics BSc) tanterve.",
-    "curriculum_updated_at": "2025-06-17",
+    "curriculum_updated_at": "2026-03-17",
     "course_blocks": [
         {
             "name": "1. félév",
@@ -43,7 +43,7 @@
                     "credits": 0
                 },
                 {
-                    "code": "NULL",
+                    "code": "VEPETO1122A",
                     "name": "Testnevelés I.",
                     "credits": 0
                 }
@@ -94,9 +94,12 @@
                     "credits": 6
                 },
                 {
-                    "code": "NULL",
+                    "code": "VEPETO2222A",
                     "name": "Testnevelés II.",
-                    "credits": 0
+                    "credits": 0,
+                    "prerequisites": [
+                        "VEPETO1122A"
+                    ]
                 }
             ]
         },
@@ -142,7 +145,7 @@
                     "credits": 3
                 },
                 {
-                    "code": "GTVEM1221",
+                    "code": "GTVEM122I",
                     "name": "Integrált információs rendszerek",
                     "credits": 3
                 },
@@ -165,9 +168,12 @@
                     "credits": 0
                 },
                 {
-                    "code": "NULL",
+                    "code": "VEPETO3122A",
                     "name": "Testnevelés III.",
-                    "credits": 0
+                    "credits": 0,
+                    "prerequisites": [
+                        "VEPETO2222A"
+                    ]
                 }
             ]
         },
@@ -237,9 +243,12 @@
                     "credits": 0
                 },
                 {
-                    "code": "NULL",
+                    "code": "VEPETO4222A",
                     "name": "Testnevelés IV.",
-                    "credits": 0
+                    "credits": 0,
+                    "prerequisites": [
+                        "VEPETO3122A"
+                    ]
                 }
             ]
         },
@@ -517,6 +526,12 @@
                     "name": "Rendszertesztelés",
                     "credits": 4,
                     "prerequisites": ["MISAB144SV"]
+                },
+                {
+                    "code": "ZEMIIRB356KM",
+                    "name": "Képfeldolgozási módszerek a gyakorlatban",
+                    "credits": 6,
+                    "prerequisites": ["MISAB146AP", "MISAB156GF"]
                 },
                 {
                     "code": "MILMB212A",
