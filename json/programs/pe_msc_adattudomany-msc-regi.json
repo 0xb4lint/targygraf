@@ -1,12 +1,17 @@
 {
-    "name": "Adattudomány MSc",
-    "description": "Adattudomány MSc szak - nappali tagozat tanterve",
-    "curriculum_updated_at": "2026-03-17",
+    "name": "Adattudomány MSc (<2026)",
+    "description": "Adattudomány MSc szak - nappali tagozat tanterve - a 2026/27/1-es félév előtt érvényes tanterv",
+    "curriculum_updated_at": "2024-05-27",
     "course_blocks": [
         {
             "name": "1. félév",
             "row": 0,
             "courses": [
+                {
+                    "code": "VEMIVIM142I",
+                    "name": "Mesterséges intelligenca",
+                    "credits": 3
+                },
                 {
                     "code": "VEMISAM146F",
                     "name": "Felügyelt gépi tanulás",
@@ -25,7 +30,7 @@
                 {
                     "code": null,
                     "name": "Kötelezően választandó szakmai ismeretek",
-                    "credits": 16,
+                    "credits": 12,
                     "course_block_references": [
                         "Kötelezően választandó szakmai ismeretek"
                     ]
@@ -47,8 +52,8 @@
                     "credits": 6
                 },
                 {
-                    "code": "VEMIVIM153H",
-                    "name": "Haladó adattárház technológiák",
+                    "code": "VEMKFOM253F",
+                    "name": "Folyamatmodellezés és folyamatbányászat",
                     "credits": 3
                 },
                 {
@@ -66,8 +71,17 @@
             "row": 0,
             "courses": [
                 {
-                    "code": "VEMIVIM153HF",
-                    "name": "Haladó folyamatbányászat",
+                    "code": "VEMIPRM353T",
+                    "name": "Mélytanuló rendszerek",
+                    "credits": 5,
+                    "prerequisites": [
+                        "VEMIVIM142I",
+                        "VEMISAM146F"
+                    ]
+                },
+                {
+                    "code": "VEMIVIM113A",
+                    "name": "Információbiztonság és adatvédelem",
                     "credits": 3
                 },
                 {
@@ -79,7 +93,7 @@
                 {
                     "code": null,
                     "name": "Kötelezően választandó szakmai ismeretek",
-                    "credits": 12,
+                    "credits": 8,
                     "course_block_references": [
                         "Kötelezően választandó szakmai ismeretek"
                     ]
@@ -97,14 +111,9 @@
                     "prerequisites": ["VEMIINADX1m"]
                 },
                 {
-                    "code": "VEMIVIM113A",
-                    "name": "Információbiztonság és adatvédelem",
-                    "credits": 3
-                },
-                {
                     "code": null,
                     "name": "Kötelezően választandó szakmai ismeretek",
-                    "credits": 6,
+                    "credits": 9,
                     "course_block_references": [
                         "Kötelezően választandó szakmai ismeretek"
                     ]
@@ -132,6 +141,11 @@
                     "credits": 3
                 },
                 {
+                    "code": "VEMIVIM153H",
+                    "name": "Haladó adattárház technológiák",
+                    "credits": 3
+                },
+                {
                     "code": "VEMISAM334P",
                     "name": "Python programozás",
                     "credits": 4
@@ -152,6 +166,11 @@
                     "credits": 4
                 },
                 {
+                    "code": "VEMIVIM133T",
+                    "name": "Mesterséges intelligencia labor",
+                    "credits": 3
+                },
+                {
                     "code": "VEMIMAM176H",
                     "name": "Haladó operációkutatás",
                     "credits": 6
@@ -168,26 +187,15 @@
                     "credits": 6
                 },
                 {
-                    "code": "VEMIVIM154EA",
+                    "code": "VEMIVIM356E",
                     "name": "Egészségügyi adatbázisok és elemzésük",
-                    "credits": 4,
+                    "credits": 6,
                     "prerequisites": ["VEMIVIM246H"]
                 },
                 {
                     "code": "VEGTVEM144K",
                     "name": "Kvantitatív módszerek",
                     "credits": 6
-                },
-                {
-                    "code": "VEMISAM253TF",
-                    "name": "MI-alapú rendszerek tervezése és fejlesztése",
-                    "credits": 3,
-                    "prerequisites": ["VEMISAM146F"]
-                },
-                {
-                    "code": "VEMISAM153NE",
-                    "name": "Neurális hálózatok, mélytanulás",
-                    "credits": 3
                 },
                 {
                     "code": "VEGTMEM246G",
@@ -221,12 +229,6 @@
                     "name": "Kutatás-fejlesztés II",
                     "credits": 4,
                     "prerequisites": ["VEMIINM314F"]
-                },
-                {
-                    "code": "VEMIVIM153KF",
-                    "name": "Korszerű folyamatbányászati módszerek Celonis platformon",
-                    "credits": 3,
-                    "prerequisites": ["VEMIVIM153HF"]
                 }
             ]
         }
