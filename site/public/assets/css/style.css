@@ -1008,9 +1008,8 @@ CREDITS COUNTER
 .credits-counter .credits-overflow {
 	font-family: var(--mono);
 	font-size: 11px;
-	position: absolute;
-	top: 20px;
-	right: 15px;
+	display: block;
+	margin-top: 1px;
 }
 
 /*

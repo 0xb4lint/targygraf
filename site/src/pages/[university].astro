@@ -40,14 +40,6 @@ const curriculumYear = (program: Program) => program.curriculumUpdatedAt?.slice(
 	canonical={canonicalUrl(universityPath(university.slug))}
 	migrateUniversity={university.slug}
 >
-	<Fragment slot="buttons">
-		<a href={homePath()} class="button" title="targygraf.hu">
-			<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
-				><path d="M3 10.5 12 3l9 7.5"></path><path d="M5 9.5V21h14V9.5"></path><path d="M10 21v-6h4v6"></path></svg
-			>
-		</a>
-	</Fragment>
-
 	<Fragment slot="header">
 		<nav class="topbar">
 			<div class="crumbs">
