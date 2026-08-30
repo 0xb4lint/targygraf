@@ -1,6 +1,7 @@
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"name": "targygraf",
+	"account_id": "02acb99f60d0bad9ab42ed696cada3bd",
 	"main": "worker/index.ts",
 	"compatibility_date": "2026-08-01",
 	"assets": {

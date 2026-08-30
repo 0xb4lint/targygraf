@@ -92,18 +92,29 @@ which carries no zone routes, so it can never touch production traffic.
 Path URLs work fully there; only the legacy-subdomain redirects need the
 real zone (covered by the Miniflare e2e suite).
 
-Initial setup on the `targygraf.hu` zone:
+**Production deploys are automatic**: every push to `master` that passes
+the test job also runs the deploy job in `.github/workflows/test.yml`
+(`npm run deploy` = build + `wrangler deploy`, which uploads the assets
+and attaches the `targygraf.hu` zone routes). Contributor PRs only run
+the tests; fork PRs have no access to the deploy secret.
 
-1. **Build config** (Workers Builds git integration, or CI running
-   `npm run deploy`): build command `npm run build`, deploy command
-   `npx wrangler deploy`.
+One-time setup:
+
+1. **API token**: create one at dash.cloudflare.com/profile/api-tokens
+   with the "Edit Cloudflare Workers" template (covers Workers scripts
+   and the zone routes), then store it as the repository secret:
+   `gh secret set CLOUDFLARE_API_TOKEN`. The `account_id` is committed in
+   `wrangler.jsonc`.
 2. **DNS**: keep/ensure proxied records for `targygraf.hu`, `www` and `*`
    (or the 12 university subdomains individually). The routes in
    `wrangler.jsonc` (`targygraf.hu/*`, `*.targygraf.hu/*`) intercept all
    proxied traffic, so the record targets are irrelevant (a placeholder
    `192.0.2.1` / `100::` works; the old VPS can stay until verified).
-3. Merges to `master` redeploy automatically when the git integration is
-   connected; PRs get preview URLs (path-based URLs work on any host).
+
+**The first `master` deploy is the cutover**: DNS is already proxied, so
+the moment the routes attach, both the apex and the legacy subdomains are
+served by the Worker instead of the old origin. Rollback is instant:
+delete the two routes in the dashboard and traffic returns to the origin.
 
 ### Optional: dropping the Worker later
 

@@ -5,6 +5,7 @@
 	// targygraf.hu zone. Production config (with the zone routes) is
 	// wrangler.jsonc; deploy this one via `npm run deploy:test`.
 	"name": "targygraf-test",
+	"account_id": "02acb99f60d0bad9ab42ed696cada3bd",
 	"main": "worker/index.ts",
 	"compatibility_date": "2026-08-01",
 	"workers_dev": true,

@@ -6,6 +6,9 @@ on:
     branches:
       - master
 
+permissions:
+  contents: read
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -21,3 +24,23 @@ jobs:
       # (which bundles the Worker with a real `wrangler deploy --dry-run`).
       - run: npm ci
       - run: npm test
+
+  # Every merge to master that passes the tests goes live on its own:
+  # `npm run deploy` builds the site and runs `wrangler deploy`, which
+  # uploads the assets and (re)attaches the targygraf.hu zone routes.
+  # Needs the CLOUDFLARE_API_TOKEN repository secret.
+  deploy:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+    needs: test
+    concurrency: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
