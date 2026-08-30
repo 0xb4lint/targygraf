@@ -1,5 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 236 48" width="236" height="48">
-	<text x="8" y="31" font-family="'IBM Plex Sans','Segoe UI',sans-serif" font-size="28" font-weight="700" fill="#17223B">tárgy<tspan fill="#2E86DE">gráf</tspan></text>
-	<path d="M79 39 h56" fill="none" stroke="#2E86DE" stroke-width="2.5" stroke-linecap="round"/>
-	<path d="M8 39 h64" fill="none" stroke="#17223B" stroke-width="2.5" stroke-linecap="round" opacity="0.25"/>
-</svg>

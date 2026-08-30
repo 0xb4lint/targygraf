@@ -1,21 +1,27 @@
 /**
- * Generates the final Tárgygráf brand SVGs with text converted to outlines
+ * Generates the Tárgygráf brand SVGs with text converted to outlines
  * (an SVG loaded via <img> cannot use webfonts, so the type must be paths):
  *
- *   logo.svg        v12h lockup, ink text     (light backgrounds)
- *   logo-dark.svg   v12h lockup, white text   (the ink program header)
+ *   public/assets/img/logo.svg        ink text    (light backgrounds)
+ *   public/assets/img/logo-dark.svg   white text  (the ink program header)
  *
- * Font: IBM Plex Sans Condensed Bold (OFL), fetched from
- * github.com/google/fonts. Run with: npm i opentype.js && node generate-logo.mjs
+ * Font: IBM Plex Sans Condensed Bold (OFL). Download the TTF from
+ * github.com/google/fonts next to this script, then run:
+ *   npm i --no-save opentype.js && node scripts/generate-logo.mjs
  */
 import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import opentype from 'opentype.js';
+
+const SCRIPT_DIR = path.dirname(fileURLToPath(import.meta.url));
+const IMG_DIR = path.resolve(SCRIPT_DIR, '..', 'public', 'assets', 'img');
 
 const load = (p) => {
 	const b = fs.readFileSync(p);
 	return opentype.parse(b.buffer.slice(b.byteOffset, b.byteOffset + b.byteLength));
 };
-const cond = load('PlexCondBold.ttf');
+const cond = load(path.join(SCRIPT_DIR, 'PlexCondBold.ttf'));
 
 const INK = '#17223B';
 const GREEN = '#2BC875';
@@ -83,7 +89,7 @@ function lockup(textColor, file) {
 	<rect x="${fmt(cellX)}" y="35.5" width="${CELL_W}" height="6" rx="1.5" fill="${GREEN}"/>
 </svg>
 `;
-	fs.writeFileSync(file, svg);
+	fs.writeFileSync(path.join(IMG_DIR, file), svg);
 	console.log(`${file}: text width ${fmt(W)}, viewBox 6 ${top} ${fmt(right - 6)} ${fmt(bottom - top)}`);
 }
 

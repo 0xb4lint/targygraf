@@ -42,6 +42,8 @@ permanently redirected:
   retired).
 - `scripts/gen-bulk-redirects.mjs` – emits the frozen legacy-URL redirect
   list as CSV for the optional zero-worker setup (see below).
+- `scripts/generate-logo.mjs` – regenerates the outlined brand SVGs in
+  `public/assets/img/` (see its header for the font it needs).
 
 ## Commands
 
