@@ -259,13 +259,23 @@ HERO SHEET (home)
 	margin: 0;
 }
 
-/* the year set into the headline itself: same face, smaller, lighter ink */
-.hero h1 .since {
-	font-size: 0.5em;
-	font-weight: 600;
+.topbar-side {
+	display: flex;
+	align-items: baseline;
+	gap: 10px;
+}
+
+.topbar-note {
+	font-family: var(--mono);
+	font-size: 11px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
 	color: var(--ink-3);
-	white-space: nowrap;
-	margin-left: 4px;
+}
+
+.topbar-sep {
+	color: var(--ink-3);
+	opacity: 0.6;
 }
 
 .hero-demo-wrap {
@@ -301,7 +311,7 @@ HERO DEMO — a working miniature of the graph, pure CSS (:has)
 */
 .hero-demo {
 	display: inline-grid;
-	grid-template-columns: repeat(3, 118px);
+	grid-template-columns: repeat(3, 130px);
 	gap: 10px;
 	text-align: center;
 }
@@ -337,6 +347,11 @@ HERO DEMO — a working miniature of the graph, pure CSS (:has)
 .demo-cell.is-open {
 	background: var(--open-bg);
 	color: var(--open-ink);
+}
+
+.demo-cell.is-taking {
+	background: var(--taken-bg);
+	color: #fff;
 }
 
 .demo-cell:hover {

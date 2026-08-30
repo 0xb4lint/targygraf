@@ -28,7 +28,11 @@ const programCount = (u: (typeof universities)[number]) =>
 	<Fragment slot="header">
 		<nav class="topbar">
 			<a href="/" class="wordmark"><img src="/assets/img/logo.svg" alt="Tárgygráf" width="131" height="34" /></a>
-			<a href="https://github.com/0xb4lint/targygraf" class="topbar-link" rel="noopener">GitHub</a>
+			<div class="topbar-side">
+				<span class="topbar-note">since 2012</span>
+				<span class="topbar-sep" aria-hidden="true">·</span>
+				<a href="https://github.com/0xb4lint/targygraf" class="topbar-link" rel="noopener">GitHub</a>
+			</div>
 		</nav>
 	</Fragment>
 
@@ -42,7 +46,7 @@ const programCount = (u: (typeof universities)[number]) =>
 				<div class="sheet-body">
 					<div class="hero-left">
 						<div class="hero-copy">
-							<h1>A mintatanterved, interaktív térképen. <span class="since">since 2012</span></h1>
+							<h1>A mintatanterved, interaktív térképen.</h1>
 							<p class="hero-note">
 								Előfeltételek, ráépülések és kreditek, félévekre bontva. Regisztráció nélkül: a
 								haladásod a böngésződben marad.
@@ -58,7 +62,7 @@ const programCount = (u: (typeof universities)[number]) =>
 							</div>
 							<div class="demo-col">
 								<div class="demo-title">2. félév</div>
-								<div class="demo-cell is-open dc-d">Analízis II.</div>
+								<div class="demo-cell is-taking dc-d">Analízis II.</div>
 								<div class="demo-cell is-open dc-e">Programozás II.</div>
 								<div class="demo-cell dc-f">Numerikus módszerek</div>
 							</div>
