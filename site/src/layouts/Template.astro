@@ -60,15 +60,14 @@ const origin = siteOrigin();
 		<link href="/assets/css/style.css?v=20190217" rel="stylesheet" />
 		<link href="/assets/css/tipsy.css" rel="stylesheet" />
 		<link href="/assets/css/notie.min.css" rel="stylesheet" />
+		<!-- Google tag (gtag.js) -->
 		<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-1T3XF9V5BL"></script>
-		<script is:inline type="text/javascript">
+		<script is:inline>
 			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
+			function gtag(){dataLayer.push(arguments);}
 			gtag('js', new Date());
+
 			gtag('config', 'G-1T3XF9V5BL');
-			window.gtag = gtag;
 		</script>
 	</head>
 	<body>
