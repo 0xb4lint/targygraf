@@ -72,6 +72,9 @@ tárgy.
 
 2. Utána vidd fel a kar legalább egy szakját a fenti módon.
 
+A karok az `ordering` mező szerint követik egymást az egyetem oldalán, a
+szakok pedig név szerint, ábécérendben jelennek meg.
+
 ## Új egyetem felvétele
 
 1. Hozz létre egy fájlt: `json/universities/{egyetem}.json`, ahol a fájlnév
@@ -81,8 +84,6 @@ tárgy.
 ```javascript
 {
     "name": "Pannon Egyetem",
-    "row": 0,           // örökölt megjelenítési mező, hagyd 0-n
-    "ordering": 0,      // örökölt megjelenítési mező, hagyd 0-n
     "has_logo": false   // hagyd false-on
 }
 ```
@@ -99,8 +100,6 @@ tárgy.
 // json/universities/pe.json    // a fájlnév az egyetem kódja és URL-je
 {
     "name": "Pannon Egyetem",   // string   név
-    "row": 0,                   // uint     örökölt megjelenítési mező
-    "ordering": 0,              // uint     örökölt megjelenítési mező
     "has_logo": false           // boolean  hagyd false-on
 }
 ```

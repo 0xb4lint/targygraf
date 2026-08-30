@@ -220,7 +220,9 @@ describe('buildProgram (fixture)', () => {
 describe('loadDataset (fixture)', () => {
 	const dataset = loadDataset(FIXTURES);
 
-	it('orders universities by row then ordering (home page order)', () => {
+	it('orders universities by name with Hungarian collation', () => {
+		// "Ábel" (bb.json) sorts before "Alfa" (aa.json): Á collates as A on
+		// the primary level, and file order would say otherwise.
 		expect(dataset.universities.map((u) => u.slug)).toEqual(['bb', 'aa']);
 	});
 

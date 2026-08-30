@@ -49,10 +49,11 @@ describe('json/universities structure', () => {
 	it.each(visibleFiles('universities').map((f) => [f] as const))('%s', (file) => {
 		const data = readJson('universities', file);
 		expect(typeof data.name, `${file} name is_string`).toBe('string');
-		expect(isUint(data.row), `${file} row uint`).toBe(true);
-		expect(isUint(data.ordering), `${file} ordering uint`).toBe(true);
 		expect(typeof data.has_logo, `${file} has_logo is_bool`).toBe('boolean');
-		// The filename is the slug and becomes a subdomain.
+		// Removed legacy display fields; display order is alphabetical.
+		expect(data.row, `${file} row is a removed legacy field`).toBeUndefined();
+		expect(data.ordering, `${file} ordering is a removed legacy field`).toBeUndefined();
+		// The filename is the slug and becomes the URL path.
 		expect(file).toMatch(/^[a-z0-9-]+\.json$/);
 	});
 });

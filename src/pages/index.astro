@@ -17,9 +17,9 @@ const courseCount = programs
 	.filter((c) => c.code !== SEPARATOR_COURSE_CODE).length;
 const hu = (n: number) => n.toLocaleString('hu-HU');
 
-// One flat, alphabetical registry; every university is equal here.
-const collator = new Intl.Collator('hu');
-const listed = [...universities].sort((a, b) => collator.compare(a.name, b.name));
+// One flat, alphabetical registry (the dataset order); every university is
+// equal here.
+const listed = universities;
 const programCount = (u: (typeof universities)[number]) =>
 	u.faculties.reduce((n, f) => n + f.programs.length, 0);
 ---

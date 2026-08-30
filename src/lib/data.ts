@@ -96,23 +96,22 @@ export interface Faculty {
 	slug: string;
 	universitySlug: string;
 	name: string;
+	/** Position on the university page (the JSON ordering field). */
 	ordering: number;
-	/** Programs ordered by name (programs() relation orderBy('name')). */
+	/** Programs ordered by name (Hungarian collation). */
 	programs: Program[];
 }
 
 export interface University {
 	slug: string;
 	name: string;
-	row: number;
-	ordering: number;
 	hasLogo: boolean;
-	/** Faculties ordered by ordering (faculties() relation). */
+	/** Faculties in curated order (ordering field; file order breaks ties). */
 	faculties: Faculty[];
 }
 
 export interface Dataset {
-	/** Universities ordered by (row, ordering) as on the home page. */
+	/** Universities ordered by name (Hungarian collation). */
 	universities: University[];
 	universitiesBySlug: Map<string, University>;
 }
@@ -158,10 +157,9 @@ export function isDummyCreditCode(code: string): boolean {
 }
 
 /**
- * Programs are listed by name, accent/case-insensitive on the primary level,
- * using the Hungarian locale.
+ * Universities and programs are listed by name using the Hungarian locale.
  */
-const programNameCollator = new Intl.Collator('hu', { sensitivity: 'variant' });
+const nameCollator = new Intl.Collator('hu', { sensitivity: 'variant' });
 
 export function buildProgram(
 	fileName: string,
@@ -272,8 +270,7 @@ export function buildProgram(
 		}
 	}
 
-	// Display order: ORDER BY row, ordering -- ordering was assigned in file
-	// order within each row, so a stable sort by row reproduces it.
+	// Display order: stable sort by row; within a row, file order is kept.
 	const sortedBlocks = [...blocks].sort((a, b) => a.row - b.row);
 
 	return {
@@ -297,8 +294,6 @@ export function loadDataset(jsonRoot: string = JSON_ROOT): Dataset {
 		const university: University = {
 			slug: path.basename(file, '.json'),
 			name: raw.name,
-			row: raw.row,
-			ordering: raw.ordering,
 			hasLogo: Boolean(raw.has_logo),
 			faculties: [],
 		};
@@ -336,15 +331,15 @@ export function loadDataset(jsonRoot: string = JSON_ROOT): Dataset {
 		faculty.programs.push(program);
 	}
 
-	// HomeController: University::orderBy('row')->orderBy('ordering')
-	universities.sort((a, b) => a.row - b.row || a.ordering - b.ordering);
+	// Universities and programs are listed alphabetically by name; faculties
+	// keep the curated order of their JSON ordering field (stable sort, so
+	// file order breaks ties).
+	universities.sort((a, b) => nameCollator.compare(a.name, b.name));
 
 	for (const university of universities) {
-		// University::faculties(): orderBy('ordering') (stable: file order ties)
 		university.faculties.sort((a, b) => a.ordering - b.ordering);
 		for (const faculty of university.faculties) {
-			// Faculty::programs(): orderBy('name')
-			faculty.programs.sort((a, b) => programNameCollator.compare(a.name, b.name));
+			faculty.programs.sort((a, b) => nameCollator.compare(a.name, b.name));
 		}
 	}
 
