@@ -359,7 +359,7 @@ describe.skipIf(skip)('page chrome', () => {
 		// gtag.js is injected by the inline loader (so the opt-out can keep
 		// it from loading at all); only first-party scripts have src tags.
 		expect(scripts).toEqual([
-			'/assets/js/targygraf.js?v=20260831',
+			'/assets/js/targygraf.js?v=20260901',
 			'/assets/js/migrate.js?v=2',
 		]);
 

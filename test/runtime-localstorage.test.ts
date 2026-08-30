@@ -155,6 +155,56 @@ describe.skipIf(skip)('fresh visitor (no stored data)', () => {
 		expect(notice.textContent).toContain('Tájékoztató jellegű oldal');
 	});
 
+	it('syncs duplicate-code courses on click and unlocks dependents (#127)', async () => {
+		// KOKUA201 appears four times (same name, no prerequisites) and
+		// KOKUA202 depends on it; data-prerequisites points at the first
+		// occurrence, so completing any copy must mark them all in-session.
+		const page = await loadProgramPage('bme', 'kozlekedesmernok');
+		expect(page.errors).toEqual([]);
+
+		const copies = byCode(page, 'KOKUA201');
+		expect(copies.length).toBe(4);
+
+		copies[3].click();
+		expect(
+			classesByCode(page, 'KOKUA201').every((c) => c.includes('processing'))
+		).toBe(true);
+
+		copies[3].click();
+		expect(
+			classesByCode(page, 'KOKUA201').every((c) => c.includes('finished'))
+		).toBe(true);
+		expect(classesByCode(page, 'KOKUA202')[0]).toContain('processable');
+
+		// Stored once, counted once.
+		const stored = JSON.parse(page.window.localStorage.getItem('coursesFinished'));
+		expect(stored.filter((c: string) => c === 'KOKUA201')).toHaveLength(1);
+		expect(
+			page.document.querySelector('.credits-counter .finished').textContent
+		).toBe('Teljesített: 5 kredit');
+
+		// Leadás reverts every copy.
+		copies[3].click();
+		expect(
+			classesByCode(page, 'KOKUA201').every((c) => c.includes('processable'))
+		).toBe(true);
+		expect(JSON.parse(page.window.localStorage.getItem('coursesFinished'))).toEqual([]);
+	});
+
+	it('does not group distinct courses that share a placeholder code', async () => {
+		const page = await loadProgramPage('szie', 'muszaki-menedzser');
+		expect(page.errors).toEqual([]);
+
+		const cells = byCode(page, 'SGMxxXxxXN');
+		const biologia = cells.find(
+			(el: any) => el.textContent.trim() === 'Alkalmazott biológia'
+		);
+		biologia.click();
+		expect(biologia.className).toContain('processing');
+		const marked = cells.filter((el: any) => el.className.includes('processing'));
+		expect(marked).toHaveLength(1);
+	});
+
 	it('keeps the legal notice off the home and university pages', async () => {
 		const home = await loadChromePage(['index.html'], 'https://targygraf.hu/');
 		expect(home.errors).toEqual([]);

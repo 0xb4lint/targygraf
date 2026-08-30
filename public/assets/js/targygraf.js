@@ -12,7 +12,8 @@
  *
  * Deliberately preserved quirks (they shape what users see restored):
  *   - restoring marks every element sharing a code, but counts the credits
- *     of the first one only; clicking affects just the clicked element
+ *     of the first one only; a click syncs every cell sharing the same
+ *     code AND name (#127), also counting credits once
  *   - the "max credits" sum includes every course in the semester row,
  *     regardless of the block's data-is-counted flag
  *   - codes present in storage but not on the current page are kept and
@@ -59,6 +60,22 @@
 		return courses().filter(function (el) {
 			return el.getAttribute('data-id') === id;
 		})[0] || null;
+	}
+
+	// The cells a click acts on: every cell with the same code AND the same
+	// name, in page order (#127: the same course listed in several
+	// specialization blocks is one course). The name must match too, because
+	// distinct courses occasionally share a code (lecture/exam pairs, and
+	// placeholder codes reused across many courses).
+	function courseGroup(el) {
+		var code = el.getAttribute('data-code');
+		if (!code) {
+			return [el];
+		}
+		var name = (el.textContent || '').replace(/^\s+|\s+$/g, '');
+		return coursesByCode(code).filter(function (other) {
+			return (other.textContent || '').replace(/^\s+|\s+$/g, '') === name;
+		});
 	}
 
 	function sequelsOf(el) {
@@ -374,7 +391,7 @@
 			el.classList.add('finished');
 		});
 
-		if (specialisOf(first) === 1) {
+		if (els.some(function (el) { return specialisOf(el) === 1; })) {
 			markReferencedCourseBlocks();
 			markOptionalCourses();
 			creditsOverflowUpdate();
@@ -382,17 +399,28 @@
 		}
 	}
 
-	function removeCourse(el, decrementCreditsFinished, removeFromFinishedArray) {
+	function removeCourse(els, decrementCreditsFinished, removeFromFinishedArray) {
+		els = toArray(els);
+		var first = els[0];
+
 		var conflictedProcessing = [];
 		var conflictedFinished = [];
 
-		sequelsOf(el).forEach(function (sequel) {
-			if (sequel.classList.contains('processing')) {
-				conflictedProcessing.push(sequel);
-			}
-			if (sequel.classList.contains('finished')) {
-				conflictedFinished.push(sequel);
-			}
+		els.forEach(function (member) {
+			sequelsOf(member).forEach(function (sequel) {
+				if (
+					sequel.classList.contains('processing') &&
+					conflictedProcessing.indexOf(sequel) === -1
+				) {
+					conflictedProcessing.push(sequel);
+				}
+				if (
+					sequel.classList.contains('finished') &&
+					conflictedFinished.indexOf(sequel) === -1
+				) {
+					conflictedFinished.push(sequel);
+				}
+			});
 		});
 
 		var errorText = '';
@@ -415,17 +443,19 @@
 		}
 
 		if (decrementCreditsFinished === undefined || decrementCreditsFinished) {
-			CREDITS.finished -= creditsOf(el);
+			CREDITS.finished -= creditsOf(first);
 		}
 
 		if (removeFromFinishedArray === undefined || removeFromFinishedArray) {
-			removeValue(COURSES.finished, el.getAttribute('data-code'));
+			removeValue(COURSES.finished, first.getAttribute('data-code'));
 		}
 
-		el.classList.remove('finished');
-		el.classList.add('processable');
+		els.forEach(function (el) {
+			el.classList.remove('finished');
+			el.classList.add('processable');
+		});
 
-		if (specialisOf(el) === 1) {
+		if (els.some(function (el) { return specialisOf(el) === 1; })) {
 			markReferencedCourseBlocks();
 			markOptionalCourses();
 			creditsOverflowUpdate();
@@ -750,14 +780,15 @@
 					return;
 				}
 
+				var group = courseGroup(el);
 				if (el.classList.contains('finished')) {
-					removeCourse(el);
+					removeCourse(group);
 					trackCourseEvent(el, 'Leadás');
 				} else if (el.classList.contains('processing')) {
-					finishCourse(el);
+					finishCourse(group);
 					trackCourseEvent(el, 'Teljesítés');
 				} else if (isCourseProcessable(el)) {
-					processCourse(el);
+					processCourse(group);
 					trackCourseEvent(el, 'Felvétel');
 				}
 
