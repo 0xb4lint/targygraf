@@ -52,6 +52,28 @@ The site lives on apex paths; the per-university subdomains it used until
 - `scripts/generate-logo.mjs` – regenerates the outlined brand SVGs in
   `public/assets/img/` (see its header for the font it needs).
 
+## Storage model
+
+localStorage keeps the 2012 format on purpose: `coursesFinished` /
+`coursesProcessing` (JSON arrays of course codes) and `creditsOptional`
+(number). A course code is treated as a university-agnostic fact about
+the student, and unknown codes are always preserved on save, so the flat
+format is forward-safe: a future format could migrate in-page losslessly.
+
+What changed with the move to apex paths is the scope, not the format:
+storage used to be per university subdomain, now one origin serves every
+university. This is sound because codes do not collide across
+institutions (4002 distinct codes, zero cross-university collisions in
+the data; each university's code scheme is its own namespace). Known,
+accepted edges:
+
+- `creditsOptional` is a single global number (it was per-university
+  before); after migrating from several subdomains the first value wins.
+- A handful of placeholder courses share the empty-string code
+  (Testnevelés, Szakdolgozat); marking one can cosmetically mark the
+  others, a quirk the site has always had within a university. The
+  migration bridge drops empty codes.
+
 ## Commands
 
 ```sh
