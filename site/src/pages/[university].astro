@@ -68,7 +68,7 @@ const curriculumYear = (program: Program) => program.curriculumUpdatedAt?.slice(
 			<div class="sheet">
 				<div class="sheet-head">
 					<span>Szakválasztó</span>
-					<span>{university.faculties.length} kar · {programCount} szak</span>
+					<!--<span>{university.faculties.length} kar · {programCount} szak</span>-->
 				</div>
 
 				<div class="uni-identity">
@@ -81,6 +81,7 @@ const curriculumYear = (program: Program) => program.curriculumUpdatedAt?.slice(
 							/>
 						)
 					}
+					<span class="uni-code">{university.slug.toUpperCase()}</span>
 					<h1>{university.name}</h1>
 				</div>
 
@@ -90,14 +91,10 @@ const curriculumYear = (program: Program) => program.curriculumUpdatedAt?.slice(
 							<div class="faculty">
 								<div class="faculty-head">
 									<div class="faculty-name">{faculty.name}</div>
-									<span class="faculty-count">{faculty.programs.length} szak</span>
+									<!--<span class="faculty-count">{faculty.programs.length} szak</span>-->
 								</div>
 								{faculty.programs.map((program) => (
-									<a
-										href={programPath(university.slug, program.slug)}
-										class="program"
-										title={program.description || undefined}
-									>
+									<a href={programPath(university.slug, program.slug)} class="program">
 										<span class="program-name">{program.name}</span>
 										<span class="program-meta">
 											{semesterCount(program)} félév · {creditSum(program)} kredit

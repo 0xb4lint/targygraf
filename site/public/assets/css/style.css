@@ -477,27 +477,35 @@ UNIVERSITY PAGE — the same sheet and registry language as the landing
 
 .uni-identity {
 	display: flex;
-	align-items: center;
-	gap: 22px;
-	padding: 26px 26px 22px;
+	align-items: baseline;
+	gap: 14px;
+	padding: 18px 26px 15px;
 	border-bottom: 1px solid var(--rule);
 }
 
 .uni-identity .university-logo {
-	max-height: 54px;
-	max-width: 160px;
+	max-height: 44px;
+	max-width: 140px;
+	align-self: center;
+}
+
+.uni-code {
+	font-family: var(--mono);
+	font-size: 15px;
+	font-weight: 500;
+	color: var(--ink-3);
 }
 
 .uni-identity h1 {
-	font-size: 29px;
+	font-size: 25px;
 }
 
 body.page-university .program-selector {
-	padding: 6px 26px 22px;
+	padding: 2px 26px 16px;
 }
 
 body.page-university .faculty {
-	padding-top: 20px;
+	padding-top: 13px;
 }
 
 body.page-university .faculty-head {
@@ -506,21 +514,21 @@ body.page-university .faculty-head {
 	justify-content: space-between;
 	gap: 14px;
 	border-bottom: 2px solid var(--ink);
-	padding-bottom: 6px;
-	margin-bottom: 2px;
+	padding-bottom: 4px;
+	margin-bottom: 1px;
 }
 
 body.page-university .faculty-name {
 	font-family: var(--display);
 	font-weight: 700;
-	font-size: 15px;
+	font-size: 13.5px;
 	text-transform: uppercase;
 	letter-spacing: 0.07em;
 }
 
 body.page-university .faculty-count {
 	font-family: var(--mono);
-	font-size: 11px;
+	font-size: 10.5px;
 	color: var(--ink-3);
 	white-space: nowrap;
 }
@@ -529,7 +537,7 @@ body.page-university a.program {
 	display: flex;
 	align-items: baseline;
 	gap: 14px;
-	padding: 8.5px 6px;
+	padding: 6px;
 	border-bottom: 1px solid var(--line);
 	color: var(--ink);
 	transition: background-color 0.12s ease;
@@ -541,14 +549,14 @@ body.page-university a.program:hover {
 
 body.page-university .program-name {
 	flex: 1;
-	font-size: 14.5px;
+	font-size: 13px;
 	font-weight: 600;
 	line-height: 1.3;
 }
 
 body.page-university .program-meta {
 	font-family: var(--mono);
-	font-size: 10.5px;
+	font-size: 10px;
 	color: var(--ink-3);
 	white-space: nowrap;
 }
