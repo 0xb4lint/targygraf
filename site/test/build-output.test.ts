@@ -59,8 +59,8 @@ describe.skipIf(skip)('build output inventory', () => {
 	it('ships the frontend assets referenced by the pages', () => {
 		for (const asset of [
 			'assets/js/targygraf.js',
-			'assets/js/jquery.tipsy.min.js',
 			'assets/js/notie.min.js',
+			'assets/js/ls-migrate.js',
 			'assets/css/style.css',
 			'assets/css/tipsy.css',
 			'assets/css/notie.min.css',
@@ -72,14 +72,23 @@ describe.skipIf(skip)('build output inventory', () => {
 		}
 	});
 
-	it('ships targygraf.js byte-identical to the Laravel-served copy', () => {
-		// The frontend is the localStorage contract; until the Laravel tree is
-		// deleted, the two copies must never drift apart.
-		const laravel = fs.readFileSync(
-			path.join(REPO_ROOT, 'public/assets/js/targygraf.js')
+	it('ships a dependency-free frontend (no jQuery anywhere)', () => {
+		const targygraf = fs.readFileSync(
+			path.join(DIST, 'assets/js/targygraf.js'),
+			'utf8'
 		);
-		const site = fs.readFileSync(path.join(DIST, 'assets/js/targygraf.js'));
-		expect(site.equals(laravel)).toBe(true);
+		// The header comment may mention jQuery historically; actual usage
+		// patterns must not appear.
+		expect(targygraf).not.toMatch(/window\.jQuery|\$\(|\.tipsy\(/);
+		// The storage keys are the frozen contract with users' saved data.
+		for (const key of ['coursesFinished', 'coursesProcessing', 'creditsOptional']) {
+			expect(targygraf).toContain(key);
+		}
+
+		expect(fs.existsSync(path.join(DIST, 'assets/js/jquery.tipsy.min.js'))).toBe(false);
+
+		const page = fs.readFileSync(path.join(DIST, 'pe', 'mernokinformatikus.html'), 'utf8');
+		expect(page.toLowerCase()).not.toContain('jquery');
 	});
 });
 
@@ -341,21 +350,16 @@ describe.skipIf(skip)('page chrome', () => {
 		);
 	});
 
-	it('loads the untouched client stack in order', () => {
+	it('loads the client stack in order', () => {
 		const page = readPage(DIST, 'pe', 'mernokinformatikus.html');
 		const scripts = page
 			.querySelectorAll('script[src]')
 			.map((s) => s.getAttribute('src')!);
 		expect(scripts).toEqual([
-			'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js',
-			'/assets/js/jquery.tipsy.min.js',
 			'/assets/js/notie.min.js',
-			'/assets/js/targygraf.js?v=20190625',
+			'/assets/js/targygraf.js?v=20260830',
 			'/assets/js/ls-migrate.js?v=1',
 		]);
-		// The ga() no-op stub must exist because targygraf.js calls window.ga.
-		const inline = page.querySelectorAll('script:not([src])').map((s) => s.text);
-		expect(inline.some((t) => t.includes('window.ga = window.ga ||'))).toBe(true);
 	});
 
 	it('wires the localStorage migration bridge on university and program pages', () => {

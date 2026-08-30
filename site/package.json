@@ -16,7 +16,6 @@
   },
   "devDependencies": {
     "astro": "^7.2.9",
-    "jquery": "3.2.1",
     "jsdom": "^30.0.1",
     "miniflare": "^4.20260730.0",
     "node-html-parser": "^9.0.2",

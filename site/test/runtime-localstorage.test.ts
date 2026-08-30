@@ -1,16 +1,16 @@
 /**
- * End-to-end localStorage compatibility tests.
+ * End-to-end localStorage + behavior tests for the shipped frontend.
  *
- * These run the REAL, unmodified public/assets/js/targygraf.js with the real
- * jQuery 3.2.1 inside jsdom, against the freshly built pages, seeding
- * window.localStorage with data in the exact format the Laravel-era site
- * wrote ('coursesFinished'/'coursesProcessing' as JSON arrays of course
- * codes, 'creditsOptional' as a JSON number). This is the strongest guard
- * that existing users' saved progress keeps working without any glitch.
+ * targygraf.js is a dependency-free rewrite of the original jQuery
+ * implementation. The assertions in this file were written against and
+ * validated on the legacy engine first (see git history), so passing here
+ * pins behavioral parity: localStorage is seeded in the exact format the
+ * Laravel-era site wrote ('coursesFinished'/'coursesProcessing' as JSON
+ * arrays of course codes, 'creditsOptional' as a JSON number), and the
+ * script runs against the real built pages in jsdom.
  */
 import fs from 'node:fs';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
 import { JSDOM, VirtualConsole } from 'jsdom';
 import { beforeAll, describe, expect, it } from 'vitest';
 
@@ -18,12 +18,6 @@ import { getDataset, findProgram, type Program } from '../src/lib/data';
 import { DIST } from './global-setup';
 
 const skip = process.env.SKIP_BUILD_TESTS === '1';
-
-const SITE_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const JQUERY_SRC = fs.readFileSync(
-	path.join(SITE_ROOT, 'node_modules/jquery/dist/jquery.js'),
-	'utf8'
-);
 
 interface Storage {
 	finished?: (string | number)[];
@@ -33,7 +27,7 @@ interface Storage {
 
 interface LoadedPage {
 	window: any;
-	$: any;
+	document: any;
 	errors: string[];
 	notieAlerts: number;
 }
@@ -62,9 +56,7 @@ async function loadProgramPage(
 	});
 
 	const dom = new JSDOM(html, {
-		// The URL fixes the localStorage origin, mirroring the per-university
-		// subdomains in production.
-		url: `https://${universitySlug}.targygraf.hu/${programSlug}`,
+		url: `https://targygraf.hu/${universitySlug}/${programSlug}`,
 		runScripts: 'outside-only',
 		pretendToBeVisual: true,
 		virtualConsole,
@@ -82,30 +74,36 @@ async function loadProgramPage(
 		window.localStorage.setItem('creditsOptional', JSON.stringify(storage.optional));
 	}
 
+	// Stub the toast library (loaded from a separate file in the real page)
+	// and the dialogs.
 	const state = { notieAlerts: 0 };
-	window.eval(JQUERY_SRC);
-	// Stub the purely cosmetic pieces (tooltips, toast, dead analytics).
 	(window as any).__state = state;
 	window.eval(`
-		jQuery.fn.tipsy = function () { return this; };
 		window.notie = { alert: function () { window.__state.notieAlerts++; } };
-		window.ga = function () {};
 		window.alert = function () {};
 		window.confirm = function () { return true; };
 	`);
 	window.eval(targygrafSrc);
 
-	// jQuery fires ready on a microtask once readyState is no longer loading.
-	await new Promise((resolve) => setTimeout(resolve, 50));
+	// Init is synchronous once the document is parsed, but give queued
+	// microtasks a tick anyway.
+	await new Promise((resolve) => setTimeout(resolve, 10));
 
-	return { window, $: (window as any).jQuery, errors, notieAlerts: state.notieAlerts };
+	return { window, document: window.document, errors, notieAlerts: state.notieAlerts };
+}
+
+function byCode(page: LoadedPage, code: string): any[] {
+	return [...page.document.querySelectorAll('.course')].filter(
+		(el: any) => el.getAttribute('data-code') === code
+	);
 }
 
 function classesByCode(page: LoadedPage, code: string): string[] {
-	return page
-		.$(`.course[data-code="${code}"]`)
-		.toArray()
-		.map((el: any) => el.className);
+	return byCode(page, code).map((el) => el.className);
+}
+
+function hover(page: LoadedPage, el: any, type: 'mouseenter' | 'mouseleave') {
+	el.dispatchEvent(new page.window.MouseEvent(type));
 }
 
 /** All restorable (clickable) course codes of a program in display order. */
@@ -124,8 +122,6 @@ function clickableCodes(program: Program): { code: string; credits: number }[] {
 }
 
 const dataset = getDataset();
-const pe = dataset.universitiesBySlug.get('pe')!;
-const mernokinfo = findProgram(pe, 'mernokinformatikus')!.program;
 
 describe.skipIf(skip)('fresh visitor (no stored data)', () => {
 	let page: LoadedPage;
@@ -151,6 +147,10 @@ describe.skipIf(skip)('fresh visitor (no stored data)', () => {
 	it('does not invent storage entries', () => {
 		expect(page.window.localStorage.getItem('coursesFinished')).toBeNull();
 	});
+
+	it('hides the reset button while there is nothing to reset', () => {
+		expect(page.document.querySelector('.buttons .reset').style.display).toBe('none');
+	});
 });
 
 describe.skipIf(skip)('legacy coursesFinished restore', () => {
@@ -174,9 +174,13 @@ describe.skipIf(skip)('legacy coursesFinished restore', () => {
 
 	it('sums finished credits into the counter', () => {
 		// VEMIMAB144IN = 4 credits, VEMIMAB122MA = 2 credits.
-		expect(page.$('.credits-counter .finished').html()).toBe(
+		expect(page.document.querySelector('.credits-counter .finished').innerHTML).toBe(
 			'Teljesített: <b>6 kredit</b>'
 		);
+	});
+
+	it('shows the reset button', () => {
+		expect(page.document.querySelector('.buttons .reset').style.display).toBe('');
 	});
 });
 
@@ -190,7 +194,7 @@ describe.skipIf(skip)('legacy coursesProcessing restore', () => {
 		expect(page.errors).toEqual([]);
 		expect(classesByCode(page, 'VEMIMAB122MA')[0]).toContain('processing');
 		expect(classesByCode(page, 'VEMIMAB346MA')[0]).toContain('processable');
-		expect(page.$('.credits-counter .processing').html()).toBe(
+		expect(page.document.querySelector('.credits-counter .processing').innerHTML).toBe(
 			'Felvett: <b>2 kredit</b>'
 		);
 	});
@@ -200,24 +204,23 @@ describe.skipIf(skip)('legacy creditsOptional restore', () => {
 	it('shows the stored value and marks affordable optional slots', async () => {
 		const page = await loadProgramPage('pe', 'mernokinformatikus', { optional: 3 });
 		expect(page.errors).toEqual([]);
-		expect(page.$('.credits-counter .credits-optional').text()).toBe('3');
+		expect(
+			page.document.querySelector('.credits-counter .credits-optional').textContent
+		).toBe('3');
 		// The 3-credit ___OPTIONAL___ slot is covered, so it renders finished.
-		const optionals = page
-			.$('.course[data-code="___OPTIONAL___"]')
-			.toArray()
-			.map((el: any) => ({
-				credits: page.$(el).data('credits'),
-				finished: /(^| )finished( |$)/.test(el.className),
-			}));
-		expect(optionals.some((o: any) => o.credits === 3 && o.finished)).toBe(true);
+		const optionals = byCode(page, '___OPTIONAL___').map((el) => ({
+			credits: parseInt(el.getAttribute('data-credits'), 10),
+			finished: el.classList.contains('finished'),
+		}));
+		expect(optionals.some((o) => o.credits === 3 && o.finished)).toBe(true);
 	});
 });
 
 describe.skipIf(skip)('codes from other curricula are never lost', () => {
 	it('keeps unknown stored codes across an interaction round-trip', async () => {
-		// A user may have progress saved from another program on the same
-		// university subdomain (shared origin). Those codes are not on this
-		// page and MUST survive a save cycle.
+		// A user may have progress saved from another program (storage was per
+		// university subdomain, now apex-wide). Codes not on this page MUST
+		// survive a save cycle.
 		const foreign = ['XXFOREIGN101', 'XXFOREIGN202'];
 		const page = await loadProgramPage('pe', 'mernokinformatikus', {
 			finished: [...foreign, 'VEMIMAB144IN'],
@@ -225,8 +228,8 @@ describe.skipIf(skip)('codes from other curricula are never lost', () => {
 		});
 		expect(page.errors).toEqual([]);
 
-		// Click a processable course; the handler calls saveDataToLocalStorage.
-		page.$('.course[data-code="VEMIMAB122MA"]').trigger('click');
+		// Click a processable course; the handler saves everything back.
+		byCode(page, 'VEMIMAB122MA')[0].click();
 
 		const finished = JSON.parse(page.window.localStorage.getItem('coursesFinished'));
 		const processing = JSON.parse(page.window.localStorage.getItem('coursesProcessing'));
@@ -236,27 +239,48 @@ describe.skipIf(skip)('codes from other curricula are never lost', () => {
 		expect(processing).toContain('XXFOREIGNPROC');
 		expect(processing).toContain('VEMIMAB122MA');
 	});
+
+	it('keeps numeric codes stored by the jQuery-era site intact', async () => {
+		// jQuery .data() coerced numeric-looking codes to numbers; such values
+		// may still sit in old storage and must not break or vanish.
+		const page = await loadProgramPage('pe', 'mernokinformatikus', {
+			finished: [12345, 'VEMIMAB144IN'],
+		});
+		expect(page.errors).toEqual([]);
+		byCode(page, 'VEMIMAB122MA')[0].click();
+		const finished = JSON.parse(page.window.localStorage.getItem('coursesFinished'));
+		expect(finished).toContain(12345);
+	});
 });
 
 describe.skipIf(skip)('click lifecycle writes the legacy format', () => {
 	it('process -> finish -> remove round-trips through localStorage', async () => {
 		const page = await loadProgramPage('pe', 'mernokinformatikus');
 		expect(page.errors).toEqual([]);
-		const $course = page.$('.course[data-code="VEMIMAB144IN"]');
+		const course = byCode(page, 'VEMIMAB144IN')[0];
 
-		$course.trigger('click'); // felvett
+		course.click(); // felvett
 		expect(JSON.parse(page.window.localStorage.getItem('coursesProcessing'))).toEqual([
 			'VEMIMAB144IN',
 		]);
 
-		$course.trigger('click'); // teljesített
+		course.click(); // teljesített
 		expect(JSON.parse(page.window.localStorage.getItem('coursesFinished'))).toEqual([
 			'VEMIMAB144IN',
 		]);
 		expect(JSON.parse(page.window.localStorage.getItem('coursesProcessing'))).toEqual([]);
 
-		$course.trigger('click'); // leadás
+		course.click(); // leadás
 		expect(JSON.parse(page.window.localStorage.getItem('coursesFinished'))).toEqual([]);
+	});
+
+	it('refuses to un-finish a course that finished sequels depend on', async () => {
+		const page = await loadProgramPage('pe', 'mernokinformatikus', {
+			finished: ['VEMIMAB144IN', 'VEMIMAB244DI'], // 244DI requires 144IN
+		});
+		byCode(page, 'VEMIMAB144IN')[0].click();
+		// The alert (stubbed) fires and nothing changes.
+		expect(classesByCode(page, 'VEMIMAB144IN')[0]).toContain('finished');
 	});
 
 	it('reset button clears all three legacy keys', async () => {
@@ -264,7 +288,7 @@ describe.skipIf(skip)('click lifecycle writes the legacy format', () => {
 			finished: ['VEMIMAB144IN'],
 			optional: 2,
 		});
-		page.$('.buttons .reset').trigger('click');
+		page.document.querySelector('.buttons .reset').click();
 		expect(page.window.localStorage.getItem('coursesFinished')).toBeNull();
 		expect(page.window.localStorage.getItem('coursesProcessing')).toBeNull();
 		expect(page.window.localStorage.getItem('creditsOptional')).toBeNull();
@@ -324,10 +348,9 @@ describe.skipIf(skip)('referenced course blocks (differenciált blokkok)', () =>
 		const page = await loadProgramPage('bme', 'jarmumernok', { finished: blockCodes });
 		expect(page.errors).toEqual([]);
 
-		const referencing = page
-			.$('.course')
-			.toArray()
-			.filter((el: any) => (el.getAttribute('data-referenced-course-blocks') || '') !== '');
+		const referencing = [...page.document.querySelectorAll('.course')].filter(
+			(el: any) => (el.getAttribute('data-referenced-course-blocks') || '') !== ''
+		);
 		expect(referencing.length).toBeGreaterThan(0);
 		for (const el of referencing) {
 			expect(el.className, el.textContent.trim()).toContain('finished');
@@ -335,7 +358,57 @@ describe.skipIf(skip)('referenced course blocks (differenciált blokkok)', () =>
 	});
 });
 
-describe.skipIf(skip)('every program page boots the legacy script cleanly', () => {
+describe.skipIf(skip)('hover interactions', () => {
+	it('highlights prerequisites and sequels, and clears them on leave', async () => {
+		const page = await loadProgramPage('pe', 'mernokinformatikus');
+		const dependent = byCode(page, 'VEMIMAB346MA')[0]; // requires (VEMIMAB122MA)
+
+		hover(page, dependent, 'mouseenter');
+		expect(classesByCode(page, 'VEMIMAB122MA')[0]).toContain('prerequisite');
+		hover(page, dependent, 'mouseleave');
+		expect(classesByCode(page, 'VEMIMAB122MA')[0]).not.toContain('prerequisite');
+
+		const base = byCode(page, 'VEMIMAB122MA')[0];
+		hover(page, base, 'mouseenter');
+		expect(classesByCode(page, 'VEMIMAB346MA')[0]).toContain('sequel');
+		hover(page, base, 'mouseleave');
+		expect(classesByCode(page, 'VEMIMAB346MA')[0]).not.toContain('sequel');
+	});
+
+	it('shows tipsy-styled tooltips with the course title HTML', async () => {
+		const page = await loadProgramPage('pe', 'mernokinformatikus');
+		const course = byCode(page, 'VEMIMAB346MA')[0];
+
+		// The title attribute moves to original-title (suppressing the native
+		// tooltip), exactly like the retired tipsy plugin did.
+		expect(course.getAttribute('title')).toBeNull();
+		expect(course.getAttribute('original-title')).toContain('6 kredit - VEMIMAB346MA');
+
+		hover(page, course, 'mouseenter');
+		const tip = page.document.querySelector('.tipsy');
+		expect(tip).not.toBeNull();
+		expect(tip.className).toBe('tipsy tipsy-s');
+		expect(tip.querySelector('.tipsy-inner').innerHTML).toBe(
+			'6 kredit - VEMIMAB346MA<hr>• Matematikai alapismeretek <u>felvétele</u>'
+		);
+		expect(tip.querySelector('.tipsy-arrow').className).toBe('tipsy-arrow tipsy-arrow-s');
+
+		hover(page, course, 'mouseleave');
+		expect(page.document.querySelector('.tipsy')).toBeNull();
+	});
+
+	it('uses east gravity for the side buttons', async () => {
+		const page = await loadProgramPage('pe', 'mernokinformatikus');
+		const button = page.document.querySelector('.buttons .button.university');
+		hover(page, button, 'mouseenter');
+		const tip = page.document.querySelector('.tipsy');
+		expect(tip.className).toBe('tipsy tipsy-e');
+		expect(tip.querySelector('.tipsy-inner').textContent).toBe('Egyetem');
+		hover(page, button, 'mouseleave');
+	});
+});
+
+describe.skipIf(skip)('every program page boots the frontend cleanly', () => {
 	it('initializes all 89 pages without errors', async () => {
 		for (const university of dataset.universities) {
 			for (const faculty of university.faculties) {

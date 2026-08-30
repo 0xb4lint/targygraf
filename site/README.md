@@ -26,9 +26,10 @@ permanently redirected:
   prerequisite ordering) are load-bearing for the unmodified frontend.
 - `src/pages`, `src/layouts`, `src/components` – 1:1 ports of the Blade
   templates. Every `data-*` attribute is a contract with
-  `public/assets/js/targygraf.js`, which is **byte-identical** to the file
-  the Laravel site served (a test enforces this) so users' saved
-  localStorage progress keeps working.
+  `public/assets/js/targygraf.js`, a dependency-free rewrite of the original
+  jQuery frontend (same DOM contract, same localStorage format, quirks
+  intentionally preserved — see its header comment). Tooltips reuse the
+  original tipsy.css via a small built-in tipsy replacement.
 - `public/assets/js/ls-migrate.js` + `public/__ls-migrate.html` – one-time
   localStorage handoff from the legacy subdomain origins (progress was
   stored per `{uni}.targygraf.hu` origin; a hidden iframe posts it to the
@@ -66,9 +67,10 @@ npm run compare-live
   live-verified tooltip strings.
 - `build-output` – sweeps all built pages: course codes/ids/attributes vs
   the raw JSON (the localStorage contract), links, canonicals, sitemap.
-- `runtime-localstorage` – runs the real targygraf.js + jQuery 3.2.1 in
-  jsdom against built pages with legacy-format localStorage seeded;
-  includes booting all 89 program pages.
+- `runtime-localstorage` – runs the shipped targygraf.js in jsdom against
+  built pages with legacy-format localStorage seeded (the assertions were
+  validated against the original jQuery engine first, pinning behavioral
+  parity); includes booting all 89 program pages.
 - `ls-migrate` – the subdomain→apex storage handoff (origin pinning,
   merging, one-shot flag).
 - `worker-routing` / `worker-e2e` – routing units plus the wrangler-built
@@ -89,6 +91,13 @@ redirects. Initial setup on the `targygraf.hu` zone:
    `192.0.2.1` / `100::` works; the old VPS can stay until verified).
 3. Merges to `master` redeploy automatically when the git integration is
    connected; PRs get preview URLs (path-based URLs work on any host).
+4. **After cutover, verify the localStorage handoff is frameable**: the old
+   Laravel origin sent `Content-Security-Policy: ... frame-ancestors 'none'`
+   and `X-Frame-Options: SAMEORIGIN`. Those came from the origin server and
+   disappear once Workers assets serve the subdomains — but if any zone-level
+   Transform Rule injects such headers, exempt `/__ls-migrate` on
+   `*.targygraf.hu`, otherwise the migration iframe cannot load and users'
+   old progress stays stranded on the subdomain origins.
 
 ### Optional: dropping the Worker later
 

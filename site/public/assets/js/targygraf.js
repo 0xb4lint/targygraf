@@ -1,370 +1,377 @@
-/*globals window:false */
-/*globals document:false */
-
-Array.prototype.remove = function() {
-	var what, a = arguments, L = a.length, ax;
-	while (L && this.length) {
-		what = a[--L];
-		while ((ax = this.indexOf(what)) !== -1)
-			this.splice(ax, 1);
-	}
-	return this;
-};
-
-
-
-(function(Targygraf, $, window) {
+/*
+ * Tárgygráf frontend – dependency-free rewrite of the original jQuery
+ * implementation. Szekeres Bálint - https://targygraf.hu - https://b4lint.hu
+ *
+ * The localStorage contract is unchanged and must stay that way:
+ *   coursesFinished   JSON array of course codes
+ *   coursesProcessing JSON array of course codes
+ *   creditsOptional   JSON number
+ * Codes stored by the old site may be numbers (jQuery .data() coerced
+ * numeric-looking codes), so all comparisons go through String().
+ *
+ * Deliberately preserved quirks of the original implementation:
+ *   - restoring marks every element sharing a code, but counts the credits
+ *     of the first one only; clicking affects just the clicked element
+ *   - the "max credits" sum includes every course in the semester row,
+ *     regardless of the block's data-is-counted flag
+ *   - codes present in storage but not on the current page are kept and
+ *     written back on save (progress from other curricula must survive)
+ */
+(function (Targygraf, window) {
 	'use strict';
 
-	///////////////////////
-	// PRIVATE VARIABLES //
-	///////////////////////
+	var document = window.document;
+
 	var timeoutProgressbar = null;
 
-	var SNAPSHOT = {
-		enabled:			window.snapshotMode || false,
-		coursesFinished:	window.snapshotCoursesFinished,
-		coursesProcessing:	window.snapshotCoursesProcessing,
-		creditsOptional:	window.snapshotCreditsOptional
-	};
-
 	var CREDITS = {
-		finished:	0,
-		processing:	0,
-		optional:	0,
-		overflow:	0
+		finished: 0,
+		processing: 0,
+		optional: 0,
+		overflow: 0
 	};
 
 	var COURSES = {
-		finished:	[],
-		processing:	[]
+		finished: [],
+		processing: []
+	};
+
+	//////////////
+	// DOM UTIL //
+	//////////////
+	function all(selector, root) {
+		return Array.prototype.slice.call((root || document).querySelectorAll(selector));
 	}
 
+	function courses() {
+		return all('.course');
+	}
 
+	function coursesByCode(code) {
+		var wanted = String(code);
+		return courses().filter(function (el) {
+			return (el.getAttribute('data-code') || '') === wanted;
+		});
+	}
 
+	function courseById(id) {
+		return courses().filter(function (el) {
+			return el.getAttribute('data-id') === id;
+		})[0] || null;
+	}
 
+	function sequelsOf(el) {
+		var id = el.getAttribute('data-id');
+		return courses().filter(function (other) {
+			return (other.getAttribute('data-prerequisites') || '').indexOf(id) !== -1;
+		});
+	}
 
+	function creditsOf(el) {
+		return parseInt(el.getAttribute('data-credits'), 10) || 0;
+	}
 
+	function referencedBlocksAttr(el) {
+		return el.getAttribute('data-referenced-course-blocks') || '';
+	}
+
+	function prerequisitesAttr(el) {
+		return el.getAttribute('data-prerequisites') || '';
+	}
+
+	function specialisOf(el) {
+		var content = el.closest('.content');
+		return content ? parseInt(content.getAttribute('data-specialis'), 10) : 0;
+	}
+
+	function isInert(el) {
+		return referencedBlocksAttr(el) !== '' || el.getAttribute('data-code') === '___OPTIONAL___';
+	}
+
+	function removeValue(array, code) {
+		var wanted = String(code);
+		for (var i = array.length - 1; i >= 0; i--) {
+			if (String(array[i]) === wanted) {
+				array.splice(i, 1);
+			}
+		}
+	}
 
 	//////////////////
 	// LOCALSTORAGE //
 	//////////////////
-	function save( key, val ) {
-
-		window.localStorage.setItem( key, JSON.stringify( val ) );
+	function save(key, value) {
+		window.localStorage.setItem(key, JSON.stringify(value));
 	}
 
-
-
-	function load( key ) {
-
-		return JSON.parse( window.localStorage.getItem( key ) );
+	function load(key) {
+		try {
+			return JSON.parse(window.localStorage.getItem(key));
+		} catch (error) {
+			return null;
+		}
 	}
 
-
-
-	function remove( key ) {
-
-		window.localStorage.removeItem( key );
+	function remove(key) {
+		window.localStorage.removeItem(key);
 	}
-
-
 
 	function loadDataFromLocalStorage() {
-
-		var coursesFinished		= SNAPSHOT.enabled ? SNAPSHOT.coursesFinished : load('coursesFinished');
-		var coursesProcessing	= SNAPSHOT.enabled ? SNAPSHOT.coursesProcessing : load('coursesProcessing');
-		var creditsOptional		= SNAPSHOT.enabled ? SNAPSHOT.creditsOptional : load('creditsOptional');
+		var coursesFinished = load('coursesFinished');
+		var coursesProcessing = load('coursesProcessing');
+		var creditsOptional = load('creditsOptional');
 
 		if (coursesFinished) {
-
 			for (var i = 0; i < coursesFinished.length; i++) {
+				var finishedEls = coursesByCode(coursesFinished[i]);
 
-				var $courseFinished = $('.course[data-code="' + coursesFinished[i] + '"]');
-
-				if ($courseFinished.length)
-					finishCourse($courseFinished, true, false, true, false);
-				else
-					COURSES.finished.push( coursesFinished[i] );
+				if (finishedEls.length) {
+					finishCourse(finishedEls, true, false, true, false);
+				} else {
+					COURSES.finished.push(coursesFinished[i]);
+				}
 			}
 		}
 
 		if (coursesProcessing) {
-
 			for (var j = 0; j < coursesProcessing.length; j++) {
+				var processingEls = coursesByCode(coursesProcessing[j]);
 
-				var $courseProcessing = $('.course[data-code="' + coursesProcessing[j] + '"]');
-
-				if ($courseProcessing.length)
-					processCourse($courseProcessing, true, true);
-				else
-					COURSES.processing.push( coursesProcessing[j] );
+				if (processingEls.length) {
+					processCourse(processingEls, true, true);
+				} else {
+					COURSES.processing.push(coursesProcessing[j]);
+				}
 			}
 		}
 
-		if (creditsOptional)
-			CREDITS.optional = creditsOptional;
-		else
-			CREDITS.optional = 0;
-
+		CREDITS.optional = typeof creditsOptional === 'number' ? creditsOptional : 0;
 
 		markOptionalCourses();
 	}
 
-
-
 	function saveDataToLocalStorage() {
-
 		save('coursesFinished', COURSES.finished);
 		save('coursesProcessing', COURSES.processing);
 		save('creditsOptional', CREDITS.optional);
 	}
 
-
-
-
-
 	////////////////////////////
 	// INITIAL VIEW FUNCTIONS //
 	////////////////////////////
 	function setBodyMinWidth() {
-
 		var sumWidth = 960;
 
-		var courseBlocksSemester = $('.content[data-specialis="0"] .course-block').length;
-		var courseBlocksNotSemester = $('.content[data-specialis="1"] .course-block').length;
+		var semesterBlocks = all('.content[data-specialis="0"] .course-block').length;
+		var specialBlocks = all('.content[data-specialis="1"] .course-block').length;
 
-		if (courseBlocksSemester + courseBlocksNotSemester)
-			sumWidth = Math.max(courseBlocksSemester, courseBlocksNotSemester) * 146;
+		if (semesterBlocks + specialBlocks) {
+			sumWidth = Math.max(semesterBlocks, specialBlocks) * 146;
+		}
 
-		if ($('main .help').length)
-			sumWidth += $('main .help').width() * 2;
+		var help = document.querySelector('main .help');
+		if (help) {
+			sumWidth += help.getBoundingClientRect().width * 2;
+		}
 
-		$('body').css('min-width', sumWidth + 'px');
+		document.body.style.minWidth = sumWidth + 'px';
 	}
 
-
-
 	function setCourseBlocksTitleHeight() {
+		window.setTimeout(function () {
+			all('.content').forEach(function (content) {
+				var maxTitleHeight = 0;
+				var titles = all('.course-block > .course-block-title', content);
 
-		window.setTimeout(function() {
-
-			$('.content').each(function() {
-
-				var maxCourseBlockTitleHeight = 0;
-
-				$(this).children('.course-block').each(function() {
-
-					var courseBlockTitleHeight = $(this).children('.course-block-title').height() + 2;
-
-					maxCourseBlockTitleHeight = Math.max(maxCourseBlockTitleHeight, courseBlockTitleHeight);
+				titles.forEach(function (title) {
+					maxTitleHeight = Math.max(
+						maxTitleHeight,
+						title.getBoundingClientRect().height + 2
+					);
 				});
 
-				$(this).find('.course-block-title').height(maxCourseBlockTitleHeight);
+				titles.forEach(function (title) {
+					title.style.height = maxTitleHeight + 'px';
+				});
 			});
-
 		}, 500);
 	}
 
-
-
 	function markCoursesWithoutSequel() {
-
-		$('.content[data-specialis="0"] .course[data-prerequisites!=""]').each(function() {
-
-			var sequels = $('.course[data-prerequisites*="' + $(this).data('id') + '"]').length;
-
-			if (!sequels)
-				$(this).addClass('end');
+		all('.content[data-specialis="0"] .course').forEach(function (el) {
+			if (prerequisitesAttr(el) !== '' && !sequelsOf(el).length) {
+				el.classList.add('end');
+			}
 		});
 	}
-
-
-
-
 
 	//////////////////
 	// VIEW BUTTONS //
 	//////////////////
-	function enableShare() {
-
-		if (SNAPSHOT.enabled)
-			return $('#share').hide();
-
-		if (COURSES.finished.length || COURSES.processing.length)
-			$('#share').show();
-		else
-			$('#share').hide();
-	}
-
-
-
 	function enableReset() {
-
-		if (SNAPSHOT.enabled)
-			return $('#reset').hide();
-
-		if (COURSES.finished.length || COURSES.processing.length)
-			$('#reset').show();
-		else
-			$('#reset').hide();
+		var reset = document.querySelector('.buttons .reset');
+		if (!reset) {
+			return;
+		}
+		reset.style.display =
+			COURSES.finished.length || COURSES.processing.length ? '' : 'none';
 	}
-
-
-
-
 
 	//////////////////
 	// VIEW UPDATES //
 	//////////////////
 	function creditsCounterUpdate() {
-
 		window.clearTimeout(timeoutProgressbar);
 
-		$('.credits-counter .finished').html('Teljesített: <b>' + (CREDITS.finished + CREDITS.optional) + ' kredit</b>');
-		$('.credits-counter .processing').html('Felvett: <b>' + CREDITS.processing + ' kredit</b>');
+		var counterFinished = document.querySelector('.credits-counter .finished');
+		var counterProcessing = document.querySelector('.credits-counter .processing');
+		if (!counterFinished) {
+			return;
+		}
 
-		timeoutProgressbar = window.setTimeout(function() {
+		counterFinished.innerHTML =
+			'Teljesített: <b>' + (CREDITS.finished + CREDITS.optional) + ' kredit</b>';
+		counterProcessing.innerHTML = 'Felvett: <b>' + CREDITS.processing + ' kredit</b>';
 
-			var progressbarWidth = $('.progressbar').width();
-
+		timeoutProgressbar = window.setTimeout(function () {
+			var progressbar = document.querySelector('.progressbar');
 			var sumCredits = CREDITS.finished + CREDITS.processing + CREDITS.optional;
 			var maxCredits = getMaxCredits();
 
-			if (!maxCredits)
+			if (!maxCredits || !progressbar) {
 				return;
+			}
 
 			var percentage = Math.round((sumCredits / maxCredits) * 1000) / 10;
-			$('.progressbar').attr('title', percentage + " %");
+			progressbar.setAttribute('title', percentage + ' %');
 
-			var finishedWidth = ((CREDITS.finished + CREDITS.optional) / maxCredits) * progressbarWidth;
-			var processingWidth = (CREDITS.processing / maxCredits) * progressbarWidth;
+			var finished = progressbar.querySelector('.finished');
+			var processing = progressbar.querySelector('.processing');
 
-			$('.progressbar .finished').stop(true, true)
-				.animate({width: finishedWidth}, 400)
-				.html('<b>' + (CREDITS.finished + CREDITS.optional) + '</b> kredit');
-
-			$('.progressbar .processing').stop(true, true)
-				.animate({width: processingWidth}, 400)
-				.html('<b>' + CREDITS.processing + '</b> kredit');
-
+			finished.style.transition = 'width 0.4s';
+			processing.style.transition = 'width 0.4s';
+			finished.style.width =
+				((CREDITS.finished + CREDITS.optional) / maxCredits) * 100 + '%';
+			processing.style.width = (CREDITS.processing / maxCredits) * 100 + '%';
+			finished.innerHTML = '<b>' + (CREDITS.finished + CREDITS.optional) + '</b> kredit';
+			processing.innerHTML = '<b>' + CREDITS.processing + '</b> kredit';
 		}, 250);
 	}
 
-
-
 	function creditsOverflowUpdate() {
-
-		if (CREDITS.overflow > 0)
-			$('.credits-counter .credits-overflow').html(' [+ ' + CREDITS.overflow + ' kredit]');
-		else
-			$('.credits-counter .credits-overflow').html('');
+		var overflow = document.querySelector('.credits-counter .credits-overflow');
+		if (overflow) {
+			overflow.innerHTML =
+				CREDITS.overflow > 0 ? ' [+ ' + CREDITS.overflow + ' kredit]' : '';
+		}
 	}
-
-
 
 	function markProcessableCourses() {
-
-		$('.course').each(function() {
-
-			var $course = $(this);
-
-			if (isCourseProcessable( $course ))
-				$course.addClass('processable');
-			else
-				$course.removeClass('processable');
+		courses().forEach(function (el) {
+			el.classList.toggle('processable', isCourseProcessable(el));
 		});
 	}
-
-
 
 	function markOptionalCourses() {
-
 		var optionalCreditsSum = CREDITS.optional + CREDITS.overflow;
 
-		$('.course[data-code="___OPTIONAL___"]').sort(function(a, b) {
-			return parseInt( $(a).data('credits') ) < parseInt( $(b).data('credits') );
-		}).each(function() {
+		all('.course[data-code="___OPTIONAL___"]')
+			.sort(function (a, b) {
+				return creditsOf(b) - creditsOf(a);
+			})
+			.forEach(function (el) {
+				el.classList.remove('finished');
 
-			$(this).removeClass('finished');
+				var courseCredits = creditsOf(el);
+				if (optionalCreditsSum >= courseCredits) {
+					el.classList.add('finished');
 
-			var courseCredits = parseInt( $(this).data('credits') );
-			if (optionalCreditsSum >= courseCredits) {
+					if (specialisOf(el) === 0) {
+						optionalCreditsSum -= courseCredits;
+					}
+				}
+			});
 
-				$(this).addClass('finished');
+		var counter = document.querySelector('.credits-counter .credits-optional');
+		if (counter) {
+			counter.textContent = CREDITS.optional;
+		}
 
-				if (parseInt( $(this).parents('.content').data('specialis') ) === 0)
-					optionalCreditsSum -= courseCredits;
-			}
-		});
-
-		$('.credits-counter .credits-optional').text(CREDITS.optional);
-
-		if (!CREDITS.optional)
-			$('.credits-counter .credits-optional-control.minus').addClass('muted');
-		else
-			$('.credits-counter .credits-optional-control.minus').removeClass('muted');
+		var minus = document.querySelector('.credits-counter .credits-optional-control.minus');
+		if (minus) {
+			minus.classList.toggle('muted', !CREDITS.optional);
+		}
 	}
-
-
-
-
 
 	//////////////////////
 	// COURSE FUNCTIONS //
 	//////////////////////
-	function processCourse(
-		$course,
-		incrementCreditsProcessing,
-		addToProcessingArray
-	) {
-		if ($course.data('referenced-course-blocks') !== '' || $course.data('code') === '___OPTIONAL___')
-			return;
-
-		var credits = parseInt( $course.data('credits') );
-
-		if (incrementCreditsProcessing === undefined || incrementCreditsProcessing)
-			CREDITS.processing += credits;
-
-		if (addToProcessingArray === undefined || addToProcessingArray)
-			COURSES.processing.push( $course.data('code') );
-
-		$course.removeClass('processable').addClass('processing');
+	// The els argument is a single element (click) or every element sharing a
+	// stored code (restore) -- credits/arrays use the first, classes hit all.
+	function toArray(els) {
+		return Array.isArray(els) ? els : [els];
 	}
 
+	function processCourse(els, incrementCreditsProcessing, addToProcessingArray) {
+		els = toArray(els);
+		var first = els[0];
 
+		if (isInert(first)) {
+			return;
+		}
+
+		if (incrementCreditsProcessing === undefined || incrementCreditsProcessing) {
+			CREDITS.processing += creditsOf(first);
+		}
+
+		if (addToProcessingArray === undefined || addToProcessingArray) {
+			COURSES.processing.push(first.getAttribute('data-code'));
+		}
+
+		els.forEach(function (el) {
+			el.classList.remove('processable');
+			el.classList.add('processing');
+		});
+	}
 
 	function finishCourse(
-		$course,
+		els,
 		incrementCreditsFinished,
 		decrementCreditsProcessing,
 		addToDoneArray,
 		removeFromProcessingArray
 	) {
-		if (
-			$course.data('referenced-course-blocks') !== '' ||
-			$course.data('code') === '___OPTIONAL___'
-		) {
+		els = toArray(els);
+		var first = els[0];
+
+		if (isInert(first)) {
 			return;
 		}
 
-		var credits = parseInt( $course.data('credits') );
+		var credits = creditsOf(first);
 
-		if (incrementCreditsFinished === undefined || incrementCreditsFinished)
+		if (incrementCreditsFinished === undefined || incrementCreditsFinished) {
 			CREDITS.finished += credits;
+		}
 
-		if (decrementCreditsProcessing === undefined || decrementCreditsProcessing)
+		if (decrementCreditsProcessing === undefined || decrementCreditsProcessing) {
 			CREDITS.processing -= credits;
+		}
 
-		if (addToDoneArray === undefined || addToDoneArray)
-			COURSES.finished.push( $course.data('code') );
+		if (addToDoneArray === undefined || addToDoneArray) {
+			COURSES.finished.push(first.getAttribute('data-code'));
+		}
 
-		if (removeFromProcessingArray === undefined || removeFromProcessingArray)
-			COURSES.processing.remove( $course.data('code') );
+		if (removeFromProcessingArray === undefined || removeFromProcessingArray) {
+			removeValue(COURSES.processing, first.getAttribute('data-code'));
+		}
 
-		$course.removeClass('processing').addClass('finished');
+		els.forEach(function (el) {
+			el.classList.remove('processing');
+			el.classList.add('finished');
+		});
 
-		if (parseInt( $course.parents('.content').data('specialis') ) === 1) {
+		if (specialisOf(first) === 1) {
 			markReferencedCourseBlocks();
 			markOptionalCourses();
 			creditsOverflowUpdate();
@@ -372,67 +379,50 @@ Array.prototype.remove = function() {
 		}
 	}
 
+	function removeCourse(el, decrementCreditsFinished, removeFromFinishedArray) {
+		var conflictedProcessing = [];
+		var conflictedFinished = [];
 
-
-	function removeCourse(
-		$course,
-		decrementCreditsFinished,
-		removeFromFinishedArray
-	) {
-
-		var $sequels = $('.course[data-prerequisites*="' + $course.data('id') + '"]');
-
-		var conflictedProcessing	= [];
-		var conflictedFinished		= [];
-
-		if ($sequels.length) {
-			$sequels.each(function() {
-
-				var $course = $(this);
-
-				if ($course.hasClass('processing'))
-					conflictedProcessing.push( $course );
-
-				if ($course.hasClass('finished'))
-					conflictedFinished.push( $course );
-			});
-		}
-
-
+		sequelsOf(el).forEach(function (sequel) {
+			if (sequel.classList.contains('processing')) {
+				conflictedProcessing.push(sequel);
+			}
+			if (sequel.classList.contains('finished')) {
+				conflictedFinished.push(sequel);
+			}
+		});
 
 		var errorText = '';
 		if (conflictedProcessing.length) {
-
 			errorText += 'Kérlek távolítsd el a következő felvételeket:\n';
-
-			for (var i = 0; i < conflictedProcessing.length; i++)
-				errorText += '- ' + conflictedProcessing[i].text().trim() + '\n';
+			conflictedProcessing.forEach(function (item) {
+				errorText += '- ' + item.textContent.trim() + '\n';
+			});
 		}
 
 		if (conflictedFinished.length) {
-
 			errorText += 'Kérlek távolítsd el a következő teljesítéseket:\n';
-
-			for (var j = 0; j < conflictedFinished.length; j++)
-				errorText += '- ' + conflictedFinished[j].text().trim() + '\n';
+			conflictedFinished.forEach(function (item) {
+				errorText += '- ' + item.textContent.trim() + '\n';
+			});
 		}
 
-		if (errorText.length)
-			return alert(errorText);
+		if (errorText.length) {
+			return window.alert(errorText);
+		}
 
+		if (decrementCreditsFinished === undefined || decrementCreditsFinished) {
+			CREDITS.finished -= creditsOf(el);
+		}
 
+		if (removeFromFinishedArray === undefined || removeFromFinishedArray) {
+			removeValue(COURSES.finished, el.getAttribute('data-code'));
+		}
 
-		var credits = parseInt( $course.data('credits') );
+		el.classList.remove('finished');
+		el.classList.add('processable');
 
-		if (decrementCreditsFinished === undefined || decrementCreditsFinished)
-			CREDITS.finished -= credits;
-
-		if (removeFromFinishedArray === undefined || removeFromFinishedArray)
-			COURSES.finished.remove( $course.data('code') );
-
-		$course.removeClass('finished').addClass('processable');
-
-		if (parseInt( $course.parents('.content').data('specialis') ) === 1) {
+		if (specialisOf(el) === 1) {
 			markReferencedCourseBlocks();
 			markOptionalCourses();
 			creditsOverflowUpdate();
@@ -440,428 +430,432 @@ Array.prototype.remove = function() {
 		}
 	}
 
-
-
-	function showCoursePrerequisites($course) {
-
-		if ($course.data('prerequisites') === '')
+	function showCoursePrerequisites(el) {
+		if (prerequisitesAttr(el) === '') {
 			return;
-
-		var prerequisites = $course.data('prerequisites').split(',');
-
-		for (var i = 0; i < prerequisites.length; i++) {
-
-			var prerequisite = prerequisites[i];
-
-			if (prerequisite[0] == '#')
-				prerequisite = prerequisite.substring(1);
-
-			$('.course[data-id="' + prerequisite + '"]').addClass('prerequisite');
 		}
+
+		prerequisitesAttr(el).split(',').forEach(function (token) {
+			var id = token[0] === '#' ? token.substring(1) : token;
+			var target = courseById(id);
+			if (target) {
+				target.classList.add('prerequisite');
+			}
+		});
 	}
 
-
-
-	function showCourseSequel($course) {
-
-		$('.course[data-prerequisites*="' + $course.data('id') + '"]').addClass('sequel');
+	function showCourseSequel(el) {
+		sequelsOf(el).forEach(function (sequel) {
+			sequel.classList.add('sequel');
+		});
 	}
 
-
-
-	function blurCourses() {
-
-		$('.course.sequel').removeClass('sequel');
-		$('.course.prerequisite').removeClass('prerequisite');
+	function blurCourses() {
+		all('.course.sequel').forEach(function (el) {
+			el.classList.remove('sequel');
+		});
+		all('.course.prerequisite').forEach(function (el) {
+			el.classList.remove('prerequisite');
+		});
 	}
-
-
-
-
 
 	////////////////////////////
 	// COURSE BLOCK FUNCTIONS //
 	////////////////////////////
-	function showCourseBlockReferences($course, show) {
-
-		var referencedCourseBlocks = $course.data('referenced-course-blocks').split(',');
-
-		for (var i = 0; i < referencedCourseBlocks.length; i++) {
-
-			$('.course-block[data-id="' + referencedCourseBlocks[i] + '"]')
-				.css('z-index', show ? '101' : '')
-				.css('background-color', show ? 'white' : '');
-		}
+	function courseBlockById(id) {
+		return all('.course-block').filter(function (block) {
+			return block.getAttribute('data-id') === id;
+		})[0] || null;
 	}
 
-
+	function showCourseBlockReferences(el, show) {
+		referencedBlocksAttr(el).split(',').forEach(function (id) {
+			var block = courseBlockById(id);
+			if (block) {
+				block.style.zIndex = show ? '101' : '';
+				block.style.backgroundColor = show ? 'white' : '';
+			}
+		});
+	}
 
 	function markReferencedCourseBlocks() {
-
 		CREDITS.overflow = 0;
 
-		// collect all referenced course blocks
-		var referencedCourseBlocks = [];
-		$('.course[data-referenced-course-blocks!=""]').each(function() {
-
-			var courseReferencedCourseBlocks = $(this).data('referenced-course-blocks');
-
-			if (referencedCourseBlocks.indexOf(courseReferencedCourseBlocks) === -1)
-				referencedCourseBlocks.push(courseReferencedCourseBlocks);
+		// collect all referenced course block groups
+		var groups = [];
+		courses().forEach(function (el) {
+			var attr = referencedBlocksAttr(el);
+			if (attr !== '' && groups.indexOf(attr) === -1) {
+				groups.push(attr);
+			}
 		});
 
-		// process blocks
-		for (var i = 0; i < referencedCourseBlocks.length; i++) {
+		groups.forEach(function (group) {
+			var maxCredits = 0;
+			var sumFinishedCredits = 0;
+			var blockIds = group.split(',');
 
-			var maxCredits			= 0;
-			var sumFinishedCredits	= 0;
-			var courseBlocks		= referencedCourseBlocks[i].split(',');
-
-			for (var j = 0; j < courseBlocks.length; j++) {
-
-				// remove finished class from block
-				$('.course-block[data-id="' + courseBlocks[j] + '"]').removeClass('finished');
-
-				// sum block finished course credits
-				$('.course-block[data-id="' + courseBlocks[j] + '"] .course.finished').each(function() {
-					sumFinishedCredits += parseInt( $(this).data('credits') );
-				})
-			}
-
-			// courses references to this block
-			var $coursesReferencesThisBlock = $('.course[data-referenced-course-blocks="' + referencedCourseBlocks[i] + '"]');
-
-			// sum referenced courses credits
-			$coursesReferencesThisBlock.each(function() {
-				maxCredits += parseInt( $(this).data('credits') );
-			});
-
-			// add finished class to block, overflow handing
-			if (sumFinishedCredits >= maxCredits) {
-
-				CREDITS.overflow += sumFinishedCredits - maxCredits;
-
-				for (var k = 0; k < courseBlocks.length; k++)
-					$('.course-block[data-id="' + courseBlocks[k] + '"]').addClass('finished');
-			}
-
-			// sort courses references to this block by credits
-			$coursesReferencesThisBlock.sort(function(a, b) {
-				return parseInt( $(a).data('credits') ) < parseInt( $(b).data('credits') );
-			}).each(function() {
-
-				// remove finished class
-				$(this).removeClass('finished');
-
-				// add finished class
-				var courseCredits = parseInt( $(this).data('credits') );
-				if (sumFinishedCredits >= courseCredits) {
-
-					$(this).addClass('finished');
-					sumFinishedCredits -= courseCredits;
+			blockIds.forEach(function (blockId) {
+				var block = courseBlockById(blockId);
+				if (!block) {
+					return;
 				}
+				block.classList.remove('finished');
+				all('.course.finished', block).forEach(function (course) {
+					sumFinishedCredits += creditsOf(course);
+				});
 			});
-		}
+
+			var referencingCourses = courses().filter(function (el) {
+				return referencedBlocksAttr(el) === group;
+			});
+
+			referencingCourses.forEach(function (el) {
+				maxCredits += creditsOf(el);
+			});
+
+			if (sumFinishedCredits >= maxCredits) {
+				CREDITS.overflow += sumFinishedCredits - maxCredits;
+				blockIds.forEach(function (blockId) {
+					var block = courseBlockById(blockId);
+					if (block) {
+						block.classList.add('finished');
+					}
+				});
+			}
+
+			referencingCourses
+				.sort(function (a, b) {
+					return creditsOf(b) - creditsOf(a);
+				})
+				.forEach(function (el) {
+					el.classList.remove('finished');
+
+					var courseCredits = creditsOf(el);
+					if (sumFinishedCredits >= courseCredits) {
+						el.classList.add('finished');
+						sumFinishedCredits -= courseCredits;
+					}
+				});
+		});
 	}
-
-
-
-
 
 	//////////////////////
 	// HELPER FUNCTIONS //
 	//////////////////////
 	function getMaxCredits() {
-
+		// Historical quirk kept for parity: data-is-counted lives on the
+		// blocks, so this sums every course of the semester row.
 		var sum = 0;
 
-		$('.content[data-specialis="0"] .course[data-is-counted!="0"]').each(function() {
-			sum += parseInt( $(this).data('credits') );
+		all('.content[data-specialis="0"] .course').forEach(function (el) {
+			if (el.getAttribute('data-is-counted') !== '0') {
+				sum += creditsOf(el);
+			}
 		});
 
 		return sum;
 	}
 
-
-
-	function isCourseProcessable($course) {
-
+	function isCourseProcessable(el) {
 		if (
-			$course.data('referenced-course-blocks') !== '' ||
-			$course.data('code') == '___OPTIONAL___' ||
-			$course.hasClass('processing') ||
-			$course.hasClass('finished')
+			isInert(el) ||
+			el.classList.contains('processing') ||
+			el.classList.contains('finished')
 		) {
 			return false;
 		}
 
-		if ($course.data('prerequisites') === '')
+		if (prerequisitesAttr(el) === '') {
 			return true;
+		}
 
+		var sumCredits = CREDITS.finished + CREDITS.optional + CREDITS.overflow;
+		var tokens = prerequisitesAttr(el).split(',');
+		var creditRegex = /^___(\d+)___$/;
 
-		var sumCredits		= CREDITS.finished + CREDITS.optional + CREDITS.overflow;
-		var prerequisites	= $course.data('prerequisites').split(',');
-		var creditRegex		= /^___(\d+)___$/;
+		for (var i = 0; i < tokens.length; i++) {
+			var token = tokens[i];
+			var creditMatches = creditRegex.exec(token);
 
-		for (var i = 0; i < prerequisites.length; i++) {
-
-			var prerequisite		= prerequisites[i];
-			var creditRegexMatches	= creditRegex.exec( prerequisite );
-
-			if (creditRegexMatches) {
-
-				if (sumCredits < parseInt( creditRegexMatches[1] ))
+			if (creditMatches) {
+				if (sumCredits < parseInt(creditMatches[1], 10)) {
 					return false;
-
-			} else if (prerequisite[0] === '#') {
-
+				}
+			} else if (token[0] === '#') {
+				var parallel = courseById(token.substring(1));
 				if (
-					!$('.course[data-id="' + prerequisite.substring(1) + '"]').hasClass('processing') &&
-					!$('.course[data-id="' + prerequisite.substring(1) + '"]').hasClass('finished')
+					!parallel ||
+					(!parallel.classList.contains('processing') &&
+						!parallel.classList.contains('finished'))
 				) {
 					return false;
 				}
-
 			} else {
-
-				if (!$('.course[data-id="' + prerequisite + '"]').hasClass('finished'))
+				var target = courseById(token);
+				if (!target || !target.classList.contains('finished')) {
 					return false;
-
+				}
 			}
 		}
 
 		return true;
 	}
 
+	//////////////
+	// TOOLTIPS //
+	//////////////
+	// Minimal stand-in for the retired jQuery tipsy plugin: same DOM, same
+	// classes, same positioning, so the untouched tipsy.css keeps working.
+	var tipsyElement = null;
 
+	function tipsyFixTitle(el) {
+		if (el.getAttribute('title') || typeof el.getAttribute('original-title') !== 'string') {
+			el.setAttribute('original-title', el.getAttribute('title') || '');
+			el.removeAttribute('title');
+		}
+	}
 
+	function tipsyHide() {
+		if (tipsyElement && tipsyElement.parentNode) {
+			tipsyElement.parentNode.removeChild(tipsyElement);
+		}
+		tipsyElement = null;
+	}
 
+	function tipsyShow(el, gravity, html) {
+		tipsyFixTitle(el);
+
+		var title = (el.getAttribute('original-title') || '').replace(/(^\s*|\s*$)/, '');
+		if (!title) {
+			return;
+		}
+
+		tipsyHide();
+
+		var tip = document.createElement('div');
+		tip.className = 'tipsy tipsy-' + gravity;
+		tip.innerHTML =
+			'<div class="tipsy-arrow tipsy-arrow-' + gravity.charAt(0) + '"></div>' +
+			'<div class="tipsy-inner"></div>';
+		var inner = tip.querySelector('.tipsy-inner');
+		if (html) {
+			inner.innerHTML = title;
+		} else {
+			inner.textContent = title;
+		}
+
+		tip.style.top = '0';
+		tip.style.left = '0';
+		tip.style.visibility = 'hidden';
+		tip.style.display = 'block';
+		document.body.insertBefore(tip, document.body.firstChild);
+
+		var rect = el.getBoundingClientRect();
+		var pos = {
+			top: rect.top + window.pageYOffset,
+			left: rect.left + window.pageXOffset,
+			width: el.offsetWidth,
+			height: el.offsetHeight
+		};
+		var actualWidth = tip.offsetWidth;
+		var actualHeight = tip.offsetHeight;
+
+		var top;
+		var left;
+		switch (gravity.charAt(0)) {
+			case 'n':
+				top = pos.top + pos.height;
+				left = pos.left + pos.width / 2 - actualWidth / 2;
+				break;
+			case 's':
+				top = pos.top - actualHeight;
+				left = pos.left + pos.width / 2 - actualWidth / 2;
+				break;
+			case 'e':
+				top = pos.top + pos.height / 2 - actualHeight / 2;
+				left = pos.left - actualWidth;
+				break;
+			case 'w':
+				top = pos.top + pos.height / 2 - actualHeight / 2;
+				left = pos.left + pos.width;
+				break;
+		}
+
+		tip.style.top = top + 'px';
+		tip.style.left = left + 'px';
+		tip.style.visibility = 'visible';
+		tip.style.opacity = '0.8';
+
+		tipsyElement = tip;
+	}
+
+	function tipsy(els, gravity, html) {
+		els.forEach(function (el) {
+			tipsyFixTitle(el);
+			el.addEventListener('mouseenter', function () {
+				tipsyShow(el, gravity, html);
+			});
+			el.addEventListener('mouseleave', tipsyHide);
+		});
+	}
+
+	function registerTooltips() {
+		tipsy(all('.buttons .button'), 'e', false);
+		tipsy(all('.course-help'), 'w', true);
+
+		// iframes only ever needed their native tooltip suppressed
+		all('iframe[title]').forEach(function (el) {
+			el.removeAttribute('title');
+		});
+
+		tipsy(all('[title]'), 's', true);
+	}
 
 	////////////
 	// EVENTS //
 	////////////
 	function registerEvents() {
+		courses().forEach(function (el) {
+			el.addEventListener('click', function () {
+				if (isInert(el)) {
+					return;
+				}
 
-		var courseGAEvents = {};
+				if (el.classList.contains('finished')) {
+					removeCourse(el);
+				} else if (el.classList.contains('processing')) {
+					finishCourse(el);
+				} else if (isCourseProcessable(el)) {
+					processCourse(el);
+				}
 
-		$('.course').click(function() {
-
-			if (SNAPSHOT.enabled)
-				return;
-
-			var $course	= $(this);
-			var id		= $course.data('id');
-			var text	= $course.text().trim();
-
-			if (
-				$course.data('referenced-course-blocks') !== '' ||
-				$course.data('code') === '___OPTIONAL___'
-			) {
-				return;
-			}
-
-			if ($course.hasClass('finished')) {
-
-				removeCourse($course);
-
-				if (courseGAEvents[ id ] !== undefined)
-					window.clearTimeout( courseGAEvents[ id ] );
-
-				courseGAEvents[ id ] = window.setTimeout(function() {
-					window.ga('send', 'event', 'Tantárgy', 'Leadás', text)
-				}, 1500);
-
-			} else if ($course.hasClass('processing')) {
-
-				finishCourse($course);
-
-				if (courseGAEvents[ id ] !== undefined)
-					window.clearTimeout( courseGAEvents[ id ] );
-
-				courseGAEvents[ id ] = window.setTimeout(function() {
-					window.ga('send', 'event', 'Tantárgy', 'Teljesítés', text);
-				}, 1500);
-
-			} else if (isCourseProcessable( $course )) {
-
-				processCourse($course);
-
-				if (courseGAEvents[ id ] !== undefined)
-					window.clearTimeout( courseGAEvents[ id ] );
-
-				courseGAEvents[ id ] = window.setTimeout(function() {
-					window.ga('send', 'event', 'Tantárgy', 'Felvétel', text)
-				}, 1500);
-			}
-
-			markProcessableCourses();
-			enableShare();
-			enableReset();
-			creditsCounterUpdate();
-			saveDataToLocalStorage();
-		});
-
-
-
-		$('.course').hover(
-		function() {
-			showCourseSequel($(this));
-			showCoursePrerequisites($(this));
-		},
-		function() {
-			blurCourses();
-		});
-
-
-
-		$('.course[data-referenced-course-blocks!=""]').hover(
-		function() {
-			$(this).css('z-index', '101');
-			$('.fade').show();
-
-			showCourseBlockReferences($(this), true);
-
-		}, function() {
-
-			showCourseBlockReferences($(this), false);
-
-			$('.fade').hide();
-			$(this).css('z-index', '');
-		});
-
-
-
-		$('.course[data-code="___OPTIONAL___"]').hover(
-		function() {
-
-			$(this).css('z-index', '101');
-			$('.fade').show();
-			$('.credits-counter  .credits-optional-container').css('z-index', '101').css('background-color', 'white');
-
-		}, function() {
-
-			$('.credits-counter  .credits-optional-container').css('z-index', '').css('background-color', '');
-			$('.fade').hide();
-			$(this).css('z-index', '');
-		});
-
-
-
-		$('.credits-counter .credits-optional-control.minus').click(function() {
-
-			if (SNAPSHOT.enabled || $(this).hasClass('muted'))
-				return;
-
-			CREDITS.optional--;
-			markOptionalCourses();
-			creditsCounterUpdate();
-			saveDataToLocalStorage();
-		});
-
-
-
-		$('.credits-counter .credits-optional-control.plus').click(function() {
-
-			if (SNAPSHOT.enabled)
-				return;
-
-			CREDITS.optional++;
-			markOptionalCourses();
-			creditsCounterUpdate();
-			saveDataToLocalStorage();
-		});
-
-
-
-		$('.program-selector .toggle').click(function() {
-			$(this).hide();
-			$('.program-selector .faculties').show();
-		})
-
-
-
-		$('.buttons .reset').click(function() {
-
-			if (!confirm('Biztos vagy benne?'))
-				return;
-
-			remove('coursesFinished');
-			remove('coursesProcessing');
-			remove('creditsOptional');
-
-			location.reload();
-		});
-
-
-
-		/*$('#share').click(function() {
-
-			if ($(this).hasClass('loading'))
-				return;
-
-			var url		= $(this).data('url');
-			var szak	= $(this).data('szak');
-			var html	= $(this).html();
-			var save	= this;
-
-			$(this).addClass('loading');
-			$(this).html('<i class="fa fa-fw fa-circle-o-notch fa-spin"></i>');
-
-			$.post( url, {
-				szak:			szak,
-				teljesitett:	JSON.stringify( COURSES.finished ),
-				felvett:		JSON.stringify( COURSES.processing ),
-				szabad:			CREDITS.optional
-			}, function (data) {
-
-				$(save).hide();
-				window.location = data.link;
-
-			}, 'json').always(function() {
-
-				$(save).html( html );
-				$(save).removeClass('loading');
+				markProcessableCourses();
+				enableReset();
+				creditsCounterUpdate();
+				saveDataToLocalStorage();
 			});
-		});*/
 
-		$('.buttons .button').tipsy({
-			gravity: 'e'
+			el.addEventListener('mouseenter', function () {
+				showCourseSequel(el);
+				showCoursePrerequisites(el);
+			});
+			el.addEventListener('mouseleave', blurCourses);
 		});
 
-		$('.course-help').tipsy({
-			gravity: 'w',
-			html: true
+		var fade = document.querySelector('.fade');
+
+		courses().forEach(function (el) {
+			if (referencedBlocksAttr(el) === '') {
+				return;
+			}
+			el.addEventListener('mouseenter', function () {
+				el.style.zIndex = '101';
+				if (fade) {
+					fade.style.display = 'block';
+				}
+				showCourseBlockReferences(el, true);
+			});
+			el.addEventListener('mouseleave', function () {
+				showCourseBlockReferences(el, false);
+				if (fade) {
+					fade.style.display = '';
+				}
+				el.style.zIndex = '';
+			});
 		});
 
-		$('iframe[title]').tipsy({
-			opacity: 0
+		all('.course[data-code="___OPTIONAL___"]').forEach(function (el) {
+			var container = document.querySelector(
+				'.credits-counter .credits-optional-container'
+			);
+			el.addEventListener('mouseenter', function () {
+				el.style.zIndex = '101';
+				if (fade) {
+					fade.style.display = 'block';
+				}
+				if (container) {
+					container.style.zIndex = '101';
+					container.style.backgroundColor = 'white';
+				}
+			});
+			el.addEventListener('mouseleave', function () {
+				if (container) {
+					container.style.zIndex = '';
+					container.style.backgroundColor = '';
+				}
+				if (fade) {
+					fade.style.display = '';
+				}
+				el.style.zIndex = '';
+			});
 		});
 
-		$('[title]').tipsy({
-			gravity: 's',
-			html: true
-		});
+		var minus = document.querySelector('.credits-counter .credits-optional-control.minus');
+		if (minus) {
+			minus.addEventListener('click', function () {
+				if (minus.classList.contains('muted')) {
+					return;
+				}
+				CREDITS.optional--;
+				markOptionalCourses();
+				creditsCounterUpdate();
+				saveDataToLocalStorage();
+			});
+		}
+
+		var plus = document.querySelector('.credits-counter .credits-optional-control.plus');
+		if (plus) {
+			plus.addEventListener('click', function () {
+				CREDITS.optional++;
+				markOptionalCourses();
+				creditsCounterUpdate();
+				saveDataToLocalStorage();
+			});
+		}
+
+		var toggle = document.querySelector('.program-selector .toggle');
+		if (toggle) {
+			toggle.addEventListener('click', function () {
+				toggle.style.display = 'none';
+				var faculties = document.querySelector('.program-selector .faculties');
+				if (faculties) {
+					faculties.style.display = '';
+				}
+			});
+		}
+
+		var reset = document.querySelector('.buttons .reset');
+		if (reset) {
+			reset.addEventListener('click', function () {
+				if (!window.confirm('Biztos vagy benne?')) {
+					return;
+				}
+
+				remove('coursesFinished');
+				remove('coursesProcessing');
+				remove('creditsOptional');
+
+				window.location.reload();
+			});
+		}
+
+		registerTooltips();
 	}
 
-
-
 	function showLegal() {
-		notie.alert({
+		window.notie.alert({
 			type: 'error',
 			text: 'Az oldalon található információk nem tekinthetőek hivatalos forrásnak.',
 			position: 'bottom'
 		});
 	}
 
-
-
-
 	//////////
 	// INIT //
 	//////////
-	Targygraf.init = function() {
-
-		window.console.log('Szekeres Bálint - https://targygraf.hu - https://balint.szekeres.me');
+	Targygraf.init = function () {
+		window.console.log('Szekeres Bálint - https://targygraf.hu - https://b4lint.hu');
 
 		setBodyMinWidth();
 		setCourseBlocksTitleHeight();
@@ -870,7 +864,6 @@ Array.prototype.remove = function() {
 		loadDataFromLocalStorage();
 		markProcessableCourses();
 
-		enableShare();
 		enableReset();
 
 		creditsCounterUpdate();
@@ -878,12 +871,12 @@ Array.prototype.remove = function() {
 
 		showLegal();
 	};
+})((window.Targygraf = window.Targygraf || {}), window);
 
-}(window.Targygraf = window.Targygraf || {}, window.jQuery, window));
-
-
-
-window.jQuery(document).ready(function() {
-
+if (window.document.readyState === 'loading') {
+	window.document.addEventListener('DOMContentLoaded', function () {
+		window.Targygraf.init();
+	});
+} else {
 	window.Targygraf.init();
-});
+}

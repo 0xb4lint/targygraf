@@ -2,10 +2,10 @@
 /**
  * Port of resources/views/template.blade.php.
  *
- * The client-side stack is intentionally untouched: the same jQuery 3.2.1
- * CDN build, tipsy, notie and the unmodified assets/js/targygraf.js, so the
- * interactive behavior and the localStorage format stay bit-for-bit
- * compatible with the Laravel-rendered site.
+ * The client stack is dependency-free: assets/js/targygraf.js is a vanilla
+ * rewrite of the original jQuery implementation (same DOM contract, same
+ * localStorage format — see its header), tooltips reuse tipsy.css via a
+ * small built-in replacement, and notie remains for the legal toast.
  */
 import { DEFAULT_DESCRIPTION, pageTitle } from '../lib/render';
 import { siteOrigin } from '../lib/urls';
@@ -62,10 +62,6 @@ const origin = siteOrigin();
 		<link href="/assets/css/tipsy.css" rel="stylesheet" />
 		<link href="/assets/css/notie.min.css" rel="stylesheet" />
 		<script is:inline type="text/javascript">
-			// Universal Analytics was shut down in 2023; targygraf.js still calls
-			// window.ga(), so keep a no-op stub to preserve its behavior.
-			window.ga = window.ga || function () {};
-
 			(function (d, s, id) {
 				var js,
 					fjs = d.getElementsByTagName(s)[0];
@@ -101,10 +97,8 @@ const origin = siteOrigin();
 			<div class="disclaimer">Az oldalon található információk nem tekinthetőek hivatalos forrásnak.</div>
 		</footer>
 
-		<script is:inline src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script is:inline src="/assets/js/jquery.tipsy.min.js"></script>
 		<script is:inline src="/assets/js/notie.min.js"></script>
-		<script is:inline src="/assets/js/targygraf.js?v=20190625"></script>
+		<script is:inline src="/assets/js/targygraf.js?v=20260830"></script>
 		{
 			migrateUniversity && (
 				<script
