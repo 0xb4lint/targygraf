@@ -66,8 +66,10 @@ npm run compare-live
 
 ## Tests (`npm test`)
 
-- `json-validation` – gates contributor PRs (structure,
-  prerequisite/reference resolution, filename shape).
+- `json-validation` – gates contributor PRs: structure, unknown-field
+  (typo) detection, prerequisite/reference resolution, filename shape,
+  plus a full loader pass. Failure messages are contributor-facing
+  Hungarian sentences naming the file, the spot and the fix.
 - `data` / `render` – loader and presentation units, incl. fixtures and
   live-verified tooltip strings.
 - `build-output` – sweeps all built pages: course codes/ids/attributes vs
