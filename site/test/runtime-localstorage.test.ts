@@ -442,12 +442,14 @@ describe.skipIf(skip)('hover interactions', () => {
 	});
 
 	it('uses east gravity for the side buttons', async () => {
-		const page = await loadProgramPage('pe', 'mernokinformatikus');
-		const button = page.document.querySelector('.buttons .button.university');
+		const page = await loadProgramPage('pe', 'mernokinformatikus', {
+			finished: ['VEMIMAB144IN'], // the reset button only shows with data
+		});
+		const button = page.document.querySelector('.buttons .button.reset');
 		hover(page, button, 'mouseenter');
 		const tip = page.document.querySelector('.tipsy');
 		expect(tip.className).toBe('tipsy tipsy-e');
-		expect(tip.querySelector('.tipsy-inner').textContent).toBe('Egyetem');
+		expect(tip.querySelector('.tipsy-inner').textContent).toBe('Adatok törlése');
 		hover(page, button, 'mouseleave');
 	});
 });
