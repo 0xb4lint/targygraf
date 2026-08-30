@@ -590,7 +590,7 @@ CONTRIBUTE LINKS
 	align-items: baseline;
 	justify-content: space-between;
 	gap: 14px;
-	padding: 11px 6px 3px;
+	padding: 11px 14px 3px 6px;
 }
 
 .contribute-q {
@@ -605,6 +605,7 @@ CONTRIBUTE LINKS
 	text-transform: uppercase;
 	color: var(--warm);
 	white-space: nowrap;
+	padding-right: 32px;
 }
 
 .contribute:hover .contribute-q {
