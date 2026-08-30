@@ -877,6 +877,12 @@
 	}
 
 	function showLegal() {
+		// Only program pages carry the toast; the other pages state the same
+		// in the footer, permanently.
+		if ((document.body.className || '').indexOf('page-program') === -1) {
+			return;
+		}
+
 		var notice = document.createElement('div');
 		notice.className = 'site-notice';
 		notice.setAttribute('role', 'status');

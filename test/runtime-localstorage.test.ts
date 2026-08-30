@@ -86,6 +86,31 @@ async function loadProgramPage(
 	return { window, document: window.document, errors };
 }
 
+/** Boots a non-program page (home, university) with the shipped script. */
+async function loadChromePage(relative: string[], url: string): Promise<LoadedPage> {
+	const html = fs.readFileSync(path.join(DIST, ...relative), 'utf8');
+	const targygrafSrc = fs.readFileSync(
+		path.join(DIST, 'assets/js/targygraf.js'),
+		'utf8'
+	);
+	const errors: string[] = [];
+	const virtualConsole = new VirtualConsole();
+	virtualConsole.on('jsdomError', (error) => {
+		if (!String(error.message).includes('navigation')) {
+			errors.push(String(error.message));
+		}
+	});
+	const dom = new JSDOM(html, {
+		url,
+		runScripts: 'outside-only',
+		pretendToBeVisual: true,
+		virtualConsole,
+	});
+	dom.window.eval(targygrafSrc);
+	await new Promise((resolve) => setTimeout(resolve, 10));
+	return { window: dom.window, document: dom.window.document, errors };
+}
+
 function byCode(page: LoadedPage, code: string): any[] {
 	return [...page.document.querySelectorAll('.course')].filter(
 		(el: any) => el.getAttribute('data-code') === code
@@ -128,6 +153,16 @@ describe.skipIf(skip)('fresh visitor (no stored data)', () => {
 		const notice = page.document.querySelector('.site-notice');
 		expect(notice).not.toBeNull();
 		expect(notice.textContent).toContain('Tájékoztató jellegű oldal');
+	});
+
+	it('keeps the legal notice off the home and university pages', async () => {
+		const home = await loadChromePage(['index.html'], 'https://targygraf.hu/');
+		expect(home.errors).toEqual([]);
+		expect(home.document.querySelector('.site-notice')).toBeNull();
+
+		const uni = await loadChromePage(['pe.html'], 'https://targygraf.hu/pe');
+		expect(uni.errors).toEqual([]);
+		expect(uni.document.querySelector('.site-notice')).toBeNull();
 	});
 
 	it('marks courses without prerequisites as processable', () => {
