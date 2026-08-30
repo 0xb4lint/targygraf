@@ -847,11 +847,13 @@
 		var toggle = document.querySelector('.program-selector .toggle');
 		if (toggle) {
 			toggle.addEventListener('click', function () {
-				toggle.style.display = 'none';
 				var faculties = document.querySelector('.program-selector .faculties');
-				if (faculties) {
-					faculties.style.display = '';
+				if (!faculties) {
+					return;
 				}
+				var isOpen = faculties.style.display !== 'none';
+				faculties.style.display = isOpen ? 'none' : '';
+				toggle.classList.toggle('open', !isOpen);
 			});
 		}
 

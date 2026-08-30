@@ -426,6 +426,21 @@ describe.skipIf(skip)('hover interactions', () => {
 		expect(page.document.querySelector('.tipsy')).toBeNull();
 	});
 
+	it('toggles the program selector dropdown open and closed', async () => {
+		const page = await loadProgramPage('pe', 'mernokinformatikus');
+		const toggle = page.document.querySelector('.program-selector .toggle');
+		const faculties = page.document.querySelector('.program-selector .faculties');
+		expect(faculties.style.display).toBe('none');
+
+		toggle.click();
+		expect(faculties.style.display).toBe('');
+		expect(toggle.classList.contains('open')).toBe(true);
+
+		toggle.click();
+		expect(faculties.style.display).toBe('none');
+		expect(toggle.classList.contains('open')).toBe(false);
+	});
+
 	it('uses east gravity for the side buttons', async () => {
 		const page = await loadProgramPage('pe', 'mernokinformatikus');
 		const button = page.document.querySelector('.buttons .button.university');

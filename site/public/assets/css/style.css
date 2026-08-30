@@ -657,11 +657,13 @@ header .program-curriculum-outdated {
 }
 
 /*
-PROGRAM SELECTOR (collapsed, program page)
+PROGRAM SELECTOR (program page): compact toggle + animated dropdown.
+Shrink-wrapped so its box never covers the breadcrumb in the header.
 */
 body.page-program .program-selector {
+	display: inline-block;
 	position: relative;
-	z-index: 2;
+	z-index: 150;
 	margin-bottom: 4px;
 }
 
@@ -673,59 +675,86 @@ body.page-program .program-selector .toggle {
 	letter-spacing: 0.12em;
 	text-transform: uppercase;
 	color: #fff;
+	background: rgba(255, 255, 255, 0.07);
 	border: 1px solid rgba(255, 255, 255, 0.4);
-	border-radius: 3px;
-	padding: 5px 14px;
+	border-radius: 4px;
+	padding: 6px 15px;
+	user-select: none;
 	transition: background-color 0.12s ease;
 }
 
 body.page-program .program-selector .toggle:hover {
-	background: rgba(255, 255, 255, 0.14);
+	background: rgba(255, 255, 255, 0.16);
 }
 
 body.page-program .program-selector .toggle::after {
-	content: ' ▾';
+	content: '▾';
+	display: inline-block;
+	margin-left: 9px;
 	letter-spacing: 0;
+	transition: transform 0.18s ease;
+}
+
+body.page-program .program-selector .toggle.open::after {
+	transform: rotate(180deg);
 }
 
 body.page-program .program-selector .faculties {
-	display: inline-block;
+	position: absolute;
+	top: calc(100% + 10px);
+	left: 50%;
+	translate: -50% 0;
+	width: min(880px, 92vw);
+	max-height: min(64vh, 560px);
+	overflow-y: auto;
 	background: var(--panel);
 	color: var(--ink);
 	border: 1px solid var(--rule);
-	border-radius: 3px;
-	box-shadow: 0 14px 40px rgba(23, 34, 59, 0.3);
+	border-radius: 4px;
+	box-shadow: 0 18px 50px rgba(23, 34, 59, 0.35);
 	padding: 16px 20px 8px;
-	margin-top: 10px;
-	max-width: 860px;
 	text-align: left;
+	columns: 250px;
+	column-gap: 28px;
+	opacity: 1;
+	transition: opacity 0.18s ease, translate 0.18s ease, display 0.18s allow-discrete;
+}
+
+@starting-style {
+	body.page-program .program-selector .faculties {
+		opacity: 0;
+		translate: -50% -8px;
+	}
 }
 
 body.page-program .faculty {
-	margin-bottom: 12px;
+	margin-bottom: 15px;
+	break-inside: avoid;
 }
 
 body.page-program .faculty-name {
 	font-family: var(--display);
 	font-weight: 700;
-	font-size: 13px;
-	margin-bottom: 7px;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	border-bottom: 1.5px solid var(--ink);
+	padding-bottom: 4px;
+	margin-bottom: 4px;
 }
 
 body.page-program a.program {
-	display: inline-block;
-	background: var(--paper);
+	display: block;
 	color: var(--ink-2);
-	font-size: 12px;
-	border-radius: 4px;
-	padding: 5px 9px;
-	margin: 0 6px 6px 0;
+	font-size: 12.5px;
+	border-radius: 3px;
+	padding: 4px 7px;
 	transition: background-color 0.12s ease, color 0.12s ease;
 }
 
 body.page-program a.program:hover {
-	background: var(--taken-bg);
-	color: #fff;
+	background: var(--paper);
+	color: var(--ink);
 }
 
 body.page-program a.program.active {
@@ -928,6 +957,15 @@ CREDITS COUNTER
 	border-radius: 4px;
 }
 
+.credits-counter .credits-optional-container .credits-optional-container {
+	width: auto;
+	position: static;
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	padding: 0;
+}
+
 .credits-counter .credits-optional-title {
 	font-size: 11px;
 	color: var(--ink-3);
@@ -944,8 +982,7 @@ CREDITS COUNTER
 	border-radius: 4px;
 	font-size: 15px;
 	font-weight: 600;
-	vertical-align: -6px;
-	margin: 0 5px;
+	margin: 0 4px;
 	cursor: pointer;
 	transition: background-color 0.12s ease, color 0.12s ease;
 }
@@ -1108,7 +1145,6 @@ HELP LEGEND (fixed panel; JS adds its width to the min-width calc)
 	left: 12px;
 	width: 130px;
 	background: var(--panel);
-	border: 1px solid var(--rule);
 	border-radius: 4px;
 	padding: 7px;
 	box-shadow: 0 2px 10px rgba(23, 34, 59, 0.12);
@@ -1120,6 +1156,14 @@ HELP LEGEND (fixed panel; JS adds its width to the min-width calc)
 	font-size: 10.5px;
 	margin: 3px 0;
 	border-radius: 4px;
+}
+
+.help .course-help .help-sub {
+	display: block;
+	font-size: 8.5px;
+	font-weight: 400;
+	opacity: 0.72;
+	margin-top: 1px;
 }
 
 /*
