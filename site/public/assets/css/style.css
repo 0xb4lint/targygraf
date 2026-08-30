@@ -583,6 +583,54 @@ body.page-university a.program:hover .arrow {
 }
 
 /*
+CONTRIBUTE LINKS
+*/
+.contribute {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 14px;
+	padding: 11px 6px 3px;
+}
+
+.contribute-q {
+	font-size: 12.5px;
+	color: var(--ink-3);
+}
+
+.contribute-go {
+	font-family: var(--mono);
+	font-size: 10.5px;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--warm);
+	white-space: nowrap;
+}
+
+.contribute:hover .contribute-q {
+	color: var(--ink);
+}
+
+.contribute:hover .contribute-go {
+	text-decoration: underline;
+}
+
+body.page-program .header-contribute {
+	display: inline-block;
+	font-family: var(--mono);
+	font-size: 10.5px;
+	color: rgba(255, 255, 255, 0.5);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+	margin-top: 8px;
+	transition: color 0.12s ease, border-color 0.12s ease;
+}
+
+body.page-program .header-contribute:hover {
+	color: #fff;
+	border-color: rgba(255, 255, 255, 0.6);
+}
+
+/*
 PROGRAM PAGE HEADER (ink band)
 */
 body.page-program header {

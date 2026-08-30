@@ -424,6 +424,23 @@ describe.skipIf(skip)('page chrome', () => {
 		expect(page.querySelector('link[rel="apple-touch-icon"]')!.getAttribute('href')).toBe('/apple-touch-icon.png');
 	});
 
+	it('links contributors to the right README sections and file editor', () => {
+		const home = readPage(DIST, 'index.html');
+		expect(
+			home.querySelector('a.contribute')!.getAttribute('href')
+		).toContain('targygraf#%C3%BAj-egyetem-felv%C3%A9tele');
+
+		const uni = readPage(DIST, 'bme.html');
+		expect(
+			uni.querySelector('a.contribute')!.getAttribute('href')
+		).toContain('#%C3%BAj-kar-vagy-szak-felv%C3%A9tele');
+
+		const program = readPage(DIST, 'pe', 'mernokinformatikus.html');
+		expect(program.querySelector('a.header-contribute')!.getAttribute('href')).toBe(
+			'https://github.com/0xb4lint/targygraf/edit/master/json/programs/pe_mik_mernokinformatikus.json'
+		);
+	});
+
 	it('lists every page in the sitemap with apex path URLs', () => {
 		const sitemap = fs.readFileSync(path.join(DIST, 'sitemap.xml'), 'utf8');
 		expect(sitemap).toContain('<loc>https://targygraf.hu/</loc>');
