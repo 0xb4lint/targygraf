@@ -1,0 +1,42 @@
+---
+/**
+ * Port of resources/views/parts/targygraf.blade.php: the semester row
+ * (data-specialis="0") plus up to two specialization rows, both of which the
+ * original template marked data-specialis="1".
+ */
+import type { Program } from '../lib/data';
+import CourseBlockView from './CourseBlockView.astro';
+
+interface Props {
+	program: Program;
+}
+
+const { program } = Astro.props;
+const row0 = program.blocks.filter((block) => block.row === 0);
+const row1 = program.blocks.filter((block) => block.row === 1);
+const row2 = program.blocks.filter((block) => block.row === 2);
+---
+
+<div class="content" data-specialis="0">
+	{row0.map((block) => <CourseBlockView block={block} />)}
+</div>
+
+{
+	row1.length > 0 && (
+		<div class="content" data-specialis="1">
+			{row1.map((block) => (
+				<CourseBlockView block={block} />
+			))}
+		</div>
+	)
+}
+
+{
+	row2.length > 0 && (
+		<div class="content" data-specialis="1">
+			{row2.map((block) => (
+				<CourseBlockView block={block} />
+			))}
+		</div>
+	)
+}

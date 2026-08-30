@@ -1,0 +1,61 @@
+---
+/** Port of resources/views/layouts/university.blade.php (UniversityController). */
+import ProgramSelector from '../components/ProgramSelector.astro';
+import Template from '../layouts/Template.astro';
+import { getDataset, type University } from '../lib/data';
+import { getUrlConfig, homeUrl, universityOrigin, universityUrl } from '../lib/urls';
+
+export function getStaticPaths() {
+	return getDataset().universities.map((university) => ({
+		params: { university: university.slug },
+		props: { university },
+	}));
+}
+
+interface Props {
+	university: University;
+}
+
+const { university } = Astro.props;
+const config = getUrlConfig();
+const origin = universityOrigin(config, university.slug);
+const description = `${university.name} interaktív mintatantervei: szakok, tantárgyak, előfeltételek és kreditek.`;
+---
+
+<Template
+	htmlTitle={university.name}
+	description={description}
+	origin={origin}
+	canonical={config.mode === 'subdomain' ? `${origin}/` : undefined}
+>
+	<Fragment slot="buttons">
+		<a href={homeUrl(config)} class="button" title="targygraf.hu"><i class="fa fa-home"></i></a>
+	</Fragment>
+
+	<Fragment slot="header">
+		<ProgramSelector university={university} />
+	</Fragment>
+
+	<Fragment slot="main">
+		{
+			university.hasLogo && (
+				<img class="university-logo" src={`/assets/img/logo/${university.slug}.svg`} />
+			)
+		}
+
+		<h1>{university.name}</h1>
+
+		<div
+			class="fb-page"
+			data-href="https://www.facebook.com/targygraf"
+			data-small-header="true"
+			data-adapt-container-width="true"
+			data-hide-cover="true"
+			data-show-facepile="true"
+		>
+			<blockquote cite="https://www.facebook.com/targygraf" class="fb-xfbml-parse-ignore">
+				<a href="https://www.facebook.com/targygraf">Tárgygráf</a>
+			</blockquote>
+		</div>
+	</Fragment>
+</Template>

@@ -1,0 +1,99 @@
+---
+/** Port of resources/views/layouts/program.blade.php (ProgramController). */
+import CreditsCounter from '../../components/CreditsCounter.astro';
+import Help from '../../components/Help.astro';
+import ProgramSelector from '../../components/ProgramSelector.astro';
+import Progressbar from '../../components/Progressbar.astro';
+import TargygrafContent from '../../components/Targygraf.astro';
+import Template from '../../layouts/Template.astro';
+import { getDataset, type Program, type University } from '../../lib/data';
+import { isCurriculumOutdated } from '../../lib/render';
+import { getUrlConfig, programUrl, universityOrigin, universityUrl } from '../../lib/urls';
+
+export function getStaticPaths() {
+	return getDataset().universities.flatMap((university) =>
+		university.faculties.flatMap((faculty) =>
+			faculty.programs.map((program) => ({
+				params: { university: university.slug, program: program.slug },
+				props: { university, program },
+			}))
+		)
+	);
+}
+
+interface Props {
+	university: University;
+	program: Program;
+}
+
+const { university, program } = Astro.props;
+const config = getUrlConfig();
+const origin = universityOrigin(config, university.slug);
+const description = `${program.name} (${university.name}) interaktív mintatanterv: tantárgyak, előfeltételek és kreditek.`;
+---
+
+<Template
+	htmlTitle={`${university.name} - ${program.name}`}
+	description={description}
+	origin={origin}
+	canonical={
+		config.mode === 'subdomain'
+			? programUrl(config, university.slug, program.slug)
+			: undefined
+	}
+>
+	<Fragment slot="buttons">
+		<div class="button reset" title="Adatok törlése"><i class="fa fa-power-off"></i></div>
+		<a
+			href={universityUrl(config, university.slug)}
+			class="button university"
+			title="Egyetem"><i class="fa fa-university"></i></a>
+	</Fragment>
+
+	<Fragment slot="header">
+		<div
+			class="fb-like pull-left"
+			data-href="https://www.facebook.com/targygraf"
+			data-layout="standard"
+			data-action="recommend"
+			data-show-faces="false"
+			data-share="false"
+		>
+		</div>
+
+		{
+			university.hasLogo && (
+				<img class="university-logo" src={`/assets/img/logo/${university.slug}.svg`} />
+			)
+		}
+
+		<ProgramSelector university={university} currentProgramSlug={program.slug} hidden />
+
+		<h1>
+			<a href={universityUrl(config, university.slug)} class="muted">{university.name}</a> - {
+				program.name
+			}
+		</h1>
+		{program.description && <div class="program-description">{program.description}</div>}
+		{
+			program.curriculumUpdatedAt &&
+				(isCurriculumOutdated(program.curriculumUpdatedAt) ? (
+					<div class="program-curriculum-outdated">
+						Ez egy régebbi (<b>{program.curriculumUpdatedAt}</b>) tanterv, hivatalos forrásból is
+						ellenőrizd a tárgyaidat!
+					</div>
+				) : (
+					<div class="program-curriculum-updated">
+						Tanterv: <b>{program.curriculumUpdatedAt}</b>
+					</div>
+				))
+		}
+	</Fragment>
+
+	<Fragment slot="main">
+		<Help />
+		<Progressbar />
+		<CreditsCounter />
+		<TargygrafContent program={program} />
+	</Fragment>
+</Template>

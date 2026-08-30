@@ -1,0 +1,53 @@
+---
+/** Port of resources/views/layouts/index.blade.php (HomeController). */
+import Template from '../layouts/Template.astro';
+import { getDataset } from '../lib/data';
+import { getUrlConfig, rootOrigin, universityUrl } from '../lib/urls';
+
+const { universities } = getDataset();
+const config = getUrlConfig();
+const origin = rootOrigin(config);
+
+let lastRow = 0;
+const items = universities.map((university) => {
+	const breakBefore = lastRow !== university.row;
+	if (breakBefore) {
+		lastRow = university.row;
+	}
+	return { university, breakBefore };
+});
+---
+
+<Template origin={origin} canonical={config.mode === 'subdomain' ? `${origin}/` : undefined}>
+	<Fragment slot="header">
+		<div
+			class="fb-like"
+			data-href="https://www.facebook.com/targygraf"
+			data-layout="standard"
+			data-action="recommend"
+			data-show-faces="true"
+			data-share="false"
+		>
+		</div>
+	</Fragment>
+
+	<Fragment slot="main">
+		<h1>Tárgygráf</h1>
+		{
+			items.map(({ university, breakBefore }) => (
+				<>
+					{breakBefore && <br />}
+					<a href={universityUrl(config, university.slug)} class="university">
+						<div
+							class="logo"
+							style={`background-image:url('/assets/img/logo/${university.slug}.svg')`}
+						>
+							{!university.hasLogo && university.slug.toUpperCase()}
+						</div>
+						<div class="name">{university.name}</div>
+					</a>
+				</>
+			))
+		}
+	</Fragment>
+</Template>

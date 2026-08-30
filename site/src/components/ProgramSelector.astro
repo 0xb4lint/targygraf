@@ -1,0 +1,35 @@
+---
+/** Port of resources/views/parts/program-selector.blade.php. */
+import type { University } from '../lib/data';
+import { getUrlConfig, programUrl } from '../lib/urls';
+
+interface Props {
+	university: University;
+	currentProgramSlug?: string;
+	hidden?: boolean;
+}
+
+const { university, currentProgramSlug, hidden = false } = Astro.props;
+const config = getUrlConfig();
+---
+
+<div class="program-selector">
+	{hidden && <div class="toggle">&nbsp;&nbsp;SZAKVÁLASZTÓ&nbsp;&nbsp;</div>}
+	<div class="faculties" style={hidden ? 'display: none;' : undefined}>
+		{
+			university.faculties.map((faculty) => (
+				<div class="faculty">
+					<div class="faculty-name">{faculty.name}</div>
+					{faculty.programs.map((program) => (
+						<a
+							href={programUrl(config, university.slug, program.slug)}
+							class={`program${program.slug === currentProgramSlug ? ' active' : ''}`}
+						>
+							{program.name}
+						</a>
+					))}
+				</div>
+			))
+		}
+	</div>
+</div>

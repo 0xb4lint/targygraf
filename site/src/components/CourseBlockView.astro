@@ -1,0 +1,54 @@
+---
+/**
+ * Port of resources/views/parts/course-block.blade.php.
+ *
+ * The data-* attributes here are the contract with the unmodified
+ * targygraf.js: data-code drives localStorage restore, data-id /
+ * data-prerequisites drive the prerequisite logic (fixed-width padded
+ * tokens, '#' prefix for parallel prerequisites, ___n___ credit gates),
+ * data-referenced-course-blocks links choice courses to their blocks.
+ */
+import { SEPARATOR_COURSE_CODE, type CourseBlock } from '../lib/data';
+import {
+	courseBlockDisplayName,
+	courseBlockReferencesAttribute,
+	courseTitle,
+	isCountedAttribute,
+	prerequisitesAttribute,
+} from '../lib/render';
+
+interface Props {
+	block: CourseBlock;
+}
+
+const { block } = Astro.props;
+const sumCredits = block.courses.reduce((sum, course) => sum + course.credits, 0);
+---
+
+<div class="course-block" data-id={block.paddedId} data-is-counted={isCountedAttribute(block)}>
+	<div class="course-block-title" set:html={courseBlockDisplayName(block)} />
+	{
+		block.courses.map((course) =>
+			course.code === SEPARATOR_COURSE_CODE ? (
+				<hr />
+			) : (
+				<div
+					class="course"
+					title={courseTitle(course)}
+					data-id={course.paddedId}
+					data-code={course.code ?? ''}
+					data-credits={course.credits}
+					data-referenced-course-blocks={courseBlockReferencesAttribute(course)}
+					data-prerequisites={prerequisitesAttribute(course)}
+				>
+					{course.name}
+				</div>
+			)
+		)
+	}
+	{
+		!block.row && sumCredits > 0 && (
+			<div class="muted">∑ {sumCredits} kredit</div>
+		)
+	}
+</div>

@@ -1,0 +1,25 @@
+---
+/** Served by Cloudflare static assets for any unknown URL (404-page mode). */
+import { getUrlConfig, homeUrl } from '../lib/urls';
+
+const config = getUrlConfig();
+---
+
+<!doctype html>
+<html lang="hu">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="robots" content="noindex" />
+		<title>Az oldal nem található | Tárgygráf</title>
+		<link rel="icon" type="image/png" href="/icon.png" />
+		<link href="/assets/css/style.css?v=20190217" rel="stylesheet" />
+	</head>
+	<body>
+		<main>
+			<h1>404</h1>
+			<p>Az oldal nem található.</p>
+			<p><a href={homeUrl(config)}>Vissza a főoldalra</a></p>
+		</main>
+	</body>
+</html>

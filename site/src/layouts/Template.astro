@@ -1,0 +1,104 @@
+---
+/**
+ * Port of resources/views/template.blade.php.
+ *
+ * The client-side stack is intentionally untouched: the same jQuery 3.2.1
+ * CDN build, tipsy, notie and the unmodified assets/js/targygraf.js, so the
+ * interactive behavior and the localStorage format stay bit-for-bit
+ * compatible with the Laravel-rendered site.
+ */
+import { DEFAULT_DESCRIPTION, pageTitle } from '../lib/render';
+
+interface Props {
+	/** Page-specific title part; template appends " | Tárgygráf". */
+	htmlTitle?: string;
+	description?: string;
+	/** Absolute origin of this page ('' in path mode). */
+	origin?: string;
+	/** Absolute canonical URL; rendered only when provided. */
+	canonical?: string;
+}
+
+const { htmlTitle, description = DEFAULT_DESCRIPTION, origin = '', canonical } = Astro.props;
+const title = pageTitle(htmlTitle);
+---
+
+<!doctype html>
+<html lang="hu">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="keywords"
+			content="tárgygráf, pannon egyetem, pe, bme, pte, pécs, műszaki, műegyetem, tanterv, mintatanterv, egyetem, pannon, gráf, kredit, félév, tárgyak, tárgy, tantárgy, előfeltétel, előtanulmány, előtanulmányi rend, ráépülés"
+		/>
+		<meta name="description" content={description} />
+		<title>{title}</title>
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content={`${origin}/icon.png`} />
+		<meta property="og:type" content="website" />
+		<meta property="fb:admins" content="1412307634" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		{/* Deliberately no viewport meta: the live site has none, and adding one
+		    would change how the fixed-min-width layout renders on phones. */}
+		{canonical && <link rel="canonical" href={canonical} />}
+		<link rel="icon" type="image/png" href="/icon.png" />
+		<link rel="apple-touch-icon" href="/icon.png" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+			rel="stylesheet"
+		/>
+		<link href="/assets/css/style.css?v=20190217" rel="stylesheet" />
+		<link href="/assets/css/tipsy.css" rel="stylesheet" />
+		<link href="/assets/css/notie.min.css" rel="stylesheet" />
+		<script is:inline type="text/javascript">
+			// Universal Analytics was shut down in 2023; targygraf.js still calls
+			// window.ga(), so keep a no-op stub to preserve its behavior.
+			window.ga = window.ga || function () {};
+
+			(function (d, s, id) {
+				var js,
+					fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s);
+				js.id = id;
+				js.src = '//connect.facebook.net/hu_HU/sdk.js#xfbml=1&version=v2.10&appId=233475786671363';
+				fjs.parentNode.insertBefore(js, fjs);
+			})(document, 'script', 'facebook-jssdk');
+		</script>
+	</head>
+	<body>
+		<div id="fb-root"></div>
+
+		<div class="fade"></div>
+
+		<div class="buttons">
+			<slot name="buttons" />
+		</div>
+
+		<header>
+			<slot name="header" />
+		</header>
+
+		<main>
+			<slot name="main" />
+		</main>
+
+		<footer>
+			<iframe
+				src="https://ghbtns.com/github-btn.html?user=0xb4lint&repo=targygraf&type=star&count=true&size=large"
+				class="github"></iframe>
+			<div class="disclaimer">Az oldalon található információk nem tekinthetőek hivatalos forrásnak.</div>
+		</footer>
+
+		<script is:inline src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script is:inline src="/assets/js/jquery.tipsy.min.js"></script>
+		<script is:inline src="/assets/js/notie.min.js"></script>
+		<script is:inline src="/assets/js/targygraf.js?v=20190625"></script>
+	</body>
+</html>
