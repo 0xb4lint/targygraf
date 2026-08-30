@@ -19,6 +19,10 @@ export type RouteDecision =
 const HOST_INDEPENDENT = new Set([
 	'/icon.png',
 	'/favicon.ico',
+	'/favicon.svg',
+	'/favicon-32.png',
+	'/apple-touch-icon.png',
+	'/og.png',
 	'/robots.txt',
 	'/sitemap.xml',
 	'/__ls-migrate',

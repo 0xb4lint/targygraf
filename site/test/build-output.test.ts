@@ -64,6 +64,10 @@ describe.skipIf(skip)('build output inventory', () => {
 			'assets/css/tipsy.css',
 			'icon.png',
 			'favicon.ico',
+			'favicon.svg',
+			'favicon-32.png',
+			'apple-touch-icon.png',
+			'og.png',
 			'robots.txt',
 		]) {
 			expect(fs.existsSync(path.join(DIST, asset)), asset).toBe(true);
@@ -415,6 +419,38 @@ describe.skipIf(skip)('page chrome', () => {
 		expect(stats[1]).toBe('26 kar');
 		expect(stats[2]).toBe('89 szak');
 		expect(stats[3]).toMatch(/tantárgy$/);
+	});
+
+	it('ships complete OpenGraph tags and no Twitter cards', () => {
+		const page = readPage(DIST, 'pe', 'mernokinformatikus.html');
+		const og = (prop: string) =>
+			page.querySelector(`meta[property="og:${prop}"]`)?.getAttribute('content');
+
+		expect(og('site_name')).toBe('Tárgygráf');
+		expect(og('type')).toBe('website');
+		expect(og('locale')).toBe('hu_HU');
+		expect(og('title')).toBe('Pannon Egyetem - Mérnökinformatikus | Tárgygráf');
+		expect(og('url')).toBe('https://targygraf.hu/pe/mernokinformatikus');
+		expect(og('url')).toBe(
+			page.querySelector('link[rel="canonical"]')!.getAttribute('href')
+		);
+		expect(og('image')).toBe('https://targygraf.hu/og.png');
+		expect(og('image:width')).toBe('1200');
+		expect(og('image:height')).toBe('630');
+		expect(og('image:alt')).toBeTruthy();
+		expect(page.querySelectorAll('meta[name^="twitter"]')).toHaveLength(0);
+
+		const home = readPage(DIST, 'index.html');
+		expect(
+			home.querySelector('meta[property="og:url"]')!.getAttribute('content')
+		).toBe('https://targygraf.hu/');
+	});
+
+	it('links the favicon set', () => {
+		const page = readPage(DIST, 'index.html');
+		expect(page.querySelector('link[rel="icon"][type="image/svg+xml"]')!.getAttribute('href')).toBe('/favicon.svg');
+		expect(page.querySelector('link[rel="icon"][type="image/png"]')!.getAttribute('href')).toBe('/favicon-32.png');
+		expect(page.querySelector('link[rel="apple-touch-icon"]')!.getAttribute('href')).toBe('/apple-touch-icon.png');
 	});
 
 	it('lists every page in the sitemap with apex path URLs', () => {

@@ -97,6 +97,14 @@ describe('worker routing: localStorage handoff exceptions', () => {
 			kind: 'serve',
 			assetPath: '/icon.png',
 		});
+		expect(decide('https://pe.targygraf.hu/og.png')).toEqual({
+			kind: 'serve',
+			assetPath: '/og.png',
+		});
+		expect(decide('https://pe.targygraf.hu/favicon.svg')).toEqual({
+			kind: 'serve',
+			assetPath: '/favicon.svg',
+		});
 	});
 });
 

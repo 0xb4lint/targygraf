@@ -50,10 +50,16 @@ const origin = siteOrigin();
 		/>
 		<meta name="description" content={description} />
 		<title>{title}</title>
+		<meta property="og:site_name" content="Tárgygráf" />
+		<meta property="og:type" content="website" />
+		<meta property="og:locale" content="hu_HU" />
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />
-		<meta property="og:image" content={`${origin}/icon.png`} />
-		<meta property="og:type" content="website" />
+		{canonical && <meta property="og:url" content={canonical} />}
+		<meta property="og:image" content={`${origin}/og.png`} />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta property="og:image:alt" content="Tárgygráf: a mintatanterved, interaktív térképen" />
 		{
 			/* Program pages deliberately ship no viewport meta: the graph relies
 			   on the fixed-min-width layout rendering zoomed-out on phones. */
@@ -62,8 +68,9 @@ const origin = siteOrigin();
 			)
 		}
 		{canonical && <link rel="canonical" href={canonical} />}
-		<link rel="icon" type="image/png" href="/icon.png" />
-		<link rel="apple-touch-icon" href="/icon.png" />
+		<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+		<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
