@@ -283,6 +283,35 @@ HERO SHEET (home)
 	margin: 0;
 }
 
+/* archival date stamp on the sheet, pressed after the title was set */
+.hero h1 .stamp {
+	display: inline-block;
+	position: relative;
+	font-family: var(--mono);
+	font-size: 11.5px;
+	font-weight: 500;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	white-space: nowrap;
+	color: var(--warm);
+	border: 2px solid var(--warm);
+	border-radius: 3px;
+	padding: 5px 10px 4px;
+	margin-left: 16px;
+	transform: rotate(-4deg);
+	vertical-align: 13px;
+	opacity: 0.92;
+}
+
+.hero h1 .stamp::after {
+	content: '';
+	position: absolute;
+	inset: 2px;
+	border: 1px solid var(--warm);
+	border-radius: 1.5px;
+	opacity: 0.55;
+}
+
 .hero-demo-wrap {
 	padding-top: 30px;
 	text-align: left;
@@ -316,7 +345,7 @@ HERO DEMO — a working miniature of the graph, pure CSS (:has)
 */
 .hero-demo {
 	display: inline-grid;
-	grid-template-columns: repeat(3, 108px);
+	grid-template-columns: repeat(3, 118px);
 	gap: 10px;
 	text-align: center;
 }
