@@ -1,0 +1,365 @@
+/**
+ * Build-time data loader.
+ *
+ * This module replicates, as faithfully as possible, what the Laravel app's
+ * database seeders (database/seeds/*.php) plus the Eloquent models (app/*.php)
+ * produced at runtime. The JSON files in json/ are the single source of truth
+ * and their structure is intentionally unchanged.
+ *
+ * Behavioral contracts carried over from the Laravel implementation:
+ *
+ * - Files whose name starts with '.' or doesn't end in '.json' are skipped
+ *   (AbstractJsonFileSeeder::processAllJsonFiles), and files are processed in
+ *   byte-order sorted filename order (PHP scandir default).
+ * - Slugs come from the filename: universities/{uni}.json,
+ *   faculties/{uni}_{faculty}.json, programs/{uni}_{faculty}_{program}.json.
+ * - Course ids are zero-padded to 6 characters and course block ids are
+ *   underscore-padded to 6 characters (Course/CourseBlock::getPaddedID).
+ *   The padding matters: jQuery's .data() would coerce an unpadded numeric
+ *   string to a number, and the frontend matches prerequisites with a
+ *   substring attribute selector over fixed-width tokens.
+ * - Prerequisite codes are resolved against the FIRST course in the same
+ *   program with a matching code (Course::firstOrFail over insertion order) --
+ *   duplicate codes within a program are common in the data.
+ * - '(CODE)' marks a parallel ("felvehető egyidejűleg") prerequisite and is
+ *   rendered as '#'-prefixed id in data-prerequisites.
+ * - '___<n>___' pseudo-courses ("n teljesített kredit") are global helper
+ *   rows (HelperCourseSeeder); their padded id is the code itself and their
+ *   display name is '<n> kredit'.
+ * - course_block_references are resolved by exact block name within the
+ *   program (first match).
+ * - is_counted defaults to true unless the JSON says exactly false.
+ */
+import fs from 'node:fs';
+import path from 'node:path';
+
+import { JSON_ROOT } from './paths';
+
+/** The only credit pseudo-courses the Laravel HelperCourseSeeder created. */
+export const DUMMY_CREDIT_COURSE_CODES = [
+	'___20___',
+	'___40___',
+	'___45___',
+	'___50___',
+	'___75___',
+	'___120___',
+	'___130___',
+] as const;
+
+export const OPTIONAL_COURSE_CODE = '___OPTIONAL___';
+export const SEPARATOR_COURSE_CODE = '______';
+
+const DUMMY_CREDIT_REGEX = /^___\d+___$/;
+
+export interface Prerequisite {
+	/** Course code with surrounding parentheses removed. */
+	code: string;
+	/** True when the JSON wrapped the code in parentheses. */
+	parallel: boolean;
+	/** Display name of the referenced course ('<n> kredit' for credit gates). */
+	name: string;
+	/**
+	 * Token used in the data-prerequisites attribute: the referenced course's
+	 * padded id, or the ___<n>___ code itself for credit gates.
+	 */
+	paddedId: string;
+}
+
+export interface Course {
+	paddedId: string;
+	code: string | null;
+	name: string | null;
+	credits: number;
+	prerequisites: Prerequisite[];
+	/** Padded ids of the referenced course blocks. */
+	courseBlockReferences: string[];
+}
+
+export interface CourseBlock {
+	paddedId: string;
+	/** Raw block name from JSON (unique key for references, may end in ' #2'). */
+	name: string;
+	row: number;
+	isCounted: boolean;
+	courses: Course[];
+}
+
+export interface Program {
+	slug: string;
+	universitySlug: string;
+	facultySlug: string;
+	name: string;
+	description: string;
+	curriculumUpdatedAt: string | null;
+	/** Blocks in display order: stable-sorted by row (CourseBlock relation). */
+	blocks: CourseBlock[];
+}
+
+export interface Faculty {
+	slug: string;
+	universitySlug: string;
+	name: string;
+	ordering: number;
+	/** Programs ordered by name (programs() relation orderBy('name')). */
+	programs: Program[];
+}
+
+export interface University {
+	slug: string;
+	name: string;
+	row: number;
+	ordering: number;
+	hasLogo: boolean;
+	/** Faculties ordered by ordering (faculties() relation). */
+	faculties: Faculty[];
+}
+
+export interface Dataset {
+	/** Universities ordered by (row, ordering) as on the home page. */
+	universities: University[];
+	universitiesBySlug: Map<string, University>;
+}
+
+/**
+ * Mirrors AbstractJsonFileSeeder: skip dotfiles and non-.json files, process
+ * in sorted order (PHP scandir sorts byte-wise ascending).
+ */
+export function listJsonFiles(directory: string): string[] {
+	return fs
+		.readdirSync(directory)
+		.filter((file) => file[0] !== '.' && file.endsWith('.json'))
+		.sort();
+}
+
+function readJson(filePath: string): any {
+	const parsed = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+	if (parsed === null || typeof parsed !== 'object') {
+		throw new Error(`${filePath}: expected a JSON object`);
+	}
+	return parsed;
+}
+
+/** PHP str_pad($id, 6, '0', STR_PAD_LEFT) */
+export function padCourseId(id: number): string {
+	return String(id).padStart(6, '0');
+}
+
+/** PHP str_pad($id, 6, '_', STR_PAD_LEFT) */
+export function padCourseBlockId(id: number): string {
+	return String(id).padStart(6, '_');
+}
+
+/** PHP trim($code, '()') */
+export function trimParens(token: string): string {
+	return token.replace(/^[()]+/, '').replace(/[()]+$/, '');
+}
+
+/** Mirrors ProgramSeeder::processPrerequisites' is_parallel detection. */
+export function isParallelToken(token: string): boolean {
+	return /^\(.+\)$/.test(token);
+}
+
+export function isDummyCreditCode(code: string): boolean {
+	return DUMMY_CREDIT_REGEX.test(code);
+}
+
+/**
+ * Program name ordering: the faculty relation used MySQL ORDER BY name
+ * (utf8 unicode collation, accent/case-insensitive on the primary level).
+ * Intl.Collator with the Hungarian locale is the closest equivalent.
+ */
+const programNameCollator = new Intl.Collator('hu', { sensitivity: 'variant' });
+
+export function buildProgram(
+	fileName: string,
+	raw: any,
+	filePath: string
+): Program {
+	const nameParts = path.basename(fileName, '.json').split('_');
+	const [universitySlug, facultySlug, slug] = nameParts;
+
+	let courseSequence = 0;
+	const blocks: CourseBlock[] = raw.course_blocks.map(
+		(rawBlock: any, blockIndex: number): CourseBlock => ({
+			paddedId: padCourseBlockId(blockIndex + 1),
+			name: rawBlock.name,
+			row: rawBlock.row,
+			// ProgramSeeder: (@$rawCourseBlock->is_counted !== false)
+			isCounted: rawBlock.is_counted !== false,
+			courses: rawBlock.courses.map(
+				(rawCourse: any): Course => ({
+					paddedId: padCourseId(++courseSequence),
+					code: rawCourse.code ?? null,
+					name: rawCourse.name ?? null,
+					credits: rawCourse.credits,
+					prerequisites: [],
+					courseBlockReferences: [],
+				})
+			),
+		})
+	);
+
+	// First-occurrence lookup maps, matching firstOrFail over insertion order.
+	const courseByCode = new Map<string, Course>();
+	const blockByName = new Map<string, CourseBlock>();
+	for (const block of blocks) {
+		if (!blockByName.has(block.name)) {
+			blockByName.set(block.name, block);
+		}
+		for (const course of block.courses) {
+			if (course.code !== null && !courseByCode.has(course.code)) {
+				courseByCode.set(course.code, course);
+			}
+		}
+	}
+
+	// Second pass: resolve prerequisites and block references.
+	for (const [blockIndex, block] of blocks.entries()) {
+		for (const [courseIndex, course] of block.courses.entries()) {
+			const rawCourse = raw.course_blocks[blockIndex].courses[courseIndex];
+
+			for (const token of rawCourse.prerequisites ?? []) {
+				const code = trimParens(token);
+				const parallel = isParallelToken(token);
+
+				if (isDummyCreditCode(code)) {
+					if (!(DUMMY_CREDIT_COURSE_CODES as readonly string[]).includes(code)) {
+						throw new Error(
+							`${filePath}: unknown credit prerequisite ${code} ` +
+								`(only ${DUMMY_CREDIT_COURSE_CODES.join(', ')} exist)`
+						);
+					}
+					course.prerequisites.push({
+						code,
+						parallel,
+						name: `${code.slice(3, -3)} kredit`,
+						paddedId: code,
+					});
+					continue;
+				}
+
+				const target = courseByCode.get(code);
+				if (!target) {
+					throw new Error(`${filePath}: prerequisite ${code} not found in program`);
+				}
+				course.prerequisites.push({
+					code,
+					parallel,
+					name: target.name ?? '',
+					paddedId: target.paddedId,
+				});
+			}
+
+			for (const referenceName of rawCourse.course_block_references ?? []) {
+				const target = blockByName.get(referenceName);
+				if (!target) {
+					throw new Error(
+						`${filePath}: course_block_reference "${referenceName}" not found in program`
+					);
+				}
+				course.courseBlockReferences.push(target.paddedId);
+			}
+		}
+	}
+
+	// Display order: ORDER BY row, ordering -- ordering was assigned in file
+	// order within each row, so a stable sort by row reproduces it.
+	const sortedBlocks = [...blocks].sort((a, b) => a.row - b.row);
+
+	return {
+		slug,
+		universitySlug,
+		facultySlug,
+		name: raw.name,
+		description: raw.description,
+		curriculumUpdatedAt: raw.curriculum_updated_at ?? null,
+		blocks: sortedBlocks,
+	};
+}
+
+export function loadDataset(jsonRoot: string = JSON_ROOT): Dataset {
+	const universities: University[] = [];
+	const universitiesBySlug = new Map<string, University>();
+	const facultiesByKey = new Map<string, Faculty>();
+
+	for (const file of listJsonFiles(path.join(jsonRoot, 'universities'))) {
+		const raw = readJson(path.join(jsonRoot, 'universities', file));
+		const university: University = {
+			slug: path.basename(file, '.json'),
+			name: raw.name,
+			row: raw.row,
+			ordering: raw.ordering,
+			hasLogo: Boolean(raw.has_logo),
+			faculties: [],
+		};
+		universities.push(university);
+		universitiesBySlug.set(university.slug, university);
+	}
+
+	for (const file of listJsonFiles(path.join(jsonRoot, 'faculties'))) {
+		const raw = readJson(path.join(jsonRoot, 'faculties', file));
+		const [universitySlug, slug] = path.basename(file, '.json').split('_');
+		const university = universitiesBySlug.get(universitySlug);
+		if (!university) {
+			throw new Error(`faculties/${file}: university "${universitySlug}" not found`);
+		}
+		const faculty: Faculty = {
+			slug,
+			universitySlug,
+			name: raw.name,
+			ordering: raw.ordering,
+			programs: [],
+		};
+		university.faculties.push(faculty);
+		facultiesByKey.set(`${universitySlug}_${slug}`, faculty);
+	}
+
+	for (const file of listJsonFiles(path.join(jsonRoot, 'programs'))) {
+		const filePath = path.join(jsonRoot, 'programs', file);
+		const program = buildProgram(file, readJson(filePath), filePath);
+		const faculty = facultiesByKey.get(`${program.universitySlug}_${program.facultySlug}`);
+		if (!faculty) {
+			throw new Error(
+				`programs/${file}: faculty "${program.universitySlug}_${program.facultySlug}" not found`
+			);
+		}
+		faculty.programs.push(program);
+	}
+
+	// HomeController: University::orderBy('row')->orderBy('ordering')
+	universities.sort((a, b) => a.row - b.row || a.ordering - b.ordering);
+
+	for (const university of universities) {
+		// University::faculties(): orderBy('ordering') (stable: file order ties)
+		university.faculties.sort((a, b) => a.ordering - b.ordering);
+		for (const faculty of university.faculties) {
+			// Faculty::programs(): orderBy('name')
+			faculty.programs.sort((a, b) => programNameCollator.compare(a.name, b.name));
+		}
+	}
+
+	return { universities, universitiesBySlug };
+}
+
+let cachedDataset: Dataset | null = null;
+
+/** Cached accessor used by the Astro pages (build-time only). */
+export function getDataset(): Dataset {
+	cachedDataset ??= loadDataset();
+	return cachedDataset;
+}
+
+export function findProgram(
+	university: University,
+	programSlug: string
+): { faculty: Faculty; program: Program } | null {
+	// ProgramController iterates faculties/programs and picks the first match.
+	for (const faculty of university.faculties) {
+		for (const program of faculty.programs) {
+			if (program.slug === programSlug) {
+				return { faculty, program };
+			}
+		}
+	}
+	return null;
+}
