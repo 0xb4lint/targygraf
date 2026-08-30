@@ -81,14 +81,26 @@ const origin = siteOrigin();
 		<Font cssVariable="--font-mono" />
 		<link href="/assets/css/style.css?v=20260831" rel="stylesheet" />
 		<link href="/assets/css/tipsy.css?v=20260831" rel="stylesheet" />
-		<!-- Google tag (gtag.js) -->
-		<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-1T3XF9V5BL"></script>
+		<!-- Google tag (gtag.js); honors the opt-out set on /adatvedelem -->
 		<script is:inline>
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){dataLayer.push(arguments);}
 			gtag('js', new Date());
 
 			gtag('config', 'G-1T3XF9V5BL');
+
+			(function () {
+				try {
+					if (window.localStorage.getItem('gaOptOut') === '1') {
+						window['ga-disable-G-1T3XF9V5BL'] = true;
+						return;
+					}
+				} catch (error) {}
+				var script = document.createElement('script');
+				script.async = true;
+				script.src = 'https://www.googletagmanager.com/gtag/js?id=G-1T3XF9V5BL';
+				document.head.appendChild(script);
+			})();
 		</script>
 	</head>
 	<body class={`page-${page}`}>
@@ -114,6 +126,8 @@ const origin = siteOrigin();
 				>
 				<span class="footer-links">
 					<a href="https://github.com/0xb4lint/targygraf" rel="noopener">GitHub</a>
+					<span class="sep" aria-hidden="true">·</span>
+					<a href="/adatvedelem">Adatvédelem</a>
 					<span class="sep" aria-hidden="true">·</span>
 					<a href="https://b4lint.hu" rel="noopener">Szekeres Bálint</a>
 				</span>

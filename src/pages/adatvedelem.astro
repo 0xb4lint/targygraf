@@ -1,0 +1,267 @@
+---
+/**
+ * Privacy notice with a working Google Analytics opt-out toggle.
+ * Standalone chrome like the 404 page; deliberately loads no analytics
+ * itself, only the small inline toggle script.
+ */
+import { homePath } from '../lib/urls';
+import { canonicalUrl } from '../lib/urls';
+import { Font } from 'astro:assets';
+---
+
+<!doctype html>
+<html lang="hu">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Mit tárol a Tárgygráf a böngésződben, és hogyan kapcsolhatod ki a látogatottságmérést." />
+		<title>Adatvédelem | Tárgygráf</title>
+		<link rel="canonical" href={canonicalUrl('/adatvedelem')} />
+		<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+		<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
+		<Font cssVariable="--font-display" preload />
+		<Font cssVariable="--font-body" preload />
+		<Font cssVariable="--font-mono" />
+		<link href="/assets/css/style.css?v=20260831" rel="stylesheet" />
+		<style>
+			.pv-wrap {
+				max-width: 640px;
+				width: 100%;
+				margin: 6vh auto 0;
+				padding: 0 24px 64px;
+			}
+
+			.pv-body {
+				padding: 30px 34px 32px;
+			}
+
+			.pv-body h1 {
+				font-size: 27px;
+				line-height: 1.15;
+				margin-bottom: 10px;
+			}
+
+			.pv-lead {
+				font-size: 14px;
+				line-height: 1.6;
+				color: var(--ink-2);
+				margin: 0 0 26px;
+			}
+
+			.pv-body h2 {
+				font-family: var(--display);
+				font-size: 17px;
+				margin: 26px 0 8px;
+			}
+
+			.pv-body p {
+				font-size: 14px;
+				line-height: 1.65;
+				color: var(--ink-2);
+				margin: 0 0 10px;
+			}
+
+			.pv-body code {
+				font-family: var(--mono);
+				font-size: 12.5px;
+			}
+
+			.pv-body a {
+				color: var(--ink);
+				border-bottom: 1px solid var(--warm);
+			}
+
+			.pv-body a:hover {
+				color: var(--warm);
+			}
+
+			.ga-row {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				gap: 16px;
+				border: 1px solid var(--line);
+				padding: 12px 14px;
+				margin: 14px 0 6px;
+			}
+
+			.ga-row-label {
+				font-family: var(--mono);
+				font-size: 11px;
+				letter-spacing: 0.08em;
+				text-transform: uppercase;
+				color: var(--ink-3);
+			}
+
+			.ga-state {
+				font-family: var(--mono);
+				font-size: 12px;
+				font-weight: 500;
+			}
+
+			.ga-state.on {
+				color: var(--taken-bg, #2e86de);
+			}
+
+			.ga-state.off {
+				color: var(--warm);
+			}
+
+			#ga-toggle {
+				font-family: var(--mono);
+				font-size: 12px;
+				letter-spacing: 0.04em;
+				background: none;
+				border: 1px solid var(--ink);
+				color: var(--ink);
+				padding: 7px 14px;
+				cursor: pointer;
+			}
+
+			#ga-toggle:hover {
+				border-color: var(--warm);
+				color: var(--warm);
+			}
+
+			.pv-back {
+				display: inline-block;
+				margin-top: 26px;
+				font-size: 14px;
+				font-weight: 600;
+				color: var(--ink);
+				border-bottom: 2px solid var(--warm);
+				padding-bottom: 2px;
+			}
+
+			.pv-back:hover {
+				color: var(--warm);
+			}
+		</style>
+	</head>
+	<body class="page-notfound">
+		<header>
+			<nav class="topbar">
+				<a href={homePath()} class="wordmark"
+					><img src="/assets/img/logo.svg" alt="Tárgygráf" width="131" height="34" /></a
+				>
+				<span class="topbar-note">Adatvédelem</span>
+			</nav>
+		</header>
+
+		<main>
+			<section class="pv-wrap">
+				<div class="sheet">
+					<div class="sheet-head">
+						<span>Adatkezelés</span>
+						<span>targygraf.hu</span>
+					</div>
+					<div class="pv-body">
+						<h1>Adatkezelési tájékoztató</h1>
+						<p class="pv-lead">
+							A Tárgygráf regisztráció és fiók nélkül működik. Ez az oldal azt írja le,
+							mi tárolódik a böngésződben, és milyen mérést használunk.
+						</p>
+
+						<h2>A haladásod a böngésződben marad</h2>
+						<p>
+							Amit az oldalon jelölsz (teljesített és felvett tárgyak, a szabadon
+							választható kreditek), a böngésződ helyi tárolójában (localStorage) él,
+							kizárólag a te gépeden. Ezek az adatok nem jutnak el hozzánk és más
+							szerverre sem. A régi, egyetemenkénti címekről (például&#32;<code>pe.targygraf.hu</code>) egy egyszeri, böngészőn belüli átvitel
+							menti át a korábbi haladást; ez is a gépeden történik. Törölni a
+							tantervoldalak törlés gombjával vagy a böngésző adatainak törlésével
+							tudod.
+						</p>
+
+						<h2>Látogatottságmérés (Google Analytics)</h2>
+						<p>
+							Az oldal Google Analytics 4-et használ, hogy lássuk, mely tantervek
+							hasznosak. Ehhez a Google sütiket helyez el (<code>_ga</code>,&#32;<code>_ga_*</code>), és a látogatásról adatok jutnak a Google-hez
+							(megtekintett oldalak, böngésző típusa, hozzávetőleges hely). A mérést
+							itt bármikor kikapcsolhatod; a beállítást a böngésződ jegyzi meg, és a
+							kikapcsolás után a Google mérőkódja be sem töltődik.
+						</p>
+						<div class="ga-row">
+							<span class="ga-row-label">Google Analytics</span>
+							<span class="ga-state" id="ga-state"></span>
+							<button type="button" id="ga-toggle"></button>
+						</div>
+
+						<h2>Kiszolgálás</h2>
+						<p>
+							Az oldalt a Cloudflare hálózata szolgálja ki, amely a kiszolgáláshoz és
+							a visszaélések kivédéséhez technikai naplókat vezethet (például
+							IP-címekről). A betűtípusok saját kiszolgálásból töltődnek, külső
+							betűtípus-szolgáltatót nem hívunk.
+						</p>
+
+						<h2>Kapcsolat</h2>
+						<p>
+							Az oldalt Szekeres Bálint (<a href="https://b4lint.hu" rel="noopener">b4lint.hu</a>)&#32;üzemelteti.
+							Kérdéssel, kéréssel a&#32;<a
+								href="https://github.com/0xb4lint/targygraf"
+								rel="noopener">GitHubon</a
+							>&#32;vagy a fenti címen tudsz elérni.
+						</p>
+
+						<a class="pv-back" href={homePath()}>Vissza a főoldalra</a>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<script is:inline>
+			(function () {
+				'use strict';
+
+				var KEY = 'gaOptOut';
+				var ID = 'G-1T3XF9V5BL';
+				var state = document.getElementById('ga-state');
+				var button = document.getElementById('ga-toggle');
+
+				function optedOut() {
+					try {
+						return window.localStorage.getItem(KEY) === '1';
+					} catch (error) {
+						return false;
+					}
+				}
+
+				function render() {
+					var off = optedOut();
+					state.textContent = off ? 'kikapcsolva' : 'bekapcsolva';
+					state.className = 'ga-state ' + (off ? 'off' : 'on');
+					button.textContent = off ? 'Visszakapcsolom' : 'Kikapcsolom';
+				}
+
+				function clearGaCookies() {
+					var parts = document.cookie.split(';');
+					for (var i = 0; i < parts.length; i++) {
+						var name = parts[i].split('=')[0].replace(/^\s+/, '');
+						if (name.indexOf('_ga') === 0) {
+							var expiry = '=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/';
+							document.cookie = name + expiry + '; domain=.targygraf.hu';
+							document.cookie = name + expiry;
+						}
+					}
+				}
+
+				button.addEventListener('click', function () {
+					try {
+						if (optedOut()) {
+							window.localStorage.removeItem(KEY);
+							window['ga-disable-' + ID] = false;
+						} else {
+							window.localStorage.setItem(KEY, '1');
+							window['ga-disable-' + ID] = true;
+							clearGaCookies();
+						}
+					} catch (error) {}
+					render();
+				});
+
+				render();
+			})();
+		</script>
+	</body>
+</html>

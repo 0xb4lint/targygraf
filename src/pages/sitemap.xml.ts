@@ -6,7 +6,7 @@ import { canonicalUrl, programPath, universityPath } from '../lib/urls';
 export const GET: APIRoute = () => {
 	const { universities } = getDataset();
 
-	const urls: string[] = [canonicalUrl('/')];
+	const urls: string[] = [canonicalUrl('/'), canonicalUrl('/adatvedelem')];
 	for (const university of universities) {
 		urls.push(canonicalUrl(universityPath(university.slug)));
 		for (const faculty of university.faculties) {

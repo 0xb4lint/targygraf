@@ -356,11 +356,40 @@ describe.skipIf(skip)('page chrome', () => {
 		const scripts = page
 			.querySelectorAll('script[src]')
 			.map((s) => s.getAttribute('src')!);
+		// gtag.js is injected by the inline loader (so the opt-out can keep
+		// it from loading at all); only first-party scripts have src tags.
 		expect(scripts).toEqual([
-			'https://www.googletagmanager.com/gtag/js?id=G-1T3XF9V5BL',
 			'/assets/js/targygraf.js?v=20260831',
 			'/assets/js/migrate.js?v=2',
 		]);
+
+		const inline = page.querySelectorAll('script:not([src])').map((s) => s.text);
+		const loader = inline.find((t) => t.includes('googletagmanager.com/gtag/js'));
+		expect(loader).toBeTruthy();
+		expect(loader).toContain("getItem('gaOptOut')");
+		expect(loader).toContain("'ga-disable-G-1T3XF9V5BL'");
+	});
+
+	it('ships the privacy page with a working analytics opt-out', () => {
+		const page = readPage(DIST, 'adatvedelem.html');
+		expect(page.querySelector('title')!.text).toBe('Adatvédelem | Tárgygráf');
+		expect(page.querySelector('link[rel="canonical"]')!.getAttribute('href')).toBe(
+			'https://targygraf.hu/adatvedelem'
+		);
+		expect(page.querySelector('#ga-toggle')).not.toBeNull();
+		const inline = page.querySelectorAll('script:not([src])').map((s) => s.text);
+		expect(inline.some((t) => t.includes("setItem(KEY, '1')"))).toBe(true);
+		// The privacy page itself loads no analytics.
+		expect(page.toString()).not.toContain('googletagmanager');
+
+		// Every templated page links to it in the footer.
+		for (const segments of [['index.html'], ['pe.html'], ['pe', 'mernokinformatikus.html']] as const) {
+			const linked = readPage(DIST, ...segments);
+			const hrefs = linked
+				.querySelectorAll('footer a')
+				.map((a) => a.getAttribute('href'));
+			expect(hrefs, segments.join('/')).toContain('/adatvedelem');
+		}
 	});
 
 	it('wires the localStorage migration bridge on university and program pages', () => {
@@ -474,6 +503,7 @@ describe.skipIf(skip)('page chrome', () => {
 		expect(sitemap).toContain('<loc>https://targygraf.hu/</loc>');
 		expect(sitemap).toContain('<loc>https://targygraf.hu/pe</loc>');
 		expect(sitemap).toContain('<loc>https://targygraf.hu/pe/mernokinformatikus</loc>');
-		expect(sitemap.match(/<loc>/g)).toHaveLength(1 + 12 + 89);
+		expect(sitemap).toContain('<loc>https://targygraf.hu/adatvedelem</loc>');
+		expect(sitemap.match(/<loc>/g)).toHaveLength(1 + 1 + 12 + 89);
 	});
 });
