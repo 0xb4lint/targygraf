@@ -255,7 +255,7 @@ HERO SHEET (home)
 .hero h1 {
 	font-size: 37px;
 	line-height: 1.12;
-	max-width: 16ch;
+	text-wrap: balance;
 	margin-bottom: 14px;
 }
 
