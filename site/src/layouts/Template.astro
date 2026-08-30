@@ -43,7 +43,6 @@ const origin = siteOrigin();
 		<meta property="og:description" content={description} />
 		<meta property="og:image" content={`${origin}/icon.png`} />
 		<meta property="og:type" content="website" />
-		<meta property="fb:admins" content="1412307634" />
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		{/* Deliberately no viewport meta: the live site has none, and adding one
 		    would change how the fixed-min-width layout renders on phones. */}
@@ -70,21 +69,9 @@ const origin = siteOrigin();
 			gtag('js', new Date());
 			gtag('config', 'G-1T3XF9V5BL');
 			window.gtag = gtag;
-
-			(function (d, s, id) {
-				var js,
-					fjs = d.getElementsByTagName(s)[0];
-				if (d.getElementById(id)) return;
-				js = d.createElement(s);
-				js.id = id;
-				js.src = '//connect.facebook.net/hu_HU/sdk.js#xfbml=1&version=v2.10&appId=233475786671363';
-				fjs.parentNode.insertBefore(js, fjs);
-			})(document, 'script', 'facebook-jssdk');
 		</script>
 	</head>
 	<body>
-		<div id="fb-root"></div>
-
 		<div class="fade"></div>
 
 		<div class="buttons">
