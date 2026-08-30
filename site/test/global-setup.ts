@@ -13,7 +13,8 @@ export const DIST_PATH_MODE = path.join(SITE_ROOT, 'dist-test', 'path');
 export const DIST_SUBDOMAIN_MODE = path.join(SITE_ROOT, 'dist-test', 'subdomain');
 
 function build(outDir: string, urlMode: string) {
-	execFileSync('npx', ['astro', 'build'], {
+	const astroBin = path.join(SITE_ROOT, 'node_modules', 'astro', 'astro.js');
+	execFileSync(process.execPath, [astroBin, 'build'], {
 		cwd: SITE_ROOT,
 		stdio: 'inherit',
 		env: {
