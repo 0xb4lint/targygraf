@@ -140,22 +140,38 @@ strong {
 /*
 WORDMARK + MASTHEAD (home, university)
 */
+/* the v12h lockup: condensed caps over a warm rule, closed by a green cell */
 .wordmark {
-	display: inline-flex;
-	align-items: baseline;
-	gap: 7px;
+	display: inline-block;
+	position: relative;
 	font-family: var(--display);
 	font-weight: 700;
-	font-size: 19px;
+	font-size: 17px;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
 	color: var(--ink);
+	padding: 0 15px 4px 0;
 }
 
-.wordmark-cell {
-	width: 10px;
-	height: 10px;
-	border-radius: 2px;
+.wordmark::before {
+	content: '';
+	position: absolute;
+	left: 1px;
+	right: 15px;
+	bottom: 0;
+	height: 2.5px;
+	background: var(--warm);
+}
+
+.wordmark::after {
+	content: '';
+	position: absolute;
+	right: 3px;
+	bottom: -1.5px;
+	width: 7px;
+	height: 6px;
+	border-radius: 1.5px;
 	background: var(--done-bg);
-	align-self: center;
 }
 
 .topbar {
@@ -539,7 +555,8 @@ body.page-program header {
 
 .header-mark .wordmark {
 	color: #fff;
-	font-size: 16px;
+	font-size: 14px;
+	padding-bottom: 3px;
 }
 
 .header-mark .crumb-sep {
