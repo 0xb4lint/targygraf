@@ -1,0 +1,27 @@
+{
+  "name": "targygraf",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20.3.0"
+  },
+  "scripts": {
+    "gen": "node scripts/gen-universities.mjs",
+    "dev": "npm run gen && astro dev",
+    "build": "npm run gen && astro build",
+    "preview": "npm run gen && astro build && wrangler dev",
+    "test": "npm run gen && vitest run",
+    "deploy": "npm run build && wrangler deploy",
+    "deploy:test": "npm run build && wrangler deploy --config wrangler.test.jsonc",
+    "compare-live": "node scripts/compare-live.mjs"
+  },
+  "devDependencies": {
+    "astro": "^7.2.9",
+    "jsdom": "^30.0.1",
+    "miniflare": "^4.20260730.0",
+    "node-html-parser": "^9.0.2",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.11",
+    "wrangler": "^4.0.0"
+  }
+}

@@ -1,0 +1,100 @@
+{
+    "name": "Próba Szak",
+    "description": "Teszt tanterv",
+    "curriculum_updated_at": "2020-03-25",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "AAA111",
+                    "name": "Alapozó tárgy",
+                    "credits": 4
+                },
+                {
+                    "code": "BBB222",
+                    "name": "Ráépülő tárgy",
+                    "credits": 3,
+                    "prerequisites": ["(AAA111)"]
+                },
+                {
+                    "code": "CCC333",
+                    "name": "Szigorú tárgy",
+                    "credits": 5,
+                    "prerequisites": ["AAA111", "___75___"]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható",
+                    "credits": 6
+                },
+                {
+                    "code": null,
+                    "name": "Differenciált szakmai tárgy I.",
+                    "credits": 4,
+                    "course_block_references": [
+                        "Differenciált szakmai tárgy I.",
+                        "Differenciált szakmai tárgy I. #2"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "AAA111",
+                    "name": "Alapozó tárgy (duplikált kód)",
+                    "credits": 4
+                },
+                {
+                    "code": "DDD444",
+                    "name": "Duplikátumra épülő",
+                    "credits": 2,
+                    "prerequisites": ["AAA111"]
+                }
+            ]
+        },
+        {
+            "name": "Differenciált szakmai tárgy I.",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "EEE555",
+                    "name": "Választható A",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "Differenciált szakmai tárgy I. #2",
+            "row": 1,
+            "is_counted": false,
+            "courses": [
+                {
+                    "code": "FFF666",
+                    "name": "Választható B",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "Többsoros\nblokknév",
+            "row": 2,
+            "courses": [
+                {
+                    "code": "GGG777",
+                    "name": "Extra tárgy",
+                    "credits": 1
+                }
+            ]
+        }
+    ]
+}

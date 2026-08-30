@@ -1,0 +1,117 @@
+---
+/**
+ * Served by Cloudflare static assets for any unknown URL (404-page mode).
+ * Standalone chrome: the design language's sheet, no app scripts.
+ */
+import { Font } from 'astro:assets';
+import { homePath } from '../lib/urls';
+---
+
+<!doctype html>
+<html lang="hu">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="robots" content="noindex" />
+		<title>Az oldal nem található | Tárgygráf</title>
+		<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+		<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
+		<Font cssVariable="--font-display" preload />
+		<Font cssVariable="--font-body" preload />
+		<Font cssVariable="--font-mono" />
+		<link href="/assets/css/style.css?v=20260831" rel="stylesheet" />
+		<style>
+			.nf-wrap {
+				max-width: 560px;
+				width: 100%;
+				margin: 10vh auto 0;
+				padding: 0 24px 64px;
+				text-align: left;
+			}
+
+			.nf-body {
+				padding: 32px 34px 30px;
+			}
+
+			.nf-block {
+				display: inline-block;
+				width: 158px;
+				text-align: center;
+				margin-bottom: 26px;
+			}
+
+			.nf-block-title {
+				font-family: var(--mono);
+				font-size: 10px;
+				letter-spacing: 0.1em;
+				text-transform: uppercase;
+				color: var(--ink-3);
+				border-bottom: 1px solid var(--line);
+				padding-bottom: 5px;
+				margin-bottom: 9px;
+			}
+
+			.nf-course {
+				cursor: default;
+				font-size: 12.5px;
+				padding: 8px 6px;
+			}
+
+			.nf-body h1 {
+				font-size: 29px;
+				line-height: 1.15;
+				text-wrap: balance;
+				margin-bottom: 12px;
+			}
+
+			.nf-note {
+				font-size: 14px;
+				line-height: 1.6;
+				color: var(--ink-2);
+				margin: 0 0 26px;
+			}
+
+			.nf-link {
+				display: inline-block;
+				font-size: 14px;
+				font-weight: 600;
+				color: var(--ink);
+				border-bottom: 2px solid var(--warm);
+				padding-bottom: 2px;
+			}
+
+			.nf-link:hover {
+				color: var(--warm);
+			}
+		</style>
+	</head>
+	<body class="page-notfound">
+		<header>
+			<nav class="topbar">
+				<a href={homePath()} class="wordmark"
+					><img src="/assets/img/logo.svg" alt="Tárgygráf" width="131" height="34" /></a
+				>
+				<span class="topbar-note">404</span>
+			</nav>
+		</header>
+
+		<main>
+			<section class="nf-wrap">
+				<div class="sheet">
+					<div class="sheet-head">
+						<span>Hiba</span>
+						<span>404</span>
+					</div>
+					<div class="nf-body">
+						<h1>Ez az oldal nincs a tantervben.</h1>
+						<p class="nf-note">
+							Az oldal nem található: lehet, hogy a cím elgépelődött, vagy a tanterv időközben
+							frissült.
+						</p>
+						<a class="nf-link" href={homePath()}>Vissza a főoldalra</a>
+					</div>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>

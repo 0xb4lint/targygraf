@@ -1,5 +1,53 @@
+/*
+ * Tárgygráf design system: a curriculum sheet brought to life.
+ *
+ * Registry/document language: faint grid paper, ruled sections, condensed
+ * grotesque headers, mono stamps. The color story belongs to the course
+ * cells; state hues stay close to the heritage palette so returning users'
+ * muscle memory keeps working:
+ *   felvehető (open)  = light blue    felvett (taken) = vivid blue
+ *   teljesített (done)= green         előfeltétel     = orange
+ *   ráépülés          = amber
+ *
+ * Contract with assets/js/targygraf.js — do not rename these hooks:
+ *   .fade .buttons .button(.reset,.university) .program-selector .toggle
+ *   .faculties .faculty .faculty-name .program(.active) .help .course-help
+ *   .progressbar .credits-counter .credits-optional* .credits-overflow
+ *   .content[data-specialis] .course-block(.finished) .course-block-title
+ *   .course(.processable,.processing,.finished,.prerequisite,.sequel,.end)
+ * The JS also assumes ~146px per graph column and injects inline styles
+ * (fade display, white hover backgrounds, z-index 101) — keep the graph
+ * surface light.
+ */
+
+:root {
+	--ink: #17223b;
+	--ink-2: #3d4a66;
+	--ink-3: #6d7a94;
+	--rule: rgba(23, 34, 59, 0.28);
+	--paper: #f0f2f7;
+	--panel: #ffffff;
+	--line: #d9dfea;
+	--grid: rgba(23, 34, 59, 0.05);
+	--warm: #e2571e;
+
+	--open-bg: #b3d6f7;
+	--open-ink: #1c3d5e;
+	--taken-bg: #2e86de;
+	--done-bg: #2bc875;
+	--done-ink: #0c3a22;
+	--prereq-bg: #ee7418;
+	--sequel-bg: #f2c218;
+
+	/* Defined by Astro's Font components in the page head (self-hosted
+	   IBM Plex; the variables carry their own fallback stacks). */
+	--display: var(--font-display, sans-serif);
+	--body: var(--font-body, sans-serif);
+	--mono: var(--font-mono, monospace);
+}
+
 * {
-	outline: none;
+	box-sizing: border-box;
 }
 
 html,
@@ -10,66 +58,71 @@ body {
 }
 
 body {
-	background-color: #E6E6E6;
-	font-size: 11px;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 300;
-	letter-spacing: -0.3px;
-	text-align: center;
-	min-width: 1010px;
+	background-color: var(--paper);
+	color: var(--ink);
+	font-size: 12px;
+	font-family: var(--body);
+	font-weight: 400;
 	display: flex;
 	min-height: 100vh;
 	flex-direction: column;
 }
 
-body:before {
-	content: "";
+/* ledger tape: one warm rule across the very top of every page */
+body::before {
+	content: '';
 	position: fixed;
-	top: -10px;
+	top: 0;
 	left: 0;
-	width: 100%;
-	height: 10px;
-	z-index: 100;
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+	right: 0;
+	height: 3px;
+	background: var(--warm);
+	z-index: 200;
+}
+
+/* grid paper on the document pages */
+body.page-home,
+body.page-university,
+body.page-notfound {
+	background-image: linear-gradient(var(--grid) 1px, transparent 1px),
+		linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+	background-size: 28px 28px;
+}
+
+/* Only the graph pages need the fixed-width canvas (JS widens it further). */
+body.page-program {
+	min-width: 1010px;
+	text-align: center;
 }
 
 a {
 	text-decoration: none;
+	color: inherit;
 }
 
-a img {
-	border: 0;
+:focus {
+	outline: none;
 }
 
-h1 {
-	margin-bottom: 0;
-	margin-top: 0;
-	padding: 0;
-	font-size: 20px;
-	color: #fff;
-	font-variant: small-caps;
-	font-weight: 400;
+:focus-visible {
+	outline: 2px solid var(--taken-bg);
+	outline-offset: 2px;
+}
+
+h1,
+h2 {
+	font-family: var(--display);
+	font-weight: 700;
+	margin: 0;
 }
 
 b,
 strong {
-	font-weight: 400;
-}
-
-hr {
-	border: 1px solid #000;
-}
-
-.small {
-	font-size: 70%;
+	font-weight: 600;
 }
 
 .muted {
-	color: #666;
-}
-
-h1 .muted {
-	color: #ddd;
+	color: var(--ink-3);
 }
 
 .content,
@@ -78,108 +131,698 @@ h1 .muted {
 	-webkit-user-select: none;
 }
 
-
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation: none !important;
+		transition: none !important;
+	}
+}
 
 /*
-HEADER
+WORDMARK + MASTHEAD (home, university)
 */
-header {
-	padding-bottom: 3px;
-	margin-bottom: 5px;
+/* the v12h lockup ships as an outlined SVG (assets/img/logo*.svg) */
+.wordmark {
+	display: inline-flex;
+	align-items: center;
+}
+
+.wordmark img {
+	display: block;
+}
+
+.topbar {
+	max-width: 1340px;
+	margin: 0 auto;
+	padding: 14px 28px 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid var(--rule);
+}
+
+.topbar-link {
+	font-family: var(--mono);
+	font-size: 11px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--ink-2);
+}
+
+/* breadcrumb trail: the wordmark is the root */
+.crumbs {
+	display: flex;
+	align-items: center;
+	gap: 9px;
+	min-width: 0;
+	flex: 0 1 auto;
+}
+
+.crumbs .wordmark,
+.crumb-sep {
+	flex: none;
+}
+
+.crumb-sep {
+	color: var(--ink-3);
+	font-family: var(--mono);
+	font-size: 12px;
+}
+
+.crumb-link,
+.crumb-here {
+	font-family: var(--mono);
+	font-size: 11.5px;
+	color: var(--ink-2);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	min-width: 0;
+	flex: 0 1 auto;
+}
+
+.crumb-link:hover {
+	color: var(--warm);
+}
+
+.crumb-here {
+	color: var(--ink-3);
+}
+
+.topbar-link:hover {
+	color: var(--warm);
+}
+
+/*
+HERO SHEET (home)
+*/
+.hero {
+	max-width: 1340px;
+	margin: 0 auto;
+	padding: 22px 28px 0;
+	text-align: left;
+	width: 100%;
+}
+
+.sheet {
+	background: var(--panel);
+	border: 1px solid var(--rule);
+	border-radius: 2px;
+}
+
+.sheet-head {
+	display: flex;
+	justify-content: space-between;
+	padding: 9px 18px;
+	border-bottom: 1px solid var(--rule);
+	font-family: var(--mono);
+	font-size: 10px;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: var(--ink-3);
+}
+
+.sheet-body {
+	display: grid;
+	grid-template-columns: minmax(0, 0.98fr) minmax(0, 1.02fr);
+	gap: 0;
+}
+
+.hero-left {
+	align-self: center;
+	padding: 30px 34px 24px;
+}
+
+.hero h1 {
+	font-size: 37px;
+	line-height: 1.12;
+	text-wrap: balance;
+	margin-bottom: 14px;
+}
+
+.hero-note {
+	font-size: 14px;
+	line-height: 1.6;
+	color: var(--ink-2);
+	max-width: 48ch;
+	margin: 0;
+}
+
+.topbar-side {
+	display: flex;
+	align-items: baseline;
+	gap: 10px;
+	flex: none;
+}
+
+.topbar-note {
+	font-family: var(--mono);
+	font-size: 11px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--ink-3);
+}
+
+.topbar-sep {
+	color: var(--ink-3);
+	opacity: 0.6;
+}
+
+.hero-demo-wrap {
+	padding-top: 30px;
+	text-align: left;
+}
+
+.sheet-foot {
+	display: flex;
+	align-items: baseline;
+	padding: 9px 18px;
+	border-top: 1px solid var(--rule);
+	font-family: var(--mono);
+	font-size: 10.5px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--ink-3);
+}
+
+.hero-stats {
+	margin: 0;
+	color: var(--ink-2);
+}
+
+.hero-stats span + span::before {
+	content: '·';
+	margin: 0 9px;
+	color: var(--ink-3);
+}
+
+/*
+HERO DEMO — a working miniature of the graph, pure CSS (:has)
+*/
+.hero-demo {
+	display: inline-grid;
+	grid-template-columns: repeat(3, 130px);
+	gap: 10px;
+	text-align: center;
+}
+
+.demo-title {
+	font-family: var(--mono);
+	font-size: 10px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--ink-3);
+	padding-bottom: 5px;
+	margin-bottom: 4px;
+	border-bottom: 1px solid var(--line);
+}
+
+.demo-cell {
+	background: var(--paper);
+	color: var(--ink-3);
+	border-radius: 4px;
+	padding: 8px 6px;
+	margin: 5px 0;
+	font-size: 11.5px;
+	font-weight: 500;
+	cursor: default;
+	transition: background-color 0.12s ease, color 0.12s ease, box-shadow 0.12s ease;
+}
+
+.demo-cell.is-done {
+	background: var(--done-bg);
+	color: var(--done-ink);
+}
+
+.demo-cell.is-open {
+	background: var(--open-bg);
+	color: var(--open-ink);
+}
+
+.demo-cell.is-taking {
+	background: var(--taken-bg);
+	color: #fff;
+}
+
+.demo-cell:hover {
+	box-shadow: 0 0 0 2px var(--ink);
+}
+
+/* the demo's prerequisite graph, hand-wired */
+.hero-demo:has(.dc-d:hover) .dc-a,
+.hero-demo:has(.dc-e:hover) .dc-b,
+.hero-demo:has(.dc-f:hover) .dc-d,
+.hero-demo:has(.dc-g:hover) .dc-e,
+.hero-demo:has(.dc-h:hover) .dc-e,
+.hero-demo:has(.dc-h:hover) .dc-g {
+	background: var(--prereq-bg);
+	color: #fff;
+}
+
+.hero-demo:has(.dc-a:hover) .dc-d,
+.hero-demo:has(.dc-b:hover) .dc-e,
+.hero-demo:has(.dc-d:hover) .dc-f,
+.hero-demo:has(.dc-e:hover) .dc-g,
+.hero-demo:has(.dc-e:hover) .dc-h,
+.hero-demo:has(.dc-g:hover) .dc-h {
+	background: var(--sequel-bg);
+	color: var(--ink);
+}
+
+.demo-caption {
+	font-family: var(--mono);
+	font-size: 10.5px;
+	color: var(--ink-3);
+	margin: 12px 0 0;
+}
+
+/*
+UNIVERSITY REGISTRY (home; the sheet's third column)
+*/
+.universities {
+	padding: 22px 26px 16px;
+	border-left: 1px solid var(--rule);
+	text-align: left;
+}
+
+.section-head {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	border-bottom: 2px solid var(--ink);
+	padding-bottom: 6px;
+	margin-bottom: 2px;
+}
+
+.section-head h2 {
+	font-size: 15px;
+	text-transform: uppercase;
+	letter-spacing: 0.07em;
+}
+
+.section-count {
+	font-family: var(--mono);
+	font-size: 11px;
+	color: var(--ink-3);
+}
+
+main .university {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	padding: 8.5px 6px;
+	border-bottom: 1px solid var(--line);
+	color: var(--ink);
+	transition: background-color 0.12s ease;
+}
+
+main .university:hover {
+	background: var(--paper);
+}
+
+main .university .logo {
+	width: 46px;
+	flex: none;
+	font-family: var(--mono);
+	font-size: 11.5px;
+	font-weight: 500;
+	color: var(--ink-3);
+}
+
+main .university .name {
+	flex: 1;
+	font-size: 14.5px;
+	font-weight: 600;
+	line-height: 1.3;
+}
+
+main .university .count {
+	font-family: var(--mono);
+	font-size: 10.5px;
+	color: var(--ink-3);
+	white-space: nowrap;
+}
+
+main .university .arrow {
+	color: var(--warm);
+	font-weight: 600;
+	opacity: 0;
+	transition: opacity 0.12s ease;
+}
+
+main .university:hover .arrow {
+	opacity: 1;
+}
+
+/*
+UNIVERSITY PAGE — the same sheet and registry language as the landing
+*/
+.uni-wrap {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 26px 28px 64px;
+	text-align: left;
+	width: 100%;
+}
+
+.uni-identity {
+	display: flex;
+	align-items: baseline;
+	gap: 14px;
+	padding: 18px 26px 15px;
+	border-bottom: 1px solid var(--rule);
+}
+
+.uni-identity .university-logo {
+	max-height: 44px;
+	max-width: 140px;
+	align-self: center;
+}
+
+.uni-code {
+	font-family: var(--mono);
+	font-size: 15px;
+	font-weight: 500;
+	color: var(--ink-3);
+}
+
+.uni-identity h1 {
+	font-size: 25px;
+}
+
+body.page-university .program-selector {
+	padding: 2px 26px 16px;
+}
+
+body.page-university .faculty {
+	padding-top: 13px;
+}
+
+body.page-university .faculty-head {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 14px;
+	border-bottom: 2px solid var(--ink);
+	padding-bottom: 4px;
+	margin-bottom: 1px;
+}
+
+body.page-university .faculty-name {
+	font-family: var(--display);
+	font-weight: 700;
+	font-size: 13.5px;
+	text-transform: uppercase;
+	letter-spacing: 0.07em;
+}
+
+body.page-university .faculty-count {
+	font-family: var(--mono);
+	font-size: 10.5px;
+	color: var(--ink-3);
+	white-space: nowrap;
+}
+
+body.page-university a.program {
+	display: flex;
+	align-items: baseline;
+	gap: 14px;
+	padding: 6px;
+	border-bottom: 1px solid var(--line);
+	color: var(--ink);
+	transition: background-color 0.12s ease;
+}
+
+body.page-university a.program:hover {
+	background: var(--paper);
+}
+
+body.page-university .program-name {
+	flex: 1;
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 1.3;
+}
+
+body.page-university .program-meta {
+	font-family: var(--mono);
+	font-size: 10px;
+	color: var(--ink-3);
+	white-space: nowrap;
+}
+
+body.page-university a.program .arrow {
+	color: var(--warm);
+	font-weight: 600;
+	opacity: 0;
+	transition: opacity 0.12s ease;
+}
+
+body.page-university a.program:hover .arrow {
+	opacity: 1;
+}
+
+/*
+CONTRIBUTE LINKS
+*/
+.contribute {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 14px;
+	padding: 11px 14px 3px 6px;
+}
+
+.contribute-q {
+	font-size: 12.5px;
+	color: var(--ink-3);
+}
+
+.contribute-go {
+	font-family: var(--mono);
+	font-size: 10.5px;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--warm);
+	white-space: nowrap;
+	padding-right: 32px;
+}
+
+.contribute:hover .contribute-q {
+	color: var(--ink);
+}
+
+.contribute:hover .contribute-go {
+	text-decoration: underline;
+}
+
+body.page-program .header-contribute {
+	display: inline-block;
+	font-family: var(--mono);
+	font-size: 10.5px;
+	color: rgba(255, 255, 255, 0.5);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+	margin-top: 8px;
+	transition: color 0.12s ease, border-color 0.12s ease;
+}
+
+body.page-program .header-contribute:hover {
+	color: #fff;
+	border-color: rgba(255, 255, 255, 0.6);
+}
+
+/*
+PROGRAM PAGE HEADER (ink band)
+*/
+body.page-program header {
 	position: relative;
-	background-color: #d35400;
+	background: var(--ink);
+	color: #fff;
+	padding: 16px 12px 16px;
+	margin-bottom: 14px;
 }
 
-header .fb-like {
-	margin-top: 10px;
-}
-
-header .fb-like.pull-left {
-	float: none;
+.header-mark {
 	position: absolute;
-	top: 0;
-	left: 4px;
+	top: 14px;
+	left: 16px;
+	max-width: 46%;
 }
 
-header .university-logo {
+.header-mark .wordmark img {
+	display: block;
+}
+
+.header-mark .crumb-sep {
+	color: rgba(255, 255, 255, 0.4);
+}
+
+.header-mark .crumb-link {
+	color: rgba(255, 255, 255, 0.68);
+}
+
+.header-mark .crumb-link:hover {
+	color: #fff;
+}
+
+.header-mark .crumb-here {
+	color: rgba(255, 255, 255, 0.45);
+}
+
+body.page-program header .university-logo {
 	position: absolute;
 	top: 50%;
-	right: 4px;
+	right: 14px;
 	transform: translateY(-50%);
-	height: 80%;
-	max-height: 150px;
+	height: 72%;
+	max-height: 105px;
+	opacity: 0.95;
 }
 
-header .program-selector {
-	display: inline-block;
-	background-color: #1abc9c;
-	margin-top: 8px;
-	margin-bottom: 20px;
-	padding: 3px;
-	position: relative;
-	z-index: 2;
-	margin-right: -8px;
-	box-shadow: #131a21 1px 1px,
-				#131a21 2px 2px,
-				#131a21 3px 3px,
-				#131a21 4px 4px,
-				#131a21 5px 5px,
-				#131a21 6px 6px,
-				#131a21 7px 7px,
-				#131a21 8px 8px;
+body.page-program header h1 {
+	font-size: 22px;
+	color: #fff;
+	margin-top: 2px;
 }
 
-header .program-selector .toggle {
-	cursor: pointer;
+body.page-program header h1 .muted {
+	color: rgba(255, 255, 255, 0.6);
+	transition: color 0.15s ease;
 }
 
-header .program-selector .faculty {
-	margin-bottom: 10px;
-}
-
-header .program-selector .faculty .faculty-name {
-	font-family: sans-serif;
-	font-size: 13px;
-	letter-spacing: 0;
-	margin-bottom: 4px;
-}
-
-header .program-selector .program {
-	padding: 3px;
-	font-size: 11px;
-	color: #000;
-	border-color: #aaa;
-	background-color: white;
-	margin-left: 2px;
-	margin-right: 2px;
-	transition: all 0.1s linear;
-}
-
-header .program-selector .program.active {
-	background-color: #2ecc71;
-}
-
-header .program-selector .program:hover {
-	background-color: #3498db;
+body.page-program header h1 .muted:hover {
 	color: #fff;
 }
 
 header .program-description {
-	color: #ddd;
-	font-size: 14px;
+	color: rgba(255, 255, 255, 0.72);
+	font-size: 13px;
+	margin-top: 4px;
+}
+
+header .program-curriculum-updated,
+header .program-curriculum-outdated {
+	font-family: var(--mono);
+	font-size: 11px;
+	margin-top: 7px;
 }
 
 header .program-curriculum-updated {
-	color: #ddd;
-	font-size: 12px;
+	color: rgba(255, 255, 255, 0.62);
 }
 
 header .program-curriculum-outdated {
-	color: #fff;
-	font-size: 14px;
+	color: #ffc9a3;
 }
 
+/*
+PROGRAM SELECTOR (program page): compact toggle + animated dropdown.
+Shrink-wrapped so its box never covers the breadcrumb in the header.
+*/
+body.page-program .program-selector {
+	display: inline-block;
+	position: relative;
+	z-index: 150;
+	margin-bottom: 4px;
+}
 
+body.page-program .program-selector .toggle {
+	display: inline-block;
+	cursor: pointer;
+	font-family: var(--mono);
+	font-size: 11px;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: #fff;
+	background: rgba(255, 255, 255, 0.07);
+	border: 1px solid rgba(255, 255, 255, 0.4);
+	border-radius: 4px;
+	padding: 6px 15px;
+	user-select: none;
+	transition: background-color 0.12s ease;
+}
+
+body.page-program .program-selector .toggle:hover {
+	background: rgba(255, 255, 255, 0.16);
+}
+
+body.page-program .program-selector .toggle::after {
+	content: '▾';
+	display: inline-block;
+	margin-left: 9px;
+	letter-spacing: 0;
+	transition: transform 0.18s ease;
+}
+
+body.page-program .program-selector .toggle.open::after {
+	transform: rotate(180deg);
+}
+
+body.page-program .program-selector .faculties {
+	position: absolute;
+	top: calc(100% + 10px);
+	left: 50%;
+	translate: -50% 0;
+	width: min(880px, 92vw);
+	max-height: min(64vh, 560px);
+	overflow-y: auto;
+	background: var(--panel);
+	color: var(--ink);
+	border: 1px solid var(--rule);
+	border-radius: 4px;
+	box-shadow: 0 18px 50px rgba(23, 34, 59, 0.35);
+	padding: 16px 20px 8px;
+	text-align: left;
+	columns: 250px;
+	column-gap: 28px;
+	opacity: 1;
+	transition: opacity 0.18s ease, translate 0.18s ease, display 0.18s allow-discrete;
+}
+
+@starting-style {
+	body.page-program .program-selector .faculties {
+		opacity: 0;
+		translate: -50% -8px;
+	}
+}
+
+body.page-program .faculty {
+	margin-bottom: 15px;
+	break-inside: avoid;
+}
+
+body.page-program .faculty-name {
+	font-family: var(--display);
+	font-weight: 700;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	border-bottom: 1.5px solid var(--ink);
+	padding-bottom: 4px;
+	margin-bottom: 4px;
+}
+
+body.page-program a.program {
+	display: block;
+	color: var(--ink-2);
+	font-size: 12.5px;
+	border-radius: 3px;
+	padding: 4px 7px;
+	transition: background-color 0.12s ease, color 0.12s ease;
+}
+
+body.page-program a.program:hover {
+	background: var(--paper);
+	color: var(--ink);
+}
+
+body.page-program a.program.active {
+	background: var(--done-bg);
+	color: var(--done-ink);
+	font-weight: 600;
+}
 
 /*
 MAIN
@@ -189,152 +832,147 @@ main {
 	position: relative;
 }
 
-main .university-logo {
-	max-height: 200px;
-	margin-bottom: 6px;
-}
-
-main .university {
-	position: relative;
-	width: 200px;
-	display: inline-block;
-	border: 1px solid #ddd;
-	background-color: #eee;
-	border-radius: 6px;
-	padding: 10px 10px 30px;
-	color: #444;
-	transition: all 0.1s linear;
-}
-
-main .university:hover {
-	background-color: #fff;
-}
-
-main .university .logo {
-	height: 200px;
-	line-height: 200px;
-	font-size: 36px;
-	font-weight: 400;
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: contain;
-}
-
-main .university .name {
-	position: absolute;
-	bottom: 2px;
-	left: 0;
-	width: 100%;
-	font-size: 18px;
-	font-variant: small-caps;
-	color: #666;
-}
-
-main h1 {
-	font-size: 30px;
-	color: #000;
-	margin-bottom: 40px;
-}
-
-
-
 /*
 FOOTER
 */
 footer {
-	padding-top: 20px;
+	padding: 14px 20px 12px;
+	text-align: center;
 }
 
-main .adsbygoogle,
-footer .adsbygoogle {
-	display: block;
-	margin-bottom: 15px;
-}
-
-footer .github {
-	height: 30px;
-	width: 130px;
-	border: 0;
+.footer-inner {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4px 14px;
+	align-items: baseline;
+	justify-content: center;
 }
 
 footer .disclaimer {
-	margin-bottom: 2px;
-	color: #666;
+	color: var(--ink-3);
+	font-size: 11px;
 }
 
+footer .footer-links {
+	font-family: var(--mono);
+	font-size: 11px;
+	color: var(--ink-3);
+}
 
+footer .footer-links a {
+	color: var(--ink-2);
+	border-bottom: 1px solid var(--line);
+}
+
+footer .footer-links a:hover {
+	color: var(--warm);
+	border-color: var(--warm);
+}
+
+footer .footer-links .sep {
+	margin: 0 6px;
+}
 
 /*
-FADE
+SITE NOTICE (the legal toast, rendered by targygraf.js)
+*/
+.site-notice {
+	position: fixed;
+	left: 50%;
+	bottom: 16px;
+	transform: translate(-50%, 8px);
+	opacity: 0;
+	background: var(--ink);
+	color: rgba(255, 255, 255, 0.92);
+	font-size: 12px;
+	line-height: 1.5;
+	padding: 9px 18px;
+	border-radius: 6px;
+	box-shadow: 0 10px 30px rgba(23, 34, 59, 0.35);
+	max-width: min(92vw, 560px);
+	text-align: center;
+	cursor: pointer;
+	z-index: 300;
+	transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.site-notice.visible {
+	opacity: 1;
+	transform: translate(-50%, 0);
+}
+
+/*
+FADE (JS toggles display)
 */
 .fade {
 	position: fixed;
 	top: 0;
 	left: 0;
-	opacity: 0.75;
+	opacity: 0.65;
 	width: 100%;
 	height: 100%;
-	background-color: #000;
+	background-color: var(--ink);
 	z-index: 101;
 	display: none;
 }
 
-
-
 /*
-BUTTONS
+FLOATING BUTTONS (JS toggles .reset visibility)
 */
 .buttons {
 	position: fixed;
-	right: 5px;
-	bottom: 8.5px;
+	right: 12px;
+	bottom: 12px;
 	z-index: 1;
 }
 
 .buttons .button {
-	display: block;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	cursor: pointer;
-	transition: all 0.2s linear;
 	width: 40px;
 	height: 40px;
-	line-height: 40px;
-	font-size: 28px;
-	border-radius: 6px;
-	text-align: center;
-	color: #000;
+	margin-top: 8px;
+	border-radius: 8px;
+	background: var(--panel);
+	border: 1px solid var(--rule);
+	box-shadow: 0 2px 10px rgba(23, 34, 59, 0.12);
+	color: var(--ink-2);
+	transition: background-color 0.12s ease, color 0.12s ease;
 }
 
-.buttons .button.university .fa {
-	margin-left: 2px;
+.buttons .button svg {
+	width: 19px;
+	height: 19px;
 }
 
 .buttons .button:hover {
-	background-color: black;
-	color: white;
+	background: var(--ink);
+	border-color: var(--ink);
+	color: #fff;
 }
 
 .buttons .button.reset:hover {
-	background-color: #f88;
+	background: #e5484d;
+	border-color: #e5484d;
+	color: #fff;
 }
 
-
-
 /*
-PROGRESSBAR
+PROGRESSBAR (JS writes % widths and credit labels)
 */
 .progressbar {
 	width: 800px;
-	height: 15px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 8px;
-	text-align: center;
-	font-weight: bold;
+	height: 16px;
+	margin: 0 auto 8px;
+	font-weight: 600;
 	white-space: nowrap;
 	text-align: left;
-	color: #222;
-	border-right: 2px solid #666;
-	border-left: 2px solid #666;
+	color: var(--ink);
+	background: #dde3ee;
+	border-radius: 3px;
+	overflow: hidden;
 }
 
 .progressbar .finished,
@@ -342,26 +980,21 @@ PROGRESSBAR
 	height: 100%;
 	display: inline-block;
 	font-size: 10px;
+	line-height: 16px;
 	overflow: hidden;
 	text-align: center;
 	vertical-align: top;
 	white-space: normal;
-	opacity: 0.85;
-	filter:alpha(opacity=85);
 }
-
-
 
 /*
 CREDITS COUNTER
 */
 .credits-counter {
-	color: #555;
-	font-size: 16px;
+	color: var(--ink-2);
+	font-size: 14px;
 	width: 800px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 8px;
+	margin: 0 auto 10px;
 }
 
 .credits-counter * {
@@ -381,61 +1014,76 @@ CREDITS COUNTER
 	width: 300px;
 	display: inline-block;
 	position: relative;
-	padding: 2px 0px;
+	padding: 2px 0;
+	border-radius: 4px;
+}
+
+.credits-counter .credits-optional-container .credits-optional-container {
+	width: auto;
+	position: static;
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	padding: 0;
 }
 
 .credits-counter .credits-optional-title {
-	font-size: 12px;
-	margin-top: -6px;
+	font-size: 11px;
+	color: var(--ink-3);
 }
 
 .credits-counter .credits-optional-control {
-	display: inline-block;
-	width: 25px;
-	height: 25px;
-	background-color: #ccc;
-	border-radius: 20px;
-	line-height: 25px;
-	text-align: center;
-	vertical-align: 1px;
-	margin: 0 3px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 24px;
+	height: 24px;
+	background: var(--panel);
+	border: 1px solid var(--line);
+	border-radius: 4px;
+	font-size: 15px;
+	font-weight: 600;
+	margin: 0 4px;
 	cursor: pointer;
+	transition: background-color 0.12s ease, color 0.12s ease;
 }
 
 .credits-counter .credits-optional-control.plus {
-	background-color: #a8d3ff;
-	color: #444;
+	background: var(--open-bg);
+	color: var(--open-ink);
+	border-color: transparent;
 }
 
 .credits-counter .credits-optional-control:hover {
-	background-color: #8e44ad;
+	background: var(--taken-bg);
 	color: #fff;
 }
 
 .credits-counter .credits-optional-control.muted {
 	cursor: default;
-	background-color: #fff;
-	color: #999;
+	background: var(--paper);
+	color: var(--ink-3);
+	border-color: var(--line);
 }
 
 .credits-counter .credits-overflow {
-	font-size: 12px;
+	font-family: var(--mono);
+	font-size: 11px;
 	position: absolute;
-	top: 18px;
-	right: 15px;
+	left: calc(50% + 68px);
+	bottom: 7px;
+	white-space: nowrap;
 }
-
-
 
 /*
-CONTENT
+CONTENT — the graph canvas. Column footprint must stay ≤146px
+(JS: setBodyMinWidth multiplies the column count by 146).
 */
 .content {
-	margin-bottom: 8px;
+	margin-bottom: 10px;
 	position: relative;
+	text-align: center;
 }
-
-
 
 /*
 COURSE BLOCK
@@ -448,11 +1096,13 @@ COURSE BLOCK
 	position: relative;
 	width: 140px;
 	border-radius: 6px;
+	padding: 2px;
 }
 
 .course-block.finished {
-	opacity: 0.6;
-	background-color: rgba(144, 238, 144, 0.5);
+	opacity: 0.65;
+	background-color: rgba(43, 200, 117, 0.2);
+	box-shadow: inset 0 0 0 1px rgba(43, 200, 117, 0.55);
 }
 
 .course-block.finished:hover {
@@ -460,78 +1110,187 @@ COURSE BLOCK
 }
 
 .course-block .course-block-title {
-	margin-bottom: 4px;
+	margin-bottom: 5px;
+	font-size: 11px;
+	font-weight: 600;
+	line-height: 1.15;
+	color: var(--ink-2);
 }
 
+.course-block hr {
+	border: 0;
+	border-top: 1px dashed var(--rule);
+	margin: 7px 6px;
+}
 
+.course-block .muted {
+	font-family: var(--mono);
+	font-size: 10px;
+	margin-top: 3px;
+}
 
 /*
-COURSE
+COURSE CELLS — the signature unit
 */
 .course,
 .course-help {
-	background-color: white;
-	color: #666;
+	background-color: var(--panel);
+	color: var(--ink-3);
 	border-radius: 6px;
-	margin: 2px 0;
-	padding: 4px 3px;
+	margin: 3px 0;
+	padding: 5px 4px;
 	position: relative;
 	word-wrap: break-word;
+	font-size: 11.5px;
+	line-height: 1.32;
+	box-shadow: 0 1px 2px rgba(23, 34, 59, 0.08);
+	transition: background-color 0.12s ease, color 0.12s ease, box-shadow 0.12s ease;
 }
 
 .course {
 	cursor: pointer;
 }
 
-.course-help {
-	width: auto;
+.course:hover {
+	box-shadow: 0 0 0 2px var(--ink);
+	z-index: 3;
 }
 
 .course.processable,
 .course-help.processable {
-	background-color: #a8d3ff;
-	color: #444;
+	background-color: var(--open-bg);
+	color: var(--open-ink);
 }
 
 .course.processing,
 .course-help.processing,
 .progressbar .processing {
-	background-color: #3498db;
+	background-color: var(--taken-bg);
 	color: #fff;
 }
 
 .course.finished,
 .course-help.finished,
 .progressbar .finished {
-	background-color: #2ecc71;
-	color: #222;
+	background-color: var(--done-bg);
+	color: var(--done-ink);
 }
 
 .course.prerequisite,
 .course-help.prerequisite {
-	background-color: #e67e22;
-	color: #000;
+	background-color: var(--prereq-bg);
+	color: #fff;
 }
 
 .course.sequel,
 .course-help.sequel {
-	background-color: #f1c40f;
-	color: #000;
+	background-color: var(--sequel-bg);
+	color: var(--ink);
 }
 
+/* terminal course: nothing builds on it */
 .course.end {
-	background-image: url('../img/end.png');
-	background-position: right center;
-	background-repeat: repeat-y;
+	background-image: linear-gradient(
+		to left,
+		rgba(23, 34, 59, 0.18) 0,
+		rgba(23, 34, 59, 0.18) 4px,
+		transparent 4px
+	);
 }
-
-
 
 /*
-HELP
+HELP LEGEND (fixed panel; JS adds its width to the min-width calc)
 */
 .help {
 	position: fixed;
-	bottom: 5px;
-	left: 3px;
+	bottom: 12px;
+	left: 12px;
+	width: 130px;
+	background: var(--panel);
+	border-radius: 4px;
+	padding: 7px;
+	box-shadow: 0 2px 10px rgba(23, 34, 59, 0.12);
+	z-index: 1;
+}
+
+.help .course-help {
+	box-shadow: none;
+	font-size: 10.5px;
+	margin: 3px 0;
+	border-radius: 4px;
+}
+
+.help .course-help .help-sub {
+	display: block;
+	font-size: 8.5px;
+	font-weight: 400;
+	opacity: 0.72;
+	margin-top: 1px;
+}
+
+/*
+RESPONSIVE (home + university only; program pages are fixed-width)
+*/
+@media (max-width: 680px) {
+	.topbar {
+		padding: 11px 16px 9px;
+		gap: 12px;
+	}
+
+	.topbar .wordmark img {
+		height: 26px;
+		width: auto;
+	}
+
+	.topbar-note,
+	.topbar-sep {
+		display: none;
+	}
+
+	.crumbs {
+		gap: 7px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.sheet-body {
+		grid-template-columns: 1fr;
+	}
+
+	.universities {
+		border-left: 0;
+		border-top: 1px solid var(--rule);
+	}
+
+	.hero-left {
+		padding: 26px 24px 22px;
+	}
+
+	.hero h1 {
+		font-size: 28px;
+	}
+
+	.hero-demo {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		width: 100%;
+	}
+
+	main .university .count {
+		display: none;
+	}
+
+	body.page-university .program-meta {
+		display: none;
+	}
+
+	.sheet-foot {
+		flex-wrap: wrap;
+		gap: 4px 18px;
+	}
+
+	.uni-identity {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 12px;
+	}
 }

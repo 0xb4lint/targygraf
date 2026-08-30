@@ -2,15 +2,45 @@ name: Test
 
 on:
   pull_request:
+  push:
+    branches:
+      - master
+
+permissions:
+  contents: read
 
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: shivammathur/setup-php@v2
+      - uses: actions/setup-node@v4
         with:
-          php-version: '7.4'
-      - run: composer config --no-plugins allow-plugins.kylekatarnls/update-helper false
-      - run: composer install --profile --no-interaction
-      - run: ./vendor/bin/phpunit
+          node-version: 22
+          cache: npm
+      # Runs the JSON validation suite (the contributor PR gate), the data
+      # loader/render unit tests, builds the site, and checks the build
+      # output, the legacy-JS localStorage behavior and the Worker end-to-end
+      # (which bundles the Worker with a real `wrangler deploy --dry-run`).
+      - run: npm ci
+      - run: npm test
+
+  # Every merge to master that passes the tests goes live on its own:
+  # `npm run deploy` builds the site and runs `wrangler deploy`, which
+  # uploads the assets and (re)attaches the targygraf.hu zone routes.
+  # Needs the CLOUDFLARE_API_TOKEN repository secret.
+  deploy:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+    needs: test
+    concurrency: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}

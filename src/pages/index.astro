@@ -1,0 +1,117 @@
+---
+/**
+ * Landing page: one curriculum sheet, built to fit a 1400x700 viewport.
+ * Three ruled columns: statement, live mini-graph, university registry.
+ */
+import Template from '../layouts/Template.astro';
+import { getDataset, SEPARATOR_COURSE_CODE } from '../lib/data';
+import { canonicalUrl, universityPath } from '../lib/urls';
+
+const { universities } = getDataset();
+
+const faculties = universities.flatMap((u) => u.faculties);
+const programs = faculties.flatMap((f) => f.programs);
+const courseCount = programs
+	.flatMap((p) => p.blocks)
+	.flatMap((b) => b.courses)
+	.filter((c) => c.code !== SEPARATOR_COURSE_CODE).length;
+const hu = (n: number) => n.toLocaleString('hu-HU');
+
+// One flat, alphabetical registry (the dataset order); every university is
+// equal here.
+const listed = universities;
+const programCount = (u: (typeof universities)[number]) =>
+	u.faculties.reduce((n, f) => n + f.programs.length, 0);
+---
+
+<Template page="home" canonical={canonicalUrl('/')}>
+	<Fragment slot="header">
+		<nav class="topbar">
+			<a href="/" class="wordmark"><img src="/assets/img/logo.svg" alt="Tárgygráf" width="131" height="34" /></a>
+			<div class="topbar-side">
+				<span class="topbar-note">since 2012</span>
+				<span class="topbar-sep" aria-hidden="true">·</span>
+				<a href="https://github.com/0xb4lint/targygraf" class="topbar-link" rel="noopener">GitHub</a>
+			</div>
+		</nav>
+	</Fragment>
+
+	<Fragment slot="main">
+		<section class="hero">
+			<div class="sheet">
+				<div class="sheet-head">
+					<span>Interaktív mintatanterv</span>
+					<span>nyílt forráskódú</span>
+				</div>
+				<div class="sheet-body">
+					<div class="hero-left">
+						<div class="hero-copy">
+							<h1>A mintatanterved, interaktív térképen.</h1>
+							<p class="hero-note">
+								Előfeltételek, ráépülések és kreditek, félévekre bontva. Regisztráció nélkül: a
+								haladásod a böngésződben marad.
+							</p>
+						</div>
+						<div class="hero-demo-wrap">
+						<div class="hero-demo">
+							<div class="demo-col">
+								<div class="demo-title">1. félév</div>
+								<div class="demo-cell is-done dc-a">Analízis I.</div>
+								<div class="demo-cell is-done dc-b">Programozás I.</div>
+								<div class="demo-cell is-open dc-c">Digitális technika</div>
+							</div>
+							<div class="demo-col">
+								<div class="demo-title">2. félév</div>
+								<div class="demo-cell is-taking dc-d">Analízis II.</div>
+								<div class="demo-cell is-open dc-e">Programozás II.</div>
+								<div class="demo-cell dc-f">Numerikus módszerek</div>
+							</div>
+							<div class="demo-col">
+								<div class="demo-title">3. félév</div>
+								<div class="demo-cell dc-g">Adatbázisok</div>
+								<div class="demo-cell dc-h">Szoftvertechnológia</div>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="universities" id="egyetemek">
+						<div class="section-head">
+							<h2>Válaszd ki az egyetemed</h2>
+							<!--<span class="section-count">{universities.length}</span> -->
+						</div>
+						<div class="uni-index">
+							{
+								listed.map((university) => (
+									<a href={universityPath(university.slug)} class="university">
+										<div class="logo">{university.slug.toUpperCase()}</div>
+										<div class="name">{university.name}</div>
+										<div class="count">
+											{university.faculties.length} kar · {programCount(university)} szak
+										</div>
+										<span class="arrow" aria-hidden="true">→</span>
+									</a>
+								))
+							}
+						</div>
+						<a
+							class="contribute"
+							href="https://github.com/0xb4lint/targygraf#%C3%BAj-egyetem-felv%C3%A9tele"
+							rel="noopener"
+						>
+							<span class="contribute-q">Hiányzik az egyetemed?</span>
+							<span class="contribute-go">Vidd fel a GitHubon</span>
+						</a>
+					</div>
+				</div>
+				<div class="sheet-foot">
+					<p class="hero-stats">
+						<span>{hu(universities.length)} egyetem</span>
+						<span>{hu(faculties.length)} kar</span>
+						<span>{hu(programs.length)} szak</span>
+						<span>{hu(courseCount)} tantárgy</span>
+					</p>
+				</div>
+			</div>
+		</section>
+	</Fragment>
+</Template>

@@ -1,0 +1,34 @@
+---
+/** The program-page dropdown listing every program of the university. */
+import type { University } from '../lib/data';
+import { programPath } from '../lib/urls';
+
+interface Props {
+	university: University;
+	currentProgramSlug?: string;
+	hidden?: boolean;
+}
+
+const { university, currentProgramSlug, hidden = false } = Astro.props;
+---
+
+<div class="program-selector">
+	{hidden && <div class="toggle">Szakválasztó</div>}
+	<div class="faculties" style={hidden ? 'display: none;' : undefined}>
+		{
+			university.faculties.map((faculty) => (
+				<div class="faculty">
+					<div class="faculty-name">{faculty.name}</div>
+					{faculty.programs.map((program) => (
+						<a
+							href={programPath(university.slug, program.slug)}
+							class={`program${program.slug === currentProgramSlug ? ' active' : ''}`}
+						>
+							{program.name}
+						</a>
+					))}
+				</div>
+			))
+		}
+	</div>
+</div>

@@ -1,0 +1,18 @@
+{
+    "name": "Zéta Szak",
+    "description": "",
+    "curriculum_updated_at": null,
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "ZZZ111",
+                    "name": "Egyetlen tárgy",
+                    "credits": 30
+                }
+            ]
+        }
+    ]
+}

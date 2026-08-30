@@ -14,5 +14,5 @@ trim_trailing_whitespace = false
 [*.yml]
 indent_size = 2
 
-[*.{css,js,html,sh,blade.php}]
+[*.{css,js,mjs,ts,astro,html,sh}]
 indent_style = tab

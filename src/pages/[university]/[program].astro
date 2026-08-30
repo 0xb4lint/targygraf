@@ -1,0 +1,101 @@
+---
+/** The program page: header, counters and the course graph. */
+import CreditsCounter from '../../components/CreditsCounter.astro';
+import Help from '../../components/Help.astro';
+import ProgramSelector from '../../components/ProgramSelector.astro';
+import Progressbar from '../../components/Progressbar.astro';
+import TargygrafContent from '../../components/Targygraf.astro';
+import Template from '../../layouts/Template.astro';
+import { getDataset, type Program, type University } from '../../lib/data';
+import { isCurriculumOutdated } from '../../lib/render';
+import { canonicalUrl, programPath, universityPath } from '../../lib/urls';
+
+export function getStaticPaths() {
+	return getDataset().universities.flatMap((university) =>
+		university.faculties.flatMap((faculty) =>
+			faculty.programs.map((program) => ({
+				params: { university: university.slug, program: program.slug },
+				props: { university, program },
+			}))
+		)
+	);
+}
+
+interface Props {
+	university: University;
+	program: Program;
+}
+
+const { university, program } = Astro.props;
+const description = `${program.name} (${university.name}) interaktív mintatanterv: tantárgyak, előfeltételek és kreditek.`;
+---
+
+<Template
+	page="program"
+	htmlTitle={`${university.slug.toUpperCase()} ${program.name}`}
+	ogTitle={`${university.name} - ${program.name}`}
+	migrateUniversity={university.slug}
+	description={description}
+	canonical={canonicalUrl(programPath(university.slug, program.slug))}
+>
+	<Fragment slot="buttons">
+		<div class="button reset" title="Adatok törlése">
+			<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+				><path d="M3 6h18"></path><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"></path><path d="M10 11v6"></path><path d="M14 11v6"></path></svg
+			>
+		</div>
+	</Fragment>
+
+	<Fragment slot="header">
+		<div class="crumbs header-mark">
+			<a href="/" class="wordmark"><img src="/assets/img/logo-dark.svg" alt="Tárgygráf" width="77" height="20" /></a>
+			<span class="crumb-sep" aria-hidden="true">/</span>
+			<a href={universityPath(university.slug)} class="crumb-link">{university.name}</a>
+			<span class="crumb-sep" aria-hidden="true">/</span>
+			<span class="crumb-here">{program.name}</span>
+		</div>
+		{
+			university.hasLogo && (
+				<img class="university-logo" src={`/assets/img/logo/${university.slug}.svg`} />
+			)
+		}
+
+		<ProgramSelector university={university} currentProgramSlug={program.slug} hidden />
+
+		<h1>
+			<a href={universityPath(university.slug)} class="muted">{university.name}</a> - {
+				program.name
+			}
+		</h1>
+		{program.description && <div class="program-description">{program.description}</div>}
+		{
+			program.curriculumUpdatedAt &&
+				(isCurriculumOutdated(program.curriculumUpdatedAt) ? (
+					<div class="program-curriculum-outdated">
+						Ez egy régebbi (<b>{program.curriculumUpdatedAt}</b>) tanterv, hivatalos forrásból is
+						ellenőrizd a tárgyaidat!
+					</div>
+				) : (
+					<div class="program-curriculum-updated">
+						Tanterv: <b>{program.curriculumUpdatedAt}</b>
+					</div>
+				))
+		}
+		<div>
+			<a
+				class="header-contribute"
+				href={`https://github.com/0xb4lint/targygraf/edit/master/json/programs/${university.slug}_${program.facultySlug}_${program.slug}.json`}
+				rel="noopener"
+			>
+				Frissült vagy hibás a tanterv? Javítsd a GitHubon
+			</a>
+		</div>
+	</Fragment>
+
+	<Fragment slot="main">
+		<Help />
+		<Progressbar />
+		<CreditsCounter />
+		<TargygrafContent program={program} />
+	</Fragment>
+</Template>

@@ -1,0 +1,134 @@
+---
+/**
+ * Shared page chrome.
+ *
+ * The client stack is dependency-free vanilla JS: assets/js/targygraf.js
+ * carries the frozen DOM and localStorage contracts (see its header),
+ * tooltips reuse tipsy.css via a small built-in renderer, and the legal
+ * notice is self-rendered.
+ */
+import { Font } from 'astro:assets';
+import { DEFAULT_DESCRIPTION, pageTitle } from '../lib/render';
+import { siteOrigin } from '../lib/urls';
+
+interface Props {
+	/**
+	 * Which chrome variant to render. Program pages keep the legacy
+	 * no-viewport, fixed-min-width behavior so the graph renders zoomed-out
+	 * on phones; home and university pages are properly responsive.
+	 */
+	page: 'home' | 'university' | 'program';
+	/** Page-specific title part; template appends " | Tárgygráf". */
+	htmlTitle?: string;
+	/** og:title override (same " | Tárgygráf" suffix); defaults to htmlTitle. */
+	ogTitle?: string;
+	description?: string;
+	/** Absolute canonical URL; rendered only when provided. */
+	canonical?: string;
+	/**
+	 * University slug whose legacy subdomain localStorage should be migrated
+	 * into this origin (see public/assets/js/migrate.js).
+	 */
+	migrateUniversity?: string;
+}
+
+const {
+	page,
+	htmlTitle,
+	ogTitle,
+	description = DEFAULT_DESCRIPTION,
+	canonical,
+	migrateUniversity,
+} = Astro.props;
+const title = pageTitle(htmlTitle);
+const socialTitle = ogTitle ? pageTitle(ogTitle) : title;
+const origin = siteOrigin();
+---
+
+<!doctype html>
+<html lang="hu">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="keywords"
+			content="tárgygráf, pannon egyetem, pe, bme, pte, pécs, műszaki, műegyetem, tanterv, mintatanterv, egyetem, pannon, gráf, kredit, félév, tárgyak, tárgy, tantárgy, előfeltétel, előtanulmány, előtanulmányi rend, ráépülés"
+		/>
+		<meta name="description" content={description} />
+		<title>{title}</title>
+		<meta property="og:site_name" content="Tárgygráf" />
+		<meta property="og:type" content="website" />
+		<meta property="og:locale" content="hu_HU" />
+		<meta property="og:title" content={socialTitle} />
+		<meta property="og:description" content={description} />
+		{canonical && <meta property="og:url" content={canonical} />}
+		<meta property="og:image" content={`${origin}/og.png`} />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta property="og:image:alt" content="Tárgygráf: a mintatanterved, interaktív térképen" />
+		{
+			/* Program pages deliberately ship no viewport meta: the graph relies
+			   on the fixed-min-width layout rendering zoomed-out on phones. */
+			page !== 'program' && (
+				<meta name="viewport" content="width=device-width, initial-scale=1" />
+			)
+		}
+		{canonical && <link rel="canonical" href={canonical} />}
+		<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+		<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<Font cssVariable="--font-display" preload />
+		<Font cssVariable="--font-body" preload />
+		<Font cssVariable="--font-mono" />
+		<link href="/assets/css/style.css?v=20260831" rel="stylesheet" />
+		<link href="/assets/css/tipsy.css?v=20260831" rel="stylesheet" />
+		<!-- Google tag (gtag.js) -->
+		<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-1T3XF9V5BL"></script>
+		<script is:inline>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-1T3XF9V5BL');
+		</script>
+	</head>
+	<body class={`page-${page}`}>
+		<div class="fade"></div>
+
+		<div class="buttons">
+			<slot name="buttons" />
+		</div>
+
+		<header>
+			<slot name="header" />
+		</header>
+
+		<main>
+			<slot name="main" />
+		</main>
+
+		<footer>
+			<div class="footer-inner">
+				<span class="disclaimer"
+					>Hallgatók által szerkesztett, tájékoztató jellegű oldal. A hivatalos tantervet mindig
+					az egyetemednél ellenőrizd.</span
+				>
+				<span class="footer-links">
+					<a href="https://github.com/0xb4lint/targygraf" rel="noopener">GitHub</a>
+					<span class="sep" aria-hidden="true">·</span>
+					<a href="https://b4lint.hu" rel="noopener">Szekeres Bálint</a>
+				</span>
+			</div>
+		</footer>
+
+		<script is:inline src="/assets/js/targygraf.js?v=20260831"></script>
+		{
+			migrateUniversity && (
+				<script
+					is:inline
+					set:html={`window.migrateUniversity=${JSON.stringify(migrateUniversity)};`}
+				/>
+			)
+		}
+		{migrateUniversity && <script is:inline src="/assets/js/migrate.js?v=1"></script>}
+	</body>
+</html>

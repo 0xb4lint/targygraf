@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="hu">
+	<head>
+		<meta charset="utf-8">
+		<meta name="robots" content="noindex">
+		<title>targygraf.hu adatátvitel</title>
+	</head>
+	<body>
+		<script>
+			/*
+			 * Served on the legacy {university}.targygraf.hu origins. When
+			 * embedded by targygraf.hu (see assets/js/migrate.js), it hands
+			 * over the progress this origin stored under the old subdomain
+			 * URLs. The target origin is pinned: nothing is ever posted
+			 * anywhere else.
+			 */
+			(function () {
+				'use strict';
+
+				if (window.parent === window) {
+					return;
+				}
+
+				function read(key) {
+					try {
+						return JSON.parse(window.localStorage.getItem(key));
+					} catch (error) {
+						return null;
+					}
+				}
+
+				window.parent.postMessage(
+					{
+						type: 'targygraf-migrate',
+						coursesFinished: read('coursesFinished'),
+						coursesProcessing: read('coursesProcessing'),
+						creditsOptional: read('creditsOptional')
+					},
+					'https://targygraf.hu'
+				);
+			})();
+		</script>
+	</body>
+</html>
