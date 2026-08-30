@@ -36,6 +36,7 @@ const curriculumYear = (program: Program) => program.curriculumUpdatedAt?.slice(
 <Template
 	page="university"
 	htmlTitle={university.name}
+	migrateUniversity={university.slug}
 	description={description}
 	canonical={canonicalUrl(universityPath(university.slug))}
 >

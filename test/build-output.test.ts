@@ -58,6 +58,7 @@ describe.skipIf(skip)('build output inventory', () => {
 	it('ships the frontend assets referenced by the pages', () => {
 		for (const asset of [
 			'assets/js/targygraf.js',
+			'assets/js/ls-migrate.js',
 			'assets/css/style.css',
 			'assets/css/tipsy.css',
 			'icon.png',
@@ -358,7 +359,35 @@ describe.skipIf(skip)('page chrome', () => {
 		expect(scripts).toEqual([
 			'https://www.googletagmanager.com/gtag/js?id=G-1T3XF9V5BL',
 			'/assets/js/targygraf.js?v=20260831',
+			'/assets/js/ls-migrate.js?v=1',
 		]);
+	});
+
+	it('wires the localStorage migration bridge on university and program pages', () => {
+		for (const [segments, expected] of [
+			[['pe', 'mernokinformatikus.html'], 'pe'],
+			[['bme.html'], 'bme'],
+		] as const) {
+			const page = readPage(DIST, ...segments);
+			const inline = page.querySelectorAll('script:not([src])').map((s) => s.text);
+			expect(
+				inline.some((t) => t.includes(`window.lsMigrateUniversity="${expected}"`)),
+				segments.join('/')
+			).toBe(true);
+		}
+
+		// The home page has no university context, so no bridge there.
+		const home = readPage(DIST, 'index.html');
+		const inline = home.querySelectorAll('script[src]').map((s) => s.getAttribute('src')!);
+		expect(inline).not.toContain('/assets/js/ls-migrate.js?v=1');
+
+		// The handoff endpoint itself ships in the build, marked noindex.
+		const handoff = readPage(DIST, '__ls-migrate.html');
+		expect(handoff.querySelector('meta[name="robots"]')!.getAttribute('content')).toBe(
+			'noindex'
+		);
+		expect(handoff.text).toContain('targygraf-ls');
+		expect(fs.existsSync(path.join(DIST, 'assets/js/ls-migrate.js'))).toBe(true);
 	});
 
 	it('configures the GA4 property', () => {

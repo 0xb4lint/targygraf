@@ -34,6 +34,7 @@ const description = `${program.name} (${university.name}) interaktív mintatante
 	page="program"
 	htmlTitle={`${university.slug.toUpperCase()} ${program.name}`}
 	ogTitle={`${university.name} - ${program.name}`}
+	migrateUniversity={university.slug}
 	description={description}
 	canonical={canonicalUrl(programPath(university.slug, program.slug))}
 >

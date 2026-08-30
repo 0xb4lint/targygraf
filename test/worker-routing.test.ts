@@ -99,6 +99,13 @@ describe('worker routing: host-independent statics', () => {
 			assetPath: '/favicon.svg',
 		});
 	});
+
+	it('keeps serving /__ls-migrate on the legacy origins', () => {
+		expect(decide('https://pe.targygraf.hu/__ls-migrate')).toEqual({
+			kind: 'serve',
+			assetPath: '/__ls-migrate',
+		});
+	});
 });
 
 describe('worker routing: previews and local dev', () => {

@@ -65,6 +65,7 @@ describe.skipIf(skip)('worker + assets end-to-end (Miniflare)', () => {
 									'/favicon.ico',
 									'/robots.txt',
 									'/sitemap.xml',
+									'/__ls-migrate',
 								],
 							},
 						},
@@ -129,6 +130,12 @@ describe.skipIf(skip)('worker + assets end-to-end (Miniflare)', () => {
 		const res = await get('https://pe.targygraf.hu/assets/js/targygraf.js');
 		expect(res.status).toBe(200);
 		expect(await res.text()).toContain('coursesFinished');
+	});
+
+	it('keeps serving the localStorage handoff page on legacy origins', async () => {
+		const res = await get('https://pe.targygraf.hu/__ls-migrate');
+		expect(res.status).toBe(200);
+		expect(await res.text()).toContain('targygraf-ls');
 	});
 
 	it('normalizes trailing slashes', async () => {
