@@ -1,7 +1,10 @@
 # Tárgygráf - [targygraf.hu](https://targygraf.hu)
 
-![StyleCI](https://styleci.io/repos/99475496/shield?branch=master)
-![TravisCI](https://travis-ci.com/0xB4LINT/targygraf.svg?branch=master)
+> **Migration in progress:** the site is moving from the Laravel app in this
+> repository to a static build (Astro + Cloudflare) living in [`site/`](site/).
+> The JSON data files and the contributor flow are unchanged: fork, edit
+> `json/**`, PR to `master`. See [`site/README.md`](site/README.md) for the
+> new stack; the Laravel sections below apply until the cutover completes.
 
 ## Install
 1. `composer install`
@@ -15,11 +18,12 @@ then `docker-compose up -d targygraf`
 
 ## Contributing
 1. fork repo
-2. edit (PSR-2, `.editorconfig`)
+2. edit the JSON files (see "Adatok szerkesztése" below)
 3. pull request to `master` branch
 
 ## Testing
-`vendor/bin/phpunit`
+- new stack: `cd site && npm install && npm test`
+- Laravel: `vendor/bin/phpunit`
 
 ## Fontos fájlok
 - `.env` - futtatókörnyezet leíró fájl
