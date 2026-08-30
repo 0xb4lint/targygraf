@@ -213,6 +213,16 @@ export function buildProgram(
 		}
 	}
 
+	// MySQL returned pivot rows clustered by (course_id, referenced_id), so
+	// the live site listed prerequisites in referenced-course id order: the
+	// ___n___ helper courses first (they were seeded before everything else,
+	// ids 1-7 in HelperCourseSeeder order), then program courses in insertion
+	// (= file position) order. Tooltip text and data attributes follow it.
+	const prerequisiteSortKey = (p: Prerequisite): number =>
+		isDummyCreditCode(p.code)
+			? DUMMY_CREDIT_COURSE_CODES.indexOf(p.code as any) - DUMMY_CREDIT_COURSE_CODES.length
+			: parseInt(p.paddedId, 10);
+
 	// Second pass: resolve prerequisites and block references.
 	for (const [blockIndex, block] of blocks.entries()) {
 		for (const [courseIndex, course] of block.courses.entries()) {
@@ -259,6 +269,14 @@ export function buildProgram(
 				}
 				course.courseBlockReferences.push(target.paddedId);
 			}
+
+			// Same clustered-index effect as prerequisites (see above).
+			course.prerequisites.sort(
+				(a, b) => prerequisiteSortKey(a) - prerequisiteSortKey(b)
+			);
+			course.courseBlockReferences.sort(
+				(a, b) => parseInt(a.replace(/_/g, ''), 10) - parseInt(b.replace(/_/g, ''), 10)
+			);
 		}
 	}
 

@@ -165,25 +165,31 @@ describe.skipIf(skip)('localStorage contract on every program page', () => {
 				const rawTokens = rawCourse.prerequisites ?? [];
 				expect(tokens, `${file} ${rawCourse.code}`).toHaveLength(rawTokens.length);
 
-				tokens.forEach((token: string, j: number) => {
-					const rawToken = rawTokens[j];
+				// The attribute order follows the live site's referenced-id
+				// ordering (credit gates first, then page position), so compare
+				// as decoded (code, parallel) pairs, order-insensitively, and
+				// verify each id resolves to the first course with that code.
+				const decoded = tokens.map((token: string) => {
 					const parallel = token.startsWith('#');
 					const id = parallel ? token.slice(1) : token;
-					const context = `${file} ${rawCourse.code} -> ${rawToken}`;
-
-					expect(parallel, context).toBe(/^\(.+\)$/.test(rawToken));
-					if (isDummyCreditCode(id)) {
-						expect(id, context).toBe(trimParens(rawToken));
-					} else {
-						// The id must resolve, on this same page, to the first
-						// course carrying the referenced code.
-						expect(idToCode.get(id), context).toBe(trimParens(rawToken));
+					const code = isDummyCreditCode(id) ? id : idToCode.get(id);
+					if (!isDummyCreditCode(id)) {
 						const firstWithCode = pageCourses.find(
-							(c) => c.getAttribute('data-code') === trimParens(rawToken)
+							(c) => c.getAttribute('data-code') === code
 						)!;
-						expect(id, context).toBe(firstWithCode.getAttribute('data-id'));
+						expect(id, `${file} ${rawCourse.code} -> ${code}`).toBe(
+							firstWithCode.getAttribute('data-id')
+						);
 					}
+					return `${parallel ? '#' : ''}${code}`;
 				});
+				const expected = rawTokens.map(
+					(rawToken: string) =>
+						`${/^\(.+\)$/.test(rawToken) ? '#' : ''}${trimParens(rawToken)}`
+				);
+				expect(decoded.slice().sort(), `${file} ${rawCourse.code}`).toEqual(
+					expected.slice().sort()
+				);
 			});
 		}
 	});
@@ -211,9 +217,14 @@ describe.skipIf(skip)('localStorage contract on every program page', () => {
 			rawCourses.forEach((rawCourse: any, i: number) => {
 				const attr = pageCourses[i]!.getAttribute('data-referenced-course-blocks') ?? '';
 				const tokens = attr === '' ? [] : attr.split(',');
-				const expected = (rawCourse.course_block_references ?? []).map(
-					(name: string) => nameToId.get(name)!
-				);
+				const expected = (rawCourse.course_block_references ?? [])
+					.map((name: string) => nameToId.get(name)!)
+					// The attribute follows referenced-block id order (see the
+					// prerequisite ordering note).
+					.sort(
+						(a: string, b: string) =>
+							parseInt(a.replace(/_/g, ''), 10) - parseInt(b.replace(/_/g, ''), 10)
+					);
 				expect(tokens, `${file} ${rawCourse.name}`).toEqual(expected);
 			});
 

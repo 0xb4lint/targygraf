@@ -105,11 +105,14 @@ describe('buildProgram (fixture)', () => {
 		]);
 	});
 
-	it('resolves credit-gate pseudo prerequisites to their own token', () => {
+	it('resolves credit-gate pseudo prerequisites and orders them first', () => {
 		const course = byCode('CCC333');
+		// JSON order is [AAA111, ___75___], but the live site listed pivot rows
+		// in referenced-course id order: helper credit courses (seeded first)
+		// come before program courses. The loader reproduces that.
 		expect(course.prerequisites).toEqual([
-			{ code: 'AAA111', parallel: false, name: 'Alapozó tárgy', paddedId: '000001' },
 			{ code: '___75___', parallel: false, name: '75 kredit', paddedId: '___75___' },
+			{ code: 'AAA111', parallel: false, name: 'Alapozó tárgy', paddedId: '000001' },
 		]);
 	});
 
