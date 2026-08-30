@@ -180,11 +180,17 @@ const programs = args.length
 	? args.map((a) => a.replace(/\.json$/, ''))
 	: jsonSlugs('programs');
 
-await compareHome();
-for (const uni of jsonSlugs('universities')) {
-	await compareUniversity(uni);
+// Home and university pages were intentionally redesigned after the 1:1
+// migration was verified; only the program pages' graph structure remains
+// comparable with the live Laravel output. Pass --chrome to re-enable the
+// legacy home/university comparisons.
+if (args.includes('--chrome')) {
+	await compareHome();
+	for (const uni of jsonSlugs('universities')) {
+		await compareUniversity(uni);
+	}
 }
-for (const program of programs) {
+for (const program of programs.filter((p) => p !== '--chrome')) {
 	await compareProgram(program);
 }
 

@@ -1,6 +1,6 @@
 ---
 /**
- * Port of resources/views/template.blade.php.
+ * Shared page chrome (descendant of resources/views/template.blade.php).
  *
  * The client stack is dependency-free: assets/js/targygraf.js is a vanilla
  * rewrite of the original jQuery implementation (same DOM contract, same
@@ -11,6 +11,12 @@ import { DEFAULT_DESCRIPTION, pageTitle } from '../lib/render';
 import { siteOrigin } from '../lib/urls';
 
 interface Props {
+	/**
+	 * Which chrome variant to render. Program pages keep the legacy
+	 * no-viewport, fixed-min-width behavior so the graph renders zoomed-out
+	 * on phones; home and university pages are properly responsive.
+	 */
+	page: 'home' | 'university' | 'program';
 	/** Page-specific title part; template appends " | Tárgygráf". */
 	htmlTitle?: string;
 	description?: string;
@@ -23,7 +29,13 @@ interface Props {
 	migrateUniversity?: string;
 }
 
-const { htmlTitle, description = DEFAULT_DESCRIPTION, canonical, migrateUniversity } = Astro.props;
+const {
+	page,
+	htmlTitle,
+	description = DEFAULT_DESCRIPTION,
+	canonical,
+	migrateUniversity,
+} = Astro.props;
 const title = pageTitle(htmlTitle);
 const origin = siteOrigin();
 ---
@@ -32,7 +44,6 @@ const origin = siteOrigin();
 <html lang="hu">
 	<head>
 		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta
 			name="keywords"
 			content="tárgygráf, pannon egyetem, pe, bme, pte, pécs, műszaki, műegyetem, tanterv, mintatanterv, egyetem, pannon, gráf, kredit, félév, tárgyak, tárgy, tantárgy, előfeltétel, előtanulmány, előtanulmányi rend, ráépülés"
@@ -43,22 +54,24 @@ const origin = siteOrigin();
 		<meta property="og:description" content={description} />
 		<meta property="og:image" content={`${origin}/icon.png`} />
 		<meta property="og:type" content="website" />
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		{/* Deliberately no viewport meta: the live site has none, and adding one
-		    would change how the fixed-min-width layout renders on phones. */}
+		{
+			/* Program pages deliberately ship no viewport meta: the graph relies
+			   on the fixed-min-width layout rendering zoomed-out on phones. */
+			page !== 'program' && (
+				<meta name="viewport" content="width=device-width, initial-scale=1" />
+			)
+		}
 		{canonical && <link rel="canonical" href={canonical} />}
 		<link rel="icon" type="image/png" href="/icon.png" />
 		<link rel="apple-touch-icon" href="/icon.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
 			rel="stylesheet"
 		/>
-		<link
-			href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
-			rel="stylesheet"
-		/>
-		<link href="/assets/css/style.css?v=20190217" rel="stylesheet" />
-		<link href="/assets/css/tipsy.css" rel="stylesheet" />
+		<link href="/assets/css/style.css?v=20260831" rel="stylesheet" />
+		<link href="/assets/css/tipsy.css?v=20260831" rel="stylesheet" />
 		<link href="/assets/css/notie.min.css" rel="stylesheet" />
 		<!-- Google tag (gtag.js) -->
 		<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-1T3XF9V5BL"></script>
@@ -70,7 +83,7 @@ const origin = siteOrigin();
 			gtag('config', 'G-1T3XF9V5BL');
 		</script>
 	</head>
-	<body>
+	<body class={`page-${page}`}>
 		<div class="fade"></div>
 
 		<div class="buttons">
@@ -86,14 +99,21 @@ const origin = siteOrigin();
 		</main>
 
 		<footer>
-			<iframe
-				src="https://ghbtns.com/github-btn.html?user=0xb4lint&repo=targygraf&type=star&count=true&size=large"
-				class="github"></iframe>
-			<div class="disclaimer">Az oldalon található információk nem tekinthetőek hivatalos forrásnak.</div>
+			<div class="footer-inner">
+				<span class="disclaimer"
+					>Hallgatók által szerkesztett, tájékoztató jellegű oldal. A hivatalos tantervet mindig
+					az egyetemednél ellenőrizd.</span
+				>
+				<span class="footer-links">
+					<a href="https://github.com/0xb4lint/targygraf" rel="noopener">GitHub</a>
+					<span class="sep" aria-hidden="true">·</span>
+					<a href="https://b4lint.hu" rel="noopener">Szekeres Bálint</a>
+				</span>
+			</div>
 		</footer>
 
 		<script is:inline src="/assets/js/notie.min.js"></script>
-		<script is:inline src="/assets/js/targygraf.js?v=20260830"></script>
+		<script is:inline src="/assets/js/targygraf.js?v=20260831"></script>
 		{
 			migrateUniversity && (
 				<script

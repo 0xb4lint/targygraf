@@ -1,5 +1,5 @@
 ---
-/** Port of resources/views/layouts/university.blade.php (UniversityController). */
+/** University page: identity + program picker (UniversityController port). */
 import ProgramSelector from '../components/ProgramSelector.astro';
 import Template from '../layouts/Template.astro';
 import { getDataset, type University } from '../lib/data';
@@ -17,30 +17,55 @@ interface Props {
 }
 
 const { university } = Astro.props;
+const programCount = university.faculties.reduce((n, f) => n + f.programs.length, 0);
 const description = `${university.name} interaktív mintatantervei: szakok, tantárgyak, előfeltételek és kreditek.`;
 ---
 
 <Template
+	page="university"
 	htmlTitle={university.name}
 	description={description}
 	canonical={canonicalUrl(universityPath(university.slug))}
 	migrateUniversity={university.slug}
 >
 	<Fragment slot="buttons">
-		<a href={homePath()} class="button" title="targygraf.hu"><i class="fa fa-home"></i></a>
+		<a href={homePath()} class="button" title="targygraf.hu">
+			<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+				><path d="M3 10.5 12 3l9 7.5"></path><path d="M5 9.5V21h14V9.5"></path><path d="M10 21v-6h4v6"></path></svg
+			>
+		</a>
 	</Fragment>
 
 	<Fragment slot="header">
-		<ProgramSelector university={university} />
+		<nav class="topbar">
+			<div class="crumbs">
+				<a href={homePath()} class="wordmark"
+					><span class="wordmark-cell" aria-hidden="true"></span>Tárgygráf</a
+				>
+				<span class="crumb-sep" aria-hidden="true">/</span>
+				<span class="crumb-here">{university.name}</span>
+			</div>
+			<a href="https://github.com/0xb4lint/targygraf" class="topbar-link" rel="noopener">GitHub</a>
+		</nav>
 	</Fragment>
 
 	<Fragment slot="main">
-		{
-			university.hasLogo && (
-				<img class="university-logo" src={`/assets/img/logo/${university.slug}.svg`} />
-			)
-		}
+		<div class="uni-hero">
+			{
+				university.hasLogo && (
+					<img
+						class="university-logo"
+						src={`/assets/img/logo/${university.slug}.svg`}
+						alt={university.name}
+					/>
+				)
+			}
+			<h1>{university.name}</h1>
+			<p class="uni-meta">
+				{university.faculties.length} kar · {programCount} szak
+			</p>
+		</div>
 
-		<h1>{university.name}</h1>
+		<ProgramSelector university={university} />
 	</Fragment>
 </Template>

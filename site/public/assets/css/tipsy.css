@@ -1,22 +1,55 @@
-.tipsy { font-size: 8pt; position: absolute; padding: 5px; z-index: 100000; white-space: nowrap; }
-.tipsy-inner { background-color: #000; color: #FFF; max-width: 300px; padding: 5px 8px 4px 8px; text-align: center; }
-.tipsy-inner { border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; box-shadow: 0 0 5px #000000; -webkit-box-shadow: 0 0 5px #000000; -moz-box-shadow: 0 0 5px #000000; }
-.tipsy-arrow { position: absolute; width: 0; height: 0; line-height: 0; border: 5px dashed #000; }
-.tipsy-arrow-n { border-bottom-color: #000; }
-.tipsy-arrow-s { border-top-color: #000; }
-.tipsy-arrow-e { border-left-color: #000; }
-.tipsy-arrow-w { border-right-color: #000; }
+/* Tooltip theme. Class scheme and arrow geometry are the tipsy contract
+   used by the tooltip module in targygraf.js — keep the selectors. */
+.tipsy {
+	font-family: 'IBM Plex Sans', 'Segoe UI', sans-serif;
+	font-size: 11.5px;
+	line-height: 1.45;
+	position: absolute;
+	padding: 6px;
+	z-index: 100000;
+	white-space: nowrap;
+}
 
-.tipsy-n .tipsy-arrow { top: 0px; left: 50%; margin-left: -5px; border-bottom-style: solid; border-top: none; border-left-color: transparent; border-right-color: transparent; }
-.tipsy-nw .tipsy-arrow { top: 0; left: 10px; border-bottom-style: solid; border-top: none; border-left-color: transparent; border-right-color: transparent;}
-.tipsy-ne .tipsy-arrow { top: 0; right: 10px; border-bottom-style: solid; border-top: none;border-left-color: transparent; border-right-color: transparent;}
-.tipsy-s .tipsy-arrow { bottom: 0; left: 50%; margin-left: -5px; border-top-style: solid; border-bottom: none;border-left-color: transparent; border-right-color: transparent; }
-.tipsy-sw .tipsy-arrow { bottom: 0; left: 10px; border-top-style: solid; border-bottom: none;border-left-color: transparent; border-right-color: transparent; }
+.tipsy-inner {
+	background-color: #17223b;
+	color: #fff;
+	max-width: 300px;
+	padding: 7px 11px 6px;
+	text-align: center;
+	border-radius: 8px;
+	box-shadow: 0 6px 20px rgba(23, 34, 59, 0.35);
+}
+
+.tipsy-arrow {
+	position: absolute;
+	width: 0;
+	height: 0;
+	line-height: 0;
+	border: 6px dashed #17223b;
+}
+
+.tipsy-arrow-n { border-bottom-color: #17223b; }
+.tipsy-arrow-s { border-top-color: #17223b; }
+.tipsy-arrow-e { border-left-color: #17223b; }
+.tipsy-arrow-w { border-right-color: #17223b; }
+
+.tipsy-n .tipsy-arrow { top: 0; left: 50%; margin-left: -6px; border-bottom-style: solid; border-top: none; border-left-color: transparent; border-right-color: transparent; }
+.tipsy-nw .tipsy-arrow { top: 0; left: 10px; border-bottom-style: solid; border-top: none; border-left-color: transparent; border-right-color: transparent; }
+.tipsy-ne .tipsy-arrow { top: 0; right: 10px; border-bottom-style: solid; border-top: none; border-left-color: transparent; border-right-color: transparent; }
+.tipsy-s .tipsy-arrow { bottom: 0; left: 50%; margin-left: -6px; border-top-style: solid; border-bottom: none; border-left-color: transparent; border-right-color: transparent; }
+.tipsy-sw .tipsy-arrow { bottom: 0; left: 10px; border-top-style: solid; border-bottom: none; border-left-color: transparent; border-right-color: transparent; }
 .tipsy-se .tipsy-arrow { bottom: 0; right: 10px; border-top-style: solid; border-bottom: none; border-left-color: transparent; border-right-color: transparent; }
-.tipsy-e .tipsy-arrow { right: 0; top: 50%; margin-top: -5px; border-left-style: solid; border-right: none; border-top-color: transparent; border-bottom-color: transparent; }
-.tipsy-w .tipsy-arrow { left: 0; top: 50%; margin-top: -5px; border-right-style: solid; border-left: none; border-top-color: transparent; border-bottom-color: transparent; }
+.tipsy-e .tipsy-arrow { right: 0; top: 50%; margin-top: -6px; border-left-style: solid; border-right: none; border-top-color: transparent; border-bottom-color: transparent; }
+.tipsy-w .tipsy-arrow { left: 0; top: 50%; margin-top: -6px; border-right-style: solid; border-left: none; border-top-color: transparent; border-bottom-color: transparent; }
 
 .tipsy hr {
 	border: 0;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+	margin: 6px 0;
+}
+
+.tipsy u {
+	text-decoration: none;
+	color: #f2c218;
+	font-weight: 600;
 }

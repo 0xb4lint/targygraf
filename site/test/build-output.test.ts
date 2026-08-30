@@ -287,13 +287,15 @@ describe.skipIf(skip)('localStorage contract on every program page', () => {
 });
 
 describe.skipIf(skip)('page chrome', () => {
-	it('home page links every university in row/ordering order', () => {
+	it('home page lists every university alphabetically, no special placement', () => {
 		const dataset = getDataset();
+		const collator = new Intl.Collator('hu');
+		const expected = [...dataset.universities]
+			.sort((a, b) => collator.compare(a.name, b.name))
+			.map((u) => `/${u.slug}`);
 		const page = readPage(DIST, 'index.html');
 		const links = page.querySelectorAll('a.university');
-		expect(links.map((a) => a.getAttribute('href'))).toEqual(
-			dataset.universities.map((u) => `/${u.slug}`)
-		);
+		expect(links.map((a) => a.getAttribute('href'))).toEqual(expected);
 	});
 
 	it('university pages list all their programs with path links', () => {
@@ -358,7 +360,7 @@ describe.skipIf(skip)('page chrome', () => {
 		expect(scripts).toEqual([
 			'https://www.googletagmanager.com/gtag/js?id=G-1T3XF9V5BL',
 			'/assets/js/notie.min.js',
-			'/assets/js/targygraf.js?v=20260830',
+			'/assets/js/targygraf.js?v=20260831',
 			'/assets/js/ls-migrate.js?v=1',
 		]);
 	});
@@ -396,11 +398,26 @@ describe.skipIf(skip)('page chrome', () => {
 		expect(fs.existsSync(path.join(DIST, 'assets/js/ls-migrate.js'))).toBe(true);
 	});
 
-	it('never emits a viewport meta (the live layout depends on its absence)', () => {
-		{
-			const page = readPage(DIST, 'pe', 'mernokinformatikus.html');
-			expect(page.querySelector('meta[name="viewport"]')).toBeNull();
-		}
+	it('ships viewport meta only on responsive pages, never on graph pages', () => {
+		// The graph relies on the no-viewport zoom-out behavior on phones.
+		const program = readPage(DIST, 'pe', 'mernokinformatikus.html');
+		expect(program.querySelector('meta[name="viewport"]')).toBeNull();
+
+		const home = readPage(DIST, 'index.html');
+		expect(home.querySelector('meta[name="viewport"]')).not.toBeNull();
+		const university = readPage(DIST, 'pe.html');
+		expect(university.querySelector('meta[name="viewport"]')).not.toBeNull();
+	});
+
+	it('renders the landing hero with real dataset stats', () => {
+		const home = readPage(DIST, 'index.html');
+		expect(home.querySelector('.hero h1')).not.toBeNull();
+		expect(home.querySelector('.hero-demo')).not.toBeNull();
+		const stats = home.querySelectorAll('.hero-stats span').map((s) => s.text.trim());
+		expect(stats[0]).toBe('12 egyetem');
+		expect(stats[1]).toBe('26 kar');
+		expect(stats[2]).toBe('89 szak');
+		expect(stats[3]).toMatch(/tantárgy$/);
 	});
 
 	it('lists every page in the sitemap with apex path URLs', () => {

@@ -160,14 +160,16 @@
 	// INITIAL VIEW FUNCTIONS //
 	////////////////////////////
 	function setBodyMinWidth() {
-		var sumWidth = 960;
-
 		var semesterBlocks = all('.content[data-specialis="0"] .course-block').length;
 		var specialBlocks = all('.content[data-specialis="1"] .course-block').length;
 
-		if (semesterBlocks + specialBlocks) {
-			sumWidth = Math.max(semesterBlocks, specialBlocks) * 146;
+		// Pages without a graph (home, university) are responsive; only the
+		// program pages need the fixed-width canvas.
+		if (!(semesterBlocks + specialBlocks)) {
+			return;
 		}
+
+		var sumWidth = Math.max(semesterBlocks, specialBlocks) * 146;
 
 		var help = document.querySelector('main .help');
 		if (help) {
@@ -873,8 +875,8 @@
 
 	function showLegal() {
 		window.notie.alert({
-			type: 'error',
-			text: 'Az oldalon található információk nem tekinthetőek hivatalos forrásnak.',
+			type: 'neutral',
+			text: 'Tájékoztató jellegű oldal: a hivatalos tantervet az egyetemednél ellenőrizd.',
 			position: 'bottom'
 		});
 	}

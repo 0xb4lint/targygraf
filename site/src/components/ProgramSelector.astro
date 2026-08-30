@@ -13,7 +13,7 @@ const { university, currentProgramSlug, hidden = false } = Astro.props;
 ---
 
 <div class="program-selector">
-	{hidden && <div class="toggle">&nbsp;&nbsp;SZAKVÁLASZTÓ&nbsp;&nbsp;</div>}
+	{hidden && <div class="toggle">Szakválasztó</div>}
 	<div class="faculties" style={hidden ? 'display: none;' : undefined}>
 		{
 			university.faculties.map((faculty) => (

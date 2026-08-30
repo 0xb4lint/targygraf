@@ -31,20 +31,35 @@ const description = `${program.name} (${university.name}) interaktív mintatante
 ---
 
 <Template
+	page="program"
 	htmlTitle={`${university.name} - ${program.name}`}
 	description={description}
 	canonical={canonicalUrl(programPath(university.slug, program.slug))}
 	migrateUniversity={university.slug}
 >
 	<Fragment slot="buttons">
-		<div class="button reset" title="Adatok törlése"><i class="fa fa-power-off"></i></div>
-		<a
-			href={universityPath(university.slug)}
-			class="button university"
-			title="Egyetem"><i class="fa fa-university"></i></a>
+		<div class="button reset" title="Adatok törlése">
+			<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"
+				><path d="M12 3v9"></path><path d="M6.6 5.6a8 8 0 1 0 10.8 0"></path></svg
+			>
+		</div>
+		<a href={universityPath(university.slug)} class="button university" title="Egyetem">
+			<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+				><path d="M3 21h18"></path><path d="M4 9h16"></path><path d="M12 3 4 9h16z"></path><path d="M6 9v12"></path><path d="M10 9v12"></path><path d="M14 9v12"></path><path d="M18 9v12"></path></svg
+			>
+		</a>
 	</Fragment>
 
 	<Fragment slot="header">
+		<div class="crumbs header-mark">
+			<a href="/" class="wordmark"
+				><span class="wordmark-cell" aria-hidden="true"></span>Tárgygráf</a
+			>
+			<span class="crumb-sep" aria-hidden="true">/</span>
+			<a href={universityPath(university.slug)} class="crumb-link">{university.name}</a>
+			<span class="crumb-sep" aria-hidden="true">/</span>
+			<span class="crumb-here">{program.name}</span>
+		</div>
 		{
 			university.hasLogo && (
 				<img class="university-logo" src={`/assets/img/logo/${university.slug}.svg`} />
