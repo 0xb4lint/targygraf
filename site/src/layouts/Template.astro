@@ -22,20 +22,9 @@ interface Props {
 	description?: string;
 	/** Absolute canonical URL; rendered only when provided. */
 	canonical?: string;
-	/**
-	 * University slug whose legacy subdomain localStorage should be migrated
-	 * into this origin (see public/assets/js/ls-migrate.js).
-	 */
-	migrateUniversity?: string;
 }
 
-const {
-	page,
-	htmlTitle,
-	description = DEFAULT_DESCRIPTION,
-	canonical,
-	migrateUniversity,
-} = Astro.props;
+const { page, htmlTitle, description = DEFAULT_DESCRIPTION, canonical } = Astro.props;
 const title = pageTitle(htmlTitle);
 const origin = siteOrigin();
 ---
@@ -119,14 +108,5 @@ const origin = siteOrigin();
 		</footer>
 
 		<script is:inline src="/assets/js/targygraf.js?v=20260831"></script>
-		{
-			migrateUniversity && (
-				<script
-					is:inline
-					set:html={`window.lsMigrateUniversity=${JSON.stringify(migrateUniversity)};`}
-				/>
-			)
-		}
-		{migrateUniversity && <script is:inline src="/assets/js/ls-migrate.js?v=1"></script>}
 	</body>
 </html>

@@ -80,14 +80,7 @@ describe('worker routing: legacy subdomain redirects', () => {
 	});
 });
 
-describe('worker routing: localStorage handoff exceptions', () => {
-	it('keeps serving /__ls-migrate on the legacy origins', () => {
-		expect(decide('https://pe.targygraf.hu/__ls-migrate')).toEqual({
-			kind: 'serve',
-			assetPath: '/__ls-migrate',
-		});
-	});
-
+describe('worker routing: host-independent statics', () => {
 	it('keeps serving shared static files on the legacy origins', () => {
 		expect(decide('https://pe.targygraf.hu/assets/js/targygraf.js?v=20190625')).toEqual({
 			kind: 'serve',

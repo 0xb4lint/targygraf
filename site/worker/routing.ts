@@ -5,10 +5,8 @@
  * worker's only real job is the legacy URL space: it permanently redirects
  * the old {university}.targygraf.hu subdomain URLs onto the apex paths.
  *
- * The /__ls-migrate page and /assets/* are excluded from the worker via
- * assets.run_worker_first, so the old origins keep serving them directly;
- * /__ls-migrate is what hands over the localStorage saved under the old
- * subdomain origins (see public/assets/js/ls-migrate.js).
+ * Shared static files (/assets/*, icons, og.png, ...) are excluded from the
+ * worker via assets.run_worker_first, so the old origins serve them directly.
  */
 
 export type RouteDecision =
@@ -25,7 +23,6 @@ const HOST_INDEPENDENT = new Set([
 	'/og.png',
 	'/robots.txt',
 	'/sitemap.xml',
-	'/__ls-migrate',
 ]);
 
 function isHostIndependent(pathname: string): boolean {
@@ -49,8 +46,7 @@ export function route(
 	if (host.endsWith(`.${baseDomain}`)) {
 		const subdomain = host.slice(0, -(baseDomain.length + 1));
 
-		// Keep the localStorage handoff page and shared static files
-		// reachable on the legacy origins.
+		// Keep shared static files reachable on the legacy origins.
 		if (isHostIndependent(pathname)) {
 			return { kind: 'serve', assetPath: pathname };
 		}

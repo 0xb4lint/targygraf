@@ -30,14 +30,11 @@ permanently redirected:
   jQuery frontend (same DOM contract, same localStorage format, quirks
   intentionally preserved — see its header comment). Tooltips reuse the
   original tipsy.css via a small built-in tipsy replacement.
-- `public/assets/js/ls-migrate.js` + `public/__ls-migrate.html` – one-time
-  localStorage handoff from the legacy subdomain origins (progress was
-  stored per `{uni}.targygraf.hu` origin; a hidden iframe posts it to the
-  apex, once per university per browser).
 - `worker/` – the Cloudflare Worker. Its only job is 301-ing legacy
-  subdomain URLs to apex paths while keeping `/__ls-migrate` and `/assets/*`
-  served on those origins. Apex requests pass straight through to static
-  assets.
+  subdomain URLs to apex paths while keeping `/assets/*` and the shared
+  static files served on those origins. Apex requests pass straight
+  through to static assets. (Progress stored under the legacy subdomain
+  origins is not carried over; localStorage is per-origin.)
 - `scripts/gen-universities.mjs` – generates the subdomain list for the
   worker (runs automatically via npm scripts; gitignored output).
 - `scripts/compare-live.mjs` – structural parity check against the live
@@ -71,8 +68,6 @@ npm run compare-live
   built pages with legacy-format localStorage seeded (the assertions were
   validated against the original jQuery engine first, pinning behavioral
   parity); includes booting all 89 program pages.
-- `ls-migrate` – the subdomain→apex storage handoff (origin pinning,
-  merging, one-shot flag).
 - `worker-routing` / `worker-e2e` – routing units plus the wrangler-built
   bundle served by Miniflare/workerd with real hostnames.
 
@@ -91,19 +86,11 @@ redirects. Initial setup on the `targygraf.hu` zone:
    `192.0.2.1` / `100::` works; the old VPS can stay until verified).
 3. Merges to `master` redeploy automatically when the git integration is
    connected; PRs get preview URLs (path-based URLs work on any host).
-4. **After cutover, verify the localStorage handoff is frameable**: the old
-   Laravel origin sent `Content-Security-Policy: ... frame-ancestors 'none'`
-   and `X-Frame-Options: SAMEORIGIN`. Those came from the origin server and
-   disappear once Workers assets serve the subdomains — but if any zone-level
-   Transform Rule injects such headers, exempt `/__ls-migrate` on
-   `*.targygraf.hu`, otherwise the migration iframe cannot load and users'
-   old progress stays stranded on the subdomain origins.
 
 ### Optional: dropping the Worker later
 
-The worker only exists for the legacy-subdomain redirects and the
-localStorage handoff. Once the handoff window has run long enough
-(a year is generous):
+The worker only exists for the legacy-subdomain redirects. Once those
+have soaked long enough:
 
 1. Generate the frozen legacy-URL list:
    `node scripts/gen-bulk-redirects.mjs > cloudflare-bulk-redirects.csv`
@@ -113,8 +100,7 @@ localStorage handoff. Once the handoff window has run long enough
    this: Workers static assets explicitly do not support domain-level rules.)
 2. Remove `main`, `routes` and `run_worker_first` from `wrangler.jsonc`
    (assets-only deploy) and attach `targygraf.hu` as the custom domain.
-3. Delete `worker/`, `public/__ls-migrate.html`, `public/assets/js/
-   ls-migrate.js` and the `migrateUniversity` wiring in the layout.
+3. Delete `worker/`.
 
 ## Contributor flow (unchanged)
 

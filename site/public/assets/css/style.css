@@ -80,7 +80,8 @@ body::before {
 
 /* grid paper on the document pages */
 body.page-home,
-body.page-university {
+body.page-university,
+body.page-notfound {
 	background-image: linear-gradient(var(--grid) 1px, transparent 1px),
 		linear-gradient(90deg, var(--grid) 1px, transparent 1px);
 	background-size: 28px 28px;

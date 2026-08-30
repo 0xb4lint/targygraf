@@ -62,7 +62,6 @@ describe.skipIf(skip)('worker + assets end-to-end (Miniflare)', () => {
 									'/favicon.ico',
 									'/robots.txt',
 									'/sitemap.xml',
-									'/__ls-migrate',
 								],
 							},
 						},
@@ -121,12 +120,6 @@ describe.skipIf(skip)('worker + assets end-to-end (Miniflare)', () => {
 		const unknown = await get('https://nincsilyen.targygraf.hu/x');
 		expect(unknown.status).toBe(301);
 		expect(unknown.headers.get('location')).toBe('https://targygraf.hu/x');
-	});
-
-	it('keeps serving the localStorage handoff page on legacy origins', async () => {
-		const res = await get('https://pe.targygraf.hu/__ls-migrate');
-		expect(res.status).toBe(200);
-		expect(await res.text()).toContain('targygraf-ls');
 	});
 
 	it('keeps serving shared assets on legacy origins', async () => {
