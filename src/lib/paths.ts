@@ -7,7 +7,7 @@ import path from 'node:path';
  * Deliberately based on the working directory rather than import.meta.url:
  * Astro bundles this module into the build output at a depth that depends on
  * the configured outDir, so URL-relative resolution is not stable. Both
- * `astro build` and vitest run with site/ (or the repo root) as cwd.
+ * `astro build` and vitest run with the repo root as cwd.
  */
 function findRepoRoot(): string {
 	let dir = process.env.TARGYGRAF_ROOT || process.cwd();

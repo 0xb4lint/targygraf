@@ -16,24 +16,27 @@ import { DIST } from './global-setup';
 
 const skip = process.env.SKIP_BUILD_TESTS === '1';
 
-const SITE_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const BUNDLE_DIR = path.join(SITE_ROOT, 'dist-test', 'worker-bundle');
+const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const BUNDLE_DIR = path.join(REPO_ROOT, 'dist-test', 'worker-bundle');
 
 describe.skipIf(skip)('worker + assets end-to-end (Miniflare)', () => {
 	let mf: Miniflare;
 
 	beforeAll(async () => {
+		// wrangler validates assets.directory (./dist) even for a dry-run
+		// bundle; the suite itself serves DIST, so an empty dist/ suffices.
+		fs.mkdirSync(path.join(REPO_ROOT, 'dist'), { recursive: true });
 		// Bundle the worker exactly as a deploy would.
 		execFileSync(
 			process.execPath,
 			[
-				path.join(SITE_ROOT, 'node_modules', 'wrangler', 'bin', 'wrangler.js'),
+				path.join(REPO_ROOT, 'node_modules', 'wrangler', 'bin', 'wrangler.js'),
 				'deploy',
 				'--dry-run',
 				'--outdir',
 				BUNDLE_DIR,
 			],
-			{ cwd: SITE_ROOT, stdio: 'pipe' }
+			{ cwd: REPO_ROOT, stdio: 'pipe' }
 		);
 		const bundled = fs
 			.readdirSync(BUNDLE_DIR)

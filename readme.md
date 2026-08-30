@@ -250,6 +250,9 @@ npm test      # a PR-eken is futó teljes ellenőrzés
 npm run dev   # helyi fejlesztői szerver
 ```
 
+A felépítés és a deploy részletei az
+[`ARCHITECTURE.md`](ARCHITECTURE.md) fájlban.
+
 ## Licenc
 
 [GPL-3.0](LICENSE.md)

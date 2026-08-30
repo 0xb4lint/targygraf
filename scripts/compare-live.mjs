@@ -19,9 +19,9 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parse } from 'node-html-parser';
 
-const SITE_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const DIST = path.join(SITE_ROOT, 'dist');
-const JSON_ROOT = path.join(SITE_ROOT, '..', 'json');
+const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const DIST = path.join(REPO_ROOT, 'dist');
+const JSON_ROOT = path.join(REPO_ROOT, 'json');
 
 let failures = 0;
 let checkedPages = 0;

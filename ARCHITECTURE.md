@@ -1,10 +1,10 @@
-# Tárgygráf – static site (Astro + Cloudflare)
+# Tárgygráf – architecture (Astro + Cloudflare)
 
-Static replacement for the original Laravel app. The JSON files in the
-repository root (`json/universities`, `json/faculties`, `json/programs`)
-remain the single source of truth, **unchanged in structure** — the build
-renders them into ~100 static pages at deploy time. There is no database and
-no server-side runtime.
+Static replacement for the original Laravel app. The JSON files in
+`json/universities`, `json/faculties` and `json/programs` remain the single
+source of truth, **unchanged in structure** — the build renders them into
+~100 static pages at deploy time. There is no database and no server-side
+runtime.
 
 ## URLs
 
@@ -77,8 +77,8 @@ One Worker (`wrangler.jsonc`) serves the static build and handles legacy
 redirects. Initial setup on the `targygraf.hu` zone:
 
 1. **Build config** (Workers Builds git integration, or CI running
-   `npm run deploy`): root directory `site`, build command `npm run build`,
-   deploy command `npx wrangler deploy`.
+   `npm run deploy`): build command `npm run build`, deploy command
+   `npx wrangler deploy`.
 2. **DNS**: keep/ensure proxied records for `targygraf.hu`, `www` and `*`
    (or the 12 university subdomains individually). The routes in
    `wrangler.jsonc` (`targygraf.hu/*`, `*.targygraf.hu/*`) intercept all

@@ -7,9 +7,9 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-const SITE_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const UNIVERSITIES_DIR = path.join(SITE_ROOT, '..', 'json', 'universities');
-const OUT_FILE = path.join(SITE_ROOT, 'worker', 'universities.generated.json');
+const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const UNIVERSITIES_DIR = path.join(REPO_ROOT, 'json', 'universities');
+const OUT_FILE = path.join(REPO_ROOT, 'worker', 'universities.generated.json');
 
 const slugs = fs
 	.readdirSync(UNIVERSITIES_DIR)

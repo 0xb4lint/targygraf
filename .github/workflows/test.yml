@@ -1,4 +1,4 @@
-name: Site
+name: Test
 
 on:
   pull_request:
@@ -9,19 +9,15 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: site
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
-          cache-dependency-path: site/package-lock.json
       # Runs the JSON validation suite (the contributor PR gate), the data
       # loader/render unit tests, builds the site, and checks the build
-      # output, the legacy-JS localStorage behavior and the Worker end-to-end.
+      # output, the legacy-JS localStorage behavior and the Worker end-to-end
+      # (which bundles the Worker with a real `wrangler deploy --dry-run`).
       - run: npm ci
       - run: npm test
-      - run: npx wrangler deploy --dry-run --outdir /tmp/worker-bundle

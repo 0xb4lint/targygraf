@@ -15,8 +15,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-const SITE_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const JSON_ROOT = path.join(SITE_ROOT, '..', 'json');
+const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const JSON_ROOT = path.join(REPO_ROOT, 'json');
 const DOMAIN = 'targygraf.hu';
 
 function slugs(directory) {

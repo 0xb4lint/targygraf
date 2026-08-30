@@ -7,17 +7,17 @@ import { execFileSync } from 'node:child_process';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-const SITE_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 
-export const DIST = path.join(SITE_ROOT, 'dist-test', 'site');
+export const DIST = path.join(REPO_ROOT, 'dist-test', 'site');
 
 export default function setup() {
 	if (process.env.SKIP_BUILD_TESTS === '1') {
 		return;
 	}
-	const astroBin = path.join(SITE_ROOT, 'node_modules', 'astro', 'bin', 'astro.mjs');
+	const astroBin = path.join(REPO_ROOT, 'node_modules', 'astro', 'bin', 'astro.mjs');
 	execFileSync(process.execPath, [astroBin, 'build'], {
-		cwd: SITE_ROOT,
+		cwd: REPO_ROOT,
 		stdio: 'inherit',
 		env: {
 			...process.env,
