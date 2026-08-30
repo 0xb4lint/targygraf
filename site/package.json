@@ -15,13 +15,13 @@
     "compare-live": "node scripts/compare-live.mjs"
   },
   "devDependencies": {
-    "astro": "^5.0.0",
+    "astro": "^7.2.9",
     "jquery": "3.2.1",
-    "jsdom": "^26.0.0",
+    "jsdom": "^30.0.1",
     "miniflare": "^4.20260730.0",
-    "node-html-parser": "^7.0.0",
-    "typescript": "^5.0.0",
-    "vitest": "^3.0.0",
+    "node-html-parser": "^9.0.2",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.11",
     "wrangler": "^4.0.0"
   }
 }

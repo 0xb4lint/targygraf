@@ -15,7 +15,7 @@ export default function setup() {
 	if (process.env.SKIP_BUILD_TESTS === '1') {
 		return;
 	}
-	const astroBin = path.join(SITE_ROOT, 'node_modules', 'astro', 'astro.js');
+	const astroBin = path.join(SITE_ROOT, 'node_modules', 'astro', 'bin', 'astro.mjs');
 	execFileSync(process.execPath, [astroBin, 'build'], {
 		cwd: SITE_ROOT,
 		stdio: 'inherit',
