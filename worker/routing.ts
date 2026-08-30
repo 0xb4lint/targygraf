@@ -26,7 +26,11 @@ const HOST_INDEPENDENT = new Set([
 ]);
 
 function isHostIndependent(pathname: string): boolean {
-	return pathname.startsWith('/assets/') || HOST_INDEPENDENT.has(pathname);
+	return (
+		pathname.startsWith('/assets/') ||
+		pathname.startsWith('/_astro/') || // self-hosted fonts (Astro Fonts API)
+		HOST_INDEPENDENT.has(pathname)
+	);
 }
 
 function stripTrailingSlash(pathname: string): string {

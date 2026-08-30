@@ -39,9 +39,11 @@
 	--prereq-bg: #ee7418;
 	--sequel-bg: #f2c218;
 
-	--display: 'IBM Plex Sans Condensed', 'Arial Narrow', sans-serif;
-	--body: 'IBM Plex Sans', 'Segoe UI', sans-serif;
-	--mono: 'IBM Plex Mono', 'Courier New', monospace;
+	/* Defined by Astro's Font components in the page head (self-hosted
+	   IBM Plex; the variables carry their own fallback stacks). */
+	--display: var(--font-display, sans-serif);
+	--body: var(--font-body, sans-serif);
+	--mono: var(--font-mono, monospace);
 }
 
 * {

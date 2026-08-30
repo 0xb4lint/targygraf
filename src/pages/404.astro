@@ -3,6 +3,7 @@
  * Served by Cloudflare static assets for any unknown URL (404-page mode).
  * Standalone chrome: the design language's sheet, no app scripts.
  */
+import { Font } from 'astro:assets';
 import { homePath } from '../lib/urls';
 ---
 
@@ -15,12 +16,9 @@ import { homePath } from '../lib/urls';
 		<title>Az oldal nem található | Tárgygráf</title>
 		<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 		<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
-			rel="stylesheet"
-		/>
+		<Font cssVariable="--font-display" preload />
+		<Font cssVariable="--font-body" preload />
+		<Font cssVariable="--font-mono" />
 		<link href="/assets/css/style.css?v=20260831" rel="stylesheet" />
 		<style>
 			.nf-wrap {

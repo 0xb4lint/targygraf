@@ -7,6 +7,7 @@
  * localStorage format — see its header), tooltips reuse tipsy.css via a
  * small built-in replacement, and the legal notice is self-rendered.
  */
+import { Font } from 'astro:assets';
 import { DEFAULT_DESCRIPTION, pageTitle } from '../lib/render';
 import { siteOrigin } from '../lib/urls';
 
@@ -60,12 +61,9 @@ const origin = siteOrigin();
 		<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 		<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
-			rel="stylesheet"
-		/>
+		<Font cssVariable="--font-display" preload />
+		<Font cssVariable="--font-body" preload />
+		<Font cssVariable="--font-mono" />
 		<link href="/assets/css/style.css?v=20260831" rel="stylesheet" />
 		<link href="/assets/css/tipsy.css?v=20260831" rel="stylesheet" />
 		<!-- Google tag (gtag.js) -->

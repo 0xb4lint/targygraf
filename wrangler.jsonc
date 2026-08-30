@@ -17,6 +17,7 @@
 		"run_worker_first": [
 			"/*",
 			"!/assets/*",
+			"!/_astro/*",
 			"!/icon.png",
 			"!/favicon.ico",
 			"!/robots.txt",
