@@ -5,7 +5,7 @@
  * The client stack is dependency-free: assets/js/targygraf.js is a vanilla
  * rewrite of the original jQuery implementation (same DOM contract, same
  * localStorage format — see its header), tooltips reuse tipsy.css via a
- * small built-in replacement, and notie remains for the legal toast.
+ * small built-in replacement, and the legal notice is self-rendered.
  */
 import { DEFAULT_DESCRIPTION, pageTitle } from '../lib/render';
 import { siteOrigin } from '../lib/urls';
@@ -72,7 +72,6 @@ const origin = siteOrigin();
 		/>
 		<link href="/assets/css/style.css?v=20260831" rel="stylesheet" />
 		<link href="/assets/css/tipsy.css?v=20260831" rel="stylesheet" />
-		<link href="/assets/css/notie.min.css" rel="stylesheet" />
 		<!-- Google tag (gtag.js) -->
 		<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-1T3XF9V5BL"></script>
 		<script is:inline>
@@ -112,7 +111,6 @@ const origin = siteOrigin();
 			</div>
 		</footer>
 
-		<script is:inline src="/assets/js/notie.min.js"></script>
 		<script is:inline src="/assets/js/targygraf.js?v=20260831"></script>
 		{
 			migrateUniversity && (

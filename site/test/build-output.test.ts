@@ -59,11 +59,9 @@ describe.skipIf(skip)('build output inventory', () => {
 	it('ships the frontend assets referenced by the pages', () => {
 		for (const asset of [
 			'assets/js/targygraf.js',
-			'assets/js/notie.min.js',
 			'assets/js/ls-migrate.js',
 			'assets/css/style.css',
 			'assets/css/tipsy.css',
-			'assets/css/notie.min.css',
 			'icon.png',
 			'favicon.ico',
 			'robots.txt',
@@ -359,7 +357,6 @@ describe.skipIf(skip)('page chrome', () => {
 			.map((s) => s.getAttribute('src')!);
 		expect(scripts).toEqual([
 			'https://www.googletagmanager.com/gtag/js?id=G-1T3XF9V5BL',
-			'/assets/js/notie.min.js',
 			'/assets/js/targygraf.js?v=20260831',
 			'/assets/js/ls-migrate.js?v=1',
 		]);

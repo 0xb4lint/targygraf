@@ -874,11 +874,27 @@
 	}
 
 	function showLegal() {
-		window.notie.alert({
-			type: 'neutral',
-			text: 'Tájékoztató jellegű oldal: a hivatalos tantervet az egyetemednél ellenőrizd.',
-			position: 'bottom'
-		});
+		var notice = document.createElement('div');
+		notice.className = 'site-notice';
+		notice.setAttribute('role', 'status');
+		notice.textContent =
+			'Tájékoztató jellegű oldal: a hivatalos tantervet az egyetemednél ellenőrizd.';
+
+		function dismiss() {
+			notice.classList.remove('visible');
+			window.setTimeout(function () {
+				if (notice.parentNode) {
+					notice.parentNode.removeChild(notice);
+				}
+			}, 400);
+		}
+
+		notice.addEventListener('click', dismiss);
+		document.body.appendChild(notice);
+		window.setTimeout(function () {
+			notice.classList.add('visible');
+		}, 50);
+		window.setTimeout(dismiss, 6000);
 	}
 
 	//////////

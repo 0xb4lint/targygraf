@@ -747,6 +747,34 @@ footer .footer-links .sep {
 }
 
 /*
+SITE NOTICE (the legal toast, rendered by targygraf.js)
+*/
+.site-notice {
+	position: fixed;
+	left: 50%;
+	bottom: 16px;
+	transform: translate(-50%, 8px);
+	opacity: 0;
+	background: var(--ink);
+	color: rgba(255, 255, 255, 0.92);
+	font-size: 12px;
+	line-height: 1.5;
+	padding: 9px 18px;
+	border-radius: 6px;
+	box-shadow: 0 10px 30px rgba(23, 34, 59, 0.35);
+	max-width: min(92vw, 560px);
+	text-align: center;
+	cursor: pointer;
+	z-index: 300;
+	transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.site-notice.visible {
+	opacity: 1;
+	transform: translate(-50%, 0);
+}
+
+/*
 FADE (JS toggles display)
 */
 .fade {

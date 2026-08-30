@@ -29,7 +29,6 @@ interface LoadedPage {
 	window: any;
 	document: any;
 	errors: string[];
-	notieAlerts: number;
 }
 
 async function loadProgramPage(
@@ -74,12 +73,8 @@ async function loadProgramPage(
 		window.localStorage.setItem('creditsOptional', JSON.stringify(storage.optional));
 	}
 
-	// Stub the toast library (loaded from a separate file in the real page)
-	// and the dialogs.
-	const state = { notieAlerts: 0 };
-	(window as any).__state = state;
+	// Stub the dialogs.
 	window.eval(`
-		window.notie = { alert: function () { window.__state.notieAlerts++; } };
 		window.alert = function () {};
 		window.confirm = function () { return true; };
 	`);
@@ -89,7 +84,7 @@ async function loadProgramPage(
 	// microtasks a tick anyway.
 	await new Promise((resolve) => setTimeout(resolve, 10));
 
-	return { window, document: window.document, errors, notieAlerts: state.notieAlerts };
+	return { window, document: window.document, errors };
 }
 
 function byCode(page: LoadedPage, code: string): any[] {
@@ -129,9 +124,11 @@ describe.skipIf(skip)('fresh visitor (no stored data)', () => {
 		page = await loadProgramPage('pe', 'mernokinformatikus');
 	});
 
-	it('initializes without script errors and shows the legal toast', () => {
+	it('initializes without script errors and shows the legal notice', () => {
 		expect(page.errors).toEqual([]);
-		expect(page.notieAlerts).toBe(1);
+		const notice = page.document.querySelector('.site-notice');
+		expect(notice).not.toBeNull();
+		expect(notice.textContent).toContain('Tájékoztató jellegű oldal');
 	});
 
 	it('marks courses without prerequisites as processable', () => {
@@ -447,7 +444,10 @@ describe.skipIf(skip)('every program page boots the frontend cleanly', () => {
 				for (const program of faculty.programs) {
 					const page = await loadProgramPage(university.slug, program.slug);
 					expect(page.errors, `${university.slug}/${program.slug}`).toEqual([]);
-					expect(page.notieAlerts, `${university.slug}/${program.slug}`).toBe(1);
+					expect(
+						page.document.querySelector('.site-notice'),
+						`${university.slug}/${program.slug}`
+					).not.toBeNull();
 					page.window.close();
 				}
 			}
