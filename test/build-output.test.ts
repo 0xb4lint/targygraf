@@ -506,4 +506,14 @@ describe.skipIf(skip)('page chrome', () => {
 		expect(sitemap).toContain('<loc>https://targygraf.hu/adatvedelem</loc>');
 		expect(sitemap.match(/<loc>/g)).toHaveLength(1 + 1 + 12 + 89);
 	});
+
+	it('ships llms.txt listing every university and program', () => {
+		const text = fs.readFileSync(path.join(DIST, 'llms.txt'), 'utf8');
+		expect(text.startsWith('# Tárgygráf')).toBe(true);
+		expect(text).toContain('](https://targygraf.hu/pe): ');
+		expect(text).toContain('https://targygraf.hu/pe/mernokinformatikus');
+		expect(text).toContain('https://targygraf.hu/adatvedelem');
+		// 12 universities + 89 programs + the 2 project links.
+		expect(text.match(/^- \[/gm)).toHaveLength(12 + 89 + 2);
+	});
 });
