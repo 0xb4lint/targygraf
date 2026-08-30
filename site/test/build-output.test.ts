@@ -1,6 +1,6 @@
 /**
  * Structural tests over the real build output (dist-test/, built by
- * test/global-setup.ts in both URL modes).
+ * test/global-setup.ts).
  *
  * The critical suite is the "localStorage contract": the shipped, unmodified
  * targygraf.js restores user state by querying .course[data-code="..."] with
@@ -22,7 +22,7 @@ import {
 	trimParens,
 } from '../src/lib/data';
 import { JSON_ROOT, REPO_ROOT } from '../src/lib/paths';
-import { DIST_PATH_MODE, DIST_SUBDOMAIN_MODE } from './global-setup';
+import { DIST } from './global-setup';
 
 const skip = process.env.SKIP_BUILD_TESTS === '1';
 
@@ -40,7 +40,7 @@ function rawProgram(file: string): any {
 
 describe.skipIf(skip)('build output inventory', () => {
 	it('emits exactly one page per university and per program plus chrome', () => {
-		for (const dist of [DIST_PATH_MODE, DIST_SUBDOMAIN_MODE]) {
+		for (const dist of [DIST]) {
 			expect(fs.existsSync(path.join(dist, 'index.html'))).toBe(true);
 			expect(fs.existsSync(path.join(dist, '404.html'))).toBe(true);
 			expect(fs.existsSync(path.join(dist, 'sitemap.xml'))).toBe(true);
@@ -68,7 +68,7 @@ describe.skipIf(skip)('build output inventory', () => {
 			'favicon.ico',
 			'robots.txt',
 		]) {
-			expect(fs.existsSync(path.join(DIST_PATH_MODE, asset)), asset).toBe(true);
+			expect(fs.existsSync(path.join(DIST, asset)), asset).toBe(true);
 		}
 	});
 
@@ -78,7 +78,7 @@ describe.skipIf(skip)('build output inventory', () => {
 		const laravel = fs.readFileSync(
 			path.join(REPO_ROOT, 'public/assets/js/targygraf.js')
 		);
-		const site = fs.readFileSync(path.join(DIST_PATH_MODE, 'assets/js/targygraf.js'));
+		const site = fs.readFileSync(path.join(DIST, 'assets/js/targygraf.js'));
 		expect(site.equals(laravel)).toBe(true);
 	});
 });
@@ -88,7 +88,7 @@ describe.skipIf(skip)('localStorage contract on every program page', () => {
 	it('exposes data-code for exactly the JSON course codes', () => {
 		for (const file of programFiles()) {
 			const [uni, , prog] = path.basename(file, '.json').split('_');
-			const page = readPage(DIST_PATH_MODE, uni!, `${prog}.html`);
+			const page = readPage(DIST, uni!, `${prog}.html`);
 			const raw = rawProgram(file);
 
 			const expected = raw.course_blocks
@@ -106,7 +106,7 @@ describe.skipIf(skip)('localStorage contract on every program page', () => {
 	it('renders every ______ separator as <hr> and never as a course', () => {
 		for (const file of programFiles()) {
 			const [uni, , prog] = path.basename(file, '.json').split('_');
-			const page = readPage(DIST_PATH_MODE, uni!, `${prog}.html`);
+			const page = readPage(DIST, uni!, `${prog}.html`);
 			const raw = rawProgram(file);
 
 			const separators = raw.course_blocks
@@ -119,7 +119,7 @@ describe.skipIf(skip)('localStorage contract on every program page', () => {
 	it('uses fixed-width ids that are safe for jQuery substring matching', () => {
 		for (const file of programFiles()) {
 			const [uni, , prog] = path.basename(file, '.json').split('_');
-			const page = readPage(DIST_PATH_MODE, uni!, `${prog}.html`);
+			const page = readPage(DIST, uni!, `${prog}.html`);
 
 			const courseIds = page
 				.querySelectorAll('.course')
@@ -145,7 +145,7 @@ describe.skipIf(skip)('localStorage contract on every program page', () => {
 	it('maps data-prerequisites tokens back to the JSON prerequisites', () => {
 		for (const file of programFiles()) {
 			const [uni, , prog] = path.basename(file, '.json').split('_');
-			const page = readPage(DIST_PATH_MODE, uni!, `${prog}.html`);
+			const page = readPage(DIST, uni!, `${prog}.html`);
 			const raw = rawProgram(file);
 
 			const idToCode = new Map<string, string>();
@@ -191,7 +191,7 @@ describe.skipIf(skip)('localStorage contract on every program page', () => {
 	it('maps data-referenced-course-blocks to blocks by JSON name', () => {
 		for (const file of programFiles()) {
 			const [uni, , prog] = path.basename(file, '.json').split('_');
-			const page = readPage(DIST_PATH_MODE, uni!, `${prog}.html`);
+			const page = readPage(DIST, uni!, `${prog}.html`);
 			const raw = rawProgram(file);
 
 			// Block name -> padded id, first JSON occurrence wins (file order
@@ -233,7 +233,7 @@ describe.skipIf(skip)('localStorage contract on every program page', () => {
 	it('renders data-credits and data-is-counted exactly like Blade', () => {
 		for (const file of programFiles()) {
 			const [uni, , prog] = path.basename(file, '.json').split('_');
-			const page = readPage(DIST_PATH_MODE, uni!, `${prog}.html`);
+			const page = readPage(DIST, uni!, `${prog}.html`);
 			const raw = rawProgram(file);
 
 			const rawCourses = raw.course_blocks
@@ -257,7 +257,7 @@ describe.skipIf(skip)('localStorage contract on every program page', () => {
 		let optionalSeen = 0;
 		for (const file of programFiles()) {
 			const [uni, , prog] = path.basename(file, '.json').split('_');
-			const page = readPage(DIST_PATH_MODE, uni!, `${prog}.html`);
+			const page = readPage(DIST, uni!, `${prog}.html`);
 			optionalSeen += page
 				.querySelectorAll('.course')
 				.filter((el) => el.getAttribute('data-code') === OPTIONAL_COURSE_CODE).length;
@@ -269,43 +269,30 @@ describe.skipIf(skip)('localStorage contract on every program page', () => {
 describe.skipIf(skip)('page chrome', () => {
 	it('home page links every university in row/ordering order', () => {
 		const dataset = getDataset();
-		const page = readPage(DIST_PATH_MODE, 'index.html');
+		const page = readPage(DIST, 'index.html');
 		const links = page.querySelectorAll('a.university');
 		expect(links.map((a) => a.getAttribute('href'))).toEqual(
 			dataset.universities.map((u) => `/${u.slug}`)
 		);
-
-		const subdomainPage = readPage(DIST_SUBDOMAIN_MODE, 'index.html');
-		expect(
-			subdomainPage.querySelectorAll('a.university').map((a) => a.getAttribute('href'))
-		).toEqual(dataset.universities.map((u) => `https://${u.slug}.targygraf.hu`));
 	});
 
-	it('university pages list all their programs in both modes', () => {
+	it('university pages list all their programs with path links', () => {
 		const dataset = getDataset();
 		for (const university of dataset.universities) {
 			const expectedPrograms = university.faculties.flatMap((f) =>
 				f.programs.map((p) => p.slug)
 			);
 
-			const pathPage = readPage(DIST_PATH_MODE, `${university.slug}.html`);
+			const pathPage = readPage(DIST, `${university.slug}.html`);
 			expect(
 				pathPage.querySelectorAll('.program-selector a.program').map((a) => a.getAttribute('href')),
 				university.slug
 			).toEqual(expectedPrograms.map((slug) => `/${university.slug}/${slug}`));
-
-			const subPage = readPage(DIST_SUBDOMAIN_MODE, `${university.slug}.html`);
-			expect(
-				subPage.querySelectorAll('.program-selector a.program').map((a) => a.getAttribute('href')),
-				university.slug
-			).toEqual(
-				expectedPrograms.map((slug) => `https://${university.slug}.targygraf.hu/${slug}`)
-			);
 		}
 	});
 
 	it('program pages carry the hidden program selector with active marker', () => {
-		const page = readPage(DIST_PATH_MODE, 'pe', 'mernokinformatikus.html');
+		const page = readPage(DIST, 'pe', 'mernokinformatikus.html');
 		expect(page.querySelector('.program-selector .toggle')).not.toBeNull();
 		const faculties = page.querySelector('.program-selector .faculties')!;
 		expect(faculties.getAttribute('style')).toContain('display: none');
@@ -315,28 +302,36 @@ describe.skipIf(skip)('page chrome', () => {
 	});
 
 	it('program pages include help, progressbar, credits counter and reset button', () => {
-		const page = readPage(DIST_PATH_MODE, 'pe', 'mernokinformatikus.html');
+		const page = readPage(DIST, 'pe', 'mernokinformatikus.html');
 		expect(page.querySelector('main .help')).not.toBeNull();
 		expect(page.querySelector('.progressbar')).not.toBeNull();
 		expect(page.querySelector('.credits-counter .credits-optional')).not.toBeNull();
 		expect(page.querySelector('.buttons .reset')).not.toBeNull();
 	});
 
-	it('sets per-page titles and canonical URLs in subdomain mode', () => {
-		const page = readPage(DIST_SUBDOMAIN_MODE, 'pe', 'mernokinformatikus.html');
+	it('sets per-page titles and apex canonical URLs', () => {
+		const page = readPage(DIST, 'pe', 'mernokinformatikus.html');
 		expect(page.querySelector('title')!.text).toBe(
 			'Pannon Egyetem - Mérnökinformatikus | Tárgygráf'
 		);
 		expect(page.querySelector('link[rel="canonical"]')!.getAttribute('href')).toBe(
-			'https://pe.targygraf.hu/mernokinformatikus'
+			'https://targygraf.hu/pe/mernokinformatikus'
 		);
 
-		const home = readPage(DIST_SUBDOMAIN_MODE, 'index.html');
+		const uniPage = readPage(DIST, 'pe.html');
+		expect(uniPage.querySelector('link[rel="canonical"]')!.getAttribute('href')).toBe(
+			'https://targygraf.hu/pe'
+		);
+
+		const home = readPage(DIST, 'index.html');
 		expect(home.querySelector('title')!.text).toBe('Tárgygráf');
+		expect(home.querySelector('link[rel="canonical"]')!.getAttribute('href')).toBe(
+			'https://targygraf.hu/'
+		);
 	});
 
 	it('loads the untouched client stack in order', () => {
-		const page = readPage(DIST_PATH_MODE, 'pe', 'mernokinformatikus.html');
+		const page = readPage(DIST, 'pe', 'mernokinformatikus.html');
 		const scripts = page
 			.querySelectorAll('script[src]')
 			.map((s) => s.getAttribute('src')!);
@@ -345,24 +340,52 @@ describe.skipIf(skip)('page chrome', () => {
 			'/assets/js/jquery.tipsy.min.js',
 			'/assets/js/notie.min.js',
 			'/assets/js/targygraf.js?v=20190625',
+			'/assets/js/ls-migrate.js?v=1',
 		]);
 		// The ga() no-op stub must exist because targygraf.js calls window.ga.
 		const inline = page.querySelectorAll('script:not([src])').map((s) => s.text);
 		expect(inline.some((t) => t.includes('window.ga = window.ga ||'))).toBe(true);
 	});
 
+	it('wires the localStorage migration bridge on university and program pages', () => {
+		for (const [segments, expected] of [
+			[['pe', 'mernokinformatikus.html'], 'pe'],
+			[['bme.html'], 'bme'],
+		] as const) {
+			const page = readPage(DIST, ...segments);
+			const inline = page.querySelectorAll('script:not([src])').map((s) => s.text);
+			expect(
+				inline.some((t) => t.includes(`window.lsMigrateUniversity="${expected}"`)),
+				segments.join('/')
+			).toBe(true);
+		}
+
+		// The home page has no university context, so no bridge there.
+		const home = readPage(DIST, 'index.html');
+		const inline = home.querySelectorAll('script[src]').map((s) => s.getAttribute('src')!);
+		expect(inline).not.toContain('/assets/js/ls-migrate.js?v=1');
+
+		// The handoff endpoint itself ships in the build, marked noindex.
+		const handoff = readPage(DIST, '__ls-migrate.html');
+		expect(handoff.querySelector('meta[name="robots"]')!.getAttribute('content')).toBe(
+			'noindex'
+		);
+		expect(handoff.text).toContain('targygraf-ls');
+		expect(fs.existsSync(path.join(DIST, 'assets/js/ls-migrate.js'))).toBe(true);
+	});
+
 	it('never emits a viewport meta (the live layout depends on its absence)', () => {
-		for (const dist of [DIST_PATH_MODE, DIST_SUBDOMAIN_MODE]) {
-			const page = readPage(dist, 'pe', 'mernokinformatikus.html');
+		{
+			const page = readPage(DIST, 'pe', 'mernokinformatikus.html');
 			expect(page.querySelector('meta[name="viewport"]')).toBeNull();
 		}
 	});
 
-	it('lists every page in the sitemap with subdomain URLs', () => {
-		const sitemap = fs.readFileSync(path.join(DIST_SUBDOMAIN_MODE, 'sitemap.xml'), 'utf8');
+	it('lists every page in the sitemap with apex path URLs', () => {
+		const sitemap = fs.readFileSync(path.join(DIST, 'sitemap.xml'), 'utf8');
 		expect(sitemap).toContain('<loc>https://targygraf.hu/</loc>');
-		expect(sitemap).toContain('<loc>https://pe.targygraf.hu</loc>');
-		expect(sitemap).toContain('<loc>https://pe.targygraf.hu/mernokinformatikus</loc>');
+		expect(sitemap).toContain('<loc>https://targygraf.hu/pe</loc>');
+		expect(sitemap).toContain('<loc>https://targygraf.hu/pe/mernokinformatikus</loc>');
 		expect(sitemap.match(/<loc>/g)).toHaveLength(1 + 12 + 89);
 	});
 });

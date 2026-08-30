@@ -3,7 +3,7 @@
 import ProgramSelector from '../components/ProgramSelector.astro';
 import Template from '../layouts/Template.astro';
 import { getDataset, type University } from '../lib/data';
-import { getUrlConfig, homeUrl, universityOrigin, universityUrl } from '../lib/urls';
+import { canonicalUrl, homePath, universityPath } from '../lib/urls';
 
 export function getStaticPaths() {
 	return getDataset().universities.map((university) => ({
@@ -17,19 +17,17 @@ interface Props {
 }
 
 const { university } = Astro.props;
-const config = getUrlConfig();
-const origin = universityOrigin(config, university.slug);
 const description = `${university.name} interaktív mintatantervei: szakok, tantárgyak, előfeltételek és kreditek.`;
 ---
 
 <Template
 	htmlTitle={university.name}
 	description={description}
-	origin={origin}
-	canonical={config.mode === 'subdomain' ? `${origin}/` : undefined}
+	canonical={canonicalUrl(universityPath(university.slug))}
+	migrateUniversity={university.slug}
 >
 	<Fragment slot="buttons">
-		<a href={homeUrl(config)} class="button" title="targygraf.hu"><i class="fa fa-home"></i></a>
+		<a href={homePath()} class="button" title="targygraf.hu"><i class="fa fa-home"></i></a>
 	</Fragment>
 
 	<Fragment slot="header">

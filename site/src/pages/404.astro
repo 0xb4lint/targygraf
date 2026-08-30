@@ -1,8 +1,6 @@
 ---
 /** Served by Cloudflare static assets for any unknown URL (404-page mode). */
-import { getUrlConfig, homeUrl } from '../lib/urls';
-
-const config = getUrlConfig();
+import { homePath } from '../lib/urls';
 ---
 
 <!doctype html>
@@ -19,7 +17,7 @@ const config = getUrlConfig();
 		<main>
 			<h1>404</h1>
 			<p>Az oldal nem található.</p>
-			<p><a href={homeUrl(config)}>Vissza a főoldalra</a></p>
+			<p><a href={homePath()}>Vissza a főoldalra</a></p>
 		</main>
 	</body>
 </html>

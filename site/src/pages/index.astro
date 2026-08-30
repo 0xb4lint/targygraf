@@ -2,11 +2,9 @@
 /** Port of resources/views/layouts/index.blade.php (HomeController). */
 import Template from '../layouts/Template.astro';
 import { getDataset } from '../lib/data';
-import { getUrlConfig, rootOrigin, universityUrl } from '../lib/urls';
+import { canonicalUrl, universityPath } from '../lib/urls';
 
 const { universities } = getDataset();
-const config = getUrlConfig();
-const origin = rootOrigin(config);
 
 let lastRow = 0;
 const items = universities.map((university) => {
@@ -18,7 +16,7 @@ const items = universities.map((university) => {
 });
 ---
 
-<Template origin={origin} canonical={config.mode === 'subdomain' ? `${origin}/` : undefined}>
+<Template canonical={canonicalUrl('/')}>
 	<Fragment slot="header">
 		<div
 			class="fb-like"
@@ -37,7 +35,7 @@ const items = universities.map((university) => {
 			items.map(({ university, breakBefore }) => (
 				<>
 					{breakBefore && <br />}
-					<a href={universityUrl(config, university.slug)} class="university">
+					<a href={universityPath(university.slug)} class="university">
 						<div
 							class="logo"
 							style={`background-image:url('/assets/img/logo/${university.slug}.svg')`}

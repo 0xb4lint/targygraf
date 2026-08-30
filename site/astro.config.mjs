@@ -1,9 +1,8 @@
 import { defineConfig } from 'astro/config';
 
-// URL_MODE=subdomain builds the production site with absolute
-// https://{university}.targygraf.hu links (the URL scheme the Laravel app
-// used). The default, path mode, builds host-relative /{university}/... links
-// so previews and local dev work on a single hostname.
+// Links are host-relative (/pe, /pe/mernokinformatikus) so the same build
+// works in production, previews and local dev. Absolute URLs (canonical,
+// og:*, sitemap) use SITE_ORIGIN (default https://targygraf.hu).
 export default defineConfig({
 	output: 'static',
 	outDir: process.env.OUT_DIR || './dist',

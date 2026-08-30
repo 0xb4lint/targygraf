@@ -8,7 +8,7 @@ import TargygrafContent from '../../components/Targygraf.astro';
 import Template from '../../layouts/Template.astro';
 import { getDataset, type Program, type University } from '../../lib/data';
 import { isCurriculumOutdated } from '../../lib/render';
-import { getUrlConfig, programUrl, universityOrigin, universityUrl } from '../../lib/urls';
+import { canonicalUrl, programPath, universityPath } from '../../lib/urls';
 
 export function getStaticPaths() {
 	return getDataset().universities.flatMap((university) =>
@@ -27,25 +27,19 @@ interface Props {
 }
 
 const { university, program } = Astro.props;
-const config = getUrlConfig();
-const origin = universityOrigin(config, university.slug);
 const description = `${program.name} (${university.name}) interaktív mintatanterv: tantárgyak, előfeltételek és kreditek.`;
 ---
 
 <Template
 	htmlTitle={`${university.name} - ${program.name}`}
 	description={description}
-	origin={origin}
-	canonical={
-		config.mode === 'subdomain'
-			? programUrl(config, university.slug, program.slug)
-			: undefined
-	}
+	canonical={canonicalUrl(programPath(university.slug, program.slug))}
+	migrateUniversity={university.slug}
 >
 	<Fragment slot="buttons">
 		<div class="button reset" title="Adatok törlése"><i class="fa fa-power-off"></i></div>
 		<a
-			href={universityUrl(config, university.slug)}
+			href={universityPath(university.slug)}
 			class="button university"
 			title="Egyetem"><i class="fa fa-university"></i></a>
 	</Fragment>
@@ -70,7 +64,7 @@ const description = `${program.name} (${university.name}) interaktív mintatante
 		<ProgramSelector university={university} currentProgramSlug={program.slug} hidden />
 
 		<h1>
-			<a href={universityUrl(config, university.slug)} class="muted">{university.name}</a> - {
+			<a href={universityPath(university.slug)} class="muted">{university.name}</a> - {
 				program.name
 			}
 		</h1>

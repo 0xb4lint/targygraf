@@ -8,19 +8,24 @@
  * compatible with the Laravel-rendered site.
  */
 import { DEFAULT_DESCRIPTION, pageTitle } from '../lib/render';
+import { siteOrigin } from '../lib/urls';
 
 interface Props {
 	/** Page-specific title part; template appends " | Tárgygráf". */
 	htmlTitle?: string;
 	description?: string;
-	/** Absolute origin of this page ('' in path mode). */
-	origin?: string;
 	/** Absolute canonical URL; rendered only when provided. */
 	canonical?: string;
+	/**
+	 * University slug whose legacy subdomain localStorage should be migrated
+	 * into this origin (see public/assets/js/ls-migrate.js).
+	 */
+	migrateUniversity?: string;
 }
 
-const { htmlTitle, description = DEFAULT_DESCRIPTION, origin = '', canonical } = Astro.props;
+const { htmlTitle, description = DEFAULT_DESCRIPTION, canonical, migrateUniversity } = Astro.props;
 const title = pageTitle(htmlTitle);
+const origin = siteOrigin();
 ---
 
 <!doctype html>
@@ -100,5 +105,14 @@ const title = pageTitle(htmlTitle);
 		<script is:inline src="/assets/js/jquery.tipsy.min.js"></script>
 		<script is:inline src="/assets/js/notie.min.js"></script>
 		<script is:inline src="/assets/js/targygraf.js?v=20190625"></script>
+		{
+			migrateUniversity && (
+				<script
+					is:inline
+					set:html={`window.lsMigrateUniversity=${JSON.stringify(migrateUniversity)};`}
+				/>
+			)
+		}
+		{migrateUniversity && <script is:inline src="/assets/js/ls-migrate.js?v=1"></script>}
 	</body>
 </html>

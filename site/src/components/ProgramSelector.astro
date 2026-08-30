@@ -1,7 +1,7 @@
 ---
 /** Port of resources/views/parts/program-selector.blade.php. */
 import type { University } from '../lib/data';
-import { getUrlConfig, programUrl } from '../lib/urls';
+import { programPath } from '../lib/urls';
 
 interface Props {
 	university: University;
@@ -10,7 +10,6 @@ interface Props {
 }
 
 const { university, currentProgramSlug, hidden = false } = Astro.props;
-const config = getUrlConfig();
 ---
 
 <div class="program-selector">
@@ -22,7 +21,7 @@ const config = getUrlConfig();
 					<div class="faculty-name">{faculty.name}</div>
 					{faculty.programs.map((program) => (
 						<a
-							href={programUrl(config, university.slug, program.slug)}
+							href={programPath(university.slug, program.slug)}
 							class={`program${program.slug === currentProgramSlug ? ' active' : ''}`}
 						>
 							{program.name}

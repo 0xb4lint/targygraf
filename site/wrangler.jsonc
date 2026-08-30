@@ -1,0 +1,34 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "targygraf",
+	"main": "worker/index.ts",
+	"compatibility_date": "2026-08-01",
+	"assets": {
+		"directory": "./dist",
+		"binding": "ASSETS",
+		// Serve /pe from /pe.html and /pe/mernokinformatikus from
+		// /pe/mernokinformatikus.html without introducing trailing slashes,
+		// keeping the exact URL shapes of the Laravel site.
+		"html_handling": "auto-trailing-slash",
+		"not_found_handling": "404-page",
+		// Legacy subdomain URLs must reach the Worker (host-based redirect)
+		// before asset resolution. Host-independent static files and the
+		// localStorage handoff page skip the Worker entirely.
+		"run_worker_first": [
+			"/*",
+			"!/assets/*",
+			"!/icon.png",
+			"!/favicon.ico",
+			"!/robots.txt",
+			"!/sitemap.xml",
+			"!/__ls-migrate"
+		]
+	},
+	"vars": {
+		"BASE_DOMAIN": "targygraf.hu"
+	},
+	"routes": [
+		{ "pattern": "targygraf.hu/*", "zone_name": "targygraf.hu" },
+		{ "pattern": "*.targygraf.hu/*", "zone_name": "targygraf.hu" }
+	]
+}

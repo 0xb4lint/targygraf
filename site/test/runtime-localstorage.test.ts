@@ -15,7 +15,7 @@ import { JSDOM, VirtualConsole } from 'jsdom';
 import { beforeAll, describe, expect, it } from 'vitest';
 
 import { getDataset, findProgram, type Program } from '../src/lib/data';
-import { DIST_PATH_MODE } from './global-setup';
+import { DIST } from './global-setup';
 
 const skip = process.env.SKIP_BUILD_TESTS === '1';
 
@@ -44,11 +44,11 @@ async function loadProgramPage(
 	storage: Storage = {}
 ): Promise<LoadedPage> {
 	const html = fs.readFileSync(
-		path.join(DIST_PATH_MODE, universitySlug, `${programSlug}.html`),
+		path.join(DIST, universitySlug, `${programSlug}.html`),
 		'utf8'
 	);
 	const targygrafSrc = fs.readFileSync(
-		path.join(DIST_PATH_MODE, 'assets/js/targygraf.js'),
+		path.join(DIST, 'assets/js/targygraf.js'),
 		'utf8'
 	);
 
