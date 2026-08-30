@@ -1,0 +1,6 @@
+node_modules/
+dist/
+dist-test/
+.astro/
+.wrangler/
+worker/universities.generated.json
