@@ -140,38 +140,14 @@ strong {
 /*
 WORDMARK + MASTHEAD (home, university)
 */
-/* the v12h lockup: condensed caps over a warm rule, closed by a green cell */
+/* the v12h lockup ships as an outlined SVG (assets/img/logo*.svg) */
 .wordmark {
-	display: inline-block;
-	position: relative;
-	font-family: var(--display);
-	font-weight: 700;
-	font-size: 17px;
-	letter-spacing: 0.04em;
-	text-transform: uppercase;
-	color: var(--ink);
-	padding: 0 15px 4px 0;
+	display: inline-flex;
+	align-items: center;
 }
 
-.wordmark::before {
-	content: '';
-	position: absolute;
-	left: 1px;
-	right: 15px;
-	bottom: 0;
-	height: 2.5px;
-	background: var(--warm);
-}
-
-.wordmark::after {
-	content: '';
-	position: absolute;
-	right: 3px;
-	bottom: -1.5px;
-	width: 7px;
-	height: 6px;
-	border-radius: 1.5px;
-	background: var(--done-bg);
+.wordmark img {
+	display: block;
 }
 
 .topbar {
@@ -179,7 +155,7 @@ WORDMARK + MASTHEAD (home, university)
 	margin: 0 auto;
 	padding: 14px 28px 10px;
 	display: flex;
-	align-items: baseline;
+	align-items: center;
 	justify-content: space-between;
 	border-bottom: 1px solid var(--rule);
 }
@@ -195,7 +171,7 @@ WORDMARK + MASTHEAD (home, university)
 /* breadcrumb trail: the wordmark is the root */
 .crumbs {
 	display: flex;
-	align-items: baseline;
+	align-items: center;
 	gap: 9px;
 	min-width: 0;
 }
@@ -283,33 +259,13 @@ HERO SHEET (home)
 	margin: 0;
 }
 
-/* archival date stamp on the sheet, pressed after the title was set */
-.hero h1 .stamp {
-	display: inline-block;
-	position: relative;
-	font-family: var(--mono);
-	font-size: 11.5px;
-	font-weight: 500;
-	letter-spacing: 0.14em;
-	text-transform: uppercase;
+/* the year set into the headline itself: same face, smaller, lighter ink */
+.hero h1 .since {
+	font-size: 0.5em;
+	font-weight: 600;
+	color: var(--ink-3);
 	white-space: nowrap;
-	color: var(--warm);
-	border: 2px solid var(--warm);
-	border-radius: 3px;
-	padding: 5px 10px 4px;
-	margin-left: 16px;
-	transform: rotate(-4deg);
-	vertical-align: 13px;
-	opacity: 0.92;
-}
-
-.hero h1 .stamp::after {
-	content: '';
-	position: absolute;
-	inset: 2px;
-	border: 1px solid var(--warm);
-	border-radius: 1.5px;
-	opacity: 0.55;
+	margin-left: 4px;
 }
 
 .hero-demo-wrap {
@@ -582,10 +538,8 @@ body.page-program header {
 	max-width: 46%;
 }
 
-.header-mark .wordmark {
-	color: #fff;
-	font-size: 14px;
-	padding-bottom: 3px;
+.header-mark .wordmark img {
+	display: block;
 }
 
 .header-mark .crumb-sep {
