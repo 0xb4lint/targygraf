@@ -465,74 +465,103 @@ main .university:hover .arrow {
 }
 
 /*
-UNIVERSITY PAGE
+UNIVERSITY PAGE — the same sheet and registry language as the landing
 */
-.uni-hero {
-	max-width: 880px;
+.uni-wrap {
+	max-width: 960px;
 	margin: 0 auto;
-	padding: 44px 28px 0;
-	display: flex;
-	align-items: center;
-	gap: 22px;
-	text-align: left;
-	border-bottom: 2px solid var(--ink);
-	padding-bottom: 20px;
-}
-
-.uni-hero .university-logo {
-	max-height: 60px;
-	max-width: 170px;
-}
-
-.uni-hero h1 {
-	font-size: 30px;
-	flex: 1;
-}
-
-.uni-meta {
-	font-family: var(--mono);
-	font-size: 11.5px;
-	color: var(--ink-3);
-	margin: 0;
-	white-space: nowrap;
-}
-
-/* program picker: ruled faculty sections, programs as open cells */
-body.page-university .program-selector {
-	max-width: 880px;
-	margin: 0 auto 72px;
-	padding: 0 28px;
+	padding: 26px 28px 64px;
 	text-align: left;
 	width: 100%;
 }
 
+.uni-identity {
+	display: flex;
+	align-items: center;
+	gap: 22px;
+	padding: 26px 26px 22px;
+	border-bottom: 1px solid var(--rule);
+}
+
+.uni-identity .university-logo {
+	max-height: 54px;
+	max-width: 160px;
+}
+
+.uni-identity h1 {
+	font-size: 29px;
+}
+
+body.page-university .program-selector {
+	padding: 6px 26px 22px;
+}
+
 body.page-university .faculty {
-	padding: 20px 0 12px;
-	border-bottom: 1px solid var(--line);
+	padding-top: 20px;
+}
+
+body.page-university .faculty-head {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 14px;
+	border-bottom: 2px solid var(--ink);
+	padding-bottom: 6px;
+	margin-bottom: 2px;
 }
 
 body.page-university .faculty-name {
 	font-family: var(--display);
 	font-weight: 700;
-	font-size: 16px;
-	margin-bottom: 12px;
+	font-size: 15px;
+	text-transform: uppercase;
+	letter-spacing: 0.07em;
+}
+
+body.page-university .faculty-count {
+	font-family: var(--mono);
+	font-size: 11px;
+	color: var(--ink-3);
+	white-space: nowrap;
 }
 
 body.page-university a.program {
-	display: inline-block;
-	background: var(--open-bg);
-	color: var(--open-ink);
-	font-size: 13px;
-	font-weight: 500;
-	border-radius: 6px;
-	padding: 8px 12px;
-	margin: 0 8px 8px 0;
-	transition: background-color 0.12s ease, color 0.12s ease;
+	display: flex;
+	align-items: baseline;
+	gap: 14px;
+	padding: 8.5px 6px;
+	border-bottom: 1px solid var(--line);
+	color: var(--ink);
+	transition: background-color 0.12s ease;
 }
 
 body.page-university a.program:hover {
-	background: var(--taken-bg);
-	color: #fff;
+	background: var(--paper);
+}
+
+body.page-university .program-name {
+	flex: 1;
+	font-size: 14.5px;
+	font-weight: 600;
+	line-height: 1.3;
+}
+
+body.page-university .program-meta {
+	font-family: var(--mono);
+	font-size: 10.5px;
+	color: var(--ink-3);
+	white-space: nowrap;
+}
+
+body.page-university a.program .arrow {
+	color: var(--warm);
+	font-weight: 600;
+	opacity: 0;
+	transition: opacity 0.12s ease;
+}
+
+body.page-university a.program:hover .arrow {
+	opacity: 1;
 }
 
 /*
@@ -1115,12 +1144,16 @@ RESPONSIVE (home + university only; program pages are fixed-width)
 		display: none;
 	}
 
+	body.page-university .program-meta {
+		display: none;
+	}
+
 	.sheet-foot {
 		flex-wrap: wrap;
 		gap: 4px 18px;
 	}
 
-	.uni-hero {
+	.uni-identity {
 		flex-direction: column;
 		align-items: flex-start;
 		gap: 12px;

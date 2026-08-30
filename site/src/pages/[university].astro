@@ -1,9 +1,12 @@
 ---
-/** University page: identity + program picker (UniversityController port). */
-import ProgramSelector from '../components/ProgramSelector.astro';
+/**
+ * University page: one curriculum sheet, continuing the landing page's
+ * registry language. Faculties are ruled sections; programs are index rows
+ * carrying real registry data (semesters, credits, curriculum year).
+ */
 import Template from '../layouts/Template.astro';
-import { getDataset, type University } from '../lib/data';
-import { canonicalUrl, homePath, universityPath } from '../lib/urls';
+import { getDataset, type Program, type University } from '../lib/data';
+import { canonicalUrl, homePath, programPath, universityPath } from '../lib/urls';
 
 export function getStaticPaths() {
 	return getDataset().universities.map((university) => ({
@@ -19,6 +22,15 @@ interface Props {
 const { university } = Astro.props;
 const programCount = university.faculties.reduce((n, f) => n + f.programs.length, 0);
 const description = `${university.name} interaktív mintatantervei: szakok, tantárgyak, előfeltételek és kreditek.`;
+
+const semesterCount = (program: Program) =>
+	program.blocks.filter((block) => block.row === 0).length;
+const creditSum = (program: Program) =>
+	program.blocks
+		.filter((block) => block.row === 0)
+		.flatMap((block) => block.courses)
+		.reduce((sum, course) => sum + course.credits, 0);
+const curriculumYear = (program: Program) => program.curriculumUpdatedAt?.slice(0, 4);
 ---
 
 <Template
@@ -52,22 +64,53 @@ const description = `${university.name} interaktív mintatantervei: szakok, tant
 	</Fragment>
 
 	<Fragment slot="main">
-		<div class="uni-hero">
-			{
-				university.hasLogo && (
-					<img
-						class="university-logo"
-						src={`/assets/img/logo/${university.slug}.svg`}
-						alt={university.name}
-					/>
-				)
-			}
-			<h1>{university.name}</h1>
-			<p class="uni-meta">
-				{university.faculties.length} kar · {programCount} szak
-			</p>
-		</div>
+		<section class="uni-wrap">
+			<div class="sheet">
+				<div class="sheet-head">
+					<span>Szakválasztó</span>
+					<span>{university.faculties.length} kar · {programCount} szak</span>
+				</div>
 
-		<ProgramSelector university={university} />
+				<div class="uni-identity">
+					{
+						university.hasLogo && (
+							<img
+								class="university-logo"
+								src={`/assets/img/logo/${university.slug}.svg`}
+								alt=""
+							/>
+						)
+					}
+					<h1>{university.name}</h1>
+				</div>
+
+				<div class="program-selector">
+					{
+						university.faculties.map((faculty) => (
+							<div class="faculty">
+								<div class="faculty-head">
+									<div class="faculty-name">{faculty.name}</div>
+									<span class="faculty-count">{faculty.programs.length} szak</span>
+								</div>
+								{faculty.programs.map((program) => (
+									<a
+										href={programPath(university.slug, program.slug)}
+										class="program"
+										title={program.description || undefined}
+									>
+										<span class="program-name">{program.name}</span>
+										<span class="program-meta">
+											{semesterCount(program)} félév · {creditSum(program)} kredit
+											{curriculumYear(program) && ` · ${curriculumYear(program)}`}
+										</span>
+										<span class="arrow" aria-hidden="true">→</span>
+									</a>
+								))}
+							</div>
+						))
+					}
+				</div>
+			</div>
+		</section>
 	</Fragment>
 </Template>
