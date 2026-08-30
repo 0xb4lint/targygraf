@@ -332,7 +332,7 @@ describe.skipIf(skip)('page chrome', () => {
 	it('sets per-page titles and apex canonical URLs', () => {
 		const page = readPage(DIST, 'pe', 'mernokinformatikus.html');
 		expect(page.querySelector('title')!.text).toBe(
-			'Pannon Egyetem - Mérnökinformatikus | Tárgygráf'
+			'PE Mérnökinformatikus | Tárgygráf'
 		);
 		expect(page.querySelector('link[rel="canonical"]')!.getAttribute('href')).toBe(
 			'https://targygraf.hu/pe/mernokinformatikus'
@@ -397,6 +397,8 @@ describe.skipIf(skip)('page chrome', () => {
 		expect(og('site_name')).toBe('Tárgygráf');
 		expect(og('type')).toBe('website');
 		expect(og('locale')).toBe('hu_HU');
+		// The browser title is compact (university code); og:title stays long.
+		expect(page.querySelector('title')!.text).toBe('PE Mérnökinformatikus | Tárgygráf');
 		expect(og('title')).toBe('Pannon Egyetem - Mérnökinformatikus | Tárgygráf');
 		expect(og('url')).toBe('https://targygraf.hu/pe/mernokinformatikus');
 		expect(og('url')).toBe(

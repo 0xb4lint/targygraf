@@ -20,13 +20,16 @@ interface Props {
 	page: 'home' | 'university' | 'program';
 	/** Page-specific title part; template appends " | Tárgygráf". */
 	htmlTitle?: string;
+	/** og:title override (same " | Tárgygráf" suffix); defaults to htmlTitle. */
+	ogTitle?: string;
 	description?: string;
 	/** Absolute canonical URL; rendered only when provided. */
 	canonical?: string;
 }
 
-const { page, htmlTitle, description = DEFAULT_DESCRIPTION, canonical } = Astro.props;
+const { page, htmlTitle, ogTitle, description = DEFAULT_DESCRIPTION, canonical } = Astro.props;
 const title = pageTitle(htmlTitle);
+const socialTitle = ogTitle ? pageTitle(ogTitle) : title;
 const origin = siteOrigin();
 ---
 
@@ -43,7 +46,7 @@ const origin = siteOrigin();
 		<meta property="og:site_name" content="Tárgygráf" />
 		<meta property="og:type" content="website" />
 		<meta property="og:locale" content="hu_HU" />
-		<meta property="og:title" content={title} />
+		<meta property="og:title" content={socialTitle} />
 		<meta property="og:description" content={description} />
 		{canonical && <meta property="og:url" content={canonical} />}
 		<meta property="og:image" content={`${origin}/og.png`} />

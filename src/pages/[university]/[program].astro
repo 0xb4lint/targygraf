@@ -32,7 +32,8 @@ const description = `${program.name} (${university.name}) interaktív mintatante
 
 <Template
 	page="program"
-	htmlTitle={`${university.name} - ${program.name}`}
+	htmlTitle={`${university.slug.toUpperCase()} ${program.name}`}
+	ogTitle={`${university.name} - ${program.name}`}
 	description={description}
 	canonical={canonicalUrl(programPath(university.slug, program.slug))}
 >
