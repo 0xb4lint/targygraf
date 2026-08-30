@@ -1009,7 +1009,7 @@ CREDITS COUNTER
 	font-family: var(--mono);
 	font-size: 11px;
 	position: absolute;
-	left: calc(100% + 12px);
+	left: calc(50% + 68px);
 	bottom: 7px;
 	white-space: nowrap;
 }
