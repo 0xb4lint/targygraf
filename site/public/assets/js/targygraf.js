@@ -712,6 +712,31 @@
 		tipsy(all('[title]'), 's', true);
 	}
 
+	///////////////
+	// ANALYTICS //
+	///////////////
+	// Debounced per course like the original ga() events; GA4 via gtag with
+	// the UA-compatible category/label mapping so historical reports line up.
+	var analyticsTimers = {};
+
+	function trackCourseEvent(el, action) {
+		var id = el.getAttribute('data-id');
+		var label = el.textContent.trim();
+
+		if (analyticsTimers[id] !== undefined) {
+			window.clearTimeout(analyticsTimers[id]);
+		}
+
+		analyticsTimers[id] = window.setTimeout(function () {
+			if (typeof window.gtag === 'function') {
+				window.gtag('event', action, {
+					event_category: 'Tantárgy',
+					event_label: label
+				});
+			}
+		}, 1500);
+	}
+
 	////////////
 	// EVENTS //
 	////////////
@@ -724,10 +749,13 @@
 
 				if (el.classList.contains('finished')) {
 					removeCourse(el);
+					trackCourseEvent(el, 'Leadás');
 				} else if (el.classList.contains('processing')) {
 					finishCourse(el);
+					trackCourseEvent(el, 'Teljesítés');
 				} else if (isCourseProcessable(el)) {
 					processCourse(el);
+					trackCourseEvent(el, 'Felvétel');
 				}
 
 				markProcessableCourses();

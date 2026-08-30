@@ -283,6 +283,38 @@ describe.skipIf(skip)('click lifecycle writes the legacy format', () => {
 		expect(classesByCode(page, 'VEMIMAB144IN')[0]).toContain('finished');
 	});
 
+	it('sends debounced GA4 course events when gtag is present', async () => {
+		const page = await loadProgramPage('pe', 'mernokinformatikus');
+		const events: any[] = [];
+		page.window.eval('window.__gtagCalls = [];');
+		page.window.eval(
+			'window.gtag = function () { window.__gtagCalls.push(Array.prototype.slice.call(arguments)); };'
+		);
+
+		const course = byCode(page, 'VEMIMAB144IN')[0];
+		course.click(); // felvett
+		course.click(); // teljesített -- within the debounce window
+
+		// Nothing fires immediately; the 1500ms debounce collapses the two
+		// clicks into the final action, exactly like the original ga() code.
+		expect(page.window.__gtagCalls).toHaveLength(0);
+		await new Promise((resolve) => setTimeout(resolve, 1700));
+		expect(page.window.__gtagCalls).toEqual([
+			[
+				'event',
+				'Teljesítés',
+				{ event_category: 'Tantárgy', event_label: course.textContent.trim() },
+			],
+		]);
+	});
+
+	it('works without gtag (analytics blocked or absent)', async () => {
+		const page = await loadProgramPage('pe', 'mernokinformatikus');
+		byCode(page, 'VEMIMAB144IN')[0].click();
+		await new Promise((resolve) => setTimeout(resolve, 1700));
+		expect(page.errors).toEqual([]);
+	});
+
 	it('reset button clears all three legacy keys', async () => {
 		const page = await loadProgramPage('pe', 'mernokinformatikus', {
 			finished: ['VEMIMAB144IN'],

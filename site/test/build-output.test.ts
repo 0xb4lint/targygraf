@@ -356,10 +356,17 @@ describe.skipIf(skip)('page chrome', () => {
 			.querySelectorAll('script[src]')
 			.map((s) => s.getAttribute('src')!);
 		expect(scripts).toEqual([
+			'https://www.googletagmanager.com/gtag/js?id=G-1T3XF9V5BL',
 			'/assets/js/notie.min.js',
 			'/assets/js/targygraf.js?v=20260830',
 			'/assets/js/ls-migrate.js?v=1',
 		]);
+	});
+
+	it('configures the GA4 property', () => {
+		const page = readPage(DIST, 'pe', 'mernokinformatikus.html');
+		const inline = page.querySelectorAll('script:not([src])').map((s) => s.text);
+		expect(inline.some((t) => t.includes("gtag('config', 'G-1T3XF9V5BL')"))).toBe(true);
 	});
 
 	it('wires the localStorage migration bridge on university and program pages', () => {

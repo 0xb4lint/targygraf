@@ -61,7 +61,16 @@ const origin = siteOrigin();
 		<link href="/assets/css/style.css?v=20190217" rel="stylesheet" />
 		<link href="/assets/css/tipsy.css" rel="stylesheet" />
 		<link href="/assets/css/notie.min.css" rel="stylesheet" />
+		<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-1T3XF9V5BL"></script>
 		<script is:inline type="text/javascript">
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+			gtag('config', 'G-1T3XF9V5BL');
+			window.gtag = gtag;
+
 			(function (d, s, id) {
 				var js,
 					fjs = d.getElementsByTagName(s)[0];
