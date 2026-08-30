@@ -36,12 +36,17 @@ The site lives on apex paths; the per-university subdomains it used until
   origins. Apex requests pass straight through to static assets.
 - `public/assets/js/migrate.js` + `public/__migrate.html` – the
   one-time localStorage handoff. localStorage is per-origin, so progress
-  saved under the legacy subdomains would otherwise be stranded:
-  university and program pages embed a hidden iframe to the matching
-  legacy origin, whose `/__migrate` page posts the stored progress
-  back, and the receiver merges it into the apex origin. A
-  `migratedFrom_{university}` flag limits this to one successful
-  handoff per subdomain; failed attempts retry on a later visit.
+  saved under the legacy subdomains would otherwise be stranded.
+  University and program pages carry it over with two transports: a
+  hidden same-site iframe whose `/__migrate` page posts the stored
+  progress back (Chrome/Firefox), and a one-time top-level bounce
+  through the same page returning a `#tgm=` fragment for WebKit
+  browsers, which partition iframe storage even for same-site
+  subdomains (Safari and every iOS browser; detected by the Apple
+  vendor string). A `migrated_{university}` flag limits this to one
+  successful handoff per subdomain; failed attempts retry later, and
+  the fragment is only accepted with a same-session bounce guard so a
+  crafted link cannot inject data.
 - `scripts/gen-universities.mjs` – generates the subdomain list for the
   worker (runs automatically via npm scripts; gitignored output).
 - `scripts/compare-live.mjs` – structural parity check against the live

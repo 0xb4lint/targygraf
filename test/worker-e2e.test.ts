@@ -136,6 +136,11 @@ describe.skipIf(skip)('worker + assets end-to-end (Miniflare)', () => {
 		const res = await get('https://pe.targygraf.hu/__migrate');
 		expect(res.status).toBe(200);
 		expect(await res.text()).toContain('targygraf-migrate');
+
+		// The WebKit bounce arrives with a ?return= query string.
+		const bounce = await get('https://pe.targygraf.hu/__migrate?return=%2Fpe%2Fvalami');
+		expect(bounce.status).toBe(200);
+		expect(await bounce.text()).toContain('tgm=');
 	});
 
 	it('normalizes trailing slashes', async () => {

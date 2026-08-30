@@ -359,7 +359,7 @@ describe.skipIf(skip)('page chrome', () => {
 		expect(scripts).toEqual([
 			'https://www.googletagmanager.com/gtag/js?id=G-1T3XF9V5BL',
 			'/assets/js/targygraf.js?v=20260831',
-			'/assets/js/migrate.js?v=1',
+			'/assets/js/migrate.js?v=2',
 		]);
 	});
 
@@ -379,7 +379,7 @@ describe.skipIf(skip)('page chrome', () => {
 		// The home page has no university context, so no bridge there.
 		const home = readPage(DIST, 'index.html');
 		const inline = home.querySelectorAll('script[src]').map((s) => s.getAttribute('src')!);
-		expect(inline).not.toContain('/assets/js/migrate.js?v=1');
+		expect(inline).not.toContain('/assets/js/migrate.js?v=2');
 
 		// The handoff endpoint itself ships in the build, marked noindex.
 		const handoff = readPage(DIST, '__migrate.html');

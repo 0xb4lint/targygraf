@@ -6,20 +6,23 @@
 		<title>targygraf.hu adatátvitel</title>
 	</head>
 	<body>
+		<noscript><a href="https://targygraf.hu/">targygraf.hu</a></noscript>
 		<script>
 			/*
-			 * Served on the legacy {university}.targygraf.hu origins. When
-			 * embedded by targygraf.hu (see assets/js/migrate.js), it hands
+			 * Served on the legacy {university}.targygraf.hu origins. Hands
 			 * over the progress this origin stored under the old subdomain
-			 * URLs. The target origin is pinned: nothing is ever posted
-			 * anywhere else.
+			 * URLs (see assets/js/migrate.js). Two modes:
+			 *
+			 * - Framed (Chrome/Firefox): posts the values to the embedding
+			 *   targygraf.hu page. The target origin is pinned.
+			 * - Top-level with ?return= (WebKit bounce): reads the storage
+			 *   first-party, which no browser partitions, and returns to
+			 *   https://targygraf.hu{return}#tgm={payload}. The return value
+			 *   must be a plain absolute path, so this cannot redirect
+			 *   anywhere but targygraf.hu.
 			 */
 			(function () {
 				'use strict';
-
-				if (window.parent === window) {
-					return;
-				}
 
 				function read(key) {
 					try {
@@ -29,15 +32,52 @@
 					}
 				}
 
-				window.parent.postMessage(
-					{
-						type: 'targygraf-migrate',
+				function collect() {
+					return {
 						coursesFinished: read('coursesFinished'),
 						coursesProcessing: read('coursesProcessing'),
 						creditsOptional: read('creditsOptional')
-					},
-					'https://targygraf.hu'
-				);
+					};
+				}
+
+				if (window.parent !== window) {
+					var framed = collect();
+					framed.type = 'targygraf-migrate';
+					window.parent.postMessage(framed, 'https://targygraf.hu');
+					return;
+				}
+
+				var match = /[?&]return=([^&]*)/.exec(window.location.search);
+				if (!match) {
+					return; // opened directly, nothing to do
+				}
+
+				var path = '/';
+				try {
+					var candidate = decodeURIComponent(match[1]);
+					// A single absolute path only: no host, no scheme, no '//'.
+					if (/^\/(?!\/)[a-zA-Z0-9\-\/]*$/.test(candidate)) {
+						path = candidate;
+					}
+				} catch (error) {
+					// keep '/'
+				}
+
+				var payload = '0';
+				try {
+					var data = collect();
+					if (
+						data.coursesFinished !== null ||
+						data.coursesProcessing !== null ||
+						data.creditsOptional !== null
+					) {
+						payload = encodeURIComponent(JSON.stringify(data));
+					}
+				} catch (error) {
+					// keep '0'
+				}
+
+				window.location.replace('https://targygraf.hu' + path + '#tgm=' + payload);
 			})();
 		</script>
 	</body>
