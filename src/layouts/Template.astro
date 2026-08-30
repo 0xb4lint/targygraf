@@ -1,11 +1,11 @@
 ---
 /**
- * Shared page chrome (descendant of resources/views/template.blade.php).
+ * Shared page chrome.
  *
- * The client stack is dependency-free: assets/js/targygraf.js is a vanilla
- * rewrite of the original jQuery implementation (same DOM contract, same
- * localStorage format — see its header), tooltips reuse tipsy.css via a
- * small built-in replacement, and the legal notice is self-rendered.
+ * The client stack is dependency-free vanilla JS: assets/js/targygraf.js
+ * carries the frozen DOM and localStorage contracts (see its header),
+ * tooltips reuse tipsy.css via a small built-in renderer, and the legal
+ * notice is self-rendered.
  */
 import { Font } from 'astro:assets';
 import { DEFAULT_DESCRIPTION, pageTitle } from '../lib/render';

@@ -1,31 +1,28 @@
 /**
  * Build-time data loader.
  *
- * This module replicates, as faithfully as possible, what the Laravel app's
- * database seeders (database/seeds/*.php) plus the Eloquent models (app/*.php)
- * produced at runtime. The JSON files in json/ are the single source of truth
- * and their structure is intentionally unchanged.
+ * The JSON files in json/ are the single source of truth and their structure
+ * is intentionally unchanged. Everything derived from them here is a frozen
+ * contract with the shipped frontend and with the course codes users have
+ * kept in localStorage since 2012:
  *
- * Behavioral contracts carried over from the Laravel implementation:
- *
- * - Files whose name starts with '.' or doesn't end in '.json' are skipped
- *   (AbstractJsonFileSeeder::processAllJsonFiles), and files are processed in
- *   byte-order sorted filename order (PHP scandir default).
+ * - Files whose name starts with '.' or doesn't end in '.json' are skipped,
+ *   and files are processed in byte-order sorted filename order (ids derive
+ *   from that order).
  * - Slugs come from the filename: universities/{uni}.json,
  *   faculties/{uni}_{faculty}.json, programs/{uni}_{faculty}_{program}.json.
  * - Course ids are zero-padded to 6 characters and course block ids are
- *   underscore-padded to 6 characters (Course/CourseBlock::getPaddedID).
- *   The padding matters: jQuery's .data() would coerce an unpadded numeric
- *   string to a number, and the frontend matches prerequisites with a
- *   substring attribute selector over fixed-width tokens.
+ *   underscore-padded to 6 characters. The fixed width matters: the frontend
+ *   matches prerequisites with a substring attribute selector over
+ *   fixed-width tokens, and padded ids never look purely numeric.
  * - Prerequisite codes are resolved against the FIRST course in the same
- *   program with a matching code (Course::firstOrFail over insertion order) --
- *   duplicate codes within a program are common in the data.
+ *   program with a matching code -- duplicate codes within a program are
+ *   common in the data.
  * - '(CODE)' marks a parallel ("felvehető egyidejűleg") prerequisite and is
  *   rendered as '#'-prefixed id in data-prerequisites.
  * - '___<n>___' pseudo-courses ("n teljesített kredit") are global helper
- *   rows (HelperCourseSeeder); their padded id is the code itself and their
- *   display name is '<n> kredit'.
+ *   rows; their padded id is the code itself and their display name is
+ *   '<n> kredit'.
  * - course_block_references are resolved by exact block name within the
  *   program (first match).
  * - is_counted defaults to true unless the JSON says exactly false.
@@ -35,7 +32,7 @@ import path from 'node:path';
 
 import { JSON_ROOT } from './paths';
 
-/** The only credit pseudo-courses the Laravel HelperCourseSeeder created. */
+/** The only credit-gate pseudo-courses that exist; anything else is invalid. */
 export const DUMMY_CREDIT_COURSE_CODES = [
 	'___20___',
 	'___40___',
@@ -120,10 +117,7 @@ export interface Dataset {
 	universitiesBySlug: Map<string, University>;
 }
 
-/**
- * Mirrors AbstractJsonFileSeeder: skip dotfiles and non-.json files, process
- * in sorted order (PHP scandir sorts byte-wise ascending).
- */
+/** Skip dotfiles and non-.json files; process in byte-order sorted order. */
 export function listJsonFiles(directory: string): string[] {
 	return fs
 		.readdirSync(directory)
@@ -139,22 +133,22 @@ function readJson(filePath: string): any {
 	return parsed;
 }
 
-/** PHP str_pad($id, 6, '0', STR_PAD_LEFT) */
+/** Left-pad a course id to 6 characters with zeros. */
 export function padCourseId(id: number): string {
 	return String(id).padStart(6, '0');
 }
 
-/** PHP str_pad($id, 6, '_', STR_PAD_LEFT) */
+/** Left-pad a course block id to 6 characters with underscores. */
 export function padCourseBlockId(id: number): string {
 	return String(id).padStart(6, '_');
 }
 
-/** PHP trim($code, '()') */
+/** Strip leading and trailing parentheses from a prerequisite token. */
 export function trimParens(token: string): string {
 	return token.replace(/^[()]+/, '').replace(/[()]+$/, '');
 }
 
-/** Mirrors ProgramSeeder::processPrerequisites' is_parallel detection. */
+/** A fully parenthesized token marks a parallel prerequisite. */
 export function isParallelToken(token: string): boolean {
 	return /^\(.+\)$/.test(token);
 }
@@ -164,9 +158,8 @@ export function isDummyCreditCode(code: string): boolean {
 }
 
 /**
- * Program name ordering: the faculty relation used MySQL ORDER BY name
- * (utf8 unicode collation, accent/case-insensitive on the primary level).
- * Intl.Collator with the Hungarian locale is the closest equivalent.
+ * Programs are listed by name, accent/case-insensitive on the primary level,
+ * using the Hungarian locale.
  */
 const programNameCollator = new Intl.Collator('hu', { sensitivity: 'variant' });
 
@@ -184,7 +177,7 @@ export function buildProgram(
 			paddedId: padCourseBlockId(blockIndex + 1),
 			name: rawBlock.name,
 			row: rawBlock.row,
-			// ProgramSeeder: (@$rawCourseBlock->is_counted !== false)
+			// Counted unless the JSON says exactly false.
 			isCounted: rawBlock.is_counted !== false,
 			courses: rawBlock.courses.map(
 				(rawCourse: any): Course => ({
@@ -199,7 +192,7 @@ export function buildProgram(
 		})
 	);
 
-	// First-occurrence lookup maps, matching firstOrFail over insertion order.
+	// First-occurrence lookup maps: duplicates resolve to the earliest entry.
 	const courseByCode = new Map<string, Course>();
 	const blockByName = new Map<string, CourseBlock>();
 	for (const block of blocks) {
@@ -213,11 +206,10 @@ export function buildProgram(
 		}
 	}
 
-	// MySQL returned pivot rows clustered by (course_id, referenced_id), so
-	// the live site listed prerequisites in referenced-course id order: the
-	// ___n___ helper courses first (they were seeded before everything else,
-	// ids 1-7 in HelperCourseSeeder order), then program courses in insertion
-	// (= file position) order. Tooltip text and data attributes follow it.
+	// Prerequisite order is a frozen rendering contract (tooltip text and
+	// data attributes follow it): the ___n___ credit gates come first, in
+	// DUMMY_CREDIT_COURSE_CODES order, then program courses in file-position
+	// order. This is the order the site has always displayed.
 	const prerequisiteSortKey = (p: Prerequisite): number =>
 		isDummyCreditCode(p.code)
 			? DUMMY_CREDIT_COURSE_CODES.indexOf(p.code as any) - DUMMY_CREDIT_COURSE_CODES.length

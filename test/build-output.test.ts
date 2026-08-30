@@ -2,11 +2,10 @@
  * Structural tests over the real build output (dist-test/, built by
  * test/global-setup.ts).
  *
- * The critical suite is the "localStorage contract": the shipped, unmodified
- * targygraf.js restores user state by querying .course[data-code="..."] with
- * codes persisted from the Laravel-rendered pages, so every page must expose
- * exactly the codes the JSON defines, with fixed-width ids and well-formed
- * prerequisite tokens.
+ * The critical suite is the "localStorage contract": targygraf.js restores
+ * user state by querying .course[data-code="..."] with codes persisted years
+ * ago, so every page must expose exactly the codes the JSON defines, with
+ * fixed-width ids and well-formed prerequisite tokens.
  */
 import fs from 'node:fs';
 import path from 'node:path';
@@ -78,8 +77,6 @@ describe.skipIf(skip)('build output inventory', () => {
 			path.join(DIST, 'assets/js/targygraf.js'),
 			'utf8'
 		);
-		// The header comment may mention jQuery historically; actual usage
-		// patterns must not appear.
 		expect(targygraf).not.toMatch(/window\.jQuery|\$\(|\.tipsy\(/);
 		// The storage keys are the frozen contract with users' saved data.
 		for (const key of ['coursesFinished', 'coursesProcessing', 'creditsOptional']) {
@@ -126,7 +123,7 @@ describe.skipIf(skip)('localStorage contract on every program page', () => {
 		}
 	});
 
-	it('uses fixed-width ids that are safe for jQuery substring matching', () => {
+	it('uses fixed-width ids that are safe for substring matching', () => {
 		for (const file of programFiles()) {
 			const [uni, , prog] = path.basename(file, '.json').split('_');
 			const page = readPage(DIST, uni!, `${prog}.html`);
@@ -137,7 +134,7 @@ describe.skipIf(skip)('localStorage contract on every program page', () => {
 			expect(new Set(courseIds).size, file).toBe(courseIds.length);
 			for (const id of courseIds) {
 				expect(id, file).toMatch(/^\d{6}$/);
-				// jQuery .data('id') must NOT coerce the value to a number.
+				// The id must never survive a numeric round-trip as-is.
 				expect(String(Number(id)), file).not.toBe(id);
 			}
 
@@ -210,8 +207,8 @@ describe.skipIf(skip)('localStorage contract on every program page', () => {
 			const page = readPage(DIST, uni!, `${prog}.html`);
 			const raw = rawProgram(file);
 
-			// Block name -> padded id, first JSON occurrence wins (file order
-			// equals seeder insertion order, ids are 1-based file positions).
+			// Block name -> padded id, first JSON occurrence wins (ids are
+			// 1-based file positions).
 			const nameToId = new Map<string, string>();
 			raw.course_blocks.forEach((b: any, i: number) => {
 				if (!nameToId.has(b.name)) {
@@ -251,7 +248,7 @@ describe.skipIf(skip)('localStorage contract on every program page', () => {
 		}
 	});
 
-	it('renders data-credits and data-is-counted exactly like Blade', () => {
+	it('renders data-credits and data-is-counted in the frozen format', () => {
 		for (const file of programFiles()) {
 			const [uni, , prog] = path.basename(file, '.json').split('_');
 			const page = readPage(DIST, uni!, `${prog}.html`);

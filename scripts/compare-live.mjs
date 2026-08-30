@@ -1,10 +1,11 @@
 /**
- * Structural parity check: fetches the live (Laravel) targygraf.hu pages and
- * compares them against the local build in dist/.
+ * Structural parity check: fetches the live targygraf.hu pages and compares
+ * them against the local build in dist/. Migration tooling; useful until the
+ * cutover to Cloudflare is complete.
  *
- * Padded ids differ by design (global DB autoincrement vs per-program
- * counters), so everything id-based is remapped to course codes / block
- * positions before comparing. What must match:
+ * Padded ids differ by design (the live site numbers courses globally, the
+ * build per program), so everything id-based is remapped to course codes /
+ * block positions before comparing. What must match:
  *   - course sequence: code, name, credits, tooltip title
  *   - prerequisite structure (codes + parallel flags + credit gates)
  *   - referenced-course-block structure (by block position)
@@ -182,8 +183,8 @@ const programs = args.length
 
 // Home and university pages were intentionally redesigned after the 1:1
 // migration was verified; only the program pages' graph structure remains
-// comparable with the live Laravel output. Pass --chrome to re-enable the
-// legacy home/university comparisons.
+// comparable with the live output. Pass --chrome to re-enable the legacy
+// home/university comparisons.
 if (args.includes('--chrome')) {
 	await compareHome();
 	for (const uni of jsonSlugs('universities')) {

@@ -1,14 +1,15 @@
 /**
- * Presentation helpers ported from the Eloquent models and Blade templates.
+ * Presentation helpers. The exact output strings are frozen contracts with
+ * the shipped frontend (tooltips, data attributes), so change with care.
  */
 import type { Course, CourseBlock } from './data';
 
 const ANY_PSEUDO_CODE_REGEX = /^___.*___$/;
 
 /**
- * Course::getTitle() -- the tipsy tooltip content. Returns an HTML string;
- * the Blade template emitted it through an escaped echo into the title
- * attribute, which is exactly what an Astro `title={...}` expression does.
+ * The tooltip content. Returns an HTML string; it goes through an Astro
+ * `title={...}` expression, which escapes it into the title attribute (the
+ * tooltip code reads it back and renders it as HTML).
  */
 export function courseTitle(course: Course): string {
 	let title = `${course.credits} kredit`;
@@ -47,18 +48,17 @@ export function escapeHtml(value: string): string {
 }
 
 /**
- * CourseBlock::getName(): strip the '#<n>' disambiguation suffix used by
- * split referenceable blocks, then nl2br() for multi-line block titles.
- * The Blade template printed the result unescaped ({!! !!}); block names come
- * from reviewed JSON, but we escape before inserting the <br /> tags anyway.
+ * Block display name: strip the '#<n>' disambiguation suffix used by split
+ * referenceable blocks, then turn newlines into <br /> for multi-line block
+ * titles. The result is inserted as HTML, so escape before adding the tags.
  */
 export function courseBlockDisplayName(block: CourseBlock): string {
 	const withoutSuffix = block.name.replace(/\s*#\d+$/, '');
-	// PHP nl2br(): insert '<br />' before the newline, keeping the newline.
+	// Insert '<br />' before each newline, keeping the newline itself.
 	return escapeHtml(withoutSuffix).replace(/(\r\n|\n\r|\r|\n)/g, '<br />$1');
 }
 
-/** data-prerequisites attribute (Course::getPrerequisitesIDs + implode). */
+/** data-prerequisites attribute: padded ids, '#'-prefixed when parallel. */
 export function prerequisitesAttribute(course: Course): string {
 	return course.prerequisites
 		.map((p) => (p.parallel ? `#${p.paddedId}` : p.paddedId))
@@ -70,15 +70,15 @@ export function courseBlockReferencesAttribute(course: Course): string {
 	return course.courseBlockReferences.join(',');
 }
 
-/** Blade printed the MySQL boolean as 1/0. The frontend checks != "0". */
+/** Rendered as "1"/"0"; the frontend checks != "0". */
 export function isCountedAttribute(block: CourseBlock): string {
 	return block.isCounted ? '1' : '0';
 }
 
 /**
- * layouts/program.blade.php: a curriculum is flagged as outdated when its
- * year is before the current year. Build-time evaluation; the site is
- * rebuilt on every merge so this stays fresh enough.
+ * A curriculum is flagged as outdated when its year is before the current
+ * year. Build-time evaluation; the site is rebuilt on every merge so this
+ * stays fresh enough.
  */
 export function isCurriculumOutdated(
 	curriculumUpdatedAt: string,
@@ -87,7 +87,7 @@ export function isCurriculumOutdated(
 	return parseInt(curriculumUpdatedAt.slice(0, 4), 10) < now.getFullYear();
 }
 
-/** Blade template.blade.php title logic. */
+/** Page title: the page-specific part plus the site name. */
 export function pageTitle(htmlTitle?: string): string {
 	return htmlTitle ? `${htmlTitle} | Tárgygráf` : 'Tárgygráf';
 }

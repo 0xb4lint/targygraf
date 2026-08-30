@@ -1,15 +1,16 @@
 /*
- * Tárgygráf frontend – dependency-free rewrite of the original jQuery
- * implementation. Szekeres Bálint - https://targygraf.hu - https://b4lint.hu
+ * Tárgygráf frontend – dependency-free vanilla JS.
+ * Szekeres Bálint - https://targygraf.hu - https://b4lint.hu
  *
- * The localStorage contract is unchanged and must stay that way:
+ * The localStorage contract is frozen (users have kept their progress in it
+ * since 2012) and must stay that way:
  *   coursesFinished   JSON array of course codes
  *   coursesProcessing JSON array of course codes
  *   creditsOptional   JSON number
- * Codes stored by the old site may be numbers (jQuery .data() coerced
- * numeric-looking codes), so all comparisons go through String().
+ * Codes stored years ago may be numbers rather than strings, so all
+ * comparisons go through String().
  *
- * Deliberately preserved quirks of the original implementation:
+ * Deliberately preserved quirks (they shape what users see restored):
  *   - restoring marks every element sharing a code, but counts the credits
  *     of the first one only; clicking affects just the clicked element
  *   - the "max credits" sum includes every course in the semester row,
@@ -607,8 +608,8 @@
 	//////////////
 	// TOOLTIPS //
 	//////////////
-	// Minimal stand-in for the retired jQuery tipsy plugin: same DOM, same
-	// classes, same positioning, so the untouched tipsy.css keeps working.
+	// Minimal tooltip renderer emitting tipsy-style DOM: same classes, same
+	// positioning, so the untouched tipsy.css keeps working.
 	var tipsyElement = null;
 
 	function tipsyFixTitle(el) {

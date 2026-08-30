@@ -97,7 +97,7 @@ describe('courseBlockDisplayName (CourseBlock::getName port)', () => {
 		expect(courseBlockDisplayName(block({ name: '1. félév' }))).toBe('1. félév');
 	});
 
-	it('converts newlines to <br /> like PHP nl2br', () => {
+	it('inserts <br /> before newlines, keeping the newline', () => {
 		expect(courseBlockDisplayName(block({ name: 'Első sor\nMásodik sor' }))).toBe(
 			'Első sor<br />\nMásodik sor'
 		);
@@ -130,7 +130,7 @@ describe('data attributes', () => {
 		).toBe('_____3,_____4');
 	});
 
-	it('renders is_counted the way Blade printed the MySQL boolean', () => {
+	it('renders is_counted as "1"/"0"', () => {
 		expect(isCountedAttribute(block({ isCounted: true }))).toBe('1');
 		expect(isCountedAttribute(block({ isCounted: false }))).toBe('0');
 	});
@@ -143,7 +143,7 @@ describe('page chrome', () => {
 		expect(isCurriculumOutdated('2026-01-01', now)).toBe(false);
 	});
 
-	it('builds titles like template.blade.php', () => {
+	it('appends the site name to page titles', () => {
 		expect(pageTitle()).toBe('Tárgygráf');
 		expect(pageTitle('Pannon Egyetem')).toBe('Pannon Egyetem | Tárgygráf');
 	});

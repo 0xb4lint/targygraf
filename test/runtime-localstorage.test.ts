@@ -1,13 +1,12 @@
 /**
  * End-to-end localStorage + behavior tests for the shipped frontend.
  *
- * targygraf.js is a dependency-free rewrite of the original jQuery
- * implementation. The assertions in this file were written against and
- * validated on the legacy engine first (see git history), so passing here
- * pins behavioral parity: localStorage is seeded in the exact format the
- * Laravel-era site wrote ('coursesFinished'/'coursesProcessing' as JSON
- * arrays of course codes, 'creditsOptional' as a JSON number), and the
- * script runs against the real built pages in jsdom.
+ * The assertions in this file were validated against the pre-2026 engine
+ * first (see git history), so passing here pins behavioral parity:
+ * localStorage is seeded in the exact format the site has always written
+ * ('coursesFinished'/'coursesProcessing' as JSON arrays of course codes,
+ * 'creditsOptional' as a JSON number), and the shipped targygraf.js runs
+ * against the real built pages in jsdom.
  */
 import fs from 'node:fs';
 import path from 'node:path';
@@ -237,9 +236,9 @@ describe.skipIf(skip)('codes from other curricula are never lost', () => {
 		expect(processing).toContain('VEMIMAB122MA');
 	});
 
-	it('keeps numeric codes stored by the jQuery-era site intact', async () => {
-		// jQuery .data() coerced numeric-looking codes to numbers; such values
-		// may still sit in old storage and must not break or vanish.
+	it('keeps numeric codes from old storage intact', async () => {
+		// Years-old storage may hold numeric-looking codes saved as numbers;
+		// such values must not break or vanish.
 		const page = await loadProgramPage('pe', 'mernokinformatikus', {
 			finished: [12345, 'VEMIMAB144IN'],
 		});

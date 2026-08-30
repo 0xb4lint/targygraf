@@ -1,17 +1,17 @@
 # Tárgygráf – architecture (Astro + Cloudflare)
 
-Static replacement for the original Laravel app. The JSON files in
-`json/universities`, `json/faculties` and `json/programs` remain the single
-source of truth, **unchanged in structure** — the build renders them into
-~100 static pages at deploy time. There is no database and no server-side
+The site is fully static. The JSON files in `json/universities`,
+`json/faculties` and `json/programs` are the single source of truth,
+**unchanged in structure since 2012**: the build renders them into ~100
+static pages at deploy time. There is no database and no server-side
 runtime.
 
 ## URLs
 
-The site lives on apex paths; the old per-university subdomains are
-permanently redirected:
+The site lives on apex paths; the per-university subdomains it used until
+2026 are permanently redirected:
 
-| Legacy (Laravel)                      | Current                              |
+| Legacy (until 2026)                   | Current                              |
 | ------------------------------------- | ------------------------------------ |
 | `targygraf.hu`                         | `targygraf.hu`                       |
 | `pe.targygraf.hu`                      | `targygraf.hu/pe`                    |
@@ -19,17 +19,17 @@ permanently redirected:
 
 ## Layout
 
-- `src/lib/data.ts` – build-time port of the Laravel seeders + models
-  (slug parsing, padded ids, prerequisite/block-reference resolution,
-  live-site prerequisite ordering). Read its header comment before touching
-  anything: several oddities (id padding, first-occurrence code resolution,
-  prerequisite ordering) are load-bearing for the unmodified frontend.
-- `src/pages`, `src/layouts`, `src/components` – 1:1 ports of the Blade
-  templates. Every `data-*` attribute is a contract with
-  `public/assets/js/targygraf.js`, a dependency-free rewrite of the original
-  jQuery frontend (same DOM contract, same localStorage format, quirks
-  intentionally preserved — see its header comment). Tooltips reuse the
-  original tipsy.css via a small built-in tipsy replacement.
+- `src/lib/data.ts` – the build-time data loader (slug parsing, padded ids,
+  prerequisite/block-reference resolution, prerequisite ordering). Read its
+  header comment before touching anything: several oddities (id padding,
+  first-occurrence code resolution, prerequisite ordering) are load-bearing
+  frozen contracts with the frontend and with users' stored progress.
+- `src/pages`, `src/layouts`, `src/components` – the page templates. Every
+  `data-*` attribute is a contract with
+  `public/assets/js/targygraf.js`, the dependency-free frontend (frozen DOM
+  and localStorage contracts, deliberately preserved quirks; see its header
+  comment). Tooltips are rendered by a small built-in helper emitting
+  tipsy.css-compatible DOM.
 - `worker/` – the Cloudflare Worker. Its only job is 301-ing legacy
   subdomain URLs to apex paths while keeping `/assets/*` and the shared
   static files served on those origins. Apex requests pass straight
@@ -38,8 +38,8 @@ permanently redirected:
 - `scripts/gen-universities.mjs` – generates the subdomain list for the
   worker (runs automatically via npm scripts; gitignored output).
 - `scripts/compare-live.mjs` – structural parity check against the live
-  site (used during the migration; useful until the Laravel origin is
-  retired).
+  site (used during the migration; useful until the cutover to Cloudflare
+  is complete).
 - `scripts/gen-bulk-redirects.mjs` – emits the frozen legacy-URL redirect
   list as CSV for the optional zero-worker setup (see below).
 - `scripts/generate-logo.mjs` – regenerates the outlined brand SVGs in
@@ -59,17 +59,16 @@ npm run compare-live
 
 ## Tests (`npm test`)
 
-- `json-validation` – port of the old PHPUnit suite; this is what gates
-  contributor PRs (structure, prerequisite/reference resolution, filename
-  shape).
+- `json-validation` – gates contributor PRs (structure,
+  prerequisite/reference resolution, filename shape).
 - `data` / `render` – loader and presentation units, incl. fixtures and
   live-verified tooltip strings.
 - `build-output` – sweeps all built pages: course codes/ids/attributes vs
   the raw JSON (the localStorage contract), links, canonicals, sitemap.
 - `runtime-localstorage` – runs the shipped targygraf.js in jsdom against
-  built pages with legacy-format localStorage seeded (the assertions were
-  validated against the original jQuery engine first, pinning behavioral
-  parity); includes booting all 89 program pages.
+  built pages with localStorage seeded in the format the site has always
+  written (the assertions were validated against the pre-2026 engine first,
+  pinning behavioral parity); includes booting all 89 program pages.
 - `worker-routing` / `worker-e2e` – routing units plus the wrangler-built
   bundle served by Miniflare/workerd with real hostnames.
 
@@ -106,6 +105,6 @@ have soaked long enough:
 
 ## Contributor flow (unchanged)
 
-Fork → edit `json/**` → PR to `master`. CI validates the JSON exactly like
-the old PHPUnit suite did, then builds the site and runs the full test
-matrix. The JSON format is documented in the repository root readme.
+Fork → edit `json/**` → PR to `master`. CI validates the JSON, then builds
+the site and runs the full test matrix. The JSON format is documented in
+the repository root readme.

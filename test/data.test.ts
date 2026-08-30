@@ -32,34 +32,34 @@ describe('listJsonFiles', () => {
 });
 
 describe('padding helpers', () => {
-	it('pads course ids with zeros to 6 chars (Course::getPaddedID)', () => {
+	it('pads course ids with zeros to 6 chars', () => {
 		expect(padCourseId(1)).toBe('000001');
 		expect(padCourseId(4297)).toBe('004297');
 		expect(padCourseId(123456)).toBe('123456');
 	});
 
-	it('pads block ids with underscores to 6 chars (CourseBlock::getPaddedID)', () => {
+	it('pads block ids with underscores to 6 chars', () => {
 		expect(padCourseBlockId(1)).toBe('_____1');
 		expect(padCourseBlockId(574)).toBe('___574');
 	});
 
-	it('produces ids jQuery .data() will not coerce to numbers', () => {
-		// jQuery converts data attribute strings to numbers only when the
-		// numeric round-trip is lossless; padding must prevent that.
+	it('produces ids that never survive a numeric round-trip', () => {
+		// The ids must always behave as strings; the padding guarantees a
+		// numeric round-trip is never lossless.
 		expect(String(Number(padCourseId(12)))).not.toBe(padCourseId(12));
 		expect(Number.isNaN(Number(padCourseBlockId(12)))).toBe(true);
 	});
 });
 
 describe('prerequisite token parsing', () => {
-	it('mirrors PHP trim($code, "()")', () => {
+	it('strips surrounding parentheses from prerequisite tokens', () => {
 		expect(trimParens('(ABC123)')).toBe('ABC123');
 		expect(trimParens('ABC123')).toBe('ABC123');
 		expect(trimParens('___75___')).toBe('___75___');
 		expect(trimParens('((ABC123))')).toBe('ABC123');
 	});
 
-	it('detects parallel prerequisites like ProgramSeeder', () => {
+	it('detects parallel prerequisites from parenthesized tokens', () => {
 		expect(isParallelToken('(ABC123)')).toBe(true);
 		expect(isParallelToken('ABC123')).toBe(false);
 		expect(isParallelToken('___75___')).toBe(false);
@@ -116,10 +116,10 @@ describe('buildProgram (fixture)', () => {
 		]);
 	});
 
-	it('resolves duplicate codes to the first occurrence (firstOrFail order)', () => {
+	it('resolves duplicate codes to the first occurrence', () => {
 		const course = byCode('DDD444');
-		// Two courses share code AAA111; the seeder's firstOrFail picked the
-		// earliest inserted row, i.e. the one in the first block.
+		// Two courses share code AAA111; resolution picks the earliest one
+		// in file order, i.e. the one in the first block.
 		expect(course.prerequisites[0]!.paddedId).toBe('000001');
 		expect(course.prerequisites[0]!.name).toBe('Alapozó tárgy');
 	});
@@ -165,7 +165,7 @@ describe('buildProgram (fixture)', () => {
 		).toThrow(/NEMLETEZO/);
 	});
 
-	it('rejects credit gates the Laravel HelperCourseSeeder never created', () => {
+	it('rejects credit gate values outside the supported set', () => {
 		expect(() =>
 			buildProgram(
 				'aa_fk_hibas.json',

@@ -12,7 +12,7 @@ in Hungarian). Architecture and deploy runbook: `ARCHITECTURE.md`.
   `SKIP_BUILD_TESTS=1` skips the build-dependent suites for quick runs.
 - `npm run dev` / `npm run build` / `npm run preview` (wrangler dev)
 - `node scripts/compare-live.mjs` – structural parity check against the
-  live site (useful until the Laravel origin is retired).
+  live site (useful until the cutover to Cloudflare is complete).
 
 ## Hard invariants (tests enforce them; do not "fix")
 
@@ -27,9 +27,9 @@ in Hungarian). Architecture and deploy runbook: `ARCHITECTURE.md`.
   (`#` prefix = parallel, `___n___` = credit gate) and
   `data-referenced-course-blocks`; block ids are underscore-padded; a
   column's footprint stays at most 146px wide.
-- Prerequisite token order: credit gates first, then page position. This
-  mirrors the old MySQL id order and is visible in tooltips.
-- Quirks deliberately preserved from the jQuery original: a click affects
+- Prerequisite token order: credit gates first, then page position. The
+  order is visible in tooltips and must not change.
+- Deliberately preserved quirks: a click affects
   only the clicked cell; restoring marks every duplicate-code cell but
   counts only the first; the semester credit maximum sums the whole row.
 

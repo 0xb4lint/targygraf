@@ -1,7 +1,7 @@
 /**
- * Port of the Laravel PHPUnit JSON suite (tests/Feature/Json/*) that gates
- * contributor pull requests. Every assertion from the PHP tests is preserved;
- * a few filename-shape checks are added because the file name IS the slug.
+ * The JSON validation suite that gates contributor pull requests: structure,
+ * prerequisite and block-reference resolution, and filename shape (the file
+ * name IS the slug).
  */
 import fs from 'node:fs';
 import path from 'node:path';
@@ -62,7 +62,7 @@ describe('json/faculties structure', () => {
 		const data = readJson('faculties', file);
 		expect(typeof data.name, `${file} name is_string`).toBe('string');
 		expect(isUint(data.ordering), `${file} ordering uint`).toBe(true);
-		// Exactly {university}_{faculty}: the seeder only ever read parts 0-1.
+		// Exactly {university}_{faculty}: only parts 0-1 carry meaning.
 		expect(file).toMatch(/^[a-z0-9-]+_[a-z0-9-]+\.json$/);
 
 		const universityFile = `${file.split('_')[0]}.json`;
@@ -77,8 +77,8 @@ describe('json/programs structure', () => {
 	it.each(visibleFiles('programs').map((f) => [f] as const))('%s', (file) => {
 		const data = readJson('programs', file);
 
-		// Exactly {university}_{faculty}_{program}: the seeder read parts 0-2
-		// and silently ignored anything after a third underscore.
+		// Exactly {university}_{faculty}_{program}: only parts 0-2 carry
+		// meaning; anything after a third underscore would be ignored.
 		expect(file).toMatch(/^[a-z0-9-]+_[a-z0-9-]+_[a-z0-9-]+\.json$/);
 
 		const parts = path.basename(file, '.json').split('_');
@@ -109,7 +109,7 @@ function checkCourseBlock(file: string, courseBlock: any, data: any) {
 	const context = `${file} block ${JSON.stringify(courseBlock.name)}`;
 	expect(typeof courseBlock.name, `${context} name is_string`).toBe('string');
 	expect(isUint(courseBlock.row), `${context} row uint`).toBe(true);
-	// The Blade template only rendered rows 0-2; anything else would vanish.
+	// Only rows 0-2 are rendered; anything else would vanish.
 	expect(courseBlock.row, `${context} row <= 2`).toBeLessThanOrEqual(2);
 	expect(Array.isArray(courseBlock.courses), `${context} courses is_array`).toBe(true);
 

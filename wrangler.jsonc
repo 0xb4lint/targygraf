@@ -8,7 +8,7 @@
 		"binding": "ASSETS",
 		// Serve /pe from /pe.html and /pe/mernokinformatikus from
 		// /pe/mernokinformatikus.html without introducing trailing slashes,
-		// keeping the exact URL shapes of the Laravel site.
+		// keeping the URL shapes the site has always had.
 		"html_handling": "auto-trailing-slash",
 		"not_found_handling": "404-page",
 		// Legacy subdomain URLs must reach the Worker (host-based redirect)
