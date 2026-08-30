@@ -75,7 +75,15 @@ npm run compare-live
 ## Deployment (Cloudflare)
 
 One Worker (`wrangler.jsonc`) serves the static build and handles legacy
-redirects. Initial setup on the `targygraf.hu` zone:
+redirects.
+
+**Test deploy**: `npm run deploy:test` deploys the same Worker under the
+name `targygraf-test` to its workers.dev URL using `wrangler.test.jsonc`,
+which carries no zone routes, so it can never touch production traffic.
+Path URLs work fully there; only the legacy-subdomain redirects need the
+real zone (covered by the Miniflare e2e suite).
+
+Initial setup on the `targygraf.hu` zone:
 
 1. **Build config** (Workers Builds git integration, or CI running
    `npm run deploy`): build command `npm run build`, deploy command

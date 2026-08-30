@@ -1,0 +1,29 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	// Route-free test deploy: serves the site on
+	// https://targygraf-test.<account>.workers.dev without touching the
+	// targygraf.hu zone. Production config (with the zone routes) is
+	// wrangler.jsonc; deploy this one via `npm run deploy:test`.
+	"name": "targygraf-test",
+	"main": "worker/index.ts",
+	"compatibility_date": "2026-08-01",
+	"workers_dev": true,
+	"assets": {
+		"directory": "./dist",
+		"binding": "ASSETS",
+		"html_handling": "auto-trailing-slash",
+		"not_found_handling": "404-page",
+		"run_worker_first": [
+			"/*",
+			"!/assets/*",
+			"!/_astro/*",
+			"!/icon.png",
+			"!/favicon.ico",
+			"!/robots.txt",
+			"!/sitemap.xml"
+		]
+	},
+	"vars": {
+		"BASE_DOMAIN": "targygraf.hu"
+	}
+}

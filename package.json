@@ -12,6 +12,7 @@
     "preview": "npm run gen && astro build && wrangler dev",
     "test": "npm run gen && vitest run",
     "deploy": "npm run build && wrangler deploy",
+    "deploy:test": "npm run build && wrangler deploy --config wrangler.test.jsonc",
     "compare-live": "node scripts/compare-live.mjs"
   },
   "devDependencies": {
