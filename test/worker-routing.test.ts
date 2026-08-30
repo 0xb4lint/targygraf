@@ -100,10 +100,10 @@ describe('worker routing: host-independent statics', () => {
 		});
 	});
 
-	it('keeps serving /__ls-migrate on the legacy origins', () => {
-		expect(decide('https://pe.targygraf.hu/__ls-migrate')).toEqual({
+	it('keeps serving /__migrate on the legacy origins', () => {
+		expect(decide('https://pe.targygraf.hu/__migrate')).toEqual({
 			kind: 'serve',
-			assetPath: '/__ls-migrate',
+			assetPath: '/__migrate',
 		});
 	});
 });

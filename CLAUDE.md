@@ -40,7 +40,7 @@ Read the header comments of `src/lib/data.ts` and
 
 - Site copy is Hungarian; no em-dashes anywhere in copy.
 - URLs are apex paths (`/pe/mernokinformatikus`); the Worker 301s the
-  legacy per-university subdomains, and the ls-migrate iframe bridge
+  legacy per-university subdomains, and the migrate iframe bridge
   carries localStorage over from those origins once per subdomain.
 - Tabs for indentation (see `.editorconfig`); no runtime JS dependencies,
   `targygraf.js` stays dependency-free vanilla.

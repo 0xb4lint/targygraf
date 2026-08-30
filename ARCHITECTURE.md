@@ -32,15 +32,15 @@ The site lives on apex paths; the per-university subdomains it used until
   tipsy.css-compatible DOM.
 - `worker/` – the Cloudflare Worker. Its only job is 301-ing legacy
   subdomain URLs to apex paths while keeping `/assets/*`, the shared
-  static files and the `/__ls-migrate` handoff page served on those
+  static files and the `/__migrate` handoff page served on those
   origins. Apex requests pass straight through to static assets.
-- `public/assets/js/ls-migrate.js` + `public/__ls-migrate.html` – the
+- `public/assets/js/migrate.js` + `public/__migrate.html` – the
   one-time localStorage handoff. localStorage is per-origin, so progress
   saved under the legacy subdomains would otherwise be stranded:
   university and program pages embed a hidden iframe to the matching
-  legacy origin, whose `/__ls-migrate` page posts the stored progress
+  legacy origin, whose `/__migrate` page posts the stored progress
   back, and the receiver merges it into the apex origin. A
-  `lsMigratedFrom_{university}` flag limits this to one successful
+  `migratedFrom_{university}` flag limits this to one successful
   handoff per subdomain; failed attempts retry on a later visit.
 - `scripts/gen-universities.mjs` – generates the subdomain list for the
   worker (runs automatically via npm scripts; gitignored output).

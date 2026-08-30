@@ -9,7 +9,7 @@
 		<script>
 			/*
 			 * Served on the legacy {university}.targygraf.hu origins. When
-			 * embedded by targygraf.hu (see assets/js/ls-migrate.js), it hands
+			 * embedded by targygraf.hu (see assets/js/migrate.js), it hands
 			 * over the progress this origin stored under the old subdomain
 			 * URLs. The target origin is pinned: nothing is ever posted
 			 * anywhere else.
@@ -31,7 +31,7 @@
 
 				window.parent.postMessage(
 					{
-						type: 'targygraf-ls',
+						type: 'targygraf-migrate',
 						coursesFinished: read('coursesFinished'),
 						coursesProcessing: read('coursesProcessing'),
 						creditsOptional: read('creditsOptional')

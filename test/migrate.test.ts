@@ -1,7 +1,7 @@
 /**
  * Tests for the one-time localStorage handoff from the legacy
  * {university}.targygraf.hu origins to targygraf.hu (public/assets/js/
- * ls-migrate.js + public/__ls-migrate.html).
+ * migrate.js + public/__migrate.html).
  */
 import fs from 'node:fs';
 import path from 'node:path';
@@ -11,7 +11,7 @@ import { describe, expect, it } from 'vitest';
 
 const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const MIGRATE_SRC = fs.readFileSync(
-	path.join(REPO_ROOT, 'public/assets/js/ls-migrate.js'),
+	path.join(REPO_ROOT, 'public/assets/js/migrate.js'),
 	'utf8'
 );
 
@@ -42,7 +42,7 @@ function loadApexPage(university: string, existing: Record<string, unknown> = {}
 		window.localStorage.setItem(key, JSON.stringify(value));
 	}
 
-	(window as any).lsMigrateUniversity = university;
+	(window as any).migrateUniversity = university;
 	window.eval(MIGRATE_SRC);
 
 	return {
@@ -55,18 +55,18 @@ function loadApexPage(university: string, existing: Record<string, unknown> = {}
 }
 
 const PAYLOAD = {
-	type: 'targygraf-ls',
+	type: 'targygraf-migrate',
 	coursesFinished: ['AAA111', 'BBB222'],
 	coursesProcessing: ['CCC333'],
 	creditsOptional: 4,
 };
 
-describe('ls-migrate: apex receiver', () => {
+describe('migrate: apex receiver', () => {
 	it('embeds a hidden iframe pointing at the legacy origin', () => {
 		const page = loadApexPage('pe');
 		const frame = page.window.document.querySelector('iframe');
 		expect(frame).not.toBeNull();
-		expect(frame.src).toBe('https://pe.targygraf.hu/__ls-migrate');
+		expect(frame.src).toBe('https://pe.targygraf.hu/__migrate');
 		expect(frame.style.display).toBe('none');
 	});
 
@@ -78,7 +78,7 @@ describe('ls-migrate: apex receiver', () => {
 		expect(JSON.parse(ls.getItem('coursesFinished'))).toEqual(['AAA111', 'BBB222']);
 		expect(JSON.parse(ls.getItem('coursesProcessing'))).toEqual(['CCC333']);
 		expect(JSON.parse(ls.getItem('creditsOptional'))).toBe(4);
-		expect(ls.getItem('lsMigratedFrom_pe')).toBe('1');
+		expect(ls.getItem('migratedFrom_pe')).toBe('1');
 		// The reload (so targygraf.js re-reads storage) surfaces as a jsdom
 		// navigation attempt.
 		expect(page.navigations.length).toBe(1);
@@ -111,12 +111,12 @@ describe('ls-migrate: apex receiver', () => {
 		});
 		page.send('https://pe.targygraf.hu', PAYLOAD);
 
-		expect(page.window.localStorage.getItem('lsMigratedFrom_pe')).toBe('1');
+		expect(page.window.localStorage.getItem('migratedFrom_pe')).toBe('1');
 		expect(page.navigations.length).toBe(0);
 	});
 
 	it('runs at most once per university', () => {
-		const page = loadApexPage('pe', { lsMigratedFrom_pe: 1 });
+		const page = loadApexPage('pe', { migratedFrom_pe: 1 });
 		expect(page.window.document.querySelector('iframe')).toBeNull();
 	});
 
@@ -126,7 +126,7 @@ describe('ls-migrate: apex receiver', () => {
 		page.send('https://bme.targygraf.hu', PAYLOAD); // wrong university
 		page.send('https://pe.targygraf.hu', { type: 'other' });
 		page.send('https://pe.targygraf.hu', {
-			type: 'targygraf-ls',
+			type: 'targygraf-migrate',
 			coursesFinished: 'not-an-array',
 			coursesProcessing: [{ nested: 'object' }],
 			creditsOptional: 'NaN',
@@ -143,13 +143,13 @@ describe('ls-migrate: apex receiver', () => {
 			url: 'https://targygraf.hu/',
 			runScripts: 'outside-only',
 		});
-		dom.window.eval(MIGRATE_SRC); // no lsMigrateUniversity set
+		dom.window.eval(MIGRATE_SRC); // no migrateUniversity set
 		expect(dom.window.document.querySelector('iframe')).toBeNull();
 	});
 });
 
-describe('ls-migrate: legacy origin sender page', () => {
-	const html = fs.readFileSync(path.join(REPO_ROOT, 'public/__ls-migrate.html'), 'utf8');
+describe('migrate: legacy origin sender page', () => {
+	const html = fs.readFileSync(path.join(REPO_ROOT, 'public/__migrate.html'), 'utf8');
 
 	it('pins the postMessage target to https://targygraf.hu', () => {
 		expect(html).toContain("'https://targygraf.hu'");
@@ -159,7 +159,7 @@ describe('ls-migrate: legacy origin sender page', () => {
 	it('is marked noindex and sends nothing when opened directly', () => {
 		expect(html).toContain('name="robots"');
 		const dom = new JSDOM(html, {
-			url: 'https://pe.targygraf.hu/__ls-migrate',
+			url: 'https://pe.targygraf.hu/__migrate',
 			runScripts: 'dangerously',
 		});
 		// window.parent === window at top level, so the script must bail out

@@ -22,7 +22,7 @@
 			"!/favicon.ico",
 			"!/robots.txt",
 			"!/sitemap.xml",
-			"!/__ls-migrate"
+			"!/__migrate"
 		]
 	},
 	"vars": {

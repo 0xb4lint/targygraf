@@ -65,7 +65,7 @@ describe.skipIf(skip)('worker + assets end-to-end (Miniflare)', () => {
 									'/favicon.ico',
 									'/robots.txt',
 									'/sitemap.xml',
-									'/__ls-migrate',
+									'/__migrate',
 								],
 							},
 						},
@@ -133,9 +133,9 @@ describe.skipIf(skip)('worker + assets end-to-end (Miniflare)', () => {
 	});
 
 	it('keeps serving the localStorage handoff page on legacy origins', async () => {
-		const res = await get('https://pe.targygraf.hu/__ls-migrate');
+		const res = await get('https://pe.targygraf.hu/__migrate');
 		expect(res.status).toBe(200);
-		expect(await res.text()).toContain('targygraf-ls');
+		expect(await res.text()).toContain('targygraf-migrate');
 	});
 
 	it('normalizes trailing slashes', async () => {

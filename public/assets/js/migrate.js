@@ -5,24 +5,24 @@
  * Until 2026 the site lived on per-university subdomains and stored progress
  * under those origins. After the move to apex paths that localStorage would
  * be unreachable, so university and program pages embed a hidden iframe
- * pointing at https://{university}.targygraf.hu/__ls-migrate (a path the
+ * pointing at https://{university}.targygraf.hu/__migrate (a path the
  * redirect layer intentionally leaves alone). That page posts the stored
  * values back here and this script merges them into the apex origin's
  * localStorage, then reloads so the unmodified targygraf.js picks them up.
  *
- * The lsMigratedFrom_{university} flag makes this run once per subdomain:
+ * The migratedFrom_{university} flag makes this run once per subdomain:
  * it is set on a successful handoff, so a failed attempt (offline, or the
  * legacy origin not serving the page yet) retries on a later visit.
  */
 (function () {
 	'use strict';
 
-	var university = window.lsMigrateUniversity;
+	var university = window.migrateUniversity;
 	if (!university || window.top !== window) {
 		return;
 	}
 
-	var FLAG_KEY = 'lsMigratedFrom_' + university;
+	var FLAG_KEY = 'migratedFrom_' + university;
 	var SOURCE_ORIGIN = 'https://' + university + '.targygraf.hu';
 	var ARRAY_KEYS = ['coursesFinished', 'coursesProcessing'];
 	var MAX_ITEMS = 5000;
@@ -87,7 +87,7 @@
 	var frame = document.createElement('iframe');
 	frame.style.display = 'none';
 	frame.setAttribute('aria-hidden', 'true');
-	frame.src = SOURCE_ORIGIN + '/__ls-migrate';
+	frame.src = SOURCE_ORIGIN + '/__migrate';
 
 	function cleanup() {
 		if (frame.parentNode) {
@@ -100,7 +100,7 @@
 			return;
 		}
 		var data = event.data;
-		if (!data || data.type !== 'targygraf-ls') {
+		if (!data || data.type !== 'targygraf-migrate') {
 			return;
 		}
 
