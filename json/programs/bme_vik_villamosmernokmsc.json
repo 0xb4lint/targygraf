@@ -1,0 +1,912 @@
+{
+    "name": "Villamosmérnök MSc",
+    "description": "Villamosmérnöki MSc szak - nappali tagozat tanterve, tavaszi kezdéssel",
+    "curriculum_updated_at": "2023-02-01",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "Felsőbb matematika villamosmérnököknek",
+                    "credits": 5,
+                    "course_block_references": [
+                        "Felsőbb matematika"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Közös tantárgy",
+                    "credits": 5,
+                    "course_block_references": [
+                        "Közös tantárgyak"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható gazdasági-humán tárgy 1",
+                    "credits": 2,
+                    "course_block_references": [
+                        "Kötelezően választható gazdasági-humán tárgyak"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható gazdasági-humán tárgy 2",
+                    "credits": 2,
+                    "course_block_references": [
+                        "Kötelezően választható gazdasági-humán tárgyak"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Főspecializáció A1 tantárgy",
+                    "credits": 5,
+                    "course_block_references": [
+                        "Elektronikai rendszerintegráció főspecializáció",
+                        "Intelligens beágyazott rendszerek főspecializáció",
+                        "Intelligens hálózatok főspecializáció",
+                        "Irányító és látórendszerek főspecializáció",
+                        "Számítógép-alapú rendszerek főspecializáció",
+                        "Vezetéknélküli kommunikációs rendszerek főspecializáció",
+                        "Villamosenergia-rendszerek főspecializáció"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Mellékspecializáció A tantárgy",
+                    "credits": 5,
+                    "course_block_references": [
+                        "Akusztika és hangtechnika mellékspecializáció",
+                        "Alkalmazott elektronika mellékspecializáció",
+                        "Alkalmazott szenzorika mellékspecializáció",
+                        "E-mobilitás mellékspecializáció",
+                        "Épületvillamosság mellékspecializáció",
+                        "FPGA alapú rendszerek mellékspecializáció",
+                        "Nukleáris rendszertechnika mellékspecializáció",
+                        "Okos város mellékspecializáció",
+                        "Rádiófrekvenciás zavarvédelem – EMC mellékspecializáció",
+                        "Robotrendszerek mellékspecializáció",
+                        "Zöld villamos energetika mellékspecializáció"
+                    ]
+                },
+                {
+                    "code": "VI__ML12",
+                    "name": "Önálló laboratórium",
+                    "credits": 5
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "Felsőbb matematika villamosmérnököknek",
+                    "credits": 5,
+                    "course_block_references": [
+                        "Felsőbb matematika"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Választható természettudományos tantárgy",
+                    "credits": 5,
+                    "course_block_references": [
+                        "Választható természettudományos tantárgyak"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Főspecializáció A1 labor",
+                    "credits": 5,
+                    "course_block_references": [
+                        "Elektronikai rendszerintegráció főspecializáció",
+                        "Intelligens beágyazott rendszerek főspecializáció",
+                        "Intelligens hálózatok főspecializáció",
+                        "Irányító és látórendszerek főspecializáció",
+                        "Számítógép-alapú rendszerek főspecializáció",
+                        "Vezetéknélküli kommunikációs rendszerek főspecializáció",
+                        "Villamosenergia-rendszerek főspecializáció"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Főspecializáció A2 tantárgy",
+                    "credits": 5,
+                    "course_block_references": [
+                        "Elektronikai rendszerintegráció főspecializáció",
+                        "Intelligens beágyazott rendszerek főspecializáció",
+                        "Intelligens hálózatok főspecializáció",
+                        "Irányító és látórendszerek főspecializáció",
+                        "Számítógép-alapú rendszerek főspecializáció",
+                        "Vezetéknélküli kommunikációs rendszerek főspecializáció",
+                        "Villamosenergia-rendszerek főspecializáció"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Mellékspecializáció B tantárgy",
+                    "credits": 5,
+                    "course_block_references": [
+                        "Akusztika és hangtechnika mellékspecializáció",
+                        "Alkalmazott elektronika mellékspecializáció",
+                        "Alkalmazott szenzorika mellékspecializáció",
+                        "E-mobilitás mellékspecializáció",
+                        "Épületvillamosság mellékspecializáció",
+                        "FPGA alapú rendszerek mellékspecializáció",
+                        "Nukleáris rendszertechnika mellékspecializáció",
+                        "Okos város mellékspecializáció",
+                        "Rádiófrekvenciás zavarvédelem – EMC mellékspecializáció",
+                        "Robotrendszerek mellékspecializáció",
+                        "Zöld villamos energetika mellékspecializáció"
+                    ]
+                },
+                {
+                    "code": "VI__ML13",
+                    "name": "Önálló laboratórium",
+                    "credits": 5
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "Főspecializáció A2 labor",
+                    "credits": 5,
+                    "course_block_references": [
+                        "Elektronikai rendszerintegráció főspecializáció",
+                        "Intelligens beágyazott rendszerek főspecializáció",
+                        "Intelligens hálózatok főspecializáció",
+                        "Irányító és látórendszerek főspecializáció",
+                        "Számítógép-alapú rendszerek főspecializáció",
+                        "Vezetéknélküli kommunikációs rendszerek főspecializáció",
+                        "Villamosenergia-rendszerek főspecializáció"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Főspecializáció B tantárgy",
+                    "credits": 5,
+                    "course_block_references": [
+                        "Elektronikai rendszerintegráció főspecializáció",
+                        "Intelligens beágyazott rendszerek főspecializáció",
+                        "Intelligens hálózatok főspecializáció",
+                        "Irányító és látórendszerek főspecializáció",
+                        "Számítógép-alapú rendszerek főspecializáció",
+                        "Vezetéknélküli kommunikációs rendszerek főspecializáció",
+                        "Villamosenergia-rendszerek főspecializáció"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Főspecializáció C tantárgy",
+                    "credits": 5,
+                    "course_block_references": [
+                        "C-típusú tantárgyak"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Mellékspecializáció A labor",
+                    "credits": 4,
+                    "course_block_references": [
+                        "Akusztika és hangtechnika mellékspecializáció",
+                        "Alkalmazott elektronika mellékspecializáció",
+                        "Alkalmazott szenzorika mellékspecializáció",
+                        "E-mobilitás mellékspecializáció",
+                        "Épületvillamosság mellékspecializáció",
+                        "FPGA alapú rendszerek mellékspecializáció",
+                        "Nukleáris rendszertechnika mellékspecializáció",
+                        "Okos város mellékspecializáció",
+                        "Rádiófrekvenciás zavarvédelem – EMC mellékspecializáció",
+                        "Robotrendszerek mellékspecializáció",
+                        "Zöld villamos energetika mellékspecializáció"
+                    ]
+                },
+                {
+                    "code": "VI__MT12",
+                    "name": "Diplomatervezés",
+                    "credits": 10
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható tárgy 1",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "VITMMB03",
+                    "name": "Mérnöki menedzsment",
+                    "credits": 4
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható gazdasági-humán tárgy 3",
+                    "credits": 2,
+                    "course_block_references": [
+                        "Kötelezően választható gazdasági-humán tárgyak"
+                    ]
+                },
+                {
+                    "code": "VI__MT13",
+                    "name": "Diplomatervezés",
+                    "credits": 20
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható tárgy 2",
+                    "credits": 2
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható tárgy 3",
+                    "credits": 2
+                },
+                {
+                    "code": "VI__MS01",
+                    "name": "Szakmai gyakorlat",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "Felsőbb matematika",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "TE90MX78",
+                    "name": "Haladó lineáris algebra",
+                    "credits": 5
+                },
+                {
+                    "code": "VISZMA09",
+                    "name": "Kombinatorikus optimalizálás",
+                    "credits": 5
+                },
+                {
+                    "code": "TE90MX80",
+                    "name": "Sztochasztika",
+                    "credits": 5
+                },
+                {
+                    "code": "TE90MX79",
+                    "name": "Analízis",
+                    "credits": 5
+                }
+            ]
+        },
+        {
+            "name": "Választható természettudományos tantárgyak",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "TE15MX81",
+                    "name": "Fizika 3 – Modern fizika villamosmérnököknek",
+                    "credits": 5
+                },
+                {
+                    "code": "VIHVMA19",
+                    "name": "Elektromágneses terek",
+                    "credits": 5
+                },
+                {
+                    "code": "VIETMA13",
+                    "name": "Fotonikai eszközök",
+                    "credits": 5
+                },
+                {
+                    "code": "VIHIMA18",
+                    "name": "Kvantuminformatika és -kommunikáció",
+                    "credits": 5
+                },
+                {
+                    "code": "VIETMA14",
+                    "name": "Nanotudomány",
+                    "credits": 5
+                },
+                {
+                    "code": "VIVEMA19",
+                    "name": "Villamos szigetelések és kisülések",
+                    "credits": 5
+                }
+            ]
+        },
+        {
+            "name": "Közös tantárgyak",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VIHVMA18",
+                    "name": "Hírközléselmélet",
+                    "credits": 5
+                },
+                {
+                    "code": "VIMIMA23",
+                    "name": "Méréselmélet",
+                    "credits": 5
+                },
+                {
+                    "code": "VIETMA12",
+                    "name": "Minőségbiztosítás a mikroelektronikában",
+                    "credits": 5
+                },
+                {
+                    "code": "VIIIMA20",
+                    "name": "Szoftvertervezés",
+                    "credits": 5
+                },
+                {
+                    "code": "VIVEMA27",
+                    "name": "Nagyfeszültségű technika és rendszermenedzsment",
+                    "credits": 5
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választható gazdasági-humán tárgyak",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "GT35M004",
+                    "name": "Befektetések",
+                    "credits": 2
+                },
+                {
+                    "code": "GT41MS01",
+                    "name": "Érvelés, tárgyalás, meggyőzés",
+                    "credits": 2
+                },
+                {
+                    "code": "GT55M005",
+                    "name": "Információs társadalom joga",
+                    "credits": 2
+                },
+                {
+                    "code": "GT20M002",
+                    "name": "Minőségmenedzsment",
+                    "credits": 2
+                },
+                {
+                    "code": "GT20M400",
+                    "name": "Projektmenedzsment",
+                    "credits": 2
+                },
+                {
+                    "code": "GT55M002",
+                    "name": "Vállalati jog",
+                    "credits": 2
+                },
+                {
+                    "code": "GT35M005",
+                    "name": "Vezetői számvitel",
+                    "credits": 2
+                },
+                {
+                    "code": "VITMAK50",
+                    "name": "Pénzügyi technológiák (FinTech) alapjai",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "Elektronikai rendszerintegráció főspecializáció",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VIEEMA09",
+                    "name": "Chiptervezés",
+                    "credits": 5
+                },
+                {
+                    "code": "VIEEMA10",
+                    "name": "Chiptervezés laboratórium",
+                    "credits": 5
+                },
+                {
+                    "code": "VIETMA11",
+                    "name": "Elektronikai rendszerek vizsgálati módszerei",
+                    "credits": 5
+                },
+                {
+                    "code": "VIETMB02",
+                    "name": "Elektronikai rendszerek vizsgálata laboratórium",
+                    "credits": 5
+                },
+                {
+                    "code": "VIEEMB02",
+                    "name": "Heterogén integráció a mikroelektronikában",
+                    "credits": 5
+                }
+            ]
+        },
+        {
+            "name": "Intelligens beágyazott rendszerek főspecializáció",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VIMIMA20",
+                    "name": "Érzékelők és jelfeldolgozás",
+                    "credits": 5
+                },
+                {
+                    "code": "VIMIMA21",
+                    "name": "Intelligens beágyazott rendszerek laboratórium",
+                    "credits": 5
+                },
+                {
+                    "code": "VIMIMA22",
+                    "name": "Beágyazott mesterséges intelligencia",
+                    "credits": 5
+                },
+                {
+                    "code": "VIMIMB05",
+                    "name": "Beágyazott mesterséges intelligencia laboratórium",
+                    "credits": 5
+                },
+                {
+                    "code": "VIMIMB06",
+                    "name": "Adatfeldolgozó alkalmazások",
+                    "credits": 5
+                }
+            ]
+        },
+        {
+            "name": "Intelligens hálózatok főspecializáció",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VITMMA14",
+                    "name": "Felhőszolgáltatások intelligens eszközök támogatására",
+                    "credits": 5
+                },
+                {
+                    "code": "VITMMB06",
+                    "name": "Felhőszolgáltatások laboratórium",
+                    "credits": 5
+                },
+                {
+                    "code": "VIHIMA16",
+                    "name": "Fejlett mobil- és vezetéknélküli hálózatok",
+                    "credits": 5
+                },
+                {
+                    "code": "VIHIMB11",
+                    "name": "Fejlett mobil- és vezetéknélküli hálózatok laboratórium",
+                    "credits": 5
+                },
+                {
+                    "code": "VIHIMB04",
+                    "name": "Hálózatok tervezése és üzemeltetése",
+                    "credits": 5
+                }
+            ]
+        },
+        {
+            "name": "Irányító és látórendszerek főspecializáció",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VIIIMA17",
+                    "name": "Dinamikus rendszerek modellezése és szimulációja",
+                    "credits": 5
+                },
+                {
+                    "code": "VIIIMA18",
+                    "name": "Irányítórendszerek laboratórium",
+                    "credits": 5
+                },
+                {
+                    "code": "VIIIMA19",
+                    "name": "Számítógépes látórendszerek",
+                    "credits": 5
+                },
+                {
+                    "code": "VIIIMB05",
+                    "name": "Látórendszerek laboratórium",
+                    "credits": 5
+                },
+                {
+                    "code": "VIIIMB06",
+                    "name": "Mesterséges intelligencia alapú irányítások",
+                    "credits": 5
+                }
+            ]
+        },
+        {
+            "name": "Számítógép-alapú rendszerek főspecializáció",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VIAUMA18",
+                    "name": "Nagyteljesítményű mikrokontrollerek és interfészek",
+                    "credits": 5
+                },
+                {
+                    "code": "VIAUMA17",
+                    "name": "Nagyteljesítményű mikrokontrollerek és interfészek laboratórium",
+                    "credits": 5
+                },
+                {
+                    "code": "VIAUMA16",
+                    "name": "Robotirányítás rendszertechnikája",
+                    "credits": 5
+                },
+                {
+                    "code": "VIAUMB05",
+                    "name": "Robotirányítás rendszertechnikája laboratórium",
+                    "credits": 5
+                },
+                {
+                    "code": "VIAUMB06",
+                    "name": "Beágyazott operációs rendszerek",
+                    "credits": 5
+                }
+            ]
+        },
+        {
+            "name": "Vezetéknélküli kommunikációs rendszerek főspecializáció",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VIHVMA17",
+                    "name": "Mikrohullámú áramkörök",
+                    "credits": 5
+                },
+                {
+                    "code": "VIHVMA16",
+                    "name": "Mikrohullámú áramkörök laboratórium",
+                    "credits": 5
+                },
+                {
+                    "code": "VIHVMA15",
+                    "name": "Antennák és hullámterjedés",
+                    "credits": 5
+                },
+                {
+                    "code": "VIHVMB08",
+                    "name": "Antennák és hullámterjedés laboratórium",
+                    "credits": 5
+                },
+                {
+                    "code": "VITMMB08",
+                    "name": "Szélessávú kommunikációs rendszerek és alkalmazások",
+                    "credits": 5
+                }
+            ]
+        },
+        {
+            "name": "Villamosenergia-rendszerek főspecializáció",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VIVEMA15",
+                    "name": "Villamosenergia-rendszer üzeme és irányítása",
+                    "credits": 5
+                },
+                {
+                    "code": "VIVEMA16",
+                    "name": "Villamosenergia-rendszerek laboratórium 1",
+                    "credits": 5
+                },
+                {
+                    "code": "VIVEMA17",
+                    "name": "Védelmi rendszerek és méréstechnika",
+                    "credits": 5
+                },
+                {
+                    "code": "VIVEMB03",
+                    "name": "Villamosenergia-rendszerek laboratórium 2",
+                    "credits": 5
+                },
+                {
+                    "code": "VIVEMB04",
+                    "name": "Hálózati tranziensek",
+                    "credits": 5
+                }
+            ]
+        },
+        {
+            "name": "C-típusú tantárgyak",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VIAUMB07",
+                    "name": "Alkalmazásfejlesztés",
+                    "credits": 5
+                },
+                {
+                    "code": "VIEEMB03",
+                    "name": "Nanoelektronika, nanotechnológia",
+                    "credits": 5
+                },
+                {
+                    "code": "VIETMB03",
+                    "name": "Korszerű fejlesztési folyamatok menedzsmentje",
+                    "credits": 5
+                },
+                {
+                    "code": "VIHIMB05",
+                    "name": "Kommunikációs hálózatok teljesítményének elemzése",
+                    "credits": 5
+                },
+                {
+                    "code": "VIHVMB09",
+                    "name": "Mikrohullámú távérzékelés",
+                    "credits": 5
+                },
+                {
+                    "code": "VIIIMB07",
+                    "name": "Nemlineáris és robusztus irányítások",
+                    "credits": 5
+                },
+                {
+                    "code": "VIMIMB07",
+                    "name": "Biztonságkritikus beágyazott rendszerek",
+                    "credits": 5
+                },
+                {
+                    "code": "VISZMA08",
+                    "name": "Véges matematika villamosmérnököknek",
+                    "credits": 5
+                },
+                {
+                    "code": "VITMMB07",
+                    "name": "Rádiós helymeghatározási technológiák",
+                    "credits": 5
+                },
+                {
+                    "code": "VIVEMB05",
+                    "name": "Villamosenergia-piac",
+                    "credits": 5
+                }
+            ]
+        },
+        {
+            "name": "Akusztika és hangtechnika mellékspecializáció",
+            "row": 2,
+            "courses": [
+                {
+                    "code": "VIHIMA19",
+                    "name": "Akusztika",
+                    "credits": 5
+                },
+                {
+                    "code": "VIHIMA20",
+                    "name": "Hangtechnika",
+                    "credits": 5
+                },
+                {
+                    "code": "VIHIMB06",
+                    "name": "Akusztika és hangtechnika laboratórium",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "Alkalmazott elektronika mellékspecializáció",
+            "row": 2,
+            "courses": [
+                {
+                    "code": "VIAUMA19",
+                    "name": "Elektronikus tápegységek",
+                    "credits": 5
+                },
+                {
+                    "code": "VIAUMA20",
+                    "name": "Teljesítményátalakítók irányítása",
+                    "credits": 5
+                },
+                {
+                    "code": "VIAUMB08",
+                    "name": "Teljesítményelektronika laboratórium",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "Alkalmazott szenzorika mellékspecializáció",
+            "row": 2,
+            "courses": [
+                {
+                    "code": "VIETMA15",
+                    "name": "Szenzorok rendszertechnikája",
+                    "credits": 5
+                },
+                {
+                    "code": "VIETMA16",
+                    "name": "Bio- és nanoszenzorika",
+                    "credits": 5
+                },
+                {
+                    "code": "VIETMB04",
+                    "name": "Alkalmazott szenzorika laboratórium",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "E-mobilitás mellékspecializáció",
+            "row": 2,
+            "courses": [
+                {
+                    "code": "VIVEMA20",
+                    "name": "Korszerű villamos gépek és hajtások",
+                    "credits": 5
+                },
+                {
+                    "code": "VIVEMA21",
+                    "name": "Elektromos és hibrid járművek",
+                    "credits": 5
+                },
+                {
+                    "code": "VIVEMB06",
+                    "name": "E-mobilitás laboratórium",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "Épületvillamosság mellékspecializáció",
+            "row": 2,
+            "courses": [
+                {
+                    "code": "VIVEMA22",
+                    "name": "Intelligens épületek és világítási rendszerek",
+                    "credits": 5
+                },
+                {
+                    "code": "VIVEMA23",
+                    "name": "Épületvillamossági számítógépes tervezés",
+                    "credits": 5
+                },
+                {
+                    "code": "VIVEMB07",
+                    "name": "Épületvillamosság laboratórium",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "FPGA alapú rendszerek mellékspecializáció",
+            "row": 2,
+            "courses": [
+                {
+                    "code": "VIMIMA24",
+                    "name": "FPGA alapú rendszerek fejlesztése",
+                    "credits": 5
+                },
+                {
+                    "code": "VIMIMA25",
+                    "name": "Heterogén SoC rendszerek",
+                    "credits": 5
+                },
+                {
+                    "code": "VIMIMB08",
+                    "name": "FPGA tervezői laboratórium",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "Nukleáris rendszertechnika mellékspecializáció",
+            "row": 2,
+            "courses": [
+                {
+                    "code": "TE80MX00",
+                    "name": "Mag- és reaktorfizikai alapismeretek",
+                    "credits": 5
+                },
+                {
+                    "code": "TE80MV03",
+                    "name": "Atomerőművek termohidraulikája",
+                    "credits": 5
+                },
+                {
+                    "code": "VIMIMA30",
+                    "name": "Kritikus beágyazott rendszerek",
+                    "credits": 5
+                },
+                {
+                    "code": "TE80MV04",
+                    "name": "Atomerőművi szimulációs gyakorlatok",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "Okos város mellékspecializáció",
+            "row": 2,
+            "courses": [
+                {
+                    "code": "VITMMA15",
+                    "name": "Okos városok infokommunikációs technológiái",
+                    "credits": 5
+                },
+                {
+                    "code": "VITMMA16",
+                    "name": "Okosváros szolgáltatások és alkalmazások",
+                    "credits": 5
+                },
+                {
+                    "code": "VITMMB09",
+                    "name": "Okos város laboratórium",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "Rádiófrekvenciás zavarvédelem – EMC mellékspecializáció",
+            "row": 2,
+            "courses": [
+                {
+                    "code": "VIHVMA20",
+                    "name": "Rádiófrekvenciás és EMC méréstechnika",
+                    "credits": 5
+                },
+                {
+                    "code": "VIHVMA21",
+                    "name": "Rádiófrekvenciás jelenségek és eszközök modellezése",
+                    "credits": 5
+                },
+                {
+                    "code": "VIHVMB10",
+                    "name": "Rádiófrekvenciás és EMC laboratórium",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "Robotrendszerek mellékspecializáció",
+            "row": 2,
+            "courses": [
+                {
+                    "code": "VIIIMA21",
+                    "name": "Robotkarok és mobilis robotok",
+                    "credits": 5
+                },
+                {
+                    "code": "VIIIMA22",
+                    "name": "Multiágensű robotrendszerek irányítása",
+                    "credits": 5
+                },
+                {
+                    "code": "VIIIMB08",
+                    "name": "Robotrendszerek laboratórium",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "Zöld villamos energetika mellékspecializáció",
+            "row": 2,
+            "courses": [
+                {
+                    "code": "VIEEMA11",
+                    "name": "Zöld villamosenergia-termelés",
+                    "credits": 5
+                },
+                {
+                    "code": "VIVEMA24",
+                    "name": "Megújulóenergia-menedzsment",
+                    "credits": 5
+                },
+                {
+                    "code": "VIEEMB04",
+                    "name": "Zöld energetika laboratórium",
+                    "credits": 4
+                }
+            ]
+        }
+    ]
+}

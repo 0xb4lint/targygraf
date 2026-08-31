@@ -17,6 +17,41 @@ The site lives on apex paths; the per-university subdomains it used until
 | `pe.targygraf.hu`                      | `targygraf.hu/pe`                    |
 | `pe.targygraf.hu/mernokinformatikus`   | `targygraf.hu/pe/mernokinformatikus` |
 
+### Program slug versioning
+
+A program keeps one slug per curriculum, and **the slug without a year is
+always the current one**; superseded curricula take a year suffix:
+
+```
+/bme/mernok-informatikus        2024-09-01, the curriculum in force
+/bme/mernok-informatikus2022    2022 intake
+/bme/mernok-informatikus2014    2014 intake
+/bme/mernok-informatikus2013    pre-2014 intake
+```
+
+The `name` field follows the slug: the current curriculum carries the plain
+programme name (`Mérnökinformatikus`) and the archived ones name their intake
+(`Mérnökinformatikus (2022-től felvetteknek)`), so the program selector reads
+as one current entry plus its history.
+
+Publishing a new curriculum therefore *renames* the previous file and gives
+the bare slug to the new one, rather than parking the newest behind a year.
+The most-linked and best-indexed URL then always answers the question almost
+every visitor is actually asking. The cost is that the bare slug's content
+moves over time, so a student who wants a link that keeps pointing at *their*
+curriculum should use the year-suffixed one.
+
+Two caveats:
+
+- There is no per-program redirect (the Worker's legacy map is frozen at
+  migration time, see `worker/routing.ts`), so renaming a slug that is already
+  deployed turns it into a 404. Renumbering is safe when the bare slug keeps
+  existing and only never-deployed slugs disappear.
+- `bme_vik_mernok-informatikusmsc2023` is the one program that does not follow
+  the rule: it is the newest (and only) curriculum of its family, but it
+  shipped with the year in its slug, and dropping the suffix would 404 the
+  live URL. Fixing it needs a redirect first.
+
 ## Layout
 
 - `src/lib/data.ts` – the build-time data loader (slug parsing, padded ids,

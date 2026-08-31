@@ -539,7 +539,7 @@ describe.skipIf(skip)('hover interactions', () => {
 });
 
 describe.skipIf(skip)('every program page boots the frontend cleanly', () => {
-	it('initializes all 89 pages without errors', async () => {
+	it('initializes all 109 pages without errors', async () => {
 		for (const university of dataset.universities) {
 			for (const faculty of university.faculties) {
 				for (const program of faculty.programs) {

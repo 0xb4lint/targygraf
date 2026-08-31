@@ -35,6 +35,36 @@ tárgy.
    dátumára (`ÉÉÉÉ-HH-NN`).
 4. Nyiss pull requestet.
 
+## Új évfolyam tanterve
+
+Ha egy szakon új tanterv indul, a régi nem tűnik el: mindkettő megmarad, külön
+oldalon. Az elnevezés szabálya, hogy **az évszám nélküli fájlnév mindig a
+legfrissebb tantervé**, a korábbiak pedig évszámot kapnak a nevük végére:
+
+```
+bme_vik_mernok-informatikus.json       <- a mindenkori legfrissebb
+bme_vik_mernok-informatikus2022.json   <- korábbi évfolyamok
+bme_vik_mernok-informatikus2014.json
+```
+
+Így a `targygraf.hu/bme/mernok-informatikus` cím mindig az aktuális tantervet
+mutatja, a legtöbb látogatónak ugyanis ez a jó válasz.
+
+Új tanterv felvitele tehát két lépés:
+
+1. Nevezd át a jelenlegi, évszám nélküli fájlt: tedd a végére annak az évnek a
+   számát, amelytől az a tanterv érvényes volt (például
+   `bme_vik_villamosmernok.json` -> `bme_vik_villamosmernok2022.json`).
+2. Az új tantervet vidd fel évszám nélküli néven.
+
+A `name` mezőt is igazítsd hozzá: az évszám nélküli fájlban a szak sima neve
+áll (`"Villamosmérnök"`), az évszámosokban pedig az évfolyam is
+(`"Villamosmérnök (2022-től felvetteknek)"`). A szakválasztóban ez a név
+látszik, így rögtön látni, melyik az aktuális tanterv.
+
+Figyelem: az átnevezés megváltoztatja a régi tanterv URL-jét, és a régi címre
+nincs átirányítás. Csak akkor nevezz át, ha tényleg új tanterv lép életbe.
+
 ## Új kar vagy szak felvétele
 
 **Új szak** egy már meglévő karhoz:
@@ -203,7 +233,8 @@ kötelezően választható tárgycsoportok).
     "credits": 2,
     "prerequisites": [
         "___75___"                      // ___20___, ___40___, ___45___, ___50___,
-    ]                                   // ___75___, ___120___, ___130___ használható
+    ]                                   // ___75___, ___120___, ___130___,
+                                        // ___150___ használható
 }
 ```
 

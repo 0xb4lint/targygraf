@@ -177,24 +177,55 @@
 	////////////////////////////
 	// INITIAL VIEW FUNCTIONS //
 	////////////////////////////
-	function setBodyMinWidth() {
-		var semesterBlocks = all('.content[data-specialis="0"] .course-block').length;
-		var specialBlocks = all('.content[data-specialis="1"] .course-block').length;
+	// Each .content row is its own horizontal scroller (see style.css), so the
+	// widest row no longer decides how wide the document is; the page chrome
+	// stays centred in the viewport. A row that overflows starts at its first
+	// column, which is what you want for the semesters -- but the specialization
+	// rows have no reading order, so those open centred on their middle column.
+	function centerOverflowingRows() {
+		all('.content[data-specialis="1"]').forEach(function (row) {
+			var slack = row.scrollWidth - row.clientWidth;
+			if (slack > 0) {
+				row.scrollLeft = Math.round(slack / 2);
+			}
+		});
+	}
 
-		// Pages without a graph (home, university) are responsive; only the
-		// program pages need the fixed-width canvas.
-		if (!(semesterBlocks + specialBlocks)) {
+	// The legend shows itself once so a first-time visitor reads the colours,
+	// then folds into the swatch chip in the corner. Clicking the chip unfolds
+	// it again. It deliberately does not open on hover: you have to hover the
+	// chip in order to click it, so the legend would already be showing when
+	// the click landed and the toggle would look dead.
+	var HELP_INTRO_MS = 3000;
+
+	function setHelpCollapsed(collapsed) {
+		var help = document.querySelector('.help');
+		if (!help) {
+			return;
+		}
+		help.classList.toggle('help-collapsed', collapsed);
+		var toggle = help.querySelector('.help-toggle');
+		if (toggle) {
+			toggle.setAttribute('aria-expanded', collapsed ? 'false' : 'true');
+		}
+	}
+
+	function enableHelpToggle() {
+		var help = document.querySelector('.help');
+		var toggle = help && help.querySelector('.help-toggle');
+		if (!toggle) {
 			return;
 		}
 
-		var sumWidth = Math.max(semesterBlocks, specialBlocks) * 146;
+		setHelpCollapsed(false);
+		var introTimer = window.setTimeout(function () {
+			setHelpCollapsed(true);
+		}, HELP_INTRO_MS);
 
-		var help = document.querySelector('main .help');
-		if (help) {
-			sumWidth += help.getBoundingClientRect().width * 2;
-		}
-
-		document.body.style.minWidth = sumWidth + 'px';
+		toggle.addEventListener('click', function () {
+			window.clearTimeout(introTimer);
+			setHelpCollapsed(!help.classList.contains('help-collapsed'));
+		});
 	}
 
 	function setCourseBlocksTitleHeight() {
@@ -501,14 +532,48 @@
 		})[0] || null;
 	}
 
+	// Rows scroll on their own, so a highlighted block can sit outside the
+	// visible part of its row. Nudge it in -- the minimum distance, and only
+	// when it is actually off-view, so hovering never yanks a settled row.
+	// The scroll is instant on purpose: `behavior: 'smooth'` is silently
+	// dropped on these containers in Chrome, which left the block half cut off.
+	function revealInRow(block) {
+		var row = block.closest('.content');
+		if (!row || row.scrollWidth <= row.clientWidth) {
+			return;
+		}
+
+		var blockBox = block.getBoundingClientRect();
+		var rowBox = row.getBoundingClientRect();
+		var delta = 0;
+		if (blockBox.left < rowBox.left) {
+			delta = blockBox.left - rowBox.left - 8;
+		} else if (blockBox.right > rowBox.right) {
+			delta = blockBox.right - rowBox.right + 8;
+		}
+		if (!delta) {
+			return;
+		}
+
+		// An absolute target stays correct if the same block is revealed twice.
+		var target = Math.max(0, Math.min(row.scrollWidth - row.clientWidth, row.scrollLeft + delta));
+		row.scrollLeft = target;
+	}
+
 	function showCourseBlockReferences(el, show) {
+		var first = null;
 		referencedBlocksAttr(el).split(',').forEach(function (id) {
 			var block = courseBlockById(id);
 			if (block) {
 				block.style.zIndex = show ? '101' : '';
 				block.style.backgroundColor = show ? 'white' : '';
+				first = first || block;
 			}
 		});
+
+		if (show && first) {
+			revealInRow(first);
+		}
 	}
 
 	function markReferencedCourseBlocks() {
@@ -943,7 +1008,8 @@
 	Targygraf.init = function () {
 		window.console.log('Szekeres Bálint - https://targygraf.hu - https://b4lint.hu');
 
-		setBodyMinWidth();
+		centerOverflowingRows();
+		enableHelpToggle();
 		setCourseBlocksTitleHeight();
 		markCoursesWithoutSequel();
 

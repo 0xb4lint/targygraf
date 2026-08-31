@@ -41,6 +41,7 @@ export const DUMMY_CREDIT_COURSE_CODES = [
 	'___75___',
 	'___120___',
 	'___130___',
+	'___150___',
 ] as const;
 
 export const OPTIONAL_COURSE_CODE = '___OPTIONAL___';

@@ -1,0 +1,498 @@
+{
+    "name": "Gépészmérnök - Áramlás- és folyamattechnika specializáció",
+    "description": "Gépészmérnök BSc szak - Áramlás- és folyamattechnika specializáció, nappali tagozat tanterve",
+    "curriculum_updated_at": "2025-09-01",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "GEVGBG10",
+                    "name": "Gépészmérnöki alapismeretek",
+                    "credits": 5
+                },
+                {
+                    "code": "TE93BG01",
+                    "name": "Matematika G1",
+                    "credits": 6
+                },
+                {
+                    "code": "GEMIBSKPYTH-01",
+                    "name": "Programozás Python nyelven",
+                    "credits": 4
+                },
+                {
+                    "code": "VEKFBXMK",
+                    "name": "Műszaki kémia",
+                    "credits": 3
+                },
+                {
+                    "code": "GEMMBXM1",
+                    "name": "Statika",
+                    "credits": 4
+                },
+                {
+                    "code": "GEGIBXGA",
+                    "name": "Gépszerkesztés alapjai",
+                    "credits": 5
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható tantárgy 1",
+                    "credits": 4
+                },
+                {
+                    "code": "TEMIBsGMIFM-00",
+                    "name": "Matematika ismeretfelmérés",
+                    "credits": 0
+                },
+                {
+                    "code": "GT70BS1A",
+                    "name": "Testnevelés 1",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "TE93BG02",
+                    "name": "Matematika G2",
+                    "credits": 6,
+                    "prerequisites": [
+                        "(TE93BG01)"
+                    ]
+                },
+                {
+                    "code": "GEMMBXN2",
+                    "name": "Szilárdságtan",
+                    "credits": 4,
+                    "prerequisites": [
+                        "TE93BG01",
+                        "GEMMBXM1"
+                    ]
+                },
+                {
+                    "code": "GEMTBGA1",
+                    "name": "Anyagszerkezettan és anyagvizsgálat",
+                    "credits": 6
+                },
+                {
+                    "code": "GEGIBSKCALA-01",
+                    "name": "CAD labor",
+                    "credits": 4,
+                    "prerequisites": [
+                        "GEGIBXGA"
+                    ]
+                },
+                {
+                    "code": "GEMIBSKMATL-01",
+                    "name": "MATLAB mérnöki alkalmazásai",
+                    "credits": 3,
+                    "prerequisites": [
+                        "GEMIBSKPYTH-01",
+                        "(TE93BG01)"
+                    ]
+                },
+                {
+                    "code": "GEMIBSKMERT-01",
+                    "name": "Méréstechnika",
+                    "credits": 4,
+                    "prerequisites": [
+                        "(TE93BG01)"
+                    ]
+                },
+                {
+                    "code": "GT70BS2A",
+                    "name": "Testnevelés 2",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "TE93BG03",
+                    "name": "Matematika G3",
+                    "credits": 4,
+                    "prerequisites": [
+                        "(TE93BG02)"
+                    ]
+                },
+                {
+                    "code": "GEMMBXM3",
+                    "name": "Dinamika",
+                    "credits": 5,
+                    "prerequisites": [
+                        "TE93BG02",
+                        "GEMMBXM1"
+                    ]
+                },
+                {
+                    "code": "GEENBGTD",
+                    "name": "Műszaki termodinamika G",
+                    "credits": 4
+                },
+                {
+                    "code": "GEMTBGF1",
+                    "name": "Fémek technológiája",
+                    "credits": 4,
+                    "prerequisites": [
+                        "(GEMTBGA1)"
+                    ]
+                },
+                {
+                    "code": "GEGIBGG1",
+                    "name": "Gépelemek 1.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "GEGIBXGA",
+                        "(GEVGBG10)"
+                    ]
+                },
+                {
+                    "code": "GEHDBSKMGAE-01",
+                    "name": "Műszaki és gazdasági adatok elemzése",
+                    "credits": 4
+                },
+                {
+                    "code": null,
+                    "name": "Gazdasági, humán és transzverzális készségfejlesztő tantárgy 1",
+                    "credits": 5,
+                    "course_block_references": [
+                        "Karrier támogatás (GTK)",
+                        "Társadalmi beágyazottság (GTK)",
+                        "Üzleti ismeretek (GTK)"
+                    ]
+                },
+                {
+                    "code": "TE93BG04",
+                    "name": "Matematika szigorlat G",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "GEMMBXM4",
+                    "name": "Rezgéstan",
+                    "credits": 4,
+                    "prerequisites": [
+                        "TE93BG03",
+                        "GEMMBXM3"
+                    ]
+                },
+                {
+                    "code": "GEÁTBG11",
+                    "name": "Áramlástan",
+                    "credits": 6,
+                    "prerequisites": [
+                        "(TE93BG03)"
+                    ]
+                },
+                {
+                    "code": "GEENBGHK",
+                    "name": "Hőközlés G",
+                    "credits": 4
+                },
+                {
+                    "code": "GEGIBGG2",
+                    "name": "Gépelemek 2.",
+                    "credits": 6,
+                    "prerequisites": [
+                        "(GEGIBGG1)"
+                    ]
+                },
+                {
+                    "code": "GEGTBG01",
+                    "name": "Gépgyártástechnológia",
+                    "credits": 5
+                },
+                {
+                    "code": "GEPTBG01",
+                    "name": "Polimerek anyagszerkezettana és technológiája",
+                    "credits": 6,
+                    "prerequisites": [
+                        "(GEMTBGA1)"
+                    ]
+                },
+                {
+                    "code": "GEMMBGSZ",
+                    "name": "Mechanika szigorlat",
+                    "credits": 0,
+                    "prerequisites": [
+                        "GEMMBXN2",
+                        "(GEMMBXM4)"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "5. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "VIAUA042",
+                    "name": "Elektrotechnika és elektromechanika",
+                    "credits": 5
+                },
+                {
+                    "code": "GEMIBXIT",
+                    "name": "Irányítástechnika",
+                    "credits": 4,
+                    "prerequisites": [
+                        "(TE93BG03)"
+                    ]
+                },
+                {
+                    "code": "GEENBGHG",
+                    "name": "Hőenergetikai gépek G",
+                    "credits": 4,
+                    "prerequisites": [
+                        "(GEENBGTD)"
+                    ]
+                },
+                {
+                    "code": "GEMMBXVE",
+                    "name": "Végeselem módszer alapjai",
+                    "credits": 3,
+                    "prerequisites": [
+                        "TE93BG03",
+                        "GEMMBXN2"
+                    ]
+                },
+                {
+                    "code": "GEEEBSGVGE1-01",
+                    "name": "Vegyipari, gyógyszeripari és élelmiszeripari műveletek 1.",
+                    "credits": 5
+                },
+                {
+                    "code": "GEATBSGPESE-01",
+                    "name": "Áramlástani esettanulmányok",
+                    "credits": 4,
+                    "prerequisites": [
+                        "(GEÁTBG11)"
+                    ]
+                },
+                {
+                    "code": "GEVGBG13",
+                    "name": "Áramlástechnikai rendszerek",
+                    "credits": 4
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható tantárgy 2",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "6. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "GEVGBX01",
+                    "name": "Áramlástechnikai gépek",
+                    "credits": 4,
+                    "prerequisites": [
+                        "(GEÁTBG11)"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Gazdasági, humán és transzverzális készségfejlesztő tantárgy 2",
+                    "credits": 5,
+                    "course_block_references": [
+                        "Karrier támogatás (GTK)",
+                        "Társadalmi beágyazottság (GTK)",
+                        "Üzleti ismeretek (GTK)"
+                    ]
+                },
+                {
+                    "code": "GEENBGEB",
+                    "name": "Energetikai folyamatok és berendezések",
+                    "credits": 5,
+                    "prerequisites": [
+                        "(GEENBGHG)"
+                    ]
+                },
+                {
+                    "code": "GEÁTBG15",
+                    "name": "Műszaki akusztika és zajcsökkentés",
+                    "credits": 3,
+                    "prerequisites": [
+                        "GEÁTBG11"
+                    ]
+                },
+                {
+                    "code": "GEVGBG06",
+                    "name": "Önálló feladat 1.",
+                    "credits": 4
+                },
+                {
+                    "code": "GEÁTBG36",
+                    "name": "Áramlások numerikus modellezése",
+                    "credits": 4,
+                    "prerequisites": [
+                        "GEÁTBG11"
+                    ]
+                },
+                {
+                    "code": "lásd köt.vál. táblázatban",
+                    "name": "Specializáció kötelezően válaszható tantárgy",
+                    "credits": 4
+                },
+                {
+                    "code": "GEMTBKMV",
+                    "name": "Munkavédelem",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "7. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "GE__BKSD",
+                    "name": "Szakdolgozat-készítés",
+                    "credits": 15
+                },
+                {
+                    "code": "GEVGBG03",
+                    "name": "Folyamattechnikai mérés",
+                    "credits": 3
+                },
+                {
+                    "code": "GEVGBG11",
+                    "name": "Hidrosztatikus és pneumatikus rendszerek",
+                    "credits": 3
+                },
+                {
+                    "code": "GEEEBSGVGYM-01",
+                    "name": "Vegyipari, gyógyszeripari és élelmiszeripari mérések",
+                    "credits": 4,
+                    "prerequisites": [
+                        "(GEEEBSGVGE1-01)"
+                    ]
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható tantárgy 3",
+                    "credits": 3
+                },
+                {
+                    "code": "GE__BKSZ",
+                    "name": "Szakmai gyakorlat",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "Karrier támogatás (GTK)",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "GT41BX4K000-00",
+                    "name": "Érveléstechnika-logika",
+                    "credits": 3
+                },
+                {
+                    "code": "GT43BX4K000-00",
+                    "name": "Személyközi kommunikáció",
+                    "credits": 3
+                },
+                {
+                    "code": "GT51BX4K001-00",
+                    "name": "Prezentációkészítés",
+                    "credits": 3
+                },
+                {
+                    "code": "GT52BX4K000-00",
+                    "name": "A vezetővé válás pszichológiája",
+                    "credits": 3
+                },
+                {
+                    "code": "GT52BX4K002-00",
+                    "name": "Munkahelyi sikeresség, kapcsolatépítés",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Társadalmi beágyazottság (GTK)",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "GT41BX4T001-00",
+                    "name": "Etikus döntés és cselekvés",
+                    "credits": 3
+                },
+                {
+                    "code": "GT42BX4T000-00",
+                    "name": "A klímaváltozás fenntarthatósági kihívásai",
+                    "credits": 3
+                },
+                {
+                    "code": "GT55BX4T000-00",
+                    "name": "Jog a gazdaságban",
+                    "credits": 3
+                },
+                {
+                    "code": "GT55BX4T002-00",
+                    "name": "Jogi alapismeretek GPK-soknak",
+                    "credits": 3
+                },
+                {
+                    "code": "GT55BX4T004-00",
+                    "name": "Alkoss okosan! - szellemi tulajdoni ismeretek a gyakorlat",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Üzleti ismeretek (GTK)",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "GT20BX4U000-00",
+                    "name": "Bevezetés a menedzsment döntéshozatalba",
+                    "credits": 3
+                },
+                {
+                    "code": "GT30BX4U000-00",
+                    "name": "Műszaki folyamatok közgazdasági elemzése",
+                    "credits": 3
+                },
+                {
+                    "code": "GT35BX4U000-00",
+                    "name": "Pénzügyek",
+                    "credits": 3
+                },
+                {
+                    "code": "GT35BX4U001-00",
+                    "name": "Számvitel",
+                    "credits": 3
+                },
+                {
+                    "code": "GT42BX4U000-00",
+                    "name": "A fenntartható fejlődés gazdaságtana",
+                    "credits": 3
+                },
+                {
+                    "code": "GT42BX4U001-00",
+                    "name": "Körforgásos gazdaság",
+                    "credits": 3
+                }
+            ]
+        }
+    ]
+}

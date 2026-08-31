@@ -1,7 +1,7 @@
 {
-    "name": "Üzemmérnök-informatikus (2022-től felvetteknek)",
+    "name": "Üzemmérnök-informatikus",
     "description": "Az Üzemmérnök-informatikus BProf szak tanterve",
-    "curriculum_updated_at": "2022-09-01",
+    "curriculum_updated_at": "2025-09-01",
     "course_blocks": [
         {
             "name": "1. félév",
@@ -23,9 +23,9 @@
                     "credits": 5
                 },
                 {
-                    "code": "VIAUAA02",
+                    "code": "VIAUBXAG002-00",
                     "name": "Digitális kompetenciák",
-                    "credits": 2
+                    "credits": 3
                 },
                 {
                     "code": "VIEEBA01",
@@ -152,9 +152,14 @@
             "row": 0,
             "courses": [
                 {
-                    "code": "GT20A001",
-                    "name": "Menedzsment és vállalkozásgazdaságtan",
-                    "credits": 4
+                    "code": null,
+                    "name": "Kötelezően választható gazdasági-humán tárgy 1",
+                    "credits": 5,
+                    "course_block_references": [
+                        "Karrier támogatás, készségfejlesztés (GTK)",
+                        "Társadalmi beágyazottság (GTK)",
+                        "Üzleti ismeretek (GTK)"
+                    ]
                 },
                 {
                     "code": "VIHVBB01",
@@ -191,7 +196,7 @@
                 {
                     "code": "",
                     "name": "Témalaboratórium",
-                    "credits": 6,
+                    "credits": 4,
                     "course_block_references": [
                         "Szoftverfejlesztő specializáció",
                         "Hálózat és biztonság specializáció",
@@ -206,14 +211,24 @@
             "row": 0,
             "courses": [
                 {
-                    "code": "GT30A430",
-                    "name": "Mikro- és makroökonomia B",
-                    "credits": 3
+                    "code": null,
+                    "name": "Kötelezően választható gazdasági-humán tárgy 2",
+                    "credits": 3,
+                    "course_block_references": [
+                        "Karrier támogatás, készségfejlesztés (GTK)",
+                        "Társadalmi beágyazottság (GTK)",
+                        "Üzleti ismeretek (GTK)"
+                    ]
                 },
                 {
-                    "code": "GT55A405",
-                    "name": "Jogi alapismeretek",
-                    "credits": 3
+                    "code": null,
+                    "name": "Kötelezően választható gazdasági-humán tárgy 3",
+                    "credits": 3,
+                    "course_block_references": [
+                        "Karrier támogatás, készségfejlesztés (GTK)",
+                        "Társadalmi beágyazottság (GTK)",
+                        "Üzleti ismeretek (GTK)"
+                    ]
                 },
                 {
                     "code": "",
@@ -293,9 +308,9 @@
                     ]
                 },
                 {
-                    "code": "VIAUBB05",
+                    "code": "VIAUBPBTL05-00",
                     "name": "Témalaboratórium",
-                    "credits": 6
+                    "credits": 4
                 }
             ]
         },
@@ -323,9 +338,9 @@
                     ]
                 },
                 {
-                    "code": "VIHIBB04",
+                    "code": "VIHIBPBTL04-00",
                     "name": "Témalaboratórium",
-                    "credits": 6
+                    "credits": 4
                 }
             ]
         },
@@ -353,9 +368,9 @@
                     ]
                 },
                 {
-                    "code": "VITMBB04",
+                    "code": "VITMBPBTL04-00",
                     "name": "Témalaboratórium",
-                    "credits": 6
+                    "credits": 4
                 }
             ]
         },
@@ -383,9 +398,227 @@
                     ]
                 },
                 {
-                    "code": "VIAUBB07",
+                    "code": "VIAUBPBTL07-00",
                     "name": "Témalaboratórium",
-                    "credits": 6
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "Karrier támogatás, készségfejlesztés (GTK)",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "GT52BX4K000-00",
+                    "name": "A vezetővé válás pszichológiája",
+                    "credits": 3
+                },
+                {
+                    "code": "GT52BX4K001-00",
+                    "name": "Karriertervezés és önismeret",
+                    "credits": 3
+                },
+                {
+                    "code": "GT52BX4K002-00",
+                    "name": "Munkahelyi sikeresség, kapcsolatépítés",
+                    "credits": 3
+                },
+                {
+                    "code": "GT41BX4K000-00",
+                    "name": "Érveléstechnika-logika",
+                    "credits": 3
+                },
+                {
+                    "code": "GT51BX4K000-00",
+                    "name": "Önmenedzselés a 21. században",
+                    "credits": 3
+                },
+                {
+                    "code": "GT51BX4K001-00",
+                    "name": "Prezentációkészítés",
+                    "credits": 3
+                },
+                {
+                    "code": "GT43BX4K000-00",
+                    "name": "Személyközi kommunikáció",
+                    "credits": 3
+                },
+                {
+                    "code": "GT43BX4K001-00",
+                    "name": "Történetmesélés és kreatív kommunikáció",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Társadalmi beágyazottság (GTK)",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "GT52BX4T001-00",
+                    "name": "Tervezés speciális felhasználók számára",
+                    "credits": 5
+                },
+                {
+                    "code": "GT41BX4T003-00",
+                    "name": "Az európai civilizáció története (mérnököknek)",
+                    "credits": 3
+                },
+                {
+                    "code": "GT41BX4T001-00",
+                    "name": "Etikus döntés és cselekvés",
+                    "credits": 3
+                },
+                {
+                    "code": "GT41BX4T000-00",
+                    "name": "Technológia és ember",
+                    "credits": 3
+                },
+                {
+                    "code": "GT42BX4T000-00",
+                    "name": "A klímaváltozás fenntarthatósági kihívásai",
+                    "credits": 3
+                },
+                {
+                    "code": "GT42BX4T001-00",
+                    "name": "Az EU környezet- és regionális politikája",
+                    "credits": 5
+                },
+                {
+                    "code": "GT30BX4T003-00",
+                    "name": "Iránytű a gazdasági döntésekhez",
+                    "credits": 3
+                },
+                {
+                    "code": "GT43BX4T001-00",
+                    "name": "Gazdaság és kultúra",
+                    "credits": 3
+                },
+                {
+                    "code": "GT43BX4T000-00",
+                    "name": "Technológia, média és kultúra",
+                    "credits": 3
+                },
+                {
+                    "code": "GT55BX4T004-00",
+                    "name": "Alkoss okosan! - szellemi tulajdoni ismeretek a gyakorlatban",
+                    "credits": 3
+                },
+                {
+                    "code": "GT55BX4T005-00",
+                    "name": "Design és szellemi tulajdonjog",
+                    "credits": 3
+                },
+                {
+                    "code": "GT55BX4T000-00",
+                    "name": "Jog a gazdaságban",
+                    "credits": 3
+                },
+                {
+                    "code": "GT55BX4T001-00",
+                    "name": "Jogi alapismeretek VIK-eseknek",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Üzleti ismeretek (GTK)",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "GT41BX4U000-00",
+                    "name": "Technológiaelméletek",
+                    "credits": 3
+                },
+                {
+                    "code": "GT42BX4U000-00",
+                    "name": "A fenntartható fejlődés gazdaságtana",
+                    "credits": 3
+                },
+                {
+                    "code": "GT42BX4U001-00",
+                    "name": "Körforgásos gazdaság",
+                    "credits": 3
+                },
+                {
+                    "code": "GT42BX4U002-00",
+                    "name": "Környezetmenedzsment",
+                    "credits": 3
+                },
+                {
+                    "code": "GT30BX4T002-00",
+                    "name": "Gazdasági GPS",
+                    "credits": 5
+                },
+                {
+                    "code": "GT30BX4U000-00",
+                    "name": "Műszaki folyamatok közgazdasági elemzése",
+                    "credits": 3
+                },
+                {
+                    "code": "GT30BX4U002-00",
+                    "name": "Pénz és pénzrendszerek",
+                    "credits": 3
+                },
+                {
+                    "code": "GT30BX4U001-00",
+                    "name": "Piaci játszmák",
+                    "credits": 3
+                },
+                {
+                    "code": "GT20BX4U000-00",
+                    "name": "Bevezetés a menedzsment döntéshozatalba",
+                    "credits": 3
+                },
+                {
+                    "code": "GT20BX4U003-00",
+                    "name": "E-sport és videójáték-ipar",
+                    "credits": 3
+                },
+                {
+                    "code": "GT20BX4U004-00",
+                    "name": "Marketing",
+                    "credits": 3
+                },
+                {
+                    "code": "GT20BX4U005-00",
+                    "name": "Stratégiai menedzsment",
+                    "credits": 3
+                },
+                {
+                    "code": "GT35BX4U003-00",
+                    "name": "Bankismeretek",
+                    "credits": 3
+                },
+                {
+                    "code": "GT35BX4U002-00",
+                    "name": "Befektetések",
+                    "credits": 3
+                },
+                {
+                    "code": "GT35BX4U006-00",
+                    "name": "Játékelmélet, mint stratégiai döntéshozó eszköz",
+                    "credits": 3
+                },
+                {
+                    "code": "GT35BX4U000-00",
+                    "name": "Pénzügyek",
+                    "credits": 3
+                },
+                {
+                    "code": "GT35BX4U005-00",
+                    "name": "Startup vállalkozások finanszírozása",
+                    "credits": 3
+                },
+                {
+                    "code": "GT35BX4U001-00",
+                    "name": "Számvitel",
+                    "credits": 3
+                },
+                {
+                    "code": "GT35BX4U004-00",
+                    "name": "Vezetői számvitel",
+                    "credits": 3
                 }
             ]
         }
