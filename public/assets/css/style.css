@@ -621,6 +621,10 @@ CONTRIBUTE LINKS
 	text-decoration: underline;
 }
 
+body.page-home .contribute {
+	padding-right: 16px;
+}
+
 body.page-program .header-contribute {
 	display: inline-block;
 	font-family: var(--mono);
