@@ -1,0 +1,301 @@
+{
+    "name": "Gazdaságinformatikus MSc",
+    "description": "Gazdaságinformatikus MSc szak - nappali tagozat tanterve, tavaszi kezdéssel",
+    "curriculum_updated_at": "2023-02-01",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "TE90MX50",
+                    "name": "Operációkutatás gazdaságinformatikusoknak",
+                    "credits": 5
+                },
+                {
+                    "code": "VITMM185",
+                    "name": "Adatbányászati technikák",
+                    "credits": 5
+                },
+                {
+                    "code": null,
+                    "name": "Specializáció tantárgy 1",
+                    "credits": 6,
+                    "course_block_references": [
+                        "Vállalatirányítási informatika specializáció",
+                        "Gazdasági elemző informatika specializáció"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható tantárgy",
+                    "credits": 4,
+                    "course_block_references": [
+                        "Kötelezően választható tantárgyak"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Önálló laboratórium 1.",
+                    "credits": 5,
+                    "course_block_references": [
+                        "Önálló laboratórium és diplomatervezés"
+                    ]
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható tantárgy 1",
+                    "credits": 4
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható tantárgy 2",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "VISZM108",
+                    "name": "Matematikai statisztika",
+                    "credits": 5
+                },
+                {
+                    "code": "GT35M400",
+                    "name": "Számvitel",
+                    "credits": 5
+                },
+                {
+                    "code": "GT35M402",
+                    "name": "Pénzügyek",
+                    "credits": 5
+                },
+                {
+                    "code": "VIHIM100",
+                    "name": "Adatbiztonság a gazdaságinformatikában",
+                    "credits": 5
+                },
+                {
+                    "code": null,
+                    "name": "Specializáció tantárgy 2",
+                    "credits": 7,
+                    "course_block_references": [
+                        "Vállalatirányítási informatika specializáció",
+                        "Gazdasági elemző informatika specializáció"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Önálló laboratórium 2.",
+                    "credits": 5,
+                    "course_block_references": [
+                        "Önálló laboratórium és diplomatervezés"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "GT35M401",
+                    "name": "Kontrolling",
+                    "credits": 5
+                },
+                {
+                    "code": "GT55M400",
+                    "name": "E-jog",
+                    "credits": 3
+                },
+                {
+                    "code": "VITMM100",
+                    "name": "Hálózatba kapcsolt adatbázisok",
+                    "credits": 5
+                },
+                {
+                    "code": null,
+                    "name": "Specializáció tantárgy 3",
+                    "credits": 7,
+                    "course_block_references": [
+                        "Vállalatirányítási informatika specializáció",
+                        "Gazdasági elemző informatika specializáció"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Diplomatervezés 1",
+                    "credits": 10,
+                    "course_block_references": [
+                        "Önálló laboratórium és diplomatervezés"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "GT20M400",
+                    "name": "Projektmenedzsment",
+                    "credits": 3
+                },
+                {
+                    "code": null,
+                    "name": "Specializáció tantárgy 4",
+                    "credits": 4,
+                    "course_block_references": [
+                        "Vállalatirányítási informatika specializáció",
+                        "Gazdasági elemző informatika specializáció"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Diplomatervezés 2",
+                    "credits": 20,
+                    "course_block_references": [
+                        "Önálló laboratórium és diplomatervezés"
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "Szakmai gyakorlat",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "Vállalatirányítási informatika specializáció",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VIETM193",
+                    "name": "Integrált vállalatirányítási rendszerek",
+                    "credits": 6
+                },
+                {
+                    "code": "VIETM195",
+                    "name": "Vállalati alkalmazások integrációja",
+                    "credits": 7
+                },
+                {
+                    "code": "VIETM194",
+                    "name": "Vállalatirányítási rendszerek konfigurációja",
+                    "credits": 7
+                },
+                {
+                    "code": "GT20M401",
+                    "name": "Vállalatgazdaságtan",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "Gazdasági elemző informatika specializáció",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VITMM104",
+                    "name": "Üzleti és pénzügyi elemzési módszerek",
+                    "credits": 6
+                },
+                {
+                    "code": "VITMM277",
+                    "name": "Média- és szövegbányászat",
+                    "credits": 6
+                },
+                {
+                    "code": "VITMM200",
+                    "name": "Ügyfélanalitika",
+                    "credits": 6
+                },
+                {
+                    "code": "VIHIM279",
+                    "name": "Kockázatelemzés és -kezelés",
+                    "credits": 6
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választható tantárgyak",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VITMMB03",
+                    "name": "Mérnöki menedzsment",
+                    "credits": 4
+                },
+                {
+                    "code": "VITMM191",
+                    "name": "Python programozás adatelemzéshez",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "Önálló laboratórium és diplomatervezés",
+            "row": 2,
+            "courses": [
+                {
+                    "code": "VIETM388",
+                    "name": "Önálló laboratórium 1.",
+                    "credits": 5
+                },
+                {
+                    "code": "VIETM389",
+                    "name": "Önálló laboratórium 2.",
+                    "credits": 5
+                },
+                {
+                    "code": "VIETM390",
+                    "name": "Diplomatervezés 1",
+                    "credits": 10
+                },
+                {
+                    "code": "VIETM391",
+                    "name": "Diplomatervezés 2",
+                    "credits": 20
+                },
+                {
+                    "code": "VIETM375",
+                    "name": "Szakmai gyakorlat",
+                    "credits": 0
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "VITMM379",
+                    "name": "Önálló laboratórium 1.",
+                    "credits": 5
+                },
+                {
+                    "code": "VITMM380",
+                    "name": "Önálló laboratórium 2.",
+                    "credits": 5
+                },
+                {
+                    "code": "VITMM381",
+                    "name": "Diplomatervezés 1 (angol nyelven)",
+                    "credits": 10
+                },
+                {
+                    "code": "VITMM382",
+                    "name": "Diplomatervezés 2 (angol nyelven)",
+                    "credits": 20
+                },
+                {
+                    "code": "VITMM378",
+                    "name": "Szakmai gyakorlat",
+                    "credits": 0
+                }
+            ]
+        }
+    ]
+}

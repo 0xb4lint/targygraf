@@ -1,0 +1,724 @@
+{
+    "name": "Építőmérnök - Geodézia és térinformatika specializáció",
+    "description": "Építőmérnök BSc szak - Geodézia és térinformatika specializáció, nappali tagozat tanterve",
+    "curriculum_updated_at": "2025-09-27",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "TEMIBsMMAT0-00",
+                    "name": "Matematika szintemelő",
+                    "credits": 3
+                },
+                {
+                    "code": "TEMIBsMMAT1-00",
+                    "name": "Matematika A1",
+                    "credits": 6
+                },
+                {
+                    "code": "EOTMBsFC001-00",
+                    "name": "Statika szintemelő",
+                    "credits": 3
+                },
+                {
+                    "code": "EOTMBsFC002-00",
+                    "name": "Statika",
+                    "credits": 5
+                },
+                {
+                    "code": "EOEMBsFC001-00",
+                    "name": "Ábrázoló geometria",
+                    "credits": 3
+                },
+                {
+                    "code": "EOGMBsFC001-00",
+                    "name": "Geológia",
+                    "credits": 3
+                },
+                {
+                    "code": "EOAFBsFC001-00",
+                    "name": "Geodézia I.",
+                    "credits": 4
+                },
+                {
+                    "code": "EOFTBsFC001-00",
+                    "name": "Programozás alapjai",
+                    "credits": 3
+                },
+                {
+                    "code": "EODHBsFC001-00",
+                    "name": "Szakmai orientáció",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "TEMIBsMMAT2-00",
+                    "name": "Matematika A2",
+                    "credits": 6,
+                    "prerequisites": [
+                        "TEMIBsMMAT1-00"
+                    ]
+                },
+                {
+                    "code": "EOTMBsFC003-00",
+                    "name": "Szilárdságtan",
+                    "credits": 5,
+                    "prerequisites": [
+                        "(EOTMBsFC002-00)",
+                        "EOTMBsFC001-00"
+                    ]
+                },
+                {
+                    "code": "EOVKBsFC001-00",
+                    "name": "Környezetvédelem",
+                    "credits": 4
+                },
+                {
+                    "code": "EOEMBsFC002-00",
+                    "name": "Épületszerkezetek I.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "EOEMBsFC001-00"
+                    ]
+                },
+                {
+                    "code": "EOGMBsFC002-00",
+                    "name": "Talajmechanika",
+                    "credits": 4,
+                    "prerequisites": [
+                        "EOTMBsFC002-00",
+                        "EOGMBsFC001-00"
+                    ]
+                },
+                {
+                    "code": "EOAFBsFC002-00",
+                    "name": "Geodézia II.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "(EOAFBsFC001-00)"
+                    ]
+                },
+                {
+                    "code": "EOAFBsFC003-00",
+                    "name": "Geodézia mérőgyakorlat",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(EOAFBsFC002-00)"
+                    ]
+                },
+                {
+                    "code": "GT70BS1A",
+                    "name": "Testnevelés 1",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "TEMIBsMMAT3-00",
+                    "name": "Matematika A3",
+                    "credits": 3
+                },
+                {
+                    "code": "EOTMBsFC004-00",
+                    "name": "Építőmérnöki mechanika",
+                    "credits": 3,
+                    "prerequisites": [
+                        "EOTMBsFC002-00",
+                        "(EOTMBsFC003-00)"
+                    ]
+                },
+                {
+                    "code": "EOHSBsFC001-00",
+                    "name": "Tartószerkezetek méretezésének alapjai",
+                    "credits": 3,
+                    "prerequisites": [
+                        "EOTMBsFC002-00"
+                    ]
+                },
+                {
+                    "code": "EOGMBsFC003-00",
+                    "name": "Földművek",
+                    "credits": 3,
+                    "prerequisites": [
+                        "(EOGMBsFC002-00)"
+                    ]
+                },
+                {
+                    "code": "EOEMBsFC003-00",
+                    "name": "Építőanyagok és kémia",
+                    "credits": 6,
+                    "prerequisites": [
+                        "(EOTMBsFC002-00)"
+                    ]
+                },
+                {
+                    "code": "EOUVBsFC001-00",
+                    "name": "Utak",
+                    "credits": 4
+                },
+                {
+                    "code": "EOVVBsFC001-00",
+                    "name": "Hidraulika",
+                    "credits": 3
+                },
+                {
+                    "code": "EOFTBsFC002-00",
+                    "name": "Építőipari digitalizáció",
+                    "credits": 5,
+                    "prerequisites": [
+                        "EOFTBsFC001-00"
+                    ]
+                },
+                {
+                    "code": "GT70BS2A",
+                    "name": "Testnevelés 2",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "EOEMBsFC004-00",
+                    "name": "Építőmérnökök szerepe a fenntarthatóságban",
+                    "credits": 3,
+                    "prerequisites": [
+                        "EOVKBsFC001-00"
+                    ]
+                },
+                {
+                    "code": "EOHSBsFC002-00",
+                    "name": "Acélszerkezetek I.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "EOTMBsFC003-00",
+                        "EOTMBsFC004-00",
+                        "EOHSBsFC001-00"
+                    ]
+                },
+                {
+                    "code": "EOHSBsFC003-00",
+                    "name": "Vasbetonszerkezetek I.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "EOTMBsFC003-00",
+                        "EOTMBsFC004-00",
+                        "EOHSBsFC001-00"
+                    ]
+                },
+                {
+                    "code": "EOVKBsFC002-00",
+                    "name": "Közművek",
+                    "credits": 3
+                },
+                {
+                    "code": "EOUVBsFC002-00",
+                    "name": "Vasúti pályák",
+                    "credits": 4
+                },
+                {
+                    "code": "EPEKBsXKIV1-00",
+                    "name": "Építéskivitelezés I.",
+                    "credits": 4,
+                    "prerequisites": [
+                        "EOEMBsFC002-00",
+                        "EOGMBsFC002-00"
+                    ]
+                },
+                {
+                    "code": "EOVVBsFC002-00",
+                    "name": "Vízmérnöki alapismeretek",
+                    "credits": 6
+                },
+                {
+                    "code": "EOGMBsFC004-00",
+                    "name": "Alapozás",
+                    "credits": 4,
+                    "prerequisites": [
+                        "EOGMBsFC002-00",
+                        "(EOGMBsFC003-00)",
+                        "(EOTMBsFC003-00)"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "5. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "EOFTBsFS002-00",
+                    "name": "Lézerszkennelés",
+                    "credits": 3,
+                    "prerequisites": [
+                        "EOAFBsFC002-00",
+                        "(EOFTBsFS004-00)",
+                        "EOFTBsFC002-00"
+                    ]
+                },
+                {
+                    "code": "EOAFBsFS002-00",
+                    "name": "Geofizika",
+                    "credits": 3,
+                    "prerequisites": [
+                        "TEMIBsMMAT1-00"
+                    ]
+                },
+                {
+                    "code": "EOAFBsFS003-00",
+                    "name": "Műholdas helymeghatározás",
+                    "credits": 3,
+                    "prerequisites": [
+                        "EOAFBsFC002-00"
+                    ]
+                },
+                {
+                    "code": "EOFTBsFS003-00",
+                    "name": "Térinformatika",
+                    "credits": 3
+                },
+                {
+                    "code": "EOFTBsFS004-00",
+                    "name": "Kiegyenlítő számítások",
+                    "credits": 4,
+                    "prerequisites": [
+                        "TEMIBsMMAT2-00"
+                    ]
+                },
+                {
+                    "code": "EOAFBsFS004-00",
+                    "name": "Nagyméretarányú térképezés",
+                    "credits": 5,
+                    "prerequisites": [
+                        "EOAFBsFC002-00",
+                        "EOAFBsFC003-00"
+                    ]
+                },
+                {
+                    "code": "EOAFBsFS005-00",
+                    "name": "Vetülettan",
+                    "credits": 3,
+                    "prerequisites": [
+                        "EOAFBsFC002-00"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Gazdasági és humán tárgy 1",
+                    "credits": 3,
+                    "course_block_references": [
+                        "Karrier támogatás (GTK)",
+                        "Társadalmi beágyazottság (GTK)",
+                        "Üzleti ismeretek (GTK)"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható tárgy 1",
+                    "credits": 3,
+                    "course_block_references": [
+                        "Kötelezően választható tárgyak"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "6. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "EOAFBsFS006-00",
+                    "name": "Mérnökgeodézia",
+                    "credits": 6,
+                    "prerequisites": [
+                        "EOFTBsFS004-00",
+                        "EOAFBsFC002-00"
+                    ]
+                },
+                {
+                    "code": "EOFTBsFS005-00",
+                    "name": "Adatbázis rendszerek",
+                    "credits": 5
+                },
+                {
+                    "code": "EOAFBsFS007-00",
+                    "name": "Alaphálózatok mérőgyakorlat",
+                    "credits": 1,
+                    "prerequisites": [
+                        "EOAFBsFC003-00",
+                        "(EOAFBsFS008-00)"
+                    ]
+                },
+                {
+                    "code": "EOFTBsFS006-00",
+                    "name": "Fotogrammetria",
+                    "credits": 3,
+                    "prerequisites": [
+                        "EOFTBsFS004-00"
+                    ]
+                },
+                {
+                    "code": "EOAFBsFS008-00",
+                    "name": "Geodéziai alaphálózatok",
+                    "credits": 3,
+                    "prerequisites": [
+                        "EOAFBsFC002-00",
+                        "EOAFBsFC003-00"
+                    ]
+                },
+                {
+                    "code": "EOAFBsFS009-00",
+                    "name": "Geodézia és térinformatika projektfeladat",
+                    "credits": 4,
+                    "prerequisites": [
+                        "EOFTBsFS002-00",
+                        "EOAFBsFS004-00",
+                        "(EOAFBsFS006-00)"
+                    ]
+                },
+                {
+                    "code": "EOFTBsFS007-00",
+                    "name": "Térinformatika mérőgyakorlat",
+                    "credits": 1,
+                    "prerequisites": [
+                        "EOFTBsFC002-00",
+                        "EOFTBsFS003-00"
+                    ]
+                },
+                {
+                    "code": "EOAFBsFS010-00",
+                    "name": "Ingatlannyilvántartás",
+                    "credits": 3,
+                    "prerequisites": [
+                        "EOAFBsFS004-00"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Gazdasági és humán tárgy 2",
+                    "credits": 3,
+                    "course_block_references": [
+                        "Karrier támogatás (GTK)",
+                        "Társadalmi beágyazottság (GTK)",
+                        "Üzleti ismeretek (GTK)"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "7. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "EOAFBsFS011-00",
+                    "name": "Szakmai gyakorlat",
+                    "credits": 0,
+                    "prerequisites": [
+                        "EPEKBsXKIV1-00",
+                        "EOAFBsFS004-00",
+                        "EOFTBsFS002-00"
+                    ]
+                },
+                {
+                    "code": "EOFTBsFS008-00",
+                    "name": "Geoinformatika programozás",
+                    "credits": 4,
+                    "prerequisites": [
+                        "EOFTBsFC001-00",
+                        "EOFTBsFS005-00"
+                    ]
+                },
+                {
+                    "code": "EOAFBsFS012-00",
+                    "name": "Felsőgeodézia",
+                    "credits": 4,
+                    "prerequisites": [
+                        "EOAFBsFS002-00",
+                        "EOAFBsFS008-00"
+                    ]
+                },
+                {
+                    "code": "EOFTBsFS009-00",
+                    "name": "Távérzékelés",
+                    "credits": 3
+                },
+                {
+                    "code": "EOAFBsFS013-00",
+                    "name": "Mérnöki létesítmények geodéziája",
+                    "credits": 3,
+                    "prerequisites": [
+                        "EOAFBsFS006-00"
+                    ]
+                },
+                {
+                    "code": "EOFTBsFS010-00",
+                    "name": "Geodézia és térinformatika komplex egyéni feladat",
+                    "credits": 3,
+                    "prerequisites": [
+                        "(EOFTBsFS002-00)",
+                        "(EOAFBsFS006-00)"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Általános projektfeladat",
+                    "credits": 6,
+                    "course_block_references": [
+                        "Általános projektfeladat (válaszd az egyiket)"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Gazdasági és humán tárgy 3",
+                    "credits": 5,
+                    "course_block_references": [
+                        "Karrier támogatás (GTK)",
+                        "Társadalmi beágyazottság (GTK)",
+                        "Üzleti ismeretek (GTK)"
+                    ]
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható tantárgy 1",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "8. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "Szakdolgozat",
+                    "credits": 15,
+                    "course_block_references": [
+                        "Szakdolgozat (válaszd az egyiket)"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Gazdasági és humán tárgy 4",
+                    "credits": 3,
+                    "course_block_references": [
+                        "Karrier támogatás (GTK)",
+                        "Társadalmi beágyazottság (GTK)",
+                        "Üzleti ismeretek (GTK)"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható tárgy 2",
+                    "credits": 3,
+                    "course_block_references": [
+                        "Kötelezően választható tárgyak"
+                    ]
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható tantárgy 2",
+                    "credits": 3
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható tantárgy 3",
+                    "credits": 3
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható tantárgy 4",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választható tárgyak",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "EOEMBsFS012-00",
+                    "name": "Újrahasznosítás az építőiparban",
+                    "credits": 3,
+                    "prerequisites": [
+                        "EOEMBsFC003-00"
+                    ]
+                },
+                {
+                    "code": "EOVKBsFS012-00",
+                    "name": "Kék-zöld infrastruktúra",
+                    "credits": 3,
+                    "prerequisites": [
+                        "EOVKBsFC001-00"
+                    ]
+                },
+                {
+                    "code": "EOAFBsFS001-00",
+                    "name": "Gépvezérlés",
+                    "credits": 3
+                },
+                {
+                    "code": "EOEMBsFS006-00",
+                    "name": "Épületenergetika",
+                    "credits": 3,
+                    "prerequisites": [
+                        "EOEMBsFC002-00"
+                    ]
+                },
+                {
+                    "code": "EOFTBsFS011-00",
+                    "name": "Topográfia",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Általános projektfeladat (válaszd az egyiket)",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "EOAFBsFS014-00",
+                    "name": "Általános projektfeladat",
+                    "credits": 6
+                },
+                {
+                    "code": "EOFTBsFS012-00",
+                    "name": "Általános projektfeladat",
+                    "credits": 6
+                }
+            ]
+        },
+        {
+            "name": "Szakdolgozat (válaszd az egyiket)",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "EOAFBsFS015-00",
+                    "name": "Szakdolgozat",
+                    "credits": 15,
+                    "prerequisites": [
+                        "EOAFBsFS014-00"
+                    ]
+                },
+                {
+                    "code": "EOFTBsFS013-00",
+                    "name": "Szakdolgozat",
+                    "credits": 15,
+                    "prerequisites": [
+                        "EOFTBsFS012-00"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Karrier támogatás (GTK)",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "GT41BX4K000-00",
+                    "name": "Érveléstechnika-logika",
+                    "credits": 3
+                },
+                {
+                    "code": "GT43BX4K000-00",
+                    "name": "Személyközi kommunikáció",
+                    "credits": 3
+                },
+                {
+                    "code": "GT51BX4K001-00",
+                    "name": "Prezentációkészítés",
+                    "credits": 3
+                },
+                {
+                    "code": "GT52BX4K000-00",
+                    "name": "A vezetővé válás pszichológiája",
+                    "credits": 3
+                },
+                {
+                    "code": "GT52BX4K002-00",
+                    "name": "Munkahelyi sikeresség, kapcsolatépítés",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Társadalmi beágyazottság (GTK)",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "GT41BX4T001-00",
+                    "name": "Etikus döntés és cselekvés",
+                    "credits": 3
+                },
+                {
+                    "code": "GT42BX4T000-00",
+                    "name": "A klímaváltozás fenntarthatósági kihívásai",
+                    "credits": 3
+                },
+                {
+                    "code": "GT55BX4T000-00",
+                    "name": "Jog a gazdaságban",
+                    "credits": 3
+                },
+                {
+                    "code": "GT55BX4T002-00",
+                    "name": "Jogi alapismeretek GPK-soknak",
+                    "credits": 3
+                },
+                {
+                    "code": "GT55BX4T004-00",
+                    "name": "Alkoss okosan! - szellemi tulajdoni ismeretek a gyakorlat",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Üzleti ismeretek (GTK)",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "GT20BX4U000-00",
+                    "name": "Bevezetés a menedzsment döntéshozatalba",
+                    "credits": 3
+                },
+                {
+                    "code": "GT30BX4U000-00",
+                    "name": "Műszaki folyamatok közgazdasági elemzése",
+                    "credits": 3
+                },
+                {
+                    "code": "GT35BX4U000-00",
+                    "name": "Pénzügyek",
+                    "credits": 3
+                },
+                {
+                    "code": "GT35BX4U001-00",
+                    "name": "Számvitel",
+                    "credits": 3
+                },
+                {
+                    "code": "GT42BX4U000-00",
+                    "name": "A fenntartható fejlődés gazdaságtana",
+                    "credits": 3
+                },
+                {
+                    "code": "GT42BX4U001-00",
+                    "name": "Körforgásos gazdaság",
+                    "credits": 3
+                }
+            ]
+        }
+    ]
+}

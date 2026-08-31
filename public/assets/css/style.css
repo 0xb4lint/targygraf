@@ -15,9 +15,10 @@
  *   .progressbar .credits-counter .credits-optional* .credits-overflow
  *   .content[data-specialis] .course-block(.finished) .course-block-title
  *   .course(.processable,.processing,.finished,.prerequisite,.sequel,.end)
- * The JS also assumes ~146px per graph column and injects inline styles
- * (fade display, white hover backgrounds, z-index 101) — keep the graph
- * surface light.
+ *   .help(.help-collapsed) .help-toggle .help-legend
+ * The JS injects inline styles (fade display, white hover backgrounds,
+ * z-index 101) and sets .content scrollLeft — keep the graph surface light,
+ * and keep a graph column's footprint at or under 146px.
  */
 
 :root {
@@ -30,6 +31,7 @@
 	--line: #d9dfea;
 	--grid: rgba(23, 34, 59, 0.05);
 	--warm: #e2571e;
+	--scrollbar-thumb: rgba(23, 34, 59, 0.34);
 
 	--open-bg: #b3d6f7;
 	--open-ink: #1c3d5e;
@@ -87,6 +89,7 @@ body.page-notfound {
 	background-image: linear-gradient(var(--grid) 1px, transparent 1px),
 		linear-gradient(90deg, var(--grid) 1px, transparent 1px);
 	background-size: 28px 28px;
+	background-position: center top;
 }
 
 /* Only the graph pages need the fixed-width canvas (JS widens it further). */
@@ -156,7 +159,7 @@ WORDMARK + MASTHEAD (home, university)
 .topbar {
 	max-width: 1340px;
 	margin: 0 auto;
-	padding: 14px 28px 10px;
+	padding: 12px 28px 10px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -1076,13 +1079,79 @@ CREDITS COUNTER
 }
 
 /*
-CONTENT — the graph canvas. Column footprint must stay ≤146px
-(JS: setBodyMinWidth multiplies the column count by 146).
+SCROLLBARS — the macOS look on every platform.
+
+Windows and Linux paint a permanent grey scrollbar on any scroll container,
+which would put a bar under every graph row that happens to overflow. Keeping
+the track transparent and the thumb invisible until the surface is hovered,
+focused or scrolled gives the overlay behaviour those users expect from macOS.
+Chromium ignores the ::-webkit-scrollbar pseudo-elements as soon as
+scrollbar-width/-color are set, so the two blocks below are alternatives, not a
+pair: modern Chromium and Firefox take the standard properties, older Chromium
+and Safari the -webkit- ones.
+
+One honest limit: `thin` still reserves its track, so a scrolling row is a few
+pixels taller on Windows than on macOS. Only a real overlay scrollbar avoids
+that, and CSS cannot ask for one -- hiding the bar outright would take the drag
+target away from mouse-only users, which is the worse trade.
+*/
+.scroll-surface {
+	scrollbar-width: thin;
+	scrollbar-color: transparent transparent;
+	transition: scrollbar-color 0.2s ease;
+}
+
+.scroll-surface:hover,
+.scroll-surface:focus-within {
+	scrollbar-color: var(--scrollbar-thumb) transparent;
+}
+
+.scroll-surface::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
+.scroll-surface::-webkit-scrollbar-track,
+.scroll-surface::-webkit-scrollbar-corner {
+	background: transparent;
+}
+
+.scroll-surface::-webkit-scrollbar-thumb {
+	background-color: transparent;
+	border: 2px solid transparent;
+	background-clip: padding-box;
+	border-radius: 8px;
+	transition: background-color 0.2s ease;
+}
+
+.scroll-surface:hover::-webkit-scrollbar-thumb,
+.scroll-surface:focus-within::-webkit-scrollbar-thumb {
+	background-color: var(--scrollbar-thumb);
+}
+
+/*
+CONTENT — the graph canvas. Column footprint must stay ≤146px.
+
+Each row scrolls on its own: the semester row and the specialization rows are
+independent groups (nothing in a lower row lines up with a semester column), so
+one wide row must not drag the header, progressbar and footer sideways with it.
+"safe center" centers a row that fits and falls back to the start when it does
+not, which keeps the first column reachable — plain centering would push it past
+the scroll origin. Rows get the full viewport; the legend floats over the bottom
+left corner rather than reserving a lane, which is why it folds itself away.
 */
 .content {
-	margin-bottom: 10px;
+	margin: 0 12px 10px;
 	position: relative;
 	text-align: center;
+	display: flex;
+	align-items: flex-start;
+	justify-content: safe center;
+	padding: 2px 0;
+	overflow-x: auto;
+	/* `none`, not `contain`: it stops the scroll chaining to the page *and*
+	   kills the rubber-band bounce at either end of a row. */
+	overscroll-behavior-x: none;
 }
 
 /*
@@ -1091,6 +1160,8 @@ COURSE BLOCK
 .course-block {
 	display: inline-block;
 	vertical-align: top;
+	/* A flex item must not be squashed: the 146px column budget depends on it. */
+	flex: 0 0 auto;
 	margin-left: 1.5px;
 	margin-right: 1.5px;
 	position: relative;
@@ -1117,10 +1188,19 @@ COURSE BLOCK
 	color: var(--ink-2);
 }
 
+/* Group separator inside a block: a hairline that fades out at both ends, so
+   it reads as a soft break in the column rather than a dashed cut across it. */
 .course-block hr {
 	border: 0;
-	border-top: 1px dashed var(--rule);
-	margin: 7px 6px;
+	height: 1px;
+	margin: 9px 2px;
+	background: linear-gradient(
+		90deg,
+		transparent,
+		var(--rule) 22%,
+		var(--rule) 78%,
+		transparent
+	);
 }
 
 .course-block .muted {
@@ -1201,16 +1281,98 @@ COURSE CELLS — the signature unit
 /*
 HELP LEGEND (fixed panel; JS adds its width to the min-width calc)
 */
+/*
+HELP — the legend introduces itself, then folds into its swatch chip.
+
+The chip is the anchor in the corner and the panel is absolutely positioned
+above it, so folding away costs no layout shift and the rows keep the whole
+viewport. Clicking the chip folds and unfolds the legend.
+*/
 .help {
 	position: fixed;
 	bottom: 12px;
 	left: 12px;
+	z-index: 3;
+}
+
+/* The chip stays put in the corner in both states: folded it is the legend,
+   unfolded it is the control that folds it away again. */
+.help-toggle {
+	width: 40px;
+	height: 40px;
+	padding: 0;
+	border: 1px solid var(--line);
+	border-radius: 50%;
+	background: #f6f6f6;
+	box-shadow: 0 2px 10px rgba(23, 34, 59, 0.12);
+	cursor: pointer;
+	display: grid;
+	place-items: center;
+	transition: box-shadow 0.18s ease, rotate 0.32s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.help-toggle:hover {
+	box-shadow: 0 4px 16px rgba(23, 34, 59, 0.22);
+}
+
+.help:not(.help-collapsed) .help-toggle {
+	rotate: 45deg;
+}
+
+.help-swatches {
+	display: grid;
+	grid-template-columns: repeat(3, 6px);
+	gap: 3px;
+}
+
+.help-swatches i {
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: var(--swatch);
+}
+
+.help-swatches .swatch-inert {
+	--swatch: var(--panel);
+	box-shadow: inset 0 0 0 1px var(--line);
+}
+.help-swatches .swatch-open {
+	--swatch: var(--open-bg);
+}
+.help-swatches .swatch-taken {
+	--swatch: var(--taken-bg);
+}
+.help-swatches .swatch-done {
+	--swatch: var(--done-bg);
+}
+.help-swatches .swatch-prereq {
+	--swatch: var(--prereq-bg);
+}
+.help-swatches .swatch-sequel {
+	--swatch: var(--sequel-bg);
+}
+
+.help-legend {
+	position: absolute;
+	bottom: calc(100% + 8px);
+	left: 0;
 	width: 130px;
 	background: #f6f6f6;
 	border-radius: 4px;
 	padding: 7px;
 	box-shadow: 0 2px 10px rgba(23, 34, 59, 0.12);
-	z-index: 1;
+	transform-origin: 0 100%;
+	transition: opacity 0.22s ease, scale 0.22s ease, translate 0.22s ease;
+}
+
+/* Folding is driven by the class alone. It used to also open on hover, but you
+   have to hover the chip in order to click it -- so the legend was already
+   showing when the click landed and the toggle looked dead. */
+.help.help-collapsed .help-legend {
+	opacity: 0;
+	scale: 0.7;
+	translate: 0 12px;
+	pointer-events: none;
 }
 
 .help .course-help {

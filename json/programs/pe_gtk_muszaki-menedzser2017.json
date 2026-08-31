@@ -1,7 +1,7 @@
 {
-    "name": "Műszaki menedzser",
-    "description": "Műszaki menedzser BSc szak - nappali tagozat tanterve",
-    "curriculum_updated_at": "2025-09-01",
+    "name": "Műszaki menedzser (2017-től felvetteknek)",
+    "description": "Műszaki menedzser alapszak - nappali tagozat tanterve",
+    "curriculum_updated_at": "2022-07-03",
     "course_blocks": [
         {
             "name": "1. félév",
@@ -15,6 +15,11 @@
                 {
                     "code": "VEMKMA1143G",
                     "name": "Lineáris algebra",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMKFIB112F",
+                    "name": "Fizika I.",
                     "credits": 3
                 },
                 {
@@ -38,23 +43,18 @@
                     "credits": 3
                 },
                 {
-                    "code": "VEGTVEB122T",
-                    "name": "Tanulási, önismereti és szocializációs tréning",
-                    "credits": 3
-                },
-                {
-                    "code": "VEMISAB156GF",
-                    "name": "Programozás I.",
-                    "credits": 6
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható",
+                    "credits": 4
                 },
                 {
                     "code": "VEGTLEB122A",
-                    "name": "Gazdasági és üzleti szaknyelv I. (angol vagy német nyelven)",
+                    "name": "Gazdasági és üzleti szaknyelv I. (angol)",
                     "credits": 0
                 },
                 {
                     "code": "VEGTLEB122N",
-                    "name": "Gazdasági és üzleti szaknyelv I. (angol vagy német nyelven)",
+                    "name": "Gazdasági és üzleti szaknyelv I. (német)",
                     "credits": 0
                 }
             ]
@@ -64,17 +64,22 @@
             "row": 0,
             "courses": [
                 {
-                    "code": "VEMISAB353AP",
-                    "name": "Adatelemzés Pythonban",
-                    "credits": 3,
-                    "prerequisites": [
-                        "VEMISAB156GF"
-                    ]
+                    "code": "VEMIKN1252P",
+                    "name": "Számítógépes perifériák",
+                    "credits": 3
                 },
                 {
-                    "code": "VEMKAKB213AK",
+                    "code": "VEMKAKB212B",
                     "name": "Általános kémia",
                     "credits": 3
+                },
+                {
+                    "code": "VEMKFI1312B",
+                    "name": "Fizika II.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEMKFIB112F"
+                    ]
                 },
                 {
                     "code": "VEGTKGB144K",
@@ -95,13 +100,8 @@
                     "credits": 6
                 },
                 {
-                    "code": "___OPTIONAL___",
-                    "name": "Szabadon választható tantárgy 1",
-                    "credits": 4
-                },
-                {
                     "code": "VEGTLEB222A",
-                    "name": "Gazdasági és üzleti szaknyelv II. (angol vagy német nyelven)",
+                    "name": "Gazdasági és üzleti szaknyelv II. (angol)",
                     "credits": 0,
                     "prerequisites": [
                         "VEGTLEB122A"
@@ -109,7 +109,7 @@
                 },
                 {
                     "code": "VEGTLEB222N",
-                    "name": "Gazdasági és üzleti szaknyelv II. (angol vagy német nyelven)",
+                    "name": "Gazdasági és üzleti szaknyelv II. (német)",
                     "credits": 0,
                     "prerequisites": [
                         "VEGTLEB122N"
@@ -117,19 +117,13 @@
                 },
                 {
                     "code": "VEGTLEB1X0A",
-                    "name": "Gazdasági és üzleti szaknyelvi záróvizsga",
-                    "credits": 0,
-                    "prerequisites": [
-                        "VEGTLEB222A"
-                    ]
+                    "name": "Gazdasági és üzleti szaknyelvi záróvizsga (angol)",
+                    "credits": 0
                 },
                 {
                     "code": "VEGTLEB1X0N",
-                    "name": "(angol vagy német nyelven)",
-                    "credits": 0,
-                    "prerequisites": [
-                        "VEGTLEB222N"
-                    ]
+                    "name": "Gazdasági és üzleti szaknyelvi záróvizsga (német)",
+                    "credits": 0
                 }
             ]
         },
@@ -138,7 +132,7 @@
             "row": 0,
             "courses": [
                 {
-                    "code": "VEMIMAB346VF",
+                    "code": "VEMKMA1344B",
                     "name": "Valószínűségszámítás és matematikai statisztika",
                     "credits": 6,
                     "prerequisites": [
@@ -148,7 +142,10 @@
                 {
                     "code": "VEMKGEB244M",
                     "name": "Műszaki mechanika",
-                    "credits": 6
+                    "credits": 6,
+                    "prerequisites": [
+                        "VEMKFIB112F"
+                    ]
                 },
                 {
                     "code": "VEGTGAB144S",
@@ -156,9 +153,9 @@
                     "credits": 6
                 },
                 {
-                    "code": "VEMKGEB113GA",
+                    "code": "VEMKGEB113V",
                     "name": "Gépelemek és ábrázolás",
-                    "credits": 3
+                    "credits": 5
                 },
                 {
                     "code": "VEGTMEB144M",
@@ -166,9 +163,9 @@
                     "credits": 6
                 },
                 {
-                    "code": "VEMKFIB146FE",
-                    "name": "Fizika I.",
-                    "credits": 6
+                    "code": "VEMINA1112A",
+                    "name": "Anyagtudomány",
+                    "credits": 3
                 }
             ]
         },
@@ -227,7 +224,7 @@
                 },
                 {
                     "code": "VEGTMIB222G",
-                    "name": "A problémamegoldás gyakorlata I.",
+                    "name": "A problémamegoldás gyakorlata",
                     "credits": 3
                 }
             ]
@@ -242,13 +239,18 @@
                     "credits": 5
                 },
                 {
-                    "code": "VEMKGEB154GT",
+                    "code": "VEMKGEB312G",
                     "name": "Gépipari technológiai ismeretek",
-                    "credits": 4
+                    "credits": 3
                 },
                 {
                     "code": "VEMKFOB312R",
                     "name": "Rendszermérnöki ismeretek",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMIVIB312G",
+                    "name": "Gyártórendszerek dinamikája",
                     "credits": 3
                 },
                 {
@@ -267,17 +269,9 @@
                     "credits": 0
                 },
                 {
-                    "code": "VEMKMUB143VG",
+                    "code": "VEMKMUB143V",
                     "name": "Vegyi gyár",
-                    "credits": 3
-                },
-                {
-                    "code": "VEGTVEB314T",
-                    "name": "Termelésés szolgáltatásmenedzsment",
-                    "credits": 6,
-                    "prerequisites": [
-                        "VEGTGAB144A"
-                    ]
+                    "credits": 4
                 }
             ]
         },
@@ -291,9 +285,9 @@
                     "credits": 5
                 },
                 {
-                    "code": "VEMIMAB244FO",
+                    "code": "VETKMA1244O",
                     "name": "Operációkutatás",
-                    "credits": 5,
+                    "credits": 6,
                     "prerequisites": [
                         "VEMKMA1143G"
                     ]
@@ -325,14 +319,19 @@
                     ]
                 },
                 {
-                    "code": "VEMIVIB244MT",
-                    "name": "Méréselmélet és -technika",
-                    "credits": 4
+                    "code": "VEMIVIB252P",
+                    "name": "Problémamegoldás az információs technológia eszközeivel",
+                    "credits": 3
+                },
+                {
+                    "code": "VEMKVI2212A",
+                    "name": "Méréstechnika",
+                    "credits": 3
                 },
                 {
                     "code": "VEGTMMB3X0S",
                     "name": "Szakszeminárium (MM)",
-                    "credits": 0,
+                    "credits": 3,
                     "prerequisites": [
                         "VEGTMEB2X0G"
                     ]
@@ -344,14 +343,17 @@
             "row": 0,
             "courses": [
                 {
-                    "code": "VEMKSIB113AT",
-                    "name": "Anyagtudomány",
-                    "credits": 3
+                    "code": "VEGTVEB314T",
+                    "name": "Termelés- és szolgáltatásmenedzsment",
+                    "credits": 6,
+                    "prerequisites": [
+                        "VEGTGAB144A"
+                    ]
                 },
                 {
                     "code": "___OPTIONAL___",
-                    "name": "Szabadon választható tantárgy 2",
-                    "credits": 9
+                    "name": "Szabadon választható tárgy",
+                    "credits": 7
                 },
                 {
                     "code": "VEGTMEB3X0G",

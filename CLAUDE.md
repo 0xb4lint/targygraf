@@ -42,5 +42,13 @@ Read the header comments of `src/lib/data.ts` and
 - URLs are apex paths (`/pe/mernokinformatikus`); the Worker 301s the
   legacy per-university subdomains, and the migrate iframe bridge
   carries localStorage over from those origins once per subdomain.
+- Program slugs are versioned: the year-less slug is always the newest
+  curriculum, superseded ones take a year suffix
+  (`bme_vik_villamosmernok.json` vs `bme_vik_villamosmernok2022.json`). A new
+  curriculum renames the previous file and takes the bare slug. `name` follows
+  suit: plain on the current one, intake-marked on the archived
+  (`Villamosmérnök` vs `Villamosmérnök (2022-től felvetteknek)`). There is no
+  per-program redirect, so renaming a slug that is already deployed 404s it;
+  `bme_vik_mernok-informatikusmsc2023.json` keeps its suffix for that reason.
 - Tabs for indentation (see `.editorconfig`); no runtime JS dependencies,
   `targygraf.js` stays dependency-free vanilla.

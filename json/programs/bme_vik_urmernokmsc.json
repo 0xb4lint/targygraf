@@ -1,0 +1,306 @@
+{
+    "name": "Űrmérnök MSc",
+    "description": "Űrmérnöki MSc szak - nappali tagozat tanterve, tavaszi kezdéssel",
+    "curriculum_updated_at": "2023-02-01",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "Választható felsőbb matematika tárgy",
+                    "credits": 5,
+                    "course_block_references": [
+                        "Felsőbb matematika űrmérnököknek"
+                    ]
+                },
+                {
+                    "code": "TE80MU00",
+                    "name": "Fizika űrmérnököknek",
+                    "credits": 4
+                },
+                {
+                    "code": "VIETMA09",
+                    "name": "Komplex űrberendezések fejlesztésének koordinálása",
+                    "credits": 3
+                },
+                {
+                    "code": "VIHVMA11",
+                    "name": "Űrkommunikáció",
+                    "credits": 4
+                },
+                {
+                    "code": "VIHIMA15",
+                    "name": "Űrkutatás és űrtechnológia",
+                    "credits": 4
+                },
+                {
+                    "code": "VIHVMA10",
+                    "name": "Űreszközök pályái és földi állomások",
+                    "credits": 4
+                },
+                {
+                    "code": "VIHIML06",
+                    "name": "Projektlaboratórium 1",
+                    "credits": 4
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható tantárgy 1",
+                    "credits": 2
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "GEMTNUAT",
+                    "name": "Anyagtudomány",
+                    "credits": 4
+                },
+                {
+                    "code": "VIETMA18",
+                    "name": "Űrkörnyezet",
+                    "credits": 4
+                },
+                {
+                    "code": null,
+                    "name": "Választható természettudományos tárgy",
+                    "credits": 5,
+                    "course_block_references": [
+                        "Választható természettudományos tantárgyak"
+                    ]
+                },
+                {
+                    "code": "VIIIMA16",
+                    "name": "Hazai űrtevékenység és nemzetközi környezete",
+                    "credits": 3
+                },
+                {
+                    "code": "VITMMB03",
+                    "name": "Mérnöki menedzsment",
+                    "credits": 4
+                },
+                {
+                    "code": "VIHVMA12",
+                    "name": "Űrrendszerek tervezése",
+                    "credits": 4
+                },
+                {
+                    "code": "VIHVMA13",
+                    "name": "Űrtechnológia laboratórium 1.",
+                    "credits": 4
+                },
+                {
+                    "code": "VIHIML05",
+                    "name": "Projektlaboratórium 2",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "EOAFM351",
+                    "name": "Űrnavigáció",
+                    "credits": 4
+                },
+                {
+                    "code": "VIEEMA08",
+                    "name": "Megbízhatóság és minőségbiztosítás az űrtechnológiában",
+                    "credits": 4
+                },
+                {
+                    "code": "VIHVMA09",
+                    "name": "Műholdas rendszerek és távérzékelés",
+                    "credits": 4
+                },
+                {
+                    "code": "VIHVMA14",
+                    "name": "Űrtechnológia laboratórium 2.",
+                    "credits": 4
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható tárgy 1",
+                    "credits": 4,
+                    "course_block_references": [
+                        "Kötelezően választható tantárgyak"
+                    ]
+                },
+                {
+                    "code": "VIHVMT04",
+                    "name": "Diplomatervezés 1",
+                    "credits": 10
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": null,
+                    "name": "Kötelezően választható tárgy 2",
+                    "credits": 4,
+                    "course_block_references": [
+                        "Kötelezően választható tantárgyak"
+                    ]
+                },
+                {
+                    "code": "VIHVMT05",
+                    "name": "Diplomatervezés 2",
+                    "credits": 20
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható tantárgy 2",
+                    "credits": 2
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható tantárgy 3",
+                    "credits": 2
+                },
+                {
+                    "code": "VIHVMS02",
+                    "name": "Szakmai gyakorlat",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "Felsőbb matematika űrmérnököknek",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "TE90MX78",
+                    "name": "Haladó lineáris algebra",
+                    "credits": 5
+                },
+                {
+                    "code": "VISZMA09",
+                    "name": "Kombinatorikus optimalizálás",
+                    "credits": 5
+                },
+                {
+                    "code": "TE90MX80",
+                    "name": "Sztochasztika",
+                    "credits": 5
+                },
+                {
+                    "code": "TE90MX79",
+                    "name": "Analízis",
+                    "credits": 5
+                }
+            ]
+        },
+        {
+            "name": "Választható természettudományos tantárgyak",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VIHVMA19",
+                    "name": "Elektromágneses terek",
+                    "credits": 5
+                },
+                {
+                    "code": "VIETMA13",
+                    "name": "Fotonikai eszközök",
+                    "credits": 5
+                },
+                {
+                    "code": "VIHIMA18",
+                    "name": "Kvantum-informatika és kommunikáció",
+                    "credits": 5
+                },
+                {
+                    "code": "VIETMA14",
+                    "name": "Nanotudomány",
+                    "credits": 5
+                },
+                {
+                    "code": "GEMMNUTT",
+                    "name": "Űr, többtest és nemlineáris dinamika",
+                    "credits": 5
+                },
+                {
+                    "code": "VIVEMA19",
+                    "name": "Villamos szigetelések és kisülések",
+                    "credits": 5
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választható tantárgyak",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VIHVMB04",
+                    "name": "Digitális jelfeldolgozás a hírközlésben",
+                    "credits": 4
+                },
+                {
+                    "code": "GEMINUFT",
+                    "name": "Finommechanikai tervezés",
+                    "credits": 4
+                },
+                {
+                    "code": "VIHVMB05",
+                    "name": "Fotonikus eszközök és optikai kommunikáció",
+                    "credits": 4
+                },
+                {
+                    "code": "EOFTM361",
+                    "name": "Földmegfigyelő műholdas távérzékelés",
+                    "credits": 4
+                },
+                {
+                    "code": "VIHVMB06",
+                    "name": "Kisműholdak szerepe az űrtechnológiában",
+                    "credits": 4
+                },
+                {
+                    "code": "KOVRM955",
+                    "name": "Különleges űreszközök és űrbiztonság",
+                    "credits": 4
+                },
+                {
+                    "code": "VIHIMSUB001-00",
+                    "name": "Műholdas rendszerekben alkalmazott kvantum- és optikai kommunikáció",
+                    "credits": 4
+                },
+                {
+                    "code": "GEMMNUVE",
+                    "name": "Nemlineáris végeselemes analízis",
+                    "credits": 4
+                },
+                {
+                    "code": "GEMINUOT",
+                    "name": "Optikai távérzékelés",
+                    "credits": 4
+                },
+                {
+                    "code": "KOVRM954",
+                    "name": "Rakéták, rakétahajtóművek",
+                    "credits": 4
+                },
+                {
+                    "code": "VIHVMB07",
+                    "name": "Űrberendezések konstrukciója és energiaellátása",
+                    "credits": 4
+                },
+                {
+                    "code": "GEENNUHD",
+                    "name": "Űreszközök hődinamikája",
+                    "credits": 4
+                }
+            ]
+        }
+    ]
+}
