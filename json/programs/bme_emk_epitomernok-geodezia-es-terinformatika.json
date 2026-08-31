@@ -591,12 +591,18 @@
                 {
                     "code": "EOAFBsFS014-00",
                     "name": "Általános projektfeladat",
-                    "credits": 6
+                    "credits": 6,
+                    "prerequisites": [
+                        "___150___"
+                    ]
                 },
                 {
                     "code": "EOFTBsFS012-00",
                     "name": "Általános projektfeladat",
-                    "credits": 6
+                    "credits": 6,
+                    "prerequisites": [
+                        "___150___"
+                    ]
                 }
             ]
         },

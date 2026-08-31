@@ -604,6 +604,7 @@
                     "name": "Általános projektfeladat",
                     "credits": 6,
                     "prerequisites": [
+                        "___150___",
                         "EOVVBsFS002-00",
                         "EOVVBsFS001-00"
                     ]
@@ -611,7 +612,10 @@
                 {
                     "code": "EOVKBsFS009-00",
                     "name": "Általános projektfeladat",
-                    "credits": 6
+                    "credits": 6,
+                    "prerequisites": [
+                        "___150___"
+                    ]
                 }
             ]
         },

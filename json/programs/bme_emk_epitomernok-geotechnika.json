@@ -437,7 +437,10 @@
                 {
                     "code": "EOGMBsFS009-00",
                     "name": "Általános projektfeladat",
-                    "credits": 6
+                    "credits": 6,
+                    "prerequisites": [
+                        "___150___"
+                    ]
                 },
                 {
                     "code": null,

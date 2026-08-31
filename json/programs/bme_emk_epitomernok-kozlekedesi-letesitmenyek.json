@@ -457,6 +457,7 @@
                     "name": "Általános projektfeladat",
                     "credits": 6,
                     "prerequisites": [
+                        "___150___",
                         "EOUVBsFS006-00",
                         "EOUVBsFS007-00"
                     ]
