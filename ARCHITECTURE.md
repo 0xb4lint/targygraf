@@ -41,16 +41,13 @@ every visitor is actually asking. The cost is that the bare slug's content
 moves over time, so a student who wants a link that keeps pointing at *their*
 curriculum should use the year-suffixed one.
 
-Two caveats:
-
-- There is no per-program redirect (the Worker's legacy map is frozen at
-  migration time, see `worker/routing.ts`), so renaming a slug that is already
-  deployed turns it into a 404. Renumbering is safe when the bare slug keeps
-  existing and only never-deployed slugs disappear.
-- `bme_vik_mernok-informatikusmsc2023` is the one program that does not follow
-  the rule: it is the newest (and only) curriculum of its family, but it
-  shipped with the year in its slug, and dropping the suffix would 404 the
-  live URL. Fixing it needs a redirect first.
+A rename would otherwise 404 the old URL, so the Worker keeps a
+`RENAMED_PROGRAMS` map (`worker/routing.ts`) of old path -> current path and
+301s across it. Unlike the legacy subdomain space, that map is *not* frozen:
+add an entry whenever a deployed slug moves. It also applies to the legacy
+subdomains, so `bme.targygraf.hu/<old slug>` reaches the current page in one
+hop. A test asserts every target exists as a program file and that no entry
+shadows a slug still in use.
 
 ## Layout
 

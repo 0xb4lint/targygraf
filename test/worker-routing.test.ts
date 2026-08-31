@@ -80,6 +80,75 @@ describe('worker routing: legacy subdomain redirects', () => {
 	});
 });
 
+describe('worker routing: renamed program pages', () => {
+	it('301s a program that moved to a different slug', () => {
+		expect(decide('https://targygraf.hu/bme/mernok-informatikusmsc2023')).toEqual({
+			kind: 'redirect',
+			location: 'https://targygraf.hu/bme/mernok-informatikusmsc',
+		});
+	});
+
+	it('handles the trailing slash, the .html form and query strings', () => {
+		expect(decide('https://targygraf.hu/bme/mernok-informatikusmsc2023/')).toEqual({
+			kind: 'redirect',
+			location: 'https://targygraf.hu/bme/mernok-informatikusmsc',
+		});
+		expect(decide('https://targygraf.hu/bme/mernok-informatikusmsc2023.html')).toEqual({
+			kind: 'redirect',
+			location: 'https://targygraf.hu/bme/mernok-informatikusmsc',
+		});
+		expect(decide('https://targygraf.hu/bme/mernok-informatikusmsc2023?ref=x')).toEqual({
+			kind: 'redirect',
+			location: 'https://targygraf.hu/bme/mernok-informatikusmsc?ref=x',
+		});
+	});
+
+	it('sends a legacy subdomain URL to the current page in one hop', () => {
+		expect(decide('https://bme.targygraf.hu/mernok-informatikusmsc2023')).toEqual({
+			kind: 'redirect',
+			location: 'https://targygraf.hu/bme/mernok-informatikusmsc',
+		});
+	});
+
+	it('leaves the current slug and every other page alone', () => {
+		expect(decide('https://targygraf.hu/bme/mernok-informatikusmsc')).toEqual({
+			kind: 'serve',
+			assetPath: '/bme/mernok-informatikusmsc',
+		});
+		expect(decide('https://targygraf.hu/bme/mernok-informatikus2022')).toEqual({
+			kind: 'serve',
+			assetPath: '/bme/mernok-informatikus2022',
+		});
+	});
+
+	it('only ever points at pages that exist', async () => {
+		const fs = await import('node:fs');
+		const path = await import('node:path');
+		const { JSON_ROOT } = await import('../src/lib/paths');
+		const slugs = new Set(
+			fs
+				.readdirSync(path.join(JSON_ROOT, 'programs'))
+				.filter((f: string) => f[0] !== '.' && f.endsWith('.json'))
+				.map((f: string) => {
+					const [university, , program] = f.replace(/\.json$/, '').split('_');
+					return `/${university}/${program}`;
+				})
+		);
+		const source = fs.readFileSync(
+			new URL('../worker/routing.ts', import.meta.url),
+			'utf8'
+		);
+		const entries = [...source.matchAll(/\['(\/[^']+)', '(\/[^']+)'\]/g)];
+		expect(entries.length).toBeGreaterThan(0);
+		for (const [, from, to] of entries) {
+			expect(slugs.has(to), `${to} (redirect target of ${from}) has no program file`).toBe(
+				true
+			);
+			expect(slugs.has(from), `${from} still exists, so it must not redirect`).toBe(false);
+		}
+	});
+});
+
 describe('worker routing: host-independent statics', () => {
 	it('keeps serving shared static files on the legacy origins', () => {
 		expect(decide('https://pe.targygraf.hu/assets/js/targygraf.js?v=20190625')).toEqual({
