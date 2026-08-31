@@ -1,0 +1,1381 @@
+{
+    "name": "Gazdálkodási és menedzsment",
+    "description": "Gazdálkodási és menedzsment alapképzési szak, nappali tagozat tanterve",
+    "curriculum_updated_at": "2026-08-24",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "ADIN211NMBB",
+                    "name": "Adatelemzés I.",
+                    "credits": 6
+                },
+                {
+                    "code": "KG00093NMBB",
+                    "name": "Makroökonómia",
+                    "credits": 6
+                },
+                {
+                    "code": "ADIN212NMBB",
+                    "name": "Matematika",
+                    "credits": 6
+                },
+                {
+                    "code": "VEZ0149NMBB",
+                    "name": "STaRT-U-HU",
+                    "credits": 3
+                },
+                {
+                    "code": "VGUG023NMBB",
+                    "name": "Vállalatgazdaságtan",
+                    "credits": 6
+                },
+                {
+                    "code": "TES_TESTNEV",
+                    "name": "Testnevelés",
+                    "credits": 0
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "PSPS021NMBB",
+                    "name": "Számvitel alapjai",
+                    "credits": 6
+                },
+                {
+                    "code": "ADIN213NMBB",
+                    "name": "Adatelemzés II.",
+                    "credits": 6,
+                    "prerequisites": [
+                        "ADIN212NMBB",
+                        "ADIN211NMBB"
+                    ]
+                },
+                {
+                    "code": "NPGG013NMBB",
+                    "name": "Globális fenntarthatósági kihívások",
+                    "credits": 3
+                },
+                {
+                    "code": "KG00096NMBB",
+                    "name": "Mikroökonómia",
+                    "credits": 6
+                },
+                {
+                    "code": "VEZ0150NMBB",
+                    "name": "Személyes és üzleti készségek I.",
+                    "credits": 3
+                },
+                {
+                    "code": "VEZ0208NMBB",
+                    "name": "Szervezetek vezetése",
+                    "credits": 6
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "PSGJ035NMBB",
+                    "name": "Gazdasági jog",
+                    "credits": 6
+                },
+                {
+                    "code": "MARK176NMBB",
+                    "name": "Marketing",
+                    "credits": 6
+                },
+                {
+                    "code": "ADIN193NMBB",
+                    "name": "MI és üzleti alkalmazások",
+                    "credits": 3
+                },
+                {
+                    "code": "PSBV044NMBB",
+                    "name": "Vállalati pénzügyek",
+                    "credits": 6
+                },
+                {
+                    "code": "SZAM134NMBB",
+                    "name": "Vezetői számvitel",
+                    "credits": 6,
+                    "prerequisites": [
+                        "PSPS021NMBB"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható tantárgyak 1",
+                    "credits": 6,
+                    "course_block_references": [
+                        "Kötelezően választható tantárgyak",
+                        "Kötelezően választható tantárgyak #2",
+                        "Kötelezően választható tantárgyak #3"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "VEZ0151NMBB",
+                    "name": "A stratégia alapjai",
+                    "credits": 3
+                },
+                {
+                    "code": "VEZ0152NMBB",
+                    "name": "Projektmenedzsment",
+                    "credits": 3
+                },
+                {
+                    "code": "VEZ0153NMBB",
+                    "name": "Személyes és üzleti készségek II.",
+                    "credits": 3
+                },
+                {
+                    "code": "VEZ0154NMBB",
+                    "name": "Szervezeti magatartás és HR",
+                    "credits": 6
+                },
+                {
+                    "code": "OPDO125NMBB",
+                    "name": "A termelés- és minőségmenedzsment alapjai",
+                    "credits": 3
+                },
+                {
+                    "code": "VEZ0212NMBB",
+                    "name": "Szigorlat",
+                    "credits": 0
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható tantárgyak 2",
+                    "credits": 12,
+                    "course_block_references": [
+                        "Kötelezően választható tantárgyak",
+                        "Kötelezően választható tantárgyak #2",
+                        "Kötelezően választható tantárgyak #3"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "5. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "IOK0332NABB",
+                    "name": "Idegen szaknyelvi kompetencia I.",
+                    "credits": 0
+                },
+                {
+                    "code": null,
+                    "name": "Specializáció 1",
+                    "credits": 30,
+                    "course_block_references": [
+                        "(Datenbasiertes) internationales Management im deutschsprachigen Wirtschaftsraum",
+                        "AI-Driven Management",
+                        "Agrobiznisz specializáció",
+                        "Controlling",
+                        "Corporate Efficiency and Technology",
+                        "Corporate Finance",
+                        "Digital Business",
+                        "Digital Marketing",
+                        "Entrepreneurship",
+                        "Gazdasági jog",
+                        "Hatásmenedzsment és fenntarthatósági stratégiák",
+                        "Managing Human Resources",
+                        "Marketingintelligencia",
+                        "Menedzsmentkontroll",
+                        "Project Management",
+                        "Quantitative Management Science",
+                        "Social Value Creation and Management",
+                        "Speciális pénzügyi matematika",
+                        "Sportgazdaságtani specializáció",
+                        "Strategic Self-Branding and Talent Management",
+                        "Strategic analysis specializáció",
+                        "Sustainability Management",
+                        "Tourism Innovation and Management",
+                        "Turizmus menedzsment",
+                        "Vállalat- és gazdaságelemzés specializáció",
+                        "Vállalkozási specializáció",
+                        "Értékteremtő folyamatok menedzsmentje specializáció"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "6. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "VF00036NMBB",
+                    "name": "Szakszeminárium I.",
+                    "credits": 3
+                },
+                {
+                    "code": null,
+                    "name": "Specializáció 2",
+                    "credits": 30,
+                    "course_block_references": [
+                        "(Datenbasiertes) internationales Management im deutschsprachigen Wirtschaftsraum",
+                        "AI-Driven Management",
+                        "Agrobiznisz specializáció",
+                        "Controlling",
+                        "Corporate Efficiency and Technology",
+                        "Corporate Finance",
+                        "Digital Business",
+                        "Digital Marketing",
+                        "Entrepreneurship",
+                        "Gazdasági jog",
+                        "Hatásmenedzsment és fenntarthatósági stratégiák",
+                        "Managing Human Resources",
+                        "Marketingintelligencia",
+                        "Menedzsmentkontroll",
+                        "Project Management",
+                        "Quantitative Management Science",
+                        "Social Value Creation and Management",
+                        "Speciális pénzügyi matematika",
+                        "Sportgazdaságtani specializáció",
+                        "Strategic Self-Branding and Talent Management",
+                        "Strategic analysis specializáció",
+                        "Sustainability Management",
+                        "Tourism Innovation and Management",
+                        "Turizmus menedzsment",
+                        "Vállalat- és gazdaságelemzés specializáció",
+                        "Vállalkozási specializáció",
+                        "Értékteremtő folyamatok menedzsmentje specializáció"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "7. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "2VE81NDK10B",
+                    "name": "Szakmai gyakorlat",
+                    "credits": 20
+                },
+                {
+                    "code": "VF00037NMBB",
+                    "name": "Szakszeminárium II.",
+                    "credits": 7,
+                    "prerequisites": [
+                        "VF00036NMBB"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választható tantárgyak",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "SZAM132NMBB",
+                    "name": "Adójog a gyakorlatban",
+                    "credits": 3
+                },
+                {
+                    "code": "VF00024NMBB",
+                    "name": "Agrobiznisz menedzsment",
+                    "credits": 3
+                },
+                {
+                    "code": "VEZ0206NABB",
+                    "name": "AI in Organizations",
+                    "credits": 3
+                },
+                {
+                    "code": "VGDE011NMBB",
+                    "name": "Döntési technikák",
+                    "credits": 3
+                },
+                {
+                    "code": "4OG33NAV27B",
+                    "name": "Intézményi közgazdaságtan",
+                    "credits": 3
+                },
+                {
+                    "code": "PENZ083NMBB-SPM",
+                    "name": "Ismerkedés az árfolyamokkal",
+                    "credits": 3,
+                    "prerequisites": [
+                        "MSMT028NMBB-SPM"
+                    ]
+                },
+                {
+                    "code": "MSMT029NMBB-SPM",
+                    "name": "Fejezetek a matematikából II.",
+                    "credits": 6,
+                    "prerequisites": [
+                        "MSMT028NMBB-SPM"
+                    ]
+                },
+                {
+                    "code": "VTVK022NMBB",
+                    "name": "Közcélú szervezetek vezetésének alapjai",
+                    "credits": 3
+                },
+                {
+                    "code": "OPDO122NMBB",
+                    "name": "Az operációkutatás üzleti alkalmazásai",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választható tantárgyak #2",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "GLOB195NMBB",
+                    "name": "Világgazdaságtan",
+                    "credits": 3,
+                    "prerequisites": [
+                        "KG00096NMBB",
+                        "KG00093NMBB"
+                    ]
+                },
+                {
+                    "code": "PSPE018NMBB",
+                    "name": "Pénzügytan",
+                    "credits": 3
+                },
+                {
+                    "code": "VALL097NMBB",
+                    "name": "Vállalkozásindító üzleti koncepció",
+                    "credits": 6
+                },
+                {
+                    "code": "FENT132NMBB",
+                    "name": "Vonzerőfejlesztés a turizmusban",
+                    "credits": 3
+                },
+                {
+                    "code": "ADIN022NABB",
+                    "name": "Cases on Business IT management",
+                    "credits": 6
+                },
+                {
+                    "code": "FENT017NABB",
+                    "name": "Methods for Economic Geographical Analyses",
+                    "credits": 3
+                },
+                {
+                    "code": "PSBV033NMBB",
+                    "name": "Betriebswirtschaftliche Entscheidungstheorie",
+                    "credits": 3
+                },
+                {
+                    "code": "TARS212NMBB",
+                    "name": "Bevezetés a politikatudományba",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választható tantárgyak #3",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "SZAM131NMBB",
+                    "name": "Európai Uniós belső piaci jog",
+                    "credits": 3
+                },
+                {
+                    "code": "7NK40NGK89B",
+                    "name": "Európai Uniós ismeretek",
+                    "credits": 3
+                },
+                {
+                    "code": "TARS226NMBB",
+                    "name": "Filozófia",
+                    "credits": 3
+                },
+                {
+                    "code": "7FI01NDV05B",
+                    "name": "Gazdaságpszichológia",
+                    "credits": 3
+                },
+                {
+                    "code": "7SO30NDV15B",
+                    "name": "Gazdaságszociológia",
+                    "credits": 3
+                },
+                {
+                    "code": "KOZG023NMBB",
+                    "name": "Gazdaságtörténet",
+                    "credits": 3
+                },
+                {
+                    "code": "CIAS009NMBB",
+                    "name": "Üzleti etika",
+                    "credits": 6
+                },
+                {
+                    "code": "GLOB192NMBB",
+                    "name": "Regionális tanulmányok",
+                    "credits": 3
+                },
+                {
+                    "code": "TARS227NABB",
+                    "name": "Globalisation, Deglobalisation and Social Change",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "(Datenbasiertes) internationales Management im deutschsprachigen Wirtschaftsraum",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "FENT121NNBB",
+                    "name": "Datenbasierte Marktforschung",
+                    "credits": 6
+                },
+                {
+                    "code": "OPDO109NNBB",
+                    "name": "Informations- und Lieferkettenmanagement",
+                    "credits": 6
+                },
+                {
+                    "code": "MARK179NNBB",
+                    "name": "Internationales Marketing",
+                    "credits": 6
+                },
+                {
+                    "code": "OPDO108NNBB",
+                    "name": "Strategische betriebswirtschaftliche Entscheidungen – Modelle & Szenarien",
+                    "credits": 6
+                },
+                {
+                    "code": "VALL094NNBB",
+                    "name": "Unternehmensmanagement–Entrepreneurship in der DACH-Region",
+                    "credits": 6
+                }
+            ]
+        },
+        {
+            "name": "AI-Driven Management",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VEZ0158NABB",
+                    "name": "AI Governance",
+                    "credits": 6
+                },
+                {
+                    "code": "VEZ0159NABB",
+                    "name": "AI in Inter-organizational networks and business ecosystems",
+                    "credits": 6
+                },
+                {
+                    "code": "VEZ0156NABB",
+                    "name": "Foundations of AI for Management Professionals",
+                    "credits": 6
+                },
+                {
+                    "code": "VEZ0157NABB",
+                    "name": "Leading AI-Enabled Organizations & AI-Driven Changes",
+                    "credits": 6
+                },
+                {
+                    "code": "VEZ0155NABB",
+                    "name": "The evolution of management thought and technology",
+                    "credits": 6
+                }
+            ]
+        },
+        {
+            "name": "Agrobiznisz specializáció",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VF00034NMBB",
+                    "name": "Agrárgazdasági adatok elemzése",
+                    "credits": 6
+                },
+                {
+                    "code": "VF00032NMBB",
+                    "name": "Az EU agrárpolitikája és -intézményrendszere",
+                    "credits": 6
+                },
+                {
+                    "code": "VF00035NMBB",
+                    "name": "Jó gyakorlatok az agrobizniszben",
+                    "credits": 6
+                },
+                {
+                    "code": "VF00031NMBB",
+                    "name": "Stratégia és üzleti tervezés az agrobizniszben",
+                    "credits": 6
+                },
+                {
+                    "code": "VF00033NMBB",
+                    "name": "Szántóföldtől az asztalig: élelmiszer ellátási láncok",
+                    "credits": 6
+                }
+            ]
+        },
+        {
+            "name": "Controlling",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "SZAM117NABB",
+                    "name": "Business calculations",
+                    "credits": 6
+                },
+                {
+                    "code": "SZAM118NABB",
+                    "name": "Controlling",
+                    "credits": 6
+                },
+                {
+                    "code": "SZAM119NABB",
+                    "name": "Managerial Decision Support Project",
+                    "credits": 6
+                },
+                {
+                    "code": "VEZ0160NABB",
+                    "name": "Strategy, Organization, Control",
+                    "credits": 6
+                },
+                {
+                    "code": "SZAM120NABB",
+                    "name": "Visualizations and Dashboards in Controlling Reports",
+                    "credits": 6
+                }
+            ]
+        },
+        {
+            "name": "Corporate Efficiency and Technology",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VEZ0164NABB",
+                    "name": "Business Analytics",
+                    "credits": 6
+                },
+                {
+                    "code": "VEZ0161NABB",
+                    "name": "Efficient organizations and Structures",
+                    "credits": 6
+                },
+                {
+                    "code": "ADIN214NABB",
+                    "name": "Human Aspects of Intelligent Technology in Organizations",
+                    "credits": 6
+                },
+                {
+                    "code": "VEZ0162NABB",
+                    "name": "Intelligent Process Management",
+                    "credits": 6
+                },
+                {
+                    "code": "VEZ0163NABB",
+                    "name": "Measurement & Evidence for Performance",
+                    "credits": 6
+                }
+            ]
+        },
+        {
+            "name": "Corporate Finance",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "PENZ080NABB",
+                    "name": "Corporate Finance II.",
+                    "credits": 6
+                },
+                {
+                    "code": "PENZ082NABB",
+                    "name": "Financial Markets",
+                    "credits": 6
+                },
+                {
+                    "code": "PENZ076NABB",
+                    "name": "Monetary and Banking System",
+                    "credits": 6
+                },
+                {
+                    "code": "PENZ081NABB",
+                    "name": "Personal Financial Risk Management",
+                    "credits": 6
+                },
+                {
+                    "code": "SZAM121NABB",
+                    "name": "Visualization and Dashboards in Controlling Reports",
+                    "credits": 6
+                }
+            ]
+        },
+        {
+            "name": "Digital Business",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "ADIN022NABB",
+                    "name": "Cases on Business IT management",
+                    "credits": 6
+                },
+                {
+                    "code": "ADIN216NABB",
+                    "name": "Digital business processes in SAP environments",
+                    "credits": 6
+                },
+                {
+                    "code": "ADIN217NABB",
+                    "name": "Digital innovation projects",
+                    "credits": 6
+                },
+                {
+                    "code": "INIR082NABB",
+                    "name": "Intelligent Systems",
+                    "credits": 6
+                },
+                {
+                    "code": "ADIN215NABB",
+                    "name": "Social and technological contexts of e-business",
+                    "credits": 6
+                }
+            ]
+        },
+        {
+            "name": "Digital Marketing",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "MARK183NABB",
+                    "name": "Business Research",
+                    "credits": 6
+                },
+                {
+                    "code": "MARK184NABB",
+                    "name": "Digital Marketing Strategy and Tactics",
+                    "credits": 6
+                },
+                {
+                    "code": "MARK186NABB",
+                    "name": "Marketing Planning",
+                    "credits": 6
+                },
+                {
+                    "code": "MARK185NABB",
+                    "name": "Online Customer Behavior",
+                    "credits": 6
+                },
+                {
+                    "code": "MARK187NABB",
+                    "name": "Online Shopping Trends",
+                    "credits": 6
+                }
+            ]
+        },
+        {
+            "name": "Entrepreneurship",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VF00136NABB",
+                    "name": "Business Enterprise: Start-Ups",
+                    "credits": 6
+                },
+                {
+                    "code": "VF00135NABB",
+                    "name": "Business Financing",
+                    "credits": 6
+                },
+                {
+                    "code": "VALL018NABB",
+                    "name": "Business Planning",
+                    "credits": 6
+                },
+                {
+                    "code": "VT00004NABB",
+                    "name": "Family Business",
+                    "credits": 6
+                },
+                {
+                    "code": "VF00137NABB",
+                    "name": "Innovation Management",
+                    "credits": 6
+                }
+            ]
+        },
+        {
+            "name": "Gazdasági jog",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "SZAM122NMBB",
+                    "name": "Haladó adózás",
+                    "credits": 6
+                },
+                {
+                    "code": "PSGJ024NMBB",
+                    "name": "Munkajog",
+                    "credits": 6
+                },
+                {
+                    "code": "PSGJ026NMBB",
+                    "name": "Nemzetközi gazdasági kapcsolatok joga",
+                    "credits": 6
+                },
+                {
+                    "code": "PSGJ022NMBB",
+                    "name": "Szerződési jog",
+                    "credits": 6
+                },
+                {
+                    "code": "PSGJ023NMBB",
+                    "name": "Vállalkozások joga",
+                    "credits": 6
+                }
+            ]
+        },
+        {
+            "name": "Hatásmenedzsment és fenntarthatósági stratégiák",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "FENT125NMBB",
+                    "name": "Fenntarthatósági stratégiák és hatásmenedzsment a vállalati gyakorlatban",
+                    "credits": 6
+                },
+                {
+                    "code": "VEZ0165NMBB",
+                    "name": "NGO-k és civil szervezetek társadalmi szerepe",
+                    "credits": 6
+                },
+                {
+                    "code": "FENT122NMBB",
+                    "name": "Önkormányzatok társadalmi szerepe és felelőssége",
+                    "credits": 6
+                },
+                {
+                    "code": "FENT124NMBB",
+                    "name": "Társadalmi hatásmérés és értékelés",
+                    "credits": 6
+                },
+                {
+                    "code": "FENT123NMBB",
+                    "name": "Társadalmi vállalkozások és innovációk",
+                    "credits": 6
+                }
+            ]
+        },
+        {
+            "name": "Managing Human Resources",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VEZ0174NABB",
+                    "name": "Applied Digital HR",
+                    "credits": 6
+                },
+                {
+                    "code": "VEZ0173NABB",
+                    "name": "HR Controlling",
+                    "credits": 6
+                },
+                {
+                    "code": "VEZ0175NMBB",
+                    "name": "HR Management Systems and Processes",
+                    "credits": 6
+                },
+                {
+                    "code": "VEZ0171NABB",
+                    "name": "Introduction to Organizational Development",
+                    "credits": 6
+                },
+                {
+                    "code": "VEZ0172NABB",
+                    "name": "Trends and Challenges in Labour Markets",
+                    "credits": 6
+                }
+            ]
+        },
+        {
+            "name": "Marketingintelligencia",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "MARK188NMBB",
+                    "name": "Fogyasztói magatartás és ügyfélélmény",
+                    "credits": 6
+                },
+                {
+                    "code": "MARK180NMBB",
+                    "name": "Kiskereskedelmi vállalkozások menedzsmentje",
+                    "credits": 6
+                },
+                {
+                    "code": "MAMM009NMBB",
+                    "name": "Marketingkommunikáció",
+                    "credits": 6
+                },
+                {
+                    "code": "MARK181NMBB",
+                    "name": "Marketingkutatás és döntéstámogatás",
+                    "credits": 6
+                },
+                {
+                    "code": "MARK182NMBB",
+                    "name": "Marketingtervezés és üzleti esetek",
+                    "credits": 6
+                }
+            ]
+        },
+        {
+            "name": "Menedzsmentkontroll",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "SZAM123NMBB",
+                    "name": "Adatvizualizáció a kontrolling riportokban",
+                    "credits": 6
+                },
+                {
+                    "code": "SZAM124NMBB",
+                    "name": "Gazdaságossági számítások és elemzések",
+                    "credits": 6
+                },
+                {
+                    "code": "SZAM125NMBB",
+                    "name": "Kontrolling",
+                    "credits": 6
+                },
+                {
+                    "code": "SZAM126NMBB",
+                    "name": "Stratégia, szervezet, kontroll",
+                    "credits": 6
+                },
+                {
+                    "code": "SZAM127NMBB",
+                    "name": "Vezetői döntéstámogatási projekt",
+                    "credits": 6
+                }
+            ]
+        },
+        {
+            "name": "Project Management",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VEZ0167NABB",
+                    "name": "Communication and presentation in a Porject Environment",
+                    "credits": 6
+                },
+                {
+                    "code": "VEZ0166NABB",
+                    "name": "Cooperation in a Project Environment",
+                    "credits": 6
+                },
+                {
+                    "code": "VEZ0170NABB",
+                    "name": "Managing Project Teams",
+                    "credits": 6
+                },
+                {
+                    "code": "VEZ0169NABB",
+                    "name": "Preparing Business Projects",
+                    "credits": 6
+                },
+                {
+                    "code": "VEZ0168NABB",
+                    "name": "Project Characteristics by Business Sectors",
+                    "credits": 6
+                }
+            ]
+        },
+        {
+            "name": "Quantitative Management Science",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "OPDO058NABB",
+                    "name": "Games and Decisions",
+                    "credits": 6
+                },
+                {
+                    "code": "OPDO054NABB",
+                    "name": "Optimization methods",
+                    "credits": 6
+                },
+                {
+                    "code": "OPDO055NABB",
+                    "name": "Planning- Inventory- and Transportation Problems",
+                    "credits": 6
+                },
+                {
+                    "code": "OPDO056NABB",
+                    "name": "Risk Management",
+                    "credits": 6
+                },
+                {
+                    "code": "OPDO057NABB",
+                    "name": "Simulation",
+                    "credits": 6
+                }
+            ]
+        },
+        {
+            "name": "Social Value Creation and Management",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "TARS214NABB",
+                    "name": "Civil Society and Collective Action",
+                    "credits": 6
+                },
+                {
+                    "code": "VEZ0177NABB",
+                    "name": "Innovative Solutions in the Public and Third Sector",
+                    "credits": 6
+                },
+                {
+                    "code": "VEZ0176NABB",
+                    "name": "Leadership and Management of Public-Purpose Organizations",
+                    "credits": 6
+                },
+                {
+                    "code": "VEZ0178NABB",
+                    "name": "Management of Nonprofit Organizations and Social Enterprises",
+                    "credits": 6
+                },
+                {
+                    "code": "TARS213NABB",
+                    "name": "Public Sector, Public Affairs, Governance",
+                    "credits": 6
+                }
+            ]
+        },
+        {
+            "name": "Speciális pénzügyi matematika",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "MSMT030NMBB-SPM",
+                    "name": "Fejezetek a matematikából III.",
+                    "credits": 6
+                },
+                {
+                    "code": "MSMT031NMBB-SPM",
+                    "name": "Fejezetek a matematikából IV.",
+                    "credits": 6
+                },
+                {
+                    "code": "PENZ084NMBB-SPM",
+                    "name": "Pénzügyi modellezés",
+                    "credits": 6
+                },
+                {
+                    "code": "PSBV042NMBB-SPM",
+                    "name": "Pénz- és tőkepiac",
+                    "credits": 6
+                },
+                {
+                    "code": "PSBV048NMBB",
+                    "name": "Vállalatértékelés",
+                    "credits": 6
+                }
+            ]
+        },
+        {
+            "name": "Sportgazdaságtani specializáció",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VALL020NMBB",
+                    "name": "Alkalmazott sportgazdaságtan",
+                    "credits": 6
+                },
+                {
+                    "code": "VALL019NMBB",
+                    "name": "Bevezetés a sportgazdaságtanba",
+                    "credits": 6
+                },
+                {
+                    "code": "VEZ0066NMBB",
+                    "name": "Bevezetés a sportszervezetek empirikus kutatásába",
+                    "credits": 6
+                },
+                {
+                    "code": "VALL021NMBB",
+                    "name": "Sportrendezvények menedzsmentje",
+                    "credits": 6
+                },
+                {
+                    "code": "VALL022NMBB",
+                    "name": "Sportszolgáltatások menedzsmentje",
+                    "credits": 6
+                }
+            ]
+        },
+        {
+            "name": "Strategic Self-Branding and Talent Management",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VEZ0181NABB",
+                    "name": "Career development and AI-enhanced self-management",
+                    "credits": 6
+                },
+                {
+                    "code": "VEZ0182NABB",
+                    "name": "Learning and development, introduction to action learning",
+                    "credits": 6
+                },
+                {
+                    "code": "VEZ0180NABB",
+                    "name": "Self-Branding, Digital Identity & Socialization in the Augmented Workplace",
+                    "credits": 6
+                },
+                {
+                    "code": "VEZ0179NABB",
+                    "name": "Talent Acquisition and Predictive Hiring Strategies",
+                    "credits": 6
+                },
+                {
+                    "code": "VEZ0183NABB",
+                    "name": "Workplace health and stress management",
+                    "credits": 6
+                }
+            ]
+        },
+        {
+            "name": "Strategic analysis specializáció",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VTVT011NMBB",
+                    "name": "Business project",
+                    "credits": 6
+                },
+                {
+                    "code": "VGUG025NMBB",
+                    "name": "Cases in business strategy",
+                    "credits": 6
+                },
+                {
+                    "code": "VF00025NMBB",
+                    "name": "Fundamentals of finance for strategic decision making",
+                    "credits": 6
+                },
+                {
+                    "code": "VTVT010NMBB",
+                    "name": "Strategic positioning for competitive advantage",
+                    "credits": 6
+                },
+                {
+                    "code": "VGUG026NMBB",
+                    "name": "Strategy in action",
+                    "credits": 6
+                }
+            ]
+        },
+        {
+            "name": "Sustainability Management",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "293NECOV437B",
+                    "name": "Environmental Economics",
+                    "credits": 6
+                },
+                {
+                    "code": "FENT099NABB",
+                    "name": "Evaluation and Policy Framework of Sustainability Performance",
+                    "credits": 6
+                },
+                {
+                    "code": "VALL078NABB",
+                    "name": "Social entrepreneurship and social innovations",
+                    "credits": 6
+                },
+                {
+                    "code": "MARK149NABB",
+                    "name": "Sustainability management case studies",
+                    "credits": 6
+                },
+                {
+                    "code": "FENT135NABB",
+                    "name": "Sustainable production and consumption",
+                    "credits": 6
+                }
+            ]
+        },
+        {
+            "name": "Tourism Innovation and Management",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "FENT096NABB",
+                    "name": "Active and Sport Tourism",
+                    "credits": 6
+                },
+                {
+                    "code": "FENT095NABB",
+                    "name": "Cultural and Creative Tourism",
+                    "credits": 6
+                },
+                {
+                    "code": "FENT097NABB",
+                    "name": "Food Service Management",
+                    "credits": 6
+                },
+                {
+                    "code": "FENT093NABB",
+                    "name": "International Tourism and Mobility",
+                    "credits": 6
+                },
+                {
+                    "code": "FENT094NABB",
+                    "name": "Tourism Innovation",
+                    "credits": 6
+                }
+            ]
+        },
+        {
+            "name": "Turizmus menedzsment",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "FENT126NMBB",
+                    "name": "Desztinációmenedzsment",
+                    "credits": 6
+                },
+                {
+                    "code": "FENT127NMBB",
+                    "name": "Értékesítési csatornák a turizmusban",
+                    "credits": 6
+                },
+                {
+                    "code": "FENT129NMBB",
+                    "name": "Rendezvényszervezés és gasztronómia",
+                    "credits": 6
+                },
+                {
+                    "code": "FENT128NMBB",
+                    "name": "Smart turizmus és marketing",
+                    "credits": 6
+                },
+                {
+                    "code": "MATT020NMBB",
+                    "name": "Szállodamenedzsment",
+                    "credits": 6
+                }
+            ]
+        },
+        {
+            "name": "Vállalat- és gazdaságelemzés specializáció",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "MSST018NMBB",
+                    "name": "Adatelemzés és adatvizualizáció R-ben",
+                    "credits": 6
+                },
+                {
+                    "code": "MSOA021NMBB",
+                    "name": "Döntéstámogatás",
+                    "credits": 6
+                },
+                {
+                    "code": "ADIN037NMBB",
+                    "name": "Ökonometria",
+                    "credits": 6
+                },
+                {
+                    "code": "KOZG162NMBB",
+                    "name": "Piaci intelligencia és elemzés",
+                    "credits": 6
+                },
+                {
+                    "code": "VGUG027NMBB",
+                    "name": "Vállalatelméletek",
+                    "credits": 6
+                }
+            ]
+        },
+        {
+            "name": "Vállalkozási specializáció",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VF00030NMBB",
+                    "name": "A vállalkozásfejlesztés speciális menedzsmentje",
+                    "credits": 6
+                },
+                {
+                    "code": "VF00026NMBB",
+                    "name": "Kisvállalkozások emberi tényezői",
+                    "credits": 6
+                },
+                {
+                    "code": "VF00027NMBB",
+                    "name": "Kisvállalkozások finanszírozása, pénzügyei",
+                    "credits": 6
+                },
+                {
+                    "code": "VF00028NMBB",
+                    "name": "Vállalkozások költségvetési kapcsolata és közterhei",
+                    "credits": 6
+                },
+                {
+                    "code": "VF00029NMBB",
+                    "name": "Vállalkozások üzleti tervezése",
+                    "credits": 6
+                }
+            ]
+        },
+        {
+            "name": "Értékteremtő folyamatok menedzsmentje specializáció",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VGLE021NMBB",
+                    "name": "Bevezetés az ellátási lánc és logisztikai menedzsmentbe",
+                    "credits": 6
+                },
+                {
+                    "code": "VGLE019NMBB",
+                    "name": "Lean és six sigma alapjai",
+                    "credits": 6
+                },
+                {
+                    "code": "VGLE020NMBB",
+                    "name": "Operatív beszerzés és tervezés",
+                    "credits": 6
+                },
+                {
+                    "code": "MAME015NMBB",
+                    "name": "Szolgáltatásmenedzsment",
+                    "credits": 6
+                },
+                {
+                    "code": "INIR016NMBB",
+                    "name": "Üzleti adatelemzés",
+                    "credits": 6
+                }
+            ]
+        },
+        {
+            "name": "Speciális pénzügyi matematika modul",
+            "row": 2,
+            "courses": [
+                {
+                    "code": "MSMT028NMBB-SPM",
+                    "name": "Fejezetek a matematikából I.",
+                    "credits": 6,
+                    "prerequisites": [
+                        "ADIN212NMBB"
+                    ]
+                },
+                {
+                    "code": "MSST034NMBB-SPM",
+                    "name": "Statisztika I. (IMP-SPM)",
+                    "credits": 6,
+                    "prerequisites": [
+                        "ADIN211NMBB"
+                    ]
+                },
+                {
+                    "code": "MSST035NMBB-SPM",
+                    "name": "Statisztika II. (IMP-SPM)",
+                    "credits": 6,
+                    "prerequisites": [
+                        "MSST034NMBB-SPM",
+                        "ADIN213NMBB"
+                    ]
+                },
+                {
+                    "code": "2BE52NAK04B-SPM",
+                    "name": "Vállalati pénzügyek (IMP-SPM)",
+                    "credits": 6,
+                    "prerequisites": [
+                        "PSBV044NMBB"
+                    ]
+                }
+            ],
+            "is_counted": false
+        },
+        {
+            "name": "Idegen nyelven teljesíthető tárgyak",
+            "row": 2,
+            "is_counted": false,
+            "courses": [
+                {
+                    "code": "VGUG024NMBB",
+                    "name": "Allgemeine Betriebswirtschaftslehre",
+                    "credits": 6,
+                    "prerequisites": [
+                        "VGUG023NMBB"
+                    ]
+                },
+                {
+                    "code": "NPGG014NMBB",
+                    "name": "Globale Herausforderungen der Nachhaltigkeit",
+                    "credits": 3,
+                    "prerequisites": [
+                        "NPGG013NMBB"
+                    ]
+                },
+                {
+                    "code": "MAME014NMBB",
+                    "name": "Grundlagen des Marketing",
+                    "credits": 6,
+                    "prerequisites": [
+                        "MARK176NMBB"
+                    ]
+                },
+                {
+                    "code": "2DS91NAK03B",
+                    "name": "Investition und Finanzierung",
+                    "credits": 6,
+                    "prerequisites": [
+                        "PSBV044NMBB"
+                    ]
+                },
+                {
+                    "code": "SZAM060NNBB",
+                    "name": "Kostenrechnung",
+                    "credits": 6,
+                    "prerequisites": [
+                        "PSPS021NMBB",
+                        "SZAM134NMBB"
+                    ]
+                },
+                {
+                    "code": "SZAM116NNBB",
+                    "name": "Rechtliche und wirtschaftliche Fragen von Unternehmen",
+                    "credits": 6,
+                    "prerequisites": [
+                        "PSGJ035NMBB"
+                    ]
+                },
+                {
+                    "code": "VTSM056NMBB",
+                    "name": "Verhalten in Organisationen und Personal",
+                    "credits": 6,
+                    "prerequisites": [
+                        "VEZ0154NMBB"
+                    ]
+                }
+            ]
+        }
+    ]
+}

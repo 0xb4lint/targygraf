@@ -1,0 +1,528 @@
+{
+    "name": "Alkalmazott közgazdaságtan",
+    "description": "Alkalmazott közgazdaságtan alapképzési szak, nappali tagozat tanterve",
+    "curriculum_updated_at": "2026-07-20",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "KG00091NMBB",
+                    "name": "Bevezetés a közgazdaságtanba",
+                    "credits": 6
+                },
+                {
+                    "code": "KOZG141NMBB",
+                    "name": "Bevezetés az empirikus közgazdaságtanba",
+                    "credits": 6
+                },
+                {
+                    "code": "MSMT025NMBB",
+                    "name": "Analízis",
+                    "credits": 6
+                },
+                {
+                    "code": "VEZ0149NMBB",
+                    "name": "STaRT-U-HU",
+                    "credits": 3
+                },
+                {
+                    "code": "VGUG023NMBB",
+                    "name": "Vállalatgazdaságtan",
+                    "credits": 6
+                },
+                {
+                    "code": null,
+                    "name": "Társadalomtudományi tárgyak 1",
+                    "credits": 3,
+                    "course_block_references": [
+                        "Társadalomtudományi tárgyak",
+                        "Társadalomtudományi tárgyak #2"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "MSMT026NMBB",
+                    "name": "Lineáris algebra",
+                    "credits": 6
+                },
+                {
+                    "code": "MSMT027NMBB",
+                    "name": "Valószínűségszámítás",
+                    "credits": 6
+                },
+                {
+                    "code": "NPGG013NMBB",
+                    "name": "Globális fenntarthatósági kihívások",
+                    "credits": 3
+                },
+                {
+                    "code": "KOZG140NMBB",
+                    "name": "Projekt",
+                    "credits": 6,
+                    "prerequisites": [
+                        "KOZG141NMBB",
+                        "KOZG166NABB"
+                    ]
+                },
+                {
+                    "code": "KOZG152NMBB",
+                    "name": "Mikroökonómia I.",
+                    "credits": 6
+                },
+                {
+                    "code": null,
+                    "name": "Társadalomtudományi tárgyak 2",
+                    "credits": 3,
+                    "course_block_references": [
+                        "Társadalomtudományi tárgyak",
+                        "Társadalomtudományi tárgyak #2"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "ADIN193NMBB",
+                    "name": "MI és üzleti alkalmazások",
+                    "credits": 3
+                },
+                {
+                    "code": "ADIN194NMBB",
+                    "name": "Következtető statisztika",
+                    "credits": 6
+                },
+                {
+                    "code": "KOZG142NMBB",
+                    "name": "Középhaladó makroökonómia",
+                    "credits": 6
+                },
+                {
+                    "code": "KOZG143NMBB",
+                    "name": "Ökonometria I.",
+                    "credits": 6,
+                    "prerequisites": [
+                        "KOZG141NMBB",
+                        "KOZG166NABB",
+                        "MSMT027NMBB"
+                    ]
+                },
+                {
+                    "code": "KG00062NMBB",
+                    "name": "Mikroökonómia II.",
+                    "credits": 6,
+                    "prerequisites": [
+                        "KOZG152NMBB",
+                        "KOZG155NABB"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Társadalomtudományi tárgyak 3",
+                    "credits": 3,
+                    "course_block_references": [
+                        "Társadalomtudományi tárgyak",
+                        "Társadalomtudományi tárgyak #2"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "PSPS021NMBB",
+                    "name": "Számvitel alapjai",
+                    "credits": 6
+                },
+                {
+                    "code": "KOZG144NMBB",
+                    "name": "Nemzetközi gazdaságtan",
+                    "credits": 6
+                },
+                {
+                    "code": "ADIN195NMBB",
+                    "name": "Ökonometria II.",
+                    "credits": 6,
+                    "prerequisites": [
+                        "KOZG143NMBB",
+                        "KOZG157NABB"
+                    ]
+                },
+                {
+                    "code": "KOZG145NMBB",
+                    "name": "Bevezetés a játékelméletbe",
+                    "credits": 6,
+                    "prerequisites": [
+                        "KOZG152NMBB",
+                        "KOZG155NABB"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Társadalomtudományi tárgyak 4",
+                    "credits": 6,
+                    "course_block_references": [
+                        "Társadalomtudományi tárgyak",
+                        "Társadalomtudományi tárgyak #2"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "5. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "PSBV044NMBB",
+                    "name": "Vállalati pénzügyek",
+                    "credits": 6
+                },
+                {
+                    "code": "KOZG146NMBB",
+                    "name": "Közösségi gazdaságtan",
+                    "credits": 6
+                },
+                {
+                    "code": "KOZG147NMBB",
+                    "name": "Piacelmélet",
+                    "credits": 6,
+                    "prerequisites": [
+                        "KOZG145NMBB"
+                    ]
+                },
+                {
+                    "code": "KOZG150NMBB",
+                    "name": "Szakszeminárium 1",
+                    "credits": 3
+                },
+                {
+                    "code": null,
+                    "name": "Közgazdasági alkalmazások 1",
+                    "credits": 6,
+                    "course_block_references": [
+                        "Közgazdasági alkalmazások"
+                    ]
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "6. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "KG00029NMBB",
+                    "name": "Közgazdasági elméletek története",
+                    "credits": 5
+                },
+                {
+                    "code": "KOZG151NMBB",
+                    "name": "Szakszeminárium 2",
+                    "credits": 7,
+                    "prerequisites": [
+                        "KOZG150NMBB"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Közgazdasági alkalmazások 2",
+                    "credits": 12,
+                    "course_block_references": [
+                        "Közgazdasági alkalmazások"
+                    ]
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható",
+                    "credits": 6
+                }
+            ]
+        },
+        {
+            "name": "Közgazdasági alkalmazások",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "KG00134NMBB",
+                    "name": "Empirikus makroökonómia",
+                    "credits": 6
+                },
+                {
+                    "code": "4OG33NAK31B",
+                    "name": "Intézményi közgazdaságtan",
+                    "credits": 6
+                },
+                {
+                    "code": "PSPE039NMBB",
+                    "name": "Pénz és bankrendszer",
+                    "credits": 6
+                },
+                {
+                    "code": "KOZG149NMBB",
+                    "name": "Introduction to Labor Economics",
+                    "credits": 6
+                },
+                {
+                    "code": "MSOA005NABB",
+                    "name": "Multivariate data analysis",
+                    "credits": 6
+                },
+                {
+                    "code": "KOZG099NAMB",
+                    "name": "Causal Data Analysis",
+                    "credits": 6
+                },
+                {
+                    "code": "PENZ083NMBB-SPM",
+                    "name": "Ismerkedés az árfolyamokkal",
+                    "credits": 3,
+                    "prerequisites": [
+                        "MSMT028NMBB-SPM"
+                    ]
+                },
+                {
+                    "code": "PENZ084NMBB-SPM",
+                    "name": "Pénzügyi modellezés",
+                    "credits": 6,
+                    "prerequisites": [
+                        "MSMT028NMBB-SPM"
+                    ]
+                },
+                {
+                    "code": "PSBV042NMBB-SPM",
+                    "name": "Pénz- és tőkepiac",
+                    "credits": 6,
+                    "prerequisites": [
+                        "MSMT028NMBB-SPM"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Társadalomtudományi tárgyak",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "TARS212NMBB",
+                    "name": "Bevezetés a politikatudományba",
+                    "credits": 3
+                },
+                {
+                    "code": "SZAM131NMBB",
+                    "name": "Európai Uniós belső piaci jog",
+                    "credits": 3
+                },
+                {
+                    "code": "7NK40NGK89B",
+                    "name": "Európai Uniós ismeretek",
+                    "credits": 3
+                },
+                {
+                    "code": "TARS226NMBB",
+                    "name": "Filozófia",
+                    "credits": 3
+                },
+                {
+                    "code": "7FI01NDV05B",
+                    "name": "Gazdaságpszichológia",
+                    "credits": 3
+                },
+                {
+                    "code": "7SO30NDV15B",
+                    "name": "Gazdaságszociológia",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Társadalomtudományi tárgyak #2",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "KOZG023NMBB",
+                    "name": "Gazdaságtörténet",
+                    "credits": 3
+                },
+                {
+                    "code": "PSGJ035NMBB",
+                    "name": "Gazdasági jog",
+                    "credits": 6
+                },
+                {
+                    "code": "CIAS009NMBB",
+                    "name": "Üzleti etika",
+                    "credits": 6
+                },
+                {
+                    "code": "GLOB192NMBB",
+                    "name": "Regionális tanulmányok",
+                    "credits": 3
+                },
+                {
+                    "code": "TARS227NABB",
+                    "name": "Globalisation, Deglobalisation and Social Change",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Speciális pénzügyi matematika modul",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "MSMT028NMBB-SPM",
+                    "name": "Fejezetek a matematikából I.",
+                    "credits": 6,
+                    "prerequisites": [
+                        "MSMT025NMBB"
+                    ]
+                },
+                {
+                    "code": "MSMT029NMBB-SPM",
+                    "name": "Fejezetek a matematikából II.",
+                    "credits": 6,
+                    "prerequisites": [
+                        "MSMT028NMBB-SPM"
+                    ]
+                },
+                {
+                    "code": "MSMT030NMBB-SPM",
+                    "name": "Fejezetek a matematikából III.",
+                    "credits": 6,
+                    "prerequisites": [
+                        "MSMT029NMBB-SPM"
+                    ]
+                },
+                {
+                    "code": "MSMT031NMBB-SPM",
+                    "name": "Fejezetek a matematikából IV.",
+                    "credits": 6
+                },
+                {
+                    "code": "MSST034NMBB-SPM",
+                    "name": "Statisztika I. (IMP-SPM)",
+                    "credits": 6
+                },
+                {
+                    "code": "MSST035NMBB-SPM",
+                    "name": "Statisztika II. (IMP-SPM)",
+                    "credits": 6,
+                    "prerequisites": [
+                        "MSST034NMBB-SPM"
+                    ]
+                },
+                {
+                    "code": "2BE52NAK04B-SPM",
+                    "name": "Vállalati pénzügyek (IMP-SPM)",
+                    "credits": 6
+                }
+            ],
+            "is_counted": false
+        },
+        {
+            "name": "Idegen nyelven teljesíthető tárgyak",
+            "row": 1,
+            "is_counted": false,
+            "courses": [
+                {
+                    "code": "KOZG005NABB",
+                    "name": "Introduction to Economics",
+                    "credits": 6
+                },
+                {
+                    "code": "KOZG166NABB",
+                    "name": "Introduction to Empirical Economics",
+                    "credits": 6
+                },
+                {
+                    "code": "KOZG155NABB",
+                    "name": "Microeconomics I.",
+                    "credits": 6
+                },
+                {
+                    "code": "KOZG156NABB",
+                    "name": "Intermediate Macroeconomics",
+                    "credits": 6
+                },
+                {
+                    "code": "KOZG157NABB",
+                    "name": "Econometrics I.",
+                    "credits": 6,
+                    "prerequisites": [
+                        "KOZG141NMBB",
+                        "KOZG166NABB",
+                        "MSMT027NMBB"
+                    ]
+                },
+                {
+                    "code": "KOZG158NABB",
+                    "name": "International Economics",
+                    "credits": 6
+                }
+            ]
+        },
+        {
+            "name": "Idegen nyelven teljesíthető tárgyak #2",
+            "row": 1,
+            "is_counted": false,
+            "courses": [
+                {
+                    "code": "ADIN200NABB",
+                    "name": "Econometrics II.",
+                    "credits": 6,
+                    "prerequisites": [
+                        "KOZG143NMBB",
+                        "KOZG157NABB"
+                    ]
+                },
+                {
+                    "code": "VGUG024NMBB",
+                    "name": "Allgemeine Betriebswirtschaftslehre",
+                    "credits": 6,
+                    "prerequisites": [
+                        "VGUG023NMBB"
+                    ]
+                },
+                {
+                    "code": "NPGG014NMBB",
+                    "name": "Globale Herausforderungen der Nachhaltigkeit",
+                    "credits": 3,
+                    "prerequisites": [
+                        "NPGG013NMBB"
+                    ]
+                },
+                {
+                    "code": "2DS91NAK03B",
+                    "name": "Investition und Finanzierung",
+                    "credits": 6,
+                    "prerequisites": [
+                        "PSBV044NMBB"
+                    ]
+                },
+                {
+                    "code": "SZAM116NNBB",
+                    "name": "Rechtliche und wirtschaftliche Fragen von Unternehmen",
+                    "credits": 6,
+                    "prerequisites": [
+                        "PSGJ035NMBB"
+                    ]
+                }
+            ]
+        }
+    ]
+}

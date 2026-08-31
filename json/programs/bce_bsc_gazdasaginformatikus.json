@@ -1,0 +1,474 @@
+{
+    "name": "Gazdaságinformatikus",
+    "description": "Gazdaságinformatikus alapképzési szak, nappali tagozat tanterve",
+    "curriculum_updated_at": "2026-07-20",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "VEZ0149NMBB",
+                    "name": "STaRT-U-HU",
+                    "credits": 3
+                },
+                {
+                    "code": "MSMT025NMBB",
+                    "name": "Analízis",
+                    "credits": 6
+                },
+                {
+                    "code": "KG00091NMBB",
+                    "name": "Bevezetés a közgazdaságtanba",
+                    "credits": 6
+                },
+                {
+                    "code": "VGUG023NMBB",
+                    "name": "Vállalatgazdaságtan",
+                    "credits": 6
+                },
+                {
+                    "code": "INSA038NMBB",
+                    "name": "Informatika és IT architektúra alapjai",
+                    "credits": 6
+                },
+                {
+                    "code": "INSA006NMBB",
+                    "name": "Bevezetés a programozásba",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "MSMT027NMBB",
+                    "name": "Valószínűségszámítás",
+                    "credits": 6
+                },
+                {
+                    "code": "MSMT026NMBB",
+                    "name": "Lineáris algebra",
+                    "credits": 6
+                },
+                {
+                    "code": "ADIN206NMBB",
+                    "name": "Leíró statisztika",
+                    "credits": 6
+                },
+                {
+                    "code": "NPGG013NMBB",
+                    "name": "Globális fenntarthatósági kihívások",
+                    "credits": 3
+                },
+                {
+                    "code": "INSA007NMBB",
+                    "name": "Adatbázisok",
+                    "credits": 6
+                },
+                {
+                    "code": "INSA008NMBB",
+                    "name": "Software technológia",
+                    "credits": 6,
+                    "prerequisites": [
+                        "INSA006NMBB"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "MSMT020NMBB",
+                    "name": "Számítástudomány",
+                    "credits": 3
+                },
+                {
+                    "code": "ADIN193NMBB",
+                    "name": "MI és üzleti alkalmazások",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VGUG023NMBB",
+                        "VGUG024NMBB"
+                    ]
+                },
+                {
+                    "code": "PSBV044NMBB",
+                    "name": "Vállalati pénzügyek",
+                    "credits": 6
+                },
+                {
+                    "code": "INSA009NMBB",
+                    "name": "IT architektúra",
+                    "credits": 6,
+                    "prerequisites": [
+                        "INSA038NMBB"
+                    ]
+                },
+                {
+                    "code": "INSA039NMBB",
+                    "name": "Software engineering",
+                    "credits": 6,
+                    "prerequisites": [
+                        "INSA008NMBB"
+                    ]
+                },
+                {
+                    "code": "ADIN194NMBB",
+                    "name": "Következtető statisztika",
+                    "credits": 6,
+                    "prerequisites": [
+                        "ADIN206NMBB"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "PSPS021NMBB",
+                    "name": "Számvitel alapjai",
+                    "credits": 6
+                },
+                {
+                    "code": "VEZ0208NMBB",
+                    "name": "Szervezetek vezetése",
+                    "credits": 6
+                },
+                {
+                    "code": "ADIN118NMBB",
+                    "name": "Rendszerfejlesztés és IT projektmenedzsment (projekttárgy)",
+                    "credits": 9
+                },
+                {
+                    "code": "INIR041NMBB",
+                    "name": "Folyamat-menedzsment",
+                    "credits": 6
+                },
+                {
+                    "code": "VGAV026NMBB",
+                    "name": "IT biztonság",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "5. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "PSGJ035NMBB",
+                    "name": "Gazdasági jog",
+                    "credits": 6
+                },
+                {
+                    "code": "INIR042NMBB",
+                    "name": "IT szolgáltatás-menedzsment és audit",
+                    "credits": 6
+                },
+                {
+                    "code": "INIK008NMBB",
+                    "name": "Digitális kultúra",
+                    "credits": 6
+                },
+                {
+                    "code": "INIR044NMBB",
+                    "name": "Üzleti intelligencia",
+                    "credits": 6,
+                    "prerequisites": [
+                        "ADIN194NMBB"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választható tantárgyak 1",
+                    "credits": 6,
+                    "course_block_references": [
+                        "Kötelezően választható tantárgyak",
+                        "Kötelezően választható tantárgyak #2"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "6. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "OPDO104NMBB",
+                    "name": "Operációkutatási modellek Pythonban",
+                    "credits": 3,
+                    "prerequisites": [
+                        "MSMT026NMBB"
+                    ]
+                },
+                {
+                    "code": "ADIN220NMBB",
+                    "name": "Integrált rendszerek",
+                    "credits": 6
+                },
+                {
+                    "code": "INSA011NMBB",
+                    "name": "A mesterséges intelligencia alapjai",
+                    "credits": 6
+                },
+                {
+                    "code": "INIR045NMBB",
+                    "name": "Digitalizációs projektek (projekttárgy)",
+                    "credits": 6
+                },
+                {
+                    "code": "INSA014NMBB",
+                    "name": "Fintech megoldások",
+                    "credits": 3
+                },
+                {
+                    "code": "ADIN201NMBB",
+                    "name": "Szakszeminárium",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "7. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "INIK011NMBB",
+                    "name": "Üzleti modellek a digitális világban",
+                    "credits": 6,
+                    "prerequisites": [
+                        "INIK008NMBB"
+                    ]
+                },
+                {
+                    "code": "ADIN203NMBB",
+                    "name": "Szakdolgozat/Projekt",
+                    "credits": 12
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható",
+                    "credits": 12
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választható tantárgyak",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VEZ0206NABB",
+                    "name": "AI in Organizations",
+                    "credits": 3
+                },
+                {
+                    "code": "VGDE011NMBB",
+                    "name": "Döntési technikák",
+                    "credits": 3
+                },
+                {
+                    "code": "PSPE018NMBB",
+                    "name": "Pénzügytan",
+                    "credits": 3
+                },
+                {
+                    "code": "4OG33NAV27B",
+                    "name": "Intézményi közgazdaságtan",
+                    "credits": 3
+                },
+                {
+                    "code": "VTVK022NMBB",
+                    "name": "Közcélú szervezetek vezetésének alapjai",
+                    "credits": 3
+                },
+                {
+                    "code": "ADIN022NABB",
+                    "name": "Cases on Business IT management",
+                    "credits": 6
+                },
+                {
+                    "code": "MARK176NMBB",
+                    "name": "Marketing",
+                    "credits": 6
+                },
+                {
+                    "code": "2VL60NBK10B",
+                    "name": "Tevékenységmenedzsment",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VGUG023NMBB",
+                        "VGUG024NMBB"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választható tantárgyak #2",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "VALL097NMBB",
+                    "name": "Vállalkozásindító üzleti koncepció",
+                    "credits": 6
+                },
+                {
+                    "code": "GLOB195NMBB",
+                    "name": "Világgazdaságtan",
+                    "credits": 3,
+                    "prerequisites": [
+                        "KG00091NMBB"
+                    ]
+                },
+                {
+                    "code": "FENT132NMBB",
+                    "name": "Vonzerőfejlesztés a turizmusban",
+                    "credits": 3
+                },
+                {
+                    "code": "SZAM132NMBB",
+                    "name": "Adójog a gyakorlatban",
+                    "credits": 3
+                },
+                {
+                    "code": "VF00024NMBB",
+                    "name": "Agrobiznisz menedzsment",
+                    "credits": 3
+                },
+                {
+                    "code": "FENT017NABB",
+                    "name": "Methods for Economic Geographical Analyses",
+                    "credits": 3
+                },
+                {
+                    "code": "PENZ083NMBB-SPM",
+                    "name": "Ismerkedés az árfolyamokkal",
+                    "credits": 3,
+                    "prerequisites": [
+                        "MSMT028NMBB-SPM"
+                    ]
+                },
+                {
+                    "code": "PENZ084NMBB-SPM",
+                    "name": "Pénzügyi modellezés",
+                    "credits": 6,
+                    "prerequisites": [
+                        "MSMT028NMBB-SPM"
+                    ]
+                },
+                {
+                    "code": "PSBV042NMBB-SPM",
+                    "name": "Pénz- és tőkepiac",
+                    "credits": 6,
+                    "prerequisites": [
+                        "MSMT028NMBB-SPM"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Speciális pénzügyi matematika modul",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "MSMT028NMBB-SPM",
+                    "name": "Fejezetek a matematikából I.",
+                    "credits": 6,
+                    "prerequisites": [
+                        "MSMT025NMBB"
+                    ]
+                },
+                {
+                    "code": "MSMT029NMBB-SPM",
+                    "name": "Fejezetek a matematikából II.",
+                    "credits": 6,
+                    "prerequisites": [
+                        "MSMT028NMBB-SPM"
+                    ]
+                },
+                {
+                    "code": "MSMT030NMBB-SPM",
+                    "name": "Fejezetek a matematikából III.",
+                    "credits": 6,
+                    "prerequisites": [
+                        "MSMT029NMBB-SPM",
+                        "MSMT027NMBB"
+                    ]
+                },
+                {
+                    "code": "MSMT031NMBB-SPM",
+                    "name": "Fejezetek a matematikából IV.",
+                    "credits": 6
+                },
+                {
+                    "code": "MSST034NMBB-SPM",
+                    "name": "Statisztika I. (IMP-SPM)",
+                    "credits": 6
+                },
+                {
+                    "code": "MSST035NMBB-SPM",
+                    "name": "Statisztika II. (IMP-SPM)",
+                    "credits": 6,
+                    "prerequisites": [
+                        "MSST034NMBB-SPM"
+                    ]
+                },
+                {
+                    "code": "2BE52NAK04B-SPM",
+                    "name": "Vállalati pénzügyek (IMP-SPM)",
+                    "credits": 6
+                }
+            ],
+            "is_counted": false
+        },
+        {
+            "name": "Idegen nyelven teljesíthető tárgyak",
+            "row": 1,
+            "is_counted": false,
+            "courses": [
+                {
+                    "code": "VGUG024NMBB",
+                    "name": "Allgemeine Betriebswirtschaftslehre",
+                    "credits": 6
+                },
+                {
+                    "code": "NPGG014NMBB",
+                    "name": "Globale Herausforderungen der Nachhaltigkeit",
+                    "credits": 3
+                },
+                {
+                    "code": "2DS91NAK03B",
+                    "name": "Investition und Finanzierung",
+                    "credits": 6,
+                    "prerequisites": [
+                        "PSBV044NMBB"
+                    ]
+                },
+                {
+                    "code": "SZAM116NNBB",
+                    "name": "Rechtliche und wirtschaftliche Fragen von Unternehmen",
+                    "credits": 6,
+                    "prerequisites": [
+                        "PSGJ035NMBB"
+                    ]
+                },
+                {
+                    "code": "MAME014NMBB",
+                    "name": "Grundlagen des Marketing",
+                    "credits": 6
+                },
+                {
+                    "code": "PSBV033NMBB",
+                    "name": "Betriebswirtschaftliche Entscheidungstheorie",
+                    "credits": 3
+                }
+            ]
+        }
+    ]
+}
