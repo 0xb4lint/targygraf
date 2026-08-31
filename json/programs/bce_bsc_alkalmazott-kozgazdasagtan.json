@@ -67,8 +67,7 @@
                     "name": "Projekt",
                     "credits": 6,
                     "prerequisites": [
-                        "KOZG141NMBB",
-                        "KOZG166NABB"
+                        "KOZG141NMBB"
                     ]
                 },
                 {
@@ -112,7 +111,6 @@
                     "credits": 6,
                     "prerequisites": [
                         "KOZG141NMBB",
-                        "KOZG166NABB",
                         "MSMT027NMBB"
                     ]
                 },
@@ -121,8 +119,7 @@
                     "name": "Mikroökonómia II.",
                     "credits": 6,
                     "prerequisites": [
-                        "KOZG152NMBB",
-                        "KOZG155NABB"
+                        "KOZG152NMBB"
                     ]
                 },
                 {
@@ -155,8 +152,7 @@
                     "name": "Ökonometria II.",
                     "credits": 6,
                     "prerequisites": [
-                        "KOZG143NMBB",
-                        "KOZG157NABB"
+                        "KOZG143NMBB"
                     ]
                 },
                 {
@@ -164,8 +160,7 @@
                     "name": "Bevezetés a játékelméletbe",
                     "credits": 6,
                     "prerequisites": [
-                        "KOZG152NMBB",
-                        "KOZG155NABB"
+                        "KOZG152NMBB"
                     ]
                 },
                 {
@@ -433,96 +428,6 @@
                 }
             ],
             "is_counted": false
-        },
-        {
-            "name": "Idegen nyelven teljesíthető tárgyak",
-            "row": 1,
-            "is_counted": false,
-            "courses": [
-                {
-                    "code": "KOZG005NABB",
-                    "name": "Introduction to Economics",
-                    "credits": 6
-                },
-                {
-                    "code": "KOZG166NABB",
-                    "name": "Introduction to Empirical Economics",
-                    "credits": 6
-                },
-                {
-                    "code": "KOZG155NABB",
-                    "name": "Microeconomics I.",
-                    "credits": 6
-                },
-                {
-                    "code": "KOZG156NABB",
-                    "name": "Intermediate Macroeconomics",
-                    "credits": 6
-                },
-                {
-                    "code": "KOZG157NABB",
-                    "name": "Econometrics I.",
-                    "credits": 6,
-                    "prerequisites": [
-                        "KOZG141NMBB",
-                        "KOZG166NABB",
-                        "MSMT027NMBB"
-                    ]
-                },
-                {
-                    "code": "KOZG158NABB",
-                    "name": "International Economics",
-                    "credits": 6
-                }
-            ]
-        },
-        {
-            "name": "Idegen nyelven teljesíthető tárgyak #2",
-            "row": 1,
-            "is_counted": false,
-            "courses": [
-                {
-                    "code": "ADIN200NABB",
-                    "name": "Econometrics II.",
-                    "credits": 6,
-                    "prerequisites": [
-                        "KOZG143NMBB",
-                        "KOZG157NABB"
-                    ]
-                },
-                {
-                    "code": "VGUG024NMBB",
-                    "name": "Allgemeine Betriebswirtschaftslehre",
-                    "credits": 6,
-                    "prerequisites": [
-                        "VGUG023NMBB"
-                    ]
-                },
-                {
-                    "code": "NPGG014NMBB",
-                    "name": "Globale Herausforderungen der Nachhaltigkeit",
-                    "credits": 3,
-                    "prerequisites": [
-                        "NPGG013NMBB"
-                    ]
-                },
-                {
-                    "code": "2DS91NAK03B",
-                    "name": "Investition und Finanzierung",
-                    "credits": 6,
-                    "prerequisites": [
-                        "PSBV044NMBB"
-                    ]
-                },
-                {
-                    "code": "SZAM116NNBB",
-                    "name": "Rechtliche und wirtschaftliche Fragen von Unternehmen",
-                    "credits": 6,
-                    "prerequisites": [
-                        "PSGJ035NMBB"
-                    ]
-                }
-            ]
         }
     ]
 }

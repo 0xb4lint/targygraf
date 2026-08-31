@@ -92,8 +92,7 @@
                     "name": "MI és üzleti alkalmazások",
                     "credits": 3,
                     "prerequisites": [
-                        "VGUG023NMBB",
-                        "VGUG024NMBB"
+                        "VGUG023NMBB"
                     ]
                 },
                 {
@@ -303,8 +302,7 @@
                     "name": "Tevékenységmenedzsment",
                     "credits": 3,
                     "prerequisites": [
-                        "VGUG023NMBB",
-                        "VGUG024NMBB"
+                        "VGUG023NMBB"
                     ]
                 }
             ]
@@ -426,49 +424,6 @@
                 }
             ],
             "is_counted": false
-        },
-        {
-            "name": "Idegen nyelven teljesíthető tárgyak",
-            "row": 1,
-            "is_counted": false,
-            "courses": [
-                {
-                    "code": "VGUG024NMBB",
-                    "name": "Allgemeine Betriebswirtschaftslehre",
-                    "credits": 6
-                },
-                {
-                    "code": "NPGG014NMBB",
-                    "name": "Globale Herausforderungen der Nachhaltigkeit",
-                    "credits": 3
-                },
-                {
-                    "code": "2DS91NAK03B",
-                    "name": "Investition und Finanzierung",
-                    "credits": 6,
-                    "prerequisites": [
-                        "PSBV044NMBB"
-                    ]
-                },
-                {
-                    "code": "SZAM116NNBB",
-                    "name": "Rechtliche und wirtschaftliche Fragen von Unternehmen",
-                    "credits": 6,
-                    "prerequisites": [
-                        "PSGJ035NMBB"
-                    ]
-                },
-                {
-                    "code": "MAME014NMBB",
-                    "name": "Grundlagen des Marketing",
-                    "credits": 6
-                },
-                {
-                    "code": "PSBV033NMBB",
-                    "name": "Betriebswirtschaftliche Entscheidungstheorie",
-                    "credits": 3
-                }
-            ]
         }
     ]
 }

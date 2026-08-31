@@ -78,8 +78,7 @@
                     "name": "Számvitel alapjai",
                     "credits": 6,
                     "prerequisites": [
-                        "VGUG023NMBB",
-                        "VGUG024NMBB"
+                        "VGUG023NMBB"
                     ]
                 }
             ]
@@ -101,8 +100,7 @@
                     "name": "MI és üzleti alkalmazások",
                     "credits": 3,
                     "prerequisites": [
-                        "VGUG023NMBB",
-                        "VGUG024NMBB"
+                        "VGUG023NMBB"
                     ]
                 },
                 {
@@ -389,8 +387,7 @@
                     "name": "Tevékenységmenedzsment",
                     "credits": 3,
                     "prerequisites": [
-                        "VGUG023NMBB",
-                        "VGUG024NMBB"
+                        "VGUG023NMBB"
                     ]
                 },
                 {
@@ -546,51 +543,6 @@
                 }
             ],
             "is_counted": false
-        },
-        {
-            "name": "Idegen nyelven teljesíthető tárgyak",
-            "row": 1,
-            "is_counted": false,
-            "courses": [
-                {
-                    "code": "VGUG024NMBB",
-                    "name": "Allgemeine Betriebswirtschaftslehre",
-                    "credits": 6
-                },
-                {
-                    "code": "SZAM116NNBB",
-                    "name": "Rechtliche und wirtschaftliche Fragen von Unternehmen",
-                    "credits": 6
-                },
-                {
-                    "code": "NPGG014NMBB",
-                    "name": "Globale Herausforderungen der Nachhaltigkeit",
-                    "credits": 3
-                },
-                {
-                    "code": "SZAM060NNBB",
-                    "name": "Kostenrechnung",
-                    "credits": 6,
-                    "prerequisites": [
-                        "PSPS021NMBB"
-                    ]
-                },
-                {
-                    "code": "VTSM056NMBB",
-                    "name": "Verhalten in Organisationen und Personal",
-                    "credits": 6
-                },
-                {
-                    "code": "MAME014NMBB",
-                    "name": "Grundlagen des Marketing",
-                    "credits": 6
-                },
-                {
-                    "code": "PSBV033NMBB",
-                    "name": "Betriebswirtschaftliche Entscheidungstheorie",
-                    "credits": 3
-                }
-            ]
         }
     ]
 }
