@@ -62,8 +62,10 @@ A `name` mezőt is igazítsd hozzá: az évszám nélküli fájlban a szak sima 
 (`"Villamosmérnök (2022-től felvetteknek)"`). A szakválasztóban ez a név
 látszik, így rögtön látni, melyik az aktuális tanterv.
 
-Figyelem: az átnevezés megváltoztatja a régi tanterv URL-jét, és a régi címre
-nincs átirányítás. Csak akkor nevezz át, ha tényleg új tanterv lép életbe.
+Figyelem: az átnevezés megváltoztatja a régi tanterv URL-jét. Ha az a cím már
+élt, vedd fel a régi útvonalat a `worker/routing.ts` `RENAMED_PROGRAMS`
+listájába, különben a régi link 404-et ad. Csak akkor nevezz át, ha tényleg új
+tanterv lép életbe.
 
 ## Új kar vagy szak felvétele
 

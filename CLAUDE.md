@@ -47,8 +47,8 @@ Read the header comments of `src/lib/data.ts` and
   (`bme_vik_villamosmernok.json` vs `bme_vik_villamosmernok2022.json`). A new
   curriculum renames the previous file and takes the bare slug. `name` follows
   suit: plain on the current one, intake-marked on the archived
-  (`Villamosmérnök` vs `Villamosmérnök (2022-től felvetteknek)`). There is no
-  per-program redirect, so renaming a slug that is already deployed 404s it;
-  `bme_vik_mernok-informatikusmsc2023.json` keeps its suffix for that reason.
+  (`Villamosmérnök` vs `Villamosmérnök (2022-től felvetteknek)`). When a slug
+  that is already deployed moves, add the old path to `RENAMED_PROGRAMS` in
+  `worker/routing.ts` or the old URL 404s.
 - Tabs for indentation (see `.editorconfig`); no runtime JS dependencies,
   `targygraf.js` stays dependency-free vanilla.
