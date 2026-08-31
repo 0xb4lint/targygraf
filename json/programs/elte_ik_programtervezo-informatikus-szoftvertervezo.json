@@ -1,0 +1,818 @@
+{
+    "name": "Programtervező informatikus - Szoftvertervező (B) specializáció",
+    "description": "Programtervező informatikus BSc szak - Szoftvertervező (B) specializáció, nappali tagozat tanterve",
+    "curriculum_updated_at": "2026-06-09",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "IP-18SZGREG",
+                    "name": "Számítógépes rendszerek",
+                    "credits": 5
+                },
+                {
+                    "code": "IP-18PROGEG",
+                    "name": "Programozás",
+                    "credits": 6
+                },
+                {
+                    "code": "IP-18IMPROGEG",
+                    "name": "Imperatív programozás",
+                    "credits": 5
+                },
+                {
+                    "code": "IP-18FUNPEG",
+                    "name": "Funkcionális programozás",
+                    "credits": 5
+                },
+                {
+                    "code": "IP-18MATAG",
+                    "name": "Matematikai alapok",
+                    "credits": 4
+                },
+                {
+                    "code": "IP-18TMKG",
+                    "name": "Egyetemi alapozó és tanulásmódszertani kurzus",
+                    "credits": 1
+                },
+                {
+                    "code": "IP-18IVMEG",
+                    "name": "Innovatív vállalkozás menedzsment",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "IP-18PNYEG",
+                    "name": "Programozási nyelvek",
+                    "credits": 6,
+                    "prerequisites": [
+                        "IP-18IMPROGEG"
+                    ]
+                },
+                {
+                    "code": "IP-18OEPROGEG",
+                    "name": "Objektumelvű programozás",
+                    "credits": 6,
+                    "prerequisites": [
+                        "IP-18PROGEG"
+                    ]
+                },
+                {
+                    "code": "IP-18WF1EG",
+                    "name": "Web-fejlesztés",
+                    "credits": 3,
+                    "prerequisites": [
+                        "(IP-18SZGREG)"
+                    ]
+                },
+                {
+                    "code": "IP-18AA1E",
+                    "name": "Algoritmusok és adatszerkezetek I (előadás)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(IP-18AA1G)"
+                    ]
+                },
+                {
+                    "code": "IP-18AA1G",
+                    "name": "Algoritmusok és adatszerkezetek I (gyakorlat)",
+                    "credits": 3
+                },
+                {
+                    "code": "IP-18DM1E",
+                    "name": "Diszkrét matematika I (előadás)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(IP-18DM1G)"
+                    ]
+                },
+                {
+                    "code": "IP-18DM1G",
+                    "name": "Diszkrét matematika I (gyakorlat)",
+                    "credits": 3,
+                    "prerequisites": [
+                        "IP-18MATAG"
+                    ]
+                },
+                {
+                    "code": "IP-18AN1E",
+                    "name": "Analízis I (előadás)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(IP-18AN1G)"
+                    ]
+                },
+                {
+                    "code": "IP-18AN1G",
+                    "name": "Analízis I (gyakorlat)",
+                    "credits": 3,
+                    "prerequisites": [
+                        "IP-18MATAG"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "IP-18AA2E",
+                    "name": "Algoritmusok és adatszerkezetek II (előadás)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(IP-18AA2G)"
+                    ]
+                },
+                {
+                    "code": "IP-18AA2G",
+                    "name": "Algoritmusok és adatszerkezetek II (gyakorlat)",
+                    "credits": 3,
+                    "prerequisites": [
+                        "IP-18AA1E"
+                    ]
+                },
+                {
+                    "code": "IP-18bPREE",
+                    "name": "Programozáselmélet (előadás)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(IP-18bPREG)"
+                    ]
+                },
+                {
+                    "code": "IP-18bPREG",
+                    "name": "Programozáselmélet (gyakorlat)",
+                    "credits": 3,
+                    "prerequisites": [
+                        "IP-18MATAG"
+                    ]
+                },
+                {
+                    "code": "IP-18bEVALKEG",
+                    "name": "Eseményvezérelt alkalmazások",
+                    "credits": 5,
+                    "prerequisites": [
+                        "IP-18OEPROGEG"
+                    ]
+                },
+                {
+                    "code": "IP-18bAN2E",
+                    "name": "Analízis II (előadás)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(IP-18bAN2G)"
+                    ]
+                },
+                {
+                    "code": "IP-18bAN2G",
+                    "name": "Analízis II (gyakorlat)",
+                    "credits": 3,
+                    "prerequisites": [
+                        "IP-18AN1E"
+                    ]
+                },
+                {
+                    "code": "IP-18bDM2E",
+                    "name": "Diszkrét matematika II (előadás)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(IP-18bDM2G)"
+                    ]
+                },
+                {
+                    "code": "IP-18bDM2G",
+                    "name": "Diszkrét matematika II (gyakorlat)",
+                    "credits": 3,
+                    "prerequisites": [
+                        "IP-18DM1E"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választandó tárgy (Számítástudomány) 1",
+                    "credits": 7,
+                    "course_block_references": [
+                        "Kötelezően választandó tárgyak (Számítástudomány ismeretkör)",
+                        "Kötelezően választandó tárgyak (Számítástudomány ismeretkör) #2",
+                        "Kötelezően választandó tárgyak (Számítástudomány ismeretkör) #3"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "IP-18OPREG",
+                    "name": "Operációs rendszerek",
+                    "credits": 3,
+                    "prerequisites": [
+                        "IP-18SZGREG",
+                        "IP-18PNYEG"
+                    ]
+                },
+                {
+                    "code": "IP-18AB1E",
+                    "name": "Adatbázisok I (előadás)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(IP-18AB1G)"
+                    ]
+                },
+                {
+                    "code": "IP-18AB1G",
+                    "name": "Adatbázisok I (gyakorlat)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "IP-18AA2E"
+                    ]
+                },
+                {
+                    "code": "IP-18bBSZEE",
+                    "name": "Bevezetés a számításelméletbe (előadás)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(IP-18bBSZEG)"
+                    ]
+                },
+                {
+                    "code": "IP-18bBSZEG",
+                    "name": "Bevezetés a számításelméletbe (gyakorlat)",
+                    "credits": 3,
+                    "prerequisites": [
+                        "IP-18DM1E"
+                    ]
+                },
+                {
+                    "code": "IP-18bNM1E",
+                    "name": "Numerikus módszerek I (előadás)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(IP-18bNM1G)"
+                    ]
+                },
+                {
+                    "code": "IP-18bNM1G",
+                    "name": "Numerikus módszerek I (gyakorlat)",
+                    "credits": 3,
+                    "prerequisites": [
+                        "IP-18bAN2E"
+                    ]
+                },
+                {
+                    "code": "IP-18bVSZEG",
+                    "name": "Valószínűségszámítás és statisztika (T)",
+                    "credits": 4,
+                    "prerequisites": [
+                        "IP-18bAN2E"
+                    ]
+                },
+                {
+                    "code": "IP-18bTVFTEG",
+                    "name": "Többváltozós függvénytan",
+                    "credits": 4,
+                    "prerequisites": [
+                        "IP-18bAN2E"
+                    ]
+                },
+                {
+                    "code": "IP-18bSZTEG",
+                    "name": "Szoftvertechnológia TM",
+                    "credits": 5,
+                    "prerequisites": [
+                        "IP-18bEVALKEG"
+                    ]
+                },
+                {
+                    "code": null,
+                    "name": "Kötelezően választandó tárgy (Informatika) 1",
+                    "credits": 2,
+                    "course_block_references": [
+                        "Kötelezően választandó tárgyak (Informatika ismeretkör)",
+                        "Kötelezően választandó tárgyak (Informatika ismeretkör) #2",
+                        "Kötelezően választandó tárgyak (Informatika ismeretkör) #3"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "5. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "IP-18KPROGEG",
+                    "name": "Konkurrens programozás",
+                    "credits": 3,
+                    "prerequisites": [
+                        "IP-18PNYEG"
+                    ]
+                },
+                {
+                    "code": "IP-18TKHE",
+                    "name": "Telekommunikációs hálózatok (előadás)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(IP-18TKHG)"
+                    ]
+                },
+                {
+                    "code": "IP-18TKHG",
+                    "name": "Telekommunikációs hálózatok (gyakorlat)",
+                    "credits": 3,
+                    "prerequisites": [
+                        "IP-18OEPROGEG"
+                    ]
+                },
+                {
+                    "code": "IP-18MIAE",
+                    "name": "Mesterséges intelligencia",
+                    "credits": 3
+                },
+                {
+                    "code": "IP-18bAB2E",
+                    "name": "Adatbázisok II (előadás)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(IP-18bAB2G)"
+                    ]
+                },
+                {
+                    "code": "IP-18bAB2G",
+                    "name": "Adatbázisok II (gyakorlat)",
+                    "credits": 3,
+                    "prerequisites": [
+                        "IP-18AB1E"
+                    ]
+                },
+                {
+                    "code": "IP-18bFPE",
+                    "name": "Fordítóprogramok (előadás)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(IP-18bFPG)"
+                    ]
+                },
+                {
+                    "code": "IP-18bFPG",
+                    "name": "Fordítóprogramok (gyakorlat)",
+                    "credits": 3,
+                    "prerequisites": [
+                        "IP-18bBSZEE"
+                    ]
+                },
+                {
+                    "code": "IP-18bNM2EG",
+                    "name": "Numerikus módszerek II",
+                    "credits": 3,
+                    "prerequisites": [
+                        "IP-18bNM1E"
+                    ]
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható",
+                    "credits": 6
+                }
+            ]
+        },
+        {
+            "name": "6. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "IP-18JIE",
+                    "name": "Jogi ismeretek",
+                    "credits": 3
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható",
+                    "credits": 4
+                },
+                {
+                    "code": "IP-24SZD",
+                    "name": "Szakdolgozati konzultáció",
+                    "credits": 20
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választandó tárgyak (Informatika ismeretkör)",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "IP-24KVISZGE",
+                    "name": "Számítógépes grafika (előadás)",
+                    "credits": 3,
+                    "prerequisites": [
+                        "(IP-18KVISZGG)"
+                    ]
+                },
+                {
+                    "code": "IP-18KVISZGG",
+                    "name": "Számítógépes grafika (gyakorlat)",
+                    "credits": 3,
+                    "prerequisites": [
+                        "IP-18MATAG",
+                        "IP-18IMPROGEG"
+                    ]
+                },
+                {
+                    "code": "IP-18KVIWAFEG",
+                    "name": "Web-es alkalmazások fejlesztése",
+                    "credits": 3,
+                    "prerequisites": [
+                        "IP-18bEVALKEG"
+                    ]
+                },
+                {
+                    "code": "IP-25KVIGPUEG",
+                    "name": "GPU programozás",
+                    "credits": 5,
+                    "prerequisites": [
+                        "IP-18MATAG",
+                        "IP-18IMPROGEG"
+                    ]
+                },
+                {
+                    "code": "IP-18KWEBPROGEG",
+                    "name": "Webprogramozás",
+                    "credits": 4,
+                    "prerequisites": [
+                        "IP-18WF1EG"
+                    ]
+                },
+                {
+                    "code": "IP-18KVIKWPROGEG",
+                    "name": "Kliensoldali webprogramozás",
+                    "credits": 4,
+                    "prerequisites": [
+                        "IP-18KWEBPROGEG"
+                    ]
+                },
+                {
+                    "code": "IP-18KVISZWPROGEG",
+                    "name": "Szerveroldali webprogramozás",
+                    "credits": 4,
+                    "prerequisites": [
+                        "IP-18KWEBPROGEG"
+                    ]
+                },
+                {
+                    "code": "IP-18KVIFSWPROGG",
+                    "name": "Full stack webprogramozás",
+                    "credits": 3,
+                    "prerequisites": [
+                        "IP-18KVIKWPROGEG",
+                        "IP-18KVISZWPROGEG"
+                    ]
+                },
+                {
+                    "code": "IP-18KVIVISZE",
+                    "name": "Vállalati információs rendszerek és architektúrák (előadás)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(IP-18KVIVISZG)"
+                    ]
+                },
+                {
+                    "code": "IP-18KVIVISZG",
+                    "name": "Vállalati információs rendszerek és architektúrák (gyakorlat)",
+                    "credits": 3,
+                    "prerequisites": [
+                        "IP-18AB1E"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választandó tárgyak (Informatika ismeretkör) #2",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "IP-18KVIBDAE",
+                    "name": "Big Data architektúrák és elemző módszerek (előadás)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(IP-18KVIBDAG)"
+                    ]
+                },
+                {
+                    "code": "IP-18KVIBDAG",
+                    "name": "Big Data architektúrák és elemző módszerek (gyakorlat)",
+                    "credits": 3,
+                    "prerequisites": [
+                        "IP-18OEPROGEG"
+                    ]
+                },
+                {
+                    "code": "IP-18KVIHJEG",
+                    "name": "Haladó Java",
+                    "credits": 5,
+                    "prerequisites": [
+                        "IP-18PNYEG"
+                    ]
+                },
+                {
+                    "code": "IP-18KVIKFINNL",
+                    "name": "Kutatásfejlesztési és innovációs labor",
+                    "credits": 5
+                },
+                {
+                    "code": "IP-18KVFPNYEG",
+                    "name": "Funkcionális nyelvek",
+                    "credits": 5
+                },
+                {
+                    "code": "IP-18KVPNY1EG",
+                    "name": "Programozási nyelvek (C++)",
+                    "credits": 5,
+                    "prerequisites": [
+                        "IP-18IMPROGEG"
+                    ]
+                },
+                {
+                    "code": "IP-18KVPRJG",
+                    "name": "Projekteszközök",
+                    "credits": 3,
+                    "prerequisites": [
+                        "IP-18PNYEG"
+                    ]
+                },
+                {
+                    "code": "IP-24KVIHSZGE",
+                    "name": "Haladó Számítógépes Grafika (előadás)",
+                    "credits": 3,
+                    "prerequisites": [
+                        "IP-24KVISZGE"
+                    ]
+                },
+                {
+                    "code": "IP-18KVIHSZGG",
+                    "name": "Haladó Számítógépes Grafika (gyakorlat)",
+                    "credits": 3
+                },
+                {
+                    "code": "IP-18KVIGUIQTEG",
+                    "name": "GUI programozás Qt-vel",
+                    "credits": 4,
+                    "prerequisites": [
+                        "IP-18OEPROGEG"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választandó tárgyak (Informatika ismeretkör) #3",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "IP-18KVPYEG",
+                    "name": "Python",
+                    "credits": 5
+                },
+                {
+                    "code": "IP-18KVIADSE",
+                    "name": "Applied Data Science (Alkalmazott adattudomány)",
+                    "credits": 2
+                },
+                {
+                    "code": "IP-24KVIKHSZGG",
+                    "name": "Középhaladó számítógépes grafika",
+                    "credits": 3,
+                    "prerequisites": [
+                        "IP-18KVISZGG"
+                    ]
+                },
+                {
+                    "code": "IP-24KVIMWADEG",
+                    "name": "Modern webalkalmazások fejlesztése .NET környezetben",
+                    "credits": 4
+                },
+                {
+                    "code": "IP-25KVIAVAE",
+                    "name": "Adatvizualizáció alapjai",
+                    "credits": 3
+                },
+                {
+                    "code": "IP-25KVIGUIQTCG",
+                    "name": "GUI programozás Qt-vel C++ nyelven",
+                    "credits": 3,
+                    "prerequisites": [
+                        "IP-18OEPROGEG"
+                    ]
+                },
+                {
+                    "code": "IP-25KVIGUIQTPG",
+                    "name": "GUI programozás Qt-vel Python nyelven",
+                    "credits": 3,
+                    "prerequisites": [
+                        "IP-18OEPROGEG"
+                    ]
+                },
+                {
+                    "code": "IP-25KVITIE",
+                    "name": "Térinformatika Ea",
+                    "credits": 1
+                },
+                {
+                    "code": "IP-25KVITIG",
+                    "name": "Térinformatika Gy",
+                    "credits": 3
+                },
+                {
+                    "code": "IP-26KVISZAMKEPFEG",
+                    "name": "Számítógépes képfeldolgozás",
+                    "credits": 5
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választandó tárgyak (Számítástudomány ismeretkör)",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "IP-18KVSZKRBE",
+                    "name": "Kriptográfia és biztonság (előadás)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(IP-18KVSZKRBG)"
+                    ]
+                },
+                {
+                    "code": "IP-18KVSZKRBG",
+                    "name": "Kriptográfia és biztonság (gyakorlat)",
+                    "credits": 3,
+                    "prerequisites": [
+                        "IP-18bDM2E"
+                    ]
+                },
+                {
+                    "code": "IP-18KVSZBGTE",
+                    "name": "Bevezetés a gépi tanulásba",
+                    "credits": 2,
+                    "prerequisites": [
+                        "IP-18MATAG"
+                    ]
+                },
+                {
+                    "code": "IP-18KVISZMNAGE",
+                    "name": "Szoftver mély neuronhálók alkalmazásához",
+                    "credits": 4,
+                    "prerequisites": [
+                        "IP-18MATAG"
+                    ]
+                },
+                {
+                    "code": "IP-18KVIMNFEG",
+                    "name": "Mély neuronhálok algoritmusai és fajtái",
+                    "credits": 3,
+                    "prerequisites": [
+                        "IP-18KVISZMNAGE",
+                        "IP-18bAN2E"
+                    ]
+                },
+                {
+                    "code": "IP-18KVSZPME",
+                    "name": "Programozási módszertan (előadás)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(IP-18KVSZPMG)"
+                    ]
+                },
+                {
+                    "code": "IP-18KVSZPMG",
+                    "name": "Programozási módszertan (gyakorlat)",
+                    "credits": 3,
+                    "prerequisites": [
+                        "IP-18bPREE"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választandó tárgyak (Számítástudomány ismeretkör) #2",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "IP-18KVSZORSIE",
+                    "name": "Osztott rendszerek specifikációja és implementációja (előadás)",
+                    "credits": 2
+                },
+                {
+                    "code": "IP-18KVSZORSIG",
+                    "name": "Osztott rendszerek specifikációja és implementációja (gyakorlat)",
+                    "credits": 3,
+                    "prerequisites": [
+                        "IP-18KVSZPME",
+                        "IP-18bPREE"
+                    ]
+                },
+                {
+                    "code": "IP-18KVSZSZME",
+                    "name": "Számítási modellek (előadás)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(IP-18KVSZSZMG)"
+                    ]
+                },
+                {
+                    "code": "IP-18KVSZSZMG",
+                    "name": "Számítási modellek (gyakorlat)",
+                    "credits": 3,
+                    "prerequisites": [
+                        "IP-18bBSZEE"
+                    ]
+                },
+                {
+                    "code": "IP-18KVSZTME",
+                    "name": "Típuselmélet (előadás)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(IP-18KVSZTMG)"
+                    ]
+                },
+                {
+                    "code": "IP-18KVSZTMG",
+                    "name": "Típuselmélet (gyakorlat)",
+                    "credits": 3
+                },
+                {
+                    "code": "IP-18KVELE",
+                    "name": "Logika (előadás)",
+                    "credits": 2,
+                    "prerequisites": [
+                        "(IP-18KVELG)"
+                    ]
+                },
+                {
+                    "code": "IP-18KVELG",
+                    "name": "Logika (gyakorlat)",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "Kötelezően választandó tárgyak (Számítástudomány ismeretkör) #3",
+            "row": 1,
+            "courses": [
+                {
+                    "code": "IP-18KVMNMALEG",
+                    "name": "Numerikus algoritmusok",
+                    "credits": 4,
+                    "prerequisites": [
+                        "IP-18bNM2EG"
+                    ]
+                },
+                {
+                    "code": "IP-18KVbSZKRBG",
+                    "name": "Kriptográfia és biztonság (gyakorlat, B)",
+                    "credits": 4,
+                    "prerequisites": [
+                        "IP-18DM1E"
+                    ]
+                },
+                {
+                    "code": "IP-24KVSZPDMEG",
+                    "name": "Problémától a diszkrét modellig",
+                    "credits": 4,
+                    "prerequisites": [
+                        "IP-18DM1E"
+                    ]
+                },
+                {
+                    "code": "IP-24KVSZKBIZTE",
+                    "name": "Kiberbiztonság alapjai",
+                    "credits": 4,
+                    "prerequisites": [
+                        "(IP-18WF1EG)"
+                    ]
+                },
+                {
+                    "code": "IP-25KVSZFTKRE",
+                    "name": "Földi és térképi koordináta-rendszerek Ea",
+                    "credits": 3
+                },
+                {
+                    "code": "IP-25KVSZFTKRG",
+                    "name": "Földi és térképi koordináta-rendszerek Gy",
+                    "credits": 3
+                },
+                {
+                    "code": "IP-25KVSZTIMG",
+                    "name": "Téradatok interpolációs módszerei",
+                    "credits": 3
+                }
+            ]
+        }
+    ]
+}
