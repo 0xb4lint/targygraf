@@ -183,7 +183,10 @@ kötelezően választható tárgycsoportok).
 ```
 
 ```javascript
-// kettéosztott hivatkozható blokk: a #2 rész a megjelenítésben rejtve
+// hivatkozható blokk több oszlopra bontva: a blokknevek egyediek kell legyenek
+// (ezek a hivatkozás kulcsai), a "#2" jelölés viszont nem látszik a címben,
+// így a részek egy csoportként jelennek meg. Mindegyik részt fel kell sorolni
+// a hivatkozó tárgy course_block_references mezőjében.
 {
     "name": "Differenciált szakmai tárgy I. #2",
     "row": 1,
