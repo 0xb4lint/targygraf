@@ -355,11 +355,6 @@
                     "code": "TARS226NMBB",
                     "name": "Filozófia",
                     "credits": 3
-                },
-                {
-                    "code": "GLOB192NMBB",
-                    "name": "Regionális tanulmányok",
-                    "credits": 3
                 }
             ]
         },
@@ -368,8 +363,8 @@
             "row": 1,
             "courses": [
                 {
-                    "code": "TARS227NABB",
-                    "name": "Globalisation, Deglobalisation and Social Change",
+                    "code": "GLOB192NMBB",
+                    "name": "Regionális tanulmányok",
                     "credits": 3
                 },
                 {
@@ -409,16 +404,6 @@
                     "code": "SZAM132NMBB",
                     "name": "Adójog a gyakorlatban",
                     "credits": 3
-                },
-                {
-                    "code": "VF00024NMBB",
-                    "name": "Agrobiznisz menedzsment",
-                    "credits": 3
-                },
-                {
-                    "code": "VEZ0206NABB",
-                    "name": "AI in Organizations",
-                    "credits": 3
                 }
             ]
         },
@@ -426,6 +411,11 @@
             "name": "Kötelezően választható tantárgyak #3",
             "row": 1,
             "courses": [
+                {
+                    "code": "VF00024NMBB",
+                    "name": "Agrobiznisz menedzsment",
+                    "credits": 3
+                },
                 {
                     "code": "PENZ083NMBB-SPM",
                     "name": "Ismerkedés az árfolyamokkal",
@@ -469,16 +459,6 @@
                 {
                     "code": "FENT132NMBB",
                     "name": "Vonzerőfejlesztés a turizmusban",
-                    "credits": 3
-                },
-                {
-                    "code": "ADIN022NABB",
-                    "name": "Cases on Business IT management",
-                    "credits": 6
-                },
-                {
-                    "code": "FENT017NABB",
-                    "name": "Methods for Economic Geographical Analyses",
                     "credits": 3
                 }
             ]

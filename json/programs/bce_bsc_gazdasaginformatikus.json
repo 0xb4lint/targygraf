@@ -263,11 +263,6 @@
             "row": 1,
             "courses": [
                 {
-                    "code": "VEZ0206NABB",
-                    "name": "AI in Organizations",
-                    "credits": 3
-                },
-                {
                     "code": "VGDE011NMBB",
                     "name": "Döntési technikák",
                     "credits": 3
@@ -288,11 +283,6 @@
                     "credits": 3
                 },
                 {
-                    "code": "ADIN022NABB",
-                    "name": "Cases on Business IT management",
-                    "credits": 6
-                },
-                {
                     "code": "MARK176NMBB",
                     "name": "Marketing",
                     "credits": 6
@@ -304,6 +294,11 @@
                     "prerequisites": [
                         "VGUG023NMBB"
                     ]
+                },
+                {
+                    "code": "VALL097NMBB",
+                    "name": "Vállalkozásindító üzleti koncepció",
+                    "credits": 6
                 }
             ]
         },
@@ -311,11 +306,6 @@
             "name": "Kötelezően választható tantárgyak #2",
             "row": 1,
             "courses": [
-                {
-                    "code": "VALL097NMBB",
-                    "name": "Vállalkozásindító üzleti koncepció",
-                    "credits": 6
-                },
                 {
                     "code": "GLOB195NMBB",
                     "name": "Világgazdaságtan",
@@ -337,11 +327,6 @@
                 {
                     "code": "VF00024NMBB",
                     "name": "Agrobiznisz menedzsment",
-                    "credits": 3
-                },
-                {
-                    "code": "FENT017NABB",
-                    "name": "Methods for Economic Geographical Analyses",
                     "credits": 3
                 },
                 {

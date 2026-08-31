@@ -37,8 +37,7 @@
                     "name": "Társadalomtudományi tárgyak 1",
                     "credits": 3,
                     "course_block_references": [
-                        "Társadalomtudományi tárgyak",
-                        "Társadalomtudományi tárgyak #2"
+                        "Társadalomtudományi tárgyak"
                     ]
                 }
             ]
@@ -80,8 +79,7 @@
                     "name": "Társadalomtudományi tárgyak 2",
                     "credits": 3,
                     "course_block_references": [
-                        "Társadalomtudományi tárgyak",
-                        "Társadalomtudományi tárgyak #2"
+                        "Társadalomtudományi tárgyak"
                     ]
                 }
             ]
@@ -127,8 +125,7 @@
                     "name": "Társadalomtudományi tárgyak 3",
                     "credits": 3,
                     "course_block_references": [
-                        "Társadalomtudományi tárgyak",
-                        "Társadalomtudományi tárgyak #2"
+                        "Társadalomtudományi tárgyak"
                     ]
                 }
             ]
@@ -168,8 +165,7 @@
                     "name": "Társadalomtudományi tárgyak 4",
                     "credits": 6,
                     "course_block_references": [
-                        "Társadalomtudományi tárgyak",
-                        "Társadalomtudományi tárgyak #2"
+                        "Társadalomtudományi tárgyak"
                     ]
                 }
             ]
@@ -273,11 +269,6 @@
                     "credits": 6
                 },
                 {
-                    "code": "MSOA005NABB",
-                    "name": "Multivariate data analysis",
-                    "credits": 6
-                },
-                {
                     "code": "KOZG099NAMB",
                     "name": "Causal Data Analysis",
                     "credits": 6
@@ -341,13 +332,7 @@
                     "code": "7SO30NDV15B",
                     "name": "Gazdaságszociológia",
                     "credits": 3
-                }
-            ]
-        },
-        {
-            "name": "Társadalomtudományi tárgyak #2",
-            "row": 1,
-            "courses": [
+                },
                 {
                     "code": "KOZG023NMBB",
                     "name": "Gazdaságtörténet",
@@ -366,11 +351,6 @@
                 {
                     "code": "GLOB192NMBB",
                     "name": "Regionális tanulmányok",
-                    "credits": 3
-                },
-                {
-                    "code": "TARS227NABB",
-                    "name": "Globalisation, Deglobalisation and Social Change",
                     "credits": 3
                 }
             ]
