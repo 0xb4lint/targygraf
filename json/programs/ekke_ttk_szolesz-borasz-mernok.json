@@ -1,7 +1,7 @@
 {
     "name": "Szőlész-borász mérnök",
     "description": "Szőlész-borász mérnöki szak (BSc) tanterve",
-    "curriculum_updated_at": "2023-09-01",
+    "curriculum_updated_at": "2026-09-01",
     "course_blocks": [
   {
     "name": "1. félév",
@@ -70,8 +70,8 @@
     "row": 0,
     "courses": [
       {
-        "code": "NBB_TI910G2",
-        "name": "Kutatásmódszertan",
+        "code": "NBP_XT911G2",
+        "name": "Kutatásmódszertan (agrár)",
         "credits": 2
       },
       {
@@ -142,15 +142,6 @@
         ]
       },
       {
-        "code": "NBA_SZ193K3",
-        "name": "Szőlő-borágazat jogi- és minőségszabályozása",
-        "credits": 3,
-        "prerequisites": [
-          "NBA_SZ183G3",
-          "NBA_SZ188G3"
-        ]
-      },
-      {
         "code": "NBA_SZ162A0",
         "name": "Nyári gyakorlat I.",
         "credits": 0
@@ -178,6 +169,15 @@
         "code": "NBA_MG135K2",
         "name": "Agrometeorológia",
         "credits": 2
+      },
+      {
+        "code": "NBA_SZ193K3",
+        "name": "Szőlő-borágazat jogi- és minőségszabályozása",
+        "credits": 3,
+        "prerequisites": [
+          "NBA_SZ183G3",
+          "NBA_SZ188G3"
+        ]
       },
       {
         "code": "NBA_SZ159G3",
@@ -284,7 +284,8 @@
           "NBA_SZ183G3",
           "NBA_SZ187G3",
           "NBA_SZ188G3",
-          "NBA_SZ185G2"
+          "NBA_SZ185G2",
+          "NBA_SZ189G3"
         ]
       },
       {
@@ -345,7 +346,6 @@
         "name": "Szőlőtermesztés technológiája II.",
         "credits": 6,
         "prerequisites": [
-          "NBA_SZ189G3",
           "NBA_SZ116K6"
         ]
       },
