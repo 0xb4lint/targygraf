@@ -1,7 +1,7 @@
 {
-    "name": "Szőlész-borász",
+    "name": "Szőlész-borász mérnök",
     "description": "Szőlész-borász mérnöki szak (BSc) tanterve",
-    "curriculum_updated_at": "2026-09-01",
+    "curriculum_updated_at": "2023-09-01",
     "course_blocks": [
   {
     "name": "1. félév",
@@ -13,7 +13,7 @@
         "credits": 0
       },
       {
-        "code": "NOP_HT...",
+        "code": null,
         "name": "Keresztény kultúra (kötelezően választott)",
         "credits": 2,
         "course_block_references": ["Keresztény kultúra"]
@@ -304,6 +304,14 @@
         "prerequisites": [
           "NBA_SZ168A0"
         ]
+      },
+      {
+        "code": null,
+        "name": "Szabadon választható tárgy",
+        "credits": 4,
+        "course_block_references": [
+          "Szabadon választható tárgyak"
+        ]
       }
     ]
   },
@@ -459,6 +467,14 @@
         "credits": 5,
         "prerequisites": [
           "NBA_GV120G5"
+        ]
+      },
+      {
+        "code": null,
+        "name": "Szabadon választható tárgy",
+        "credits": 4,
+        "course_block_references": [
+          "Szabadon választható tárgyak"
         ]
       }
     ]
