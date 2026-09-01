@@ -1,5 +1,5 @@
 {
-    "name": "Szőlész-borász mérnök",
+    "name": "Szőlész-borász",
     "description": "Szőlész-borász mérnöki szak (BSc) tanterve",
     "curriculum_updated_at": "2026-09-01",
     "course_blocks": [
@@ -15,7 +15,8 @@
       {
         "code": "NOP_HT...",
         "name": "Keresztény kultúra (kötelezően választott)",
-        "credits": 2
+        "credits": 2,
+        "course_block_references": [" #1", "Keresztény kultúra #2", " #3"]
       },
       {
         "code": "NBA_KT104G6",
@@ -479,9 +480,171 @@
           "NBA_SZ117K6",
           "NBA_SZ155K6",
           "NBA_SZ170A0"
-            ]
-          }
-        ]
+          ]
+        }
+      ]
+    },
+    {
+    "name": " #1",
+    "row": 1,
+    "courses": [
+      {
+        "code": "NOP_HT100K2",
+        "name": "Bibliaismeret",
+        "credits": 2
+      },
+      {
+        "code": "NOP_HT101K2",
+        "name": "A keresztény világvallás alapjai",
+        "credits": 2
+      },
+      {
+        "code": "NOP_HT102K2",
+        "name": "A hazai egyházak, felekezetek, vallási mozgalmak",
+        "credits": 2
+      },
+      {
+        "code": "NOP_HT103K2",
+        "name": "Bevezetés az egyháztörténelembe",
+        "credits": 2
       }
     ]
+  },
+  {
+    "name": "Keresztény kultúra #2",
+    "row": 1,
+    "courses": [
+      {
+        "code": "NOP_HT104K2",
+        "name": "Weltreligionen",
+        "credits": 2
+      },
+      {
+        "code": "NOP_HT105K2",
+        "name": "Die Weltreligionen und das Christentum",
+        "credits": 2
+      },
+      {
+        "code": "NOP_HT106K4",
+        "name": "Die Weltreligionen und das Christentum III.",
+        "credits": 4
+      },
+      {
+        "code": "NOP_HT107K2",
+        "name": "Kereszténypedagógia",
+        "credits": 2
+      }
+    ]
+  },
+  {
+    "name": " #3",
+    "row": 1,
+    "courses": [
+      {
+        "code": "NOP_HT108K2",
+        "name": "Emberközpontú gazdaság",
+        "credits": 2
+      },
+      {
+        "code": "NOP_HT109K2",
+        "name": "Gazdaságetika emberközpontú alapokon",
+        "credits": 2
+      },
+      {
+        "code": "NOP_HT110K2",
+        "name": "Egyház és állam",
+        "credits": 2
+      }
+    ]
+  },
+  {
+    "name": "",
+    "row": 1,
+    "courses":[]
+  },
+    {
+    "name": "",
+    "row": 1,
+    "courses": [
+      {
+        "code": "NBA_AV100G2",
+        "name": "TDK kutatómunka I.",
+        "credits": 2
+      },
+      {
+        "code": "NBA_SZ140G2",
+        "name": "A bor filozófiája",
+        "credits": 2
+      },
+      {
+        "code": "NBA_AV101G2",
+        "name": "TDK kutatómunka II.",
+        "credits": 2
+      },
+      {
+        "code": "NBA_MG103G2",
+        "name": "Bor és gasztronómia",
+        "credits": 2
+      }
+    ]
+  },
+  {
+    "name": "Szabadon választható tárgyak",
+    "row": 1,
+    "courses": [
+      {
+        "code": "NBA_SZ141G2",
+        "name": "A szőlő és a stressz",
+        "credits": 2,
+        "prerequisites": [
+          "NBA_SZ192K3"
+        ]
+      },
+      {
+        "code": "NBA_SZ146G2",
+        "name": "Agrometeorológia a gyakorlatban",
+        "credits": 2,
+        "prerequisites": [
+          "NBA_MG135K2"
+        ]
+      },
+      {
+        "code": "NBA_SZ177G2",
+        "name": "Szőlészeti és borászati praktikum",
+        "credits": 2
+      },
+      {
+        "code": "NBA_KT133G2",
+        "name": "Házi sörfőzés",
+        "credits": 2
+      }
+    ]
+  },
+  {
+    "name": "",
+    "row": 1,
+    "courses": [
+      {
+        "code": "NBA_SZ148G2",
+        "name": "Aktuális problémák a szőlészetben - cikkfeldolgozó szeminárium",
+        "credits": 2
+      },
+      {
+        "code": "NBA_SZ144G2",
+        "name": "A világ borvidékei",
+        "credits": 2
+      },
+      {
+        "code": "NBA_SZ147G2",
+        "name": "Aktuális problémák a borászatban - cikkfeldolgozó szeminárium",
+        "credits": 2
+      },
+      {
+        "code": "NBA_SZ173G2",
+        "name": "Az aszúsodás biológiája",
+        "credits": 2
+      }
+    ]
+  }
+  ]
 }
