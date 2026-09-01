@@ -259,11 +259,11 @@ describe('loadDataset (real repository data)', () => {
 	const dataset = loadDataset();
 
 	it('loads every visible university, faculty and program', () => {
-		expect(dataset.universities).toHaveLength(13);
+		expect(dataset.universities).toHaveLength(14);
 		const faculties = dataset.universities.flatMap((u) => u.faculties);
-		expect(faculties).toHaveLength(30);
+		expect(faculties).toHaveLength(31);
 		const programs = faculties.flatMap((f) => f.programs);
-		expect(programs).toHaveLength(118);
+		expect(programs).toHaveLength(119);
 	});
 
 	it('resolves every prerequisite and block reference without errors', () => {

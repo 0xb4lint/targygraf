@@ -1,0 +1,621 @@
+{
+    "name": "Szőlész-borász",
+    "description": "Szőlész-borász mérnöki szak (BSc) tanterve",
+    "curriculum_updated_at": "2026-09-01",
+    "course_blocks": [
+  {
+    "name": "1. félév",
+    "row": 0,
+    "courses": [
+      {
+        "code": "NBP_PS910A0",
+        "name": "Tanulásmódszertan",
+        "credits": 0
+      },
+      {
+        "code": "NOP_HT...",
+        "name": "Keresztény kultúra (kötelezően választott)",
+        "credits": 2,
+        "course_block_references": ["Keresztény kultúra"]
+      },
+      {
+        "code": "NBA_KT104G6",
+        "name": "Gazdasági matematika és statisztika",
+        "credits": 6
+      },
+      {
+        "code": "NBA_MG147K6",
+        "name": "Mezőgazdasági növénytan és növényélettan",
+        "credits": 6
+      },
+      {
+        "code": "NBA_SZ178G4",
+        "name": "Genetikai és biotechnológiai alapismeretek",
+        "credits": 4
+      },
+      {
+        "code": "NBG_GI016K2",
+        "name": "Közgazdasági alapismeretek",
+        "credits": 2
+      },
+      {
+        "code": "NBT_KE167G4",
+        "name": "Általános kémia laborgy.",
+        "credits": 4
+      },
+      {
+        "code": "NBT_KR797K2",
+        "name": "Kémiai alapismeretek ea.",
+        "credits": 2
+      },
+      {
+        "code": "NBA_SZ183G3",
+        "name": "Bevezetés a szőlészetbe és borászatba I.",
+        "credits": 3
+      },
+      {
+        "code": "NBA_SZ185G2",
+        "name": "Élelmiszeripari alapműveletek",
+        "credits": 2
+      },
+      {
+        "code": "NBT_TE976A0",
+        "name": "Általános testnevelés I.",
+        "credits": 0
+      }
+    ]
+  },
+  {
+    "name": "2. félév",
+    "row": 0,
+    "courses": [
+      {
+        "code": "NBB_TI910G2",
+        "name": "Kutatásmódszertan",
+        "credits": 2
+      },
+      {
+        "code": "NBA_KG104G3",
+        "name": "Bevezetés az informatikába",
+        "credits": 3
+      },
+      {
+        "code": "NBA_KT124K2",
+        "name": "Agrofizika",
+        "credits": 2
+      },
+      {
+        "code": "NBA_SZ160G2",
+        "name": "Földtani és ásványtani alapismeretek",
+        "credits": 2
+      },
+      {
+        "code": "NBA_SZ181K3",
+        "name": "Természeti erőforrás gazdálkodás",
+        "credits": 3
+      },
+      {
+        "code": "NBA_SZ182K4",
+        "name": "Szerves és biokémiai ismeretek",
+        "credits": 4,
+        "prerequisites": [
+          "NBT_KE167G4",
+          "NBT_KR797K2"
+        ]
+      },
+      {
+        "code": "NBA_SZ175K2",
+        "name": "Mezőgazdasági talajtan",
+        "credits": 2
+      },
+      {
+        "code": "NBA_SZ188G3",
+        "name": "Bevezetés a szőlészetbe és borászatba II.",
+        "credits": 3,
+        "prerequisites": [
+          "NBA_SZ183G3"
+        ]
+      },
+      {
+        "code": "NBA_SZ189G3",
+        "name": "Hő- és anyagátadó borászati műveletek",
+        "credits": 3,
+        "prerequisites": [
+          "NBA_SZ185G2"
+        ]
+      },
+      {
+        "code": "NBA_SZ200G2",
+        "name": "Agrokémia",
+        "credits": 2,
+        "prerequisites": [
+          "NBT_KE167G4",
+          "NBT_KR797K2"
+        ]
+      },
+      {
+        "code": "NBA_SZ191K3",
+        "name": "A szőlő biológiája és ökológiai igénye I.",
+        "credits": 3,
+        "prerequisites": [
+          "NBA_MG147K6"
+        ]
+      },
+      {
+        "code": "NBA_SZ193K3",
+        "name": "Szőlő-borágazat jogi- és minőségszabályozása",
+        "credits": 3,
+        "prerequisites": [
+          "NBA_SZ183G3",
+          "NBA_SZ188G3"
+        ]
+      },
+      {
+        "code": "NBA_SZ162A0",
+        "name": "Nyári gyakorlat I.",
+        "credits": 0
+      },
+      {
+        "code": "NBT_TE977A0",
+        "name": "Általános testnevelés II.",
+        "credits": 0
+      }
+    ]
+  },
+  {
+    "name": "3. félév",
+    "row": 0,
+    "courses": [
+      {
+        "code": "NBA_GV123G3",
+        "name": "Számvitel és pénzgazdálkodás",
+        "credits": 3,
+        "prerequisites": [
+          "NBG_GI016K2"
+        ]
+      },
+      {
+        "code": "NBA_MG135K2",
+        "name": "Agrometeorológia",
+        "credits": 2
+      },
+      {
+        "code": "NBA_SZ159G3",
+        "name": "Élelmiszerkémia és analitika",
+        "credits": 3,
+        "prerequisites": [
+          "NBT_KE167G4",
+          "NBT_KR797K2"
+        ]
+      },
+      {
+        "code": "NBA_SZ187G3",
+        "name": "Gépek és eszközök a szőlőtermesztésben és a borkészítésben",
+        "credits": 3,
+        "prerequisites": [
+          "NBA_SZ183G3",
+          "NBA_SZ188G3"
+        ]
+      },
+      {
+        "code": "NBA_SZ190K3",
+        "name": "Minőségbiztosítás és munkavédelem a szőlészeti-borászati gyakorlatban",
+        "credits": 3
+      },
+      {
+        "code": "NBA_SZ115K6",
+        "name": "Szőlőfajta ismeret és -használat",
+        "credits": 6,
+        "prerequisites": [
+          "NBA_MG147K6"
+        ]
+      },
+      {
+        "code": "NBA_SZ118G5",
+        "name": "Termőhelyismeret és eredetvédelem",
+        "credits": 5,
+        "prerequisites": [
+          "NBA_SZ183G3",
+          "NBA_SZ188G3"
+        ]
+      },
+      {
+        "code": "NBA_SZ192K3",
+        "name": "A szőlő biológiája és ökológiai igénye II.",
+        "credits": 3,
+        "prerequisites": [
+          "NBA_SZ191K3"
+        ]
+      },
+      {
+        "code": "NBA_SZ168A0",
+        "name": "Üzemi gyakorlat I.",
+        "credits": 0
+      }
+    ]
+  },
+  {
+    "name": "4. félév",
+    "row": 0,
+    "courses": [
+      {
+        "code": "NBA_SZ186G2",
+        "name": "Méréstechnika és automatizálás",
+        "credits": 2,
+        "prerequisites": [
+          "NBA_SZ185G2",
+          "NBA_SZ189G3"
+        ]
+      },
+      {
+        "code": "NBA_SZ201G3",
+        "name": "Élelmiszer és borászati mikrobiológia",
+        "credits": 3,
+        "prerequisites": [
+          "NBA_SZ190K3"
+        ]
+      },
+      {
+        "code": "NBA_SZ202G3",
+        "name": "Must-borászati kémiai és analitika",
+        "credits": 3,
+        "prerequisites": [
+          "NBT_KR797K2",
+          "NBT_KE167G4"
+        ]
+      },
+      {
+        "code": "NBA_SZ116K6",
+        "name": "Szőlőtermesztés technológiája I.",
+        "credits": 6,
+        "prerequisites": [
+          "NBA_SZ175K2",
+          "NBA_SZ187G3",
+          "NBA_SZ192K3",
+          "NBA_SZ115K6",
+          "NBA_SZ191K3"
+        ]
+      },
+      {
+        "code": "NBA_SZ154K6",
+        "name": "Borászati rendszerek I.",
+        "credits": 6,
+        "prerequisites": [
+          "NBA_SZ183G3",
+          "NBA_SZ187G3",
+          "NBA_SZ188G3",
+          "NBA_SZ185G2"
+        ]
+      },
+      {
+        "code": "NBA_GV119G5",
+        "name": "Szakdolgozat konzultáció I.",
+        "credits": 5
+      },
+      {
+        "code": "NBA_SZ163A0",
+        "name": "Nyári gyakorlat II.",
+        "credits": 0
+      },
+      {
+        "code": "NBA_SZ169A0",
+        "name": "Üzemi gyakorlat II.",
+        "credits": 0,
+        "prerequisites": [
+          "NBA_SZ168A0"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "5. félév",
+    "row": 0,
+    "courses": [
+      {
+        "code": "NBA_MG132K3",
+        "name": "Agrárgazdaságtan és agrárpolitika",
+        "credits": 3,
+        "prerequisites": [
+          "NBG_GI016K2"
+        ]
+      },
+      {
+        "code": "NBG_G1900K4",
+        "name": "Vállalati gazdaságtan",
+        "credits": 4,
+        "prerequisites": [
+          "NBG_GI016K2"
+        ]
+      },
+      {
+        "code": "NFA_GV110K2",
+        "name": "Vezetési és munkaszervezési ismeretek",
+        "credits": 2
+      },
+      {
+        "code": "NBA_SZ117K6",
+        "name": "Szőlőtermesztés technológiája II.",
+        "credits": 6,
+        "prerequisites": [
+          "NBA_SZ189G3",
+          "NBA_SZ116K6"
+        ]
+      },
+      {
+        "code": "NBA_SZ155K6",
+        "name": "Borászati rendszerek II.",
+        "credits": 6,
+        "prerequisites": [
+          "NBA_SZ154K6"
+        ]
+      },
+      {
+        "code": "NBA_SZ194K4",
+        "name": "A szőlő kórokozói és kártevői",
+        "credits": 4,
+        "prerequisites": [
+          "NBA_SZ191K3",
+          "NBA_SZ192K3"
+        ]
+      },
+      {
+        "code": "NBA_GV120G5",
+        "name": "Szakdolgozat konzultáció II.",
+        "credits": 5,
+        "prerequisites": [
+          "NBA_GV119G5"
+        ]
+      },
+      {
+        "code": "NBA_SZ170A0",
+        "name": "Üzemi gyakorlat III.",
+        "credits": 0,
+        "prerequisites": [
+          "NBA_SZ169A0"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "6. félév",
+    "row": 0,
+    "courses": [
+      {
+        "code": "NBA_GV132K3",
+        "name": "Üzemszervezés",
+        "credits": 3,
+        "prerequisites": [
+          "NBG_GI016K2",
+          "NBA_GV123G3"
+        ]
+      },
+      {
+        "code": "NBA_SZ153G2",
+        "name": "Borászati marketing",
+        "credits": 2
+      },
+      {
+        "code": "NBA_SZ165K2",
+        "name": "Projektmenedzsment",
+        "credits": 2
+      },
+      {
+        "code": "NBA_SZ179G2",
+        "name": "Angol szakmai idegen nyelv",
+        "credits": 2,
+        "prerequisites": [
+          "NBA_SZ191K3",
+          "NBA_SZ115K6",
+          "NBA_SZ118G5",
+          "NBA_SZ187G3",
+          "NBA_SZ192K3",
+          "NBA_SZ193K3",
+          "NBA_SZ116K6",
+          "NBA_SZ154K6",
+          "NBA_SZ117K6",
+          "NBA_SZ155K6",
+          "NBA_SZ194K4"
+        ]
+      },
+      {
+        "code": "NBA_SZ180G3",
+        "name": "Borstabilitás",
+        "credits": 3,
+        "prerequisites": [
+          "NBA_SZ201G3",
+          "NBA_SZ202G3",
+          "NBA_SZ154K6",
+          "NBA_SZ155K6"
+        ]
+      },
+      {
+        "code": "NBA_SZ195G3",
+        "name": "A szőlő növényvédelme",
+        "credits": 3,
+        "prerequisites": [
+          "NBA_SZ194K4"
+        ]
+      },
+      {
+        "code": "NBA_SZ199G6",
+        "name": "Borok érzékszervi bírálata",
+        "credits": 6,
+        "prerequisites": [
+          "NBA_SZ191K3",
+          "NBA_SZ115K6",
+          "NBA_SZ118G5",
+          "NBA_SZ192K3",
+          "NBA_SZ154K6",
+          "NBA_SZ201G3",
+          "NBA_SZ202G3",
+          "NBA_SZ117K6",
+          "NBA_SZ155K6",
+          "NBA_SZ116K6"
+        ]
+      },
+      {
+        "code": "NBA_GV121G5",
+        "name": "Szakdolgozat konzultáció III.",
+        "credits": 5,
+        "prerequisites": [
+          "NBA_GV120G5"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "7. félév",
+    "row": 0,
+    "courses": [
+      {
+        "code": "NBA_SZ164G30",
+        "name": "Összefüggő szakmai gyakorlat",
+        "credits": 30,
+        "prerequisites": [
+          "NBA_SZ187G3",
+          "NBA_SZ168A0",
+          "NBA_SZ116K6",
+          "NBA_SZ154K6",
+          "NBA_SZ169A0",
+          "NBA_SZ117K6",
+          "NBA_SZ155K6",
+          "NBA_SZ170A0"
+          ]
+        }
+      ]
+    },
+    {
+    "name": "Keresztény kultúra",
+    "row": 1,
+    "courses": [
+      {
+        "code": "NOP_HT100K2",
+        "name": "Bibliaismeret",
+        "credits": 2
+      },
+      {
+        "code": "NOP_HT101K2",
+        "name": "A keresztény világvallás alapjai",
+        "credits": 2
+      },
+      {
+        "code": "NOP_HT102K2",
+        "name": "A hazai egyházak, felekezetek, vallási mozgalmak",
+        "credits": 2
+      },
+      {
+        "code": "NOP_HT103K2",
+        "name": "Bevezetés az egyháztörténelembe",
+        "credits": 2
+      },
+      {
+        "code": "NOP_HT104K2",
+        "name": "Weltreligionen",
+        "credits": 2
+      },
+      {
+        "code": "NOP_HT105K2",
+        "name": "Die Weltreligionen und das Christentum",
+        "credits": 2
+      },
+      {
+        "code": "NOP_HT106K4",
+        "name": "Die Weltreligionen und das Christentum III.",
+        "credits": 4
+      },
+      {
+        "code": "NOP_HT107K2",
+        "name": "Kereszténypedagógia",
+        "credits": 2
+      },
+      {
+        "code": "NOP_HT108K2",
+        "name": "Emberközpontú gazdaság",
+        "credits": 2
+      },
+      {
+        "code": "NOP_HT109K2",
+        "name": "Gazdaságetika emberközpontú alapokon",
+        "credits": 2
+      },
+      {
+        "code": "NOP_HT110K2",
+        "name": "Egyház és állam",
+        "credits": 2
+      }
+    ]
+  },
+    {
+    "name": "Szabadon választható tárgyak",
+    "row": 1,
+    "courses": [
+      {
+        "code": "NBA_AV100G2",
+        "name": "TDK kutatómunka I.",
+        "credits": 2
+      },
+      {
+        "code": "NBA_SZ140G2",
+        "name": "A bor filozófiája",
+        "credits": 2
+      },
+      {
+        "code": "NBA_AV101G2",
+        "name": "TDK kutatómunka II.",
+        "credits": 2
+      },
+      {
+        "code": "NBA_MG103G2",
+        "name": "Bor és gasztronómia",
+        "credits": 2
+      },
+      {
+        "code": "NBA_SZ141G2",
+        "name": "A szőlő és a stressz",
+        "credits": 2,
+        "prerequisites": [
+          "NBA_SZ192K3"
+        ]
+      },
+      {
+        "code": "NBA_SZ146G2",
+        "name": "Agrometeorológia a gyakorlatban",
+        "credits": 2,
+        "prerequisites": [
+          "NBA_MG135K2"
+        ]
+      },
+      {
+        "code": "NBA_SZ177G2",
+        "name": "Szőlészeti és borászati praktikum",
+        "credits": 2
+      },
+      {
+        "code": "NBA_KT133G2",
+        "name": "Házi sörfőzés",
+        "credits": 2
+      },
+      {
+        "code": "NBA_SZ148G2",
+        "name": "Aktuális problémák a szőlészetben - cikkfeldolgozó szeminárium",
+        "credits": 2
+      },
+      {
+        "code": "NBA_SZ144G2",
+        "name": "A világ borvidékei",
+        "credits": 2
+      },
+      {
+        "code": "NBA_SZ147G2",
+        "name": "Aktuális problémák a borászatban - cikkfeldolgozó szeminárium",
+        "credits": 2
+      },
+      {
+        "code": "NBA_SZ173G2",
+        "name": "Az aszúsodás biológiája",
+        "credits": 2
+      }
+    ]
+  }
+  ]
+}
