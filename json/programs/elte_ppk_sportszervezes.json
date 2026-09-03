@@ -1,0 +1,440 @@
+{
+    "name": "Sportszervezés",
+    "description": "Nappali munkarend tanterve (2025-től)",
+    "curriculum_updated_at": "2025-06-25",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "SSZVB21-102",
+                    "name": "Jogi alapismeretek",
+                    "credits": 3
+                },
+                {
+                    "code": "SSZVB21-103",
+                    "name": "Pszichológia, testkultúra-pszichológia",
+                    "credits": 3
+                },
+                {
+                    "code": "SSZVB21-107",
+                    "name": "A kommunikáció alapjai",
+                    "credits": 2
+                },
+                {
+                    "code": "SSZVB21-108",
+                    "name": "Közgazdasági alapismeretek 1.",
+                    "credits": 3
+                },
+                {
+                    "code": "SSZVB21-110",
+                    "name": "Gimnasztika 1.",
+                    "credits": 2
+                },
+                {
+                    "code": "SSZVB21-111",
+                    "name": "Anatómia - élettan 1.",
+                    "credits": 2
+                },
+                {
+                    "code": "SSZVB21-116",
+                    "name": "A testkultúra és a sport világa",
+                    "credits": 3
+                },
+                {
+                    "code": "SSZVB21-122",
+                    "name": "Mikroökonómia gyakorlat",
+                    "credits": 3,
+                    "prerequisites": [
+                        "(SSZVB21-108)"
+                    ]
+                },
+                {
+                    "code": "SSZVB21-146",
+                    "name": "Turisztikai és rekreációs tábor",
+                    "credits": 3
+                },
+                {
+                    "code": "SSZVB21-152",
+                    "name": "Sportági gyakorlat 1.",
+                    "credits": 2
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható tárgy 1",
+                    "credits": 4
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "SSZVB21-104",
+                    "name": "A sportszociológia alapjai",
+                    "credits": 2
+                },
+                {
+                    "code": "SSZVB21-105",
+                    "name": "A sportpedagógia alapjai",
+                    "credits": 2
+                },
+                {
+                    "code": "SSZVB21-109",
+                    "name": "A turizmus alapjai, sport- és egészségturizmus",
+                    "credits": 3
+                },
+                {
+                    "code": "SSZVB21-112",
+                    "name": "Anatómia - élettan 2.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SSZVB21-111"
+                    ]
+                },
+                {
+                    "code": "SSZVB21-117",
+                    "name": "Tudásmenedzsment a sport világában",
+                    "credits": 2
+                },
+                {
+                    "code": "SSZVB21-118",
+                    "name": "Szakkommunikáció (sportszervező)",
+                    "credits": 2
+                },
+                {
+                    "code": "SSZVB21-123",
+                    "name": "Közgazdasági alapismeretek 2.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SSZVB21-108"
+                    ]
+                },
+                {
+                    "code": "SSZVB21-128",
+                    "name": "Sportigazgatás",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SSZVB21-116"
+                    ]
+                },
+                {
+                    "code": "SSZVB21-133",
+                    "name": "Vállalatgazdaságtan",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SSZVB21-108"
+                    ]
+                },
+                {
+                    "code": "SSZVB21-145",
+                    "name": "A sport kultúrtörténete",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SSZVB21-116"
+                    ]
+                },
+                {
+                    "code": "SSZVB21-153",
+                    "name": "Sportági gyakorlat 2.",
+                    "credits": 2
+                },
+                {
+                    "code": "SSZVB21-158",
+                    "name": "Szakmai gyakorlat 1.",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "SSZVB21-101",
+                    "name": "Sportegészségtan és baleset-megelőzés",
+                    "credits": 3
+                },
+                {
+                    "code": "SSZVB21-106",
+                    "name": "Etika és sportetika",
+                    "credits": 2
+                },
+                {
+                    "code": "SSZVB21-113",
+                    "name": "A fizikai fittség vizsgálata",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SSZVB21-111"
+                    ]
+                },
+                {
+                    "code": "SSZVB21-114",
+                    "name": "Az edzéstan alapjai",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SSZVB21-111"
+                    ]
+                },
+                {
+                    "code": "SSZVB21-115",
+                    "name": "Nemzetközi és európai uniós ismeretek",
+                    "credits": 2
+                },
+                {
+                    "code": "SSZVB21-120",
+                    "name": "Társadalmi integráció és hátrányos helyzetűek a sportban",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SSZVB21-104"
+                    ]
+                },
+                {
+                    "code": "SSZVB21-124",
+                    "name": "Pénzügytan 1.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SSZVB21-108"
+                    ]
+                },
+                {
+                    "code": "SSZVB21-135",
+                    "name": "A menedzsment alapjai",
+                    "credits": 3
+                },
+                {
+                    "code": "SSZVB21-136",
+                    "name": "Sportágak menedzsmentje 1.",
+                    "credits": 3
+                },
+                {
+                    "code": "SSZVB21-147",
+                    "name": "Sportjog gyakorlat 1.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SSZVB21-102"
+                    ]
+                },
+                {
+                    "code": "SSZVB21-154",
+                    "name": "Sportági gyakorlat 3.",
+                    "credits": 2
+                },
+                {
+                    "code": "SSZVB21-159",
+                    "name": "Szakmai gyakorlat 2.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SSZVB21-158"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "SSZVB21-125",
+                    "name": "Pénzügytan 2.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SSZVB21-124"
+                    ]
+                },
+                {
+                    "code": "SSZVB21-127",
+                    "name": "Sport és fenntartható fejlődés",
+                    "credits": 2
+                },
+                {
+                    "code": "SSZVB21-130",
+                    "name": "Vezetési ismeretek",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SSZVB21-135"
+                    ]
+                },
+                {
+                    "code": "SSZVB21-132",
+                    "name": "Marketing",
+                    "credits": 2
+                },
+                {
+                    "code": "SSZVB21-134",
+                    "name": "Sportszervezetek működtetése",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SSZVB21-133"
+                    ]
+                },
+                {
+                    "code": "SSZVB21-137",
+                    "name": "Sportágak menedzsmentje 2.",
+                    "credits": 3
+                },
+                {
+                    "code": "SSZVB21-138",
+                    "name": "Projektmenedzsment a sportszervezetekben",
+                    "credits": 3
+                },
+                {
+                    "code": "SSZVB21-139",
+                    "name": "Sportrendezvény-szervezés 1.",
+                    "credits": 2
+                },
+                {
+                    "code": "SSZVB21-141",
+                    "name": "Létesítménymenedzsment",
+                    "credits": 3
+                },
+                {
+                    "code": "SSZVB21-148",
+                    "name": "Sportjog gyakorlat 2.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SSZVB21-147"
+                    ]
+                },
+                {
+                    "code": "SSZVB21-155",
+                    "name": "Sportági gyakorlat 4.",
+                    "credits": 2
+                },
+                {
+                    "code": "SSZVB21-160",
+                    "name": "Szakmai gyakorlat 3.",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SSZVB21-159"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "5. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "SSZVB21-319",
+                    "name": "Kutatásmódszertan",
+                    "credits": 2
+                },
+                {
+                    "code": "SSZVB21-126",
+                    "name": "Számvitel",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SSZVB21-108"
+                    ]
+                },
+                {
+                    "code": "SSZVB21-129",
+                    "name": "Sportgazdaságtan",
+                    "credits": 3
+                },
+                {
+                    "code": "SSZVB21-140",
+                    "name": "Sportrendezvény-szervezés 2.",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SSZVB21-139"
+                    ]
+                },
+                {
+                    "code": "SSZVB21-142",
+                    "name": "Sportmenedzsment szigorlat",
+                    "credits": 4,
+                    "prerequisites": [
+                        "(SSZVB21-129)",
+                        "SSZVB21-148",
+                        "(SSZVB21-143)"
+                    ]
+                },
+                {
+                    "code": "SSZVB21-143",
+                    "name": "Sportmarketing",
+                    "credits": 3,
+                    "prerequisites": [
+                        "SSZVB21-132"
+                    ]
+                },
+                {
+                    "code": "SSZVB21-149",
+                    "name": "Utánpótlás-nevelési rendszerek",
+                    "credits": 2
+                },
+                {
+                    "code": "SSZVB21-151",
+                    "name": "Sportdiplomácia és protokoll",
+                    "credits": 3
+                },
+                {
+                    "code": "SSZVB21-156",
+                    "name": "Sportági gyakorlat 5.",
+                    "credits": 2
+                },
+                {
+                    "code": "SSZVB21-162",
+                    "name": "Szakdolgozat-készítés 1.",
+                    "credits": 5
+                }
+            ]
+        },
+        {
+            "name": "6. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "SSZVB21-121",
+                    "name": "Egészség és életmód",
+                    "credits": 2
+                },
+                {
+                    "code": "SSZVB21-131",
+                    "name": "Emberierőforrás-menedzsment",
+                    "credits": 2,
+                    "prerequisites": [
+                        "SSZVB21-135"
+                    ]
+                },
+                {
+                    "code": "SSZVB21-144",
+                    "name": "Sport és média",
+                    "credits": 3
+                },
+                {
+                    "code": "SSZVB21-150",
+                    "name": "Rekreációelmélet",
+                    "credits": 2
+                },
+                {
+                    "code": "SSZVB21-157",
+                    "name": "Sportági gyakorlat 6.",
+                    "credits": 2
+                },
+                {
+                    "code": "SSZVB21-163",
+                    "name": "Szakdolgozat-készítés 2.",
+                    "credits": 5,
+                    "prerequisites": [
+                        "SSZVB21-162"
+                    ]
+                },
+                {
+                    "code": "SSZVB21-161",
+                    "name": "Kötelezően választandó tárgyak",
+                    "credits": 10
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható tárgy 2",
+                    "credits": 5
+                }
+            ]
+        }
+    ]
+}
+
