@@ -442,8 +442,8 @@ describe.skipIf(skip)('page chrome', () => {
 		expect(home.querySelector('.hero-demo')).not.toBeNull();
 		const stats = home.querySelectorAll('.hero-stats span').map((s) => s.text.trim());
 		expect(stats[0]).toBe('14 egyetem');
-		expect(stats[1]).toBe('31 kar');
-		expect(stats[2]).toBe('120 szak');
+		expect(stats[1]).toBe('32 kar');
+		expect(stats[2]).toBe('123 szak');
 		expect(stats[3]).toMatch(/tantárgy$/);
 	});
 
@@ -504,7 +504,7 @@ describe.skipIf(skip)('page chrome', () => {
 		expect(sitemap).toContain('<loc>https://targygraf.hu/pe</loc>');
 		expect(sitemap).toContain('<loc>https://targygraf.hu/pe/mernokinformatikus</loc>');
 		expect(sitemap).toContain('<loc>https://targygraf.hu/adatvedelem</loc>');
-		expect(sitemap.match(/<loc>/g)).toHaveLength(1 + 1 + 14 + 120);
+		expect(sitemap.match(/<loc>/g)).toHaveLength(1 + 1 + 14 + 123);
 	});
 
 	it('ships llms.txt listing every university and program', () => {
@@ -513,7 +513,7 @@ describe.skipIf(skip)('page chrome', () => {
 		expect(text).toContain('](https://targygraf.hu/pe): ');
 		expect(text).toContain('https://targygraf.hu/pe/mernokinformatikus');
 		expect(text).toContain('https://targygraf.hu/adatvedelem');
-		// 14 universities + 120 programs + the 2 project links.
-		expect(text.match(/^- \[/gm)).toHaveLength(14 + 120 + 2);
+		// 14 universities + 123 programs + the 2 project links.
+		expect(text.match(/^- \[/gm)).toHaveLength(14 + 123 + 2);
 	});
 });

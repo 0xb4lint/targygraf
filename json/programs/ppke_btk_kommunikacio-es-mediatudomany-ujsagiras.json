@@ -1,0 +1,378 @@
+{
+    "name": "Kommunikáció- és médiatudomány BA - Újságírás",
+    "description": "Kommunikáció- és médiatudomány alapképzési szak (BA), nappali tagozat tanterve - Újságírás specializáció (nyomtatott és elektronikus média)",
+    "curriculum_updated_at": "2026-09-01",
+    "course_blocks": [
+        {
+            "name": "1. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "BBNSF00100",
+                    "name": "Általános filozófiatörténet",
+                    "credits": 2
+                },
+                {
+                    "code": "BBNKM06700",
+                    "name": "Modern társadalomtörténet és szociológia",
+                    "credits": 2
+                },
+                {
+                    "code": "BBNSZ91300",
+                    "name": "A társadalomtudományi munka módszertana",
+                    "credits": 3
+                },
+                {
+                    "code": "BBNSZ10500",
+                    "name": "Szociálpszichológia",
+                    "credits": 3
+                },
+                {
+                    "code": "BBNKM40100",
+                    "name": "Bevezetés a kommunikációelméletbe",
+                    "credits": 3
+                },
+                {
+                    "code": "BBNKM40200",
+                    "name": "A kommunikácó- és médiakutatás alapjai",
+                    "credits": 3
+                },
+                {
+                    "code": "BBNKM40300",
+                    "name": "Beszédhelyzetek -párbeszéd,interjú",
+                    "credits": 3
+                },
+                {
+                    "code": "BBNKM40700",
+                    "name": "Médiumismereti gyakorlatok",
+                    "credits": 2
+                },
+                {
+                    "code": "BBNKM41700",
+                    "name": "A kommunikációs szakma színterei",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "2. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "BBNKM40400",
+                    "name": "Társadalmi kommunikáció 1. Ember és társadalom",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BBNKM40100"
+                    ]
+                },
+                {
+                    "code": "BBNKM40600",
+                    "name": "Írástechnika",
+                    "credits": 2
+                },
+                {
+                    "code": "BBNKM00900",
+                    "name": "A kommunikáció és a média társadalomtörténete",
+                    "credits": 3
+                },
+                {
+                    "code": "BBNKM01300",
+                    "name": "Tömegkommunikáció és médiaelmélet",
+                    "credits": 3
+                },
+                {
+                    "code": "BBNKM40900",
+                    "name": "Nyelv és kommunikáció",
+                    "credits": 3
+                },
+                {
+                    "code": "BBNKM01000",
+                    "name": "Személyközi és csoportkommunikáció",
+                    "credits": 3
+                },
+                {
+                    "code": "BBNKM21600",
+                    "name": "Szervezeti kommunikáció",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BBNKM40100"
+                    ]
+                },
+                {
+                    "code": "BBNKM00400",
+                    "name": "Nyilvános beszéd és prezentáció",
+                    "credits": 3
+                },
+                {
+                    "code": "BBNKM41900",
+                    "name": "A kommunikációkutatás gyakorlata",
+                    "credits": 3
+                },
+                {
+                    "code": "BBNKM08400",
+                    "name": "Mozgóképi narráció és dramaturgia",
+                    "credits": 3
+                },
+                {
+                    "code": "BBNKM02800",
+                    "name": "Bevezetés a pr-be",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "3. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "BBNKM40500",
+                    "name": "Társadalmi kommunikáció 2. Rendszer, nyilvánosság, közvélemény",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BBNKM40400"
+                    ]
+                },
+                {
+                    "code": "BBNKM22000",
+                    "name": "Hálózati kommunikáció",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BBNKM40100"
+                    ]
+                },
+                {
+                    "code": "BBNKM41000",
+                    "name": "Vágási gyakorlatok",
+                    "credits": 3
+                },
+                {
+                    "code": "BBNKM07900",
+                    "name": "Médianyelv és helyesírás",
+                    "credits": 3
+                },
+                {
+                    "code": "BBNKM42000",
+                    "name": "Médiakutatás",
+                    "credits": 3
+                },
+                {
+                    "code": "BBNKM42300",
+                    "name": "Weblaptervezés és elemzés (webdizájn és ergonómia)",
+                    "credits": 3
+                },
+                {
+                    "code": "BBNKM30000",
+                    "name": "A kortárs médiarendszerek kialakulása",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "BBNKM04600",
+                    "name": "Médiaműfajok, médiadramaturgia",
+                    "credits": 3
+                },
+                {
+                    "code": "BBNKM30200",
+                    "name": "Információs, átmeneti és véleményműfajok",
+                    "credits": 3
+                },
+                {
+                    "code": "BBNKM30400",
+                    "name": "Bevezetés a nyomtatott és elektronikus újságírásba",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "4. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "BBNKM01500",
+                    "name": "Vizuális kommunikáció",
+                    "credits": 3
+                },
+                {
+                    "code": "BBNKM09900",
+                    "name": "Befogadáselméletek",
+                    "credits": 3
+                },
+                {
+                    "code": "BBNKM06900",
+                    "name": "Emberi kommunikáció és mesterséges intelligencia",
+                    "credits": 3
+                },
+                {
+                    "code": "BBNKM41600",
+                    "name": "Médiareprezentáció elemzés",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BBNKM01300"
+                    ]
+                },
+                {
+                    "code": "BBNKM41800",
+                    "name": "Idegen nyelvű médiaszöveg elemzés",
+                    "credits": 3
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "BBNKM30300",
+                    "name": "Műsorszerkesztés, programtervezés",
+                    "credits": 3
+                },
+                {
+                    "code": "BBNKM30500",
+                    "name": "Rádiós stúdiómunka 1. (Műsorok és műsorszerkezetek)",
+                    "credits": 3
+                },
+                {
+                    "code": "BBNKM14100",
+                    "name": "TV felvételi gyakorlatok 1. (Műsorok- és műsorszerkezetek)",
+                    "credits": 3
+                },
+                {
+                    "code": "BBNKM13900",
+                    "name": "Multimediális tartalomkészítés (digitális fotó, infografika, on-line videó, podcast)",
+                    "credits": 3
+                },
+                {
+                    "code": "BBNKM42400",
+                    "name": "Újságírás projektfeladat 1. (Újságírás)",
+                    "credits": 3
+                }
+            ]
+        },
+        {
+            "name": "5. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "BBNKM41100",
+                    "name": "Közéleti és politikai kommunikáció",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BBNKM40100"
+                    ]
+                },
+                {
+                    "code": "BBNKM41400",
+                    "name": "Médiaetika és médiajog",
+                    "credits": 3
+                },
+                {
+                    "code": "BBNKM41500",
+                    "name": "Médiagazdaságtan",
+                    "credits": 3
+                },
+                {
+                    "code": "BBNKM42200",
+                    "name": "Kommunikációelméleti etalonvizsga",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BBNKM00900",
+                        "BBNKM01000",
+                        "BBNKM22000",
+                        "BBNKM01300",
+                        "BBNKM01500",
+                        "BBNKM40100",
+                        "(BBNKM41100)"
+                    ]
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "BBNKM30100",
+                    "name": "Médianyelvi gyakorlatok",
+                    "credits": 2
+                },
+                {
+                    "code": "BBNKM30600",
+                    "name": "Rádiós stúdiómunka 2. (Műsorszerkesztés)",
+                    "credits": 3
+                },
+                {
+                    "code": "BBNKM14200",
+                    "name": "TV felvételi gyakorlatok 2. (Műsorszerkesztés)",
+                    "credits": 3
+                },
+                {
+                    "code": "BBNKM13000",
+                    "name": "On-line média és MI-tartalomgyártás",
+                    "credits": 3
+                },
+                {
+                    "code": "BBNKM15500",
+                    "name": "Kiadványszerkesztés és tipográfia",
+                    "credits": 3
+                },
+                {
+                    "code": "BBNKM42500",
+                    "name": "Újságírás projektfeladat 2. (Szerkesztőségi munka)",
+                    "credits": 3,
+                    "prerequisites": [
+                        "BBNKM42400"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "6. félév",
+            "row": 0,
+            "courses": [
+                {
+                    "code": "BBNKM40800",
+                    "name": "Kereszténység-kultúra-média",
+                    "credits": 3
+                },
+                {
+                    "code": "BBNKM41200",
+                    "name": "Kultúraközi kommunikáció",
+                    "credits": 3
+                },
+                {
+                    "code": "BBNKM50000",
+                    "name": "Intézményen kívüli szakmai gyakorlat",
+                    "credits": 10
+                },
+                {
+                    "code": "BBNKM88100",
+                    "name": "Kommunikáció- és médiatudomány BA szakdolgozati felkészítés",
+                    "credits": 10
+                },
+                {
+                    "code": "BBNKM90000",
+                    "name": "Kommunikáció- és médiatudomány BA záróvizsga",
+                    "credits": 0
+                },
+                {
+                    "code": "______",
+                    "name": null,
+                    "credits": 0
+                },
+                {
+                    "code": "BBNKM05300",
+                    "name": "Specializációs etalon vizsga - Nyomtatott és elektronikus média specializáció",
+                    "credits": 0
+                },
+                {
+                    "code": "___OPTIONAL___",
+                    "name": "Szabadon választható",
+                    "credits": 9
+                }
+            ]
+        }
+    ]
+}
