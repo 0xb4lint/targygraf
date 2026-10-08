@@ -1,7 +1,7 @@
 {
     "name": "Nemzetközi gazdálkodás",
     "description": "Nemzetközi gazdálkodási alapképzési szak tanterve",
-    "curriculum_updated_at": "2022-06-30",
+    "curriculum_updated_at": "2024-10-01",
     "course_blocks": [
         {
             "name": "1. félév",
@@ -39,7 +39,7 @@
                 },
                 {
                     "code": "VEGTTUB112U",
-                    "name": "Üzleti élet társadalmi összeffüggései",
+                    "name": "Üzleti élet társadalmi összefüggései",
                     "credits": 3
                 },
                 {
@@ -48,8 +48,13 @@
                     "credits": 3
                 },
                 {
-                    "code": "GTLEB122A",
-                    "name": "Gazdasági és üzleti szaknyelv I.",
+                    "code": "VEGTLEB122N",
+                    "name": "Gazdasági és üzleti szaknyelv I. (német)",
+                    "credits": 0
+                },
+                {
+                    "code": "VEGTLEB122A",
+                    "name": "Gazdasági és üzleti szaknyelv I. (angol)",
                     "credits": 0
                 },
                 {
@@ -97,19 +102,35 @@
                     "credits": 6
                 },
                 {
-                    "code": "GTLEB222A",
-                    "name": "Gazdasági és üzleti szaknyelv II.",
+                    "code": "VEGTLEB222N",
+                    "name": "Gazdasági és üzleti szaknyelv II. (német)",
                     "credits": 0,
                     "prerequisites": [
-                        "GTLEB122A"
+                        "VEGTLEB122N"
                     ]
                 },
                 {
-                    "code": "GTLEB1X0A",
-                    "name": "Gazdasági és üzleti szaknyelvi záróvizsga",
+                    "code": "VEGTLEB222A",
+                    "name": "Gazdasági és üzleti szaknyelv II. (angol)",
                     "credits": 0,
                     "prerequisites": [
-                        "GTLEB222A"
+                        "VEGTLEB122A"
+                    ]
+                },
+                {
+                    "code": "VEGTLEB1X0N",
+                    "name": "Gazdasági és üzleti szaknyelvi záróvizsga (német)",
+                    "credits": 0,
+                    "prerequisites": [
+                        "VEGTLEB222N"
+                    ]
+                },
+                {
+                    "code": "VEGTLEB1X0A",
+                    "name": "Gazdasági és üzleti szaknyelvi záróvizsga (angol)",
+                    "credits": 0,
+                    "prerequisites": [
+                        "VEGTLEB222A"
                     ]
                 },
                 {
@@ -144,9 +165,9 @@
                     "credits": 6
                 },
                 {
-                    "code": "VEGTNGB124G",
+                    "code": "VEGTNGB123GT",
                     "name": "Globalizáció, világgazdasági kihívások",
-                    "credits": 6
+                    "credits": 3
                 },
                 {
                     "code": "VEGTGAB312R",
@@ -155,7 +176,7 @@
                 },
                 {
                     "code": "VEGTGAB312G",
-                    "name": "Ágazati gazdaságtan ",
+                    "name": "Ágazati gazdaságtan",
                     "credits": 3,
                     "prerequisites": [
                         "VEGTKGB144K"
@@ -225,19 +246,35 @@
             "row": 0,
             "courses": [
                 {
-                    "code": "VEGTNGB124K",
+                    "code": "VEGTNGB113NK",
                     "name": "Nemzetközi kereskedelem",
-                    "credits": 6
+                    "credits": 3
                 },
                 {
-                    "code": "VEGTNGB444E",
+                    "code": "VEGTNGB223EI",
                     "name": "Az európai gazdasági integráció alapjai",
-                    "credits": 6
+                    "credits": 3
                 },
                 {
-                    "code": "VEGTTUB244T",
+                    "code": "VEGTNGB123TP",
                     "name": "Európai Uniós támogatások és pályázati rendszer",
-                    "credits": 6
+                    "credits": 3
+                },
+                {
+                    "code": "VEGTGAB422V",
+                    "name": "Vállalkozásfejlesztés",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEGTGAB144A"
+                    ]
+                },
+                {
+                    "code": "VEGTGAB244V",
+                    "name": "Vállalkozói ismeretek",
+                    "credits": 6,
+                    "prerequisites": [
+                        "VEGTGAB144A"
+                    ]
                 },
                 {
                     "code": "VEGTVEB242P",
@@ -279,9 +316,17 @@
                     ]
                 },
                 {
-                    "code": "VEGTNGB414A",
+                    "code": "VEGTNGB223AP",
                     "name": "EU közös agrárpolitika",
-                    "credits": 6
+                    "credits": 3
+                },
+                {
+                    "code": "VEGTKGB246VP",
+                    "name": "Verseny- és piacelméletek",
+                    "credits": 6,
+                    "prerequisites": [
+                        "VEGTKGB144K"
+                    ]
                 },
                 {
                     "code": "VEGTNGB312M",
@@ -290,7 +335,7 @@
                 },
                 {
                     "code": "VEGTNGB122J",
-                    "name": "Bevezetés az Európai Unió jog rendszerébe",
+                    "name": "Bevezetés az Európai Unió jogrendszerébe",
                     "credits": 3
                 },
                 {
@@ -307,7 +352,10 @@
                 {
                     "code": "VEGTNGB12XG",
                     "name": "Külföldi/nemzetközi szakmai gyakorlat/tapasztalat",
-                    "credits": 30
+                    "credits": 30,
+                    "prerequisites": [
+                        "___156___"
+                    ]
                 },
                 {
                     "code": "VEGTNGB244G",

@@ -237,9 +237,8 @@ kötelezően választható tárgycsoportok).
     "name": "Kutatás-fejlesztés",
     "credits": 2,
     "prerequisites": [
-        "___75___"                      // ___20___, ___40___, ___45___, ___50___,
-    ]                                   // ___75___, ___120___, ___130___,
-                                        // ___150___ használható
+        "___75___"                      // n bármilyen egész szám
+    ]                                   // 1 és 999 között
 }
 ```
 

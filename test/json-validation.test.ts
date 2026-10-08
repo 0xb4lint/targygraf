@@ -13,11 +13,11 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { describe, expect, it } from 'vitest';
 
-import { DUMMY_CREDIT_COURSE_CODES, loadDataset } from '../src/lib/data';
+import { isValidCreditGate, loadDataset } from '../src/lib/data';
 import { JSON_ROOT } from '../src/lib/paths';
 
 const DIRECTORIES = ['universities', 'faculties', 'programs'] as const;
-const CREDIT_GATES = DUMMY_CREDIT_COURSE_CODES.join(', ');
+const CREDIT_GATE_HINT = '"___n___", ahol n egész szám 1 és 999 között (pl. "___75___")';
 const SEPARATOR = '______';
 const OPTIONAL = '___OPTIONAL___';
 
@@ -318,14 +318,14 @@ function checkCoursePrerequisites(file: string, courseBlock: any, course: any, d
 		const code = token.replace(/^[()]+/, '').replace(/[()]+$/, '');
 		if (/^___\d+___$/.test(code)) {
 			expect(
-				(DUMMY_CREDIT_COURSE_CODES as readonly string[]).includes(code),
-				`${context}: ismeretlen kreditkapu: "${code}". Használható: ${CREDIT_GATES}`
+				isValidCreditGate(code),
+				`${context}: hibás kreditkapu: "${code}". Formája: ${CREDIT_GATE_HINT}`
 			).toBe(true);
 		} else {
 			expect(
 				courseCodeExists(code, data),
 				`${context}: ismeretlen előfeltétel-kód: "${code}". A kódnak ugyanebben a ` +
-					`fájlban kell szerepelnie egy tárgynál; kreditkapuhoz használd ezeket: ${CREDIT_GATES}`
+					`fájlban kell szerepelnie egy tárgynál; kreditkapu formája: ${CREDIT_GATE_HINT}`
 			).toBe(true);
 		}
 	}

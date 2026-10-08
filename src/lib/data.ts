@@ -20,9 +20,9 @@
  *   common in the data.
  * - '(CODE)' marks a parallel ("felvehető egyidejűleg") prerequisite and is
  *   rendered as '#'-prefixed id in data-prerequisites.
- * - '___<n>___' pseudo-courses ("n teljesített kredit") are global helper
- *   rows; their padded id is the code itself and their display name is
- *   '<n> kredit'.
+ * - '___<n>___' pseudo-courses ("n teljesített kredit") are credit gates for
+ *   any whole n from 1 to 999; their padded id is the code itself and their
+ *   display name is '<n> kredit'.
  * - course_block_references are resolved by exact block name within the
  *   program (first match).
  * - is_counted defaults to true unless the JSON says exactly false.
@@ -32,22 +32,19 @@ import path from 'node:path';
 
 import { JSON_ROOT } from './paths';
 
-/** The only credit-gate pseudo-courses that exist; anything else is invalid. */
-export const DUMMY_CREDIT_COURSE_CODES = [
-	'___20___',
-	'___40___',
-	'___45___',
-	'___50___',
-	'___75___',
-	'___120___',
-	'___130___',
-	'___150___',
-] as const;
-
 export const OPTIONAL_COURSE_CODE = '___OPTIONAL___';
 export const SEPARATOR_COURSE_CODE = '______';
 
 const DUMMY_CREDIT_REGEX = /^___\d+___$/;
+
+/**
+ * Valid credit gates: n from 1 to 999, no leading zero. The Laravel site
+ * seeded one helper row per gate, hence the fixed list it used to have;
+ * nothing depends on that any more. The three-digit cap keeps a gate token
+ * from ever containing a six-digit course id, which the frontend matches by
+ * substring inside data-prerequisites.
+ */
+const VALID_CREDIT_GATE_REGEX = /^___[1-9]\d{0,2}___$/;
 
 export interface Prerequisite {
 	/** Course code with surrounding parentheses removed. */
@@ -157,6 +154,15 @@ export function isDummyCreditCode(code: string): boolean {
 	return DUMMY_CREDIT_REGEX.test(code);
 }
 
+export function isValidCreditGate(code: string): boolean {
+	return VALID_CREDIT_GATE_REGEX.test(code);
+}
+
+/** The credit count n of a '___<n>___' gate. */
+export function creditGateValue(code: string): number {
+	return parseInt(code.slice(3, -3), 10);
+}
+
 /**
  * Universities and programs are listed by name using the Hungarian locale.
  */
@@ -206,12 +212,12 @@ export function buildProgram(
 	}
 
 	// Prerequisite order is a frozen rendering contract (tooltip text and
-	// data attributes follow it): the ___n___ credit gates come first, in
-	// DUMMY_CREDIT_COURSE_CODES order, then program courses in file-position
-	// order. This is the order the site has always displayed.
+	// data attributes follow it): the ___n___ credit gates come first, by
+	// ascending n, then program courses in file-position order. This is the
+	// order the site has always displayed.
 	const prerequisiteSortKey = (p: Prerequisite): number =>
 		isDummyCreditCode(p.code)
-			? DUMMY_CREDIT_COURSE_CODES.indexOf(p.code as any) - DUMMY_CREDIT_COURSE_CODES.length
+			? creditGateValue(p.code) - 1000
 			: parseInt(p.paddedId, 10);
 
 	// Second pass: resolve prerequisites and block references.
@@ -224,16 +230,16 @@ export function buildProgram(
 				const parallel = isParallelToken(token);
 
 				if (isDummyCreditCode(code)) {
-					if (!(DUMMY_CREDIT_COURSE_CODES as readonly string[]).includes(code)) {
+					if (!isValidCreditGate(code)) {
 						throw new Error(
-							`${filePath}: unknown credit prerequisite ${code} ` +
-								`(only ${DUMMY_CREDIT_COURSE_CODES.join(', ')} exist)`
+							`${filePath}: invalid credit prerequisite ${code} ` +
+								'(n in ___n___ must be a whole number from 1 to 999)'
 						);
 					}
 					course.prerequisites.push({
 						code,
 						parallel,
-						name: `${code.slice(3, -3)} kredit`,
+						name: `${creditGateValue(code)} kredit`,
 						paddedId: code,
 					});
 					continue;

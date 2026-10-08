@@ -165,28 +165,40 @@ describe('buildProgram (fixture)', () => {
 		).toThrow(/NEMLETEZO/);
 	});
 
-	it('rejects credit gate values outside the supported set', () => {
-		expect(() =>
-			buildProgram(
-				'aa_fk_hibas.json',
-				{
-					name: 'Hibás',
-					description: '',
-					curriculum_updated_at: null,
-					course_blocks: [
-						{
-							name: '1. félév',
-							row: 0,
-							courses: [
-								{ code: 'X1', name: 'X', credits: 1, prerequisites: ['___60___'] },
-							],
-						},
-					],
-				},
-				'aa_fk_hibas.json'
-			)
-		).toThrow(/___60___/);
+	const programWithGates = (prerequisites: string[]) =>
+		buildProgram(
+			'aa_fk_kapu.json',
+			{
+				name: 'Kapu',
+				description: '',
+				curriculum_updated_at: null,
+				course_blocks: [
+					{
+						name: '1. félév',
+						row: 0,
+						courses: [{ code: 'X1', name: 'X', credits: 1, prerequisites }],
+					},
+				],
+			},
+			'aa_fk_kapu.json'
+		);
+
+	it('accepts any credit gate from 1 to 999, ordered by value', () => {
+		const gates = programWithGates(['___156___', '___7___', '___999___']).blocks[0]!
+			.courses[0]!.prerequisites;
+		expect(gates.map((p) => [p.code, p.name, p.paddedId])).toEqual([
+			['___7___', '7 kredit', '___7___'],
+			['___156___', '156 kredit', '___156___'],
+			['___999___', '999 kredit', '___999___'],
+		]);
 	});
+
+	it.each(['___0___', '___075___', '___1000___'])(
+		'rejects the credit gate %s',
+		(gate) => {
+			expect(() => programWithGates([gate])).toThrow(gate);
+		}
+	);
 
 	it('rejects unresolved course block references', () => {
 		expect(() =>
@@ -263,7 +275,7 @@ describe('loadDataset (real repository data)', () => {
 		const faculties = dataset.universities.flatMap((u) => u.faculties);
 		expect(faculties).toHaveLength(31);
 		const programs = faculties.flatMap((f) => f.programs);
-		expect(programs).toHaveLength(120);
+		expect(programs).toHaveLength(121);
 	});
 
 	it('resolves every prerequisite and block reference without errors', () => {
