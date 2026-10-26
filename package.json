@@ -21,7 +21,7 @@
     "miniflare": "^4.20260730.0",
     "node-html-parser": "^9.0.2",
     "typescript": "^7.0.2",
-    "vitest": "^4.1.11",
+    "vitest": "^4.1.12",
     "wrangler": "^4.0.0"
   }
 }
