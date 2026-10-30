@@ -16,7 +16,7 @@
     "compare-live": "node scripts/compare-live.mjs"
   },
   "devDependencies": {
-    "astro": "^7.2.9",
+    "astro": "^7.3.3",
     "jsdom": "^30.0.1",
     "miniflare": "^4.20260730.0",
     "node-html-parser": "^9.0.2",
