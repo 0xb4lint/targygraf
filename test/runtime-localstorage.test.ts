@@ -282,18 +282,20 @@ describe.skipIf(skip)('legacy coursesProcessing restore', () => {
 });
 
 describe.skipIf(skip)('legacy creditsOptional restore', () => {
-	it('shows the stored value and marks affordable optional slots', async () => {
-		const page = await loadProgramPage('pe', 'mernokinformatikus', { optional: 3 });
+	it.each([3, 5, 10])('restores %i credits and marks affordable optional slots', async (optional) => {
+		const page = await loadProgramPage('pe', 'mernokinformatikus', { optional });
 		expect(page.errors).toEqual([]);
 		expect(
 			page.document.querySelector('.credits-counter .credits-optional').textContent
-		).toBe('3');
-		// The 3-credit ___OPTIONAL___ slot is covered, so it renders finished.
+		).toBe(String(optional));
+		// The 2026 curriculum has two 5-credit slots. Older stored values
+		// (including 3 credits) must survive without prematurely filling one.
 		const optionals = byCode(page, '___OPTIONAL___').map((el) => ({
 			credits: parseInt(el.getAttribute('data-credits'), 10),
 			finished: el.classList.contains('finished'),
 		}));
-		expect(optionals.some((o) => o.credits === 3 && o.finished)).toBe(true);
+		expect(optionals.map((o) => o.credits)).toEqual([5, 5]);
+		expect(optionals.filter((o) => o.finished)).toHaveLength(Math.floor(optional / 5));
 	});
 });
 
