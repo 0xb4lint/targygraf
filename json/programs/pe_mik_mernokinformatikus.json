@@ -1,7 +1,7 @@
 {
-    "curriculum_updated_at": "2024-05-20",
+    "curriculum_updated_at": "2026-03-17",
     "name": "Mérnökinformatikus",
-    "description": "Mérnökinformatikus BSc szak - nappali tagozat tanterve",
+    "description": "Mérnökinformatikus BSc szak - nappali tagozat. A 2023/24/1-es félévtől kezdő hallgatókra, a 2026/27/1-es félévtől érvényes tanterv. A 2023/24-ben vagy 2024/25-ben kezdőknek a Tanulásmódszertan utólag nem kötelező; korábbi teljesítése 3 szabadon választható kreditként számolható el. Az angol nyelvi záróvizsga alapján a kollokvium kérelemre elismerhető.",
     "course_blocks": [
         {
             "courses": [
@@ -42,9 +42,9 @@
                     "name": "Programozás I."
                 },
                 {
-                    "code": "___OPTIONAL___",
-                    "name": "Szabadon választható tárgyak",
-                    "credits": 3
+                    "code": "TKDMI120MK",
+                    "name": "Tanulásmódszertan",
+                    "credits": 0
                 },
                 {
                     "code": "VEPETO1122A",
@@ -107,6 +107,7 @@
                     "name": "Angol nyelvi kollokvium"
                 },
                 {
+                    "prerequisites": ["VEPETO1122A"],
                     "code": "VEPETO2222A",
                     "credits": 0,
                     "name": "Testnevelés II."
@@ -167,6 +168,7 @@
                     "name": "Angol nyelvi záróvizsga"
                 },
                 {
+                    "prerequisites": ["VEPETO2222A"],
                     "code": "VEPETO3122A",
                     "credits": 0,
                     "name": "Testnevelés III."
@@ -233,6 +235,7 @@
                     "name": "Kötelezően választható szakmai tárgy"
                 },
                 {
+                    "prerequisites": ["VEPETO3122A"],
                     "code": "VEPETO4222A",
                     "credits": 0,
                     "name": "Testnevelés IV."
@@ -262,7 +265,10 @@
                     "name": "Informatikai rendszerek konfigurálása és üzemeltetése"
                 },
                 {
-                    "prerequisites": ["VEMISAB223RF"],
+                    "prerequisites": [
+                        "VEMISAB154MÜ",
+                        "VEMISAB156AV"
+                    ],
                     "code": "VEMIINB336PL",
                     "credits": 6,
                     "name": "Projekt labor"
@@ -284,7 +290,7 @@
                 },
                 {
                     "code": "___OPTIONAL___",
-                    "credits": 2,
+                    "credits": 5,
                     "name": "Szabadon választható tárgy"
                 }
             ],
@@ -479,7 +485,7 @@
                     "prerequisites": ["VEMIVIB256SF"],
                     "code": "VEMIVIB256SH",
                     "credits": 6,
-                    "name": "Számítógép hálózatok II."
+                    "name": "Számítógép-hálózatok II."
                 }
             ],
             "name": "Kötelezően választható szakmai tárgyak:\nHálózatok és rendszerek tárgycsoport",
@@ -581,7 +587,7 @@
                     "prerequisites": ["VEMISAB156PI"],
                     "code": "VEMIVIB356LV",
                     "credits": 6,
-                    "name": "A LabVIEW fejlesztői környezet"
+                    "name": "LabVIEW fejlesztői környezet"
                 },
                 {
                     "prerequisites": ["VEMISAB256SF"],
@@ -594,6 +600,15 @@
                     "code": "VEMIVIB356SG",
                     "credits": 6,
                     "name": "Autóipari szoftver- és hardverfejlesztés a gyakorlatban II."
+                },
+                {
+                    "prerequisites": [
+                        "VEMIVIB244EV",
+                        "VEMIVIB143JV"
+                    ],
+                    "code": "VEMIVIB144EA",
+                    "credits": 4,
+                    "name": "Energiamenedzsment alapjai"
                 },
                 {
                     "prerequisites": ["VEMIVIB334TM"],
@@ -677,7 +692,7 @@
                 },
                 {
                     "code": "VEMIINB112A",
-                    "credits": 3,
+                    "credits": 2,
                     "name": "Ipar 4.0 kihívások"
                 }
             ],
