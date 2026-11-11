@@ -1,7 +1,7 @@
 {
     "name": "Programtervező informatikus",
-    "description": "Programtervező informatikus BSc – nappali tagozat tanterve",
-    "curriculum_updated_at": "2023-12-12",
+    "description": "Programtervező informatikus BSc – nappali tagozat tanterve - a tanulmányaikat a 2023/24/1-es félévben, vagy azt követően megkezdő hallgatóknak, a 2026/27/1-es félévtől",
+    "curriculum_updated_at": "2026-03-17",
     "course_blocks": [
         {
             "name": "1. félév",
@@ -43,9 +43,9 @@
                     "credits": 3
                 },
                 {
-                    "code": "___OPTIONAL___",
-                    "name": "Szabadon választható tárgyak",
-                    "credits": 3
+                    "code": "TKDMI120MK",
+                    "name": "Tanulásmódszertan",
+                    "credits": 0
                 },
                 {
                     "code": "VEPETO1122A",
@@ -100,8 +100,8 @@
                     ]
                 },
                 {
-                    "code": "VEMIVIB213SF",
-                    "name": "Számítógép-architektúrák I.",
+                    "code": "VEMIVIB213SA",
+                    "name": "Számítógép-architektúrák",
                     "credits": 3,
                     "prerequisites": [
                         "VEMIVIB113IN"
@@ -302,7 +302,7 @@
                 {
                     "code": "___OPTIONAL___",
                     "name": "Szabadon választható tárgyak",
-                    "credits": 3
+                    "credits": 5
                 },
                 {
                     "code": null,
@@ -342,7 +342,7 @@
                 {
                     "code": "___OPTIONAL___",
                     "name": "Szabadon választható tárgyak",
-                    "credits": 4
+                    "credits": 5
                 },
                 {
                     "code": null,
@@ -454,7 +454,7 @@
                 },
                 {
                     "code": "VEMISAB313II",
-                    "name": "Az informatika ipari alkalmazásai ",
+                    "name": "Az informatika ipari alkalmazásai",
                     "credits": 3,
                     "prerequisites": [
                         "VEMISAB256PF"
@@ -462,7 +462,7 @@
                 },
                 {
                     "code": "VEMISAB323MN",
-                    "name": "AZ UML modellezési nyelv ",
+                    "name": "AZ UML modellezési nyelv",
                     "credits": 3,
                     "prerequisites": [
                         "VEMISAB144SV"
@@ -489,13 +489,13 @@
                     "name": "Párhuzamos programozás",
                     "credits": 6,
                     "prerequisites": [
-                        "VEMIVIB213SF",
+                        "VEMIVIB213SA",
                         "VEMIVIB146JF"
                     ]
                 },
                 {
                     "code": "VEMIVIB354PN",
-                    "name": "Programozási nyelvek ",
+                    "name": "Programozási nyelvek",
                     "credits": 4,
                     "prerequisites": [
                         "VEMISAB256PF"
@@ -533,6 +533,14 @@
                     ]
                 },
                 {
+                    "code": "VEMIVIB333DM",
+                    "name": "Digitális modellezési technikák",
+                    "credits": 3,
+                    "prerequisites": [
+                        "VEMIVIB113IN"
+                    ]
+                },
+                {
                     "code": "VEMIVIB356KF",
                     "name": "Képfeldolgozás",
                     "credits": 6,
@@ -551,7 +559,7 @@
                 },
                 {
                     "code": "VEMIVIB354VK",
-                    "name": "Virtuális és kiterjesztett valóság ",
+                    "name": "Virtuális és kiterjesztett valóság",
                     "credits": 4,
                     "prerequisites": [
                         "VEMIVIB113IN",
@@ -574,7 +582,7 @@
                 },
                 {
                     "code": "VEMIVIB356SG",
-                    "name": "Autóipari szoftver- és hardverfejlesztés a gyakorlatban II. ",
+                    "name": "Autóipari szoftver- és hardverfejlesztés a gyakorlatban II.",
                     "credits": 6,
                     "prerequisites": [
                         "VEMISAB256PF"
